@@ -5,15 +5,16 @@
 @endsection
 @section('content')
     <div class="d-flex flex-column flex-column-fluid align-items-center justify-content-center p-4">
-        <div class="col-12 text-center mb-0"> <!-- Adjusted margin-bottom to 0 -->
-            <a href="{{ url('/') }}" class="login-logo image  mb-sm-2 image-medium">
-                <img alt="Logo" src="https://invoices.voovmedia.com/assets/images/favicon.jpg" style="height: fit-content" class="img-fluid object-contain">
-            </a>
-        </div>
-        <div class="width-540" >
+    <div class="width-540" >
             @include('flash::message')
             @include('layouts.errors')
+        </div>    
+    <div class="col-12 text-center mb-0"> <!-- Adjusted margin-bottom to 0 -->
+            <a href="{{ url('/') }}" class="login-logo image  mb-sm-2 image-medium">
+                <img alt="Logo" src="/assets/images/logo.png" style="height: fit-content" class="img-fluid object-contain">
+            </a>
         </div>
+   
         <div class="bg-white rounded-15 shadow-md width-540 px-5 px-sm-7 py-10 mx-auto" "> <!-- Added inline style for margin-top -->
             <h1 class="text-center mb-7">{{ __('messages.login.sign_in') }}</h1>
             <form method="POST" action="{{ route('login') }}">
@@ -52,7 +53,7 @@
                     <button type="submit" class="btn btn-primary">{{ __('messages.login.login') }}</button>
                 </div>
             </form>
-            @if ($errors->any())
+            <!-- @if ($errors->any())
                 <div class="alert alert-danger mt-4">
                     <ul>
                         @foreach ($errors->all() as $error)
@@ -60,7 +61,7 @@
                         @endforeach
                     </ul>
                 </div>
-            @endif
+            @endif -->
         </div>
     </div>
 @endsection
