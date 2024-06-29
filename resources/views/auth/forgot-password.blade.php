@@ -6,7 +6,7 @@
     <div class="d-flex flex-column flex-column-fluid align-items-center mt-12 p-4">
         <div class="col-12 text-center mt-0">
             <a href="{{ url('/') }}" class="image mb-sm-2 image-medium">
-                <img alt="Logo" src="https://invoices.voovmedia.com/assets/images/favicon.jpg" style="height: fit-content" class="img-fluid object-contain">
+                <img alt="Logo" src="/assets/images/logo.png" style="height: fit-content" class="img-fluid object-contain">
             </a>
         </div>
         <div class="width-540">

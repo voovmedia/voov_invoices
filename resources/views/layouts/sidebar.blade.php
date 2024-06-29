@@ -4,7 +4,7 @@
         <a href="{{ url('/') }}" class="text-decoration-none sidebar-logo d-flex align-items-center" data-bs-toggle="tooltip"
            title="{{ (strlen(getAppName()) > 15 ) ? substr(getAppName(), 0,15).'...' : getAppName() }}">
             <div class="image image-mini me-3">
-                <img src="https://invoices.voovmedia.com/assets/images/favicon.jpg"
+                <img src="/assets/images/logo.png"
                      class="img-fluid object-contain" alt="profile image" style="height: fit-content; width: 100px">
             </div>
             
