@@ -330,7 +330,7 @@ Route::middleware(['auth', 'xss'])->group(function () {
     Route::post('send-invoice-on-whatsapp', [InvoiceController::class, 'sendInvoiceOnWhatsapp'])->name('send.invoice.on.whatsapp');
 });
 Route::delete('/clients/{client}', [ClientController::class, 'destroy'])->name('clients.destroy');
-
+Route::delete('/clients/delete/multiple',[ClientController::class,'deleteSelected'])->name('clients.deleteSelected');
 Route::post('/upload-csv', [ClientController::class, 'uploadCSV'])->name('upload.csv');
 Route::get('/clear',function(){
           Artisan::call('cache:clear');

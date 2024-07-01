@@ -51,12 +51,12 @@ class ClientController extends AppBaseController
         $uuid = $data['uuid'];
         $vatNoLabel = getVatNoLabel();
 
-        return view('clients.create', compact('countries','vatNoLabel','uuid'));
+        return view('clients.create', compact('countries', 'vatNoLabel', 'uuid'));
     }
     public function store(CreateClientRequest $request): RedirectResponse
     {
         $input = $request->all();
-        
+
         try {
             $this->clientRepository->store($input);
             Flash::success(__('messages.flash.client_created_successfully'));
@@ -81,7 +81,7 @@ class ClientController extends AppBaseController
         $data = $this->clientRepository->getData();
         $vatNoLabel = getVatNoLabel();
 
-        return view('clients.show', compact('client', 'activeTab','vatNoLabel'));
+        return view('clients.show', compact('client', 'activeTab', 'vatNoLabel'));
     }
 
     /**
@@ -95,8 +95,8 @@ class ClientController extends AppBaseController
         $vatNoLabel = getVatNoLabel();
         $client->load('user.media');
 
-       
-         return view('clients.edit', compact('client', 'countries','vatNoLabel','uuid'));
+
+        return view('clients.edit', compact('client', 'countries', 'vatNoLabel', 'uuid'));
     }
 
     public function update(Client $client, UpdateClientRequest $request)
@@ -116,28 +116,28 @@ class ClientController extends AppBaseController
         return redirect()->route('clients.index');
     }
 
-  public function destroy(Client $client, Request $request): JsonResponse
-{
-    $check = $request->get('clientWithInvoices');
-    $invoiceModels = [
-        Invoice::class,
-    ];
-    $result = canDelete($invoiceModels, 'client_id', $client->id);
-    if ($check && $result) {
-        return $this->sendError(__('messages.flash.client_cant_deleted'));
-    }
-    $client->user()->delete();
-    $client->invoices()->delete();
-    $client->delete();
+    public function destroy(Client $client, Request $request): JsonResponse
+    {
+        $check = $request->get('clientWithInvoices');
+        $invoiceModels = [
+            Invoice::class,
+        ];
+        $result = canDelete($invoiceModels, 'client_id', $client->id);
+        if ($check && $result) {
+            return $this->sendError(__('messages.flash.client_cant_deleted'));
+        }
+        $client->user()->delete();
+        $client->invoices()->delete();
+        $client->delete();
 
-    return $this->sendSuccess(__('messages.flash.client_deleted_successfully'));
-}
+        return $this->sendSuccess(__('messages.flash.client_deleted_successfully'));
+    }
     public function getStates(Request $request): mixed
     {
         $countryId = $request->get('countryId');
         $states = getStates($countryId);
 
-        return $this->sendResponse($states,__('messages.flash.status_retrieved_successfully'));
+        return $this->sendResponse($states, __('messages.flash.status_retrieved_successfully'));
     }
 
     /**
@@ -153,39 +153,38 @@ class ClientController extends AppBaseController
 
     public function uploadCSV(Request $request)
     {
-      
-        
+
+
         $request->validate([
             'csv_file' => 'required|mimes:csv,txt',
         ]);
 
-$file = $request->file('csv_file');
+        $file = $request->file('csv_file');
         try {
             // Open and read the CSV file
             $csvData = array_map('str_getcsv', file($file->getRealPath()));
-            
+           
             // Extract the header row
             $header = array_map('trim', $csvData[0]);
-             $header[0] = preg_replace('/\x{FEFF}/u', '', $header[0]);
+            $header[0] = preg_replace('/\x{FEFF}/u', '', $header[0]);
             unset($csvData[0]); // Remove the header row from data
-      
+
             // Process the CSV data
             foreach ($csvData as $index => $row) {
                 $clientData = array_combine($header, $row);
 
-    // Set a default password (you may want to generate a unique one or get from user input)
-                    $password = '123456'; 
-                    $clientData['password'] = $password;
-                    $clientData['avatar_remove']=1;
-        $phoneNumber = $clientData['contact'];
-            
-            // Example of region extraction logic
-            $region = substr($phoneNumber, 0, 3);
-            $clientData['region_code'] = $region;
-           
+                // Set a default password (you may want to generate a unique one or get from user input)
+                $password = '123456';
+                $clientData['password'] = $password;
+                $clientData['avatar_remove'] = 1;
+                $phoneNumber = $clientData['contact'];
+
+                // Example of region extraction logic
+                $region = substr($phoneNumber, 0, 3);
+                $clientData['region_code'] = $region;
+
                 try {
                     $this->clientRepository->store($clientData);
-
                 } catch (Exception $exception) {
                     Flash::error(__('Error creating client from CSV on row ' . ($index + 1) . ': ' . $exception->getMessage()));
                     continue;
@@ -193,13 +192,12 @@ $file = $request->file('csv_file');
             }
             Flash::success(__('messages.flash.client_created_successfully'));
             return redirect()->route('clients.create')->withInput();
-
         } catch (Exception $exception) {
             Flash::error(__('An error occurred while processing the CSV file: ' . $exception->getMessage()));
             return redirect()->route('clients.create')->withInput();
         }
     }
-  public function delete($id)
+    public function delete($id)
     {
         $client = Client::find($id);
         if ($client) {
@@ -211,16 +209,16 @@ $file = $request->file('csv_file');
         }
     }
 
-    public function deleteSelected()
+    public function deleteSelected(Request $request)
     {
-        $this->validate([
+        $request->validate([
             'selectedClients' => 'required|array',
             'selectedClients.*' => 'exists:clients,id',
         ]);
 
-        Client::whereIn('id', $this->selectedClients)->delete();
-        $this->selectedClients = [];
-        session()->flash('message', 'Selected clients have been deleted.');
-        $this->emit('clientDeleted');
+        Client::whereIn('id', $request->selectedClients)->delete();
+        // session()->flash('message', 'Selected clients have been deleted.');
+        $this->sendSuccess('Selected clients have been deleted');
+        // $this->emit('clientDeleted');
     }
 }

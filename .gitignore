@@ -1,0 +1,41 @@
+# Laravel
+/vendor/
+/node_modules/
+/public/storage
+/storage/*.key
+.env
+Homestead.yaml
+Homestead.json
+/.vagrant
+.phpunit.result.cache
+
+
+
+# NPM
+npm-debug.log
+yarn-error.log
+
+# Laravel Mix
+/public/css/app.css
+/public/js/app.js
+/public/mix-manifest.json
+/public/hot
+/public/css/*.map
+/public/js/*.map
+
+# Packages
+.DS_Store
+*.log
+*.swp
+
+
+# Mac System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# dotenv
+.env.*.local
+.env.local

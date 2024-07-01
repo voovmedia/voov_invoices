@@ -1,7 +1,7 @@
-<a type="button" class="btn btn-primary" href="{{ route('clients.create')}}">
+<a type="button" class="btn btn-primary m-3" href="{{ route('clients.create')}}">
     {{__('messages.client.add_client')}}
 </a>
-<a type="button" class="btn btn-primary" href="{{ route('clients.create')}}">
+<button type="button" class="btn btn-danger" class="delete-clients-btn">
     {{__('delete')}}
-</a>
+</button>
 

@@ -50,7 +50,7 @@ class ClientTable extends LivewireTableComponent
         return [
             Column::make('Select', 'id')
                 ->format(function ($value, $row, Column $column) {
-                    return '<input type="checkbox" wire:model="selectedClients" value="'.$row->id.'">';
+                    return '<input type="checkbox" name="selectedClients" wire:model="selectedClients" value="'.$row->id.'">';
                 })
                 ->html(),
             Column::make(__('messages.client.client'), 'user.first_name')
