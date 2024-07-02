@@ -215,10 +215,25 @@ class ClientController extends AppBaseController
             'selectedClients' => 'required|array',
             'selectedClients.*' => 'exists:clients,id',
         ]);
+        
+        $clientIds = $request->selectedClients;
+        foreach($clientIds as $clientId){
+            $client = Client::find($clientId);
+            $check = $request->get('clientWithInvoices');
+            $invoiceModels = [
+                Invoice::class,
+            ];
+            $result = canDelete($invoiceModels, 'client_id', $client->id);
+            if ($check && $result) {
+                return $this->sendError(__('messages.flash.client_cant_deleted'));
+            }
+            $client->user()->delete();
+            $client->invoices()->delete();
+            $client->delete();
+    
+        }
 
-        Client::whereIn('id', $request->selectedClients)->delete();
-        // session()->flash('message', 'Selected clients have been deleted.');
-        $this->sendSuccess('Selected clients have been deleted');
-        // $this->emit('clientDeleted');
+
+        return $this->sendSuccess(__('messages.flash.client_deleted_successfully'));
     }
 }
