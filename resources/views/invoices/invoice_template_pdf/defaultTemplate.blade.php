@@ -128,9 +128,8 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Supplier Name</td>
+                            <td>{{$client->channel_name}}</td>
                         </tr>
-                        <!-- Add more rows as needed -->
                     </tbody>
                 </table>
             </div>
@@ -195,7 +194,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>7029</td>
+                            <td>{{$client->uuid}}</td>
                             <td class="text-align-right">{{ \Carbon\Carbon::parse($invoice->recurring_cycle)->translatedFormat(currentDateFormat()) }}</td>
 
                         </tr>

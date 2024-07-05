@@ -8,7 +8,7 @@
    <div class="col-lg-6">
     <div class="mb-5">
         {{ Form::label('last_name', __('UID') . ':', ['class' => 'form-label required mb-3']) }}
-        {{ Form::text('id', $uuid, ['class' => 'form-control', 'placeholder' => __('UID'), 'required', 'disabled']) }}
+        {{ Form::text('uuid', $uuid, ['class' => 'form-control', 'placeholder' => __('UID'), 'required', 'disabled']) }}
     </div>
 </div>
 
@@ -64,8 +64,8 @@
 
     <div class="col-lg-6">
         <div class="mb-5">
-            {{ Form::label('website', __('Channel Name') . ':', ['class' => 'form-label mb-3']) }}
-            {{ Form::text('website', $client->website ?? null, ['class' => 'form-control form-control-solid', 'placeholder' => __('Facebook/Youtube')]) }}
+            {{ Form::label('channel_name', __('Channel Name') . ':', ['class' => 'form-label mb-3']) }}
+            {{ Form::text('channel_name', $client->channel_name ?? null, ['class' => 'form-control form-control-solid', 'placeholder' => __('Facebook/Youtube')]) }}
         </div>
     </div>
   <div class="col-lg-6">

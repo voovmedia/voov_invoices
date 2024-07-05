@@ -48,7 +48,9 @@ class ClientController extends AppBaseController
     {
         $data = $this->clientRepository->getData();
         $countries = $data['countries'];
-        $uuid = $data['uuid'];
+        $highestId = Client::max('uuid');
+        $data['uuid'] = ($highestId + 1) % 10000; // Ensure it is always 4 digits
+        $uuid = str_pad($data['uuid'], 4, '0', STR_PAD_LEFT); // Pad with leading zeros if necessary
         $vatNoLabel = getVatNoLabel();
 
         return view('clients.create', compact('countries', 'vatNoLabel', 'uuid'));
@@ -91,11 +93,9 @@ class ClientController extends AppBaseController
     {
         $data = $this->clientRepository->getData();
         $countries = $data['countries'];
-        $uuid = $data['uuid'];
         $vatNoLabel = getVatNoLabel();
         $client->load('user.media');
-
-
+        $uuid = $client->uuid;
         return view('clients.edit', compact('client', 'countries', 'vatNoLabel', 'uuid'));
     }
 

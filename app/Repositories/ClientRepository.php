@@ -48,8 +48,6 @@ class ClientRepository extends BaseRepository
     public function getData(): mixed
     {
         $data['countries'] = Country::toBase()->pluck('name', 'id')->toArray();
-        $highestId = Client::max('id');
-        $data['uuid'] = $highestId + 1;
         return $data;
     }
 

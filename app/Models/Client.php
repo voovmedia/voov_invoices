@@ -58,6 +58,7 @@ class Client extends Model
     public $fillable = [
         'id',
         'user_id',
+        'uuid',
         'channel_name',
         'postal_code',
         'address',
