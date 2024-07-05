@@ -3,7 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Invoice Template</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="icon" href="{{ asset('web/media/logos/favicon.ico') }}" type="image/png">
+    <title>{{ __('messages.invoice.invoice_pdf') }}</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/invoice-pdf.css') }}" rel="stylesheet" type="text/css" />
     <style>
         body {
             padding: 30px 15px !important;
@@ -15,7 +23,7 @@
         .container {
             width: 90%;
             margin: 0 auto;
-            padding: 20px;
+            padding:20px;
             overflow: hidden;
             /* Clearfix */
         }
@@ -33,15 +41,15 @@
 
         .header {
             text-align: center;
-            margin-bottom: 20px;
+            margin-top:-56px;
         }
 
         .right-side .header {
-            margin-top: 60px;
+            margin-top: 110px;
         }
 
         .header img {
-            max-width: 250px;
+            max-width: 220px;
             height: auto;
         }
 
@@ -49,7 +57,8 @@
             font-size: 2.8rem;
             margin: 0;
             color: #37bfec;
-            padding: 10px;
+            padding:0px;
+            
             /* Padding for better visual appearance */
             text-align: center;
         }
@@ -58,13 +67,13 @@
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
-            margin-top: 80px;
+            margin-top: 50px;
         }
 
         th,
         td {
             text-align: left;
-            padding: 20px;
+            padding: 10px;
             /* Increased padding for cells */
 
         }
@@ -99,7 +108,7 @@
 
         .align-right {
             text-align: right;
-            font-size: 1.5em;
+            font-size: 1em;
         }
     </style>
 </head>
@@ -108,9 +117,9 @@
     <div class="container">
         <div class="left-side">
             <div class="header">
-                <img src="http://localhost:8000/assets/images/logo.png" alt="Logo">
+                <img src="{{ getLogoUrl() }}" alt="Logo">
             </div>
-            <div class="table-container">
+            <div class="table-container ">
                 <table>
                     <thead>
                         <tr>
@@ -134,7 +143,19 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Customer Name</td>
+                            <td>
+                            {{ $client->user->full_name }}
+                            @if (!empty($client->user->address))
+                                <br/><br/>{{ $client->user->address }}
+                            @endif
+                            <br/>
+                            <br/>
+                            <a href="tel:+{{ $client->user->region_code }}{{ $client->user->contact }}">+{{ $client->user->region_code }} {{ $client->user->contact }}</a>
+                            <br/>
+                            <br/>
+                            {{ $client->user->email }}
+                          
+                            </td>
                         </tr>
                         <!-- Add more rows as needed -->
                     </tbody>
@@ -155,8 +176,8 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>7029</td>
-                            <td class="text-align-right">7029</td>
+                            <td>#{{ $invoice->invoice_id }}</td>
+                            <td class="text-align-right">{{ \Carbon\Carbon::parse($invoice->invoice_date)->translatedFormat(currentDateFormat()) }}</td>
 
                         </tr>
                         <!-- Add more rows as needed -->
@@ -175,10 +196,9 @@
                     <tbody>
                         <tr>
                             <td>7029</td>
-                            <td class="text-align-right">7029</td>
+                            <td class="text-align-right">{{ \Carbon\Carbon::parse($invoice->recurring_cycle)->translatedFormat(currentDateFormat()) }}</td>
 
                         </tr>
-                        <!-- Add more rows as needed -->
                     </tbody>
                 </table>
             </div>
@@ -196,23 +216,25 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Revenue Generated</td>
-                        <td class="text-align-right">2,661.93</td>
-                        <td class="text-align-right">40%</td>
-                        <td class="text-align-right">1,072.77</td>
+                    @if (isset($invoice) && !empty($invoice))
+                        @foreach ($invoice->invoiceItems as $key => $invoiceItems)
+                        <tr>
+                        <td>{{ isset($invoiceItems->product->name) ? $invoiceItems->product->name : $invoiceItems->product_name ?? __('messages.common.n/a') }}</td>
+                        <td class="text-align-right"> {{ isset($invoiceItems->price) ? getInvoiceCurrencyAmount($invoiceItems->price, $invoice->currency_id, true) : __('messages.common.n/a') }}</td>
+                        <td class="text-align-right">   @foreach ($invoiceItems->invoiceItemTax as $keys => $tax)
+                                            {{ $tax->tax ?? '--' }}%
+                                            @if (!$loop->last)
+                                                ,
+                                            @endif
+                                        @endforeach</td>
+                        <td class="text-align-right">{{ isset($invoiceItems->price) ? getInvoiceCurrencyAmount($invoiceItems->price, $invoice->currency_id, true) : __('messages.common.n/a') }} </td>
 
 
                     </tr>
-                    <tr>
-                        <td>Revenue Generated</td>
-                        <td class="text-align-right">2,661.93</td>
-                        <td class="text-align-right">40%</td>
-                        <td class="text-align-right">1,072.77</td>
-
-
-                    </tr>
-                    <!-- Add more rows as needed -->
+                        @endforeach
+                    @endif
+                   
+                 
                 </tbody>
             </table>
         </div>
@@ -223,14 +245,14 @@
                         <th>
                             <div class="align-container">
                                 <div class="align-left">
-                                    <h2 style="margin: 0;">Thank you for your business</h2>
+                                    <h6 style="margin: 0;">Thank you for your business</h2>
                                 </div>
                                 <div class="align-right">
                                     Total USD
                                 </div>
                             </div>
                         </th>
-                        <th class="text-align-right" style="width: 45%; background-color: #81d7f3;">1,650,23</th>
+                        <th class="text-align-right" style="width: 45%; background-color: #81d7f3;"> {{ isset($invoiceItems->total) ? getInvoiceCurrencyAmount($invoiceItems->total, $invoice->currency_id, true) : __('messages.common.n/a') }}</th>
                     </tr>
                 </thead>
             </table>
@@ -240,9 +262,9 @@
         width: 50%;
         text-align: center;
         line-height: 1.7;
-        margin-top: 5rem;
+        margin-top: 2rem;
     ">
-                <p>if you have any Question  about this invoice please contact <b>Voov Media</b>, <a href="">+1 (305) 857-5147</a> ,<b>Billing@voovmedia.com</b></p>
+                <p>If you have any Question  about this invoice please contact <b>  {{ html_entity_decode($setting['app_name']) }}</b>, <a href="tel:{{ $setting['company_phone'] }}">{{ $setting['company_phone'] }}</a> ,<b>billing@voovmedia.com</b></p>
             </div>
     </div>
 </body>
