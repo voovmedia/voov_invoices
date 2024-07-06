@@ -149,12 +149,15 @@ class Invoice extends Model
         'invoice_id' => 'required|unique:invoices,invoice_id',
         'invoice_date' => 'required',
         'due_date' => 'required',
+        'payout_cycle' => 'required'
     ];
 
     public static $messages = [
         'client_id.required' => 'The Client field is required.',
         'invoice_date.required' => 'The invoice date field is required.',
         'due_date' => 'The invoice Due date field is required.',
+        'payout_cycle' => 'The invoice Payout cycle field is required'
+
     ];
 
     public $table = 'invoices';
@@ -165,6 +168,8 @@ class Invoice extends Model
         'client_id',
         'invoice_date',
         'due_date',
+        'payout_cycle_start',
+        'payout_cycle_end',
         'invoice_id',
         'currency_id',
         'amount',

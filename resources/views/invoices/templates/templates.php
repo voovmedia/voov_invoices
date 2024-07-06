@@ -3,14 +3,14 @@
     <td class="text-center item-number align-center">1</td>
     <td class="table__item-desc w-25">
         <select class="form-select productId product  fw-bold" name="product_id[]" 'data-control' => 'select2' required>
-            <option selected="selected" value="">Select Product or Enter free text</option>
             {{for products}}
-                <option value="{{:key}}">{{:value}}</option>
+
+        <option value="{{:key }}" {{:key == 2 ? 'selected' : '' }}>{{:value }}</option>
             {{/for}}
         </select>
     </td>
-    <td class="table__qty">
-        <input class="form-control qty " required="" name="quantity[]" type="number" min="0" step=".01" oninput="validity.valid||(value=value.replace(/[e\+\-]/gi,''))">
+    <td class="table__qty d-none">
+        <input class="form-control qty " required="" value='1' name="quantity[]" type="number" min="0" step=".01" oninput="validity.valid||(value=value.replace(/[e\+\-]/gi,''))">
     </td>
     <td>
         <input class="form-control price-input price " required="" name="price[]" type="number" oninput="validity.valid||(value=value.replace(/[e\+\-]/gi,''))" min='0' step='.01' onKeyPress="if(this.value.length==8) return false;">

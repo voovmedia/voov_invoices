@@ -68,7 +68,7 @@ class InvoiceController extends AppBaseController
             DB::beginTransaction();
             $invoice = $this->invoiceRepository->saveInvoice($request->all());
             if ($request->status != Invoice::DRAFT) {
-                $this->invoiceRepository->saveNotification($request->all(), $invoice);
+                // $this->invoiceRepository->saveNotification($request->all(), $invoice);
                 DB::commit();
 
                 return $this->sendResponse($invoice, __('messages.flash.invoice_saved_and_sent_successfully'));
@@ -101,7 +101,9 @@ class InvoiceController extends AppBaseController
         $data = $this->invoiceRepository->prepareEditFormData($invoice);
         $data['selectedInvoiceTaxes'] = $invoice->invoiceTaxes()->pluck('tax_id')->toArray();
         $data['currencies'] = getCurrencies();
-
+        // $data['invoice']['payout_cycle_start'] = date('m/d/Y', strtotime($data['invoice']['payout_cycle_start']));
+        // $data['invoice']['payout_cycle_end'] = date('m/d/Y', strtotime($data['invoice']['payout_cycle_end']));
+    
         return view('invoices.edit')->with($data);
     }
 
@@ -114,7 +116,7 @@ class InvoiceController extends AppBaseController
             $changes = $invoice->getChanges();
             if ($input['invoiceStatus'] == '1') {
                 if (count($changes) > 0 && $input['invoiceStatus'] == '1') {
-                    $this->invoiceRepository->updateNotification($invoice, $input, $changes);
+                    // $this->invoiceRepository->updateNotification($invoice, $input, $changes);
                 }
                 if ($input['invoiceStatus'] == '1' && $input['status'] == Invoice::DRAFT) {
                     $this->invoiceRepository->draftStatusUpdate($invoice);

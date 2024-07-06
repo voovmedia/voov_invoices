@@ -178,7 +178,9 @@ class ClientController extends AppBaseController
                 $clientData['password'] = $password;
                 $clientData['avatar_remove'] = 1;
                 $phoneNumber = $clientData['contact'];
-
+                $highestId = Client::max('uuid');
+                $clientData['uuid'] = ($highestId + 1) % 10000; // Ensure it is always 4 digits
+        
                 // Example of region extraction logic
                 $region = substr($phoneNumber, 0, 3);
                 $clientData['region_code'] = $region;
