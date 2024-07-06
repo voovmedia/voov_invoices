@@ -58,7 +58,7 @@ class ClientRepository extends BaseRepository
             $input['client_password'] = $input['password'];
             $input['password'] = Hash::make($input['password']);
 
-            if (isset($input['contact'])) {
+            if (isset($input['contact']) && !empty($input['contact'])) {
                 $checkUniqueness = checkContactUniqueness($input['contact'], $input['region_code']);
                 if ($checkUniqueness) {
                     throw new UnprocessableEntityHttpException('Contact number already exists for another Client.');
