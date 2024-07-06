@@ -147,10 +147,12 @@
                             @if (!empty($client->user->address))
                                 <br/><br/>{{ $client->user->address }}
                             @endif
+                            @if (isset($client->user->contact))
                             <br/>
                             <br/>
                             <a href="tel:+{{ $client->user->region_code }}{{ $client->user->contact }}">+{{ $client->user->region_code }} {{ $client->user->contact }}</a>
-                            <br/>
+                            @endif
+                                                    <br/>
                             <br/>
                             {{ $client->user->email }}
                           
@@ -195,7 +197,7 @@
                     <tbody>
                         <tr>
                             <td>{{$client->uuid}}</td>
-                            <td class="text-align-right">{{ \Carbon\Carbon::parse($invoice->recurring_cycle)->translatedFormat(currentDateFormat()) }}</td>
+                            <td class="text-align-right">{{ \Carbon\Carbon::parse($invoice->payout_cycle_start)->translatedFormat(currentDateFormat()) }} @if(isset($invoice->payout_cycle_end)) - {{ \Carbon\Carbon::parse($invoice->payout_cycle_end)->translatedFormat(currentDateFormat()) }}  @endif</td>
 
                         </tr>
                     </tbody>
