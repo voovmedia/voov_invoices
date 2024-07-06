@@ -101,9 +101,6 @@ class InvoiceController extends AppBaseController
         $data = $this->invoiceRepository->prepareEditFormData($invoice);
         $data['selectedInvoiceTaxes'] = $invoice->invoiceTaxes()->pluck('tax_id')->toArray();
         $data['currencies'] = getCurrencies();
-        // $data['invoice']['payout_cycle_start'] = date('m/d/Y', strtotime($data['invoice']['payout_cycle_start']));
-        // $data['invoice']['payout_cycle_end'] = date('m/d/Y', strtotime($data['invoice']['payout_cycle_end']));
-    
         return view('invoices.edit')->with($data);
     }
 
