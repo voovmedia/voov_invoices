@@ -1,7 +1,7 @@
 
 @extends('layouts.auth')
 @section('title')
-    {{ __('messages.login.login') }}
+Invoice  {{ __('messages.login.login') }}
 @endsection
 @section('content')
     <div class="d-flex flex-column flex-column-fluid align-items-center justify-content-center p-4">
