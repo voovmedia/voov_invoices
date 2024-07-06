@@ -28,7 +28,7 @@
     </div>
     <div class="mb-5 col-lg-3 col-sm-12">
         {{ Form::label('due_date', __('Due Date') . ':', ['class' => 'form-label required mb-3']) }}
-        {{ Form::text('due_date', null, ['class' => 'form-select', 'id' => 'editDueDate', 'autocomplete' => 'off', 'required']) }}
+        {{ Form::text('due_date', $invoice->due_date, ['class' => 'form-select', 'id' => 'editDueDate', 'autocomplete' => 'off', 'required']) }}
     </div>
     <div class="mb-5 col-lg-3 col-sm-12">
         {{ Form::label('payout_cycle', __('Payout cycle') . ':', ['class' => 'form-label required mb-3']) }}
@@ -252,6 +252,10 @@
         flatpickr("#payout_cycle", {
             mode: "range",
             dateFormat: "m/d/Y",
+            defaultDate: [
+                "{{ $invoice->payout_cycle_start }}", 
+                "{{ $invoice->payout_cycle_end }}"
+            ],
             minDate: "today", 
         });
     });

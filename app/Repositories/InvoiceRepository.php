@@ -282,7 +282,11 @@ class InvoiceRepository extends BaseRepository
             $input['tax_id'] = json_decode($input['tax_id']);
             $input['tax'] = json_decode($input['tax']);
             $input['recurring_status'] = isset($input['recurring_status']);
-
+            $payout_cycle = explode('to',$input['payout_cycle']);
+            $input['payout_cycle_start'] = $payout_cycle[0];
+            if(isset($payout_cycle[1])){
+                $input['payout_cycle_end'] = $payout_cycle[1];
+            }
             $inputInvoiceTaxes = isset($input['taxes']) ? $input['taxes'] : [];
             $invoiceItemInputArr = Arr::only($input, ['product_id', 'quantity', 'price', 'tax', 'tax_id', 'id']);
             $invoiceItemInput = $this->prepareInputForInvoiceItem($invoiceItemInputArr);
