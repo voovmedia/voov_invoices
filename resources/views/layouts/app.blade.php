@@ -51,6 +51,86 @@
     </script>
     @routes
     <script src="{{ mix('assets/js/pages.js') }}"></script>
+    <style> 
+       .defaultTemplate .left-side,
+        .right-side {
+            width: 40%;
+        }
+
+        .defaultTemplate .left-side {
+            float: left;
+        }
+
+        .defaultTemplate .right-side {
+            float: right;
+        }
+
+        .defaultTemplate  .header {
+            text-align: center;
+            margin-top: -56px;
+            background-color: transparent;
+            height: auto;
+            box-shadow: none
+        }
+
+        .defaultTemplate   .right-side .header {
+            margin-top: 131px;
+        }
+
+        .defaultTemplate   .header img {
+            max-width: 220px;
+            height: auto;
+        }
+
+        .defaultTemplate  .header h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            color:  <?php echo getInvoiceSettingTemplateColor()?>;
+            text-align: center;
+        }
+
+        .defaultTemplate  table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 50px 0 20px 0;
+        }
+
+        .defaultTemplate  th,
+        td {
+            text-align: left;
+            padding: 10px;
+        }
+
+        .defaultTemplate  th {
+            background-color: <?php echo getInvoiceSettingTemplateColor()?>;
+        }
+
+        .defaultTemplate .text-align-right {
+            text-align: right;
+        }
+
+        .defaultTemplate  .align-container {
+            display: table;
+            width: 100%;
+        }
+
+        .defaultTemplate    .align-left,
+        .align-right {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .defaultTemplate    .align-left {
+            text-align: left;
+        }
+
+        .defaultTemplate   .align-right {
+            text-align: right;
+            font-size: 1em;
+        }
+        
+    </style>
+
 </head>
 
 <body class="overflow-x-hidden">

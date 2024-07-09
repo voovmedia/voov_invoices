@@ -2,7 +2,7 @@
         <?php
         $styleCss = 'style';
         ?>
-        <div class="container-fluid">
+        <div class="container-fluid defaultTemplate">
             <div class="mb-8">
                 <img src="<?php echo getLogoUrl() ?>"class="img-logo" alt="logo">
             </div>

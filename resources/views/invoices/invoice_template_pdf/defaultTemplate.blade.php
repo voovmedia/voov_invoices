@@ -56,7 +56,7 @@
         .header h1 {
             font-size: 2.8rem;
             margin: 0;
-            color: #37bfec;
+            color:  <?php echo getInvoiceSettingTemplateColor()?>;;
             padding:0px;
             
             /* Padding for better visual appearance */
@@ -79,7 +79,7 @@
         }
 
         th {
-            background-color: #37bfec;
+            background-color:  <?php echo getInvoiceSettingTemplateColor()?>;;
             /* Background color for table headings */
         }
 
@@ -128,7 +128,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>{{$client->channel_name}}</td>
+                            <td>{{$client->billing_name}}</td>
                         </tr>
                     </tbody>
                 </table>

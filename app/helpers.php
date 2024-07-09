@@ -686,3 +686,16 @@ if (!function_exists('checkEmailUniqueness')) {
     }
 }
 
+
+if (! function_exists('getInvoiceSettingTemplateColor')) {
+    /**
+     * @return string
+     */
+    function getInvoiceSettingTemplateColor()
+    {
+        $setting = Setting::where('key', 'default_invoice_template')->first();
+        $invoiceSetting = InvoiceSetting::where('key', $setting->value)->first();
+
+        return $invoiceSetting->template_color ?? null;
+    }
+}

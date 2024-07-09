@@ -1,151 +1,135 @@
-    <script id="defaultTemplate" type="text/x-jsrender">
+
+<script id="defaultTemplate" type="text/x-jsrender">
         <?php
         $styleCss = 'style';
         ?>
-        <div class="container-fluid">
-            <div class="mb-8">
-                <img src="<?php echo getLogoUrl() ?>"class="img-logo" alt="logo">
+
+    <div class="container-fluid defaultTemplate">
+        <div class="left-side">
+            <div class="header">
+                <img src="<?php echo getLogoUrl() ?>" alt="Logo">
             </div>
-            <div>
-                <div class="overflow-auto w-100 mb-15">
-                    <table class="table table-bordered w-100" style="white-space: nowrap;">
-                        <thead>
-                            <tr>
-                                <th class="py-1 text-capitalize" style="width:33.33% !important;">
-                                    <strong><?php echo __('messages.common.from') ?></strong>
-                                </th>
-                                <th class="py-1 text-capitalize" style="width:33.33% !important;">
-                                    <strong><?php echo __('messages.common.to') ?></strong>
-                                </th>
-                                <th class="py-1 text-capitalize" style="width:33.33% !important;">
-                                    <strong><?php echo __('messages.common.invoice') ?></strong>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="py-1" style="">
-                                    <p class="p-text mb-1">{{:companyName}}</p>
-                                    <p class="p-text mb-1"><strong><?php echo __('messages.common.address')  ?>:</strong> <span>{{:companyAddress}}</span></p>
-                                    <p class="p-text mb-1"><strong><?php echo __('messages.user.phone')  ?>:</strong> <span>{{:companyPhone}}</span></p>
-                                </td>
-                                <td class="py-1" style=" overflow:hidden; word-wrap: break-word;word-break: break-all;">
-                                    <p class="p-text mb-3">&lt<?php echo __('messages.invoice.client_name')  ?>&gt</p>
-                                    <p class="p-text mb-3">&lt<?php echo __('messages.invoice.client_email')  ?>&gt</p>
-                                    <p class="p-text mb-3">&lt<?php echo __('messages.client_address')  ?>&gt</p>
-                                    <p class="p-text mb-3">&lt<?php echo getVatNoLabel() ?>&gt</p>
-                                </td>
-                                <td class="py-1">
-                                    <p class="text-nowrap font-color-gray"><b><?php echo __('messages.invoice.invoice_id') ?>:</b> #9CQ5X7</p>
-                                    <div class="mb-3">
-                                        <p class="p-text mb-0"><b><?php echo __('messages.invoice.invoice_date') ?>: </b>25/09/2020</p>
-                                    </div>
-                                    <div>
-                                        <p class="p-text mb-0"><b><?php echo __('messages.invoice.due_date') ?>: </b> 26/09/2020</p>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-responsive-sm">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th class="py-1" style="width:6%;"><strong>#</strong></th>
-                                <th class="py-1 text-uppercase" style="width:40%;"><strong><?php echo __('messages.item') ?></strong></th>
-                                <th class="py-1 text-uppercase text-center" style="width:12%;"><strong><?php echo __('messages.invoice.qty') ?></strong></th>
-                                <th class="py-1 text-uppercase text-center"  style="width:14%;"><strong><?php echo __('messages.product.unit_price') ?></strong></th>
-                                <th class="py-1 text-uppercase text-center"  style="width:14%;"><strong><?php echo __('messages.invoice.tax') . '(in %)' ?></strong></th>
-                                <th class="py-1 text-uppercase" style="width:14%;"><strong><?php echo __('messages.invoice.amount') ?></strong></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span>1</span></td>
-                                <td class="text-start"><p class="mb-0"><?php echo __('messages.item') ?> 1</p><?php echo __('messages.Description') ?></td>
-                                <td class="text-center"> 1</td>
-                                <td class="text-center"><?php echo getCurrencyAmount(100, true) ?></td>
-                                <td class="text-center">N/A</td>
-                                <td><?php echo getCurrencyAmount(100, true) ?></td>
-                            </tr>
-                            <tr>
-                                <td><span>2</span></td>
-                                <td class="text-start"><p class="mb-0"><?php echo __('messages.item') ?> 2</p><?php echo __('messages.Description') ?></td>
-                                <td class="text-center"> 1</td>
-                                <td class="text-center"><?php echo getCurrencyAmount(100, true) ?></td>
-                                <td class="text-center">N/A</td>
-                                <td><?php echo getCurrencyAmount(100, true) ?></td>
-                            </tr>
-                            <tr>
-                                <td><span>3</span></td>
-                                <td class="text-start"><p class="mb-0"><?php echo __('messages.item') ?> 3</p><?php echo __('messages.Description') ?></td>
-                                <td class="text-center"> 1</td>
-                                <td class="text-center"><?php echo getCurrencyAmount(100, true) ?></td>
-                                <td class="text-center">N/A</td>
-                                <td><?php echo getCurrencyAmount(100, true) ?></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <table class="mb-6 mt-10 w-100">
-                    <tr>
-                        <td class="w-75">
-                            <div>
-                                <small  style="font-size: 15px; margin-bottom: 3px"><b><?php echo __('messages.payment_qr_codes.payment_qr_code') ?></b></small><br>
-                                <img class="mt-2" src="<?php echo asset('images/qrcode.png') ?>" height="110" width="110">
-                            </div>
-                        </td>
-                        <td class="w-25 text-end">
-                            <table>
-                                <tbody class="text-end">
-                                    <tr>
-                                        <td>
-                                            <strong><?php echo __('messages.invoice.amount') ?>:</strong>
-                                        </td>
-                                        <td>
-                                            <?php echo getCurrencyAmount(300, true) ?>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <strong><?php echo __('messages.invoice.discount') ?>:</strong>
-                                        </td>
-                                        <td>
-                                            <?php echo getCurrencyAmount(50, true) ?>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <strong ><?php echo __('messages.invoice.tax') ?>:</strong>
-                                        </td>
-                                        <td>0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong ><?php echo __('messages.invoice.total') ?>:</strong></td>
-                                        <td class="text-nowrap">
-                                            <?php echo getCurrencyAmount(250, true) ?>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Supplier:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ABC Supplies Ltd.</td>
+                        </tr>
+                    </tbody>
                 </table>
-                <div class="alert alert-light text-muted mb-10">
-                    <h4 class="d-fancy-title mb5"><?php echo __('messages.client.notes') ?>:</h1>
-                    <p class="font-color-gray">
-                        Paypal , Stripe & manual payment method accept.<br>
-                        Net 10 – Payment due in 10 days from invoice date.<br>
-                        Net 30 – Payment due in 30 days from invoice date.
-                    </p>
-                </div>
-                <div class="text-muted">
-                    <h4 class="d-fancy-title mb5"><?php echo __('messages.invoice.terms') ?>:</h1>
-                    <p class="font-color-gray">Invoice payment <?php echo __('messages.invoice.total') ?> ; 1% 10 Net 30, 1% discount if payment received within 10 days otherwise payment 30 days after invoice date.</p>
-                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Customer:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                John Doe<br/><br/>1234 Elm Street<br/><br/>
+                                <a href="tel:+1234567890">+123 456 7890</a><br/><br/>
+                                john.doe@example.com
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
+        <div class="right-side">
+            <div class="header">
+                <h1>Billing Invoice</h1>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>INVOICE NO.</th>
+                            <th class="text-align-right">DATE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#123456</td>
+                            <td class="text-align-right">July 9, 2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Supplier ID</th>
+                            <th class="text-align-right">PAYOUT CYCLE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SUP12345</td>
+                            <td class="text-align-right">July 1, 2024 - July 31, 2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>DESCRIPTION</th>
+                        <th class="text-align-right">Generated Revenue</th>
+                        <th class="text-align-right">Percentage</th>
+                        <th class="text-align-right">AMOUNT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product A</td>
+                        <td class="text-align-right">$1,000.00</td>
+                        <td class="text-align-right">10%</td>
+                        <td class="text-align-right">$100.00</td>
+                    </tr>
+                    <tr>
+                        <td>Product B</td>
+                        <td class="text-align-right">$500.00</td>
+                        <td class="text-align-right">15%</td>
+                        <td class="text-align-right">$75.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="align-container">
+                                <div class="align-left">
+                                    <h6 style="margin: 0;">Thank you for your business</h6>
+                                </div>
+                                <div class="align-right">
+                                    Total USD
+                                </div>
+                            </div>
+                        </th>
+                        <th class="text-align-right" style="width: 45%; background-color: #81d7f3;">$175.00</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div style="margin: 0 auto; width: 50%; text-align: center; line-height: 1.7; margin-top: 2rem;">
+            <p>If you have any questions about this invoice please contact <b>ABC Company</b>, <a href="tel:+1234567890">+123 456 7890</a>, <b>billing@abccompany.com</b></p>
+        </div>
+    </div>
+
     </script>
 
     <script id="newYorkTemplate" type="text/x-jsrender">
