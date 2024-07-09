@@ -17,6 +17,7 @@ class ClientTable extends LivewireTableComponent
     public $buttonComponent = 'clients.components.add-button';
 
     public $selectedClients = [];
+    protected $listeners = ['refreshDatatable', 'resetPageTable'];
 
     public function configure(): void
     {
@@ -83,9 +84,19 @@ class ClientTable extends LivewireTableComponent
         return $query;
     }
 
+    // public function resetPageTable()
+    // {
+    //     $this->customResetPage('clientsPage');
+    // }
+    public function refreshDatatable()
+    {
+        $this->emitSelf('$refresh');
+    }
+
     public function resetPageTable()
     {
-        $this->customResetPage('clientsPage');
+        $this->resetPage();
+        $this->emitSelf('$refresh');
     }
 
     public function deleteSelected()

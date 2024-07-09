@@ -64,6 +64,10 @@ class ClientRepository extends BaseRepository
                     throw new UnprocessableEntityHttpException('Contact number already exists for another Client.');
                 }
             }
+            $checkUniquenessEmail = checkEmailUniqueness($input['email']);
+            if ($checkUniquenessEmail) {
+                throw new UnprocessableEntityHttpException('Email already exists for another Client.');
+            }
             if (!isset($input['last_name'])) {
                 $input['last_name'] = null; // or set a default value if desired
             }
@@ -74,7 +78,7 @@ class ClientRepository extends BaseRepository
             $input['user_id'] = $user->id;
             $client = Client::create($input);
 
-            if (isset($input['profile']) && ! empty($input['profile'])) {
+            if (isset($input['profile']) && !empty($input['profile'])) {
                 $user->addMedia($input['profile'])->toMediaCollection(User::PROFILE, config('app.media_disc'));
             }
             if ($input['avatar_remove'] == 1 && isset($input['avatar_remove']) && empty($input['profile'])) {
@@ -98,7 +102,7 @@ class ClientRepository extends BaseRepository
         try {
             DB::beginTransaction();
             $user = $client->user;
-            if (isset($input['password']) && ! empty($input['password'])) {
+            if (isset($input['password']) && !empty($input['password'])) {
                 $input['password'] = Hash::make($input['password']);
             } else {
                 $input['password'] = $client->user->password;
@@ -106,7 +110,7 @@ class ClientRepository extends BaseRepository
             $user->update($input);
             $client->update($input);
 
-            if (isset($input['profile']) && ! empty($input['profile'])) {
+            if (isset($input['profile']) && !empty($input['profile'])) {
                 $user->clearMediaCollection(User::PROFILE);
                 $user->media()->delete();
                 $user->addMedia($input['profile'])->toMediaCollection(User::PROFILE, config('app.media_disc'));

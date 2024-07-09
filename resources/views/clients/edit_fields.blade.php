@@ -5,12 +5,12 @@
             {{ Form::text('first_name', $client->user->first_name ?? null, ['class' => 'form-control form-control-solid', 'placeholder' => __('messages.client.first_name'), 'required']) }}
         </div>
     </div>
-   <div class="col-lg-6">
-    <div class="mb-5">
-        {{ Form::label('last_name', __('UID') . ':', ['class' => 'form-label required mb-3']) }}
-        {{ Form::text('uuid', $uuid, ['class' => 'form-control', 'placeholder' => __('UID'), 'required', 'disabled']) }}
+    <div class="col-lg-6">
+        <div class="mb-5">
+            {{ Form::label('last_name', __('UID') . ':', ['class' => 'form-label required mb-3']) }}
+            {{ Form::text('uuid', $uuid, ['class' => 'form-control', 'placeholder' => __('UID'), 'required', 'disabled']) }}
+        </div>
     </div>
-</div>
 
     <div class="col-lg-6">
         <div class="mb-5">
@@ -18,49 +18,44 @@
             {{ Form::email('email', $client->user->email ?? null, ['class' => 'form-control form-control-solid', 'placeholder' => __('messages.client.email'), 'required']) }}
         </div>
     </div>
-           <div class="col-lg-6">
-            <div class="mb-5">
-                {{ Form::label('contact', __('messages.client.contact_no') . ':', ['class' => 'form-label mb-3']) }}
-                {{ Form::tel('contact', getSettingValue('country_code'), ['class' => 'form-control', 'onkeyup' => 'if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,"")', 'id' => 'phoneNumber']) }}
-                {{ Form::hidden('region_code', null, ['id' => 'prefix_code']) }}
-                <span id="valid-msg" class="hide text-success fw-400 fs-small mt-2">✓
-                    {{ __('messages.placeholder.valid_number') }}</span>
-                <span id="error-msg" class="hide text-danger fw-400 fs-small mt-2"></span>
-            </div>
+    <div class="col-lg-6">
+        <div class="mb-5">
+            {{ Form::label('contact', __('messages.client.contact_no') . ':', ['class' => 'form-label mb-3']) }}
+            {{ Form::tel('contact', getSettingValue('country_code'), ['class' => 'form-control', 'onkeyup' => 'if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,"")', 'id' => 'phoneNumber']) }}
+            {{ Form::hidden('region_code', null, ['id' => 'prefix_code']) }}
+            <span id="valid-msg" class="hide text-success fw-400 fs-small mt-2">✓
+                {{ __('messages.placeholder.valid_number') }}</span>
+            <span id="error-msg" class="hide text-danger fw-400 fs-small mt-2"></span>
         </div>
-     <div class="col-md-6 mb-5">
-    <div class="fv-row">
-        <div class="">
-            {{ Form::label('password', __('messages.client.password') . ':', ['class' => 'form-label mb-3']) }}
-            <span class="text-danger">*</span>
-            <div class="position-relative">
-                <input class="form-control" type="password" placeholder="{{ __('messages.client.password') }}"
-                    name="password" autocomplete="off" aria-label="password" data-toggle="password" value="123456" required>
-                <span
-                    class="position-absolute d-flex align-items-center top-0 bottom-0 end-0 me-4 input-icon input-password-hide cursor-pointer text-gray-600">
-                    <i class="bi bi-eye-slash-fill"></i>
-                </span>
+    </div>
+    <div class="col-md-6 mb-5">
+        <div class="fv-row">
+            <div class="">
+                {{ Form::label('password', __('messages.client.password') . ':', ['class' => 'form-label mb-3']) }}
+                <span class="text-danger">*</span>
+                <div class="position-relative">
+                    <input class="form-control" type="password" placeholder="{{ __('messages.client.password') }}" name="password" autocomplete="off" aria-label="password" data-toggle="password" value="123456" required>
+                    <span class="position-absolute d-flex align-items-center top-0 bottom-0 end-0 me-4 input-icon input-password-hide cursor-pointer text-gray-600">
+                        <i class="bi bi-eye-slash-fill"></i>
+                    </span>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="col-md-6 mb-5">
-    <div class="fv-row">
-        <div class="">
-            {{ Form::label('confirmPassword', __('messages.client.confirm_password') . ':', ['class' => 'form-label mb-3']) }}
-            <span class="text-danger">*</span>
-            <div class="position-relative">
-                <input class="form-control" type="password"
-                    placeholder="{{ __('messages.client.confirm_password') }}" name="password_confirmation"
-                    autocomplete="off" aria-label="Password" data-toggle="password" value="123456" required>
-                <span
-                    class="position-absolute d-flex align-items-center top-0 bottom-0 end-0 me-4 input-icon input-password-hide cursor-pointer text-gray-600">
-                    <i class="bi bi-eye-slash-fill"></i>
-                </span>
+    <div class="col-md-6 mb-5">
+        <div class="fv-row">
+            <div class="">
+                {{ Form::label('confirmPassword', __('messages.client.confirm_password') . ':', ['class' => 'form-label mb-3']) }}
+                <span class="text-danger">*</span>
+                <div class="position-relative">
+                    <input class="form-control" type="password" placeholder="{{ __('messages.client.confirm_password') }}" name="password_confirmation" autocomplete="off" aria-label="Password" data-toggle="password" value="123456" required>
+                    <span class="position-absolute d-flex align-items-center top-0 bottom-0 end-0 me-4 input-icon input-password-hide cursor-pointer text-gray-600">
+                        <i class="bi bi-eye-slash-fill"></i>
+                    </span>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     <div class="col-lg-6">
         <div class="mb-5">
@@ -68,15 +63,24 @@
             {{ Form::text('channel_name', $client->channel_name ?? null, ['class' => 'form-control form-control-solid', 'placeholder' => __('Facebook/Youtube')]) }}
         </div>
     </div>
-  <div class="col-lg-6">
-    <div class="mb-5">
-        {{ Form::label('postal_code', __('messages.client.postal_code') . ':', ['class' => 'form-label mb-3']) }}
-        {{ Form::text('postal_code', $client->postal_code ?? null, ['class' => 'form-control form-control-solid', 'placeholder' => __('messages.client.postal_code')]) }}
+    <div class="col-lg-6">
+        <div class="mb-5">
+            {{ Form::label('postal_code', __('messages.client.postal_code') . ':', ['class' => 'form-label mb-3']) }}
+            {{ Form::text('postal_code', $client->postal_code ?? null, ['class' => 'form-control form-control-solid', 'placeholder' => __('messages.client.postal_code')]) }}
+        </div>
     </div>
-</div>
+    <div class="col-lg-6">
+        <div class="mb-5">
+            {{ Form::label('Percentage', __('Add Percentage') . ':', ['class' => 'form-label required  mb-3']) }}
+            {{ Form::number('percentage',  $client->percentage ?? null, ['class' => 'form-control', 'placeholder' => __('Percentage')]) }}
+        </div>
+    </div>
 
-   
-    
+    <div class="col-lg-6 mb-7">
+            {{ Form::label('billing_name', __('Billing Name') . ':', ['class' => 'form-label mb-3']) }}
+            {{ Form::text('billing_name', $client->billing_name ?? null, ['class' => 'form-control', 'placeholder' => __('Billing Name')]) }}
+        </div>
+
     <div class="col-lg-6">
         <div class="mb-5">
             {{ Form::label('address', __('messages.client.address') . ':', ['class' => 'form-label mb-3']) }}
@@ -89,25 +93,19 @@
             {{ Form::textarea('note', $client->note ?? null, ['class' => 'form-control form-control-solid', 'rows' => '5', 'placeholder' => __('messages.client.notes'), 'rows' => '5']) }}
         </div>
     </div>
-    <div class="col-lg-6 mb-7">
-        {{ Form::label('company_name', __('messages.setting.company_name') . ':', ['class' => 'form-label mb-3']) }}
-        {{ Form::text('company_name', $client->company_name ?? null, ['class' => 'form-control', 'placeholder' => __('messages.setting.company_name')]) }}
-    </div>
+
     <div class="col-xl-3 col-lg-2 mb-7">
         <div class="mb-3" io-image-input="true">
             <label for="exampleInputImage" class="form-label">{{ __('messages.client.profile') . ':' }}</label>
             <div class="d-block">
                 <div class="image-picker">
-                    <div class="image previewImage" id="previewImage"
-                        {{ $styleCss }}="background-image: url({{ !empty($client->user->profile_image) ? $client->user->profile_image : asset('web/media/avatars/150-26.jpg') }}
+                    <div class="image previewImage" id="previewImage" {{ $styleCss }}="background-image: url({{ !empty($client->user->profile_image) ? $client->user->profile_image : asset('web/media/avatars/150-26.jpg') }}
                     )">
                     </div>
-                    <span class="picker-edit rounded-circle text-gray-500 fs-small" data-bs-toggle="tooltip"
-                        title="Change Profile">
+                    <span class="picker-edit rounded-circle text-gray-500 fs-small" data-bs-toggle="tooltip" title="Change Profile">
                         <label>
                             <i class="fa-solid fa-pen" id="previewImage"></i>
-                            <input type="file" id="profile_image" name="profile" class="image-upload d-none"
-                                accept="image/*" />
+                            <input type="file" id="profile_image" name="profile" class="image-upload d-none" accept="image/*" />
                             <input type="hidden" name="avatar_remove">
                         </label>
                     </span>
@@ -122,6 +120,5 @@
     </div>
     <div class="d-flex justify-content-end mt-5">
         {{ Form::submit(__('messages.common.save'), ['class' => 'btn btn-primary me-3']) }}
-        <a href="{{ route('clients.index') }}" type="reset"
-            class="btn btn-secondary btn-active-light-primary">{{ __('messages.common.cancel') }}</a>
+        <a href="{{ route('clients.index') }}" type="reset" class="btn btn-secondary btn-active-light-primary">{{ __('messages.common.cancel') }}</a>
     </div>

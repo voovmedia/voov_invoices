@@ -77,9 +77,13 @@
         </div>
          <div class="col-lg-6">
             <div class="mb-5">
-                {{ Form::label('Percentage', __('Add percentage') . ':', ['class' => 'form-label  mb-3']) }}
+                {{ Form::label('Percentage', __('Add Percentage') . ':', ['class' => 'form-label required  mb-3']) }}
                 {{ Form::number('percentage', null, ['class' => 'form-control', 'placeholder' => __('Percentage')]) }}
             </div>
+        </div>
+        <div class="col-lg-6 mb-7">
+            {{ Form::label('billing_name', __('Billing Name') . ':', ['class' => 'form-label mb-3']) }}
+            {{ Form::text('billing_name', null, ['class' => 'form-control', 'placeholder' => __('Billing Name')]) }}
         </div>
         
         <div class="col-lg-6">
@@ -94,10 +98,7 @@
                 {{ Form::textarea('note', null, ['class' => 'form-control', 'placeholder' => __('messages.client.notes'), 'rows' => '5']) }}
             </div>
         </div>
-        <div class="col-lg-6 mb-7">
-            {{ Form::label('company_name', __('messages.setting.company_name') . ':', ['class' => 'form-label mb-3']) }}
-            {{ Form::text('company_name', null, ['class' => 'form-control', 'placeholder' => __('messages.setting.company_name')]) }}
-        </div>
+       
         <div class="col-xl-3 col-lg-2 mb-7">
             <div class="mb-3" io-image-input="true">
                 <label for="exampleInputImage" class="form-label">{{ __('messages.client.profile') . ':' }}</label>

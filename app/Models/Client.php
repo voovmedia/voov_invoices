@@ -65,7 +65,8 @@ class Client extends Model
         'note',
         'is_password_set',
         'vat_no',
-        'company_name',
+        'billing_name',
+        'percentage'
     ];
 
     protected $casts = [
@@ -79,7 +80,7 @@ class Client extends Model
         'user_id' => 'integer',
         'is_password_set' => 'boolean',
         'vat_no' => 'string',
-        'company_name' => 'string',
+        'billing_name' => 'string',
     ];
 
     /**
@@ -89,9 +90,9 @@ class Client extends Model
      */
     public static $rules = [
         'first_name' => 'required',
-        
         'email' => 'required|email:filter|unique:users,email',
         'password' => 'required|same:password_confirmation|min:6',
+        'percentage' => 'required',
         'address' => 'nullable|string',
         'channel_name' => 'nullable',
     ];

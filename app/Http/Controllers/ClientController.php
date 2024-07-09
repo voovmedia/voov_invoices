@@ -160,6 +160,7 @@ class ClientController extends AppBaseController
         ]);
 
         $file = $request->file('csv_file');
+        $errors = [];
         try {
             // Open and read the CSV file
             $csvData = array_map('str_getcsv', file($file->getRealPath()));
@@ -172,14 +173,22 @@ class ClientController extends AppBaseController
             // Process the CSV data
             foreach ($csvData as $index => $row) {
                 $clientData = array_combine($header, $row);
+                // Validate required fields
+                $requiredFields = ['first_name', 'uuid', 'email', 'percentage'];
+                foreach ($requiredFields as $field) {
+                    if (empty($clientData[$field])) {
+                        $errors[] = 'Error: The field ' . $field . ' is required on row ' . ($index + 1);
+                        continue 2; // Skip to the next row in the CSV
+                    }
+                }
 
                 // Set a default password (you may want to generate a unique one or get from user input)
                 $password = '123456';
                 $clientData['password'] = $password;
                 $clientData['avatar_remove'] = 1;
                 $phoneNumber = $clientData['contact'];
-                $highestId = Client::max('uuid');
-                $clientData['uuid'] = ($highestId + 1) % 10000; // Ensure it is always 4 digits
+                // $highestId = Client::max('uuid');
+                // $clientData['uuid'] = ($highestId + 1) % 10000; // Ensure it is always 4 digits
         
                 // Example of region extraction logic
                 $region = substr($phoneNumber, 0, 3);
@@ -188,10 +197,14 @@ class ClientController extends AppBaseController
                 try {
                     $this->clientRepository->store($clientData);
                 } catch (Exception $exception) {
-                    Flash::error(__('Error creating client from CSV on row ' . ($index + 1) . ': ' . $exception->getMessage()));
+                    $errors[]=__('Error creating client from CSV on row ' . ($index + 1) . ': ' . $exception->getMessage());
                     continue;
                 }
             }
+            if (!empty($errors)) {
+                return back()->withErrors($errors);
+            }
+    
             Flash::success(__('messages.flash.client_created_successfully'));
             return redirect()->route('clients.create')->withInput();
         } catch (Exception $exception) {

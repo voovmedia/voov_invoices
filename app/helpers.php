@@ -675,3 +675,14 @@ function checkLanguageSession()
         return Session::get('languageName') ;
     }
 }
+if (!function_exists('checkEmailUniqueness')) {
+    function checkEmailUniqueness($email, $exceptId = null): bool
+    {
+        $recordExists = User::where('email', $email);
+        if ($exceptId) {
+            $recordExists = $recordExists->where('id', '!=', $exceptId);
+        }
+        return $recordExists->exists();
+    }
+}
+
