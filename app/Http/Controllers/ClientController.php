@@ -251,4 +251,7 @@ class ClientController extends AppBaseController
 
         return $this->sendSuccess(__('messages.flash.client_deleted_successfully'));
     }
+    public function getClientPercentage($clientId) {
+        return getClientPercentage($clientId);
+    }
 }

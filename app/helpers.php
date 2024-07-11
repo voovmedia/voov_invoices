@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\City;
+use App\Models\Client;
 use App\Models\Currency;
 use App\Models\Invoice;
 use App\Models\InvoiceSetting;
@@ -697,5 +698,15 @@ if (! function_exists('getInvoiceSettingTemplateColor')) {
         $invoiceSetting = InvoiceSetting::where('key', $setting->value)->first();
 
         return $invoiceSetting->template_color ?? null;
+    }
+}
+if (! function_exists('getClientPercentage')) {
+    /**
+     * @return string
+     */
+    function getClientPercentage($clientId)
+    {
+        $client = Client::where('user_id',$clientId)->first();
+        return $client->percentage ?? null;
     }
 }

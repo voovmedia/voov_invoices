@@ -37,11 +37,11 @@
         {{ Form::text('invoice_date', null, ['class' => 'form-select', 'id' => 'invoice_date', 'autocomplete' => 'off', 'required']) }}
     </div>
     <div class="mb-5 col-lg-4 col-sm-12">
-        {{ Form::label('due_date', __('Due Date') . ':', ['class' => 'form-label required mb-3']) }}    
+        {{ Form::label('due_date', __('Due Date') . ':', ['class' => 'form-label required mb-3']) }}
         {{ Form::text('due_date', null, ['class' => 'form-select', 'id' => 'due_date', 'autocomplete' => 'off', 'required']) }}
     </div>
     <div class="mb-5 col-lg-4 col-sm-12">
-        {{ Form::label('payout_cycle', __('Payout cycle') . ':', ['class' => 'form-label required mb-3']) }}    
+        {{ Form::label('payout_cycle', __('Payout cycle') . ':', ['class' => 'form-label required mb-3']) }}
         {!! Form::text('payout_cycle', null, ['class' => 'form-select', 'id' => 'payout_cycle', 'autocomplete' => 'off', 'required']) !!}
     </div>
     <div class="col-lg-4 col-sm-12">
@@ -118,11 +118,13 @@
                             {{ Form::number('price[]', 0, ['class' => 'form-control price-input price ', 'oninput' => "validity.valid||(value=value.replace(/[e\+\-]/gi,''))", 'min' => '0', 'value' => '0', 'step' => '.01', 'pattern' => "^\d*(\.\d{0,2})?$", 'required', 'onKeyPress' => 'if(this.value.length==8) return false;']) }}
                         </td>
                         <td>
-                            <select name="tax[]" class='form-select io-select2 fw-bold tax' data-control='select2' multiple="multiple">
+                        {{ Form::number('percentage', 0, ['class' => 'form-control ', 'id' => 'percentage', 'readonly'=>true, 'oninput' => "validity.valid||(value=value.replace(/[e\+\-]/gi,''))", 'min' => '0', 'value' => '0', 'step' => '.01', 'pattern' => "^\d*(\.\d{0,2})?$", 'required', 'onKeyPress' => 'if(this.value.length==8) return false;']) }}
+
+                            <!-- <select name="tax[]" class='form-select io-select2 fw-bold tax' data-control='select2' multiple="multiple">
                                 @foreach ($taxes as $tax)
                                 <option value="{{ $tax->value }}" data-id="{{ $tax->id }}" {{ $defaultTax == $tax->id ? 'selected' : '' }}>{{ $tax->name }}</option>
                                 @endforeach
-                            </select>
+                            </select> -->
                         </td>
                         <td class="text-end item-total pt-8 text-nowrap">
                             @if (!getSettingValue('currency_after_amount'))
@@ -242,7 +244,21 @@
             mode: "range",
             dateFormat: "m/d/Y",
             defaultDate: ["today"], // Selects today's date by default
-            minDate: "today", 
+            minDate: "today",
         });
+        $("#client_id").change((e) => {
+            const clientId  =$('#client_id').val();
+            if(clientId){
+                $.ajax({
+                url: "/admin/get-client-percentage/"+clientId,
+                type: 'GET',
+                dataType: 'text', // added data type
+                success: function(res) {
+                    $("#percentage").val(res);
+                }
+            });
+            }
+         
+        })
     });
 </script>

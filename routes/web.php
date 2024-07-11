@@ -235,6 +235,9 @@ Route::prefix('admin')->middleware(['auth', 'xss', 'role:admin'])->group(functio
 
     // currency reports for invoices route
     Route::get('currency-reports', [DashboardController::class, 'currencyReports'])->name('currency.reports');
+
+    Route::get('get-client-percentage/{clientId}', [ClientController::class, 'getClientPercentage'])->name('client.percentage');
+
 });
 
 Route::prefix('client')->middleware(['auth', 'xss', 'role:client'])->group(function () {
