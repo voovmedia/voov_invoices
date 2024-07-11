@@ -11,7 +11,7 @@ Invoice  {{ __('messages.login.login') }}
         </div>    
     <div class="col-12 text-center mb-0"> <!-- Adjusted margin-bottom to 0 -->
             <a href="{{ url('/') }}" class="login-logo image  mb-sm-2 image-medium">
-                <img alt="Logo" src="/assets/images/logo.png" style="height: fit-content" class="img-fluid object-contain">
+                <img alt="Logo" src="{{getLogoUrl()}}" style="height: fit-content" class="img-fluid object-contain">
             </a>
         </div>
    
