@@ -204,7 +204,7 @@ class InvoiceRepository extends BaseRepository
             /** @var Invoice $invoice */
             $input['client_id'] = Client::whereUserId($input['client_id'])->first()->id;
             $input = Arr::only($input, [
-                'client_id', 'invoice_id', 'invoice_date', 'due_date', 'payout_cycle_start', 'payout_cycle_end', 'discount_type', 'discount', 'amount', 'final_amount',
+                'client_id', 'invoice_id', 'invoice_date', 'due_date', 'payout_cycle_start', 'payout_cycle_end', 'discount_type', 'discount', 'amount', 'final_amount','percentage',
                 'note', 'term', 'template_id', 'payment_qr_code_id', 'status', 'tax_id', 'tax', 'currency_id', 'recurring_status', 'recurring_cycle',
             ]);
             $invoice = Invoice::create($input);
@@ -320,7 +320,7 @@ class InvoiceRepository extends BaseRepository
             $invoice = $this->update(Arr::only(
                 $input,
                 [
-                    'client_id', 'invoice_date', 'due_date', 'payout_cycle_start', 'payout_cycle_end', 'amount', 'final_amount', 'note',
+                    'client_id', 'invoice_date', 'due_date', 'payout_cycle_start', 'payout_cycle_end', 'amount', 'final_amount','percentage', 'note',
                     'term', 'template_id', 'payment_qr_code_id', 'status', 'tax_id', 'tax', 'currency_id', 'recurring_status', 'recurring_cycle',
                 ]
             ), $invoiceId);

@@ -101,7 +101,7 @@
                         {{ Form::number('price[]', $invoiceItem->price, ['class' => 'form-control price-input price ', 'oninput' => "validity.valid||(value=value.replace(/[e\+\-]/gi,''))", 'min' => '0', 'step' => '.01', 'required', 'onKeyPress' => 'if(this.value.length==8) return false;']) }}
                     </td>
                     <td>
-                        <select name="tax[]" class='form-select  fw-bold tax io-select2' data-control='select2' multiple="multiple">
+                        <!-- <select name="tax[]" class='form-select  fw-bold tax io-select2' data-control='select2' multiple="multiple">
                             @foreach ($taxes as $tax)
                             @if (empty($selectedTaxes))
                             <option value="{{ $tax->value }}" data-id="{{ $tax->id }}">
@@ -117,7 +117,9 @@
                             </option>
                             @endif
                             @endforeach
-                        </select>
+                        </select> -->
+                        {{ Form::number('percentage', $invoice->percentage ?? 0, ['class' => 'form-control ', 'id' => 'percentage', 'readonly'=>true, 'oninput' => "validity.valid||(value=value.replace(/[e\+\-]/gi,''))", 'min' => '0', 'value' => '0', 'step' => '.01', 'pattern' => "^\d*(\.\d{0,2})?$", 'required', 'onKeyPress' => 'if(this.value.length==8) return false;']) }}
+
                     </td>
                     <td class="text-end item-total pt-8 text-nowrap">
                         {{ number_format($invoiceItem->total, 2) }}

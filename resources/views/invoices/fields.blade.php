@@ -246,19 +246,5 @@
             defaultDate: ["today"], // Selects today's date by default
             minDate: "today",
         });
-        $("#client_id").change((e) => {
-            const clientId  =$('#client_id').val();
-            if(clientId){
-                $.ajax({
-                url: "/admin/get-client-percentage/"+clientId,
-                type: 'GET',
-                dataType: 'text', // added data type
-                success: function(res) {
-                    $("#percentage").val(res);
-                }
-            });
-            }
-         
-        })
     });
 </script>

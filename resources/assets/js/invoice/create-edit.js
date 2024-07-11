@@ -360,82 +360,30 @@ const calculateAmountWithoutTax = (qty, rate) => {
 };
 
 const calculateFinalAmount = () => {
-    let taxData = [];
 
     let amount = 0;
-    let itemWiseTaxes = 0;
     $(".invoice-item-container>tr").each(function () {
         let itemTotal = $(this).find(".item-total").text();
         itemTotal = removeCommas(itemTotal);
         itemTotal = isEmpty($.trim(itemTotal)) ? 0 : parseFloat(itemTotal);
         amount += itemTotal;
-
-        $(this)
-            .find(".tax")
-            .each(function (i, element) {
-                let collection = element.selectedOptions;
-
-                let itemWiseTax = 0;
-                for (let i = 0; i < collection.length; i++) {
-                    let tax = collection[i].value;
-                    if (tax > 0) {
-                        itemWiseTax += parseFloat(tax);
-                    }
-                }
-
-                itemWiseTaxes += parseFloat((itemWiseTax * itemTotal) / 100);
-
-                taxData.push(itemWiseTaxes);
-            });
     });
 
     let totalAmount = amount;
-    $("#total").text(number_format(totalAmount));
     $("#finalAmount").text(number_format(totalAmount));
 
     //set hidden amount input value
     $("#total_amount").val(totalAmount.toFixed(2));
 
     // total amount with products taxes
-    let finalTotalAmt = parseFloat(totalAmount) + parseFloat(itemWiseTaxes);
+    let finalTotalAmt = parseFloat(totalAmount)
+    // Get the percentage value from the input with id 'percentage'
+    let percentage = $("#percentage").val();
 
-    $("#totalTax").empty();
-    $("#totalTax").text(number_format(itemWiseTaxes));
-
-    // add invoice taxes
-    let totalInvoiceTax = 0;
-    $("option:selected", ".invoice-taxes").each(function (index, val) {
-        totalInvoiceTax += parseFloat(val.getAttribute("data-tax"));
-    });
-
-    if (totalInvoiceTax > 0) {
-        let amountWithTaxes =
-            (finalTotalAmt * parseFloat(totalInvoiceTax)) / 100;
-        let finalTotalTaxes =
-            parseFloat(itemWiseTaxes) + parseFloat(amountWithTaxes);
-        $("#totalTax").text(number_format(finalTotalTaxes));
-        finalTotalAmt = finalTotalAmt + parseFloat(amountWithTaxes);
+    // If percentage is not empty, calculate the final amount as a percentage of the total amount
+    if (!isEmpty(percentage)) {
+        finalTotalAmt = (totalAmount * parseFloat(percentage)) / 100;
     }
-
-    // add discount amount
-    let discount = $("#discount").val();
-    discountType = $("#discountType").val();
-
-    if (isEmpty(discount) || isEmpty(totalAmount)) {
-        discount = 0;
-    }
-
-    let discountAmount = 0;
-    if (discountType == 1) {
-        discountAmount = discount;
-        finalTotalAmt = finalTotalAmt - discountAmount;
-    } else if (discountType == 2) {
-        discountAmount = (finalTotalAmt * discount) / 100;
-        finalTotalAmt = finalTotalAmt - discountAmount;
-    }
-
-    $("#discountAmount").text(number_format(discountAmount));
-
     // final amount calculation
     $("#finalAmount").text(number_format(finalTotalAmt));
     $("#finalTotalAmt").val(finalTotalAmt.toFixed(2));
@@ -662,4 +610,18 @@ listenClick("#editSaveAndSend,#editSave", function (event) {
             },
         });
     }
+});
+listenChange("#client_id", function () {
+    const clientId = $(this).val();
+    if (clientId) {
+        $.ajax({
+            url: "/admin/get-client-percentage/" + clientId,
+            type: 'GET',
+            dataType: 'text', // added data type
+            success: function (res) {
+                $("#percentage").val(res);
+            }
+        });
+    }
+    calculateFinalAmount();
 });

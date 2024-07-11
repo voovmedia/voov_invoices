@@ -176,6 +176,7 @@ class Invoice extends Model
         'discount_type',
         'discount',
         'final_amount',
+        'percentage',
         'note',
         'term',
         'template_id',
@@ -205,7 +206,7 @@ class Invoice extends Model
         'recurring_status' => 'integer',
         'recurring_cycle' => 'integer',
         'last_recurring_on' => 'date',
-        'tax' => 'double',
+        'tax' => 'double'
     ];
 
     public function getStatusLabelAttribute(): string
