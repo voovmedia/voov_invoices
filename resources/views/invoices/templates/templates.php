@@ -16,12 +16,7 @@
         <input class="form-control price-input price " required="" name="price[]" type="number" oninput="validity.valid||(value=value.replace(/[e\+\-]/gi,''))" min='0' step='.01' onKeyPress="if(this.value.length==8) return false;">
     </td>
     <td class="">
-        <select data-link="defaultTax" class="form-select taxId tax  fw-bold" name="tax[]" placeholder="Select Percentage" multiple="multiple">
-        
-            {{for taxes}}
-               <option value="{{:value}}" data-id="{{:id}}" {{:is_default ? 'selected' : '' }}>{{:name}}</option>
-            {{/for}}
-        </select>
+        <input type="number" name="percentage" class="form-control percentage" id="percentage" readonly oninput="validity.valid||(value=value.replace(/[e\+\-]/gi,''))" min="0" value="0" step=".01" pattern="^\d*(\.\d{0,2})?$" required onkeypress="if(this.value.length==8) return false;">
     </td>
     <td class="tbAmount text-right item-total pt-8 text-nowrap">
 

@@ -118,7 +118,7 @@
                             @endif
                             @endforeach
                         </select> -->
-                        {{ Form::number('percentage', $invoice->percentage ?? 0, ['class' => 'form-control ', 'id' => 'percentage', 'readonly'=>true, 'oninput' => "validity.valid||(value=value.replace(/[e\+\-]/gi,''))", 'min' => '0', 'value' => '0', 'step' => '.01', 'pattern' => "^\d*(\.\d{0,2})?$", 'required', 'onKeyPress' => 'if(this.value.length==8) return false;']) }}
+                        {{ Form::number('percentage', $invoice->percentage ?? 0, ['class' => 'form-control percentage', 'id' => 'percentage', 'readonly'=>true, 'oninput' => "validity.valid||(value=value.replace(/[e\+\-]/gi,''))", 'min' => '0', 'value' => '0', 'step' => '.01', 'pattern' => "^\d*(\.\d{0,2})?$", 'required', 'onKeyPress' => 'if(this.value.length==8) return false;']) }}
 
                     </td>
                     <td class="text-end item-total pt-8 text-nowrap">

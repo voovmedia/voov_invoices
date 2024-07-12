@@ -234,11 +234,11 @@ listenClick("#addItem", function () {
     let invoiceItemHtml = prepareTemplateRender("#invoiceItemTemplate", data);
 
     $(".invoice-item-container").append(invoiceItemHtml);
-    $(".taxId").select2({
-        placeholder: "Select Percenatge",
-        multiple: true,
-    });
-
+    // $(".taxId").select2({
+    //     placeholder: "Select Percenatge",
+    //     multiple: true,
+    // });
+    $('.percentage').val($('.percentage').val())
     $(".productId").select2({
         placeholder: Lang.get(
             "js.select_product_or_enter_free_text"
@@ -378,7 +378,7 @@ const calculateFinalAmount = () => {
     // total amount with products taxes
     let finalTotalAmt = parseFloat(totalAmount)
     // Get the percentage value from the input with id 'percentage'
-    let percentage = $("#percentage").val();
+    let percentage = $(".percentage").val();
 
     // If percentage is not empty, calculate the final amount as a percentage of the total amount
     if (!isEmpty(percentage)) {
@@ -619,7 +619,7 @@ listenChange("#client_id", function () {
             type: 'GET',
             dataType: 'text', // added data type
             success: function (res) {
-                $("#percentage").val(res);
+                $(".percentage").val(res);
             }
         });
     }
