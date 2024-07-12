@@ -12374,10 +12374,10 @@ listenChange("#client_id", function () {
       // added data type
       success: function success(res) {
         $(".percentage").val(res);
+        calculateFinalAmount();
       }
     });
   }
-  calculateFinalAmount();
 });
 })();
 

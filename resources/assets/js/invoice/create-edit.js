@@ -620,8 +620,8 @@ listenChange("#client_id", function () {
             dataType: 'text', // added data type
             success: function (res) {
                 $(".percentage").val(res);
+                calculateFinalAmount();
             }
         });
     }
-    calculateFinalAmount();
 });
