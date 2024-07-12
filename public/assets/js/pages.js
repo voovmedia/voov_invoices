@@ -1,5 +1,1173 @@
-/*! For license information please see pages.js.LICENSE.txt */
-(()=>{var __webpack_modules__={208:function(e,t){!function(e){"use strict";var t=function(){return t=Object.assign||function(e){for(var t,n=1,r=arguments.length;n<r;n++)for(var a in t=arguments[n])Object.prototype.hasOwnProperty.call(t,a)&&(e[a]=t[a]);return e},t.apply(this,arguments)},n="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},r={weekdays:{shorthand:["أحد","اثنين","ثلاثاء","أربعاء","خميس","جمعة","سبت"],longhand:["الأحد","الاثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت"]},months:{shorthand:["1","2","3","4","5","6","7","8","9","10","11","12"],longhand:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"]},firstDayOfWeek:6,rangeSeparator:" إلى ",weekAbbreviation:"Wk",scrollTitle:"قم بالتمرير للزيادة",toggleTitle:"اضغط للتبديل",amPM:["ص","م"],yearAriaLabel:"سنة",monthAriaLabel:"شهر",hourAriaLabel:"ساعة",minuteAriaLabel:"دقيقة",time_24hr:!1};n.l10ns.ar=r,n.l10ns;var a="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},i={weekdays:{shorthand:["So","Mo","Di","Mi","Do","Fr","Sa"],longhand:["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag"]},months:{shorthand:["Jän","Feb","Mär","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez"],longhand:["Jänner","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"]},firstDayOfWeek:1,weekAbbreviation:"KW",rangeSeparator:" bis ",scrollTitle:"Zum Ändern scrollen",toggleTitle:"Zum Umschalten klicken",time_24hr:!0};a.l10ns.at=i,a.l10ns;var o="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},s={weekdays:{shorthand:["B.","B.e.","Ç.a.","Ç.","C.a.","C.","Ş."],longhand:["Bazar","Bazar ertəsi","Çərşənbə axşamı","Çərşənbə","Cümə axşamı","Cümə","Şənbə"]},months:{shorthand:["Yan","Fev","Mar","Apr","May","İyn","İyl","Avq","Sen","Okt","Noy","Dek"],longhand:["Yanvar","Fevral","Mart","Aprel","May","İyun","İyul","Avqust","Sentyabr","Oktyabr","Noyabr","Dekabr"]},firstDayOfWeek:1,ordinal:function(){return"."},rangeSeparator:" - ",weekAbbreviation:"Hf",scrollTitle:"Artırmaq üçün sürüşdürün",toggleTitle:"Aç / Bağla",amPM:["GƏ","GS"],time_24hr:!0};o.l10ns.az=s,o.l10ns;var l="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},d={weekdays:{shorthand:["Нд","Пн","Аў","Ср","Чц","Пт","Сб"],longhand:["Нядзеля","Панядзелак","Аўторак","Серада","Чацвер","Пятніца","Субота"]},months:{shorthand:["Сту","Лют","Сак","Кра","Тра","Чэр","Ліп","Жні","Вер","Кас","Ліс","Сне"],longhand:["Студзень","Люты","Сакавік","Красавік","Травень","Чэрвень","Ліпень","Жнівень","Верасень","Кастрычнік","Лістапад","Снежань"]},firstDayOfWeek:1,ordinal:function(){return""},rangeSeparator:" — ",weekAbbreviation:"Тыд.",scrollTitle:"Пракруціце для павелічэння",toggleTitle:"Націсніце для пераключэння",amPM:["ДП","ПП"],yearAriaLabel:"Год",time_24hr:!0};l.l10ns.be=d,l.l10ns;var c="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},u={firstDayOfWeek:1,weekdays:{shorthand:["Ned","Pon","Uto","Sri","Čet","Pet","Sub"],longhand:["Nedjelja","Ponedjeljak","Utorak","Srijeda","Četvrtak","Petak","Subota"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Avg","Sep","Okt","Nov","Dec"],longhand:["Januar","Februar","Mart","April","Maj","Juni","Juli","Avgust","Septembar","Oktobar","Novembar","Decembar"]},time_24hr:!0};c.l10ns.bs=u,c.l10ns;var h="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},m={weekdays:{shorthand:["Нд","Пн","Вт","Ср","Чт","Пт","Сб"],longhand:["Неделя","Понеделник","Вторник","Сряда","Четвъртък","Петък","Събота"]},months:{shorthand:["Яну","Фев","Март","Апр","Май","Юни","Юли","Авг","Сеп","Окт","Ное","Дек"],longhand:["Януари","Февруари","Март","Април","Май","Юни","Юли","Август","Септември","Октомври","Ноември","Декември"]},time_24hr:!0,firstDayOfWeek:1};h.l10ns.bg=m,h.l10ns;var p="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},g={weekdays:{shorthand:["রবি","সোম","মঙ্গল","বুধ","বৃহস্পতি","শুক্র","শনি"],longhand:["রবিবার","সোমবার","মঙ্গলবার","বুধবার","বৃহস্পতিবার","শুক্রবার","শনিবার"]},months:{shorthand:["জানু","ফেব্রু","মার্চ","এপ্রিল","মে","জুন","জুলাই","আগ","সেপ্টে","অক্টো","নভে","ডিসে"],longhand:["জানুয়ারী","ফেব্রুয়ারী","মার্চ","এপ্রিল","মে","জুন","জুলাই","আগস্ট","সেপ্টেম্বর","অক্টোবর","নভেম্বর","ডিসেম্বর"]}};p.l10ns.bn=g,p.l10ns;var f="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},v={weekdays:{shorthand:["Dg","Dl","Dt","Dc","Dj","Dv","Ds"],longhand:["Diumenge","Dilluns","Dimarts","Dimecres","Dijous","Divendres","Dissabte"]},months:{shorthand:["Gen","Febr","Març","Abr","Maig","Juny","Jul","Ag","Set","Oct","Nov","Des"],longhand:["Gener","Febrer","Març","Abril","Maig","Juny","Juliol","Agost","Setembre","Octubre","Novembre","Desembre"]},ordinal:function(e){var t=e%100;if(t>3&&t<21)return"è";switch(t%10){case 1:case 3:return"r";case 2:return"n";case 4:return"t";default:return"è"}},firstDayOfWeek:1,rangeSeparator:" a ",time_24hr:!0};f.l10ns.cat=f.l10ns.ca=v,f.l10ns;var y="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},w={weekdays:{shorthand:["یەکشەممە","دووشەممە","سێشەممە","چوارشەممە","پێنجشەممە","هەینی","شەممە"],longhand:["یەکشەممە","دووشەممە","سێشەممە","چوارشەممە","پێنجشەممە","هەینی","شەممە"]},months:{shorthand:["ڕێبەندان","ڕەشەمە","نەورۆز","گوڵان","جۆزەردان","پووشپەڕ","گەلاوێژ","خەرمانان","ڕەزبەر","گەڵاڕێزان","سەرماوەز","بەفرانبار"],longhand:["ڕێبەندان","ڕەشەمە","نەورۆز","گوڵان","جۆزەردان","پووشپەڕ","گەلاوێژ","خەرمانان","ڕەزبەر","گەڵاڕێزان","سەرماوەز","بەفرانبار"]},firstDayOfWeek:6,ordinal:function(){return""}};y.l10ns.ckb=w,y.l10ns;var b="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},$={weekdays:{shorthand:["Ne","Po","Út","St","Čt","Pá","So"],longhand:["Neděle","Pondělí","Úterý","Středa","Čtvrtek","Pátek","Sobota"]},months:{shorthand:["Led","Ún","Bře","Dub","Kvě","Čer","Čvc","Srp","Zář","Říj","Lis","Pro"],longhand:["Leden","Únor","Březen","Duben","Květen","Červen","Červenec","Srpen","Září","Říjen","Listopad","Prosinec"]},firstDayOfWeek:1,ordinal:function(){return"."},rangeSeparator:" do ",weekAbbreviation:"Týd.",scrollTitle:"Rolujte pro změnu",toggleTitle:"Přepnout dopoledne/odpoledne",amPM:["dop.","odp."],yearAriaLabel:"Rok",time_24hr:!0};b.l10ns.cs=$,b.l10ns;var k="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},S={weekdays:{shorthand:["Sul","Llun","Maw","Mer","Iau","Gwe","Sad"],longhand:["Dydd Sul","Dydd Llun","Dydd Mawrth","Dydd Mercher","Dydd Iau","Dydd Gwener","Dydd Sadwrn"]},months:{shorthand:["Ion","Chwef","Maw","Ebr","Mai","Meh","Gorff","Awst","Medi","Hyd","Tach","Rhag"],longhand:["Ionawr","Chwefror","Mawrth","Ebrill","Mai","Mehefin","Gorffennaf","Awst","Medi","Hydref","Tachwedd","Rhagfyr"]},firstDayOfWeek:1,ordinal:function(e){return 1===e?"af":2===e?"ail":3===e||4===e?"ydd":5===e||6===e?"ed":e>=7&&e<=10||12==e||15==e||18==e||20==e?"fed":11==e||13==e||14==e||16==e||17==e||19==e?"eg":e>=21&&e<=39?"ain":""},time_24hr:!0};k.l10ns.cy=S,k.l10ns;var L="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},D={weekdays:{shorthand:["søn","man","tir","ons","tors","fre","lør"],longhand:["søndag","mandag","tirsdag","onsdag","torsdag","fredag","lørdag"]},months:{shorthand:["jan","feb","mar","apr","maj","jun","jul","aug","sep","okt","nov","dec"],longhand:["januar","februar","marts","april","maj","juni","juli","august","september","oktober","november","december"]},ordinal:function(){return"."},firstDayOfWeek:1,rangeSeparator:" til ",weekAbbreviation:"uge",time_24hr:!0};L.l10ns.da=D,L.l10ns;var M="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},T={weekdays:{shorthand:["So","Mo","Di","Mi","Do","Fr","Sa"],longhand:["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag"]},months:{shorthand:["Jan","Feb","Mär","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez"],longhand:["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"]},firstDayOfWeek:1,weekAbbreviation:"KW",rangeSeparator:" bis ",scrollTitle:"Zum Ändern scrollen",toggleTitle:"Zum Umschalten klicken",time_24hr:!0};M.l10ns.de=T,M.l10ns;var _={weekdays:{shorthand:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],longhand:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},months:{shorthand:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],longhand:["January","February","March","April","May","June","July","August","September","October","November","December"]},daysInMonth:[31,28,31,30,31,30,31,31,30,31,30,31],firstDayOfWeek:0,ordinal:function(e){var t=e%100;if(t>3&&t<21)return"th";switch(t%10){case 1:return"st";case 2:return"nd";case 3:return"rd";default:return"th"}},rangeSeparator:" to ",weekAbbreviation:"Wk",scrollTitle:"Scroll to increment",toggleTitle:"Click to toggle",amPM:["AM","PM"],yearAriaLabel:"Year",monthAriaLabel:"Month",hourAriaLabel:"Hour",minuteAriaLabel:"Minute",time_24hr:!1},C="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},E={firstDayOfWeek:1,rangeSeparator:" ĝis ",weekAbbreviation:"Sem",scrollTitle:"Rulumu por pligrandigi la valoron",toggleTitle:"Klaku por ŝalti",weekdays:{shorthand:["Dim","Lun","Mar","Mer","Ĵaŭ","Ven","Sab"],longhand:["dimanĉo","lundo","mardo","merkredo","ĵaŭdo","vendredo","sabato"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Aŭg","Sep","Okt","Nov","Dec"],longhand:["januaro","februaro","marto","aprilo","majo","junio","julio","aŭgusto","septembro","oktobro","novembro","decembro"]},ordinal:function(){return"-a"},time_24hr:!0};C.l10ns.eo=E,C.l10ns;var j="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},A={weekdays:{shorthand:["Dom","Lun","Mar","Mié","Jue","Vie","Sáb"],longhand:["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"]},months:{shorthand:["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"],longhand:["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]},ordinal:function(){return"º"},firstDayOfWeek:1,rangeSeparator:" a ",time_24hr:!0};j.l10ns.es=A,j.l10ns;var x="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},F={weekdays:{shorthand:["P","E","T","K","N","R","L"],longhand:["Pühapäev","Esmaspäev","Teisipäev","Kolmapäev","Neljapäev","Reede","Laupäev"]},months:{shorthand:["Jaan","Veebr","Märts","Apr","Mai","Juuni","Juuli","Aug","Sept","Okt","Nov","Dets"],longhand:["Jaanuar","Veebruar","Märts","Aprill","Mai","Juuni","Juuli","August","September","Oktoober","November","Detsember"]},firstDayOfWeek:1,ordinal:function(){return"."},weekAbbreviation:"Näd",rangeSeparator:" kuni ",scrollTitle:"Keri, et suurendada",toggleTitle:"Klõpsa, et vahetada",time_24hr:!0};x.l10ns.et=F,x.l10ns;var P="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},O={weekdays:{shorthand:["یک","دو","سه","چهار","پنج","جمعه","شنبه"],longhand:["یک‌شنبه","دوشنبه","سه‌شنبه","چهارشنبه","پنچ‌شنبه","جمعه","شنبه"]},months:{shorthand:["ژانویه","فوریه","مارس","آوریل","مه","ژوئن","ژوئیه","اوت","سپتامبر","اکتبر","نوامبر","دسامبر"],longhand:["ژانویه","فوریه","مارس","آوریل","مه","ژوئن","ژوئیه","اوت","سپتامبر","اکتبر","نوامبر","دسامبر"]},firstDayOfWeek:6,ordinal:function(){return""}};P.l10ns.fa=O,P.l10ns;var R="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},I={firstDayOfWeek:1,weekdays:{shorthand:["su","ma","ti","ke","to","pe","la"],longhand:["sunnuntai","maanantai","tiistai","keskiviikko","torstai","perjantai","lauantai"]},months:{shorthand:["tammi","helmi","maalis","huhti","touko","kesä","heinä","elo","syys","loka","marras","joulu"],longhand:["tammikuu","helmikuu","maaliskuu","huhtikuu","toukokuu","kesäkuu","heinäkuu","elokuu","syyskuu","lokakuu","marraskuu","joulukuu"]},ordinal:function(){return"."},time_24hr:!0};R.l10ns.fi=I,R.l10ns;var N="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},q={weekdays:{shorthand:["Sun","Mán","Týs","Mik","Hós","Frí","Ley"],longhand:["Sunnudagur","Mánadagur","Týsdagur","Mikudagur","Hósdagur","Fríggjadagur","Leygardagur"]},months:{shorthand:["Jan","Feb","Mar","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Des"],longhand:["Januar","Februar","Mars","Apríl","Mai","Juni","Juli","August","Septembur","Oktobur","Novembur","Desembur"]},ordinal:function(){return"."},firstDayOfWeek:1,rangeSeparator:" til ",weekAbbreviation:"vika",scrollTitle:"Rulla fyri at broyta",toggleTitle:"Trýst fyri at skifta",yearAriaLabel:"Ár",time_24hr:!0};N.l10ns.fo=q,N.l10ns;var Y="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},J={firstDayOfWeek:1,weekdays:{shorthand:["dim","lun","mar","mer","jeu","ven","sam"],longhand:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},months:{shorthand:["janv","févr","mars","avr","mai","juin","juil","août","sept","oct","nov","déc"],longhand:["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"]},ordinal:function(e){return e>1?"":"er"},rangeSeparator:" au ",weekAbbreviation:"Sem",scrollTitle:"Défiler pour augmenter la valeur",toggleTitle:"Cliquer pour basculer",time_24hr:!0};Y.l10ns.fr=J,Y.l10ns;var B="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},H={weekdays:{shorthand:["Κυ","Δε","Τρ","Τε","Πέ","Πα","Σά"],longhand:["Κυριακή","Δευτέρα","Τρίτη","Τετάρτη","Πέμπτη","Παρασκευή","Σάββατο"]},months:{shorthand:["Ιαν","Φεβ","Μάρ","Απρ","Μάι","Ιούν","Ιούλ","Αύγ","Σεπ","Οκτ","Νοέ","Δεκ"],longhand:["Ιανουάριος","Φεβρουάριος","Μάρτιος","Απρίλιος","Μάιος","Ιούνιος","Ιούλιος","Αύγουστος","Σεπτέμβριος","Οκτώβριος","Νοέμβριος","Δεκέμβριος"]},firstDayOfWeek:1,ordinal:function(){return""},weekAbbreviation:"Εβδ",rangeSeparator:" έως ",scrollTitle:"Μετακυλήστε για προσαύξηση",toggleTitle:"Κάντε κλικ για αλλαγή",amPM:["ΠΜ","ΜΜ"],yearAriaLabel:"χρόνος",monthAriaLabel:"μήνας",hourAriaLabel:"ώρα",minuteAriaLabel:"λεπτό"};B.l10ns.gr=H,B.l10ns;var W="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},U={weekdays:{shorthand:["א","ב","ג","ד","ה","ו","ש"],longhand:["ראשון","שני","שלישי","רביעי","חמישי","שישי","שבת"]},months:{shorthand:["ינו׳","פבר׳","מרץ","אפר׳","מאי","יוני","יולי","אוג׳","ספט׳","אוק׳","נוב׳","דצמ׳"],longhand:["ינואר","פברואר","מרץ","אפריל","מאי","יוני","יולי","אוגוסט","ספטמבר","אוקטובר","נובמבר","דצמבר"]},rangeSeparator:" אל ",time_24hr:!0};W.l10ns.he=U,W.l10ns;var V="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},z={weekdays:{shorthand:["रवि","सोम","मंगल","बुध","गुरु","शुक्र","शनि"],longhand:["रविवार","सोमवार","मंगलवार","बुधवार","गुरुवार","शुक्रवार","शनिवार"]},months:{shorthand:["जन","फर","मार्च","अप्रेल","मई","जून","जूलाई","अग","सित","अक्ट","नव","दि"],longhand:["जनवरी ","फरवरी","मार्च","अप्रेल","मई","जून","जूलाई","अगस्त ","सितम्बर","अक्टूबर","नवम्बर","दिसम्बर"]}};V.l10ns.hi=z,V.l10ns;var K="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Q={firstDayOfWeek:1,weekdays:{shorthand:["Ned","Pon","Uto","Sri","Čet","Pet","Sub"],longhand:["Nedjelja","Ponedjeljak","Utorak","Srijeda","Četvrtak","Petak","Subota"]},months:{shorthand:["Sij","Velj","Ožu","Tra","Svi","Lip","Srp","Kol","Ruj","Lis","Stu","Pro"],longhand:["Siječanj","Veljača","Ožujak","Travanj","Svibanj","Lipanj","Srpanj","Kolovoz","Rujan","Listopad","Studeni","Prosinac"]},time_24hr:!0};K.l10ns.hr=Q,K.l10ns;var G="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Z={firstDayOfWeek:1,weekdays:{shorthand:["V","H","K","Sz","Cs","P","Szo"],longhand:["Vasárnap","Hétfő","Kedd","Szerda","Csütörtök","Péntek","Szombat"]},months:{shorthand:["Jan","Feb","Már","Ápr","Máj","Jún","Júl","Aug","Szep","Okt","Nov","Dec"],longhand:["Január","Február","Március","Április","Május","Június","Július","Augusztus","Szeptember","Október","November","December"]},ordinal:function(){return"."},weekAbbreviation:"Hét",scrollTitle:"Görgessen",toggleTitle:"Kattintson a váltáshoz",rangeSeparator:" - ",time_24hr:!0};G.l10ns.hu=Z,G.l10ns;var X="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ee={weekdays:{shorthand:["Կիր","Երկ","Երք","Չրք","Հնգ","Ուրբ","Շբթ"],longhand:["Կիրակի","Եկուշաբթի","Երեքշաբթի","Չորեքշաբթի","Հինգշաբթի","Ուրբաթ","Շաբաթ"]},months:{shorthand:["Հնվ","Փտր","Մար","Ապր","Մայ","Հնս","Հլս","Օգս","Սեպ","Հոկ","Նմբ","Դեկ"],longhand:["Հունվար","Փետրվար","Մարտ","Ապրիլ","Մայիս","Հունիս","Հուլիս","Օգոստոս","Սեպտեմբեր","Հոկտեմբեր","Նոյեմբեր","Դեկտեմբեր"]},firstDayOfWeek:1,ordinal:function(){return""},rangeSeparator:" — ",weekAbbreviation:"ՇԲՏ",scrollTitle:"Ոլորեք՝ մեծացնելու համար",toggleTitle:"Սեղմեք՝ փոխելու համար",amPM:["ՄԿ","ԿՀ"],yearAriaLabel:"Տարի",monthAriaLabel:"Ամիս",hourAriaLabel:"Ժամ",minuteAriaLabel:"Րոպե",time_24hr:!0};X.l10ns.hy=ee,X.l10ns;var te="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ne={weekdays:{shorthand:["Min","Sen","Sel","Rab","Kam","Jum","Sab"],longhand:["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"]},months:{shorthand:["Jan","Feb","Mar","Apr","Mei","Jun","Jul","Agu","Sep","Okt","Nov","Des"],longhand:["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"]},firstDayOfWeek:1,ordinal:function(){return""},time_24hr:!0,rangeSeparator:" - "};te.l10ns.id=ne,te.l10ns;var re="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ae={weekdays:{shorthand:["Sun","Mán","Þri","Mið","Fim","Fös","Lau"],longhand:["Sunnudagur","Mánudagur","Þriðjudagur","Miðvikudagur","Fimmtudagur","Föstudagur","Laugardagur"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maí","Jún","Júl","Ágú","Sep","Okt","Nóv","Des"],longhand:["Janúar","Febrúar","Mars","Apríl","Maí","Júní","Júlí","Ágúst","September","Október","Nóvember","Desember"]},ordinal:function(){return"."},firstDayOfWeek:1,rangeSeparator:" til ",weekAbbreviation:"vika",yearAriaLabel:"Ár",time_24hr:!0};re.l10ns.is=ae,re.l10ns;var ie="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},oe={weekdays:{shorthand:["Dom","Lun","Mar","Mer","Gio","Ven","Sab"],longhand:["Domenica","Lunedì","Martedì","Mercoledì","Giovedì","Venerdì","Sabato"]},months:{shorthand:["Gen","Feb","Mar","Apr","Mag","Giu","Lug","Ago","Set","Ott","Nov","Dic"],longhand:["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"]},firstDayOfWeek:1,ordinal:function(){return"°"},rangeSeparator:" al ",weekAbbreviation:"Se",scrollTitle:"Scrolla per aumentare",toggleTitle:"Clicca per cambiare",time_24hr:!0};ie.l10ns.it=oe,ie.l10ns;var se="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},le={weekdays:{shorthand:["日","月","火","水","木","金","土"],longhand:["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"]},months:{shorthand:["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],longhand:["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"]},time_24hr:!0,rangeSeparator:" から ",monthAriaLabel:"月",amPM:["午前","午後"],yearAriaLabel:"年",hourAriaLabel:"時間",minuteAriaLabel:"分"};se.l10ns.ja=le,se.l10ns;var de="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ce={weekdays:{shorthand:["კვ","ორ","სა","ოთ","ხუ","პა","შა"],longhand:["კვირა","ორშაბათი","სამშაბათი","ოთხშაბათი","ხუთშაბათი","პარასკევი","შაბათი"]},months:{shorthand:["იან","თებ","მარ","აპრ","მაი","ივნ","ივლ","აგვ","სექ","ოქტ","ნოე","დეკ"],longhand:["იანვარი","თებერვალი","მარტი","აპრილი","მაისი","ივნისი","ივლისი","აგვისტო","სექტემბერი","ოქტომბერი","ნოემბერი","დეკემბერი"]},firstDayOfWeek:1,ordinal:function(){return""},rangeSeparator:" — ",weekAbbreviation:"კვ.",scrollTitle:"დასქროლეთ გასადიდებლად",toggleTitle:"დააკლიკეთ გადართვისთვის",amPM:["AM","PM"],yearAriaLabel:"წელი",time_24hr:!0};de.l10ns.ka=ce,de.l10ns;var ue="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},he={weekdays:{shorthand:["일","월","화","수","목","금","토"],longhand:["일요일","월요일","화요일","수요일","목요일","금요일","토요일"]},months:{shorthand:["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"],longhand:["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"]},ordinal:function(){return"일"},rangeSeparator:" ~ ",amPM:["오전","오후"]};ue.l10ns.ko=he,ue.l10ns;var me="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},pe={weekdays:{shorthand:["អាទិត្យ","ចន្ទ","អង្គារ","ពុធ","ព្រហស.","សុក្រ","សៅរ៍"],longhand:["អាទិត្យ","ចន្ទ","អង្គារ","ពុធ","ព្រហស្បតិ៍","សុក្រ","សៅរ៍"]},months:{shorthand:["មករា","កុម្ភះ","មីនា","មេសា","ឧសភា","មិថុនា","កក្កដា","សីហា","កញ្ញា","តុលា","វិច្ឆិកា","ធ្នូ"],longhand:["មករា","កុម្ភះ","មីនា","មេសា","ឧសភា","មិថុនា","កក្កដា","សីហា","កញ្ញា","តុលា","វិច្ឆិកា","ធ្នូ"]},ordinal:function(){return""},firstDayOfWeek:1,rangeSeparator:" ដល់ ",weekAbbreviation:"សប្តាហ៍",scrollTitle:"រំកិលដើម្បីបង្កើន",toggleTitle:"ចុចដើម្បីផ្លាស់ប្ដូរ",yearAriaLabel:"ឆ្នាំ",time_24hr:!0};me.l10ns.km=pe,me.l10ns;var ge="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},fe={weekdays:{shorthand:["Жс","Дс","Сc","Ср","Бс","Жм","Сб"],longhand:["Жексенбi","Дүйсенбi","Сейсенбi","Сәрсенбi","Бейсенбi","Жұма","Сенбi"]},months:{shorthand:["Қаң","Ақп","Нау","Сәу","Мам","Мау","Шiл","Там","Қыр","Қаз","Қар","Жел"],longhand:["Қаңтар","Ақпан","Наурыз","Сәуiр","Мамыр","Маусым","Шiлде","Тамыз","Қыркүйек","Қазан","Қараша","Желтоқсан"]},firstDayOfWeek:1,ordinal:function(){return""},rangeSeparator:" — ",weekAbbreviation:"Апта",scrollTitle:"Үлкейту үшін айналдырыңыз",toggleTitle:"Ауыстыру үшін басыңыз",amPM:["ТД","ТК"],yearAriaLabel:"Жыл"};ge.l10ns.kz=fe,ge.l10ns;var ve="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ye={weekdays:{shorthand:["S","Pr","A","T","K","Pn","Š"],longhand:["Sekmadienis","Pirmadienis","Antradienis","Trečiadienis","Ketvirtadienis","Penktadienis","Šeštadienis"]},months:{shorthand:["Sau","Vas","Kov","Bal","Geg","Bir","Lie","Rgp","Rgs","Spl","Lap","Grd"],longhand:["Sausis","Vasaris","Kovas","Balandis","Gegužė","Birželis","Liepa","Rugpjūtis","Rugsėjis","Spalis","Lapkritis","Gruodis"]},firstDayOfWeek:1,ordinal:function(){return"-a"},rangeSeparator:" iki ",weekAbbreviation:"Sav",scrollTitle:"Keisti laiką pelės rateliu",toggleTitle:"Perjungti laiko formatą",time_24hr:!0};ve.l10ns.lt=ye,ve.l10ns;var we="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},be={firstDayOfWeek:1,weekdays:{shorthand:["Sv","Pr","Ot","Tr","Ce","Pk","Se"],longhand:["Svētdiena","Pirmdiena","Otrdiena","Trešdiena","Ceturtdiena","Piektdiena","Sestdiena"]},months:{shorthand:["Jan","Feb","Mar","Apr","Mai","Jūn","Jūl","Aug","Sep","Okt","Nov","Dec"],longhand:["Janvāris","Februāris","Marts","Aprīlis","Maijs","Jūnijs","Jūlijs","Augusts","Septembris","Oktobris","Novembris","Decembris"]},rangeSeparator:" līdz ",time_24hr:!0};we.l10ns.lv=be,we.l10ns;var $e="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ke={weekdays:{shorthand:["Не","По","Вт","Ср","Че","Пе","Са"],longhand:["Недела","Понеделник","Вторник","Среда","Четврток","Петок","Сабота"]},months:{shorthand:["Јан","Фев","Мар","Апр","Мај","Јун","Јул","Авг","Сеп","Окт","Ное","Дек"],longhand:["Јануари","Февруари","Март","Април","Мај","Јуни","Јули","Август","Септември","Октомври","Ноември","Декември"]},firstDayOfWeek:1,weekAbbreviation:"Нед.",rangeSeparator:" до ",time_24hr:!0};$e.l10ns.mk=ke,$e.l10ns;var Se="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Le={firstDayOfWeek:1,weekdays:{shorthand:["Да","Мя","Лх","Пү","Ба","Бя","Ня"],longhand:["Даваа","Мягмар","Лхагва","Пүрэв","Баасан","Бямба","Ням"]},months:{shorthand:["1-р сар","2-р сар","3-р сар","4-р сар","5-р сар","6-р сар","7-р сар","8-р сар","9-р сар","10-р сар","11-р сар","12-р сар"],longhand:["Нэгдүгээр сар","Хоёрдугаар сар","Гуравдугаар сар","Дөрөвдүгээр сар","Тавдугаар сар","Зургаадугаар сар","Долдугаар сар","Наймдугаар сар","Есдүгээр сар","Аравдугаар сар","Арваннэгдүгээр сар","Арванхоёрдугаар сар"]},rangeSeparator:"-с ",time_24hr:!0};Se.l10ns.mn=Le,Se.l10ns;var De="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Me={weekdays:{shorthand:["Aha","Isn","Sel","Rab","Kha","Jum","Sab"],longhand:["Ahad","Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu"]},months:{shorthand:["Jan","Feb","Mac","Apr","Mei","Jun","Jul","Ogo","Sep","Okt","Nov","Dis"],longhand:["Januari","Februari","Mac","April","Mei","Jun","Julai","Ogos","September","Oktober","November","Disember"]},firstDayOfWeek:1,ordinal:function(){return""}};De.l10ns;var Te="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},_e={weekdays:{shorthand:["နွေ","လာ","ဂါ","ဟူး","ကြာ","သော","နေ"],longhand:["တနင်္ဂနွေ","တနင်္လာ","အင်္ဂါ","ဗုဒ္ဓဟူး","ကြာသပတေး","သောကြာ","စနေ"]},months:{shorthand:["ဇန်","ဖေ","မတ်","ပြီ","မေ","ဇွန်","လိုင်","သြ","စက်","အောက်","နို","ဒီ"],longhand:["ဇန်နဝါရီ","ဖေဖော်ဝါရီ","မတ်","ဧပြီ","မေ","ဇွန်","ဇူလိုင်","သြဂုတ်","စက်တင်ဘာ","အောက်တိုဘာ","နိုဝင်ဘာ","ဒီဇင်ဘာ"]},firstDayOfWeek:1,ordinal:function(){return""},time_24hr:!0};Te.l10ns.my=_e,Te.l10ns;var Ce="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Ee={weekdays:{shorthand:["zo","ma","di","wo","do","vr","za"],longhand:["zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag"]},months:{shorthand:["jan","feb","mrt","apr","mei","jun","jul","aug","sept","okt","nov","dec"],longhand:["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"]},firstDayOfWeek:1,weekAbbreviation:"wk",rangeSeparator:" t/m ",scrollTitle:"Scroll voor volgende / vorige",toggleTitle:"Klik om te wisselen",time_24hr:!0,ordinal:function(e){return 1===e||8===e||e>=20?"ste":"de"}};Ce.l10ns.nl=Ee,Ce.l10ns;var je="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Ae={weekdays:{shorthand:["Sø.","Må.","Ty.","On.","To.","Fr.","La."],longhand:["Søndag","Måndag","Tysdag","Onsdag","Torsdag","Fredag","Laurdag"]},months:{shorthand:["Jan","Feb","Mars","Apr","Mai","Juni","Juli","Aug","Sep","Okt","Nov","Des"],longhand:["Januar","Februar","Mars","April","Mai","Juni","Juli","August","September","Oktober","November","Desember"]},firstDayOfWeek:1,rangeSeparator:" til ",weekAbbreviation:"Veke",scrollTitle:"Scroll for å endre",toggleTitle:"Klikk for å veksle",time_24hr:!0,ordinal:function(){return"."}};je.l10ns.nn=Ae,je.l10ns;var xe="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Fe={weekdays:{shorthand:["Søn","Man","Tir","Ons","Tor","Fre","Lør"],longhand:["Søndag","Mandag","Tirsdag","Onsdag","Torsdag","Fredag","Lørdag"]},months:{shorthand:["Jan","Feb","Mar","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Des"],longhand:["Januar","Februar","Mars","April","Mai","Juni","Juli","August","September","Oktober","November","Desember"]},firstDayOfWeek:1,rangeSeparator:" til ",weekAbbreviation:"Uke",scrollTitle:"Scroll for å endre",toggleTitle:"Klikk for å veksle",time_24hr:!0,ordinal:function(){return"."}};xe.l10ns.no=Fe,xe.l10ns;var Pe="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Oe={weekdays:{shorthand:["ਐਤ","ਸੋਮ","ਮੰਗਲ","ਬੁੱਧ","ਵੀਰ","ਸ਼ੁੱਕਰ","ਸ਼ਨਿੱਚਰ"],longhand:["ਐਤਵਾਰ","ਸੋਮਵਾਰ","ਮੰਗਲਵਾਰ","ਬੁੱਧਵਾਰ","ਵੀਰਵਾਰ","ਸ਼ੁੱਕਰਵਾਰ","ਸ਼ਨਿੱਚਰਵਾਰ"]},months:{shorthand:["ਜਨ","ਫ਼ਰ","ਮਾਰ","ਅਪ੍ਰੈ","ਮਈ","ਜੂਨ","ਜੁਲਾ","ਅਗ","ਸਤੰ","ਅਕ","ਨਵੰ","ਦਸੰ"],longhand:["ਜਨਵਰੀ","ਫ਼ਰਵਰੀ","ਮਾਰਚ","ਅਪ੍ਰੈਲ","ਮਈ","ਜੂਨ","ਜੁਲਾਈ","ਅਗਸਤ","ਸਤੰਬਰ","ਅਕਤੂਬਰ","ਨਵੰਬਰ","ਦਸੰਬਰ"]},time_24hr:!0};Pe.l10ns.pa=Oe,Pe.l10ns;var Re="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Ie={weekdays:{shorthand:["Nd","Pn","Wt","Śr","Cz","Pt","So"],longhand:["Niedziela","Poniedziałek","Wtorek","Środa","Czwartek","Piątek","Sobota"]},months:{shorthand:["Sty","Lut","Mar","Kwi","Maj","Cze","Lip","Sie","Wrz","Paź","Lis","Gru"],longhand:["Styczeń","Luty","Marzec","Kwiecień","Maj","Czerwiec","Lipiec","Sierpień","Wrzesień","Październik","Listopad","Grudzień"]},rangeSeparator:" do ",weekAbbreviation:"tydz.",scrollTitle:"Przewiń, aby zwiększyć",toggleTitle:"Kliknij, aby przełączyć",firstDayOfWeek:1,time_24hr:!0,ordinal:function(){return"."}};Re.l10ns.pl=Ie,Re.l10ns;var Ne="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},qe={weekdays:{shorthand:["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"],longhand:["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"]},months:{shorthand:["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"],longhand:["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"]},rangeSeparator:" até ",time_24hr:!0};Ne.l10ns.pt=qe,Ne.l10ns;var Ye="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Je={weekdays:{shorthand:["Dum","Lun","Mar","Mie","Joi","Vin","Sâm"],longhand:["Duminică","Luni","Marți","Miercuri","Joi","Vineri","Sâmbătă"]},months:{shorthand:["Ian","Feb","Mar","Apr","Mai","Iun","Iul","Aug","Sep","Oct","Noi","Dec"],longhand:["Ianuarie","Februarie","Martie","Aprilie","Mai","Iunie","Iulie","August","Septembrie","Octombrie","Noiembrie","Decembrie"]},firstDayOfWeek:1,time_24hr:!0,ordinal:function(){return""}};Ye.l10ns.ro=Je,Ye.l10ns;var Be="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},He={weekdays:{shorthand:["Вс","Пн","Вт","Ср","Чт","Пт","Сб"],longhand:["Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота"]},months:{shorthand:["Янв","Фев","Март","Апр","Май","Июнь","Июль","Авг","Сен","Окт","Ноя","Дек"],longhand:["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"]},firstDayOfWeek:1,ordinal:function(){return""},rangeSeparator:" — ",weekAbbreviation:"Нед.",scrollTitle:"Прокрутите для увеличения",toggleTitle:"Нажмите для переключения",amPM:["ДП","ПП"],yearAriaLabel:"Год",time_24hr:!0};Be.l10ns.ru=He,Be.l10ns;var We="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Ue={weekdays:{shorthand:["ඉ","ස","අ","බ","බ්‍ර","සි","සෙ"],longhand:["ඉරිදා","සඳුදා","අඟහරුවාදා","බදාදා","බ්‍රහස්පතින්දා","සිකුරාදා","සෙනසුරාදා"]},months:{shorthand:["ජන","පෙබ","මාර්","අප්‍රේ","මැයි","ජුනි","ජූලි","අගෝ","සැප්","ඔක්","නොවැ","දෙසැ"],longhand:["ජනවාරි","පෙබරවාරි","මාර්තු","අප්‍රේල්","මැයි","ජුනි","ජූලි","අගෝස්තු","සැප්තැම්බර්","ඔක්තෝබර්","නොවැම්බර්","දෙසැම්බර්"]},time_24hr:!0};We.l10ns.si=Ue,We.l10ns;var Ve="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ze={weekdays:{shorthand:["Ned","Pon","Ut","Str","Štv","Pia","Sob"],longhand:["Nedeľa","Pondelok","Utorok","Streda","Štvrtok","Piatok","Sobota"]},months:{shorthand:["Jan","Feb","Mar","Apr","Máj","Jún","Júl","Aug","Sep","Okt","Nov","Dec"],longhand:["Január","Február","Marec","Apríl","Máj","Jún","Júl","August","September","Október","November","December"]},firstDayOfWeek:1,rangeSeparator:" do ",time_24hr:!0,ordinal:function(){return"."}};Ve.l10ns.sk=ze,Ve.l10ns;var Ke="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Qe={weekdays:{shorthand:["Ned","Pon","Tor","Sre","Čet","Pet","Sob"],longhand:["Nedelja","Ponedeljek","Torek","Sreda","Četrtek","Petek","Sobota"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Avg","Sep","Okt","Nov","Dec"],longhand:["Januar","Februar","Marec","April","Maj","Junij","Julij","Avgust","September","Oktober","November","December"]},firstDayOfWeek:1,rangeSeparator:" do ",time_24hr:!0,ordinal:function(){return"."}};Ke.l10ns.sl=Qe,Ke.l10ns;var Ge="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},Ze={weekdays:{shorthand:["Di","Hë","Ma","Më","En","Pr","Sh"],longhand:["E Diel","E Hënë","E Martë","E Mërkurë","E Enjte","E Premte","E Shtunë"]},months:{shorthand:["Jan","Shk","Mar","Pri","Maj","Qer","Kor","Gus","Sht","Tet","Nën","Dhj"],longhand:["Janar","Shkurt","Mars","Prill","Maj","Qershor","Korrik","Gusht","Shtator","Tetor","Nëntor","Dhjetor"]},firstDayOfWeek:1,rangeSeparator:" deri ",weekAbbreviation:"Java",yearAriaLabel:"Viti",monthAriaLabel:"Muaji",hourAriaLabel:"Ora",minuteAriaLabel:"Minuta",time_24hr:!0};Ge.l10ns.sq=Ze,Ge.l10ns;var Xe="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},et={weekdays:{shorthand:["Ned","Pon","Uto","Sre","Čet","Pet","Sub"],longhand:["Nedelja","Ponedeljak","Utorak","Sreda","Četvrtak","Petak","Subota"]},months:{shorthand:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Avg","Sep","Okt","Nov","Dec"],longhand:["Januar","Februar","Mart","April","Maj","Jun","Jul","Avgust","Septembar","Oktobar","Novembar","Decembar"]},firstDayOfWeek:1,weekAbbreviation:"Ned.",rangeSeparator:" do ",time_24hr:!0};Xe.l10ns.sr=et,Xe.l10ns;var tt="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},nt={firstDayOfWeek:1,weekAbbreviation:"v",weekdays:{shorthand:["sön","mån","tis","ons","tor","fre","lör"],longhand:["söndag","måndag","tisdag","onsdag","torsdag","fredag","lördag"]},months:{shorthand:["jan","feb","mar","apr","maj","jun","jul","aug","sep","okt","nov","dec"],longhand:["januari","februari","mars","april","maj","juni","juli","augusti","september","oktober","november","december"]},rangeSeparator:" till ",time_24hr:!0,ordinal:function(){return"."}};tt.l10ns.sv=nt,tt.l10ns;var rt="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},at={weekdays:{shorthand:["อา","จ","อ","พ","พฤ","ศ","ส"],longhand:["อาทิตย์","จันทร์","อังคาร","พุธ","พฤหัสบดี","ศุกร์","เสาร์"]},months:{shorthand:["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."],longhand:["มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม"]},firstDayOfWeek:1,rangeSeparator:" ถึง ",scrollTitle:"เลื่อนเพื่อเพิ่มหรือลด",toggleTitle:"คลิกเพื่อเปลี่ยน",time_24hr:!0,ordinal:function(){return""}};rt.l10ns.th=at,rt.l10ns;var it="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ot={weekdays:{shorthand:["Paz","Pzt","Sal","Çar","Per","Cum","Cmt"],longhand:["Pazar","Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi"]},months:{shorthand:["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"],longhand:["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"]},firstDayOfWeek:1,ordinal:function(){return"."},rangeSeparator:" - ",weekAbbreviation:"Hf",scrollTitle:"Artırmak için kaydırın",toggleTitle:"Aç/Kapa",amPM:["ÖÖ","ÖS"],time_24hr:!0};it.l10ns.tr=ot,it.l10ns;var st="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},lt={firstDayOfWeek:1,weekdays:{shorthand:["Нд","Пн","Вт","Ср","Чт","Пт","Сб"],longhand:["Неділя","Понеділок","Вівторок","Середа","Четвер","П'ятниця","Субота"]},months:{shorthand:["Січ","Лют","Бер","Кві","Тра","Чер","Лип","Сер","Вер","Жов","Лис","Гру"],longhand:["Січень","Лютий","Березень","Квітень","Травень","Червень","Липень","Серпень","Вересень","Жовтень","Листопад","Грудень"]},time_24hr:!0};st.l10ns.uk=lt,st.l10ns;var dt="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ct={weekdays:{shorthand:["Якш","Душ","Сеш","Чор","Пай","Жум","Шан"],longhand:["Якшанба","Душанба","Сешанба","Чоршанба","Пайшанба","Жума","Шанба"]},months:{shorthand:["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],longhand:["Январ","Феврал","Март","Апрел","Май","Июн","Июл","Август","Сентябр","Октябр","Ноябр","Декабр"]},firstDayOfWeek:1,ordinal:function(){return""},rangeSeparator:" — ",weekAbbreviation:"Ҳафта",scrollTitle:"Катталаштириш учун айлантиринг",toggleTitle:"Ўтиш учун босинг",amPM:["AM","PM"],yearAriaLabel:"Йил",time_24hr:!0};dt.l10ns.uz=ct,dt.l10ns;var ut="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ht={weekdays:{shorthand:["Ya","Du","Se","Cho","Pa","Ju","Sha"],longhand:["Yakshanba","Dushanba","Seshanba","Chorshanba","Payshanba","Juma","Shanba"]},months:{shorthand:["Yan","Fev","Mar","Apr","May","Iyun","Iyul","Avg","Sen","Okt","Noy","Dek"],longhand:["Yanvar","Fevral","Mart","Aprel","May","Iyun","Iyul","Avgust","Sentabr","Oktabr","Noyabr","Dekabr"]},firstDayOfWeek:1,ordinal:function(){return""},rangeSeparator:" — ",weekAbbreviation:"Hafta",scrollTitle:"Kattalashtirish uchun aylantiring",toggleTitle:"O‘tish uchun bosing",amPM:["AM","PM"],yearAriaLabel:"Yil",time_24hr:!0};ut.l10ns.uz_latn=ht,ut.l10ns;var mt="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},pt={weekdays:{shorthand:["CN","T2","T3","T4","T5","T6","T7"],longhand:["Chủ nhật","Thứ hai","Thứ ba","Thứ tư","Thứ năm","Thứ sáu","Thứ bảy"]},months:{shorthand:["Th1","Th2","Th3","Th4","Th5","Th6","Th7","Th8","Th9","Th10","Th11","Th12"],longhand:["Tháng một","Tháng hai","Tháng ba","Tháng tư","Tháng năm","Tháng sáu","Tháng bảy","Tháng tám","Tháng chín","Tháng mười","Tháng mười một","Tháng mười hai"]},firstDayOfWeek:1,rangeSeparator:" đến "};mt.l10ns.vn=pt,mt.l10ns;var gt="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},ft={weekdays:{shorthand:["周日","周一","周二","周三","周四","周五","周六"],longhand:["星期日","星期一","星期二","星期三","星期四","星期五","星期六"]},months:{shorthand:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],longhand:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"]},rangeSeparator:" 至 ",weekAbbreviation:"周",scrollTitle:"滚动切换",toggleTitle:"点击切换 12/24 小时时制"};gt.l10ns.zh=ft,gt.l10ns;var vt="undefined"!=typeof window&&void 0!==window.flatpickr?window.flatpickr:{l10ns:{}},yt={weekdays:{shorthand:["週日","週一","週二","週三","週四","週五","週六"],longhand:["星期日","星期一","星期二","星期三","星期四","星期五","星期六"]},months:{shorthand:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],longhand:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"]},rangeSeparator:" 至 ",weekAbbreviation:"週",scrollTitle:"滾動切換",toggleTitle:"點擊切換 12/24 小時時制"};vt.l10ns.zh_tw=yt,vt.l10ns;var wt={ar:r,at:i,az:s,be:d,bg:m,bn:g,bs:u,ca:v,ckb:w,cat:v,cs:$,cy:S,da:D,de:T,default:t({},_),en:_,eo:E,es:A,et:F,fa:O,fi:I,fo:q,fr:J,gr:H,he:U,hi:z,hr:Q,hu:Z,hy:ee,id:ne,is:ae,it:oe,ja:le,ka:ce,ko:he,km:pe,kz:fe,lt:ye,lv:be,mk:ke,mn:Le,ms:Me,my:_e,nl:Ee,nn:Ae,no:Fe,pa:Oe,pl:Ie,pt:qe,ro:Je,ru:He,si:Ue,sk:ze,sl:Qe,sq:Ze,sr:et,sv:nt,th:at,tr:ot,uk:lt,vn:pt,zh:ft,zh_tw:yt,uz:ct,uz_latn:ht};e.default=wt,Object.defineProperty(e,"__esModule",{value:!0})}(t)},495:e=>{!function(t,n){var r=n.jQuery;e.exports=r?t(n,r):function(e){if(e&&!e.fn)throw"Provide jQuery or null";return t(n,e)}}((function(e,t){"use strict";var n=!1===t;t=t&&t.fn?t:e.jQuery;var r,a,i,o,s,l,d,c,u,h,m,p,g,f,v,y,w,b,$,k,S,L,D="v1.0.11",M="_ocp",T=/[ \t]*(\r\n|\n|\r)/g,_=/\\(['"\\])/g,C=/['"\\]/g,E=/(?:\x08|^)(onerror:)?(?:(~?)(([\w$.]+):)?([^\x08]+))\x08(,)?([^\x08]+)/gi,j=/^if\s/,A=/<(\w+)[>\s]/,x=/[\x00`><\"'&=]/,F=/^on[A-Z]|^convert(Back)?$/,P=/^\#\d+_`[\s\S]*\/\d+_`$/,O=/[\x00`><"'&=]/g,R=/[&<>]/g,I=/&(amp|gt|lt);/g,N=/\[['"]?|['"]?\]/g,q=0,Y={"&":"&amp;","<":"&lt;",">":"&gt;","\0":"&#0;","'":"&#39;",'"':"&#34;","`":"&#96;","=":"&#61;"},J={amp:"&",gt:">",lt:"<"},B="html",H="object",W="data-jsv-tmpl",U="jsvTmpl",V="For #index in nested block use #getIndex().",z={},K={},Q=e.jsrender,G=Q&&t&&!t.render,Z={template:{compile:function e(n,r,a,i){function s(r){var o,s;if(""+r===r||r.nodeType>0&&(l=r)){if(!l)if(/^\.?\/[^\\:*?"<>]*$/.test(r))(s=c[n=n||r])?r=s:l=document.getElementById(r);else if("#"===r.charAt(0))l=document.getElementById(r.slice(1));else if(t.fn&&!p.rTmpl.test(r))try{l=t(r,document)[0]}catch(e){}l&&("SCRIPT"!==l.tagName&&ke(r+": Use script block, not "+l.tagName),i?r=l.innerHTML:((o=l.getAttribute(W))&&(o!==U?(r=c[o],delete c[o]):t.fn&&(r=t.data(l)[U])),o&&r||(n=n||(t.fn?U:r),r=e(n,l.innerHTML,a,i)),r.tmplName=n=n||o,n!==U&&(c[n]=r),l.setAttribute(W,n),t.fn&&t.data(l,U,r))),l=void 0}else r.fn||(r=void 0);return r}var l,d,h=r=r||"";p._html=u.html,0===i&&(i=void 0,h=s(h));(i=i||(r.markup?r.bnds?ie({},r):r:{})).tmplName=i.tmplName||n||"unnamed",a&&(i._parentTmpl=a);!h&&r.markup&&(h=s(r.markup))&&h.fn&&(h=h.markup);if(void 0!==h)return h.render||r.render?h.tmpls&&(d=h):(r=fe(h,i),Le(h.replace(C,"\\$&"),r)),d||(d=ie((function(){return d.render.apply(d,arguments)}),r),function(e){var t,n,r;for(t in Z)e[n=t+"s"]&&(r=e[n],e[n]={},o[n](r,e))}(d)),d}},tag:{compile:function(e,t,n){var r,a,i,o=new p._tg;function s(){var t=this;t._={unlinked:!0},t.inline=!0,t.tagName=e}l(t)?t={depends:t.depends,render:t}:""+t===t&&(t={template:t});if(a=t.baseTag)for(i in t.flow=!!t.flow,(a=""+a===a?n&&n.tags[a]||m[a]:a)||ke('baseTag: "'+t.baseTag+'" not found'),o=ie(o,a),t)o[i]=ee(a[i],t[i]);else o=ie(o,t);void 0!==(r=o.template)&&(o.template=""+r===r?c[r]||c(r):r);(s.prototype=o).constructor=o._ctr=s,n&&(o._parentTmpl=n);return o}},viewModel:{compile:function(e,n){var r,a,i,o=this,c=n.getters,u=n.extend,h=n.id,m=t.extend({_is:e||"unnamed",unmap:S,merge:k},u),p="",g="",f=c?c.length:0,v=t.observable,y={};function w(e){a.apply(this,e)}function b(){return new w(arguments)}function $(e,t){for(var n,r,a,i,s,l=0;l<f;l++)n=void 0,(a=c[l])+""!==a&&(a=(n=a).getter,s=n.parentRef),void 0===(i=e[a])&&n&&void 0!==(r=n.defaultVal)&&(i=pe(r,e)),t(i,n&&o[n.type],a,s)}function k(e,t,n){e=e+""===e?JSON.parse(e):e;var r,a,i,o,l,c,u,m,p,g,f=0,w=this;if(d(w)){for(u={},p=[],a=e.length,i=w.length;f<a;f++){for(m=e[f],c=!1,r=0;r<i&&!c;r++)u[r]||(l=w[r],h&&(u[r]=c=h+""===h?m[h]&&(y[h]?l[h]():l[h])===m[h]:h(l,m)));c?(l.merge(m),p.push(l)):(p.push(g=b.map(m)),n&&ge(g,n,t))}v?v(w).refresh(p,!0):w.splice.apply(w,[0,w.length].concat(p))}else for(o in $(e,(function(e,t,n,r){t?w[n]().merge(e,w,r):w[n]()!==e&&w[n](e)})),e)o===s||y[o]||(w[o]=e[o])}function S(){var e,t,n,r,a=0,i=this;function u(e){for(var t=[],n=0,r=e.length;n<r;n++)t.push(e[n].unmap());return t}if(d(i))return u(i);for(e={};a<f;a++)n=void 0,(t=c[a])+""!==t&&(t=(n=t).getter),r=i[t](),e[t]=n&&r&&o[n.type]?d(r)?u(r):r.unmap():r;for(t in i)!i.hasOwnProperty(t)||"_"===t.charAt(0)&&y[t.slice(1)]||t===s||l(i[t])||(e[t]=i[t]);return e}for(w.prototype=m,r=0;r<f;r++)!function(e){e=e.getter||e,y[e]=r+1;var t="_"+e;p+=(p?",":"")+e,g+="this."+t+" = "+e+";\n",m[e]=m[e]||function(n){if(!arguments.length)return this[t];v?v(this).setProperty(e,n):this[t]=n},v&&(m[e].set=m[e].set||function(e){this[t]=e})}(c[r]);return g=new Function(p,g),a=function(){g.apply(this,arguments),(i=arguments[f+1])&&ge(this,arguments[f],i)},a.prototype=m,m.constructor=a,b.map=function(t){t=t+""===t?JSON.parse(t):t;var n,r,a,i,o=0,l=t,u=[];if(d(t)){for(n=(t=t||[]).length;o<n;o++)u.push(this.map(t[o]));return u._is=e,u.unmap=S,u.merge=k,u}if(t){for($(t,(function(e,t){t&&(e=t.map(e)),u.push(e)})),l=this.apply(this,u),o=f;o--;)if(a=u[o],(i=c[o].parentRef)&&a&&a.unmap)if(d(a))for(n=a.length;n--;)ge(a[n],i,l);else ge(a,i,l);for(r in t)r===s||y[r]||(l[r]=t[r])}return l},b.getters=c,b.extend=u,b.id=h,b}},helper:{},converter:{}};function X(e,t){return function(){var n,r=this,a=r.base;return r.base=e,n=t.apply(r,arguments),r.base=a,n}}function ee(e,t){return l(t)&&((t=X(e?e._d?e:X(re,e):re,t))._d=(e&&e._d||0)+1),t}function te(e,t){var n,r=t.props;for(n in r)!F.test(n)||e[n]&&e[n].fix||(e[n]="convert"!==n?ee(e.constructor.prototype[n],r[n]):r[n])}function ne(e){return e}function re(){return""}function ae(e){this.name=(t.link?"JsViews":"JsRender")+" Error",this.message=e||this.name}function ie(e,t){if(e){for(var n in t)e[n]=t[n];return e}}function oe(){var e=this.get("item");return e?e.index:void 0}function se(){return this.index}function le(e,t,n,r){var a,i,o,s=0;if(1===n&&(r=1,n=void 0),t)for(o=(i=t.split(".")).length;e&&s<o;s++)a=e,e=i[s]?e[i[s]]:e;return n&&(n.lt=n.lt||s<o),void 0===e?r?re:"":r?function(){return e.apply(a,arguments)}:e}function de(n,r,a){var i,o,s,d,c,u,m,g=this,f=!L&&arguments.length>1,v=g.ctx;if(n){if(g._||(c=g.index,g=g.tag),u=g,v&&v.hasOwnProperty(n)||(v=h).hasOwnProperty(n)){if(s=v[n],"tag"===n||"tagCtx"===n||"root"===n||"parentTags"===n)return s}else v=void 0;if((!L&&g.tagCtx||g.linked)&&(s&&s._cxp||(g=g.tagCtx||l(s)?g:!(g=g.scope||g).isTop&&g.ctx.tag||g,void 0!==s&&g.tagCtx&&(g=g.tagCtx.view.scope),v=g._ocps,(s=v&&v.hasOwnProperty(n)&&v[n]||s)&&s._cxp||!a&&!f||((v||(g._ocps=g._ocps||{}))[n]=s=[{_ocp:s,_vw:u,_key:n}],s._cxp={path:M,ind:0,updateValue:function(e,n){return t.observable(s[0]).setProperty(M,e),this}})),d=s&&s._cxp)){if(arguments.length>2)return(o=s[1]?p._ceo(s[1].deps):[M]).unshift(s[0]),o._cxp=d,o;if(c=d.tagElse,m=s[1]?d.tag&&d.tag.cvtArgs?d.tag.cvtArgs(c,1)[d.ind]:s[1](s[0].data,s[0],p):s[0]._ocp,f)return p._ucp(n,r,g,d),g;s=m}return s&&l(s)&&(i=function(){return s.apply(this&&this!==e?this:u,arguments)},ie(i,s)),i||s}}function ce(e,t){var n,r,a,i,o,s,l,c=this;if(c.tagName){if(!(c=((s=c).tagCtxs||[c])[e||0]))return}else s=c.tag;if(o=s.bindFrom,i=c.args,(l=s.convert)&&""+l===l&&(l="true"===l?void 0:c.view.getRsc("converters",l)||ke("Unknown converter: '"+l+"'")),l&&!t&&(i=i.slice()),o){for(a=[],n=o.length;n--;)r=o[n],a.unshift(ue(c,r));t&&(i=a)}if(l){if(void 0===(l=l.apply(s,a||i)))return i;if(n=(o=o||[0]).length,d(l)&&(!1===l.arg0||1!==n&&l.length===n&&!l.arg0)||(l=[l],o=[0],n=1),t)i=l;else for(;n--;)+(r=o[n])===r&&(i[r]=l[n])}return i}function ue(e,t){return(e=e[+t===t?"args":"props"])&&e[t]}function he(e){return this.cvtArgs(e,1)}function me(e,t,n,r,a,i,o,s){var l,d,c,u=this,h="array"===t;u.content=s,u.views=h?[]:{},u.data=r,u.tmpl=a,c=u._={key:0,useKey:h?0:1,id:""+q++,onRender:o,bnds:{}},u.linked=!!o,u.type=t||"top",t&&(u.cache={_ct:g._cchCt}),n&&"top"!==n.type||((u.ctx=e||{}).root=u.data),(u.parent=n)?(u.root=n.root||u,l=n.views,d=n._,u.isTop=d.scp,u.scope=(!e.tag||e.tag===n.ctx.tag)&&!u.isTop&&n.scope||u,d.useKey?(l[c.key="_"+d.useKey++]=u,u.index=V,u.getIndex=oe):l.length===(c.key=u.index=i)?l.push(u):l.splice(i,0,u),u.ctx=e||n.ctx):t&&(u.root=u)}function pe(e,t){return l(e)?e.call(t):e}function ge(e,t,n){Object.defineProperty(e,t,{value:n,configurable:!0})}function fe(e,n){var r,a=f._wm||{},i={tmpls:[],links:{},bnds:[],_is:"template",render:be};return n&&(i=ie(i,n)),i.markup=e,i.htmlTag||(r=A.exec(e),i.htmlTag=r?r[1].toLowerCase():""),(r=a[i.htmlTag])&&r!==a.div&&(i.markup=t.trim(i.markup)),i}function ve(e,t){var n=e+"s";o[n]=function r(a,i,s){var l,d,c,u=p.onStore[e];if(a&&typeof a===H&&!a.nodeType&&!a.markup&&!a.getTgt&&!("viewModel"===e&&a.getters||a.extend)){for(d in a)r(d,a[d],i);return i||o}return a&&""+a!==a&&(s=i,i=a,a=void 0),c=s?"viewModel"===e?s:s[n]=s[n]||{}:r,l=t.compile,void 0===i&&(i=l?a:c[a],a=void 0),null===i?a&&delete c[a]:(l&&((i=l.call(c,a,i,s,0)||{})._is=e),a&&(c[a]=i)),u&&u(a,i,s,l),i}}function ye(e){v[e]=v[e]||function(t){return arguments.length?(g[e]=t,v):g[e]}}function we(e){function t(t,n){this.tgt=e.getTgt(t,n),n.map=this}return l(e)&&(e={getTgt:e}),e.baseMap&&(e=ie(ie({},e.baseMap),e)),e.map=function(e,n){return new t(e,n)},e}function be(e,t,n,r,a,o){var s,c,u,h,m,g,v,y=r,w="";if(!0===t?(n=t,t=void 0):typeof t!==H&&(t=void 0),(u=this.tag)?(h=(y=y||this.view)._getTmpl(u.template||this.tmpl),arguments.length||(e=u.contentCtx&&l(u.contentCtx)?e=u.contentCtx(e):y)):h=this,h){if(!r&&e&&"view"===e._is&&(y=e),y&&e===y&&(e=y.data),m=!y,L=L||m,m&&((t=t||{}).root=e),!L||f.useViews||h.useViews||y&&y!==i)w=$e(h,e,t,n,y,a,o,u);else{if(y?(g=y.data,v=y.index,y.index=V):(g=(y=i).data,y.data=e,y.ctx=t),d(e)&&!n)for(s=0,c=e.length;s<c;s++)y.index=s,y.data=e[s],w+=h.fn(e[s],y,p);else y.data=e,w+=h.fn(e,y,p);y.data=g,y.index=v}m&&(L=void 0)}return w}function $e(e,t,n,r,a,i,o,s){var l,c,u,h,m,g,f,v,y,w,b,$,k,S="";if(s&&(y=s.tagName,$=s.tagCtx,n=n?Ce(n,s.ctx):s.ctx,e===a.content?f=e!==a.ctx._wrp?a.ctx._wrp:void 0:e!==$.content?e===s.template?(f=$.tmpl,n._wrp=$.content):f=$.content||a.content:f=a.content,!1===$.props.link&&((n=n||{}).link=!1)),a&&(o=o||a._.onRender,(k=n&&!1===n.link)&&a._.nl&&(o=void 0),n=Ce(n,a.ctx),$=!s&&a.tag?a.tag.tagCtxs[a.tagElse]:$),(w=$&&$.props.itemVar)&&("~"!==w[0]&&Se("Use itemVar='~myItem'"),w=w.slice(1)),!0===i&&(g=!0,i=0),o&&s&&s._.noVws&&(o=void 0),v=o,!0===o&&(v=void 0,o=a._.onRender),b=n=e.helpers?Ce(e.helpers,n):n,d(t)&&!r)for((u=g?a:void 0!==i&&a||new me(n,"array",a,t,e,i,o,f))._.nl=k,a&&a._.useKey&&(u._.bnd=!s||s._.bnd&&s,u.tag=s),l=0,c=t.length;l<c;l++)h=new me(b,"item",u,t[l],e,(i||0)+l,o,u.content),w&&((h.ctx=ie({},b))[w]=p._cp(t[l],"#data",h)),m=e.fn(t[l],h,p),S+=u._.onRender?u._.onRender(m,h):m;else u=g?a:new me(b,y||"data",a,t,e,i,o,f),w&&((u.ctx=ie({},b))[w]=p._cp(t,"#data",u)),u.tag=s,u._.nl=k,S+=e.fn(t,u,p);return s&&(u.tagElse=$.index,$.contentView=u),v?v(S,u):S}function ke(e){throw new p.Err(e)}function Se(e){ke("Syntax error\n"+e)}function Le(e,t,n,r,i){function o(t){(t-=f)&&k.push(e.substr(f,t).replace(T,"\\n"))}function s(t,n){t&&(t+="}}",Se((n?"{{"+n+"}} block has {{/"+t+" without {{"+t:"Unmatched or missing {{/"+t)+", in template:\n"+e))}var l,d,c,u,h,m=g.allowCode||t&&t.allowCode||!0===v.allowCode,p=[],f=0,w=[],k=p,S=[,,p];if(m&&t._is&&(t.allowCode=m),n&&(void 0!==r&&(e=e.slice(0,-r.length-2)+b),e=y+e+$),s(w[0]&&w[0][2].pop()[0]),e.replace(a,(function(a,l,d,h,p,g,v,y,b,$,L,D){(v&&l||b&&!d||y&&":"===y.slice(-1)||$)&&Se(a),g&&(p=":",h=B);var M,C,A,x=(l||n)&&[[]],P="",O="",R="",I="",N="",q="",Y="",J="",H=!(b=b||n&&!i)&&!p;d=d||(y=y||"#data",p),o(D),f=D+a.length,v?m&&k.push(["*","\n"+y.replace(/^:/,"ret+= ").replace(_,"$1")+";\n"]):d?("else"===d&&(j.test(y)&&Se('For "{{else if expr}}" use "{{else expr}}"'),x=S[9]&&[[]],S[10]=e.substring(S[10],D),C=S[11]||S[0]||Se("Mismatched: "+a),S=w.pop(),k=S[2],H=!0),y&&Te(y.replace(T," "),x,t,n).replace(E,(function(e,t,n,r,a,i,o,s){return"this:"===r&&(i="undefined"),s&&(A=A||"@"===s[0]),r="'"+a+"':",o?(O+=n+i+",",I+="'"+s+"',"):n?(R+=r+"j._cp("+i+',"'+s+'",view),',q+=r+"'"+s+"',"):t?Y+=i:("trigger"===a&&(J+=i),"lateRender"===a&&(M="false"!==s),P+=r+i+",",N+=r+"'"+s+"',",u=u||F.test(a)),""})).slice(0,-1),x&&x[0]&&x.pop(),c=[d,h||!!r||u||"",H&&[],Me(I||(":"===d?"'#data',":""),N,q),Me(O||(":"===d?"data,":""),P,R),Y,J,M,A,x||0],k.push(c),H&&(w.push(S),(S=c)[10]=f,S[11]=C)):L&&(s(L!==S[0]&&L!==S[11]&&L,S[0]),S[10]=e.substring(S[10],D),S=w.pop()),s(!S&&L),k=S[2]})),o(e.length),(f=p[p.length-1])&&s(""+f!==f&&+f[10]===f[10]&&f[0]),n){for(d=_e(p,e,n),h=[],l=p.length;l--;)h.unshift(p[l][9]);De(d,h)}else d=_e(p,t);return d}function De(e,t){var n,r,a=0,i=t.length;for(e.deps=[],e.paths=[];a<i;a++)for(n in e.paths.push(r=t[a]),r)"_jsvto"!==n&&r.hasOwnProperty(n)&&r[n].length&&!r[n].skp&&(e.deps=e.deps.concat(r[n]))}function Me(e,t,n){return[e.slice(0,-1),t.slice(0,-1),n.slice(0,-1)]}function Te(e,n,r,a){var i,o,s,l,d,c=n&&n[0],u={bd:c},h={0:u},m=0,g=0,v=0,y={},w=0,b={},$={},k={},S={0:0},L={0:""},D=0;return"@"===e[0]&&(e=e.replace(N,".")),s=(e+(r?" ":"")).replace(p.rPrm,(function(r,s,M,T,_,E,j,A,x,F,P,O,R,I,N,q,Y,J,B,H,W){T&&!A&&(_=T+_),E=E||"",R=R||"",M=M||s||R,_=_||x,F&&(F=!/\)|]/.test(W[H-1]))&&(_=_.slice(1).split(".").join("^")),P=P||J||"";var U,V,K,Q,G,Z,X,ee=H;if(!d&&!l){if(j&&Se(e),Y&&c){if(U=k[v-1],W.length-1>ee-(U||0)){if(U=t.trim(W.slice(U,ee+r.length)),V=o||h[v-1].bd,(K=V[V.length-1])&&K.prm){for(;K.sb&&K.sb.prm;)K=K.sb;Q=K.sb={path:K.sb,bnd:K.bnd}}else V.push(Q={path:V.pop()});K&&K.sb===Q&&(L[v]=L[v-1].slice(K._cpPthSt)+L[v],L[v-1]=L[v-1].slice(0,K._cpPthSt)),Q._cpPthSt=S[v-1],Q._cpKey=U,L[v]+=W.slice(D,H),D=H,Q._cpfn=z[U]=z[U]||new Function("data,view,j","//"+U+"\nvar v;\nreturn ((v="+L[v]+("]"===q?")]":q)+")!=null?v:null);"),L[v-1]+=$[g]&&f.cache?'view.getCache("'+U.replace(C,"\\$&")+'"':L[v],Q.prm=u.bd,Q.bnd=Q.bnd||Q.path&&Q.path.indexOf("^")>=0}L[v]=""}"["===P&&(P="[j._sq("),"["===M&&(M="[j._sq(")}return X=d?(d=!I)?r:R+'"':l?(l=!N)?r:R+'"':(M?(b[++g]=!0,y[g]=0,c&&(k[v++]=ee++,u=h[v]={bd:[]},L[v]="",S[v]=1),M):"")+(B?g?"":(m=W.slice(m,ee),(i?(i=o=!1,"\b"):"\b,")+m+(m=ee+r.length,c&&n.push(u.bd=[]),"\b")):A?(v&&Se(e),c&&n.pop(),i="_"+_,m=ee+r.length,c&&((c=u.bd=n[i]=[]).skp=!T),_+":"):_?_.split("^").join(".").replace(p.rPath,(function(e,t,r,s,l,d,h,m){if(G="."===r,r&&(_=_.slice(t.length),/^\.?constructor$/.test(m||_)&&Se(e),G||(e=(F?(a?"":"(ltOb.lt=ltOb.lt||")+"(ob=":"")+(s?'view.ctxPrm("'+s+'")':l?"view":"data")+(F?")===undefined"+(a?"":")")+'?"":view._getOb(ob,"':"")+(m?(d?"."+d:s||l?"":"."+r)+(h||""):(m=s?"":l?d||"":r,"")),e=t+("view.data"===(e+=m?"."+m:"").slice(0,9)?e.slice(5):e)+(F?(a?'"':'",ltOb')+(P?",1)":")"):"")),c)){if(V="_linkTo"===i?o=n._jsvto=n._jsvto||[]:u.bd,K=G&&V[V.length-1]){if(K._cpfn){for(;K.sb;)K=K.sb;K.prm&&(K.bnd&&(_="^"+_.slice(1)),K.sb=_,K.bnd=K.bnd||"^"===_[0])}}else V.push(_);P&&!G&&(k[v]=ee,S[v]=L[v].length)}return e}))+(P||E):E||(q?"]"===q?")]":")":O?($[g]||Se(e),","):s?"":(d=I,l=N,'"'))),d||l||q&&($[g]=!1,g--),c&&(d||l||(q&&(b[g+1]&&(u=h[--v],b[g+1]=!1),w=y[g+1]),P&&(y[g+1]=L[v].length+(M?1:0),(_||q)&&(u=h[++v]={bd:[]},b[g+1]=!0))),L[v]=(L[v]||"")+W.slice(D,H),D=H+r.length,d||l||((Z=M&&b[g+1])&&(L[v-1]+=M,S[v-1]++),"("===P&&G&&!Q&&(L[v]=L[v-1].slice(w)+L[v],L[v-1]=L[v-1].slice(0,w))),L[v]+=Z?X.slice(1):X),d||l||!P||(g++,_&&"("===P&&($[g]=!0)),d||l||!J||(c&&(L[v]+=P),X+=P),X})),c&&(s=L[0]),!g&&s||Se(e)}function _e(e,t,n){var r,a,i,o,s,l,d,c,u,h,p,v,y,w,b,$,k,S,L,D,M,C,E,j,A,x,F,P,O,R,I,N,q,Y,J=0,H=f.useViews||t.useViews||t.tags||t.templates||t.helpers||t.converters,W="",U={},V=e.length;for(""+t===t?(k=n?'data-link="'+t.replace(T," ").slice(1,-1)+'"':t,t=0):(k=t.tmplName||"unnamed",t.allowCode&&(U.allowCode=!0),t.debug&&(U.debug=!0),h=t.bnds,$=t.tmpls),r=0;r<V;r++)if(""+(a=e[r])===a)W+='+"'+a+'"';else if("*"===(i=a[0]))W+=";\n"+a[1]+"\nret=ret";else{if(o=a[1],D=!n&&a[2],q=a[3],Y=v=a[4],s="\n\tparams:{args:["+q[0]+"],\n\tprops:{"+q[1]+"}"+(q[2]?",\n\tctx:{"+q[2]+"}":"")+"},\n\targs:["+Y[0]+"],\n\tprops:{"+Y[1]+"}"+(Y[2]?",\n\tctx:{"+Y[2]+"}":""),O=a[6],R=a[7],a[8]?(I="\nvar ob,ltOb={},ctxs=",N=";\nctxs.lt=ltOb.lt;\nreturn ctxs;"):(I="\nreturn ",N=""),M=a[10]&&a[10].replace(_,"$1"),(j="else"===i)?p&&p.push(a[9]):(F=a[5]||!1!==g.debugMode&&"undefined",h&&(p=a[9])&&(p=[p],J=h.push(1))),H=H||v[1]||v[2]||p||/view.(?!index)/.test(v[0]),(A=":"===i)?o&&(i=o===B?">":o+i):(D&&((S=fe(M,U)).tmplName=k+"/"+i,S.useViews=S.useViews||H,_e(D,S),H=S.useViews,$.push(S)),j||(L=i,H=H||i&&(!m[i]||!m[i].flow),E=W,W=""),C=(C=e[r+1])&&"else"===C[0]),P=F?";\ntry{\nret+=":"\n+",y="",w="",A&&(p||O||o&&o!==B||R)){if((x=new Function("data,view,j","// "+k+" "+ ++J+" "+i+I+"{"+s+"};"+N))._er=F,x._tag=i,x._bd=!!p,x._lr=R,n)return x;De(x,p),u=!0,y=(b='c("'+o+'",view,')+J+",",w=")"}if(W+=A?(n?(F?"try{\n":"")+"return ":P)+(u?(u=void 0,H=c=!0,b+(x?(h[J-1]=x,J):"{"+s+"}")+")"):">"===i?(d=!0,"h("+v[0]+")"):"((v="+v[0]+")!=null?v:"+(n?"null)":'"")')):(l=!0,"\n{view:view,content:false,tmpl:"+(D?$.length:"false")+","+s+"},"),L&&!C){if(W="["+W.slice(0,-1)+"]",b='t("'+L+'",view,this,',n||p){if((W=new Function("data,view,j"," // "+k+" "+J+" "+L+I+W+N))._er=F,W._tag=L,p&&De(h[J-1]=W,p),W._lr=R,n)return W;y=b+J+",undefined,",w=")"}W=E+P+b+(p&&J||W)+")",p=0,L=0}F&&!C&&(H=!0,W+=";\n}catch(e){ret"+(n?"urn ":"+=")+y+"j._err(e,view,"+F+")"+w+";}"+(n?"":"\nret=ret"))}W="// "+k+(U.debug?"\ndebugger;":"")+"\nvar v"+(l?",t=j._tag":"")+(c?",c=j._cnvt":"")+(d?",h=j._html":"")+(n?(a[8]?", ob":"")+";\n":',ret=""')+W+(n?"\n":";\nreturn ret;");try{W=new Function("data,view,j",W)}catch(e){Se("Compiled template code:\n\n"+W+'\n: "'+(e.message||e)+'"')}return t&&(t.fn=W,t.useViews=!!H),W}function Ce(e,t){return e&&e!==t?t?ie(ie({},t),e):e:t&&ie({},t)}function Ee(e,n){var r,a,i,o=n.tag,s=n.props,c=n.params.props,u=s.filter,h=s.sort,m=!0===h,p=parseInt(s.step),g=s.reverse?-1:1;if(!d(e))return e;if(m||h&&""+h===h?((r=e.map((function(e,t){return{i:t,v:""+(e=m?e:le(e,h))===e?e.toLowerCase():e}}))).sort((function(e,t){return e.v>t.v?g:e.v<t.v?-g:0})),e=r.map((function(t){return e[t.i]}))):(h||g<0)&&!o.dataMap&&(e=e.slice()),l(h)&&(e=e.sort((function(){return h.apply(n,arguments)}))),g<0&&(!h||l(h))&&(e=e.reverse()),e.filter&&u&&(e=e.filter(u,n),n.tag.onFilter&&n.tag.onFilter(n)),c.sorted&&(r=h||g<0?e:e.slice(),o.sorted?t.observable(o.sorted).refresh(r):n.map.sorted=r),a=s.start,i=s.end,(c.start&&void 0===a||c.end&&void 0===i)&&(a=i=0),isNaN(a)&&isNaN(i)||(a=+a||0,i=void 0===i||i>e.length?e.length:+i,e=e.slice(a,i)),p>1){for(a=0,i=e.length,r=[];a<i;a+=p)r.push(e[a]);e=r}return c.paged&&o.paged&&$observable(o.paged).refresh(e),e}function je(e,n,r){var a=this.jquery&&(this[0]||ke("Unknown template")),i=a.getAttribute(W);return be.call(i&&t.data(a)[U]||c(a),e,n,r)}function Ae(e){return Y[e]||(Y[e]="&#"+e.charCodeAt(0)+";")}function xe(e,t){return J[t]||""}function Fe(e){return null!=e?x.test(e)&&(""+e).replace(O,Ae)||e:""}if(o={jsviews:D,sub:{rPath:/^(!*?)(?:null|true|false|\d[\d.]*|([\w$]+|\.|~([\w$]+)|#(view|([\w$]+))?)([\w$.^]*?)(?:[.[^]([\w$]+)\]?)?)$/g,rPrm:/(\()(?=\s*\()|(?:([([])\s*)?(?:(\^?)(~?[\w$.^]+)?\s*((\+\+|--)|\+|-|~(?![\w$])|&&|\|\||===|!==|==|!=|<=|>=|[<>%*:?\/]|(=))\s*|(!*?(@)?[#~]?[\w$.^]+)([([])?)|(,\s*)|(?:(\()\s*)?\\?(?:(')|("))|(?:\s*(([)\]])(?=[.^]|\s*$|[^([])|[)\]])([([]?))|(\s+)/g,View:me,Err:ae,tmplFn:Le,parse:Te,extend:ie,extendCtx:Ce,syntaxErr:Se,onStore:{template:function(e,t){null===t?delete K[e]:e&&(K[e]=t)}},addSetting:ye,settings:{allowCode:!1},advSet:re,_thp:te,_gm:ee,_tg:function(){},_cnvt:function(e,t,n,r){var a,i,o,s,l,d="number"==typeof n&&t.tmpl.bnds[n-1];void 0===r&&d&&d._lr&&(r="");void 0!==r?n=r={props:{},args:[r]}:d&&(n=d(t.data,t,p));if(d=d._bd&&d,e||d){if(a=(i=t._lc)&&i.tag,n.view=t,!a){if(a=ie(new p._tg,{_:{bnd:d,unlinked:!0,lt:n.lt},inline:!i,tagName:":",convert:e,onArrayChange:!0,flow:!0,tagCtx:n,tagCtxs:[n],_is:"tag"}),(s=n.args.length)>1)for(l=a.bindTo=[];s--;)l.unshift(s);i&&(i.tag=a,a.linkCtx=i),n.ctx=Ce(n.ctx,(i?i.view:t).ctx),te(a,n)}a._er=r&&o,a.ctx=n.ctx||a.ctx||{},n.ctx=void 0,o=a.cvtArgs()[0],a._er=r&&o}else o=n.args[0];return null!=(o=d&&t._.onRender?t._.onRender(o,t,a):o)?o:""},_tag:function(e,t,n,r,a,o){function s(e){var t=l[e];if(void 0!==t)for(t=d(t)?t:[t],v=t.length;v--;)O=t[v],isNaN(parseInt(O))||(t[v]=parseInt(O));return t||[0]}var l,c,h,m,g,f,v,y,w,b,$,k,S,L,D,M,T,_,C,E,j,A,x,F,O,R,I,N,q,Y=0,J="",H=(t=t||i)._lc||!1,W=t.ctx,U=n||t.tmpl,V="number"==typeof r&&t.tmpl.bnds[r-1];"tag"===e._is?(e=(l=e).tagName,r=l.tagCtxs,l.template):(c=t.getRsc("tags",e)||ke("Unknown tag: {{"+e+"}} ")).template;void 0===o&&V&&(V._lr=c.lateRender&&!1!==V._lr||V._lr)&&(o="");void 0!==o?(J+=o,r=o=[{props:{},args:[],params:{props:{}}}]):V&&(r=V(t.data,t,p));for(f=r.length;Y<f;Y++)M=(b=r[Y]).tmpl,(!H||!H.tag||Y&&!H.tag.inline||l._er||M&&+M===M)&&(M&&U.tmpls&&(b.tmpl=b.content=U.tmpls[M-1]),b.index=Y,b.ctxPrm=de,b.render=be,b.cvtArgs=ce,b.bndArgs=he,b.view=t,b.ctx=Ce(Ce(b.ctx,c&&c.ctx),W)),(n=b.props.tmpl)&&(b.tmpl=t._getTmpl(n),b.content=b.content||b.tmpl),l?H&&H.fn._lr&&(T=!!l.init):(T=!!(l=new c._ctr).init,l.parent=g=W&&W.tag,l.tagCtxs=r,H&&(l.inline=!1,H.tag=l),l.linkCtx=H,(l._.bnd=V||H.fn)?(l._.ths=b.params.props.this,l._.lt=r.lt,l._.arrVws={}):l.dataBoundOnly&&ke(e+" must be data-bound:\n{^{"+e+"}}")),x=l.dataMap,b.tag=l,x&&r&&(b.map=r[Y].map),l.flow||($=b.ctx=b.ctx||{},h=l.parents=$.parentTags=W&&Ce($.parentTags,W.parentTags)||{},g&&(h[g.tagName]=g),h[l.tagName]=$.tag=l,$.tagCtx=b);if(!(l._er=o)){for(te(l,r[0]),l.rendering={rndr:l.rendering},Y=0;Y<f;Y++){if(A=(b=l.tagCtx=r[Y]).props,l.ctx=b.ctx,!Y){if(T&&(l.init(b,H,l.ctx),T=void 0),b.args.length||!1===b.argDefault||!1===l.argDefault||(b.args=E=[b.view.data],b.params.args=["#data"]),S=s("bindTo"),void 0!==l.bindTo&&(l.bindTo=S),void 0!==l.bindFrom?l.bindFrom=s("bindFrom"):l.bindTo&&(l.bindFrom=l.bindTo=S),L=l.bindFrom||S,I=S.length,R=L.length,l._.bnd&&(N=l.linkedElement)&&(l.linkedElement=N=d(N)?N:[N],I!==N.length&&ke("linkedElement not same length as bindTo")),(N=l.linkedCtxParam)&&(l.linkedCtxParam=N=d(N)?N:[N],R!==N.length&&ke("linkedCtxParam not same length as bindFrom/bindTo")),L)for(l._.fromIndex={},l._.toIndex={},y=R;y--;)for(O=L[y],v=I;v--;)O===S[v]&&(l._.fromIndex[v]=y,l._.toIndex[y]=v);H&&(H.attr=l.attr=H.attr||l.attr||H._dfAt),m=l.attr,l._.noVws=m&&m!==B}if(E=l.cvtArgs(Y),l.linkedCtxParam)for(j=l.cvtArgs(Y,1),v=R,q=l.constructor.prototype.ctx;v--;)(k=l.linkedCtxParam[v])&&(O=L[v],D=j[v],b.ctx[k]=p._cp(q&&void 0===D?q[k]:D,void 0!==D&&ue(b.params,O),b.view,l._.bnd&&{tag:l,cvt:l.convert,ind:v,tagElse:Y}));(_=A.dataMap||x)&&(E.length||A.dataMap)&&((C=b.map)&&C.src===E[0]&&!a||(C&&C.src&&C.unmap(),_.map(E[0],b,C,!l._.bnd),C=b.map),E=[C.tgt]),w=void 0,l.render&&(w=l.render.apply(l,E),t.linked&&w&&!P.test(w)&&((n={links:[]}).render=n.fn=function(){return w},w=$e(n,t.data,void 0,!0,t,void 0,void 0,l))),E.length||(E=[t]),void 0===w&&(F=E[0],l.contentCtx&&(F=!0===l.contentCtx?t:l.contentCtx(F)),w=b.render(F,!0)||(a?void 0:"")),J=J?J+(w||""):void 0!==w?""+w:void 0}l.rendering=l.rendering.rndr}l.tagCtx=r[0],l.ctx=l.tagCtx.ctx,l._.noVws&&l.inline&&(J="text"===m?u.html(J):"");return V&&t._.onRender?t._.onRender(J,t,l):J},_er:ke,_err:function(e,t,n){var r=void 0!==n?l(n)?n.call(t.data,e,t):n||"":"{Error: "+(e.message||e)+"}";g.onError&&void 0!==(n=g.onError.call(t.data,e,n&&r,t))&&(r=n);return t&&!t._lc?u.html(r):r},_cp:ne,_sq:function(e){return"constructor"===e&&Se(""),e}},settings:{delimiters:function e(t,n,r){if(!t)return g.delimiters;if(d(t))return e.apply(o,t);k=r?r[0]:k,/^(\W|_){5}$/.test(t+n+k)||ke("Invalid delimiters");return y=t[0],w=t[1],b=n[0],$=n[1],g.delimiters=[y+w,b+$,k],t="\\"+y+"(\\"+k+")?\\"+w,n="\\"+b+"\\"+$,a="(?:(\\w+(?=[\\/\\s\\"+b+"]))|(\\w+)?(:)|(>)|(\\*))\\s*((?:[^\\"+b+"]|\\"+b+"(?!\\"+$+"))*?)",p.rTag="(?:"+a+")",a=new RegExp("(?:"+t+a+"(\\/)?|\\"+y+"(\\"+k+")?\\"+w+"(?:(?:\\/(\\w+))\\s*|!--[\\s\\S]*?--))"+n,"g"),p.rTmpl=new RegExp("^\\s|\\s$|<.*>|([^\\\\]|^)[{}]|"+t+".*"+n),v},advanced:function(e){return e?(ie(f,e),p.advSet(),v):f}},map:we},(ae.prototype=new Error).constructor=ae,oe.depends=function(){return[this.get("item"),"index"]},se.depends="index",me.prototype={get:function(e,t){t||!0===e||(t=e,e=void 0);var n,r,a,i,o=this,s="root"===t;if(e){if(!(i=t&&o.type===t&&o))if(n=o.views,o._.useKey){for(r in n)if(i=t?n[r].get(e,t):n[r])break}else for(r=0,a=n.length;!i&&r<a;r++)i=t?n[r].get(e,t):n[r]}else if(s)i=o.root;else if(t)for(;o&&!i;)i=o.type===t?o:void 0,o=o.parent;else i=o.parent;return i||void 0},getIndex:se,ctxPrm:de,getRsc:function(e,t){var n,r,a=this;if(""+t===t){for(;void 0===n&&a;)n=(r=a.tmpl&&a.tmpl[e])&&r[t],a=a.parent;return n||o[e][t]}},_getTmpl:function(e){return e&&(e.fn?e:this.getRsc("templates",e)||c(e))},_getOb:le,getCache:function(e){return g._cchCt>this.cache._ct&&(this.cache={_ct:g._cchCt}),void 0!==this.cache[e]?this.cache[e]:this.cache[e]=z[e](this.data,this,p)},_is:"view"},p=o.sub,v=o.settings,!(Q||t&&t.render)){for(r in Z)ve(r,Z[r]);if(u=o.converters,h=o.helpers,m=o.tags,p._tg.prototype={baseApply:function(e){return this.base.apply(this,e)},cvtArgs:ce,bndArgs:he,ctxPrm:de},i=p.topView=new me,t){if(t.fn.render=je,s=t.expando,t.observable){if(D!==(D=t.views.jsviews))throw"jquery.observable.js requires jsrender.js "+D;ie(p,t.views.sub),o.map=t.views.map}}else t={},n&&(e.jsrender=t),t.renderFile=t.__express=t.compile=function(){throw"Node.js: use npm jsrender, or jsrender-node.js"},t.isFunction=function(e){return"function"==typeof e},t.isArray=Array.isArray||function(e){return"[object Array]"==={}.toString.call(e)},p._jq=function(e){e!==t&&(ie(e,t),(t=e).fn.render=je,delete t.jsrender,s=t.expando)},t.jsrender=D;for(S in(g=p.settings).allowCode=!1,l=t.isFunction,t.render=K,t.views=o,t.templates=c=o.templates,g)ye(S);(v.debugMode=function(e){return void 0===e?g.debugMode:(g._clFns&&g._clFns(),g.debugMode=e,g.onError=e+""===e?function(){return e}:l(e)?e:void 0,v)})(!1),f=g.advanced={cache:!0,useViews:!1,_jsv:!1},m({if:{render:function(e){var t=this,n=t.tagCtx;return t.rendering.done||!e&&(n.args.length||!n.index)?"":(t.rendering.done=!0,void(t.selected=n.index))},contentCtx:!0,flow:!0},for:{sortDataMap:we(Ee),init:function(e,t){this.setDataMap(this.tagCtxs)},render:function(e){var t,n,r,a,i,o=this,s=o.tagCtx,l=!1===s.argDefault,c=s.props,u=l||s.args.length,h="",m=0;if(!o.rendering.done){if(t=u?e:s.view.data,l)for(l=c.reverse?"unshift":"push",a=+c.end,i=+c.step||1,t=[],r=+c.start||0;(a-r)*i>0;r+=i)t[l](r);void 0!==t&&(n=d(t),h+=s.render(t,!u||c.noIteration),m+=n?t.length:1),(o.rendering.done=m)&&(o.selected=s.index)}return h},setDataMap:function(e){for(var t,n,r,a=e.length;a--;)n=(t=e[a]).props,r=t.params.props,t.argDefault=void 0===n.end||t.args.length>0,n.dataMap=!1!==t.argDefault&&d(t.args[0])&&(r.sort||r.start||r.end||r.step||r.filter||r.reverse||n.sort||n.start||n.end||n.step||n.filter||n.reverse)&&this.sortDataMap},flow:!0},props:{baseTag:"for",dataMap:we((function(e,n){var r,a,i=n.map,o=i&&i.propsArr;if(!o){if(o=[],typeof e===H||l(e))for(r in e)a=e[r],r===s||!e.hasOwnProperty(r)||n.props.noFunctions&&t.isFunction(a)||o.push({key:r,prop:a});i&&(i.propsArr=i.options&&o)}return Ee(o,n)})),init:re,flow:!0},include:{flow:!0},"*":{render:ne,flow:!0},":*":{render:ne,flow:!0},dbg:h.dbg=u.dbg=function(e){try{throw console.log("JsRender dbg breakpoint: "+e),"dbg breakpoint"}catch(e){}return this.base?this.baseApply(arguments):e}}),u({html:Fe,attr:Fe,encode:function(e){return""+e===e?e.replace(R,Ae):e},unencode:function(e){return""+e===e?e.replace(I,xe):e},url:function(e){return null!=e?encodeURI(""+e):null===e?e:""}})}return g=p.settings,d=(t||Q).isArray,v.delimiters("{{","}}","^"),G&&Q.views.sub._jq(t),t||Q}),window)}},__webpack_module_cache__={};function __webpack_require__(e){var t=__webpack_module_cache__[e];if(void 0!==t)return t.exports;var n=__webpack_module_cache__[e]={exports:{}};return __webpack_modules__[e].call(n.exports,n,n.exports,__webpack_require__),n.exports}__webpack_require__.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return __webpack_require__.d(t,{a:t}),t},__webpack_require__.d=(e,t)=>{for(var n in t)__webpack_require__.o(t,n)&&!__webpack_require__.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},__webpack_require__.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),__webpack_require__.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})};var __webpack_exports__={};(()=>{"use strict";__webpack_require__(208)})(),(()=>{"use strict";var e={};__webpack_require__.r(e),__webpack_require__.d(e,{PageRenderer:()=>le,PageSnapshot:()=>H,clearCache:()=>$e,connectStreamSource:()=>ye,disconnectStreamSource:()=>we,navigator:()=>pe,registerAdapter:()=>fe,renderStreamMessage:()=>be,session:()=>me,setConfirmMethod:()=>Se,setProgressBarDelay:()=>ke,start:()=>ge,visit:()=>ve}),function(){if(void 0===window.Reflect||void 0===window.customElements||window.customElements.polyfillWrapFlushCallback)return;const e=HTMLElement,t=function(){return Reflect.construct(e,[],this.constructor)};window.HTMLElement=t,HTMLElement.prototype=e.prototype,HTMLElement.prototype.constructor=HTMLElement,Object.setPrototypeOf(HTMLElement,e)}(),function(e){function t(e,t,n){throw new e("Failed to execute 'requestSubmit' on 'HTMLFormElement': "+t+".",n)}"function"!=typeof e.requestSubmit&&(e.requestSubmit=function(e){e?(!function(e,n){e instanceof HTMLElement||t(TypeError,"parameter 1 is not of type 'HTMLElement'"),"submit"==e.type||t(TypeError,"The specified element is not a submit button"),e.form==n||t(DOMException,"The specified element is not owned by this form element","NotFoundError")}(e,this),e.click()):((e=document.createElement("input")).type="submit",e.hidden=!0,this.appendChild(e),e.click(),this.removeChild(e))})}(HTMLFormElement.prototype);const t=new WeakMap;function n(e){const n=function(e){const t=e instanceof Element?e:e instanceof Node?e.parentElement:null,n=t?t.closest("input, button"):null;return"submit"==(null==n?void 0:n.type)?n:null}(e.target);n&&n.form&&t.set(n.form,n)}var r,a,i,o,s,l;!function(){if("submitter"in Event.prototype)return;let e;if("SubmitEvent"in window&&/Apple Computer/.test(navigator.vendor))e=window.SubmitEvent.prototype;else{if("SubmitEvent"in window)return;e=window.Event.prototype}addEventListener("click",n,!0),Object.defineProperty(e,"submitter",{get(){if("submit"==this.type&&this.target instanceof HTMLFormElement)return t.get(this.target)}})}(),function(e){e.eager="eager",e.lazy="lazy"}(r||(r={}));class d extends HTMLElement{constructor(){super(),this.loaded=Promise.resolve(),this.delegate=new d.delegateConstructor(this)}static get observedAttributes(){return["disabled","loading","src"]}connectedCallback(){this.delegate.connect()}disconnectedCallback(){this.delegate.disconnect()}reload(){const{src:e}=this;this.src=null,this.src=e}attributeChangedCallback(e){"loading"==e?this.delegate.loadingStyleChanged():"src"==e?this.delegate.sourceURLChanged():this.delegate.disabledChanged()}get src(){return this.getAttribute("src")}set src(e){e?this.setAttribute("src",e):this.removeAttribute("src")}get loading(){return function(e){if("lazy"===e.toLowerCase())return r.lazy;return r.eager}(this.getAttribute("loading")||"")}set loading(e){e?this.setAttribute("loading",e):this.removeAttribute("loading")}get disabled(){return this.hasAttribute("disabled")}set disabled(e){e?this.setAttribute("disabled",""):this.removeAttribute("disabled")}get autoscroll(){return this.hasAttribute("autoscroll")}set autoscroll(e){e?this.setAttribute("autoscroll",""):this.removeAttribute("autoscroll")}get complete(){return!this.delegate.isLoading}get isActive(){return this.ownerDocument===document&&!this.isPreview}get isPreview(){var e,t;return null===(t=null===(e=this.ownerDocument)||void 0===e?void 0:e.documentElement)||void 0===t?void 0:t.hasAttribute("data-turbo-preview")}}function c(e){return new URL(e.toString(),document.baseURI)}function u(e){let t;return e.hash?e.hash.slice(1):(t=e.href.match(/#(.*)$/))?t[1]:void 0}function h(e,t){return c((null==t?void 0:t.getAttribute("formaction"))||e.getAttribute("action")||e.action)}function m(e){return(function(e){return function(e){return e.pathname.split("/").slice(1)}(e).slice(-1)[0]}(e).match(/\.[^.]*$/)||[])[0]||""}function p(e,t){const n=function(e){return t=e.origin+e.pathname,t.endsWith("/")?t:t+"/";var t}(t);return e.href===c(n).href||e.href.startsWith(n)}function g(e,t){return p(e,t)&&!!m(e).match(/^(?:|\.(?:htm|html|xhtml))$/)}function f(e){const t=u(e);return null!=t?e.href.slice(0,-(t.length+1)):e.href}function v(e){return f(e)}class y{constructor(e){this.response=e}get succeeded(){return this.response.ok}get failed(){return!this.succeeded}get clientError(){return this.statusCode>=400&&this.statusCode<=499}get serverError(){return this.statusCode>=500&&this.statusCode<=599}get redirected(){return this.response.redirected}get location(){return c(this.response.url)}get isHTML(){return this.contentType&&this.contentType.match(/^(?:text\/([^\s;,]+\b)?html|application\/xhtml\+xml)\b/)}get statusCode(){return this.response.status}get contentType(){return this.header("Content-Type")}get responseText(){return this.response.clone().text()}get responseHTML(){return this.isHTML?this.response.clone().text():Promise.resolve(void 0)}header(e){return this.response.headers.get(e)}}function w(e,{target:t,cancelable:n,detail:r}={}){const a=new CustomEvent(e,{cancelable:n,bubbles:!0,detail:r});return t&&t.isConnected?t.dispatchEvent(a):document.documentElement.dispatchEvent(a),a}function b(){return new Promise((e=>requestAnimationFrame((()=>e()))))}function $(e=""){return(new DOMParser).parseFromString(e,"text/html")}function k(e,...t){const n=function(e,t){return e.reduce(((e,n,r)=>e+n+(null==t[r]?"":t[r])),"")}(e,t).replace(/^\n/,"").split("\n"),r=n[0].match(/^\s+/),a=r?r[0].length:0;return n.map((e=>e.slice(a))).join("\n")}function S(){return Array.apply(null,{length:36}).map(((e,t)=>8==t||13==t||18==t||23==t?"-":14==t?"4":19==t?(Math.floor(4*Math.random())+8).toString(16):Math.floor(15*Math.random()).toString(16))).join("")}function L(e,...t){for(const n of t.map((t=>null==t?void 0:t.getAttribute(e))))if("string"==typeof n)return n;return null}function D(...e){for(const t of e)"turbo-frame"==t.localName&&t.setAttribute("busy",""),t.setAttribute("aria-busy","true")}function M(...e){for(const t of e)"turbo-frame"==t.localName&&t.removeAttribute("busy"),t.removeAttribute("aria-busy")}!function(e){e[e.get=0]="get",e[e.post=1]="post",e[e.put=2]="put",e[e.patch=3]="patch",e[e.delete=4]="delete"}(a||(a={}));class T{constructor(e,t,n,r=new URLSearchParams,a=null){this.abortController=new AbortController,this.resolveRequestPromise=e=>{},this.delegate=e,this.method=t,this.headers=this.defaultHeaders,this.body=r,this.url=n,this.target=a}get location(){return this.url}get params(){return this.url.searchParams}get entries(){return this.body?Array.from(this.body.entries()):[]}cancel(){this.abortController.abort()}async perform(){var e,t;const{fetchOptions:n}=this;null===(t=(e=this.delegate).prepareHeadersForRequest)||void 0===t||t.call(e,this.headers,this),await this.allowRequestToBeIntercepted(n);try{this.delegate.requestStarted(this);const e=await fetch(this.url.href,n);return await this.receive(e)}catch(e){if("AbortError"!==e.name)throw this.delegate.requestErrored(this,e),e}finally{this.delegate.requestFinished(this)}}async receive(e){const t=new y(e);return w("turbo:before-fetch-response",{cancelable:!0,detail:{fetchResponse:t},target:this.target}).defaultPrevented?this.delegate.requestPreventedHandlingResponse(this,t):t.succeeded?this.delegate.requestSucceededWithResponse(this,t):this.delegate.requestFailedWithResponse(this,t),t}get fetchOptions(){var e;return{method:a[this.method].toUpperCase(),credentials:"same-origin",headers:this.headers,redirect:"follow",body:this.isIdempotent?null:this.body,signal:this.abortSignal,referrer:null===(e=this.delegate.referrer)||void 0===e?void 0:e.href}}get defaultHeaders(){return{Accept:"text/html, application/xhtml+xml"}}get isIdempotent(){return this.method==a.get}get abortSignal(){return this.abortController.signal}async allowRequestToBeIntercepted(e){const t=new Promise((e=>this.resolveRequestPromise=e));w("turbo:before-fetch-request",{cancelable:!0,detail:{fetchOptions:e,url:this.url,resume:this.resolveRequestPromise},target:this.target}).defaultPrevented&&await t}}class _{constructor(e,t){this.started=!1,this.intersect=e=>{const t=e.slice(-1)[0];(null==t?void 0:t.isIntersecting)&&this.delegate.elementAppearedInViewport(this.element)},this.delegate=e,this.element=t,this.intersectionObserver=new IntersectionObserver(this.intersect)}start(){this.started||(this.started=!0,this.intersectionObserver.observe(this.element))}stop(){this.started&&(this.started=!1,this.intersectionObserver.unobserve(this.element))}}class C{constructor(e){this.templateElement=document.createElement("template"),this.templateElement.innerHTML=e}static wrap(e){return"string"==typeof e?new this(e):e}get fragment(){const e=document.createDocumentFragment();for(const t of this.foreignElements)e.appendChild(document.importNode(t,!0));return e}get foreignElements(){return this.templateChildren.reduce(((e,t)=>"turbo-stream"==t.tagName.toLowerCase()?[...e,t]:e),[])}get templateChildren(){return Array.from(this.templateElement.content.children)}}C.contentType="text/vnd.turbo-stream.html",function(e){e[e.initialized=0]="initialized",e[e.requesting=1]="requesting",e[e.waiting=2]="waiting",e[e.receiving=3]="receiving",e[e.stopping=4]="stopping",e[e.stopped=5]="stopped"}(i||(i={})),function(e){e.urlEncoded="application/x-www-form-urlencoded",e.multipart="multipart/form-data",e.plain="text/plain"}(o||(o={}));class E{constructor(e,t,n,r=!1){this.state=i.initialized,this.delegate=e,this.formElement=t,this.submitter=n,this.formData=function(e,t){const n=new FormData(e),r=null==t?void 0:t.getAttribute("name"),a=null==t?void 0:t.getAttribute("value");r&&null!=a&&n.get(r)!=a&&n.append(r,a);return n}(t,n),this.location=c(this.action),this.method==a.get&&function(e,t){const n=new URLSearchParams;for(const[e,r]of t)r instanceof File||n.append(e,r);e.search=n.toString()}(this.location,[...this.body.entries()]),this.fetchRequest=new T(this,this.method,this.location,this.body,this.formElement),this.mustRedirect=r}static confirmMethod(e,t){return confirm(e)}get method(){var e;return function(e){switch(e.toLowerCase()){case"get":return a.get;case"post":return a.post;case"put":return a.put;case"patch":return a.patch;case"delete":return a.delete}}(((null===(e=this.submitter)||void 0===e?void 0:e.getAttribute("formmethod"))||this.formElement.getAttribute("method")||"").toLowerCase())||a.get}get action(){var e;const t="string"==typeof this.formElement.action?this.formElement.action:null;return(null===(e=this.submitter)||void 0===e?void 0:e.getAttribute("formaction"))||this.formElement.getAttribute("action")||t||""}get body(){return this.enctype==o.urlEncoded||this.method==a.get?new URLSearchParams(this.stringFormData):this.formData}get enctype(){var e;return function(e){switch(e.toLowerCase()){case o.multipart:return o.multipart;case o.plain:return o.plain;default:return o.urlEncoded}}((null===(e=this.submitter)||void 0===e?void 0:e.getAttribute("formenctype"))||this.formElement.enctype)}get isIdempotent(){return this.fetchRequest.isIdempotent}get stringFormData(){return[...this.formData].reduce(((e,[t,n])=>e.concat("string"==typeof n?[[t,n]]:[])),[])}get confirmationMessage(){return this.formElement.getAttribute("data-turbo-confirm")}get needsConfirmation(){return null!==this.confirmationMessage}async start(){const{initialized:e,requesting:t}=i;if(this.needsConfirmation){if(!E.confirmMethod(this.confirmationMessage,this.formElement))return}if(this.state==e)return this.state=t,this.fetchRequest.perform()}stop(){const{stopping:e,stopped:t}=i;if(this.state!=e&&this.state!=t)return this.state=e,this.fetchRequest.cancel(),!0}prepareHeadersForRequest(e,t){if(!t.isIdempotent){const t=function(e){if(null!=e){const t=(document.cookie?document.cookie.split("; "):[]).find((t=>t.startsWith(e)));if(t){const e=t.split("=").slice(1).join("=");return e?decodeURIComponent(e):void 0}}}(j("csrf-param"))||j("csrf-token");t&&(e["X-CSRF-Token"]=t),e.Accept=[C.contentType,e.Accept].join(", ")}}requestStarted(e){var t;this.state=i.waiting,null===(t=this.submitter)||void 0===t||t.setAttribute("disabled",""),w("turbo:submit-start",{target:this.formElement,detail:{formSubmission:this}}),this.delegate.formSubmissionStarted(this)}requestPreventedHandlingResponse(e,t){this.result={success:t.succeeded,fetchResponse:t}}requestSucceededWithResponse(e,t){if(t.clientError||t.serverError)this.delegate.formSubmissionFailedWithResponse(this,t);else if(this.requestMustRedirect(e)&&function(e){return 200==e.statusCode&&!e.redirected}(t)){const e=new Error("Form responses must redirect to another location");this.delegate.formSubmissionErrored(this,e)}else this.state=i.receiving,this.result={success:!0,fetchResponse:t},this.delegate.formSubmissionSucceededWithResponse(this,t)}requestFailedWithResponse(e,t){this.result={success:!1,fetchResponse:t},this.delegate.formSubmissionFailedWithResponse(this,t)}requestErrored(e,t){this.result={success:!1,error:t},this.delegate.formSubmissionErrored(this,t)}requestFinished(e){var t;this.state=i.stopped,null===(t=this.submitter)||void 0===t||t.removeAttribute("disabled"),w("turbo:submit-end",{target:this.formElement,detail:Object.assign({formSubmission:this},this.result)}),this.delegate.formSubmissionFinished(this)}requestMustRedirect(e){return!e.isIdempotent&&this.mustRedirect}}function j(e){const t=document.querySelector(`meta[name="${e}"]`);return t&&t.content}class A{constructor(e){this.element=e}get children(){return[...this.element.children]}hasAnchor(e){return null!=this.getElementForAnchor(e)}getElementForAnchor(e){return e?this.element.querySelector(`[id='${e}'], a[name='${e}']`):null}get isConnected(){return this.element.isConnected}get firstAutofocusableElement(){return this.element.querySelector("[autofocus]")}get permanentElements(){return[...this.element.querySelectorAll("[id][data-turbo-permanent]")]}getPermanentElementById(e){return this.element.querySelector(`#${e}[data-turbo-permanent]`)}getPermanentElementMapForSnapshot(e){const t={};for(const n of this.permanentElements){const{id:r}=n,a=e.getPermanentElementById(r);a&&(t[r]=[n,a])}return t}}class x{constructor(e,t){this.submitBubbled=e=>{const t=e.target;if(!e.defaultPrevented&&t instanceof HTMLFormElement&&t.closest("turbo-frame, html")==this.element){const n=e.submitter||void 0;"dialog"!=((null==n?void 0:n.getAttribute("formmethod"))||t.method)&&this.delegate.shouldInterceptFormSubmission(t,n)&&(e.preventDefault(),e.stopImmediatePropagation(),this.delegate.formSubmissionIntercepted(t,n))}},this.delegate=e,this.element=t}start(){this.element.addEventListener("submit",this.submitBubbled)}stop(){this.element.removeEventListener("submit",this.submitBubbled)}}class F{constructor(e,t){this.resolveRenderPromise=e=>{},this.resolveInterceptionPromise=e=>{},this.delegate=e,this.element=t}scrollToAnchor(e){const t=this.snapshot.getElementForAnchor(e);t?(this.scrollToElement(t),this.focusElement(t)):this.scrollToPosition({x:0,y:0})}scrollToAnchorFromLocation(e){this.scrollToAnchor(u(e))}scrollToElement(e){e.scrollIntoView()}focusElement(e){e instanceof HTMLElement&&(e.hasAttribute("tabindex")?e.focus():(e.setAttribute("tabindex","-1"),e.focus(),e.removeAttribute("tabindex")))}scrollToPosition({x:e,y:t}){this.scrollRoot.scrollTo(e,t)}scrollToTop(){this.scrollToPosition({x:0,y:0})}get scrollRoot(){return window}async render(e){const{isPreview:t,shouldRender:n,newSnapshot:r}=e;if(n)try{this.renderPromise=new Promise((e=>this.resolveRenderPromise=e)),this.renderer=e,this.prepareToRenderSnapshot(e);const n=new Promise((e=>this.resolveInterceptionPromise=e));this.delegate.allowsImmediateRender(r,this.resolveInterceptionPromise)||await n,await this.renderSnapshot(e),this.delegate.viewRenderedSnapshot(r,t),this.finishRenderingSnapshot(e)}finally{delete this.renderer,this.resolveRenderPromise(void 0),delete this.renderPromise}else this.invalidate()}invalidate(){this.delegate.viewInvalidated()}prepareToRenderSnapshot(e){this.markAsPreview(e.isPreview),e.prepareToRender()}markAsPreview(e){e?this.element.setAttribute("data-turbo-preview",""):this.element.removeAttribute("data-turbo-preview")}async renderSnapshot(e){await e.render()}finishRenderingSnapshot(e){e.finishRendering()}}class P extends F{invalidate(){this.element.innerHTML=""}get snapshot(){return new A(this.element)}}class O{constructor(e,t){this.clickBubbled=e=>{this.respondsToEventTarget(e.target)?this.clickEvent=e:delete this.clickEvent},this.linkClicked=e=>{this.clickEvent&&this.respondsToEventTarget(e.target)&&e.target instanceof Element&&this.delegate.shouldInterceptLinkClick(e.target,e.detail.url)&&(this.clickEvent.preventDefault(),e.preventDefault(),this.delegate.linkClickIntercepted(e.target,e.detail.url)),delete this.clickEvent},this.willVisit=()=>{delete this.clickEvent},this.delegate=e,this.element=t}start(){this.element.addEventListener("click",this.clickBubbled),document.addEventListener("turbo:click",this.linkClicked),document.addEventListener("turbo:before-visit",this.willVisit)}stop(){this.element.removeEventListener("click",this.clickBubbled),document.removeEventListener("turbo:click",this.linkClicked),document.removeEventListener("turbo:before-visit",this.willVisit)}respondsToEventTarget(e){const t=e instanceof Element?e:e instanceof Node?e.parentElement:null;return t&&t.closest("turbo-frame, html")==this.element}}class R{constructor(e){this.permanentElementMap=e}static preservingPermanentElements(e,t){const n=new this(e);n.enter(),t(),n.leave()}enter(){for(const e in this.permanentElementMap){const[,t]=this.permanentElementMap[e];this.replaceNewPermanentElementWithPlaceholder(t)}}leave(){for(const e in this.permanentElementMap){const[t]=this.permanentElementMap[e];this.replaceCurrentPermanentElementWithClone(t),this.replacePlaceholderWithPermanentElement(t)}}replaceNewPermanentElementWithPlaceholder(e){const t=function(e){const t=document.createElement("meta");return t.setAttribute("name","turbo-permanent-placeholder"),t.setAttribute("content",e.id),t}(e);e.replaceWith(t)}replaceCurrentPermanentElementWithClone(e){const t=e.cloneNode(!0);e.replaceWith(t)}replacePlaceholderWithPermanentElement(e){const t=this.getPlaceholderById(e.id);null==t||t.replaceWith(e)}getPlaceholderById(e){return this.placeholders.find((t=>t.content==e))}get placeholders(){return[...document.querySelectorAll("meta[name=turbo-permanent-placeholder][content]")]}}class I{constructor(e,t,n,r=!0){this.currentSnapshot=e,this.newSnapshot=t,this.isPreview=n,this.willRender=r,this.promise=new Promise(((e,t)=>this.resolvingFunctions={resolve:e,reject:t}))}get shouldRender(){return!0}prepareToRender(){}finishRendering(){this.resolvingFunctions&&(this.resolvingFunctions.resolve(),delete this.resolvingFunctions)}createScriptElement(e){if("false"==e.getAttribute("data-turbo-eval"))return e;{const t=document.createElement("script");return this.cspNonce&&(t.nonce=this.cspNonce),t.textContent=e.textContent,t.async=!1,function(e,t){for(const{name:n,value:r}of[...t.attributes])e.setAttribute(n,r)}(t,e),t}}preservingPermanentElements(e){R.preservingPermanentElements(this.permanentElementMap,e)}focusFirstAutofocusableElement(){const e=this.connectedSnapshot.firstAutofocusableElement;(function(e){return e&&"function"==typeof e.focus})(e)&&e.focus()}get connectedSnapshot(){return this.newSnapshot.isConnected?this.newSnapshot:this.currentSnapshot}get currentElement(){return this.currentSnapshot.element}get newElement(){return this.newSnapshot.element}get permanentElementMap(){return this.currentSnapshot.getPermanentElementMapForSnapshot(this.newSnapshot)}get cspNonce(){var e;return null===(e=document.head.querySelector('meta[name="csp-nonce"]'))||void 0===e?void 0:e.getAttribute("content")}}class N extends I{get shouldRender(){return!0}async render(){await b(),this.preservingPermanentElements((()=>{this.loadFrameElement()})),this.scrollFrameIntoView(),await b(),this.focusFirstAutofocusableElement(),await b(),this.activateScriptElements()}loadFrameElement(){var e;const t=document.createRange();t.selectNodeContents(this.currentElement),t.deleteContents();const n=this.newElement,r=null===(e=n.ownerDocument)||void 0===e?void 0:e.createRange();r&&(r.selectNodeContents(n),this.currentElement.appendChild(r.extractContents()))}scrollFrameIntoView(){if(this.currentElement.autoscroll||this.newElement.autoscroll){const n=this.currentElement.firstElementChild,r=(e=this.currentElement.getAttribute("data-autoscroll-block"),t="end","end"==e||"start"==e||"center"==e||"nearest"==e?e:t);if(n)return n.scrollIntoView({block:r}),!0}var e,t;return!1}activateScriptElements(){for(const e of this.newScriptElements){const t=this.createScriptElement(e);e.replaceWith(t)}}get newScriptElements(){return this.currentElement.querySelectorAll("script")}}class q{constructor(){this.hiding=!1,this.value=0,this.visible=!1,this.trickle=()=>{this.setValue(this.value+Math.random()/100)},this.stylesheetElement=this.createStylesheetElement(),this.progressElement=this.createProgressElement(),this.installStylesheetElement(),this.setValue(0)}static get defaultCSS(){return k`
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./node_modules/@hotwired/turbo/dist/turbo.es2017-esm.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@hotwired/turbo/dist/turbo.es2017-esm.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   PageRenderer: () => (/* binding */ PageRenderer),
+/* harmony export */   PageSnapshot: () => (/* binding */ PageSnapshot),
+/* harmony export */   clearCache: () => (/* binding */ clearCache),
+/* harmony export */   connectStreamSource: () => (/* binding */ connectStreamSource),
+/* harmony export */   disconnectStreamSource: () => (/* binding */ disconnectStreamSource),
+/* harmony export */   navigator: () => (/* binding */ navigator$1),
+/* harmony export */   registerAdapter: () => (/* binding */ registerAdapter),
+/* harmony export */   renderStreamMessage: () => (/* binding */ renderStreamMessage),
+/* harmony export */   session: () => (/* binding */ session),
+/* harmony export */   setConfirmMethod: () => (/* binding */ setConfirmMethod),
+/* harmony export */   setProgressBarDelay: () => (/* binding */ setProgressBarDelay),
+/* harmony export */   start: () => (/* binding */ start),
+/* harmony export */   visit: () => (/* binding */ visit)
+/* harmony export */ });
+/*
+Turbo 7.1.0
+Copyright © 2021 Basecamp, LLC
+ */
+(function () {
+    if (window.Reflect === undefined || window.customElements === undefined ||
+        window.customElements.polyfillWrapFlushCallback) {
+        return;
+    }
+    const BuiltInHTMLElement = HTMLElement;
+    const wrapperForTheName = {
+        'HTMLElement': function HTMLElement() {
+            return Reflect.construct(BuiltInHTMLElement, [], this.constructor);
+        }
+    };
+    window.HTMLElement =
+        wrapperForTheName['HTMLElement'];
+    HTMLElement.prototype = BuiltInHTMLElement.prototype;
+    HTMLElement.prototype.constructor = HTMLElement;
+    Object.setPrototypeOf(HTMLElement, BuiltInHTMLElement);
+})();
+
+/**
+ * The MIT License (MIT)
+ * 
+ * Copyright (c) 2019 Javan Makhmali
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+
+(function(prototype) {
+  if (typeof prototype.requestSubmit == "function") return
+
+  prototype.requestSubmit = function(submitter) {
+    if (submitter) {
+      validateSubmitter(submitter, this);
+      submitter.click();
+    } else {
+      submitter = document.createElement("input");
+      submitter.type = "submit";
+      submitter.hidden = true;
+      this.appendChild(submitter);
+      submitter.click();
+      this.removeChild(submitter);
+    }
+  };
+
+  function validateSubmitter(submitter, form) {
+    submitter instanceof HTMLElement || raise(TypeError, "parameter 1 is not of type 'HTMLElement'");
+    submitter.type == "submit" || raise(TypeError, "The specified element is not a submit button");
+    submitter.form == form || raise(DOMException, "The specified element is not owned by this form element", "NotFoundError");
+  }
+
+  function raise(errorConstructor, message, name) {
+    throw new errorConstructor("Failed to execute 'requestSubmit' on 'HTMLFormElement': " + message + ".", name)
+  }
+})(HTMLFormElement.prototype);
+
+const submittersByForm = new WeakMap;
+function findSubmitterFromClickTarget(target) {
+    const element = target instanceof Element ? target : target instanceof Node ? target.parentElement : null;
+    const candidate = element ? element.closest("input, button") : null;
+    return (candidate === null || candidate === void 0 ? void 0 : candidate.type) == "submit" ? candidate : null;
+}
+function clickCaptured(event) {
+    const submitter = findSubmitterFromClickTarget(event.target);
+    if (submitter && submitter.form) {
+        submittersByForm.set(submitter.form, submitter);
+    }
+}
+(function () {
+    if ("submitter" in Event.prototype)
+        return;
+    let prototype;
+    if ("SubmitEvent" in window && /Apple Computer/.test(navigator.vendor)) {
+        prototype = window.SubmitEvent.prototype;
+    }
+    else if ("SubmitEvent" in window) {
+        return;
+    }
+    else {
+        prototype = window.Event.prototype;
+    }
+    addEventListener("click", clickCaptured, true);
+    Object.defineProperty(prototype, "submitter", {
+        get() {
+            if (this.type == "submit" && this.target instanceof HTMLFormElement) {
+                return submittersByForm.get(this.target);
+            }
+        }
+    });
+})();
+
+var FrameLoadingStyle;
+(function (FrameLoadingStyle) {
+    FrameLoadingStyle["eager"] = "eager";
+    FrameLoadingStyle["lazy"] = "lazy";
+})(FrameLoadingStyle || (FrameLoadingStyle = {}));
+class FrameElement extends HTMLElement {
+    constructor() {
+        super();
+        this.loaded = Promise.resolve();
+        this.delegate = new FrameElement.delegateConstructor(this);
+    }
+    static get observedAttributes() {
+        return ["disabled", "loading", "src"];
+    }
+    connectedCallback() {
+        this.delegate.connect();
+    }
+    disconnectedCallback() {
+        this.delegate.disconnect();
+    }
+    reload() {
+        const { src } = this;
+        this.src = null;
+        this.src = src;
+    }
+    attributeChangedCallback(name) {
+        if (name == "loading") {
+            this.delegate.loadingStyleChanged();
+        }
+        else if (name == "src") {
+            this.delegate.sourceURLChanged();
+        }
+        else {
+            this.delegate.disabledChanged();
+        }
+    }
+    get src() {
+        return this.getAttribute("src");
+    }
+    set src(value) {
+        if (value) {
+            this.setAttribute("src", value);
+        }
+        else {
+            this.removeAttribute("src");
+        }
+    }
+    get loading() {
+        return frameLoadingStyleFromString(this.getAttribute("loading") || "");
+    }
+    set loading(value) {
+        if (value) {
+            this.setAttribute("loading", value);
+        }
+        else {
+            this.removeAttribute("loading");
+        }
+    }
+    get disabled() {
+        return this.hasAttribute("disabled");
+    }
+    set disabled(value) {
+        if (value) {
+            this.setAttribute("disabled", "");
+        }
+        else {
+            this.removeAttribute("disabled");
+        }
+    }
+    get autoscroll() {
+        return this.hasAttribute("autoscroll");
+    }
+    set autoscroll(value) {
+        if (value) {
+            this.setAttribute("autoscroll", "");
+        }
+        else {
+            this.removeAttribute("autoscroll");
+        }
+    }
+    get complete() {
+        return !this.delegate.isLoading;
+    }
+    get isActive() {
+        return this.ownerDocument === document && !this.isPreview;
+    }
+    get isPreview() {
+        var _a, _b;
+        return (_b = (_a = this.ownerDocument) === null || _a === void 0 ? void 0 : _a.documentElement) === null || _b === void 0 ? void 0 : _b.hasAttribute("data-turbo-preview");
+    }
+}
+function frameLoadingStyleFromString(style) {
+    switch (style.toLowerCase()) {
+        case "lazy": return FrameLoadingStyle.lazy;
+        default: return FrameLoadingStyle.eager;
+    }
+}
+
+function expandURL(locatable) {
+    return new URL(locatable.toString(), document.baseURI);
+}
+function getAnchor(url) {
+    let anchorMatch;
+    if (url.hash) {
+        return url.hash.slice(1);
+    }
+    else if (anchorMatch = url.href.match(/#(.*)$/)) {
+        return anchorMatch[1];
+    }
+}
+function getAction(form, submitter) {
+    const action = (submitter === null || submitter === void 0 ? void 0 : submitter.getAttribute("formaction")) || form.getAttribute("action") || form.action;
+    return expandURL(action);
+}
+function getExtension(url) {
+    return (getLastPathComponent(url).match(/\.[^.]*$/) || [])[0] || "";
+}
+function isHTML(url) {
+    return !!getExtension(url).match(/^(?:|\.(?:htm|html|xhtml))$/);
+}
+function isPrefixedBy(baseURL, url) {
+    const prefix = getPrefix(url);
+    return baseURL.href === expandURL(prefix).href || baseURL.href.startsWith(prefix);
+}
+function locationIsVisitable(location, rootLocation) {
+    return isPrefixedBy(location, rootLocation) && isHTML(location);
+}
+function getRequestURL(url) {
+    const anchor = getAnchor(url);
+    return anchor != null
+        ? url.href.slice(0, -(anchor.length + 1))
+        : url.href;
+}
+function toCacheKey(url) {
+    return getRequestURL(url);
+}
+function urlsAreEqual(left, right) {
+    return expandURL(left).href == expandURL(right).href;
+}
+function getPathComponents(url) {
+    return url.pathname.split("/").slice(1);
+}
+function getLastPathComponent(url) {
+    return getPathComponents(url).slice(-1)[0];
+}
+function getPrefix(url) {
+    return addTrailingSlash(url.origin + url.pathname);
+}
+function addTrailingSlash(value) {
+    return value.endsWith("/") ? value : value + "/";
+}
+
+class FetchResponse {
+    constructor(response) {
+        this.response = response;
+    }
+    get succeeded() {
+        return this.response.ok;
+    }
+    get failed() {
+        return !this.succeeded;
+    }
+    get clientError() {
+        return this.statusCode >= 400 && this.statusCode <= 499;
+    }
+    get serverError() {
+        return this.statusCode >= 500 && this.statusCode <= 599;
+    }
+    get redirected() {
+        return this.response.redirected;
+    }
+    get location() {
+        return expandURL(this.response.url);
+    }
+    get isHTML() {
+        return this.contentType && this.contentType.match(/^(?:text\/([^\s;,]+\b)?html|application\/xhtml\+xml)\b/);
+    }
+    get statusCode() {
+        return this.response.status;
+    }
+    get contentType() {
+        return this.header("Content-Type");
+    }
+    get responseText() {
+        return this.response.clone().text();
+    }
+    get responseHTML() {
+        if (this.isHTML) {
+            return this.response.clone().text();
+        }
+        else {
+            return Promise.resolve(undefined);
+        }
+    }
+    header(name) {
+        return this.response.headers.get(name);
+    }
+}
+
+function dispatch(eventName, { target, cancelable, detail } = {}) {
+    const event = new CustomEvent(eventName, { cancelable, bubbles: true, detail });
+    if (target && target.isConnected) {
+        target.dispatchEvent(event);
+    }
+    else {
+        document.documentElement.dispatchEvent(event);
+    }
+    return event;
+}
+function nextAnimationFrame() {
+    return new Promise(resolve => requestAnimationFrame(() => resolve()));
+}
+function nextEventLoopTick() {
+    return new Promise(resolve => setTimeout(() => resolve(), 0));
+}
+function nextMicrotask() {
+    return Promise.resolve();
+}
+function parseHTMLDocument(html = "") {
+    return new DOMParser().parseFromString(html, "text/html");
+}
+function unindent(strings, ...values) {
+    const lines = interpolate(strings, values).replace(/^\n/, "").split("\n");
+    const match = lines[0].match(/^\s+/);
+    const indent = match ? match[0].length : 0;
+    return lines.map(line => line.slice(indent)).join("\n");
+}
+function interpolate(strings, values) {
+    return strings.reduce((result, string, i) => {
+        const value = values[i] == undefined ? "" : values[i];
+        return result + string + value;
+    }, "");
+}
+function uuid() {
+    return Array.apply(null, { length: 36 }).map((_, i) => {
+        if (i == 8 || i == 13 || i == 18 || i == 23) {
+            return "-";
+        }
+        else if (i == 14) {
+            return "4";
+        }
+        else if (i == 19) {
+            return (Math.floor(Math.random() * 4) + 8).toString(16);
+        }
+        else {
+            return Math.floor(Math.random() * 15).toString(16);
+        }
+    }).join("");
+}
+function getAttribute(attributeName, ...elements) {
+    for (const value of elements.map(element => element === null || element === void 0 ? void 0 : element.getAttribute(attributeName))) {
+        if (typeof value == "string")
+            return value;
+    }
+    return null;
+}
+function markAsBusy(...elements) {
+    for (const element of elements) {
+        if (element.localName == "turbo-frame") {
+            element.setAttribute("busy", "");
+        }
+        element.setAttribute("aria-busy", "true");
+    }
+}
+function clearBusyState(...elements) {
+    for (const element of elements) {
+        if (element.localName == "turbo-frame") {
+            element.removeAttribute("busy");
+        }
+        element.removeAttribute("aria-busy");
+    }
+}
+
+var FetchMethod;
+(function (FetchMethod) {
+    FetchMethod[FetchMethod["get"] = 0] = "get";
+    FetchMethod[FetchMethod["post"] = 1] = "post";
+    FetchMethod[FetchMethod["put"] = 2] = "put";
+    FetchMethod[FetchMethod["patch"] = 3] = "patch";
+    FetchMethod[FetchMethod["delete"] = 4] = "delete";
+})(FetchMethod || (FetchMethod = {}));
+function fetchMethodFromString(method) {
+    switch (method.toLowerCase()) {
+        case "get": return FetchMethod.get;
+        case "post": return FetchMethod.post;
+        case "put": return FetchMethod.put;
+        case "patch": return FetchMethod.patch;
+        case "delete": return FetchMethod.delete;
+    }
+}
+class FetchRequest {
+    constructor(delegate, method, location, body = new URLSearchParams, target = null) {
+        this.abortController = new AbortController;
+        this.resolveRequestPromise = (value) => { };
+        this.delegate = delegate;
+        this.method = method;
+        this.headers = this.defaultHeaders;
+        this.body = body;
+        this.url = location;
+        this.target = target;
+    }
+    get location() {
+        return this.url;
+    }
+    get params() {
+        return this.url.searchParams;
+    }
+    get entries() {
+        return this.body ? Array.from(this.body.entries()) : [];
+    }
+    cancel() {
+        this.abortController.abort();
+    }
+    async perform() {
+        var _a, _b;
+        const { fetchOptions } = this;
+        (_b = (_a = this.delegate).prepareHeadersForRequest) === null || _b === void 0 ? void 0 : _b.call(_a, this.headers, this);
+        await this.allowRequestToBeIntercepted(fetchOptions);
+        try {
+            this.delegate.requestStarted(this);
+            const response = await fetch(this.url.href, fetchOptions);
+            return await this.receive(response);
+        }
+        catch (error) {
+            if (error.name !== 'AbortError') {
+                this.delegate.requestErrored(this, error);
+                throw error;
+            }
+        }
+        finally {
+            this.delegate.requestFinished(this);
+        }
+    }
+    async receive(response) {
+        const fetchResponse = new FetchResponse(response);
+        const event = dispatch("turbo:before-fetch-response", { cancelable: true, detail: { fetchResponse }, target: this.target });
+        if (event.defaultPrevented) {
+            this.delegate.requestPreventedHandlingResponse(this, fetchResponse);
+        }
+        else if (fetchResponse.succeeded) {
+            this.delegate.requestSucceededWithResponse(this, fetchResponse);
+        }
+        else {
+            this.delegate.requestFailedWithResponse(this, fetchResponse);
+        }
+        return fetchResponse;
+    }
+    get fetchOptions() {
+        var _a;
+        return {
+            method: FetchMethod[this.method].toUpperCase(),
+            credentials: "same-origin",
+            headers: this.headers,
+            redirect: "follow",
+            body: this.isIdempotent ? null : this.body,
+            signal: this.abortSignal,
+            referrer: (_a = this.delegate.referrer) === null || _a === void 0 ? void 0 : _a.href
+        };
+    }
+    get defaultHeaders() {
+        return {
+            "Accept": "text/html, application/xhtml+xml"
+        };
+    }
+    get isIdempotent() {
+        return this.method == FetchMethod.get;
+    }
+    get abortSignal() {
+        return this.abortController.signal;
+    }
+    async allowRequestToBeIntercepted(fetchOptions) {
+        const requestInterception = new Promise(resolve => this.resolveRequestPromise = resolve);
+        const event = dispatch("turbo:before-fetch-request", {
+            cancelable: true,
+            detail: {
+                fetchOptions,
+                url: this.url,
+                resume: this.resolveRequestPromise
+            },
+            target: this.target
+        });
+        if (event.defaultPrevented)
+            await requestInterception;
+    }
+}
+
+class AppearanceObserver {
+    constructor(delegate, element) {
+        this.started = false;
+        this.intersect = entries => {
+            const lastEntry = entries.slice(-1)[0];
+            if (lastEntry === null || lastEntry === void 0 ? void 0 : lastEntry.isIntersecting) {
+                this.delegate.elementAppearedInViewport(this.element);
+            }
+        };
+        this.delegate = delegate;
+        this.element = element;
+        this.intersectionObserver = new IntersectionObserver(this.intersect);
+    }
+    start() {
+        if (!this.started) {
+            this.started = true;
+            this.intersectionObserver.observe(this.element);
+        }
+    }
+    stop() {
+        if (this.started) {
+            this.started = false;
+            this.intersectionObserver.unobserve(this.element);
+        }
+    }
+}
+
+class StreamMessage {
+    constructor(html) {
+        this.templateElement = document.createElement("template");
+        this.templateElement.innerHTML = html;
+    }
+    static wrap(message) {
+        if (typeof message == "string") {
+            return new this(message);
+        }
+        else {
+            return message;
+        }
+    }
+    get fragment() {
+        const fragment = document.createDocumentFragment();
+        for (const element of this.foreignElements) {
+            fragment.appendChild(document.importNode(element, true));
+        }
+        return fragment;
+    }
+    get foreignElements() {
+        return this.templateChildren.reduce((streamElements, child) => {
+            if (child.tagName.toLowerCase() == "turbo-stream") {
+                return [...streamElements, child];
+            }
+            else {
+                return streamElements;
+            }
+        }, []);
+    }
+    get templateChildren() {
+        return Array.from(this.templateElement.content.children);
+    }
+}
+StreamMessage.contentType = "text/vnd.turbo-stream.html";
+
+var FormSubmissionState;
+(function (FormSubmissionState) {
+    FormSubmissionState[FormSubmissionState["initialized"] = 0] = "initialized";
+    FormSubmissionState[FormSubmissionState["requesting"] = 1] = "requesting";
+    FormSubmissionState[FormSubmissionState["waiting"] = 2] = "waiting";
+    FormSubmissionState[FormSubmissionState["receiving"] = 3] = "receiving";
+    FormSubmissionState[FormSubmissionState["stopping"] = 4] = "stopping";
+    FormSubmissionState[FormSubmissionState["stopped"] = 5] = "stopped";
+})(FormSubmissionState || (FormSubmissionState = {}));
+var FormEnctype;
+(function (FormEnctype) {
+    FormEnctype["urlEncoded"] = "application/x-www-form-urlencoded";
+    FormEnctype["multipart"] = "multipart/form-data";
+    FormEnctype["plain"] = "text/plain";
+})(FormEnctype || (FormEnctype = {}));
+function formEnctypeFromString(encoding) {
+    switch (encoding.toLowerCase()) {
+        case FormEnctype.multipart: return FormEnctype.multipart;
+        case FormEnctype.plain: return FormEnctype.plain;
+        default: return FormEnctype.urlEncoded;
+    }
+}
+class FormSubmission {
+    constructor(delegate, formElement, submitter, mustRedirect = false) {
+        this.state = FormSubmissionState.initialized;
+        this.delegate = delegate;
+        this.formElement = formElement;
+        this.submitter = submitter;
+        this.formData = buildFormData(formElement, submitter);
+        this.location = expandURL(this.action);
+        if (this.method == FetchMethod.get) {
+            mergeFormDataEntries(this.location, [...this.body.entries()]);
+        }
+        this.fetchRequest = new FetchRequest(this, this.method, this.location, this.body, this.formElement);
+        this.mustRedirect = mustRedirect;
+    }
+    static confirmMethod(message, element) {
+        return confirm(message);
+    }
+    get method() {
+        var _a;
+        const method = ((_a = this.submitter) === null || _a === void 0 ? void 0 : _a.getAttribute("formmethod")) || this.formElement.getAttribute("method") || "";
+        return fetchMethodFromString(method.toLowerCase()) || FetchMethod.get;
+    }
+    get action() {
+        var _a;
+        const formElementAction = typeof this.formElement.action === 'string' ? this.formElement.action : null;
+        return ((_a = this.submitter) === null || _a === void 0 ? void 0 : _a.getAttribute("formaction")) || this.formElement.getAttribute("action") || formElementAction || "";
+    }
+    get body() {
+        if (this.enctype == FormEnctype.urlEncoded || this.method == FetchMethod.get) {
+            return new URLSearchParams(this.stringFormData);
+        }
+        else {
+            return this.formData;
+        }
+    }
+    get enctype() {
+        var _a;
+        return formEnctypeFromString(((_a = this.submitter) === null || _a === void 0 ? void 0 : _a.getAttribute("formenctype")) || this.formElement.enctype);
+    }
+    get isIdempotent() {
+        return this.fetchRequest.isIdempotent;
+    }
+    get stringFormData() {
+        return [...this.formData].reduce((entries, [name, value]) => {
+            return entries.concat(typeof value == "string" ? [[name, value]] : []);
+        }, []);
+    }
+    get confirmationMessage() {
+        return this.formElement.getAttribute("data-turbo-confirm");
+    }
+    get needsConfirmation() {
+        return this.confirmationMessage !== null;
+    }
+    async start() {
+        const { initialized, requesting } = FormSubmissionState;
+        if (this.needsConfirmation) {
+            const answer = FormSubmission.confirmMethod(this.confirmationMessage, this.formElement);
+            if (!answer) {
+                return;
+            }
+        }
+        if (this.state == initialized) {
+            this.state = requesting;
+            return this.fetchRequest.perform();
+        }
+    }
+    stop() {
+        const { stopping, stopped } = FormSubmissionState;
+        if (this.state != stopping && this.state != stopped) {
+            this.state = stopping;
+            this.fetchRequest.cancel();
+            return true;
+        }
+    }
+    prepareHeadersForRequest(headers, request) {
+        if (!request.isIdempotent) {
+            const token = getCookieValue(getMetaContent("csrf-param")) || getMetaContent("csrf-token");
+            if (token) {
+                headers["X-CSRF-Token"] = token;
+            }
+            headers["Accept"] = [StreamMessage.contentType, headers["Accept"]].join(", ");
+        }
+    }
+    requestStarted(request) {
+        var _a;
+        this.state = FormSubmissionState.waiting;
+        (_a = this.submitter) === null || _a === void 0 ? void 0 : _a.setAttribute("disabled", "");
+        dispatch("turbo:submit-start", { target: this.formElement, detail: { formSubmission: this } });
+        this.delegate.formSubmissionStarted(this);
+    }
+    requestPreventedHandlingResponse(request, response) {
+        this.result = { success: response.succeeded, fetchResponse: response };
+    }
+    requestSucceededWithResponse(request, response) {
+        if (response.clientError || response.serverError) {
+            this.delegate.formSubmissionFailedWithResponse(this, response);
+        }
+        else if (this.requestMustRedirect(request) && responseSucceededWithoutRedirect(response)) {
+            const error = new Error("Form responses must redirect to another location");
+            this.delegate.formSubmissionErrored(this, error);
+        }
+        else {
+            this.state = FormSubmissionState.receiving;
+            this.result = { success: true, fetchResponse: response };
+            this.delegate.formSubmissionSucceededWithResponse(this, response);
+        }
+    }
+    requestFailedWithResponse(request, response) {
+        this.result = { success: false, fetchResponse: response };
+        this.delegate.formSubmissionFailedWithResponse(this, response);
+    }
+    requestErrored(request, error) {
+        this.result = { success: false, error };
+        this.delegate.formSubmissionErrored(this, error);
+    }
+    requestFinished(request) {
+        var _a;
+        this.state = FormSubmissionState.stopped;
+        (_a = this.submitter) === null || _a === void 0 ? void 0 : _a.removeAttribute("disabled");
+        dispatch("turbo:submit-end", { target: this.formElement, detail: Object.assign({ formSubmission: this }, this.result) });
+        this.delegate.formSubmissionFinished(this);
+    }
+    requestMustRedirect(request) {
+        return !request.isIdempotent && this.mustRedirect;
+    }
+}
+function buildFormData(formElement, submitter) {
+    const formData = new FormData(formElement);
+    const name = submitter === null || submitter === void 0 ? void 0 : submitter.getAttribute("name");
+    const value = submitter === null || submitter === void 0 ? void 0 : submitter.getAttribute("value");
+    if (name && value != null && formData.get(name) != value) {
+        formData.append(name, value);
+    }
+    return formData;
+}
+function getCookieValue(cookieName) {
+    if (cookieName != null) {
+        const cookies = document.cookie ? document.cookie.split("; ") : [];
+        const cookie = cookies.find((cookie) => cookie.startsWith(cookieName));
+        if (cookie) {
+            const value = cookie.split("=").slice(1).join("=");
+            return value ? decodeURIComponent(value) : undefined;
+        }
+    }
+}
+function getMetaContent(name) {
+    const element = document.querySelector(`meta[name="${name}"]`);
+    return element && element.content;
+}
+function responseSucceededWithoutRedirect(response) {
+    return response.statusCode == 200 && !response.redirected;
+}
+function mergeFormDataEntries(url, entries) {
+    const searchParams = new URLSearchParams;
+    for (const [name, value] of entries) {
+        if (value instanceof File)
+            continue;
+        searchParams.append(name, value);
+    }
+    url.search = searchParams.toString();
+    return url;
+}
+
+class Snapshot {
+    constructor(element) {
+        this.element = element;
+    }
+    get children() {
+        return [...this.element.children];
+    }
+    hasAnchor(anchor) {
+        return this.getElementForAnchor(anchor) != null;
+    }
+    getElementForAnchor(anchor) {
+        return anchor ? this.element.querySelector(`[id='${anchor}'], a[name='${anchor}']`) : null;
+    }
+    get isConnected() {
+        return this.element.isConnected;
+    }
+    get firstAutofocusableElement() {
+        return this.element.querySelector("[autofocus]");
+    }
+    get permanentElements() {
+        return [...this.element.querySelectorAll("[id][data-turbo-permanent]")];
+    }
+    getPermanentElementById(id) {
+        return this.element.querySelector(`#${id}[data-turbo-permanent]`);
+    }
+    getPermanentElementMapForSnapshot(snapshot) {
+        const permanentElementMap = {};
+        for (const currentPermanentElement of this.permanentElements) {
+            const { id } = currentPermanentElement;
+            const newPermanentElement = snapshot.getPermanentElementById(id);
+            if (newPermanentElement) {
+                permanentElementMap[id] = [currentPermanentElement, newPermanentElement];
+            }
+        }
+        return permanentElementMap;
+    }
+}
+
+class FormInterceptor {
+    constructor(delegate, element) {
+        this.submitBubbled = ((event) => {
+            const form = event.target;
+            if (!event.defaultPrevented && form instanceof HTMLFormElement && form.closest("turbo-frame, html") == this.element) {
+                const submitter = event.submitter || undefined;
+                const method = (submitter === null || submitter === void 0 ? void 0 : submitter.getAttribute("formmethod")) || form.method;
+                if (method != "dialog" && this.delegate.shouldInterceptFormSubmission(form, submitter)) {
+                    event.preventDefault();
+                    event.stopImmediatePropagation();
+                    this.delegate.formSubmissionIntercepted(form, submitter);
+                }
+            }
+        });
+        this.delegate = delegate;
+        this.element = element;
+    }
+    start() {
+        this.element.addEventListener("submit", this.submitBubbled);
+    }
+    stop() {
+        this.element.removeEventListener("submit", this.submitBubbled);
+    }
+}
+
+class View {
+    constructor(delegate, element) {
+        this.resolveRenderPromise = (value) => { };
+        this.resolveInterceptionPromise = (value) => { };
+        this.delegate = delegate;
+        this.element = element;
+    }
+    scrollToAnchor(anchor) {
+        const element = this.snapshot.getElementForAnchor(anchor);
+        if (element) {
+            this.scrollToElement(element);
+            this.focusElement(element);
+        }
+        else {
+            this.scrollToPosition({ x: 0, y: 0 });
+        }
+    }
+    scrollToAnchorFromLocation(location) {
+        this.scrollToAnchor(getAnchor(location));
+    }
+    scrollToElement(element) {
+        element.scrollIntoView();
+    }
+    focusElement(element) {
+        if (element instanceof HTMLElement) {
+            if (element.hasAttribute("tabindex")) {
+                element.focus();
+            }
+            else {
+                element.setAttribute("tabindex", "-1");
+                element.focus();
+                element.removeAttribute("tabindex");
+            }
+        }
+    }
+    scrollToPosition({ x, y }) {
+        this.scrollRoot.scrollTo(x, y);
+    }
+    scrollToTop() {
+        this.scrollToPosition({ x: 0, y: 0 });
+    }
+    get scrollRoot() {
+        return window;
+    }
+    async render(renderer) {
+        const { isPreview, shouldRender, newSnapshot: snapshot } = renderer;
+        if (shouldRender) {
+            try {
+                this.renderPromise = new Promise(resolve => this.resolveRenderPromise = resolve);
+                this.renderer = renderer;
+                this.prepareToRenderSnapshot(renderer);
+                const renderInterception = new Promise(resolve => this.resolveInterceptionPromise = resolve);
+                const immediateRender = this.delegate.allowsImmediateRender(snapshot, this.resolveInterceptionPromise);
+                if (!immediateRender)
+                    await renderInterception;
+                await this.renderSnapshot(renderer);
+                this.delegate.viewRenderedSnapshot(snapshot, isPreview);
+                this.finishRenderingSnapshot(renderer);
+            }
+            finally {
+                delete this.renderer;
+                this.resolveRenderPromise(undefined);
+                delete this.renderPromise;
+            }
+        }
+        else {
+            this.invalidate();
+        }
+    }
+    invalidate() {
+        this.delegate.viewInvalidated();
+    }
+    prepareToRenderSnapshot(renderer) {
+        this.markAsPreview(renderer.isPreview);
+        renderer.prepareToRender();
+    }
+    markAsPreview(isPreview) {
+        if (isPreview) {
+            this.element.setAttribute("data-turbo-preview", "");
+        }
+        else {
+            this.element.removeAttribute("data-turbo-preview");
+        }
+    }
+    async renderSnapshot(renderer) {
+        await renderer.render();
+    }
+    finishRenderingSnapshot(renderer) {
+        renderer.finishRendering();
+    }
+}
+
+class FrameView extends View {
+    invalidate() {
+        this.element.innerHTML = "";
+    }
+    get snapshot() {
+        return new Snapshot(this.element);
+    }
+}
+
+class LinkInterceptor {
+    constructor(delegate, element) {
+        this.clickBubbled = (event) => {
+            if (this.respondsToEventTarget(event.target)) {
+                this.clickEvent = event;
+            }
+            else {
+                delete this.clickEvent;
+            }
+        };
+        this.linkClicked = ((event) => {
+            if (this.clickEvent && this.respondsToEventTarget(event.target) && event.target instanceof Element) {
+                if (this.delegate.shouldInterceptLinkClick(event.target, event.detail.url)) {
+                    this.clickEvent.preventDefault();
+                    event.preventDefault();
+                    this.delegate.linkClickIntercepted(event.target, event.detail.url);
+                }
+            }
+            delete this.clickEvent;
+        });
+        this.willVisit = () => {
+            delete this.clickEvent;
+        };
+        this.delegate = delegate;
+        this.element = element;
+    }
+    start() {
+        this.element.addEventListener("click", this.clickBubbled);
+        document.addEventListener("turbo:click", this.linkClicked);
+        document.addEventListener("turbo:before-visit", this.willVisit);
+    }
+    stop() {
+        this.element.removeEventListener("click", this.clickBubbled);
+        document.removeEventListener("turbo:click", this.linkClicked);
+        document.removeEventListener("turbo:before-visit", this.willVisit);
+    }
+    respondsToEventTarget(target) {
+        const element = target instanceof Element
+            ? target
+            : target instanceof Node
+                ? target.parentElement
+                : null;
+        return element && element.closest("turbo-frame, html") == this.element;
+    }
+}
+
+class Bardo {
+    constructor(permanentElementMap) {
+        this.permanentElementMap = permanentElementMap;
+    }
+    static preservingPermanentElements(permanentElementMap, callback) {
+        const bardo = new this(permanentElementMap);
+        bardo.enter();
+        callback();
+        bardo.leave();
+    }
+    enter() {
+        for (const id in this.permanentElementMap) {
+            const [, newPermanentElement] = this.permanentElementMap[id];
+            this.replaceNewPermanentElementWithPlaceholder(newPermanentElement);
+        }
+    }
+    leave() {
+        for (const id in this.permanentElementMap) {
+            const [currentPermanentElement] = this.permanentElementMap[id];
+            this.replaceCurrentPermanentElementWithClone(currentPermanentElement);
+            this.replacePlaceholderWithPermanentElement(currentPermanentElement);
+        }
+    }
+    replaceNewPermanentElementWithPlaceholder(permanentElement) {
+        const placeholder = createPlaceholderForPermanentElement(permanentElement);
+        permanentElement.replaceWith(placeholder);
+    }
+    replaceCurrentPermanentElementWithClone(permanentElement) {
+        const clone = permanentElement.cloneNode(true);
+        permanentElement.replaceWith(clone);
+    }
+    replacePlaceholderWithPermanentElement(permanentElement) {
+        const placeholder = this.getPlaceholderById(permanentElement.id);
+        placeholder === null || placeholder === void 0 ? void 0 : placeholder.replaceWith(permanentElement);
+    }
+    getPlaceholderById(id) {
+        return this.placeholders.find(element => element.content == id);
+    }
+    get placeholders() {
+        return [...document.querySelectorAll("meta[name=turbo-permanent-placeholder][content]")];
+    }
+}
+function createPlaceholderForPermanentElement(permanentElement) {
+    const element = document.createElement("meta");
+    element.setAttribute("name", "turbo-permanent-placeholder");
+    element.setAttribute("content", permanentElement.id);
+    return element;
+}
+
+class Renderer {
+    constructor(currentSnapshot, newSnapshot, isPreview, willRender = true) {
+        this.currentSnapshot = currentSnapshot;
+        this.newSnapshot = newSnapshot;
+        this.isPreview = isPreview;
+        this.willRender = willRender;
+        this.promise = new Promise((resolve, reject) => this.resolvingFunctions = { resolve, reject });
+    }
+    get shouldRender() {
+        return true;
+    }
+    prepareToRender() {
+        return;
+    }
+    finishRendering() {
+        if (this.resolvingFunctions) {
+            this.resolvingFunctions.resolve();
+            delete this.resolvingFunctions;
+        }
+    }
+    createScriptElement(element) {
+        if (element.getAttribute("data-turbo-eval") == "false") {
+            return element;
+        }
+        else {
+            const createdScriptElement = document.createElement("script");
+            if (this.cspNonce) {
+                createdScriptElement.nonce = this.cspNonce;
+            }
+            createdScriptElement.textContent = element.textContent;
+            createdScriptElement.async = false;
+            copyElementAttributes(createdScriptElement, element);
+            return createdScriptElement;
+        }
+    }
+    preservingPermanentElements(callback) {
+        Bardo.preservingPermanentElements(this.permanentElementMap, callback);
+    }
+    focusFirstAutofocusableElement() {
+        const element = this.connectedSnapshot.firstAutofocusableElement;
+        if (elementIsFocusable(element)) {
+            element.focus();
+        }
+    }
+    get connectedSnapshot() {
+        return this.newSnapshot.isConnected ? this.newSnapshot : this.currentSnapshot;
+    }
+    get currentElement() {
+        return this.currentSnapshot.element;
+    }
+    get newElement() {
+        return this.newSnapshot.element;
+    }
+    get permanentElementMap() {
+        return this.currentSnapshot.getPermanentElementMapForSnapshot(this.newSnapshot);
+    }
+    get cspNonce() {
+        var _a;
+        return (_a = document.head.querySelector('meta[name="csp-nonce"]')) === null || _a === void 0 ? void 0 : _a.getAttribute("content");
+    }
+}
+function copyElementAttributes(destinationElement, sourceElement) {
+    for (const { name, value } of [...sourceElement.attributes]) {
+        destinationElement.setAttribute(name, value);
+    }
+}
+function elementIsFocusable(element) {
+    return element && typeof element.focus == "function";
+}
+
+class FrameRenderer extends Renderer {
+    get shouldRender() {
+        return true;
+    }
+    async render() {
+        await nextAnimationFrame();
+        this.preservingPermanentElements(() => {
+            this.loadFrameElement();
+        });
+        this.scrollFrameIntoView();
+        await nextAnimationFrame();
+        this.focusFirstAutofocusableElement();
+        await nextAnimationFrame();
+        this.activateScriptElements();
+    }
+    loadFrameElement() {
+        var _a;
+        const destinationRange = document.createRange();
+        destinationRange.selectNodeContents(this.currentElement);
+        destinationRange.deleteContents();
+        const frameElement = this.newElement;
+        const sourceRange = (_a = frameElement.ownerDocument) === null || _a === void 0 ? void 0 : _a.createRange();
+        if (sourceRange) {
+            sourceRange.selectNodeContents(frameElement);
+            this.currentElement.appendChild(sourceRange.extractContents());
+        }
+    }
+    scrollFrameIntoView() {
+        if (this.currentElement.autoscroll || this.newElement.autoscroll) {
+            const element = this.currentElement.firstElementChild;
+            const block = readScrollLogicalPosition(this.currentElement.getAttribute("data-autoscroll-block"), "end");
+            if (element) {
+                element.scrollIntoView({ block });
+                return true;
+            }
+        }
+        return false;
+    }
+    activateScriptElements() {
+        for (const inertScriptElement of this.newScriptElements) {
+            const activatedScriptElement = this.createScriptElement(inertScriptElement);
+            inertScriptElement.replaceWith(activatedScriptElement);
+        }
+    }
+    get newScriptElements() {
+        return this.currentElement.querySelectorAll("script");
+    }
+}
+function readScrollLogicalPosition(value, defaultValue) {
+    if (value == "end" || value == "start" || value == "center" || value == "nearest") {
+        return value;
+    }
+    else {
+        return defaultValue;
+    }
+}
+
+class ProgressBar {
+    constructor() {
+        this.hiding = false;
+        this.value = 0;
+        this.visible = false;
+        this.trickle = () => {
+            this.setValue(this.value + Math.random() / 100);
+        };
+        this.stylesheetElement = this.createStylesheetElement();
+        this.progressElement = this.createProgressElement();
+        this.installStylesheetElement();
+        this.setValue(0);
+    }
+    static get defaultCSS() {
+        return unindent `
       .turbo-progress-bar {
         position: fixed;
         display: block;
@@ -9,11 +1177,2176 @@
         background: #0076ff;
         z-index: 9999;
         transition:
-          width ${q.animationDuration}ms ease-out,
-          opacity ${q.animationDuration/2}ms ${q.animationDuration/2}ms ease-in;
+          width ${ProgressBar.animationDuration}ms ease-out,
+          opacity ${ProgressBar.animationDuration / 2}ms ${ProgressBar.animationDuration / 2}ms ease-in;
         transform: translate3d(0, 0, 0);
       }
-    `}show(){this.visible||(this.visible=!0,this.installProgressElement(),this.startTrickling())}hide(){this.visible&&!this.hiding&&(this.hiding=!0,this.fadeProgressElement((()=>{this.uninstallProgressElement(),this.stopTrickling(),this.visible=!1,this.hiding=!1})))}setValue(e){this.value=e,this.refresh()}installStylesheetElement(){document.head.insertBefore(this.stylesheetElement,document.head.firstChild)}installProgressElement(){this.progressElement.style.width="0",this.progressElement.style.opacity="1",document.documentElement.insertBefore(this.progressElement,document.body),this.refresh()}fadeProgressElement(e){this.progressElement.style.opacity="0",setTimeout(e,1.5*q.animationDuration)}uninstallProgressElement(){this.progressElement.parentNode&&document.documentElement.removeChild(this.progressElement)}startTrickling(){this.trickleInterval||(this.trickleInterval=window.setInterval(this.trickle,q.animationDuration))}stopTrickling(){window.clearInterval(this.trickleInterval),delete this.trickleInterval}refresh(){requestAnimationFrame((()=>{this.progressElement.style.width=10+90*this.value+"%"}))}createStylesheetElement(){const e=document.createElement("style");return e.type="text/css",e.textContent=q.defaultCSS,e}createProgressElement(){const e=document.createElement("div");return e.className="turbo-progress-bar",e}}q.animationDuration=300;class Y extends A{constructor(){super(...arguments),this.detailsByOuterHTML=this.children.filter((e=>!function(e){const t=e.tagName.toLowerCase();return"noscript"==t}(e))).map((e=>function(e){e.hasAttribute("nonce")&&e.setAttribute("nonce","");return e}(e))).reduce(((e,t)=>{const{outerHTML:n}=t,r=n in e?e[n]:{type:J(t),tracked:B(t),elements:[]};return Object.assign(Object.assign({},e),{[n]:Object.assign(Object.assign({},r),{elements:[...r.elements,t]})})}),{})}get trackedElementSignature(){return Object.keys(this.detailsByOuterHTML).filter((e=>this.detailsByOuterHTML[e].tracked)).join("")}getScriptElementsNotInSnapshot(e){return this.getElementsMatchingTypeNotInSnapshot("script",e)}getStylesheetElementsNotInSnapshot(e){return this.getElementsMatchingTypeNotInSnapshot("stylesheet",e)}getElementsMatchingTypeNotInSnapshot(e,t){return Object.keys(this.detailsByOuterHTML).filter((e=>!(e in t.detailsByOuterHTML))).map((e=>this.detailsByOuterHTML[e])).filter((({type:t})=>t==e)).map((({elements:[e]})=>e))}get provisionalElements(){return Object.keys(this.detailsByOuterHTML).reduce(((e,t)=>{const{type:n,tracked:r,elements:a}=this.detailsByOuterHTML[t];return null!=n||r?a.length>1?[...e,...a.slice(1)]:e:[...e,...a]}),[])}getMetaValue(e){const t=this.findMetaElementByName(e);return t?t.getAttribute("content"):null}findMetaElementByName(e){return Object.keys(this.detailsByOuterHTML).reduce(((t,n)=>{const{elements:[r]}=this.detailsByOuterHTML[n];return function(e,t){const n=e.tagName.toLowerCase();return"meta"==n&&e.getAttribute("name")==t}(r,e)?r:t}),void 0)}}function J(e){return function(e){const t=e.tagName.toLowerCase();return"script"==t}(e)?"script":function(e){const t=e.tagName.toLowerCase();return"style"==t||"link"==t&&"stylesheet"==e.getAttribute("rel")}(e)?"stylesheet":void 0}function B(e){return"reload"==e.getAttribute("data-turbo-track")}class H extends A{constructor(e,t){super(e),this.headSnapshot=t}static fromHTMLString(e=""){return this.fromDocument($(e))}static fromElement(e){return this.fromDocument(e.ownerDocument)}static fromDocument({head:e,body:t}){return new this(t,new Y(e))}clone(){return new H(this.element.cloneNode(!0),this.headSnapshot)}get headElement(){return this.headSnapshot.element}get rootLocation(){var e;return c(null!==(e=this.getSetting("root"))&&void 0!==e?e:"/")}get cacheControlValue(){return this.getSetting("cache-control")}get isPreviewable(){return"no-preview"!=this.cacheControlValue}get isCacheable(){return"no-cache"!=this.cacheControlValue}get isVisitable(){return"reload"!=this.getSetting("visit-control")}getSetting(e){return this.headSnapshot.getMetaValue(`turbo-${e}`)}}!function(e){e.visitStart="visitStart",e.requestStart="requestStart",e.requestEnd="requestEnd",e.visitEnd="visitEnd"}(s||(s={})),function(e){e.initialized="initialized",e.started="started",e.canceled="canceled",e.failed="failed",e.completed="completed"}(l||(l={}));const W={action:"advance",historyChanged:!1,visitCachedSnapshot:()=>{},willRender:!0};var U,V;!function(e){e[e.networkFailure=0]="networkFailure",e[e.timeoutFailure=-1]="timeoutFailure",e[e.contentTypeMismatch=-2]="contentTypeMismatch"}(U||(U={}));class z{constructor(e,t,n,r={}){this.identifier=S(),this.timingMetrics={},this.followedRedirect=!1,this.historyChanged=!1,this.scrolled=!1,this.snapshotCached=!1,this.state=l.initialized,this.delegate=e,this.location=t,this.restorationIdentifier=n||S();const{action:a,historyChanged:i,referrer:o,snapshotHTML:s,response:d,visitCachedSnapshot:c,willRender:u}=Object.assign(Object.assign({},W),r);this.action=a,this.historyChanged=i,this.referrer=o,this.snapshotHTML=s,this.response=d,this.isSamePage=this.delegate.locationWithActionIsSamePage(this.location,this.action),this.visitCachedSnapshot=c,this.willRender=u,this.scrolled=!u}get adapter(){return this.delegate.adapter}get view(){return this.delegate.view}get history(){return this.delegate.history}get restorationData(){return this.history.getRestorationDataForIdentifier(this.restorationIdentifier)}get silent(){return this.isSamePage}start(){this.state==l.initialized&&(this.recordTimingMetric(s.visitStart),this.state=l.started,this.adapter.visitStarted(this),this.delegate.visitStarted(this))}cancel(){this.state==l.started&&(this.request&&this.request.cancel(),this.cancelRender(),this.state=l.canceled)}complete(){this.state==l.started&&(this.recordTimingMetric(s.visitEnd),this.state=l.completed,this.adapter.visitCompleted(this),this.delegate.visitCompleted(this),this.followRedirect())}fail(){this.state==l.started&&(this.state=l.failed,this.adapter.visitFailed(this))}changeHistory(){var e;if(!this.historyChanged){const t=this.location.href===(null===(e=this.referrer)||void 0===e?void 0:e.href)?"replace":this.action,n=this.getHistoryMethodForAction(t);this.history.update(n,this.location,this.restorationIdentifier),this.historyChanged=!0}}issueRequest(){this.hasPreloadedResponse()?this.simulateRequest():this.shouldIssueRequest()&&!this.request&&(this.request=new T(this,a.get,this.location),this.request.perform())}simulateRequest(){this.response&&(this.startRequest(),this.recordResponse(),this.finishRequest())}startRequest(){this.recordTimingMetric(s.requestStart),this.adapter.visitRequestStarted(this)}recordResponse(e=this.response){if(this.response=e,e){const{statusCode:t}=e;K(t)?this.adapter.visitRequestCompleted(this):this.adapter.visitRequestFailedWithStatusCode(this,t)}}finishRequest(){this.recordTimingMetric(s.requestEnd),this.adapter.visitRequestFinished(this)}loadResponse(){if(this.response){const{statusCode:e,responseHTML:t}=this.response;this.render((async()=>{this.cacheSnapshot(),this.view.renderPromise&&await this.view.renderPromise,K(e)&&null!=t?(await this.view.renderPage(H.fromHTMLString(t),!1,this.willRender),this.adapter.visitRendered(this),this.complete()):(await this.view.renderError(H.fromHTMLString(t)),this.adapter.visitRendered(this),this.fail())}))}}getCachedSnapshot(){const e=this.view.getCachedSnapshotForLocation(this.location)||this.getPreloadedSnapshot();if(e&&(!u(this.location)||e.hasAnchor(u(this.location)))&&("restore"==this.action||e.isPreviewable))return e}getPreloadedSnapshot(){if(this.snapshotHTML)return H.fromHTMLString(this.snapshotHTML)}hasCachedSnapshot(){return null!=this.getCachedSnapshot()}loadCachedSnapshot(){const e=this.getCachedSnapshot();if(e){const t=this.shouldIssueRequest();this.render((async()=>{this.cacheSnapshot(),this.isSamePage?this.adapter.visitRendered(this):(this.view.renderPromise&&await this.view.renderPromise,await this.view.renderPage(e,t,this.willRender),this.adapter.visitRendered(this),t||this.complete())}))}}followRedirect(){var e;this.redirectedToLocation&&!this.followedRedirect&&(null===(e=this.response)||void 0===e?void 0:e.redirected)&&(this.adapter.visitProposedToLocation(this.redirectedToLocation,{action:"replace",response:this.response}),this.followedRedirect=!0)}goToSamePageAnchor(){this.isSamePage&&this.render((async()=>{this.cacheSnapshot(),this.adapter.visitRendered(this)}))}requestStarted(){this.startRequest()}requestPreventedHandlingResponse(e,t){}async requestSucceededWithResponse(e,t){const n=await t.responseHTML,{redirected:r,statusCode:a}=t;null==n?this.recordResponse({statusCode:U.contentTypeMismatch,redirected:r}):(this.redirectedToLocation=t.redirected?t.location:void 0,this.recordResponse({statusCode:a,responseHTML:n,redirected:r}))}async requestFailedWithResponse(e,t){const n=await t.responseHTML,{redirected:r,statusCode:a}=t;null==n?this.recordResponse({statusCode:U.contentTypeMismatch,redirected:r}):this.recordResponse({statusCode:a,responseHTML:n,redirected:r})}requestErrored(e,t){this.recordResponse({statusCode:U.networkFailure,redirected:!1})}requestFinished(){this.finishRequest()}performScroll(){this.scrolled||("restore"==this.action?this.scrollToRestoredPosition()||this.scrollToAnchor()||this.view.scrollToTop():this.scrollToAnchor()||this.view.scrollToTop(),this.isSamePage&&this.delegate.visitScrolledToSamePageLocation(this.view.lastRenderedLocation,this.location),this.scrolled=!0)}scrollToRestoredPosition(){const{scrollPosition:e}=this.restorationData;if(e)return this.view.scrollToPosition(e),!0}scrollToAnchor(){const e=u(this.location);if(null!=e)return this.view.scrollToAnchor(e),!0}recordTimingMetric(e){this.timingMetrics[e]=(new Date).getTime()}getTimingMetrics(){return Object.assign({},this.timingMetrics)}getHistoryMethodForAction(e){switch(e){case"replace":return history.replaceState;case"advance":case"restore":return history.pushState}}hasPreloadedResponse(){return"object"==typeof this.response}shouldIssueRequest(){return!this.isSamePage&&("restore"==this.action?!this.hasCachedSnapshot():this.willRender)}cacheSnapshot(){this.snapshotCached||(this.view.cacheSnapshot().then((e=>e&&this.visitCachedSnapshot(e))),this.snapshotCached=!0)}async render(e){this.cancelRender(),await new Promise((e=>{this.frame=requestAnimationFrame((()=>e()))})),await e(),delete this.frame,this.performScroll()}cancelRender(){this.frame&&(cancelAnimationFrame(this.frame),delete this.frame)}}function K(e){return e>=200&&e<300}class Q{constructor(e){this.progressBar=new q,this.showProgressBar=()=>{this.progressBar.show()},this.session=e}visitProposedToLocation(e,t){this.navigator.startVisit(e,S(),t)}visitStarted(e){e.loadCachedSnapshot(),e.issueRequest(),e.changeHistory(),e.goToSamePageAnchor()}visitRequestStarted(e){this.progressBar.setValue(0),e.hasCachedSnapshot()||"restore"!=e.action?this.showVisitProgressBarAfterDelay():this.showProgressBar()}visitRequestCompleted(e){e.loadResponse()}visitRequestFailedWithStatusCode(e,t){switch(t){case U.networkFailure:case U.timeoutFailure:case U.contentTypeMismatch:return this.reload();default:return e.loadResponse()}}visitRequestFinished(e){this.progressBar.setValue(1),this.hideVisitProgressBar()}visitCompleted(e){}pageInvalidated(){this.reload()}visitFailed(e){}visitRendered(e){}formSubmissionStarted(e){this.progressBar.setValue(0),this.showFormProgressBarAfterDelay()}formSubmissionFinished(e){this.progressBar.setValue(1),this.hideFormProgressBar()}showVisitProgressBarAfterDelay(){this.visitProgressBarTimeout=window.setTimeout(this.showProgressBar,this.session.progressBarDelay)}hideVisitProgressBar(){this.progressBar.hide(),null!=this.visitProgressBarTimeout&&(window.clearTimeout(this.visitProgressBarTimeout),delete this.visitProgressBarTimeout)}showFormProgressBarAfterDelay(){null==this.formProgressBarTimeout&&(this.formProgressBarTimeout=window.setTimeout(this.showProgressBar,this.session.progressBarDelay))}hideFormProgressBar(){this.progressBar.hide(),null!=this.formProgressBarTimeout&&(window.clearTimeout(this.formProgressBarTimeout),delete this.formProgressBarTimeout)}reload(){window.location.reload()}get navigator(){return this.session.navigator}}class G{constructor(){this.started=!1}start(){this.started||(this.started=!0,addEventListener("turbo:before-cache",this.removeStaleElements,!1))}stop(){this.started&&(this.started=!1,removeEventListener("turbo:before-cache",this.removeStaleElements,!1))}removeStaleElements(){const e=[...document.querySelectorAll('[data-turbo-cache="false"]')];for(const t of e)t.remove()}}class Z{constructor(e){this.started=!1,this.submitCaptured=()=>{removeEventListener("submit",this.submitBubbled,!1),addEventListener("submit",this.submitBubbled,!1)},this.submitBubbled=e=>{if(!e.defaultPrevented){const t=e.target instanceof HTMLFormElement?e.target:void 0,n=e.submitter||void 0;if(t){"dialog"!=((null==n?void 0:n.getAttribute("formmethod"))||t.getAttribute("method"))&&this.delegate.willSubmitForm(t,n)&&(e.preventDefault(),this.delegate.formSubmitted(t,n))}}},this.delegate=e}start(){this.started||(addEventListener("submit",this.submitCaptured,!0),this.started=!0)}stop(){this.started&&(removeEventListener("submit",this.submitCaptured,!0),this.started=!1)}}class X{constructor(e){this.element=e,this.linkInterceptor=new O(this,e),this.formInterceptor=new x(this,e)}start(){this.linkInterceptor.start(),this.formInterceptor.start()}stop(){this.linkInterceptor.stop(),this.formInterceptor.stop()}shouldInterceptLinkClick(e,t){return this.shouldRedirect(e)}linkClickIntercepted(e,t){const n=this.findFrameElement(e);n&&n.delegate.linkClickIntercepted(e,t)}shouldInterceptFormSubmission(e,t){return this.shouldSubmit(e,t)}formSubmissionIntercepted(e,t){const n=this.findFrameElement(e,t);n&&(n.removeAttribute("reloadable"),n.delegate.formSubmissionIntercepted(e,t))}shouldSubmit(e,t){var n;const r=h(e,t),a=this.element.ownerDocument.querySelector('meta[name="turbo-root"]'),i=c(null!==(n=null==a?void 0:a.content)&&void 0!==n?n:"/");return this.shouldRedirect(e,t)&&g(r,i)}shouldRedirect(e,t){const n=this.findFrameElement(e,t);return!!n&&n!=e.closest("turbo-frame")}findFrameElement(e,t){const n=(null==t?void 0:t.getAttribute("data-turbo-frame"))||e.getAttribute("data-turbo-frame");if(n&&"_top"!=n){const e=this.element.querySelector(`#${n}:not([disabled])`);if(e instanceof d)return e}}}class ee{constructor(e){this.restorationIdentifier=S(),this.restorationData={},this.started=!1,this.pageLoaded=!1,this.onPopState=e=>{if(this.shouldHandlePopState()){const{turbo:t}=e.state||{};if(t){this.location=new URL(window.location.href);const{restorationIdentifier:e}=t;this.restorationIdentifier=e,this.delegate.historyPoppedToLocationWithRestorationIdentifier(this.location,e)}}},this.onPageLoad=async e=>{await Promise.resolve(),this.pageLoaded=!0},this.delegate=e}start(){this.started||(addEventListener("popstate",this.onPopState,!1),addEventListener("load",this.onPageLoad,!1),this.started=!0,this.replace(new URL(window.location.href)))}stop(){this.started&&(removeEventListener("popstate",this.onPopState,!1),removeEventListener("load",this.onPageLoad,!1),this.started=!1)}push(e,t){this.update(history.pushState,e,t)}replace(e,t){this.update(history.replaceState,e,t)}update(e,t,n=S()){const r={turbo:{restorationIdentifier:n}};e.call(history,r,"",t.href),this.location=t,this.restorationIdentifier=n}getRestorationDataForIdentifier(e){return this.restorationData[e]||{}}updateRestorationData(e){const{restorationIdentifier:t}=this,n=this.restorationData[t];this.restorationData[t]=Object.assign(Object.assign({},n),e)}assumeControlOfScrollRestoration(){var e;this.previousScrollRestoration||(this.previousScrollRestoration=null!==(e=history.scrollRestoration)&&void 0!==e?e:"auto",history.scrollRestoration="manual")}relinquishControlOfScrollRestoration(){this.previousScrollRestoration&&(history.scrollRestoration=this.previousScrollRestoration,delete this.previousScrollRestoration)}shouldHandlePopState(){return this.pageIsLoaded()}pageIsLoaded(){return this.pageLoaded||"complete"==document.readyState}}class te{constructor(e){this.started=!1,this.clickCaptured=()=>{removeEventListener("click",this.clickBubbled,!1),addEventListener("click",this.clickBubbled,!1)},this.clickBubbled=e=>{if(this.clickEventIsSignificant(e)){const t=e.composedPath&&e.composedPath()[0]||e.target,n=this.findLinkFromClickTarget(t);if(n){const t=this.getLocationForLink(n);this.delegate.willFollowLinkToLocation(n,t)&&(e.preventDefault(),this.delegate.followedLinkToLocation(n,t))}}},this.delegate=e}start(){this.started||(addEventListener("click",this.clickCaptured,!0),this.started=!0)}stop(){this.started&&(removeEventListener("click",this.clickCaptured,!0),this.started=!1)}clickEventIsSignificant(e){return!(e.target&&e.target.isContentEditable||e.defaultPrevented||e.which>1||e.altKey||e.ctrlKey||e.metaKey||e.shiftKey)}findLinkFromClickTarget(e){if(e instanceof Element)return e.closest("a[href]:not([target^=_]):not([download])")}getLocationForLink(e){return c(e.getAttribute("href")||"")}}function ne(e){return"advance"==e||"replace"==e||"restore"==e}class re{constructor(e){this.delegate=e}proposeVisit(e,t={}){this.delegate.allowsVisitingLocationWithAction(e,t.action)&&(g(e,this.view.snapshot.rootLocation)?this.delegate.visitProposedToLocation(e,t):window.location.href=e.toString())}startVisit(e,t,n={}){this.stop(),this.currentVisit=new z(this,c(e),t,Object.assign({referrer:this.location},n)),this.currentVisit.start()}submitForm(e,t){this.stop(),this.formSubmission=new E(this,e,t,!0),this.formSubmission.start()}stop(){this.formSubmission&&(this.formSubmission.stop(),delete this.formSubmission),this.currentVisit&&(this.currentVisit.cancel(),delete this.currentVisit)}get adapter(){return this.delegate.adapter}get view(){return this.delegate.view}get history(){return this.delegate.history}formSubmissionStarted(e){"function"==typeof this.adapter.formSubmissionStarted&&this.adapter.formSubmissionStarted(e)}async formSubmissionSucceededWithResponse(e,t){if(e==this.formSubmission){const n=await t.responseHTML;if(n){e.method!=a.get&&this.view.clearSnapshotCache();const{statusCode:r,redirected:i}=t,o={action:this.getActionForFormSubmission(e),response:{statusCode:r,responseHTML:n,redirected:i}};this.proposeVisit(t.location,o)}}}async formSubmissionFailedWithResponse(e,t){const n=await t.responseHTML;if(n){const e=H.fromHTMLString(n);t.serverError?await this.view.renderError(e):await this.view.renderPage(e),this.view.scrollToTop(),this.view.clearSnapshotCache()}}formSubmissionErrored(e,t){console.error(t)}formSubmissionFinished(e){"function"==typeof this.adapter.formSubmissionFinished&&this.adapter.formSubmissionFinished(e)}visitStarted(e){this.delegate.visitStarted(e)}visitCompleted(e){this.delegate.visitCompleted(e)}locationWithActionIsSamePage(e,t){const n=u(e),r=u(this.view.lastRenderedLocation),a="restore"===t&&void 0===n;return"replace"!==t&&f(e)===f(this.view.lastRenderedLocation)&&(a||null!=n&&n!==r)}visitScrolledToSamePageLocation(e,t){this.delegate.visitScrolledToSamePageLocation(e,t)}get location(){return this.history.location}get restorationIdentifier(){return this.history.restorationIdentifier}getActionForFormSubmission(e){const{formElement:t,submitter:n}=e,r=L("data-turbo-action",n,t);return ne(r)?r:"advance"}}!function(e){e[e.initial=0]="initial",e[e.loading=1]="loading",e[e.interactive=2]="interactive",e[e.complete=3]="complete"}(V||(V={}));class ae{constructor(e){this.stage=V.initial,this.started=!1,this.interpretReadyState=()=>{const{readyState:e}=this;"interactive"==e?this.pageIsInteractive():"complete"==e&&this.pageIsComplete()},this.pageWillUnload=()=>{this.delegate.pageWillUnload()},this.delegate=e}start(){this.started||(this.stage==V.initial&&(this.stage=V.loading),document.addEventListener("readystatechange",this.interpretReadyState,!1),addEventListener("pagehide",this.pageWillUnload,!1),this.started=!0)}stop(){this.started&&(document.removeEventListener("readystatechange",this.interpretReadyState,!1),removeEventListener("pagehide",this.pageWillUnload,!1),this.started=!1)}pageIsInteractive(){this.stage==V.loading&&(this.stage=V.interactive,this.delegate.pageBecameInteractive())}pageIsComplete(){this.pageIsInteractive(),this.stage==V.interactive&&(this.stage=V.complete,this.delegate.pageLoaded())}get readyState(){return document.readyState}}class ie{constructor(e){this.started=!1,this.onScroll=()=>{this.updatePosition({x:window.pageXOffset,y:window.pageYOffset})},this.delegate=e}start(){this.started||(addEventListener("scroll",this.onScroll,!1),this.onScroll(),this.started=!0)}stop(){this.started&&(removeEventListener("scroll",this.onScroll,!1),this.started=!1)}updatePosition(e){this.delegate.scrollPositionChanged(e)}}class oe{constructor(e){this.sources=new Set,this.started=!1,this.inspectFetchResponse=e=>{const t=function(e){var t;const n=null===(t=e.detail)||void 0===t?void 0:t.fetchResponse;if(n instanceof y)return n}(e);t&&function(e){var t;const n=null!==(t=e.contentType)&&void 0!==t?t:"";return n.startsWith(C.contentType)}(t)&&(e.preventDefault(),this.receiveMessageResponse(t))},this.receiveMessageEvent=e=>{this.started&&"string"==typeof e.data&&this.receiveMessageHTML(e.data)},this.delegate=e}start(){this.started||(this.started=!0,addEventListener("turbo:before-fetch-response",this.inspectFetchResponse,!1))}stop(){this.started&&(this.started=!1,removeEventListener("turbo:before-fetch-response",this.inspectFetchResponse,!1))}connectStreamSource(e){this.streamSourceIsConnected(e)||(this.sources.add(e),e.addEventListener("message",this.receiveMessageEvent,!1))}disconnectStreamSource(e){this.streamSourceIsConnected(e)&&(this.sources.delete(e),e.removeEventListener("message",this.receiveMessageEvent,!1))}streamSourceIsConnected(e){return this.sources.has(e)}async receiveMessageResponse(e){const t=await e.responseHTML;t&&this.receiveMessageHTML(t)}receiveMessageHTML(e){this.delegate.receivedMessageFromStream(new C(e))}}class se extends I{async render(){this.replaceHeadAndBody(),this.activateScriptElements()}replaceHeadAndBody(){const{documentElement:e,head:t,body:n}=document;e.replaceChild(this.newHead,t),e.replaceChild(this.newElement,n)}activateScriptElements(){for(const e of this.scriptElements){const t=e.parentNode;if(t){const n=this.createScriptElement(e);t.replaceChild(n,e)}}}get newHead(){return this.newSnapshot.headSnapshot.element}get scriptElements(){return[...document.documentElement.querySelectorAll("script")]}}class le extends I{get shouldRender(){return this.newSnapshot.isVisitable&&this.trackedElementsAreIdentical}prepareToRender(){this.mergeHead()}async render(){this.willRender&&this.replaceBody()}finishRendering(){super.finishRendering(),this.isPreview||this.focusFirstAutofocusableElement()}get currentHeadSnapshot(){return this.currentSnapshot.headSnapshot}get newHeadSnapshot(){return this.newSnapshot.headSnapshot}get newElement(){return this.newSnapshot.element}mergeHead(){this.copyNewHeadStylesheetElements(),this.copyNewHeadScriptElements(),this.removeCurrentHeadProvisionalElements(),this.copyNewHeadProvisionalElements()}replaceBody(){this.preservingPermanentElements((()=>{this.activateNewBody(),this.assignNewBody()}))}get trackedElementsAreIdentical(){return this.currentHeadSnapshot.trackedElementSignature==this.newHeadSnapshot.trackedElementSignature}copyNewHeadStylesheetElements(){for(const e of this.newHeadStylesheetElements)document.head.appendChild(e)}copyNewHeadScriptElements(){for(const e of this.newHeadScriptElements)document.head.appendChild(this.createScriptElement(e))}removeCurrentHeadProvisionalElements(){for(const e of this.currentHeadProvisionalElements)document.head.removeChild(e)}copyNewHeadProvisionalElements(){for(const e of this.newHeadProvisionalElements)document.head.appendChild(e)}activateNewBody(){document.adoptNode(this.newElement),this.activateNewBodyScriptElements()}activateNewBodyScriptElements(){for(const e of this.newBodyScriptElements){const t=this.createScriptElement(e);e.replaceWith(t)}}assignNewBody(){document.body&&this.newElement instanceof HTMLBodyElement?document.body.replaceWith(this.newElement):document.documentElement.appendChild(this.newElement)}get newHeadStylesheetElements(){return this.newHeadSnapshot.getStylesheetElementsNotInSnapshot(this.currentHeadSnapshot)}get newHeadScriptElements(){return this.newHeadSnapshot.getScriptElementsNotInSnapshot(this.currentHeadSnapshot)}get currentHeadProvisionalElements(){return this.currentHeadSnapshot.provisionalElements}get newHeadProvisionalElements(){return this.newHeadSnapshot.provisionalElements}get newBodyScriptElements(){return this.newElement.querySelectorAll("script")}}class de{constructor(e){this.keys=[],this.snapshots={},this.size=e}has(e){return v(e)in this.snapshots}get(e){if(this.has(e)){const t=this.read(e);return this.touch(e),t}}put(e,t){return this.write(e,t),this.touch(e),t}clear(){this.snapshots={}}read(e){return this.snapshots[v(e)]}write(e,t){this.snapshots[v(e)]=t}touch(e){const t=v(e),n=this.keys.indexOf(t);n>-1&&this.keys.splice(n,1),this.keys.unshift(t),this.trim()}trim(){for(const e of this.keys.splice(this.size))delete this.snapshots[e]}}class ce extends F{constructor(){super(...arguments),this.snapshotCache=new de(10),this.lastRenderedLocation=new URL(location.href)}renderPage(e,t=!1,n=!0){const r=new le(this.snapshot,e,t,n);return this.render(r)}renderError(e){const t=new se(this.snapshot,e,!1);return this.render(t)}clearSnapshotCache(){this.snapshotCache.clear()}async cacheSnapshot(){if(this.shouldCacheSnapshot){this.delegate.viewWillCacheSnapshot();const{snapshot:e,lastRenderedLocation:t}=this;await new Promise((e=>setTimeout((()=>e()),0)));const n=e.clone();return this.snapshotCache.put(t,n),n}}getCachedSnapshotForLocation(e){return this.snapshotCache.get(e)}get snapshot(){return H.fromElement(this.element)}get shouldCacheSnapshot(){return this.snapshot.isCacheable}}function ue(e){Object.defineProperties(e,he)}const he={absoluteURL:{get(){return this.toString()}}},me=new class{constructor(){this.navigator=new re(this),this.history=new ee(this),this.view=new ce(this,document.documentElement),this.adapter=new Q(this),this.pageObserver=new ae(this),this.cacheObserver=new G,this.linkClickObserver=new te(this),this.formSubmitObserver=new Z(this),this.scrollObserver=new ie(this),this.streamObserver=new oe(this),this.frameRedirector=new X(document.documentElement),this.drive=!0,this.enabled=!0,this.progressBarDelay=500,this.started=!1}start(){this.started||(this.pageObserver.start(),this.cacheObserver.start(),this.linkClickObserver.start(),this.formSubmitObserver.start(),this.scrollObserver.start(),this.streamObserver.start(),this.frameRedirector.start(),this.history.start(),this.started=!0,this.enabled=!0)}disable(){this.enabled=!1}stop(){this.started&&(this.pageObserver.stop(),this.cacheObserver.stop(),this.linkClickObserver.stop(),this.formSubmitObserver.stop(),this.scrollObserver.stop(),this.streamObserver.stop(),this.frameRedirector.stop(),this.history.stop(),this.started=!1)}registerAdapter(e){this.adapter=e}visit(e,t={}){this.navigator.proposeVisit(c(e),t)}connectStreamSource(e){this.streamObserver.connectStreamSource(e)}disconnectStreamSource(e){this.streamObserver.disconnectStreamSource(e)}renderStreamMessage(e){document.documentElement.appendChild(C.wrap(e).fragment)}clearCache(){this.view.clearSnapshotCache()}setProgressBarDelay(e){this.progressBarDelay=e}get location(){return this.history.location}get restorationIdentifier(){return this.history.restorationIdentifier}historyPoppedToLocationWithRestorationIdentifier(e,t){this.enabled?this.navigator.startVisit(e,t,{action:"restore",historyChanged:!0}):this.adapter.pageInvalidated()}scrollPositionChanged(e){this.history.updateRestorationData({scrollPosition:e})}willFollowLinkToLocation(e,t){return this.elementDriveEnabled(e)&&g(t,this.snapshot.rootLocation)&&this.applicationAllowsFollowingLinkToLocation(e,t)}followedLinkToLocation(e,t){const n=this.getActionForLink(e);this.convertLinkWithMethodClickToFormSubmission(e)||this.visit(t.href,{action:n})}convertLinkWithMethodClickToFormSubmission(e){const t=e.getAttribute("data-turbo-method");if(t){const n=document.createElement("form");n.method=t,n.action=e.getAttribute("href")||"undefined",n.hidden=!0,e.hasAttribute("data-turbo-confirm")&&n.setAttribute("data-turbo-confirm",e.getAttribute("data-turbo-confirm"));const r=this.getTargetFrameForLink(e);return r?(n.setAttribute("data-turbo-frame",r),n.addEventListener("turbo:submit-start",(()=>n.remove()))):n.addEventListener("submit",(()=>n.remove())),document.body.appendChild(n),w("submit",{cancelable:!0,target:n})}return!1}allowsVisitingLocationWithAction(e,t){return this.locationWithActionIsSamePage(e,t)||this.applicationAllowsVisitingLocation(e)}visitProposedToLocation(e,t){ue(e),this.adapter.visitProposedToLocation(e,t)}visitStarted(e){ue(e.location),e.silent||this.notifyApplicationAfterVisitingLocation(e.location,e.action)}visitCompleted(e){this.notifyApplicationAfterPageLoad(e.getTimingMetrics())}locationWithActionIsSamePage(e,t){return this.navigator.locationWithActionIsSamePage(e,t)}visitScrolledToSamePageLocation(e,t){this.notifyApplicationAfterVisitingSamePageLocation(e,t)}willSubmitForm(e,t){const n=h(e,t);return this.elementDriveEnabled(e)&&(!t||this.elementDriveEnabled(t))&&g(c(n),this.snapshot.rootLocation)}formSubmitted(e,t){this.navigator.submitForm(e,t)}pageBecameInteractive(){this.view.lastRenderedLocation=this.location,this.notifyApplicationAfterPageLoad()}pageLoaded(){this.history.assumeControlOfScrollRestoration()}pageWillUnload(){this.history.relinquishControlOfScrollRestoration()}receivedMessageFromStream(e){this.renderStreamMessage(e)}viewWillCacheSnapshot(){var e;(null===(e=this.navigator.currentVisit)||void 0===e?void 0:e.silent)||this.notifyApplicationBeforeCachingSnapshot()}allowsImmediateRender({element:e},t){return!this.notifyApplicationBeforeRender(e,t).defaultPrevented}viewRenderedSnapshot(e,t){this.view.lastRenderedLocation=this.history.location,this.notifyApplicationAfterRender()}viewInvalidated(){this.adapter.pageInvalidated()}frameLoaded(e){this.notifyApplicationAfterFrameLoad(e)}frameRendered(e,t){this.notifyApplicationAfterFrameRender(e,t)}applicationAllowsFollowingLinkToLocation(e,t){return!this.notifyApplicationAfterClickingLinkToLocation(e,t).defaultPrevented}applicationAllowsVisitingLocation(e){return!this.notifyApplicationBeforeVisitingLocation(e).defaultPrevented}notifyApplicationAfterClickingLinkToLocation(e,t){return w("turbo:click",{target:e,detail:{url:t.href},cancelable:!0})}notifyApplicationBeforeVisitingLocation(e){return w("turbo:before-visit",{detail:{url:e.href},cancelable:!0})}notifyApplicationAfterVisitingLocation(e,t){return D(document.documentElement),w("turbo:visit",{detail:{url:e.href,action:t}})}notifyApplicationBeforeCachingSnapshot(){return w("turbo:before-cache")}notifyApplicationBeforeRender(e,t){return w("turbo:before-render",{detail:{newBody:e,resume:t},cancelable:!0})}notifyApplicationAfterRender(){return w("turbo:render")}notifyApplicationAfterPageLoad(e={}){return M(document.documentElement),w("turbo:load",{detail:{url:this.location.href,timing:e}})}notifyApplicationAfterVisitingSamePageLocation(e,t){dispatchEvent(new HashChangeEvent("hashchange",{oldURL:e.toString(),newURL:t.toString()}))}notifyApplicationAfterFrameLoad(e){return w("turbo:frame-load",{target:e})}notifyApplicationAfterFrameRender(e,t){return w("turbo:frame-render",{detail:{fetchResponse:e},target:t,cancelable:!0})}elementDriveEnabled(e){const t=null==e?void 0:e.closest("[data-turbo]");return this.drive?!t||"false"!=t.getAttribute("data-turbo"):!!t&&"true"==t.getAttribute("data-turbo")}getActionForLink(e){const t=e.getAttribute("data-turbo-action");return ne(t)?t:"advance"}getTargetFrameForLink(e){const t=e.getAttribute("data-turbo-frame");if(t)return t;{const t=e.closest("turbo-frame");if(t)return t.id}}get snapshot(){return this.view.snapshot}},{navigator:pe}=me;function ge(){me.start()}function fe(e){me.registerAdapter(e)}function ve(e,t){me.visit(e,t)}function ye(e){me.connectStreamSource(e)}function we(e){me.disconnectStreamSource(e)}function be(e){me.renderStreamMessage(e)}function $e(){me.clearCache()}function ke(e){me.setProgressBarDelay(e)}function Se(e){E.confirmMethod=e}var Le=Object.freeze({__proto__:null,navigator:pe,session:me,PageRenderer:le,PageSnapshot:H,start:ge,registerAdapter:fe,visit:ve,connectStreamSource:ye,disconnectStreamSource:we,renderStreamMessage:be,clearCache:$e,setProgressBarDelay:ke,setConfirmMethod:Se});class De{constructor(e){this.visitCachedSnapshot=({element:e})=>{var t;const{id:n,clone:r}=this;null===(t=e.querySelector("#"+n))||void 0===t||t.replaceWith(r)},this.clone=e.cloneNode(!0),this.id=e.id}}function Me(e){if(null!=e){const t=document.getElementById(e);if(t instanceof d)return t}}function Te(e,t){if(e){const r=e.getAttribute("src");if(null!=r&&null!=t&&(n=t,c(r).href==c(n).href))throw new Error(`Matching <turbo-frame id="${e.id}"> element has a source URL which references itself`);if(e.ownerDocument!==document&&(e=document.importNode(e,!0)),e instanceof d)return e.connectedCallback(),e.disconnectedCallback(),e}var n}const _e={after(){this.targetElements.forEach((e=>{var t;return null===(t=e.parentElement)||void 0===t?void 0:t.insertBefore(this.templateContent,e.nextSibling)}))},append(){this.removeDuplicateTargetChildren(),this.targetElements.forEach((e=>e.append(this.templateContent)))},before(){this.targetElements.forEach((e=>{var t;return null===(t=e.parentElement)||void 0===t?void 0:t.insertBefore(this.templateContent,e)}))},prepend(){this.removeDuplicateTargetChildren(),this.targetElements.forEach((e=>e.prepend(this.templateContent)))},remove(){this.targetElements.forEach((e=>e.remove()))},replace(){this.targetElements.forEach((e=>e.replaceWith(this.templateContent)))},update(){this.targetElements.forEach((e=>{e.innerHTML="",e.append(this.templateContent)}))}};class Ce extends HTMLElement{async connectedCallback(){try{await this.render()}catch(e){console.error(e)}finally{this.disconnect()}}async render(){var e;return null!==(e=this.renderPromise)&&void 0!==e?e:this.renderPromise=(async()=>{this.dispatchEvent(this.beforeRenderEvent)&&(await b(),this.performAction())})()}disconnect(){try{this.remove()}catch(e){}}removeDuplicateTargetChildren(){this.duplicateChildren.forEach((e=>e.remove()))}get duplicateChildren(){var e;const t=this.targetElements.flatMap((e=>[...e.children])).filter((e=>!!e.id)),n=[...null===(e=this.templateContent)||void 0===e?void 0:e.children].filter((e=>!!e.id)).map((e=>e.id));return t.filter((e=>n.includes(e.id)))}get performAction(){if(this.action){const e=_e[this.action];if(e)return e;this.raise("unknown action")}this.raise("action attribute is missing")}get targetElements(){return this.target?this.targetElementsById:this.targets?this.targetElementsByQuery:void this.raise("target or targets attribute is missing")}get templateContent(){return this.templateElement.content.cloneNode(!0)}get templateElement(){if(this.firstElementChild instanceof HTMLTemplateElement)return this.firstElementChild;this.raise("first child element must be a <template> element")}get action(){return this.getAttribute("action")}get target(){return this.getAttribute("target")}get targets(){return this.getAttribute("targets")}raise(e){throw new Error(`${this.description}: ${e}`)}get description(){var e,t;return null!==(t=(null!==(e=this.outerHTML.match(/<[^>]+>/))&&void 0!==e?e:[])[0])&&void 0!==t?t:"<turbo-stream>"}get beforeRenderEvent(){return new CustomEvent("turbo:before-stream-render",{bubbles:!0,cancelable:!0})}get targetElementsById(){var e;const t=null===(e=this.ownerDocument)||void 0===e?void 0:e.getElementById(this.target);return null!==t?[t]:[]}get targetElementsByQuery(){var e;const t=null===(e=this.ownerDocument)||void 0===e?void 0:e.querySelectorAll(this.targets);return 0!==t.length?Array.prototype.slice.call(t):[]}}d.delegateConstructor=class{constructor(e){this.fetchResponseLoaded=e=>{},this.currentFetchRequest=null,this.resolveVisitPromise=()=>{},this.connected=!1,this.hasBeenLoaded=!1,this.settingSourceURL=!1,this.element=e,this.view=new P(this,this.element),this.appearanceObserver=new _(this,this.element),this.linkInterceptor=new O(this,this.element),this.formInterceptor=new x(this,this.element)}connect(){this.connected||(this.connected=!0,this.reloadable=!1,this.loadingStyle==r.lazy&&this.appearanceObserver.start(),this.linkInterceptor.start(),this.formInterceptor.start(),this.sourceURLChanged())}disconnect(){this.connected&&(this.connected=!1,this.appearanceObserver.stop(),this.linkInterceptor.stop(),this.formInterceptor.stop())}disabledChanged(){this.loadingStyle==r.eager&&this.loadSourceURL()}sourceURLChanged(){(this.loadingStyle==r.eager||this.hasBeenLoaded)&&this.loadSourceURL()}loadingStyleChanged(){this.loadingStyle==r.lazy?this.appearanceObserver.start():(this.appearanceObserver.stop(),this.loadSourceURL())}async loadSourceURL(){if(!this.settingSourceURL&&this.enabled&&this.isActive&&(this.reloadable||this.sourceURL!=this.currentURL)){const e=this.currentURL;if(this.currentURL=this.sourceURL,this.sourceURL)try{this.element.loaded=this.visit(c(this.sourceURL)),this.appearanceObserver.stop(),await this.element.loaded,this.hasBeenLoaded=!0}catch(t){throw this.currentURL=e,t}}}async loadResponse(e){(e.redirected||e.succeeded&&e.isHTML)&&(this.sourceURL=e.response.url);try{const t=await e.responseHTML;if(t){const{body:n}=$(t),r=new A(await this.extractForeignFrameElement(n)),a=new N(this.view.snapshot,r,!1,!1);this.view.renderPromise&&await this.view.renderPromise,await this.view.render(a),me.frameRendered(e,this.element),me.frameLoaded(this.element),this.fetchResponseLoaded(e)}}catch(e){console.error(e),this.view.invalidate()}finally{this.fetchResponseLoaded=()=>{}}}elementAppearedInViewport(e){this.loadSourceURL()}shouldInterceptLinkClick(e,t){return!e.hasAttribute("data-turbo-method")&&this.shouldInterceptNavigation(e)}linkClickIntercepted(e,t){this.reloadable=!0,this.navigateFrame(e,t)}shouldInterceptFormSubmission(e,t){return this.shouldInterceptNavigation(e,t)}formSubmissionIntercepted(e,t){this.formSubmission&&this.formSubmission.stop(),this.reloadable=!1,this.formSubmission=new E(this,e,t);const{fetchRequest:n}=this.formSubmission;this.prepareHeadersForRequest(n.headers,n),this.formSubmission.start()}prepareHeadersForRequest(e,t){e["Turbo-Frame"]=this.id}requestStarted(e){D(this.element)}requestPreventedHandlingResponse(e,t){this.resolveVisitPromise()}async requestSucceededWithResponse(e,t){await this.loadResponse(t),this.resolveVisitPromise()}requestFailedWithResponse(e,t){console.error(t),this.resolveVisitPromise()}requestErrored(e,t){console.error(t),this.resolveVisitPromise()}requestFinished(e){M(this.element)}formSubmissionStarted({formElement:e}){D(e,this.findFrameElement(e))}formSubmissionSucceededWithResponse(e,t){const n=this.findFrameElement(e.formElement,e.submitter);this.proposeVisitIfNavigatedWithAction(n,e.formElement,e.submitter),n.delegate.loadResponse(t)}formSubmissionFailedWithResponse(e,t){this.element.delegate.loadResponse(t)}formSubmissionErrored(e,t){console.error(t)}formSubmissionFinished({formElement:e}){M(e,this.findFrameElement(e))}allowsImmediateRender(e,t){return!0}viewRenderedSnapshot(e,t){}viewInvalidated(){}async visit(e){var t;const n=new T(this,a.get,e,new URLSearchParams,this.element);return null===(t=this.currentFetchRequest)||void 0===t||t.cancel(),this.currentFetchRequest=n,new Promise((e=>{this.resolveVisitPromise=()=>{this.resolveVisitPromise=()=>{},this.currentFetchRequest=null,e()},n.perform()}))}navigateFrame(e,t,n){const r=this.findFrameElement(e,n);this.proposeVisitIfNavigatedWithAction(r,e,n),r.setAttribute("reloadable",""),r.src=t}proposeVisitIfNavigatedWithAction(e,t,n){const r=L("data-turbo-action",n,t,e);if(ne(r)){const{visitCachedSnapshot:t}=new De(e);e.delegate.fetchResponseLoaded=n=>{if(e.src){const{statusCode:a,redirected:i}=n,o={statusCode:a,redirected:i,responseHTML:e.ownerDocument.documentElement.outerHTML};me.visit(e.src,{action:r,response:o,visitCachedSnapshot:t,willRender:!1})}}}}findFrameElement(e,t){var n;return null!==(n=Me(L("data-turbo-frame",t,e)||this.element.getAttribute("target")))&&void 0!==n?n:this.element}async extractForeignFrameElement(e){let t;const n=CSS.escape(this.id);try{if(t=Te(e.querySelector(`turbo-frame#${n}`),this.currentURL))return t;if(t=Te(e.querySelector(`turbo-frame[src][recurse~=${n}]`),this.currentURL))return await t.loaded,await this.extractForeignFrameElement(t);console.error(`Response has no matching <turbo-frame id="${n}"> element`)}catch(e){console.error(e)}return new d}formActionIsVisitable(e,t){return g(c(h(e,t)),this.rootLocation)}shouldInterceptNavigation(e,t){const n=L("data-turbo-frame",t,e)||this.element.getAttribute("target");if(e instanceof HTMLFormElement&&!this.formActionIsVisitable(e,t))return!1;if(!this.enabled||"_top"==n)return!1;if(n){const e=Me(n);if(e)return!e.disabled}return!!me.elementDriveEnabled(e)&&!(t&&!me.elementDriveEnabled(t))}get id(){return this.element.id}get enabled(){return!this.element.disabled}get sourceURL(){if(this.element.src)return this.element.src}get reloadable(){return this.findFrameElement(this.element).hasAttribute("reloadable")}set reloadable(e){const t=this.findFrameElement(this.element);e?t.setAttribute("reloadable",""):t.removeAttribute("reloadable")}set sourceURL(e){this.settingSourceURL=!0,this.element.src=null!=e?e:null,this.currentURL=this.element.src,this.settingSourceURL=!1}get loadingStyle(){return this.element.loading}get isLoading(){return void 0!==this.formSubmission||void 0!==this.resolveVisitPromise()}get isActive(){return this.element.isActive&&this.connected}get rootLocation(){var e;const t=this.element.ownerDocument.querySelector('meta[name="turbo-root"]');return c(null!==(e=null==t?void 0:t.content)&&void 0!==e?e:"/")}},customElements.define("turbo-frame",d),customElements.define("turbo-stream",Ce),(()=>{let e=document.currentScript;if(e&&!e.hasAttribute("data-turbo-suppress-warning"))for(;e=e.parentElement;)if(e==document.body)return console.warn(k`
+    `;
+    }
+    show() {
+        if (!this.visible) {
+            this.visible = true;
+            this.installProgressElement();
+            this.startTrickling();
+        }
+    }
+    hide() {
+        if (this.visible && !this.hiding) {
+            this.hiding = true;
+            this.fadeProgressElement(() => {
+                this.uninstallProgressElement();
+                this.stopTrickling();
+                this.visible = false;
+                this.hiding = false;
+            });
+        }
+    }
+    setValue(value) {
+        this.value = value;
+        this.refresh();
+    }
+    installStylesheetElement() {
+        document.head.insertBefore(this.stylesheetElement, document.head.firstChild);
+    }
+    installProgressElement() {
+        this.progressElement.style.width = "0";
+        this.progressElement.style.opacity = "1";
+        document.documentElement.insertBefore(this.progressElement, document.body);
+        this.refresh();
+    }
+    fadeProgressElement(callback) {
+        this.progressElement.style.opacity = "0";
+        setTimeout(callback, ProgressBar.animationDuration * 1.5);
+    }
+    uninstallProgressElement() {
+        if (this.progressElement.parentNode) {
+            document.documentElement.removeChild(this.progressElement);
+        }
+    }
+    startTrickling() {
+        if (!this.trickleInterval) {
+            this.trickleInterval = window.setInterval(this.trickle, ProgressBar.animationDuration);
+        }
+    }
+    stopTrickling() {
+        window.clearInterval(this.trickleInterval);
+        delete this.trickleInterval;
+    }
+    refresh() {
+        requestAnimationFrame(() => {
+            this.progressElement.style.width = `${10 + (this.value * 90)}%`;
+        });
+    }
+    createStylesheetElement() {
+        const element = document.createElement("style");
+        element.type = "text/css";
+        element.textContent = ProgressBar.defaultCSS;
+        return element;
+    }
+    createProgressElement() {
+        const element = document.createElement("div");
+        element.className = "turbo-progress-bar";
+        return element;
+    }
+}
+ProgressBar.animationDuration = 300;
+
+class HeadSnapshot extends Snapshot {
+    constructor() {
+        super(...arguments);
+        this.detailsByOuterHTML = this.children
+            .filter((element) => !elementIsNoscript(element))
+            .map((element) => elementWithoutNonce(element))
+            .reduce((result, element) => {
+            const { outerHTML } = element;
+            const details = outerHTML in result
+                ? result[outerHTML]
+                : {
+                    type: elementType(element),
+                    tracked: elementIsTracked(element),
+                    elements: []
+                };
+            return Object.assign(Object.assign({}, result), { [outerHTML]: Object.assign(Object.assign({}, details), { elements: [...details.elements, element] }) });
+        }, {});
+    }
+    get trackedElementSignature() {
+        return Object.keys(this.detailsByOuterHTML)
+            .filter(outerHTML => this.detailsByOuterHTML[outerHTML].tracked)
+            .join("");
+    }
+    getScriptElementsNotInSnapshot(snapshot) {
+        return this.getElementsMatchingTypeNotInSnapshot("script", snapshot);
+    }
+    getStylesheetElementsNotInSnapshot(snapshot) {
+        return this.getElementsMatchingTypeNotInSnapshot("stylesheet", snapshot);
+    }
+    getElementsMatchingTypeNotInSnapshot(matchedType, snapshot) {
+        return Object.keys(this.detailsByOuterHTML)
+            .filter(outerHTML => !(outerHTML in snapshot.detailsByOuterHTML))
+            .map(outerHTML => this.detailsByOuterHTML[outerHTML])
+            .filter(({ type }) => type == matchedType)
+            .map(({ elements: [element] }) => element);
+    }
+    get provisionalElements() {
+        return Object.keys(this.detailsByOuterHTML).reduce((result, outerHTML) => {
+            const { type, tracked, elements } = this.detailsByOuterHTML[outerHTML];
+            if (type == null && !tracked) {
+                return [...result, ...elements];
+            }
+            else if (elements.length > 1) {
+                return [...result, ...elements.slice(1)];
+            }
+            else {
+                return result;
+            }
+        }, []);
+    }
+    getMetaValue(name) {
+        const element = this.findMetaElementByName(name);
+        return element
+            ? element.getAttribute("content")
+            : null;
+    }
+    findMetaElementByName(name) {
+        return Object.keys(this.detailsByOuterHTML).reduce((result, outerHTML) => {
+            const { elements: [element] } = this.detailsByOuterHTML[outerHTML];
+            return elementIsMetaElementWithName(element, name) ? element : result;
+        }, undefined);
+    }
+}
+function elementType(element) {
+    if (elementIsScript(element)) {
+        return "script";
+    }
+    else if (elementIsStylesheet(element)) {
+        return "stylesheet";
+    }
+}
+function elementIsTracked(element) {
+    return element.getAttribute("data-turbo-track") == "reload";
+}
+function elementIsScript(element) {
+    const tagName = element.tagName.toLowerCase();
+    return tagName == "script";
+}
+function elementIsNoscript(element) {
+    const tagName = element.tagName.toLowerCase();
+    return tagName == "noscript";
+}
+function elementIsStylesheet(element) {
+    const tagName = element.tagName.toLowerCase();
+    return tagName == "style" || (tagName == "link" && element.getAttribute("rel") == "stylesheet");
+}
+function elementIsMetaElementWithName(element, name) {
+    const tagName = element.tagName.toLowerCase();
+    return tagName == "meta" && element.getAttribute("name") == name;
+}
+function elementWithoutNonce(element) {
+    if (element.hasAttribute("nonce")) {
+        element.setAttribute("nonce", "");
+    }
+    return element;
+}
+
+class PageSnapshot extends Snapshot {
+    constructor(element, headSnapshot) {
+        super(element);
+        this.headSnapshot = headSnapshot;
+    }
+    static fromHTMLString(html = "") {
+        return this.fromDocument(parseHTMLDocument(html));
+    }
+    static fromElement(element) {
+        return this.fromDocument(element.ownerDocument);
+    }
+    static fromDocument({ head, body }) {
+        return new this(body, new HeadSnapshot(head));
+    }
+    clone() {
+        return new PageSnapshot(this.element.cloneNode(true), this.headSnapshot);
+    }
+    get headElement() {
+        return this.headSnapshot.element;
+    }
+    get rootLocation() {
+        var _a;
+        const root = (_a = this.getSetting("root")) !== null && _a !== void 0 ? _a : "/";
+        return expandURL(root);
+    }
+    get cacheControlValue() {
+        return this.getSetting("cache-control");
+    }
+    get isPreviewable() {
+        return this.cacheControlValue != "no-preview";
+    }
+    get isCacheable() {
+        return this.cacheControlValue != "no-cache";
+    }
+    get isVisitable() {
+        return this.getSetting("visit-control") != "reload";
+    }
+    getSetting(name) {
+        return this.headSnapshot.getMetaValue(`turbo-${name}`);
+    }
+}
+
+var TimingMetric;
+(function (TimingMetric) {
+    TimingMetric["visitStart"] = "visitStart";
+    TimingMetric["requestStart"] = "requestStart";
+    TimingMetric["requestEnd"] = "requestEnd";
+    TimingMetric["visitEnd"] = "visitEnd";
+})(TimingMetric || (TimingMetric = {}));
+var VisitState;
+(function (VisitState) {
+    VisitState["initialized"] = "initialized";
+    VisitState["started"] = "started";
+    VisitState["canceled"] = "canceled";
+    VisitState["failed"] = "failed";
+    VisitState["completed"] = "completed";
+})(VisitState || (VisitState = {}));
+const defaultOptions = {
+    action: "advance",
+    historyChanged: false,
+    visitCachedSnapshot: () => { },
+    willRender: true,
+};
+var SystemStatusCode;
+(function (SystemStatusCode) {
+    SystemStatusCode[SystemStatusCode["networkFailure"] = 0] = "networkFailure";
+    SystemStatusCode[SystemStatusCode["timeoutFailure"] = -1] = "timeoutFailure";
+    SystemStatusCode[SystemStatusCode["contentTypeMismatch"] = -2] = "contentTypeMismatch";
+})(SystemStatusCode || (SystemStatusCode = {}));
+class Visit {
+    constructor(delegate, location, restorationIdentifier, options = {}) {
+        this.identifier = uuid();
+        this.timingMetrics = {};
+        this.followedRedirect = false;
+        this.historyChanged = false;
+        this.scrolled = false;
+        this.snapshotCached = false;
+        this.state = VisitState.initialized;
+        this.delegate = delegate;
+        this.location = location;
+        this.restorationIdentifier = restorationIdentifier || uuid();
+        const { action, historyChanged, referrer, snapshotHTML, response, visitCachedSnapshot, willRender } = Object.assign(Object.assign({}, defaultOptions), options);
+        this.action = action;
+        this.historyChanged = historyChanged;
+        this.referrer = referrer;
+        this.snapshotHTML = snapshotHTML;
+        this.response = response;
+        this.isSamePage = this.delegate.locationWithActionIsSamePage(this.location, this.action);
+        this.visitCachedSnapshot = visitCachedSnapshot;
+        this.willRender = willRender;
+        this.scrolled = !willRender;
+    }
+    get adapter() {
+        return this.delegate.adapter;
+    }
+    get view() {
+        return this.delegate.view;
+    }
+    get history() {
+        return this.delegate.history;
+    }
+    get restorationData() {
+        return this.history.getRestorationDataForIdentifier(this.restorationIdentifier);
+    }
+    get silent() {
+        return this.isSamePage;
+    }
+    start() {
+        if (this.state == VisitState.initialized) {
+            this.recordTimingMetric(TimingMetric.visitStart);
+            this.state = VisitState.started;
+            this.adapter.visitStarted(this);
+            this.delegate.visitStarted(this);
+        }
+    }
+    cancel() {
+        if (this.state == VisitState.started) {
+            if (this.request) {
+                this.request.cancel();
+            }
+            this.cancelRender();
+            this.state = VisitState.canceled;
+        }
+    }
+    complete() {
+        if (this.state == VisitState.started) {
+            this.recordTimingMetric(TimingMetric.visitEnd);
+            this.state = VisitState.completed;
+            this.adapter.visitCompleted(this);
+            this.delegate.visitCompleted(this);
+            this.followRedirect();
+        }
+    }
+    fail() {
+        if (this.state == VisitState.started) {
+            this.state = VisitState.failed;
+            this.adapter.visitFailed(this);
+        }
+    }
+    changeHistory() {
+        var _a;
+        if (!this.historyChanged) {
+            const actionForHistory = this.location.href === ((_a = this.referrer) === null || _a === void 0 ? void 0 : _a.href) ? "replace" : this.action;
+            const method = this.getHistoryMethodForAction(actionForHistory);
+            this.history.update(method, this.location, this.restorationIdentifier);
+            this.historyChanged = true;
+        }
+    }
+    issueRequest() {
+        if (this.hasPreloadedResponse()) {
+            this.simulateRequest();
+        }
+        else if (this.shouldIssueRequest() && !this.request) {
+            this.request = new FetchRequest(this, FetchMethod.get, this.location);
+            this.request.perform();
+        }
+    }
+    simulateRequest() {
+        if (this.response) {
+            this.startRequest();
+            this.recordResponse();
+            this.finishRequest();
+        }
+    }
+    startRequest() {
+        this.recordTimingMetric(TimingMetric.requestStart);
+        this.adapter.visitRequestStarted(this);
+    }
+    recordResponse(response = this.response) {
+        this.response = response;
+        if (response) {
+            const { statusCode } = response;
+            if (isSuccessful(statusCode)) {
+                this.adapter.visitRequestCompleted(this);
+            }
+            else {
+                this.adapter.visitRequestFailedWithStatusCode(this, statusCode);
+            }
+        }
+    }
+    finishRequest() {
+        this.recordTimingMetric(TimingMetric.requestEnd);
+        this.adapter.visitRequestFinished(this);
+    }
+    loadResponse() {
+        if (this.response) {
+            const { statusCode, responseHTML } = this.response;
+            this.render(async () => {
+                this.cacheSnapshot();
+                if (this.view.renderPromise)
+                    await this.view.renderPromise;
+                if (isSuccessful(statusCode) && responseHTML != null) {
+                    await this.view.renderPage(PageSnapshot.fromHTMLString(responseHTML), false, this.willRender);
+                    this.adapter.visitRendered(this);
+                    this.complete();
+                }
+                else {
+                    await this.view.renderError(PageSnapshot.fromHTMLString(responseHTML));
+                    this.adapter.visitRendered(this);
+                    this.fail();
+                }
+            });
+        }
+    }
+    getCachedSnapshot() {
+        const snapshot = this.view.getCachedSnapshotForLocation(this.location) || this.getPreloadedSnapshot();
+        if (snapshot && (!getAnchor(this.location) || snapshot.hasAnchor(getAnchor(this.location)))) {
+            if (this.action == "restore" || snapshot.isPreviewable) {
+                return snapshot;
+            }
+        }
+    }
+    getPreloadedSnapshot() {
+        if (this.snapshotHTML) {
+            return PageSnapshot.fromHTMLString(this.snapshotHTML);
+        }
+    }
+    hasCachedSnapshot() {
+        return this.getCachedSnapshot() != null;
+    }
+    loadCachedSnapshot() {
+        const snapshot = this.getCachedSnapshot();
+        if (snapshot) {
+            const isPreview = this.shouldIssueRequest();
+            this.render(async () => {
+                this.cacheSnapshot();
+                if (this.isSamePage) {
+                    this.adapter.visitRendered(this);
+                }
+                else {
+                    if (this.view.renderPromise)
+                        await this.view.renderPromise;
+                    await this.view.renderPage(snapshot, isPreview, this.willRender);
+                    this.adapter.visitRendered(this);
+                    if (!isPreview) {
+                        this.complete();
+                    }
+                }
+            });
+        }
+    }
+    followRedirect() {
+        var _a;
+        if (this.redirectedToLocation && !this.followedRedirect && ((_a = this.response) === null || _a === void 0 ? void 0 : _a.redirected)) {
+            this.adapter.visitProposedToLocation(this.redirectedToLocation, {
+                action: 'replace',
+                response: this.response
+            });
+            this.followedRedirect = true;
+        }
+    }
+    goToSamePageAnchor() {
+        if (this.isSamePage) {
+            this.render(async () => {
+                this.cacheSnapshot();
+                this.adapter.visitRendered(this);
+            });
+        }
+    }
+    requestStarted() {
+        this.startRequest();
+    }
+    requestPreventedHandlingResponse(request, response) {
+    }
+    async requestSucceededWithResponse(request, response) {
+        const responseHTML = await response.responseHTML;
+        const { redirected, statusCode } = response;
+        if (responseHTML == undefined) {
+            this.recordResponse({ statusCode: SystemStatusCode.contentTypeMismatch, redirected });
+        }
+        else {
+            this.redirectedToLocation = response.redirected ? response.location : undefined;
+            this.recordResponse({ statusCode: statusCode, responseHTML, redirected });
+        }
+    }
+    async requestFailedWithResponse(request, response) {
+        const responseHTML = await response.responseHTML;
+        const { redirected, statusCode } = response;
+        if (responseHTML == undefined) {
+            this.recordResponse({ statusCode: SystemStatusCode.contentTypeMismatch, redirected });
+        }
+        else {
+            this.recordResponse({ statusCode: statusCode, responseHTML, redirected });
+        }
+    }
+    requestErrored(request, error) {
+        this.recordResponse({ statusCode: SystemStatusCode.networkFailure, redirected: false });
+    }
+    requestFinished() {
+        this.finishRequest();
+    }
+    performScroll() {
+        if (!this.scrolled) {
+            if (this.action == "restore") {
+                this.scrollToRestoredPosition() || this.scrollToAnchor() || this.view.scrollToTop();
+            }
+            else {
+                this.scrollToAnchor() || this.view.scrollToTop();
+            }
+            if (this.isSamePage) {
+                this.delegate.visitScrolledToSamePageLocation(this.view.lastRenderedLocation, this.location);
+            }
+            this.scrolled = true;
+        }
+    }
+    scrollToRestoredPosition() {
+        const { scrollPosition } = this.restorationData;
+        if (scrollPosition) {
+            this.view.scrollToPosition(scrollPosition);
+            return true;
+        }
+    }
+    scrollToAnchor() {
+        const anchor = getAnchor(this.location);
+        if (anchor != null) {
+            this.view.scrollToAnchor(anchor);
+            return true;
+        }
+    }
+    recordTimingMetric(metric) {
+        this.timingMetrics[metric] = new Date().getTime();
+    }
+    getTimingMetrics() {
+        return Object.assign({}, this.timingMetrics);
+    }
+    getHistoryMethodForAction(action) {
+        switch (action) {
+            case "replace": return history.replaceState;
+            case "advance":
+            case "restore": return history.pushState;
+        }
+    }
+    hasPreloadedResponse() {
+        return typeof this.response == "object";
+    }
+    shouldIssueRequest() {
+        if (this.isSamePage) {
+            return false;
+        }
+        else if (this.action == "restore") {
+            return !this.hasCachedSnapshot();
+        }
+        else {
+            return this.willRender;
+        }
+    }
+    cacheSnapshot() {
+        if (!this.snapshotCached) {
+            this.view.cacheSnapshot().then(snapshot => snapshot && this.visitCachedSnapshot(snapshot));
+            this.snapshotCached = true;
+        }
+    }
+    async render(callback) {
+        this.cancelRender();
+        await new Promise(resolve => {
+            this.frame = requestAnimationFrame(() => resolve());
+        });
+        await callback();
+        delete this.frame;
+        this.performScroll();
+    }
+    cancelRender() {
+        if (this.frame) {
+            cancelAnimationFrame(this.frame);
+            delete this.frame;
+        }
+    }
+}
+function isSuccessful(statusCode) {
+    return statusCode >= 200 && statusCode < 300;
+}
+
+class BrowserAdapter {
+    constructor(session) {
+        this.progressBar = new ProgressBar;
+        this.showProgressBar = () => {
+            this.progressBar.show();
+        };
+        this.session = session;
+    }
+    visitProposedToLocation(location, options) {
+        this.navigator.startVisit(location, uuid(), options);
+    }
+    visitStarted(visit) {
+        visit.loadCachedSnapshot();
+        visit.issueRequest();
+        visit.changeHistory();
+        visit.goToSamePageAnchor();
+    }
+    visitRequestStarted(visit) {
+        this.progressBar.setValue(0);
+        if (visit.hasCachedSnapshot() || visit.action != "restore") {
+            this.showVisitProgressBarAfterDelay();
+        }
+        else {
+            this.showProgressBar();
+        }
+    }
+    visitRequestCompleted(visit) {
+        visit.loadResponse();
+    }
+    visitRequestFailedWithStatusCode(visit, statusCode) {
+        switch (statusCode) {
+            case SystemStatusCode.networkFailure:
+            case SystemStatusCode.timeoutFailure:
+            case SystemStatusCode.contentTypeMismatch:
+                return this.reload();
+            default:
+                return visit.loadResponse();
+        }
+    }
+    visitRequestFinished(visit) {
+        this.progressBar.setValue(1);
+        this.hideVisitProgressBar();
+    }
+    visitCompleted(visit) {
+    }
+    pageInvalidated() {
+        this.reload();
+    }
+    visitFailed(visit) {
+    }
+    visitRendered(visit) {
+    }
+    formSubmissionStarted(formSubmission) {
+        this.progressBar.setValue(0);
+        this.showFormProgressBarAfterDelay();
+    }
+    formSubmissionFinished(formSubmission) {
+        this.progressBar.setValue(1);
+        this.hideFormProgressBar();
+    }
+    showVisitProgressBarAfterDelay() {
+        this.visitProgressBarTimeout = window.setTimeout(this.showProgressBar, this.session.progressBarDelay);
+    }
+    hideVisitProgressBar() {
+        this.progressBar.hide();
+        if (this.visitProgressBarTimeout != null) {
+            window.clearTimeout(this.visitProgressBarTimeout);
+            delete this.visitProgressBarTimeout;
+        }
+    }
+    showFormProgressBarAfterDelay() {
+        if (this.formProgressBarTimeout == null) {
+            this.formProgressBarTimeout = window.setTimeout(this.showProgressBar, this.session.progressBarDelay);
+        }
+    }
+    hideFormProgressBar() {
+        this.progressBar.hide();
+        if (this.formProgressBarTimeout != null) {
+            window.clearTimeout(this.formProgressBarTimeout);
+            delete this.formProgressBarTimeout;
+        }
+    }
+    reload() {
+        window.location.reload();
+    }
+    get navigator() {
+        return this.session.navigator;
+    }
+}
+
+class CacheObserver {
+    constructor() {
+        this.started = false;
+    }
+    start() {
+        if (!this.started) {
+            this.started = true;
+            addEventListener("turbo:before-cache", this.removeStaleElements, false);
+        }
+    }
+    stop() {
+        if (this.started) {
+            this.started = false;
+            removeEventListener("turbo:before-cache", this.removeStaleElements, false);
+        }
+    }
+    removeStaleElements() {
+        const staleElements = [...document.querySelectorAll('[data-turbo-cache="false"]')];
+        for (const element of staleElements) {
+            element.remove();
+        }
+    }
+}
+
+class FormSubmitObserver {
+    constructor(delegate) {
+        this.started = false;
+        this.submitCaptured = () => {
+            removeEventListener("submit", this.submitBubbled, false);
+            addEventListener("submit", this.submitBubbled, false);
+        };
+        this.submitBubbled = ((event) => {
+            if (!event.defaultPrevented) {
+                const form = event.target instanceof HTMLFormElement ? event.target : undefined;
+                const submitter = event.submitter || undefined;
+                if (form) {
+                    const method = (submitter === null || submitter === void 0 ? void 0 : submitter.getAttribute("formmethod")) || form.getAttribute("method");
+                    if (method != "dialog" && this.delegate.willSubmitForm(form, submitter)) {
+                        event.preventDefault();
+                        this.delegate.formSubmitted(form, submitter);
+                    }
+                }
+            }
+        });
+        this.delegate = delegate;
+    }
+    start() {
+        if (!this.started) {
+            addEventListener("submit", this.submitCaptured, true);
+            this.started = true;
+        }
+    }
+    stop() {
+        if (this.started) {
+            removeEventListener("submit", this.submitCaptured, true);
+            this.started = false;
+        }
+    }
+}
+
+class FrameRedirector {
+    constructor(element) {
+        this.element = element;
+        this.linkInterceptor = new LinkInterceptor(this, element);
+        this.formInterceptor = new FormInterceptor(this, element);
+    }
+    start() {
+        this.linkInterceptor.start();
+        this.formInterceptor.start();
+    }
+    stop() {
+        this.linkInterceptor.stop();
+        this.formInterceptor.stop();
+    }
+    shouldInterceptLinkClick(element, url) {
+        return this.shouldRedirect(element);
+    }
+    linkClickIntercepted(element, url) {
+        const frame = this.findFrameElement(element);
+        if (frame) {
+            frame.delegate.linkClickIntercepted(element, url);
+        }
+    }
+    shouldInterceptFormSubmission(element, submitter) {
+        return this.shouldSubmit(element, submitter);
+    }
+    formSubmissionIntercepted(element, submitter) {
+        const frame = this.findFrameElement(element, submitter);
+        if (frame) {
+            frame.removeAttribute("reloadable");
+            frame.delegate.formSubmissionIntercepted(element, submitter);
+        }
+    }
+    shouldSubmit(form, submitter) {
+        var _a;
+        const action = getAction(form, submitter);
+        const meta = this.element.ownerDocument.querySelector(`meta[name="turbo-root"]`);
+        const rootLocation = expandURL((_a = meta === null || meta === void 0 ? void 0 : meta.content) !== null && _a !== void 0 ? _a : "/");
+        return this.shouldRedirect(form, submitter) && locationIsVisitable(action, rootLocation);
+    }
+    shouldRedirect(element, submitter) {
+        const frame = this.findFrameElement(element, submitter);
+        return frame ? frame != element.closest("turbo-frame") : false;
+    }
+    findFrameElement(element, submitter) {
+        const id = (submitter === null || submitter === void 0 ? void 0 : submitter.getAttribute("data-turbo-frame")) || element.getAttribute("data-turbo-frame");
+        if (id && id != "_top") {
+            const frame = this.element.querySelector(`#${id}:not([disabled])`);
+            if (frame instanceof FrameElement) {
+                return frame;
+            }
+        }
+    }
+}
+
+class History {
+    constructor(delegate) {
+        this.restorationIdentifier = uuid();
+        this.restorationData = {};
+        this.started = false;
+        this.pageLoaded = false;
+        this.onPopState = (event) => {
+            if (this.shouldHandlePopState()) {
+                const { turbo } = event.state || {};
+                if (turbo) {
+                    this.location = new URL(window.location.href);
+                    const { restorationIdentifier } = turbo;
+                    this.restorationIdentifier = restorationIdentifier;
+                    this.delegate.historyPoppedToLocationWithRestorationIdentifier(this.location, restorationIdentifier);
+                }
+            }
+        };
+        this.onPageLoad = async (event) => {
+            await nextMicrotask();
+            this.pageLoaded = true;
+        };
+        this.delegate = delegate;
+    }
+    start() {
+        if (!this.started) {
+            addEventListener("popstate", this.onPopState, false);
+            addEventListener("load", this.onPageLoad, false);
+            this.started = true;
+            this.replace(new URL(window.location.href));
+        }
+    }
+    stop() {
+        if (this.started) {
+            removeEventListener("popstate", this.onPopState, false);
+            removeEventListener("load", this.onPageLoad, false);
+            this.started = false;
+        }
+    }
+    push(location, restorationIdentifier) {
+        this.update(history.pushState, location, restorationIdentifier);
+    }
+    replace(location, restorationIdentifier) {
+        this.update(history.replaceState, location, restorationIdentifier);
+    }
+    update(method, location, restorationIdentifier = uuid()) {
+        const state = { turbo: { restorationIdentifier } };
+        method.call(history, state, "", location.href);
+        this.location = location;
+        this.restorationIdentifier = restorationIdentifier;
+    }
+    getRestorationDataForIdentifier(restorationIdentifier) {
+        return this.restorationData[restorationIdentifier] || {};
+    }
+    updateRestorationData(additionalData) {
+        const { restorationIdentifier } = this;
+        const restorationData = this.restorationData[restorationIdentifier];
+        this.restorationData[restorationIdentifier] = Object.assign(Object.assign({}, restorationData), additionalData);
+    }
+    assumeControlOfScrollRestoration() {
+        var _a;
+        if (!this.previousScrollRestoration) {
+            this.previousScrollRestoration = (_a = history.scrollRestoration) !== null && _a !== void 0 ? _a : "auto";
+            history.scrollRestoration = "manual";
+        }
+    }
+    relinquishControlOfScrollRestoration() {
+        if (this.previousScrollRestoration) {
+            history.scrollRestoration = this.previousScrollRestoration;
+            delete this.previousScrollRestoration;
+        }
+    }
+    shouldHandlePopState() {
+        return this.pageIsLoaded();
+    }
+    pageIsLoaded() {
+        return this.pageLoaded || document.readyState == "complete";
+    }
+}
+
+class LinkClickObserver {
+    constructor(delegate) {
+        this.started = false;
+        this.clickCaptured = () => {
+            removeEventListener("click", this.clickBubbled, false);
+            addEventListener("click", this.clickBubbled, false);
+        };
+        this.clickBubbled = (event) => {
+            if (this.clickEventIsSignificant(event)) {
+                const target = (event.composedPath && event.composedPath()[0]) || event.target;
+                const link = this.findLinkFromClickTarget(target);
+                if (link) {
+                    const location = this.getLocationForLink(link);
+                    if (this.delegate.willFollowLinkToLocation(link, location)) {
+                        event.preventDefault();
+                        this.delegate.followedLinkToLocation(link, location);
+                    }
+                }
+            }
+        };
+        this.delegate = delegate;
+    }
+    start() {
+        if (!this.started) {
+            addEventListener("click", this.clickCaptured, true);
+            this.started = true;
+        }
+    }
+    stop() {
+        if (this.started) {
+            removeEventListener("click", this.clickCaptured, true);
+            this.started = false;
+        }
+    }
+    clickEventIsSignificant(event) {
+        return !((event.target && event.target.isContentEditable)
+            || event.defaultPrevented
+            || event.which > 1
+            || event.altKey
+            || event.ctrlKey
+            || event.metaKey
+            || event.shiftKey);
+    }
+    findLinkFromClickTarget(target) {
+        if (target instanceof Element) {
+            return target.closest("a[href]:not([target^=_]):not([download])");
+        }
+    }
+    getLocationForLink(link) {
+        return expandURL(link.getAttribute("href") || "");
+    }
+}
+
+function isAction(action) {
+    return action == "advance" || action == "replace" || action == "restore";
+}
+
+class Navigator {
+    constructor(delegate) {
+        this.delegate = delegate;
+    }
+    proposeVisit(location, options = {}) {
+        if (this.delegate.allowsVisitingLocationWithAction(location, options.action)) {
+            if (locationIsVisitable(location, this.view.snapshot.rootLocation)) {
+                this.delegate.visitProposedToLocation(location, options);
+            }
+            else {
+                window.location.href = location.toString();
+            }
+        }
+    }
+    startVisit(locatable, restorationIdentifier, options = {}) {
+        this.stop();
+        this.currentVisit = new Visit(this, expandURL(locatable), restorationIdentifier, Object.assign({ referrer: this.location }, options));
+        this.currentVisit.start();
+    }
+    submitForm(form, submitter) {
+        this.stop();
+        this.formSubmission = new FormSubmission(this, form, submitter, true);
+        this.formSubmission.start();
+    }
+    stop() {
+        if (this.formSubmission) {
+            this.formSubmission.stop();
+            delete this.formSubmission;
+        }
+        if (this.currentVisit) {
+            this.currentVisit.cancel();
+            delete this.currentVisit;
+        }
+    }
+    get adapter() {
+        return this.delegate.adapter;
+    }
+    get view() {
+        return this.delegate.view;
+    }
+    get history() {
+        return this.delegate.history;
+    }
+    formSubmissionStarted(formSubmission) {
+        if (typeof this.adapter.formSubmissionStarted === 'function') {
+            this.adapter.formSubmissionStarted(formSubmission);
+        }
+    }
+    async formSubmissionSucceededWithResponse(formSubmission, fetchResponse) {
+        if (formSubmission == this.formSubmission) {
+            const responseHTML = await fetchResponse.responseHTML;
+            if (responseHTML) {
+                if (formSubmission.method != FetchMethod.get) {
+                    this.view.clearSnapshotCache();
+                }
+                const { statusCode, redirected } = fetchResponse;
+                const action = this.getActionForFormSubmission(formSubmission);
+                const visitOptions = { action, response: { statusCode, responseHTML, redirected } };
+                this.proposeVisit(fetchResponse.location, visitOptions);
+            }
+        }
+    }
+    async formSubmissionFailedWithResponse(formSubmission, fetchResponse) {
+        const responseHTML = await fetchResponse.responseHTML;
+        if (responseHTML) {
+            const snapshot = PageSnapshot.fromHTMLString(responseHTML);
+            if (fetchResponse.serverError) {
+                await this.view.renderError(snapshot);
+            }
+            else {
+                await this.view.renderPage(snapshot);
+            }
+            this.view.scrollToTop();
+            this.view.clearSnapshotCache();
+        }
+    }
+    formSubmissionErrored(formSubmission, error) {
+        console.error(error);
+    }
+    formSubmissionFinished(formSubmission) {
+        if (typeof this.adapter.formSubmissionFinished === 'function') {
+            this.adapter.formSubmissionFinished(formSubmission);
+        }
+    }
+    visitStarted(visit) {
+        this.delegate.visitStarted(visit);
+    }
+    visitCompleted(visit) {
+        this.delegate.visitCompleted(visit);
+    }
+    locationWithActionIsSamePage(location, action) {
+        const anchor = getAnchor(location);
+        const currentAnchor = getAnchor(this.view.lastRenderedLocation);
+        const isRestorationToTop = action === 'restore' && typeof anchor === 'undefined';
+        return action !== "replace" &&
+            getRequestURL(location) === getRequestURL(this.view.lastRenderedLocation) &&
+            (isRestorationToTop || (anchor != null && anchor !== currentAnchor));
+    }
+    visitScrolledToSamePageLocation(oldURL, newURL) {
+        this.delegate.visitScrolledToSamePageLocation(oldURL, newURL);
+    }
+    get location() {
+        return this.history.location;
+    }
+    get restorationIdentifier() {
+        return this.history.restorationIdentifier;
+    }
+    getActionForFormSubmission(formSubmission) {
+        const { formElement, submitter } = formSubmission;
+        const action = getAttribute("data-turbo-action", submitter, formElement);
+        return isAction(action) ? action : "advance";
+    }
+}
+
+var PageStage;
+(function (PageStage) {
+    PageStage[PageStage["initial"] = 0] = "initial";
+    PageStage[PageStage["loading"] = 1] = "loading";
+    PageStage[PageStage["interactive"] = 2] = "interactive";
+    PageStage[PageStage["complete"] = 3] = "complete";
+})(PageStage || (PageStage = {}));
+class PageObserver {
+    constructor(delegate) {
+        this.stage = PageStage.initial;
+        this.started = false;
+        this.interpretReadyState = () => {
+            const { readyState } = this;
+            if (readyState == "interactive") {
+                this.pageIsInteractive();
+            }
+            else if (readyState == "complete") {
+                this.pageIsComplete();
+            }
+        };
+        this.pageWillUnload = () => {
+            this.delegate.pageWillUnload();
+        };
+        this.delegate = delegate;
+    }
+    start() {
+        if (!this.started) {
+            if (this.stage == PageStage.initial) {
+                this.stage = PageStage.loading;
+            }
+            document.addEventListener("readystatechange", this.interpretReadyState, false);
+            addEventListener("pagehide", this.pageWillUnload, false);
+            this.started = true;
+        }
+    }
+    stop() {
+        if (this.started) {
+            document.removeEventListener("readystatechange", this.interpretReadyState, false);
+            removeEventListener("pagehide", this.pageWillUnload, false);
+            this.started = false;
+        }
+    }
+    pageIsInteractive() {
+        if (this.stage == PageStage.loading) {
+            this.stage = PageStage.interactive;
+            this.delegate.pageBecameInteractive();
+        }
+    }
+    pageIsComplete() {
+        this.pageIsInteractive();
+        if (this.stage == PageStage.interactive) {
+            this.stage = PageStage.complete;
+            this.delegate.pageLoaded();
+        }
+    }
+    get readyState() {
+        return document.readyState;
+    }
+}
+
+class ScrollObserver {
+    constructor(delegate) {
+        this.started = false;
+        this.onScroll = () => {
+            this.updatePosition({ x: window.pageXOffset, y: window.pageYOffset });
+        };
+        this.delegate = delegate;
+    }
+    start() {
+        if (!this.started) {
+            addEventListener("scroll", this.onScroll, false);
+            this.onScroll();
+            this.started = true;
+        }
+    }
+    stop() {
+        if (this.started) {
+            removeEventListener("scroll", this.onScroll, false);
+            this.started = false;
+        }
+    }
+    updatePosition(position) {
+        this.delegate.scrollPositionChanged(position);
+    }
+}
+
+class StreamObserver {
+    constructor(delegate) {
+        this.sources = new Set;
+        this.started = false;
+        this.inspectFetchResponse = ((event) => {
+            const response = fetchResponseFromEvent(event);
+            if (response && fetchResponseIsStream(response)) {
+                event.preventDefault();
+                this.receiveMessageResponse(response);
+            }
+        });
+        this.receiveMessageEvent = (event) => {
+            if (this.started && typeof event.data == "string") {
+                this.receiveMessageHTML(event.data);
+            }
+        };
+        this.delegate = delegate;
+    }
+    start() {
+        if (!this.started) {
+            this.started = true;
+            addEventListener("turbo:before-fetch-response", this.inspectFetchResponse, false);
+        }
+    }
+    stop() {
+        if (this.started) {
+            this.started = false;
+            removeEventListener("turbo:before-fetch-response", this.inspectFetchResponse, false);
+        }
+    }
+    connectStreamSource(source) {
+        if (!this.streamSourceIsConnected(source)) {
+            this.sources.add(source);
+            source.addEventListener("message", this.receiveMessageEvent, false);
+        }
+    }
+    disconnectStreamSource(source) {
+        if (this.streamSourceIsConnected(source)) {
+            this.sources.delete(source);
+            source.removeEventListener("message", this.receiveMessageEvent, false);
+        }
+    }
+    streamSourceIsConnected(source) {
+        return this.sources.has(source);
+    }
+    async receiveMessageResponse(response) {
+        const html = await response.responseHTML;
+        if (html) {
+            this.receiveMessageHTML(html);
+        }
+    }
+    receiveMessageHTML(html) {
+        this.delegate.receivedMessageFromStream(new StreamMessage(html));
+    }
+}
+function fetchResponseFromEvent(event) {
+    var _a;
+    const fetchResponse = (_a = event.detail) === null || _a === void 0 ? void 0 : _a.fetchResponse;
+    if (fetchResponse instanceof FetchResponse) {
+        return fetchResponse;
+    }
+}
+function fetchResponseIsStream(response) {
+    var _a;
+    const contentType = (_a = response.contentType) !== null && _a !== void 0 ? _a : "";
+    return contentType.startsWith(StreamMessage.contentType);
+}
+
+class ErrorRenderer extends Renderer {
+    async render() {
+        this.replaceHeadAndBody();
+        this.activateScriptElements();
+    }
+    replaceHeadAndBody() {
+        const { documentElement, head, body } = document;
+        documentElement.replaceChild(this.newHead, head);
+        documentElement.replaceChild(this.newElement, body);
+    }
+    activateScriptElements() {
+        for (const replaceableElement of this.scriptElements) {
+            const parentNode = replaceableElement.parentNode;
+            if (parentNode) {
+                const element = this.createScriptElement(replaceableElement);
+                parentNode.replaceChild(element, replaceableElement);
+            }
+        }
+    }
+    get newHead() {
+        return this.newSnapshot.headSnapshot.element;
+    }
+    get scriptElements() {
+        return [...document.documentElement.querySelectorAll("script")];
+    }
+}
+
+class PageRenderer extends Renderer {
+    get shouldRender() {
+        return this.newSnapshot.isVisitable && this.trackedElementsAreIdentical;
+    }
+    prepareToRender() {
+        this.mergeHead();
+    }
+    async render() {
+        if (this.willRender) {
+            this.replaceBody();
+        }
+    }
+    finishRendering() {
+        super.finishRendering();
+        if (!this.isPreview) {
+            this.focusFirstAutofocusableElement();
+        }
+    }
+    get currentHeadSnapshot() {
+        return this.currentSnapshot.headSnapshot;
+    }
+    get newHeadSnapshot() {
+        return this.newSnapshot.headSnapshot;
+    }
+    get newElement() {
+        return this.newSnapshot.element;
+    }
+    mergeHead() {
+        this.copyNewHeadStylesheetElements();
+        this.copyNewHeadScriptElements();
+        this.removeCurrentHeadProvisionalElements();
+        this.copyNewHeadProvisionalElements();
+    }
+    replaceBody() {
+        this.preservingPermanentElements(() => {
+            this.activateNewBody();
+            this.assignNewBody();
+        });
+    }
+    get trackedElementsAreIdentical() {
+        return this.currentHeadSnapshot.trackedElementSignature == this.newHeadSnapshot.trackedElementSignature;
+    }
+    copyNewHeadStylesheetElements() {
+        for (const element of this.newHeadStylesheetElements) {
+            document.head.appendChild(element);
+        }
+    }
+    copyNewHeadScriptElements() {
+        for (const element of this.newHeadScriptElements) {
+            document.head.appendChild(this.createScriptElement(element));
+        }
+    }
+    removeCurrentHeadProvisionalElements() {
+        for (const element of this.currentHeadProvisionalElements) {
+            document.head.removeChild(element);
+        }
+    }
+    copyNewHeadProvisionalElements() {
+        for (const element of this.newHeadProvisionalElements) {
+            document.head.appendChild(element);
+        }
+    }
+    activateNewBody() {
+        document.adoptNode(this.newElement);
+        this.activateNewBodyScriptElements();
+    }
+    activateNewBodyScriptElements() {
+        for (const inertScriptElement of this.newBodyScriptElements) {
+            const activatedScriptElement = this.createScriptElement(inertScriptElement);
+            inertScriptElement.replaceWith(activatedScriptElement);
+        }
+    }
+    assignNewBody() {
+        if (document.body && this.newElement instanceof HTMLBodyElement) {
+            document.body.replaceWith(this.newElement);
+        }
+        else {
+            document.documentElement.appendChild(this.newElement);
+        }
+    }
+    get newHeadStylesheetElements() {
+        return this.newHeadSnapshot.getStylesheetElementsNotInSnapshot(this.currentHeadSnapshot);
+    }
+    get newHeadScriptElements() {
+        return this.newHeadSnapshot.getScriptElementsNotInSnapshot(this.currentHeadSnapshot);
+    }
+    get currentHeadProvisionalElements() {
+        return this.currentHeadSnapshot.provisionalElements;
+    }
+    get newHeadProvisionalElements() {
+        return this.newHeadSnapshot.provisionalElements;
+    }
+    get newBodyScriptElements() {
+        return this.newElement.querySelectorAll("script");
+    }
+}
+
+class SnapshotCache {
+    constructor(size) {
+        this.keys = [];
+        this.snapshots = {};
+        this.size = size;
+    }
+    has(location) {
+        return toCacheKey(location) in this.snapshots;
+    }
+    get(location) {
+        if (this.has(location)) {
+            const snapshot = this.read(location);
+            this.touch(location);
+            return snapshot;
+        }
+    }
+    put(location, snapshot) {
+        this.write(location, snapshot);
+        this.touch(location);
+        return snapshot;
+    }
+    clear() {
+        this.snapshots = {};
+    }
+    read(location) {
+        return this.snapshots[toCacheKey(location)];
+    }
+    write(location, snapshot) {
+        this.snapshots[toCacheKey(location)] = snapshot;
+    }
+    touch(location) {
+        const key = toCacheKey(location);
+        const index = this.keys.indexOf(key);
+        if (index > -1)
+            this.keys.splice(index, 1);
+        this.keys.unshift(key);
+        this.trim();
+    }
+    trim() {
+        for (const key of this.keys.splice(this.size)) {
+            delete this.snapshots[key];
+        }
+    }
+}
+
+class PageView extends View {
+    constructor() {
+        super(...arguments);
+        this.snapshotCache = new SnapshotCache(10);
+        this.lastRenderedLocation = new URL(location.href);
+    }
+    renderPage(snapshot, isPreview = false, willRender = true) {
+        const renderer = new PageRenderer(this.snapshot, snapshot, isPreview, willRender);
+        return this.render(renderer);
+    }
+    renderError(snapshot) {
+        const renderer = new ErrorRenderer(this.snapshot, snapshot, false);
+        return this.render(renderer);
+    }
+    clearSnapshotCache() {
+        this.snapshotCache.clear();
+    }
+    async cacheSnapshot() {
+        if (this.shouldCacheSnapshot) {
+            this.delegate.viewWillCacheSnapshot();
+            const { snapshot, lastRenderedLocation: location } = this;
+            await nextEventLoopTick();
+            const cachedSnapshot = snapshot.clone();
+            this.snapshotCache.put(location, cachedSnapshot);
+            return cachedSnapshot;
+        }
+    }
+    getCachedSnapshotForLocation(location) {
+        return this.snapshotCache.get(location);
+    }
+    get snapshot() {
+        return PageSnapshot.fromElement(this.element);
+    }
+    get shouldCacheSnapshot() {
+        return this.snapshot.isCacheable;
+    }
+}
+
+class Session {
+    constructor() {
+        this.navigator = new Navigator(this);
+        this.history = new History(this);
+        this.view = new PageView(this, document.documentElement);
+        this.adapter = new BrowserAdapter(this);
+        this.pageObserver = new PageObserver(this);
+        this.cacheObserver = new CacheObserver();
+        this.linkClickObserver = new LinkClickObserver(this);
+        this.formSubmitObserver = new FormSubmitObserver(this);
+        this.scrollObserver = new ScrollObserver(this);
+        this.streamObserver = new StreamObserver(this);
+        this.frameRedirector = new FrameRedirector(document.documentElement);
+        this.drive = true;
+        this.enabled = true;
+        this.progressBarDelay = 500;
+        this.started = false;
+    }
+    start() {
+        if (!this.started) {
+            this.pageObserver.start();
+            this.cacheObserver.start();
+            this.linkClickObserver.start();
+            this.formSubmitObserver.start();
+            this.scrollObserver.start();
+            this.streamObserver.start();
+            this.frameRedirector.start();
+            this.history.start();
+            this.started = true;
+            this.enabled = true;
+        }
+    }
+    disable() {
+        this.enabled = false;
+    }
+    stop() {
+        if (this.started) {
+            this.pageObserver.stop();
+            this.cacheObserver.stop();
+            this.linkClickObserver.stop();
+            this.formSubmitObserver.stop();
+            this.scrollObserver.stop();
+            this.streamObserver.stop();
+            this.frameRedirector.stop();
+            this.history.stop();
+            this.started = false;
+        }
+    }
+    registerAdapter(adapter) {
+        this.adapter = adapter;
+    }
+    visit(location, options = {}) {
+        this.navigator.proposeVisit(expandURL(location), options);
+    }
+    connectStreamSource(source) {
+        this.streamObserver.connectStreamSource(source);
+    }
+    disconnectStreamSource(source) {
+        this.streamObserver.disconnectStreamSource(source);
+    }
+    renderStreamMessage(message) {
+        document.documentElement.appendChild(StreamMessage.wrap(message).fragment);
+    }
+    clearCache() {
+        this.view.clearSnapshotCache();
+    }
+    setProgressBarDelay(delay) {
+        this.progressBarDelay = delay;
+    }
+    get location() {
+        return this.history.location;
+    }
+    get restorationIdentifier() {
+        return this.history.restorationIdentifier;
+    }
+    historyPoppedToLocationWithRestorationIdentifier(location, restorationIdentifier) {
+        if (this.enabled) {
+            this.navigator.startVisit(location, restorationIdentifier, { action: "restore", historyChanged: true });
+        }
+        else {
+            this.adapter.pageInvalidated();
+        }
+    }
+    scrollPositionChanged(position) {
+        this.history.updateRestorationData({ scrollPosition: position });
+    }
+    willFollowLinkToLocation(link, location) {
+        return this.elementDriveEnabled(link)
+            && locationIsVisitable(location, this.snapshot.rootLocation)
+            && this.applicationAllowsFollowingLinkToLocation(link, location);
+    }
+    followedLinkToLocation(link, location) {
+        const action = this.getActionForLink(link);
+        this.convertLinkWithMethodClickToFormSubmission(link) || this.visit(location.href, { action });
+    }
+    convertLinkWithMethodClickToFormSubmission(link) {
+        const linkMethod = link.getAttribute("data-turbo-method");
+        if (linkMethod) {
+            const form = document.createElement("form");
+            form.method = linkMethod;
+            form.action = link.getAttribute("href") || "undefined";
+            form.hidden = true;
+            if (link.hasAttribute("data-turbo-confirm")) {
+                form.setAttribute("data-turbo-confirm", link.getAttribute("data-turbo-confirm"));
+            }
+            const frame = this.getTargetFrameForLink(link);
+            if (frame) {
+                form.setAttribute("data-turbo-frame", frame);
+                form.addEventListener("turbo:submit-start", () => form.remove());
+            }
+            else {
+                form.addEventListener("submit", () => form.remove());
+            }
+            document.body.appendChild(form);
+            return dispatch("submit", { cancelable: true, target: form });
+        }
+        else {
+            return false;
+        }
+    }
+    allowsVisitingLocationWithAction(location, action) {
+        return this.locationWithActionIsSamePage(location, action) || this.applicationAllowsVisitingLocation(location);
+    }
+    visitProposedToLocation(location, options) {
+        extendURLWithDeprecatedProperties(location);
+        this.adapter.visitProposedToLocation(location, options);
+    }
+    visitStarted(visit) {
+        extendURLWithDeprecatedProperties(visit.location);
+        if (!visit.silent) {
+            this.notifyApplicationAfterVisitingLocation(visit.location, visit.action);
+        }
+    }
+    visitCompleted(visit) {
+        this.notifyApplicationAfterPageLoad(visit.getTimingMetrics());
+    }
+    locationWithActionIsSamePage(location, action) {
+        return this.navigator.locationWithActionIsSamePage(location, action);
+    }
+    visitScrolledToSamePageLocation(oldURL, newURL) {
+        this.notifyApplicationAfterVisitingSamePageLocation(oldURL, newURL);
+    }
+    willSubmitForm(form, submitter) {
+        const action = getAction(form, submitter);
+        return this.elementDriveEnabled(form)
+            && (!submitter || this.elementDriveEnabled(submitter))
+            && locationIsVisitable(expandURL(action), this.snapshot.rootLocation);
+    }
+    formSubmitted(form, submitter) {
+        this.navigator.submitForm(form, submitter);
+    }
+    pageBecameInteractive() {
+        this.view.lastRenderedLocation = this.location;
+        this.notifyApplicationAfterPageLoad();
+    }
+    pageLoaded() {
+        this.history.assumeControlOfScrollRestoration();
+    }
+    pageWillUnload() {
+        this.history.relinquishControlOfScrollRestoration();
+    }
+    receivedMessageFromStream(message) {
+        this.renderStreamMessage(message);
+    }
+    viewWillCacheSnapshot() {
+        var _a;
+        if (!((_a = this.navigator.currentVisit) === null || _a === void 0 ? void 0 : _a.silent)) {
+            this.notifyApplicationBeforeCachingSnapshot();
+        }
+    }
+    allowsImmediateRender({ element }, resume) {
+        const event = this.notifyApplicationBeforeRender(element, resume);
+        return !event.defaultPrevented;
+    }
+    viewRenderedSnapshot(snapshot, isPreview) {
+        this.view.lastRenderedLocation = this.history.location;
+        this.notifyApplicationAfterRender();
+    }
+    viewInvalidated() {
+        this.adapter.pageInvalidated();
+    }
+    frameLoaded(frame) {
+        this.notifyApplicationAfterFrameLoad(frame);
+    }
+    frameRendered(fetchResponse, frame) {
+        this.notifyApplicationAfterFrameRender(fetchResponse, frame);
+    }
+    applicationAllowsFollowingLinkToLocation(link, location) {
+        const event = this.notifyApplicationAfterClickingLinkToLocation(link, location);
+        return !event.defaultPrevented;
+    }
+    applicationAllowsVisitingLocation(location) {
+        const event = this.notifyApplicationBeforeVisitingLocation(location);
+        return !event.defaultPrevented;
+    }
+    notifyApplicationAfterClickingLinkToLocation(link, location) {
+        return dispatch("turbo:click", { target: link, detail: { url: location.href }, cancelable: true });
+    }
+    notifyApplicationBeforeVisitingLocation(location) {
+        return dispatch("turbo:before-visit", { detail: { url: location.href }, cancelable: true });
+    }
+    notifyApplicationAfterVisitingLocation(location, action) {
+        markAsBusy(document.documentElement);
+        return dispatch("turbo:visit", { detail: { url: location.href, action } });
+    }
+    notifyApplicationBeforeCachingSnapshot() {
+        return dispatch("turbo:before-cache");
+    }
+    notifyApplicationBeforeRender(newBody, resume) {
+        return dispatch("turbo:before-render", { detail: { newBody, resume }, cancelable: true });
+    }
+    notifyApplicationAfterRender() {
+        return dispatch("turbo:render");
+    }
+    notifyApplicationAfterPageLoad(timing = {}) {
+        clearBusyState(document.documentElement);
+        return dispatch("turbo:load", { detail: { url: this.location.href, timing } });
+    }
+    notifyApplicationAfterVisitingSamePageLocation(oldURL, newURL) {
+        dispatchEvent(new HashChangeEvent("hashchange", { oldURL: oldURL.toString(), newURL: newURL.toString() }));
+    }
+    notifyApplicationAfterFrameLoad(frame) {
+        return dispatch("turbo:frame-load", { target: frame });
+    }
+    notifyApplicationAfterFrameRender(fetchResponse, frame) {
+        return dispatch("turbo:frame-render", { detail: { fetchResponse }, target: frame, cancelable: true });
+    }
+    elementDriveEnabled(element) {
+        const container = element === null || element === void 0 ? void 0 : element.closest("[data-turbo]");
+        if (this.drive) {
+            if (container) {
+                return container.getAttribute("data-turbo") != "false";
+            }
+            else {
+                return true;
+            }
+        }
+        else {
+            if (container) {
+                return container.getAttribute("data-turbo") == "true";
+            }
+            else {
+                return false;
+            }
+        }
+    }
+    getActionForLink(link) {
+        const action = link.getAttribute("data-turbo-action");
+        return isAction(action) ? action : "advance";
+    }
+    getTargetFrameForLink(link) {
+        const frame = link.getAttribute("data-turbo-frame");
+        if (frame) {
+            return frame;
+        }
+        else {
+            const container = link.closest("turbo-frame");
+            if (container) {
+                return container.id;
+            }
+        }
+    }
+    get snapshot() {
+        return this.view.snapshot;
+    }
+}
+function extendURLWithDeprecatedProperties(url) {
+    Object.defineProperties(url, deprecatedLocationPropertyDescriptors);
+}
+const deprecatedLocationPropertyDescriptors = {
+    absoluteURL: {
+        get() {
+            return this.toString();
+        }
+    }
+};
+
+const session = new Session;
+const { navigator: navigator$1 } = session;
+function start() {
+    session.start();
+}
+function registerAdapter(adapter) {
+    session.registerAdapter(adapter);
+}
+function visit(location, options) {
+    session.visit(location, options);
+}
+function connectStreamSource(source) {
+    session.connectStreamSource(source);
+}
+function disconnectStreamSource(source) {
+    session.disconnectStreamSource(source);
+}
+function renderStreamMessage(message) {
+    session.renderStreamMessage(message);
+}
+function clearCache() {
+    session.clearCache();
+}
+function setProgressBarDelay(delay) {
+    session.setProgressBarDelay(delay);
+}
+function setConfirmMethod(confirmMethod) {
+    FormSubmission.confirmMethod = confirmMethod;
+}
+
+var Turbo = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    navigator: navigator$1,
+    session: session,
+    PageRenderer: PageRenderer,
+    PageSnapshot: PageSnapshot,
+    start: start,
+    registerAdapter: registerAdapter,
+    visit: visit,
+    connectStreamSource: connectStreamSource,
+    disconnectStreamSource: disconnectStreamSource,
+    renderStreamMessage: renderStreamMessage,
+    clearCache: clearCache,
+    setProgressBarDelay: setProgressBarDelay,
+    setConfirmMethod: setConfirmMethod
+});
+
+class FrameController {
+    constructor(element) {
+        this.fetchResponseLoaded = (fetchResponse) => { };
+        this.currentFetchRequest = null;
+        this.resolveVisitPromise = () => { };
+        this.connected = false;
+        this.hasBeenLoaded = false;
+        this.settingSourceURL = false;
+        this.element = element;
+        this.view = new FrameView(this, this.element);
+        this.appearanceObserver = new AppearanceObserver(this, this.element);
+        this.linkInterceptor = new LinkInterceptor(this, this.element);
+        this.formInterceptor = new FormInterceptor(this, this.element);
+    }
+    connect() {
+        if (!this.connected) {
+            this.connected = true;
+            this.reloadable = false;
+            if (this.loadingStyle == FrameLoadingStyle.lazy) {
+                this.appearanceObserver.start();
+            }
+            this.linkInterceptor.start();
+            this.formInterceptor.start();
+            this.sourceURLChanged();
+        }
+    }
+    disconnect() {
+        if (this.connected) {
+            this.connected = false;
+            this.appearanceObserver.stop();
+            this.linkInterceptor.stop();
+            this.formInterceptor.stop();
+        }
+    }
+    disabledChanged() {
+        if (this.loadingStyle == FrameLoadingStyle.eager) {
+            this.loadSourceURL();
+        }
+    }
+    sourceURLChanged() {
+        if (this.loadingStyle == FrameLoadingStyle.eager || this.hasBeenLoaded) {
+            this.loadSourceURL();
+        }
+    }
+    loadingStyleChanged() {
+        if (this.loadingStyle == FrameLoadingStyle.lazy) {
+            this.appearanceObserver.start();
+        }
+        else {
+            this.appearanceObserver.stop();
+            this.loadSourceURL();
+        }
+    }
+    async loadSourceURL() {
+        if (!this.settingSourceURL && this.enabled && this.isActive && (this.reloadable || this.sourceURL != this.currentURL)) {
+            const previousURL = this.currentURL;
+            this.currentURL = this.sourceURL;
+            if (this.sourceURL) {
+                try {
+                    this.element.loaded = this.visit(expandURL(this.sourceURL));
+                    this.appearanceObserver.stop();
+                    await this.element.loaded;
+                    this.hasBeenLoaded = true;
+                }
+                catch (error) {
+                    this.currentURL = previousURL;
+                    throw error;
+                }
+            }
+        }
+    }
+    async loadResponse(fetchResponse) {
+        if (fetchResponse.redirected || (fetchResponse.succeeded && fetchResponse.isHTML)) {
+            this.sourceURL = fetchResponse.response.url;
+        }
+        try {
+            const html = await fetchResponse.responseHTML;
+            if (html) {
+                const { body } = parseHTMLDocument(html);
+                const snapshot = new Snapshot(await this.extractForeignFrameElement(body));
+                const renderer = new FrameRenderer(this.view.snapshot, snapshot, false, false);
+                if (this.view.renderPromise)
+                    await this.view.renderPromise;
+                await this.view.render(renderer);
+                session.frameRendered(fetchResponse, this.element);
+                session.frameLoaded(this.element);
+                this.fetchResponseLoaded(fetchResponse);
+            }
+        }
+        catch (error) {
+            console.error(error);
+            this.view.invalidate();
+        }
+        finally {
+            this.fetchResponseLoaded = () => { };
+        }
+    }
+    elementAppearedInViewport(element) {
+        this.loadSourceURL();
+    }
+    shouldInterceptLinkClick(element, url) {
+        if (element.hasAttribute("data-turbo-method")) {
+            return false;
+        }
+        else {
+            return this.shouldInterceptNavigation(element);
+        }
+    }
+    linkClickIntercepted(element, url) {
+        this.reloadable = true;
+        this.navigateFrame(element, url);
+    }
+    shouldInterceptFormSubmission(element, submitter) {
+        return this.shouldInterceptNavigation(element, submitter);
+    }
+    formSubmissionIntercepted(element, submitter) {
+        if (this.formSubmission) {
+            this.formSubmission.stop();
+        }
+        this.reloadable = false;
+        this.formSubmission = new FormSubmission(this, element, submitter);
+        const { fetchRequest } = this.formSubmission;
+        this.prepareHeadersForRequest(fetchRequest.headers, fetchRequest);
+        this.formSubmission.start();
+    }
+    prepareHeadersForRequest(headers, request) {
+        headers["Turbo-Frame"] = this.id;
+    }
+    requestStarted(request) {
+        markAsBusy(this.element);
+    }
+    requestPreventedHandlingResponse(request, response) {
+        this.resolveVisitPromise();
+    }
+    async requestSucceededWithResponse(request, response) {
+        await this.loadResponse(response);
+        this.resolveVisitPromise();
+    }
+    requestFailedWithResponse(request, response) {
+        console.error(response);
+        this.resolveVisitPromise();
+    }
+    requestErrored(request, error) {
+        console.error(error);
+        this.resolveVisitPromise();
+    }
+    requestFinished(request) {
+        clearBusyState(this.element);
+    }
+    formSubmissionStarted({ formElement }) {
+        markAsBusy(formElement, this.findFrameElement(formElement));
+    }
+    formSubmissionSucceededWithResponse(formSubmission, response) {
+        const frame = this.findFrameElement(formSubmission.formElement, formSubmission.submitter);
+        this.proposeVisitIfNavigatedWithAction(frame, formSubmission.formElement, formSubmission.submitter);
+        frame.delegate.loadResponse(response);
+    }
+    formSubmissionFailedWithResponse(formSubmission, fetchResponse) {
+        this.element.delegate.loadResponse(fetchResponse);
+    }
+    formSubmissionErrored(formSubmission, error) {
+        console.error(error);
+    }
+    formSubmissionFinished({ formElement }) {
+        clearBusyState(formElement, this.findFrameElement(formElement));
+    }
+    allowsImmediateRender(snapshot, resume) {
+        return true;
+    }
+    viewRenderedSnapshot(snapshot, isPreview) {
+    }
+    viewInvalidated() {
+    }
+    async visit(url) {
+        var _a;
+        const request = new FetchRequest(this, FetchMethod.get, url, new URLSearchParams, this.element);
+        (_a = this.currentFetchRequest) === null || _a === void 0 ? void 0 : _a.cancel();
+        this.currentFetchRequest = request;
+        return new Promise(resolve => {
+            this.resolveVisitPromise = () => {
+                this.resolveVisitPromise = () => { };
+                this.currentFetchRequest = null;
+                resolve();
+            };
+            request.perform();
+        });
+    }
+    navigateFrame(element, url, submitter) {
+        const frame = this.findFrameElement(element, submitter);
+        this.proposeVisitIfNavigatedWithAction(frame, element, submitter);
+        frame.setAttribute("reloadable", "");
+        frame.src = url;
+    }
+    proposeVisitIfNavigatedWithAction(frame, element, submitter) {
+        const action = getAttribute("data-turbo-action", submitter, element, frame);
+        if (isAction(action)) {
+            const { visitCachedSnapshot } = new SnapshotSubstitution(frame);
+            frame.delegate.fetchResponseLoaded = (fetchResponse) => {
+                if (frame.src) {
+                    const { statusCode, redirected } = fetchResponse;
+                    const responseHTML = frame.ownerDocument.documentElement.outerHTML;
+                    const response = { statusCode, redirected, responseHTML };
+                    session.visit(frame.src, { action, response, visitCachedSnapshot, willRender: false });
+                }
+            };
+        }
+    }
+    findFrameElement(element, submitter) {
+        var _a;
+        const id = getAttribute("data-turbo-frame", submitter, element) || this.element.getAttribute("target");
+        return (_a = getFrameElementById(id)) !== null && _a !== void 0 ? _a : this.element;
+    }
+    async extractForeignFrameElement(container) {
+        let element;
+        const id = CSS.escape(this.id);
+        try {
+            if (element = activateElement(container.querySelector(`turbo-frame#${id}`), this.currentURL)) {
+                return element;
+            }
+            if (element = activateElement(container.querySelector(`turbo-frame[src][recurse~=${id}]`), this.currentURL)) {
+                await element.loaded;
+                return await this.extractForeignFrameElement(element);
+            }
+            console.error(`Response has no matching <turbo-frame id="${id}"> element`);
+        }
+        catch (error) {
+            console.error(error);
+        }
+        return new FrameElement();
+    }
+    formActionIsVisitable(form, submitter) {
+        const action = getAction(form, submitter);
+        return locationIsVisitable(expandURL(action), this.rootLocation);
+    }
+    shouldInterceptNavigation(element, submitter) {
+        const id = getAttribute("data-turbo-frame", submitter, element) || this.element.getAttribute("target");
+        if (element instanceof HTMLFormElement && !this.formActionIsVisitable(element, submitter)) {
+            return false;
+        }
+        if (!this.enabled || id == "_top") {
+            return false;
+        }
+        if (id) {
+            const frameElement = getFrameElementById(id);
+            if (frameElement) {
+                return !frameElement.disabled;
+            }
+        }
+        if (!session.elementDriveEnabled(element)) {
+            return false;
+        }
+        if (submitter && !session.elementDriveEnabled(submitter)) {
+            return false;
+        }
+        return true;
+    }
+    get id() {
+        return this.element.id;
+    }
+    get enabled() {
+        return !this.element.disabled;
+    }
+    get sourceURL() {
+        if (this.element.src) {
+            return this.element.src;
+        }
+    }
+    get reloadable() {
+        const frame = this.findFrameElement(this.element);
+        return frame.hasAttribute("reloadable");
+    }
+    set reloadable(value) {
+        const frame = this.findFrameElement(this.element);
+        if (value) {
+            frame.setAttribute("reloadable", "");
+        }
+        else {
+            frame.removeAttribute("reloadable");
+        }
+    }
+    set sourceURL(sourceURL) {
+        this.settingSourceURL = true;
+        this.element.src = sourceURL !== null && sourceURL !== void 0 ? sourceURL : null;
+        this.currentURL = this.element.src;
+        this.settingSourceURL = false;
+    }
+    get loadingStyle() {
+        return this.element.loading;
+    }
+    get isLoading() {
+        return this.formSubmission !== undefined || this.resolveVisitPromise() !== undefined;
+    }
+    get isActive() {
+        return this.element.isActive && this.connected;
+    }
+    get rootLocation() {
+        var _a;
+        const meta = this.element.ownerDocument.querySelector(`meta[name="turbo-root"]`);
+        const root = (_a = meta === null || meta === void 0 ? void 0 : meta.content) !== null && _a !== void 0 ? _a : "/";
+        return expandURL(root);
+    }
+}
+class SnapshotSubstitution {
+    constructor(element) {
+        this.visitCachedSnapshot = ({ element }) => {
+            var _a;
+            const { id, clone } = this;
+            (_a = element.querySelector("#" + id)) === null || _a === void 0 ? void 0 : _a.replaceWith(clone);
+        };
+        this.clone = element.cloneNode(true);
+        this.id = element.id;
+    }
+}
+function getFrameElementById(id) {
+    if (id != null) {
+        const element = document.getElementById(id);
+        if (element instanceof FrameElement) {
+            return element;
+        }
+    }
+}
+function activateElement(element, currentURL) {
+    if (element) {
+        const src = element.getAttribute("src");
+        if (src != null && currentURL != null && urlsAreEqual(src, currentURL)) {
+            throw new Error(`Matching <turbo-frame id="${element.id}"> element has a source URL which references itself`);
+        }
+        if (element.ownerDocument !== document) {
+            element = document.importNode(element, true);
+        }
+        if (element instanceof FrameElement) {
+            element.connectedCallback();
+            element.disconnectedCallback();
+            return element;
+        }
+    }
+}
+
+const StreamActions = {
+    after() {
+        this.targetElements.forEach(e => { var _a; return (_a = e.parentElement) === null || _a === void 0 ? void 0 : _a.insertBefore(this.templateContent, e.nextSibling); });
+    },
+    append() {
+        this.removeDuplicateTargetChildren();
+        this.targetElements.forEach(e => e.append(this.templateContent));
+    },
+    before() {
+        this.targetElements.forEach(e => { var _a; return (_a = e.parentElement) === null || _a === void 0 ? void 0 : _a.insertBefore(this.templateContent, e); });
+    },
+    prepend() {
+        this.removeDuplicateTargetChildren();
+        this.targetElements.forEach(e => e.prepend(this.templateContent));
+    },
+    remove() {
+        this.targetElements.forEach(e => e.remove());
+    },
+    replace() {
+        this.targetElements.forEach(e => e.replaceWith(this.templateContent));
+    },
+    update() {
+        this.targetElements.forEach(e => {
+            e.innerHTML = "";
+            e.append(this.templateContent);
+        });
+    }
+};
+
+class StreamElement extends HTMLElement {
+    async connectedCallback() {
+        try {
+            await this.render();
+        }
+        catch (error) {
+            console.error(error);
+        }
+        finally {
+            this.disconnect();
+        }
+    }
+    async render() {
+        var _a;
+        return (_a = this.renderPromise) !== null && _a !== void 0 ? _a : (this.renderPromise = (async () => {
+            if (this.dispatchEvent(this.beforeRenderEvent)) {
+                await nextAnimationFrame();
+                this.performAction();
+            }
+        })());
+    }
+    disconnect() {
+        try {
+            this.remove();
+        }
+        catch (_a) { }
+    }
+    removeDuplicateTargetChildren() {
+        this.duplicateChildren.forEach(c => c.remove());
+    }
+    get duplicateChildren() {
+        var _a;
+        const existingChildren = this.targetElements.flatMap(e => [...e.children]).filter(c => !!c.id);
+        const newChildrenIds = [...(_a = this.templateContent) === null || _a === void 0 ? void 0 : _a.children].filter(c => !!c.id).map(c => c.id);
+        return existingChildren.filter(c => newChildrenIds.includes(c.id));
+    }
+    get performAction() {
+        if (this.action) {
+            const actionFunction = StreamActions[this.action];
+            if (actionFunction) {
+                return actionFunction;
+            }
+            this.raise("unknown action");
+        }
+        this.raise("action attribute is missing");
+    }
+    get targetElements() {
+        if (this.target) {
+            return this.targetElementsById;
+        }
+        else if (this.targets) {
+            return this.targetElementsByQuery;
+        }
+        else {
+            this.raise("target or targets attribute is missing");
+        }
+    }
+    get templateContent() {
+        return this.templateElement.content.cloneNode(true);
+    }
+    get templateElement() {
+        if (this.firstElementChild instanceof HTMLTemplateElement) {
+            return this.firstElementChild;
+        }
+        this.raise("first child element must be a <template> element");
+    }
+    get action() {
+        return this.getAttribute("action");
+    }
+    get target() {
+        return this.getAttribute("target");
+    }
+    get targets() {
+        return this.getAttribute("targets");
+    }
+    raise(message) {
+        throw new Error(`${this.description}: ${message}`);
+    }
+    get description() {
+        var _a, _b;
+        return (_b = ((_a = this.outerHTML.match(/<[^>]+>/)) !== null && _a !== void 0 ? _a : [])[0]) !== null && _b !== void 0 ? _b : "<turbo-stream>";
+    }
+    get beforeRenderEvent() {
+        return new CustomEvent("turbo:before-stream-render", { bubbles: true, cancelable: true });
+    }
+    get targetElementsById() {
+        var _a;
+        const element = (_a = this.ownerDocument) === null || _a === void 0 ? void 0 : _a.getElementById(this.target);
+        if (element !== null) {
+            return [element];
+        }
+        else {
+            return [];
+        }
+    }
+    get targetElementsByQuery() {
+        var _a;
+        const elements = (_a = this.ownerDocument) === null || _a === void 0 ? void 0 : _a.querySelectorAll(this.targets);
+        if (elements.length !== 0) {
+            return Array.prototype.slice.call(elements);
+        }
+        else {
+            return [];
+        }
+    }
+}
+
+FrameElement.delegateConstructor = FrameController;
+customElements.define("turbo-frame", FrameElement);
+customElements.define("turbo-stream", StreamElement);
+
+(() => {
+    let element = document.currentScript;
+    if (!element)
+        return;
+    if (element.hasAttribute("data-turbo-suppress-warning"))
+        return;
+    while (element = element.parentElement) {
+        if (element == document.body) {
+            return console.warn(unindent `
         You are loading Turbo from a <script> element inside the <body> element. This is probably not what you meant to do!
 
         Load your application’s JavaScript bundle inside the <head> element instead. <script> elements in <body> are evaluated with each page change.
@@ -22,4 +3355,11391 @@
 
         ——
         Suppress this warning by adding a "data-turbo-suppress-warning" attribute to: %s
-      `,e.outerHTML)})(),window.Turbo=Le,ge(),window.Turbo=e,ge()})(),window.listenWithoutTarget=function(e,t){$(document).on(e,t)},window.listen=function(e,t,n){$(document).on(e,t,n)},window.listenClick=function(e,t){$(document).on("click",e,t)},window.listenSubmit=function(e,t){$(document).on("submit",e,t)},window.listenHiddenBsModal=function(e,t){$(document).on("hidden.bs.modal",e,t)},window.listenShowBsModal=function(e,t){$(document).on("show.bs.modal",e,t)},window.listenChange=function(e,t){$(document).on("change",e,t)},window.listenKeyup=function(e,t){$(document).on("keyup",e,t)},(()=>{var source=null,jsrender=__webpack_require__(495);function initAllComponents(){refreshCsrfToken(),select2initialize(),modalInputFocus(),alertInitialize(),IOInitImageComponent(),IOInitSidebar(),togglePassword(),tooltip(),initToastr(),resizeWindow()}function togglePassword(){$('[data-toggle="password"]').each((function(){var e=$(this),t=$(this).parent().find(".input-icon");t.css("cursor","pointer").addClass("input-password-hide"),t.on("click",(function(){t.hasClass("input-password-hide")?(t.removeClass("input-password-hide").addClass("input-password-show"),t.find(".bi").removeClass("bi-eye-slash-fill").addClass("bi-eye-fill"),e.attr("type","text")):(t.removeClass("input-password-show").addClass("input-password-hide"),t.find(".bi").removeClass("bi-eye-fill").addClass("bi-eye-slash-fill"),e.attr("type","password"))}))}))}function alertInitialize(){$(".alert").delay(5e3).slideUp(300)}function select2initialize(){$('[data-control="select2"]').each((function(){$(this).select2()}))}function refreshCsrfToken(){$.ajaxSetup({headers:{"X-CSRF-TOKEN":$('meta[name="csrf-token"]').attr("content")}})}document.addEventListener("turbo:load",initAllComponents),window.addEventListener("turbo:load",(function(e){$('input:text:not([readonly="readonly"]):not([name="search"]):not(.front-input):not([id="time_range"]):not(.removeFocus)').first().focus()}));var modalInputFocus=function(){$((function(){$(".modal").on("shown.bs.modal",(function(){$(this).find("input:text")[0]&&$(this).find("input:text")[0].focus()}))}))};function deleteItemAjax(url,header){var callFunction=arguments.length>2&&void 0!==arguments[2]?arguments[2]:null;$.ajax({url,type:"DELETE",dataType:"json",success:function success(obj){obj.success&&(Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable")),swal({icon:"success",title:Lang.get("js.deleted"),text:header+" "+Lang.get("js.has_been_deleted"),timer:2e3,button:Lang.get("js.ok")}),callFunction&&eval(callFunction)},error:function(e){swal({title:Lang.get("js.error"),icon:"error",text:e.responseJSON.message,type:"error",timer:4e3,button:Lang.get("js.ok")})}})}function tooltip(){[].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')).map((function(e){return new bootstrap.Tooltip(e)}))}function resizeWindow(){$(window).resize((function(){$(window).width()<768?($(".createInvoiceBtn").html('<i class="far fa-file-alt"></i>'),$(".fullScreenBtn").addClass("d-none")):($(".createInvoiceBtn").html(Lang.get("js.new_invoice")),$(".fullScreenBtn").removeClass("d-none"))})),$(window).trigger("resize")}window.ajaxCallInProgress=function(){ajaxCallIsRunning=!0},window.ajaxCallCompleted=function(){ajaxCallIsRunning=!1},toastr.options={closeButton:!0,debug:!1,newestOnTop:!1,progressBar:!0,positionClass:"toast-top-right",preventDuplicates:!1,onclick:null,showDuration:"300",hideDuration:"1000",timeOut:"5000",extendedTimeOut:"1000",showEasing:"swing",hideEasing:"linear",showMethod:"fadeIn",hideMethod:"fadeOut"},window.resetModalForm=function(e,t){if(null==$(e)[0])return!1;$(e)[0].reset(),$("select.select2Selector").each((function(e,t){var n="#"+$(this).attr("id");$(n).val(""),$(n).trigger("change")})),$(t).hide()},window.printErrorMessage=function(e,t){$(e).show().html(""),$(e).text(t.responseJSON.message)},window.manageAjaxErrors=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"editValidationErrorsBox";404==e.status?toastr.error(e.responseJSON.message):printErrorMessage("#"+t,e)},window.displaySuccessMessage=function(e){toastr.success(e)},window.displayErrorMessage=function(e){toastr.error(e)},window.deleteItem=function(e,t){var n=arguments;return function(r){r=n.length>3&&void 0!==n[3]?n[3]:null;swal({title:Lang.get("js.delete")+" !",text:Lang.get("js.are_you_sure_delete")+' "'+t+'" ?',buttons:[Lang.get("js.no_cancel"),Lang.get("js.yes_delete")],icon:sweetAlertIcon}).then((function(n){n&&deleteItemAjax(e,t,r)}))}(arguments.length>2&&void 0!==arguments[2]?arguments[2]:null)},window.format=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"DD-MMM-YYYY";return moment(e).format(t)},window.prepareTemplateRender=function(e,t){return jsrender.templates(e).render(t)},window.isValidFile=function(e,t){var n=$(e).val().split(".").pop().toLowerCase();return-1==$.inArray(n,["gif","png","jpg","jpeg"])?($(e).val(""),$(t).removeClass("d-none"),$(t).html("The image must be a file of type: jpeg, jpg, png.").show(),$(t).delay(5e3).slideUp(300),!1):($(t).hide(),!0)},window.removeCommas=function(e){return void 0===e?e:e.replace(/,/g,"")},window.DatetimepickerDefaults=function(e){return $.extend({},{sideBySide:!0,ignoreReadonly:!0,icons:{close:"fa fa-times",time:"fa fa-clock-o",date:"fa fa-calendar",up:"fa fa-arrow-up",down:"fa fa-arrow-down",previous:"fa fa-chevron-left",next:"fa fa-chevron-right",today:"fa fa-clock-o",clear:"fa fa-trash-o"}},e)},window.isEmpty=function(e){return null==e||""===e},window.screenLock=function(){$("#overlay-screen-lock").show(),$("body").css({"pointer-events":"none",opacity:"0.6"})},window.screenUnLock=function(){$("body").css({"pointer-events":"auto",opacity:"1"}),$("#overlay-screen-lock").hide()},window.processingBtn=function(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:null,r=$(e).find(t);"loading"===n?r.button("loading"):r.button("reset")},window.setAdminBtnLoader=function(e){if(e.attr("data-loading-text"))return e.html(e.attr("data-loading-text")).prop("disabled",!0),void e.removeAttr("data-loading-text");e.attr("data-old-text",e.text()),e.html(e.attr("data-new-text")).prop("disabled",!1)},window.onload=function(){window.startLoader=function(){$(".infy-loader").show()},window.stopLoader=function(){$(".infy-loader").hide()},stopLoader()},$(document).ready((function(){$(document).find(".nav-item.dropdown ul li").hasClass("active")&&($(document).find(".nav-item.dropdown ul li.active").parent("ul").css("display","block"),$(document).find(".nav-item.dropdown ul li.active").parent("ul").parent("li").addClass("active")),$(document).on("click","#kt_aside_toggle",(function(){$(".sidebar-search-box").toggleClass("show")}))})),window.urlValidation=function(e,t){return!(""!=e&&!e.match(t))},listen("click",".languageSelection",(function(){var e=$(this).data("prefix-value");$.ajax({type:"POST",url:"/change-language",data:{languageName:e},success:function(){location.reload()}})})),$(window).width()>992&&$(document).on("click",".no-hover",(function(){$(this).toggleClass("open")})),listen("click","#register",(function(e){e.preventDefault(),$(".open #dropdownLanguage").trigger("click"),$(".open #dropdownLogin").trigger("click")})),listen("click","#language",(function(e){e.preventDefault(),$(".open #dropdownRegister").trigger("click"),$(".open #dropdownLogin").trigger("click")})),listen("click","#login",(function(e){e.preventDefault(),$(".open #dropdownRegister").trigger("click"),$(".open #dropdownLanguage").trigger("click")})),window.checkSummerNoteEmpty=function(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:0;return $(e).summernote("isEmpty")&&1===n?(displayErrorMessage(t),$(document).find(".note-editable").html("<p><br></p>"),!1):!(!$(e).summernote("isEmpty")&&($(document).find(".note-editable").contents().each((function(){3===this.nodeType&&(this.textContent=this.textContent.replace(/\u00A0/g,""))})),0==$(document).find(".note-editable").text().trim().length&&($(document).find(".note-editable").html("<p><br></p>"),$(e).val(null),1===n)))||(displayErrorMessage(t),!1)},window.preparedTemplate=function(){var e=$("#actionTemplate").html();window.preparedTemplate=Handlebars.compile(e)},window.avoidSpace=function(e){if(32==(e?e.which:window.event.keyCode))return!1},window.addCommas=function(e){for(var t=(e+="").split("."),n=t[0],r=t.length>1?"."+t[1]:"",a=/(\d+)(\d{3})/;a.test(n);)n=n.replace(a,"$1,$2");return n+r},listen("click",".notification",(function(e){e.stopPropagation();var t=$(this).data("id"),n=$(this);$('[data-toggle="tooltip"]').tooltip("hide"),$.ajax({type:"get",url:"/notification/"+t+"/read",success:function(){n.remove();var e=document.getElementsByClassName("notification").length;displaySuccessMessage(Lang.get("js.notification_read_successfully")),$("#counter").text(e),0==e&&($(".empty-state").removeClass("d-none"),$("#counter").text(e),$(".notification-count").addClass("d-none"),$("#readAllNotification").parents("div").first().remove())},error:function(e){manageAjaxErrors(e)}})})),window.displayDocument=function(e,t,n){var r=!0;if(e.files&&e.files[0]){var a=new FileReader;a.onload=function(e){var a=new Image;-1==$.inArray(n,["pdf","doc","docx"])?a.src=e.target.result:"pdf"==n?($("#editPhoto").css("background-image",'url("'+pdfDocumentImageUrl+'")'),a.src=pdfDocumentImageUrl):a.src=docxDocumentImageUrl,a.onload=function(){$(t).attr("src",a.src),$(t).css("background-image",'url("'+a.src+'")'),r=!0}},r&&(a.readAsDataURL(e.files[0]),$(t).show())}},listen("click","#readAllNotification",(function(e){e.stopPropagation(),$.ajax({type:"post",url:route("read.all.notification"),success:function(){$(".notification").remove();var e=document.getElementsByClassName("notification").length;$("#counter").text(e),$(".empty-state").removeClass("d-none"),$(".notification-count").addClass("d-none"),$("#readAllNotification").parents("div").first().remove(),displaySuccessMessage(Lang.get("js.all_notification_read_successfully"))},error:function(e){manageAjaxErrors(e)}})})),window.defaultAvatarImagePreview=function(e){$(e).css("background-image",'url("'+$("#defaultAvatarImageUrl").val()+'")')},window.defaultImagePreview=function(e){$(e).css("background-image",'url("'+$("#defaultImageUrl").val()+'")')},window.wc_hex_is_light=function(e){var t=e.replace("#","");return(299*parseInt(t.substr(0,2),16)+587*parseInt(t.substr(2,2),16)+114*parseInt(t.substr(4,2),16))/1e3>240},window.number_format=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:2,n=decimalsSeparator,r=thousandsSeparator;e=(e+"").replace(/[^0-9+\-Ee.]/g,"");var a=isFinite(+e)?+e:0,i=isFinite(+t)?Math.abs(t):0,o=void 0===r?",":r,s=void 0===n?".":n,l="";return l=(i?function(e,t){var n=Math.pow(10,t);return""+Math.round(e*n)/n}(a,i):""+Math.round(a)).split("."),l[0].length>3&&(l[0]=l[0].replace(/\B(?=(?:\d{3})+(?!\d))/g,o)),(l[1]||"").length<i&&(l[1]=l[1]||"",l[1]+=new Array(i-l[1].length+1).join("0")),l.join(s)},$(document).on("focus",".select2-selection.select2-selection--single",(function(e){$(this).closest(".select2-container").siblings("select:enabled").select2("open")})),$(document).on("select2:open",(function(){var e=document.querySelectorAll(".select2-container--open .select2-search__field");e[e.length-1].focus()})),window.blockSpecialChar=function(e){var t;return(t=document.all?e.keyCode:e.which)>64&&t<91||t>96&&t<123||8==t||32==t||t>=48&&t<=57},window.isDoubleClicked=function(e){return!!e.data("isclicked")||(e.data("isclicked",!0),setTimeout((function(){e.removeData("isclicked")}),1e3),!1)},window.fnc=function(e,t,n){return parseInt(e)<0||isNaN(e)?0:parseInt(e)>100?"Number is greater than 100":e},listen("click",".languageSelection",(function(e){var t=$(this).data("prefix-value");$.ajax({url:"/change-language",type:"post",data:{languageName:t},success:function(){location.reload()}})})),listen("click",".changeLanguage",(function(e){var t=$(this).data("prefix-value");$.ajax({url:route("change-language"),type:"post",data:{languageName:t},success:function(e){displaySuccessMessage(e.message),setTimeout((function(){location.reload()}),1e3)}})})),window.convertToMomentFormat=function(e){switch(e){case"d-m-Y":return"DD-MM-YYYY";case"m-d-Y":return"MM-DD-YYYY";case"Y-m-d":return"YYYY-MM-DD";case"m/d/Y":return"MM/DD/YYYY";case"d/m/Y":return"DD/MM/YYYY";case"Y/m/d":return"YYYY/MM/DD";case"m.d.Y":return"MM.DD.YYYY";case"d.m.Y":return"DD.MM.YYYY";case"Y.m.d":return"YYYY.MM.DD"}},window.copyToClipboard=function(e){var t=$("<input>");$("body").append(t),t.val(e).select(),document.execCommand("copy"),t.remove(),displaySuccessMessage("copied successfully")},listen("click",(function(e){$(e.target).closest(".dropdown-menu").length||($(".livewire-search-box .dropdown-menu").removeClass("show"),$(".livewire-search-box .fw-bolder").removeAttr("aria-expanded"))})),listenClick(".filter-popup",(function(e){e.preventDefault(),$(".livewire-search-box .dropdown-menu").addClass("show")})),window.addEventListener("keydown",(function(e){27==e.keyCode&&$(".livewire-search-box .dropdown-menu").removeClass("show")}),!0),window.select2NotExists=function(e){return!!$(e).length},window.removeSelect2Container=function(e){e.forEach((function(e){$(e).hasClass("select2-hidden-accessible")&&$(".select2-container").remove()}))},listenClick(".apply-dark-mode",(function(e){e.preventDefault(),$.ajax({url:route("update-dark-mode"),type:"get",success:function(e){e.success&&(displaySuccessMessage(e.message),setTimeout((function(){location.reload()}),500))},error:function(e){displayErrorMessage(e.responseJSON.message)}})})),window.currencyAmount=function(e){return 1==$("#currency_position").val()?" "+number_format(e)+" "+$("#currency").val():" "+$("#currency").val()+" "+number_format(e)},listenChange(".image-upload",(function(e){e.preventDefault();var t=$(this).val().split(".").pop().toLowerCase();-1==$.inArray(t,["png","jpg","jpeg"])&&(displayErrorMessage("The image must be a file of type: jpg, png, jpeg"),$(this).val(""))})),$(document).on("click",".open-send-whatapp-invoice",(function(e){var t=$(this).attr("data-id");$("#sendWhatsAppModal").appendTo("body").modal("show"),$("#sendWhatsAppModal").find("#invoiceId").val(t)})),$(document).on("submit","#sendInvoiceOnWhatsApp",(function(e){e.preventDefault(),$.ajax({type:"POST",url:route("send.invoice.on.whatsapp"),data:$(this).serialize(),success:function(e){if(e.success){convertToMomentFormat(currentDateFormat);var t=e.data.invoice,n=e.data.appName,r=e.data.phoneNumber,a=e.data.invoicePdfLink,i=t.client.user.first_name,o=t.invoice_id,s=moment(t.invoice_date).format("DD/MM/YYYY"),l=moment(t.due_date).format("DD/MM/YYYY"),d=0,c=0;$.each(t.payments,(function(e,t){d+=parseFloat(t.amount)})),c=parseFloat(t.final_amount)-d;var u=t.final_amount.toFixed(2),h="https://api.whatsapp.com/send?phone=".concat(r,"&text=Hello *").concat(i,"*,%0a%0aThank you for doing business with *").concat(n,"*.%0aPlease find your invoice details below.%0a%0aInvoice No: ").concat(o,"%0aInvoice Date: ").concat(s,"%0aDue Date: ").concat(l,"%0aTotal Amount: ").concat(u,"%0aPaid Amount: ").concat(d.toFixed(2),"%0aDue Amount: ").concat(c.toFixed(2),"%0a%0aYou can view the invoice PDF here: ").concat(a);window.open(h,"_blank"),$("#sendWhatsAppModal").modal("hide")}},error:function(e){displayErrorMessage(e.message)}})}))})(),(()=>{function e(t){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(t)}function t(t,n,r){return(n=function(t){var n=function(t,n){if("object"!=e(t)||!t)return t;var r=t[Symbol.toPrimitive];if(void 0!==r){var a=r.call(t,n||"default");if("object"!=e(a))return a;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===n?String:Number)(t)}(t,"string");return"symbol"==e(n)?n:n+""}(n))in t?Object.defineProperty(t,n,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[n]=r,t}var n,r,a;function i(e,t){a.val(e.format("DD/MM/YYYY")+" - "+t.format("DD/MM/YYYY"))}function o(e,t){$.ajax({type:"GET",url:route("yearly-income-chart"),dataType:"json",data:{start_date:e,end_date:t},cache:!1}).done(d)}function s(e){$("#payment-overview-container").html("");var t=e.data;if(0===t.total_records)return $("#payment-overview-container").empty(),$("#payment-overview-container").append('<div align="center" class="no-record">'+Lang.get("js.no_record_found")+"</div>"),!0;$("#payment-overview-container").html(""),$("#payment-overview-container").append('<canvas id="payment_overview"></canvas>');var n=document.getElementById("payment_overview").getContext("2d"),r={labels:t.labels,datasets:[{data:t.dataPoints,backgroundColor:["#47c363","#fc544b"]}]};window.myBar=new Chart(n,{type:"doughnut",data:r,options:{legend:{display:!0,position:"bottom",boxWidth:9},plugins:{tooltip:{callbacks:{label:function(e){return currencyAmount(e.formattedValue)}}}}}})}function l(e){$("#invoice-overview-container").html("");var t=e.data;if(0===t.total_paid_invoices&&0===t.total_unpaid_invoices)return $("#invoice-overview-container").empty(),$("#invoice-overview-container").append('<div align="center" class="no-record">'+Lang.get("js.no_record_found")+"</div>"),!0;$("#invoice-overview-container").html(""),$("#invoice-overview-container").append('<canvas id="invoice_overview"></canvas>');var n=document.getElementById("invoice_overview").getContext("2d"),r={labels:t.labels,datasets:[{data:t.dataPoints,backgroundColor:["#1100ff","#ff0000"]}]};window.myBar=new Chart(n,{type:"doughnut",data:r,options:{legend:{display:!0,position:"bottom",boxWidth:9},plugins:{tooltip:{callbacks:{label:function(e){return" "+e.formattedValue}}}}}})}function d(e){$("#yearly_income_overview-container").html("");var t=e.data;if(0===t.total_records)return $("#yearly_income_overview-container").empty(),$("#yearly_income_overview-container").append('<div align="center" class="no-record">'+Lang.get("js.no_record_found")+"</div>"),!0;$("#yearly_income_overview-container").html(""),$("#yearly_income_overview-container").append('<canvas id="yearly_income_chart_canvas" height="200"></canvas>');var n=document.getElementById("yearly_income_chart_canvas").getContext("2d");n.canvas.style.height="500px";new Chart(n,{type:"line",data:{labels:t.labels,datasets:[{label:t.month,data:t.yearly_income,fill:!1,borderColor:"#2196f3",backgroundColor:"#2196f3",borderWidth:2}]},options:{elements:{line:{tension:.5}},interaction:{mode:"index",intersect:!1},plugins:{legend:{display:!1,position:"top"},tooltip:{callbacks:{label:function(e){return currencyAmount(e.formattedValue)}}}},scales:{y:{beginAtZero:!0,grid:{display:!1},ticks:{min:0,callback:function(e){return currencyAmount(e)}}},x:{beginAtZero:!0,grid:{display:!1}}}}})}document.addEventListener("turbo:load",(function(){!function(){if(!(a=$("#time_range")).length)return;n=moment().startOf("month"),r=moment().endOf("month"),i(n,r);var e=moment().startOf("month").subtract(1,"days");a.daterangepicker({startDate:n,endDate:r,opens:"left",showDropdowns:!0,autoUpdateInput:!1,locale:{customRangeLabel:Lang.get("js.custom"),applyLabel:Lang.get("js.apply"),cancelLabel:Lang.get("js.cancel"),fromLabel:Lang.get("js.from"),toLabel:Lang.get("js.to"),monthNames:[Lang.get("js.jan"),Lang.get("js.feb"),Lang.get("js.mar"),Lang.get("js.apr"),Lang.get("js.may"),Lang.get("js.jun"),Lang.get("js.jul"),Lang.get("js.aug"),Lang.get("js.sep"),Lang.get("js.oct"),Lang.get("js.nov"),Lang.get("js.dec")],daysOfWeek:[Lang.get("js.sun"),Lang.get("js.mon"),Lang.get("js.tue"),Lang.get("js.wed"),Lang.get("js.thu"),Lang.get("js.fri"),Lang.get("js.sat")]},ranges:t(t(t(t(t({},Lang.get("js.today"),[moment(),moment()]),Lang.get("js.this_week"),[moment().startOf("week"),moment().endOf("week")]),Lang.get("js.last_week"),[moment().startOf("week").subtract(7,"days"),moment().startOf("week").subtract(1,"days")]),Lang.get("js.this_month"),[n,r]),Lang.get("js.last_month"),[e.clone().startOf("month"),e.clone().endOf("month")])},i),"admin.dashboard"==currentRouteName&&($.ajax({type:"GET",url:route("payment-overview"),cache:!1}).done(s),o(n.format("YYYY-MM-D"),r.format("YYYY-MM-D")),$.ajax({type:"GET",url:route("invoices-overview"),cache:!1}).done(l));a.on("apply.daterangepicker",(function(e,t){n=t.startDate.format("YYYY-MM-D"),r=t.endDate.format("YYYY-MM-D"),o(n,r)}))}()}))})(),listenClick(".user-delete-btn",(function(e){var t=$(e.currentTarget).data("id");deleteItem(route("users.destroy",t),Lang.get("js.admin"))})),listenClick(".addCategory",(function(e){e.preventDefault(),$("#addCategoryModal").appendTo("body").modal("show")})),listenClick(".category-edit-btn",(function(e){var t,n=$(e.currentTarget).attr("data-id");t=n,$.ajax({url:route("category.edit",t),type:"GET",beforeSend:function(){startLoader()},success:function(e){e.success&&($("#editCategoryName").val(e.data.name),$("#editModalCategoryId").val(e.data.id),$("#editCategoryModal").appendTo("body").modal("show"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader()}})})),listenSubmit("#addNewCategoryForm",(function(e){e.preventDefault(),$.ajax({url:route("category.store"),type:"POST",data:$(this).serialize(),beforeSend:function(){startLoader()},success:function(e){e.success&&($("#addCategoryModal").modal("hide"),displaySuccessMessage(e.message),Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader()}})})),listenHiddenBsModal("#addCategoryModal",(function(){resetModalForm("#addNewCategoryForm","#validationErrorsBox")})),listenSubmit("#editCategoryForm",(function(e){e.preventDefault();var t=$("#editModalCategoryId").val();$.ajax({url:route("category.update",{category:t}),type:"put",data:$(this).serialize(),beforeSend:function(){startLoader()},success:function(e){e.success&&(displaySuccessMessage(e.message),$("#editCategoryModal").modal("hide"),Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader()}})})),listenClick(".category-delete-btn",(function(e){var t=$(e.currentTarget).attr("data-id");deleteItem(route("category.destroy",t),Lang.get("js.category"))})),document.addEventListener("turbo:load",(function(){if($("#phoneNumber").length){var e=document.querySelector("#phoneNumber"),t=document.querySelector("#error-msg"),n=document.querySelector("#valid-msg"),r=[Lang.get("js.invalid_number"),Lang.get("js.invalid_country_number"),Lang.get("js.too_short"),Lang.get("js.too_long"),Lang.get("js.invalid_number")],a=window.intlTelInput(e,{separateDialCode:!0,geoIpLookup:function(e,t){$.get("https://ipinfo.io",(function(){}),"jsonp").always((function(t){var n=t&&t.country?t.country:"";e(n)}))},utilsScript:"../../public/assets/js/inttel/js/utils.min.js"}),i=function(){e.classList.remove("error"),t.innerHTML="",t.classList.add("hide"),n.classList.add("hide")};if(e.addEventListener("blur",(function(){if(i(),e.value.trim())if(a.isValidNumber())n.classList.remove("hide");else{e.classList.add("error");var o=a.getValidationError();t.innerHTML=r[o],t.classList.remove("hide")}})),e.addEventListener("change",i),e.addEventListener("keyup",i),"undefined"!=typeof phoneNo&&""!==phoneNo&&setTimeout((function(){$("#phoneNumber").trigger("change")}),500),$("#phoneNumber").on("blur keyup change countrychange",(function(){"undefined"!=typeof phoneNo&&""!==phoneNo&&(a.setNumber("+"+phoneNo),phoneNo="");var e=a.selectedCountryData.dialCode;$("#prefix_code").val(e)})),$("#isEdit").val()){var o=a.selectedCountryData.dialCode;$("#prefix_code").val(o)}var s=$("#phoneNumber").val().replace(/\s/g,"");$("#phoneNumber").val(s)}})),listen("submit","#userCreateForm",(function(e){if(""!==$("#error-msg").text())return $("#phoneNumber").focus(),!1})),listen("submit","#userEditForm",(function(e){if(""!==$("#error-msg").text())return $("#phoneNumber").focus(),!1})),listen("submit","#createSetting",(function(e){if(""!==$("#error-msg").text())return $("#phoneNumber").focus(),!1})),(()=>{listenClick(".client-delete-btn",(function(event){var recordId=$(event.currentTarget).attr("data-id"),callFunction=arguments.length>3&&void 0!==arguments3?arguments3:null;header=Lang.get("js.client"),swal({title:Lang.get("js.delete")+" !",text:Lang.get("js.are_you_sure_delete")+' "'+header+'" ?',buttons:[Lang.get("js.no_cancel"),Lang.get("js.yes_delete")],icon:sweetAlertIcon}).then((function(willDelete){willDelete&&$.ajax({url:route("clients.destroy",recordId),type:"DELETE",dataType:"json",data:{clientWithInvoices:!0},success:function success(obj){obj.success&&(Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable")),swal({icon:"success",title:Lang.get("js.deleted"),text:header+" "+Lang.get("js.has_been_deleted"),timer:2e3,button:Lang.get("js.ok")}),callFunction&&eval(callFunction)},error:function error(data){swal({title:Lang.get("js.delete")+" !",text:Lang.get("js.are_sure_want_to_delete_this_client_related_all_invoices"),buttons:[Lang.get("js.no_cancel"),Lang.get("js.yes_delete")],icon:sweetAlertIcon}).then((function(willDelete){willDelete&&$.ajax({url:route("clients.destroy",recordId),type:"DELETE",dataType:"json",success:function success(obj){obj.success&&(Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable")),swal({icon:"success",title:Lang.get("js.deleted"),text:header+" "+Lang.get("js.has_been_deleted"),timer:2e3,button:Lang.get("js.ok")}),callFunction&&eval(callFunction)},error:function(e){}})}))}})}))}))})(),document.addEventListener("turbo:load",(function(){(function(){if(!$("#countryID").length)return!1;$("#countryID").hasClass("select2-hidden-accessible")&&$(".select2-container").remove(),$("#stateID").hasClass("select2-hidden-accessible")&&$(".select2-container").remove(),$("#countryID, #stateID").select2({width:"100%"})})(),$("#countryId").val()&&$("#countryId").val($("#countryId").val()).trigger("change")})),listenChange("#countryId",(function(e){e.preventDefault(),$.ajax({url:route("states-list"),type:"get",dataType:"json",data:{countryId:$(this).val()},success:function(e){$("#stateId").empty(),$("#cityId").empty(),$("#stateId").empty(),0!=e.data.length?$.each(e.data,(function(e,t){$("#stateId").append($("<option></option>").attr("value",e).text(t))})):$("#stateId").append($('<option value=""></option>').text("Select State")),$("#clientStateId").val()?($("#stateId").val($("#clientStateId").val()).trigger("change"),$("#clientStateId").val("")):$("#stateId").trigger("change")}})})),listenChange("#stateId",(function(e){e.preventDefault(),$.ajax({url:route("cities-list"),type:"get",dataType:"json",data:{stateId:$(this).val(),country:$("#countryId").val()},success:function(e){$("#cityId").empty(),0!=e.data.length?$.each(e.data,(function(e,t){$("#cityId").append($("<option></option>").attr("value",e).text(t))})):$("#cityId").append($('<option value=""></option>').text("Select City")),$("#clientCityId").val()?($("#cityId").val($("#clientCityId").val()).trigger("change"),$("#clientCityId").val("")):$("#cityId").trigger("change")}})})),listenClick(".remove-image",(function(){defaultAvatarImagePreview("#previewImage",1)})),listenSubmit("#clientForm, #editClientForm",(function(){if(""!==$("#error-msg").text())return $("#phoneNumber").focus(),!1})),listenClick(".product-delete-btn",(function(e){var t=$(e.currentTarget).data("id");deleteItem(route("products.destroy",t),Lang.get("js.product"))})),document.addEventListener("turbo:load",(function(){!function(){if(!$("#categoryId").length)return!1;$("#categoryId").hasClass("select2-hidden-accessible")&&$(".select2-container").remove(),$("#categoryId").select2({width:"100%"})}()})),listenClick(".remove-image",(function(){defaultAvatarImagePreview("#previewImage",1)})),listenKeyup("#code",(function(){return $("#code").val(this.value.toUpperCase())})),listenClick("#autoCode",(function(){var e=Math.random().toString(36).toUpperCase().substr(2,6);$("#code").val(e)})),(()=>{function e(t){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(t)}function t(t,n,r){return(n=function(t){var n=function(t,n){if("object"!=e(t)||!t)return t;var r=t[Symbol.toPrimitive];if(void 0!==r){var a=r.call(t,n||"default");if("object"!=e(a))return a;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===n?String:Number)(t)}(t,"string");return"symbol"==e(n)?n:n+""}(n))in t?Object.defineProperty(t,n,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[n]=r,t}document.addEventListener("turbo:load",(function(){(function(){if(!select2NotExists("#status_filter"))return!1;removeSelect2Container(["#status_filter"]),$("#status_filter").select2({placeholder:"All"}),""==$("#status").val()&&$("#status_filter").val(5).trigger("change")})(),r("#invoiceDateRangePicker")}));var n=null;function r(e){if(!$(e).length)return!1;n=$(e),startDate=moment().subtract(100,"years"),endDate=moment(),a(startDate,endDate);var r=moment().startOf("month").subtract(1,"days");function a(e,t){n.val(e.format("DD/MM/YYYY")+" - "+t.format("DD/MM/YYYY"))}n.daterangepicker({startDate,endDate,opens:"left",showDropdowns:!0,autoUpdateInput:!1,locale:{customRangeLabel:Lang.get("js.custom"),applyLabel:Lang.get("js.apply"),cancelLabel:Lang.get("js.cancel"),fromLabel:Lang.get("js.from"),toLabel:Lang.get("js.to"),monthNames:[Lang.get("js.jan"),Lang.get("js.feb"),Lang.get("js.mar"),Lang.get("js.apr"),Lang.get("js.may"),Lang.get("js.jun"),Lang.get("js.jul"),Lang.get("js.aug"),Lang.get("js.sep"),Lang.get("js.oct"),Lang.get("js.nov"),Lang.get("js.dec")],daysOfWeek:[Lang.get("js.sun"),Lang.get("js.mon"),Lang.get("js.tue"),Lang.get("js.wed"),Lang.get("js.thu"),Lang.get("js.fri"),Lang.get("js.sat")]},ranges:t(t(t(t(t(t(t({},Lang.get("js.all"),[moment().subtract(100,"years"),moment()]),Lang.get("js.today"),[moment(),moment()]),Lang.get("js.this_week"),[moment().startOf("week"),moment().endOf("week")]),Lang.get("js.last_week"),[moment().startOf("week").subtract(7,"days"),moment().startOf("week").subtract(1,"days")]),Lang.get("js.last_30_days"),[moment().subtract(29,"days"),moment()]),Lang.get("js.this_month"),[moment().startOf("month"),moment().endOf("month")]),Lang.get("js.last_month"),[r.clone().startOf("month"),r.clone().endOf("month")])},a),n.on("apply.daterangepicker",(function(e,t){startDate=t.startDate.format("YYYY-MM-D"),endDate=t.endDate.format("YYYY-MM-D"),Livewire.dispatch("changeDateFilter",[startDate,endDate])}))}listenClick(".invoice-delete-btn",(function(e){e.preventDefault();var t=$(e.currentTarget).attr("data-id");deleteItem(route("invoices.destroy",t),Lang.get("js.invoice"))})),listenClick("#resetInvoiceFilter",(function(){$("#invoiceStatus").val(7).trigger("change"),$("#recurringStatus").val("").trigger("change"),hideDropdownManually($("#invoiceFilterBtn"),$(".dropdown-menu"));var e=moment().subtract(100,"years"),t=moment();Livewire.dispatch("changeDateFilter",[e,t]),r("#invoiceDateRangePicker")})),listenClick(".reminder-btn",(function(e){e.preventDefault();var t=$(this).data("id");$.ajax({type:"POST",url:route("invoice.payment-reminder",t),beforeSend:function(){screenLock(),startLoader()},success:function(e){e.success&&displaySuccessMessage(e.message)},error:function(e){displayErrorMessage(e.message)},complete:function(){stopLoader(),screenUnLock()}})})),listenClick(".update-recurring",(function(e){e.preventDefault();var t=$(this).data("id");$.ajax({type:"POST",url:route("invoices.update-recurring",t),beforeSend:function(){screenLock(),startLoader()},success:function(e){e.success&&(displaySuccessMessage(e.message),Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable"))},error:function(e){displayErrorMessage(e.message)},complete:function(){stopLoader(),screenUnLock()}})})),listenChange("#invoiceStatus",(function(){Livewire.dispatch("changeInvoiceStatusFilter",{status:$(this).val()}),Livewire.dispatch("changeRecurringStatusFilter",{recurringStatus:$("#recurringStatus").val()})})),listenChange("#recurringStatus",(function(){Livewire.dispatch("changeRecurringStatusFilter",{recurringStatus:$(this).val()}),Livewire.dispatch("changeInvoiceStatusFilter",{status:$("#invoiceStatus").val()})})),listenHiddenBsModal("#sendWhatsAppModal",(function(){$(".whatsapp-phone-number").val(""),$("#valid-msg").addClass("hide"),$("#error-msg").addClass("hide")}))})(),(()=>{var e=null,t="";function n(e){e?$(".recurring-cycle-content").show():$(".recurring-cycle-content").hide()}document.addEventListener("turbo:load",(function(){$('input:text:not([readonly="readonly"])').first().blur(),function(){if(!select2NotExists(".product"))return!1;removeSelect2Container([".product"]),$(".product").select2({tags:!0}),$(".tax").select2({placeholder:Lang.get("js.select_tax")}),$(".invoice-taxes").select2({placeholder:Lang.get("js.select_tax")}),$(".payment-qr-code").select2(),$("#client_id").focus()}(),function(){if(!$("#client_id").length&&!$("#discountType").length)return;$("#client_id,#status,#templateId").select2(),$(".discount-type").select2({width:"200px"})}(),void n($("#recurringStatusToggle").is(":checked")),currentDateFormat=$('meta[name="current-date-format"]').attr("content"),t=convertToMomentFormat(currentDateFormat),e=$("#due_date").flatpickr({defaultDate:moment().add(1,"days").toDate(),dateFormat:currentDateFormat,locale:getUserLanguages}),r=$("#editDueDate").flatpickr({dateFormat:currentDateFormat,defaultDate:moment($("#editDueDate").val()).format(t),locale:getUserLanguages}),$("#invoice_date").flatpickr({defaultDate:new Date,dateFormat:currentDateFormat,locale:getUserLanguages,onChange:function(n,r,a){var i=moment($("#invoice_date").val(),t).add(1,"days").format(t);void 0!==e&&e.set("minDate",i)},onReady:function(){var n=moment(new Date).add(1,"days").format(t);void 0!==e&&e.set("minDate",n)}}),void $("#editInvoiceDate").flatpickr({dateFormat:currentDateFormat,defaultDate:moment($("#editInvoiceDate").val()).format(t),locale:getUserLanguages,onChange:function(){var e=moment($("#editInvoiceDate").val(),t).add(1,"days").format(t);void 0!==r&&r.set("minDate",e)},onReady:function(){var e=moment($("#editInvoiceDate").val(),t).add(1,"days").format(t);void 0!==r&&r.set("minDate",e)}}),1==$("#invoiceNote").val()||1==$("#invoiceTerm").val()?($("#addNote").hide(),$("#removeNote").show(),$("#noteAdd").show(),$("#termRemove").show()):($("#removeNote").hide(),$("#noteAdd").hide(),$("#termRemove").hide());var e,r;1==$("#invoiceRecurring").val()?$(".recurring").show():$(".recurring").hide();$("#formData_recurring-1").prop("checked")&&$(".recurring").hide();0!=$("#discountType").val()?$("#discount").removeAttr("disabled"):$("#discount").attr("disabled","disabled");i()})),listenClick("#recurringStatusToggle",(function(){n($(this).is(":checked"))})),listenChange(".invoice-currency-type",(function(){var e=$(this).val();e.length>0&&$.ajax({url:route("invoices.get-currency",e),type:"get",dataType:"json",success:function(e){e.success&&$(".invoice-selected-currency").text(e.data)},error:function(e){displayErrorMessage(e.responseJSON.message)}})})),listenKeyup("#invoiceId",(function(){return $("#invoiceId").val(this.value.toUpperCase())})),listenClick("#addNote",(function(){$("#addNote").hide(),$("#removeNote").show(),$("#noteAdd").show(),$("#termRemove").show()})),listenClick("#removeNote",(function(){$("#addNote").show(),$("#removeNote").hide(),$("#noteAdd").hide(),$("#termRemove").hide(),$("#note").val(""),$("#term").val("")})),listenClick("#formData_recurring-0",(function(){$("#formData_recurring-0").prop("checked")?$(".recurring").show():$(".recurring").hide()})),listenClick("#formData_recurring-1",(function(){$("#formData_recurring-1").prop("checked")&&$(".recurring").hide()})),listenChange("#discountType",(function(){if(e=$(this).val(),$("#discount").val(0),1==e||2==e){if($("#discount").removeAttr("disabled"),2==e){var t=$("#discount").val();$("#discount").val(t.substring(0,2))}}else $("#discount").attr("disabled","disabled"),$("#discount").val(0),$("#discountAmount").text("0");i()})),window.isNumberKey=function(e,t){var n=e.which?e.which:event.keyCode;return!((46!==n||-1!==$(t).val().indexOf("."))&&(n<48||n>57))},listenClick("#addItem",(function(){var e={products:JSON.parse($("#products").val()),taxes:JSON.parse($("#taxes").val())},t=prepareTemplateRender("#invoiceItemTemplate",e);$(".invoice-item-container").append(t),$(".percentage").val($(".percentage").val()),$(".productId").select2({placeholder:Lang.get("js.select_product_or_enter_free_text"),tags:!0}),r()}));var r=function(){var e=1;if($(".invoice-item-container>tr").each((function(){$(this).find(".item-number").text(e),e++})),e-1==0){var t={products:JSON.parse($("#products").val()),taxes:JSON.parse($("#taxes").val())},n=prepareTemplateRender("#invoiceItemTemplate",t);$(".invoice-item-container").append(n),$(".productId").select2(),$(".taxId").select2({placeholder:"Select TAX",multiple:!0})}i()};listenClick(".delete-invoice-item",(function(){$(this).parents("tr").remove(),r(),i()})),listenChange(".product",(function(){var e=$(this).val();isEmpty(e)&&(e=0);var t=$(this);$.ajax({url:route("invoices.get-product",e),type:"get",dataType:"json",success:function(n){if(n.success){var r="";$.each(n.data,(function(t,n){t===e&&(r=n)})),t.parent().parent().find("td .price").val(r),t.parent().parent().find("td .qty").val(1),$(".price").trigger("keyup")}},error:function(e){displayErrorMessage(e.responseJSON.message)}})})),listenChange(".tax",(function(){i()})),listenKeyup(".qty",(function(){var e=$(this).val(),t=$(this).parent().siblings().find(".price").val();t=parseFloat(removeCommas(t));var n=a(e,t);$(this).parent().siblings(".item-total").text(addCommas(n.toFixed(2).toString())),i()})),listenKeyup(".price",(function(){var e=$(this).val();e=parseFloat(removeCommas(e));var t=$(this).parent().siblings().find(".qty").val(),n=a(t,e);$(this).parent().siblings(".item-total").text(addCommas(n.toFixed(2).toString())),i()}));var a=function(e,t){if(e>0&&t>0){var n=e*t;return isNaN(n)?0:n}return 0},i=function(){var e=0;$(".invoice-item-container>tr").each((function(){var t=$(this).find(".item-total").text();t=removeCommas(t),t=isEmpty($.trim(t))?0:parseFloat(t),e+=t}));var t=e;$("#finalAmount").text(number_format(t)),$("#total_amount").val(t.toFixed(2));var n=parseFloat(t),r=$(".percentage").val();isEmpty(r)||(n=t*parseFloat(r)/100),$("#finalAmount").text(number_format(n)),$("#finalTotalAmt").val(n.toFixed(2))};listen("keyup","#discount",(function(){var t=$(this).val();if(2==e&&t>100)return displayErrorMessage("On Percentage you can only give maximum 100% discount"),$(this).val(t.slice(0,-1)),!1;i()})),listenChange(".invoice-taxes",(function(){i()})),listenClick("#saveAsDraft,#saveAndSend",(function(e){e.preventDefault();var t=[],n=0,r=[],a=0;$(".tax-tr").each((function(){var e=$(this).find(".tax option:selected").map((function(){return $(this).data("id")})).get();t[n++]=""!=e?e:0;var i=$(this).find(".tax option:selected").map((function(){return $(this).val()})).get();r[a++]=""!=i?i:0}));var i=$(this).data("status"),o=document.getElementById("invoiceForm"),s=new FormData(o);s.append("status",i),s.append("tax_id",JSON.stringify(t)),s.append("tax",JSON.stringify(r)),1==i?swal({title:Lang.get("js.send_invoice")+" !",text:Lang.get("js.are_you_sure_send"),icon:"warning",buttons:{confirm:Lang.get("js.yes_send"),cancel:Lang.get("js.no_cancel")}}).then((function(e){e&&(screenLock(),$.ajax({url:route("invoices.store"),type:"POST",dataType:"json",data:s,processData:!1,contentType:!1,beforeSend:function(){startLoader()},success:function(e){displaySuccessMessage(e.message),Turbo.visit(route("invoices.index"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader(),screenUnLock()}}))})):(screenLock(),$.ajax({url:route("invoices.store"),type:"POST",dataType:"json",data:s,processData:!1,contentType:!1,beforeSend:function(){startLoader()},success:function(e){displaySuccessMessage(e.message),Turbo.visit(route("invoices.index"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader(),screenUnLock()}}))})),listenClick("#editSaveAndSend,#editSave",(function(e){e.preventDefault();var t=$(this).data("status"),n=[],r=0,a=[],i=0;$(".tax-tr").each((function(){var e=$(this).find(".tax option:selected").map((function(){return $(this).data("id")})).get();n[r++]=""!=e?e:0;var t=$(this).find(".tax option:selected").map((function(){return $(this).val()})).get();a[i++]=""!=t?t:0}));var o=$("#invoiceEditForm").serialize()+"&invoiceStatus="+t+"&tax_id="+JSON.stringify(n)+"&tax="+JSON.stringify(a);1==t?swal({title:Lang.get("js.send_invoice")+" !",text:Lang.get("js.are_you_sure_send"),icon:"warning",buttons:[Lang.get("js.no_cancel"),Lang.get("js.yes_send")]}).then((function(e){e&&(screenLock(),$.ajax({url:$("#invoiceUpdateUrl").val(),type:"PUT",dataType:"json",data:o,beforeSend:function(){startLoader()},success:function(e){displaySuccessMessage(e.message),Turbo.visit(route("invoices.index"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader(),screenUnLock()}}))})):0==t&&(screenLock(),$.ajax({url:$("#invoiceUpdateUrl").val(),type:"PUT",dataType:"json",data:o,beforeSend:function(){startLoader()},success:function(e){displaySuccessMessage(e.message),Turbo.visit(route("invoices.index"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader(),screenUnLock()}}))})),listenChange("#client_id",(function(){var e=$(this).val();e&&$.ajax({url:"/admin/get-client-percentage/"+e,type:"GET",dataType:"text",success:function(e){$(".percentage").val(e)}}),i()}))})(),(()=>{function e(t){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(t)}function t(t,n,r){return(n=function(t){var n=function(t,n){if("object"!=e(t)||!t)return t;var r=t[Symbol.toPrimitive];if(void 0!==r){var a=r.call(t,n||"default");if("object"!=e(a))return a;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===n?String:Number)(t)}(t,"string");return"symbol"==e(n)?n:n+""}(n))in t?Object.defineProperty(t,n,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[n]=r,t}document.addEventListener("turbo:load",(function(){(function(){if(!$("#quoteStatus").length)return!1;if($("#quoteStatus").select2(),!select2NotExists("#status_filter"))return!1;removeSelect2Container(["#status_filter"]),$("#status_filter").select2({placeholder:"All"}),""==$("#status").val()&&$("#status_filter").val(5).trigger("change")})(),r("#quoteDateRangePicker")}));var n=null;function r(e){if(!$(e).length)return!1;n=$(e),startDate=moment().subtract(100,"years"),endDate=moment(),a(startDate,endDate);var r=moment().startOf("month").subtract(1,"days");function a(e,t){n.val(e.format("DD/MM/YYYY")+" - "+t.format("DD/MM/YYYY"))}n.daterangepicker({startDate,endDate,opens:"left",showDropdowns:!0,autoUpdateInput:!1,locale:{customRangeLabel:Lang.get("js.custom"),applyLabel:Lang.get("js.apply"),cancelLabel:Lang.get("js.cancel"),fromLabel:Lang.get("js.from"),toLabel:Lang.get("js.to"),monthNames:[Lang.get("js.jan"),Lang.get("js.feb"),Lang.get("js.mar"),Lang.get("js.apr"),Lang.get("js.may"),Lang.get("js.jun"),Lang.get("js.jul"),Lang.get("js.aug"),Lang.get("js.sep"),Lang.get("js.oct"),Lang.get("js.nov"),Lang.get("js.dec")],daysOfWeek:[Lang.get("js.sun"),Lang.get("js.mon"),Lang.get("js.tue"),Lang.get("js.wed"),Lang.get("js.thu"),Lang.get("js.fri"),Lang.get("js.sat")]},ranges:t(t(t(t(t(t(t({},Lang.get("js.all"),[moment().subtract(100,"years"),moment()]),Lang.get("js.today"),[moment(),moment()]),Lang.get("js.this_week"),[moment().startOf("week"),moment().endOf("week")]),Lang.get("js.last_week"),[moment().startOf("week").subtract(7,"days"),moment().startOf("week").subtract(1,"days")]),Lang.get("js.last_30_days"),[moment().subtract(29,"days"),moment()]),Lang.get("js.this_month"),[moment().startOf("month"),moment().endOf("month")]),Lang.get("js.last_month"),[r.clone().startOf("month"),r.clone().endOf("month")])},a),n.on("apply.daterangepicker",(function(e,t){startDate=t.startDate.format("YYYY-MM-D"),endDate=t.endDate.format("YYYY-MM-D"),Livewire.dispatch("changeDateRangeFilter",[startDate,endDate])}))}listenClick(".quote-delete-btn",(function(e){e.preventDefault();var t=$(this).attr("data-id");deleteItem(route("quotes.destroy",t),Lang.get("js.quote"))})),listenClick("#resetQuoteStatusFilter",(function(){$("#quoteStatus").val(2).trigger("change"),hideDropdownManually($("#quoteFilterBtn"),$(".dropdown-menu"));var e=moment().subtract(100,"years"),t=moment();Livewire.dispatch("changeDateRangeFilter",[e,t]),r("#quoteDateRangePicker")})),listenClick(".convert-to-invoice",(function(e){e.preventDefault();var t=$(this).data("id");$.ajax({url:route("quotes.convert-to-invoice"),type:"GET",data:{quoteId:t},success:function(e){e.success&&(displaySuccessMessage(e.message),Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable"))},error:function(e){displayErrorMessage(e.responseJSON.message)}})})),listenChange("#quoteStatus",(function(){Livewire.dispatch("changeQuoteStatusFilter",{status:$(this).val()})}))})(),(()=>{var e=null,t="";document.addEventListener("turbo:load",(function(){$('input:text:not([readonly="readonly"])').first().blur(),function(){if(!select2NotExists(".product-quote"))return!1;removeSelect2Container([".product-quote"]),$(".product-quote").select2({tags:!0}),$(".tax").select2({placeholder:"Select TAX"}),$("#client_id").focus();var e=moment(new Date).add(1,"days").format(convertToMomentFormat(currentDateFormat)),n=$("#quoteDueDate").flatpickr({defaultDate:e,dateFormat:currentDateFormat,locale:getUserLanguages}),r=$("#editQuoteDueDate").flatpickr({dateFormat:currentDateFormat,defaultDate:moment($("#editQuoteDueDate").val()).format(convertToMomentFormat(currentDateFormat)),locale:getUserLanguages});$("#quote_date").flatpickr({defaultDate:moment(new Date).format(convertToMomentFormat(currentDateFormat)),dateFormat:currentDateFormat,locale:getUserLanguages,onChange:function(){var e;e="d.m.Y"==currentDateFormat||"d/m/Y"==currentDateFormat||"d-m-Y"==currentDateFormat?moment($("#quote_date").val(),t).add(1,"days").format(t):moment($("#quote_date").val()).add(1,"days").format(convertToMomentFormat(currentDateFormat)),void 0!==n&&n.set("minDate",e)},onReady:function(){void 0!==n&&n.set("minDate",e)}}),$("#editQuoteDate").flatpickr({dateFormat:currentDateFormat,defaultDate:moment($("#editQuoteDateAdmin").val()).format(convertToMomentFormat(currentDateFormat)),locale:getUserLanguages,onChange:function(){var e;e="d.m.Y"==currentDateFormat||"d/m/Y"==currentDateFormat||"d-m-Y"==currentDateFormat?moment($("#editQuoteDate").val(),t).add(1,"days").format(t):moment($("#editQuoteDate").val()).add(1,"days").format(convertToMomentFormat(currentDateFormat)),void 0!==r&&r.set("minDate",e)},onReady:function(){var e;e="d.m.Y"==currentDateFormat||"d/m/Y"==currentDateFormat||"d-m-Y"==currentDateFormat?moment($("#editQuoteDateAdmin").val(),t).add(1,"days").format(convertToMomentFormat(currentDateFormat)):moment($("#editQuoteDateAdmin").val()).add(1,"days").format(convertToMomentFormat(currentDateFormat)),void 0!==r&&r.set("minDate",e)}})}(),function(){if(!$("#client_id").length&&!$("#discountType").length)return;$("#client_id,#discountType,#status,#templateId").select2()}(),t=convertToMomentFormat(currentDateFormat),1==$("#quoteNoteData").val()||1==$("#quoteTermData").val()?($("#quoteAddNote").hide(),$("#quoteRemoveNote").show(),$("#quoteNoteAdd").show(),$("#quoteTermRemove").show()):($("#quoteRemoveNote").hide(),$("#quoteNoteAdd").hide(),$("#quoteTermRemove").hide());1==$("#quoteRecurring").val()?$(".recurring").show():$(".recurring").hide();$("#formData_recurring-1").prop("checked")&&$(".recurring").hide();0!=$("#discountType").val()?$("#discount").removeAttr("disabled"):$("#discount").attr("disabled","disabled");a()})),listenKeyup("#quoteId",(function(){return $("#quoteId").val(this.value.toUpperCase())})),listenClick("#quoteAddNote",(function(){$("#quoteAddNote").hide(),$("#quoteRemoveNote").show(),$("#quoteNoteAdd").show(),$("#quoteTermRemove").show()})),listenClick("#quoteRemoveNote",(function(){$("#quoteAddNote").show(),$("#quoteRemoveNote").hide(),$("#quoteNoteAdd").hide(),$("#quoteTermRemove").hide(),$("#quoteNote").val(""),$("#quoteTerm").val(""),$("#quoteAddNote").show()})),listenClick("#formData_recurring-0",(function(){$("#formData_recurring-0").prop("checked")?$(".recurring").show():$(".recurring").hide()})),listenClick("#formData_recurring-1",(function(){$("#formData_recurring-1").prop("checked")&&$(".recurring").hide()})),listenChange("#discountType",(function(){if(e=$(this).val(),$("#discount").val(0),1==e||2==e){if($("#discount").removeAttr("disabled"),2==e){var t=$("#discount").val();$("#discount").val(t.substring(0,2))}}else $("#discount").attr("disabled","disabled"),$("#discount").val(0),$("#quoteDiscountAmount").text("0");i()})),window.isNumberKey=function(e,t){var n=e.which?e.which:event.keyCode;return!((46!==n||-1!==$(t).val().indexOf("."))&&(n<48||n>57))},listenClick("#addQuoteItem",(function(){var e={products:JSON.parse($("#products").val())},t=prepareTemplateRender("#quotesItemTemplate",e);$(".quote-item-container").append(t),$(".productId").select2({placeholder:Lang.get("js.select_product_or_enter_free_text"),tags:!0}),n()}));var n=function(){var e=1;if($(".quote-item-container>tr").each((function(){$(this).find(".item-number").text(e),e++})),e-1==0){var t={products:JSON.parse($("#products").val())},n=prepareTemplateRender("#quotesItemTemplate",t);$(".quote-item-container").append(n),$(".productId").select2()}};listenClick(".delete-quote-item",(function(){$(this).parents("tr").remove(),n(),a()})),listenChange(".product-quote",(function(){var e=$(this).val();isEmpty(e)&&(e=0);var t=$(this);$.ajax({url:route("quotes.get-product",e),type:"get",dataType:"json",success:function(n){if(n.success){var r="";$.each(n.data,(function(t,n){t===e&&(r=n)})),t.parent().parent().find("td .price-quote").val(r),t.parent().parent().find("td .qty-quote").val(1),$(".price-quote").trigger("keyup")}},error:function(e){displayErrorMessage(e.responseJSON.message)}})})),listenKeyup(".qty-quote",(function(){var e=parseInt($(this).val()),t=$(this).parent().siblings().find(".price-quote").val();t=parseFloat(removeCommas(t));var n=r(e,t);$(this).parent().siblings(".quote-item-total").text(addCommas(n.toFixed(2).toString())),a()})),listenKeyup(".price-quote",(function(){var e=$(this).val();e=parseFloat(removeCommas(e));var t=parseInt($(this).parent().siblings().find(".qty-quote").val()),n=r(t,e);$(this).parent().siblings(".quote-item-total").text(addCommas(n.toFixed(2).toString())),a()}));var r=function(e,t){return e>0&&t>0?e*t:0},a=function(){var e=0;$(".quote-item-container>tr").each((function(){var t=$(this).find(".quote-item-total").text();t=removeCommas(t),t=isEmpty($.trim(t))?0:parseFloat(t),e+=t})),e=parseFloat(e),isNaN(e)&&(e=0),$("#quoteTotal").text(addCommas(e.toFixed(2))),$("#quoteTotalAmount").val(e),i()},i=function(){var t=$("#discount").val();e=$("#discountType").val();var n=[],r=0;$(".quote-item-total").each((function(){n[r++]=$.trim(removeCommas($(this).text()))})),$.sum=function(e){var t=0;return $.each(e,(function(e,n){t+=+n})),t};var a=$.sum(n);$("#quoteTotal").text(number_format(a)),(isEmpty(t)||isEmpty(a))&&(t=0);var i=0,o=a-i;1==e?o=a-(i=t):2==e&&(o=a-(i=a*t/100)),$("#quoteFinalAmount").text(number_format(o)),$("#quoteTotalAmount").val(o.toFixed(2)),$("#quoteDiscountAmount").text(number_format(i))};listen("keyup","#discount",(function(){var t=$(this).val();if(2==e&&t>100)return displayErrorMessage("On Percentage you can only give maximum 100% discount"),$(this).val(t.slice(0,-1)),!1;i()})),listenClick("#saveAsDraftQuote",(function(e){e.preventDefault();var t=$(this).data("status"),n=document.getElementById("quoteForm"),r=new FormData(n);r.append("status",t),screenLock(),$.ajax({url:route("quotes.store"),type:"POST",dataType:"json",data:r,processData:!1,contentType:!1,beforeSend:function(){startLoader()},success:function(e){displaySuccessMessage(e.message),Turbo.visit(route("quotes.index"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader(),screenUnLock()}})})),listenClick("#editSaveQuote",(function(e){e.preventDefault();var t=$(this).data("status"),n=$("#quoteEditForm").serialize()+"&quoteStatus="+t;screenLock(),$.ajax({url:$("#quoteUpdateUrl").val(),type:"PUT",dataType:"json",data:n,beforeSend:function(){startLoader()},success:function(e){displaySuccessMessage(e.message),Turbo.visit(route("quotes.index"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader(),screenUnLock()}})}))})(),(()=>{function e(e,t){var n=$(e).val().split(".").pop().toLowerCase();return-1==$.inArray(n,["jpg","png","jpeg"])?($(e).val(""),$(t).removeClass("d-none"),$(t).html("The image must be a file of type: jpg, jpeg, png.").show(),!1):($(t).hide(),!0)}function t(e,t){var n=!0;if(e.files&&e.files[0]){var r=new FileReader;r.onload=function(e){var r=new Image;r.src=e.target.result,r.onload=function(){$(t).attr("src",e.target.result),n=!0}},n&&(r.readAsDataURL(e.files[0]),$(t).show())}}document.addEventListener("turbo:load",(function(){(function(){if(!$("#currencyType").length)return!1;["#currencyType","#timeZone","#dateFormat"].forEach((function(e){$(e).hasClass("select2-hidden-accessible")&&$(".select2-container").remove()})),$("#currencyType, #timeZone, #dateFormat").select2({width:"100%"})})(),function(){if(!$("#countryPhone").length)return!1;var e=document.querySelector("#countryPhone"),t=document.querySelector("#error-msg"),n=[Lang.get("js.invalid_number"),Lang.get("js.invalid_country_number"),Lang.get("js.too_short"),Lang.get("js.too_long"),Lang.get("js.invalid_number")],r=window.intlTelInput(e,{initialCountry:"IN",separateDialCode:!0,geoIpLookup:function(e,t){$.get("https://ipinfo.io",(function(){}),"jsonp").always((function(t){var n=t&&t.country?t.country:"";e(n)}))},utilsScript:"../../public/assets/js/inttel/js/utils.min.js"}),a=function(){e.classList.remove("error"),t.innerHTML=""};e.addEventListener("blur",(function(){if(a(),e.value.trim())if(r.isValidNumber())validMsg.classList.remove("d-none");else{e.classList.add("error");var i=r.getValidationError();t.innerHTML=n[i],t.classList.remove("d-none")}})),e.addEventListener("change",a),e.addEventListener("keyup",a),$(document).on("blur keyup change countrychange","#countryPhone",(function(){var e=r.selectedCountryData.dialCode;$("#countryCode").val(e)}));var i=$("#defaultCountryCode").val();r.setNumber(i),$("#countryCode").val(i).trigger("change")}()})),listenChange("input[type=radio][name=decimal_separator]",(function(){","===this.value?$('input[type=radio][name=thousand_separator][value="."]').prop("checked",!0):$('input[type=radio][name=thousand_separator][value=","]').prop("checked",!0)})),listenChange("input[type=radio][name=thousand_separator]",(function(){","===this.value?$('input[type=radio][name=decimal_separator][value="."]').prop("checked",!0):$('input[type=radio][name=decimal_separator][value=","]').prop("checked",!0)})),listenChange("#appLogo",(function(){$("#validationErrorsBox").addClass("d-none"),e($(this),"#validationErrorsBox")&&t(this,"#previewImage")})),listenChange("#companyLogo",(function(){$("#validationErrorsBox").addClass("d-none"),e($(this),"#validationErrorsBox")&&t(this,"#previewImage1")})),listenSubmit("#createSetting",(function(e){var t=$("#companyAddress").val(),n=$("#company_name").val(),r=$("#app_name").val();return $.trim(r)?$.trim(n)?$.trim(t)?void 0:(displayErrorMessage("Please enter company address"),!1):(displayErrorMessage("Company Name is required"),!1):(displayErrorMessage("App Name is required"),!1)}))})(),listenClick(".addTax",(function(){$("#addTaxModal").appendTo("body").modal("show")})),listenSubmit("#addTaxForm",(function(e){e.preventDefault(),isDoubleClicked($(this))||$.ajax({url:route("taxes.store"),type:"POST",data:$(this).serialize(),beforeSend:function(){startLoader()},success:function(e){e.success&&($("#addTaxModal").modal("hide"),displaySuccessMessage(e.message),Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable"),$("#taxTbl").DataTable().ajax.reload(null,!1))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader()}})})),listenHiddenBsModal("#addTaxModal",(function(){resetModalForm("#addTaxForm","#validationErrorsBox")})),listenClick(".tax-edit-btn",(function(e){!function(e){$.ajax({url:route("taxes.edit",e),type:"GET",beforeSend:function(){startLoader()},success:function(e){e.success&&($("#editTaxName").val(e.data.name),$("#editTaxValue").val(e.data.value),1===e.data.is_default?$("input:radio[value='1'][name='is_default']").prop("checked",!0):$("input:radio[value='0'][name='is_default']").prop("checked",!0),$("#taxId").val(e.data.id),$("#editTaxModal").appendTo("body").modal("show"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader()}})}($(e.currentTarget).attr("data-id"))})),listenSubmit("#editTaxForm",(function(e){e.preventDefault();var t=$("#taxId").val();$.ajax({url:route("taxes.update",{tax:t}),type:"put",data:$(this).serialize(),beforeSend:function(){startLoader()},success:function(e){e.success&&(displaySuccessMessage(e.message),Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable"),$("#editTaxModal").modal("hide"),$("#taxTbl").DataTable().ajax.reload(null,!1))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader()}})})),listenClick(".tax-delete-btn",(function(e){var t=$(e.currentTarget).attr("data-id");deleteItem(route("taxes.destroy",t),Lang.get("js.tax"))})),listenChange(".tax-status",(function(e){!function(e,t){$.ajax({url:route("taxes.default-status",e),method:"post",success:function(e){e.success&&(displaySuccessMessage(e.message),Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable"),$(t).is(":checked")&&($(".tax-status").prop("checked",!1),$(t).prop("checked",!0)))}})}($(e.currentTarget).attr("data-id"),this)})),listenClick(".addQrCode",(function(){$("#addPaymentQrCodeForm")[0].reset(),$("#paymentQrCodeInputImage").css("background-image",'url("/assets/images/avatar.png")'),$("#addPaymentQrCodeModal").appendTo("body").modal("show")})),listenSubmit("#addPaymentQrCodeForm",(function(e){e.preventDefault(),isDoubleClicked($(this))||$.ajax({url:route("payment-qr-codes.store"),type:"POST",data:new FormData(this),contentType:!1,processData:!1,beforeSend:function(){startLoader()},success:function(e){e.success&&($("#addPaymentQrCodeModal").modal("hide"),displaySuccessMessage(e.message),Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader()}})})),listenClick(".qrcode-edit-btn",(function(e){!function(e){$.ajax({url:route("payment-qr-codes.edit",e),type:"GET",beforeSend:function(){startLoader()},success:function(e){e.success&&($("#editQrCodeTitle").val(e.data.title),$(".qr_code_image").css("background-image","url('"+e.data.qr_image+"')"),$("#paymentQrCodeId").val(e.data.id),$("#editPaymentQrCodeModal").appendTo("body").modal("show"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader()}})}($(e.currentTarget).attr("data-id"))})),listenSubmit("#editPaymentQrCodeForm",(function(e){e.preventDefault();var t=$("#paymentQrCodeId").val();$.ajax({url:route("payment-update",t),type:"post",data:new FormData(this),contentType:!1,processData:!1,beforeSend:function(){startLoader()},success:function(e){e.success&&(displaySuccessMessage(e.message),$("#editPaymentQrCodeModal").modal("hide"),Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader()}})})),listenClick(".qrcode-delete-btn",(function(e){var t=$(e.currentTarget).attr("data-id");deleteItem(route("payment-qr-codes.destroy",t),Lang.get("js.payment_qr_code"))})),listenChange(".qr-status",(function(e){!function(e,t){$.ajax({url:route("payment-qr-codes.default-status",e),method:"post",cache:!1,success:function(e){e.success&&(displaySuccessMessage(e.message),Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable"),$(t).is(":checked")&&($(".qr-status").prop("checked",!1),$(t).prop("checked",!0)))}})}($(e.currentTarget).attr("data-id"),this)})),listenClick(".addCurrency",(function(){$("#addCurrencyModal").appendTo("body").modal("show")})),listenSubmit("#addCurrencyForm",(function(e){e.preventDefault(),$.ajax({url:route("currencies.store"),type:"POST",data:$(this).serialize(),success:function(e){e.success&&($("#addCurrencyModal").modal("hide"),displaySuccessMessage(e.message),Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable"))},error:function(e){displayErrorMessage(e.responseJSON.message)}})})),listenHiddenBsModal("#addCurrencyModal",(function(){resetModalForm("#addCurrencyForm","#validationErrorsBox")})),listenClick(".currency-edit-btn",(function(e){!function(e){$.ajax({url:route("currencies.edit",e),type:"GET",success:function(e){e.success&&($("#editCurrencyName").val(e.data.name),$("#editCurrencyIcon").val(e.data.icon),$("#editCurrencyCode").val(e.data.code),$("#currencyId").val(e.data.id),$("#editCurrencyModal").appendTo("body").modal("show"))},error:function(e){displayErrorMessage(e.responseJSON.message)}})}($(e.currentTarget).attr("data-id"))})),listenSubmit("#editCurrencyForm",(function(e){e.preventDefault();var t=$("#currencyId").val();$.ajax({url:route("currencies.update",{currency:t}),type:"put",data:$(this).serialize(),success:function(e){e.success&&(displaySuccessMessage(e.message),Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable"),$("#editCurrencyModal").modal("hide"))},error:function(e){displayErrorMessage(e.responseJSON.message)}})})),listenClick(".currency-delete-btn",(function(e){var t=$(e.currentTarget).attr("data-id");deleteItem(route("currencies.destroy",t),Lang.get("js.currency"))})),document.addEventListener("turbo:load",(function(){$("#selectLanguage").length&&$("#selectLanguage").select2({width:"100%",dropdownParent:$("#changeLanguageModal")})})),listenClick("#changePassword",(function(){$(".pass-check-meter div.flex-grow-1").removeClass("active"),$("#changePasswordModal").modal("show").appendTo("body")})),listenClick("#passwordChangeBtn",(function(){$.ajax({url:changePasswordUrl,type:"PUT",data:$("#changePasswordForm").serialize(),success:function(e){$("#changePasswordModal").modal("hide"),displaySuccessMessage(e.message)},error:function(e){displayErrorMessage(e.responseJSON.message)}})})),listenHiddenBsModal(["#changeLanguageModal","#changePasswordModal"],(function(e){e.preventDefault(),$("#changeLanguageForm").length&&$("#changeLanguageForm")[0].reset(),$("#changePasswordForm").length&&$("#changePasswordForm")[0].reset(),$("select.select2Selector").each((function(e,t){var n="#"+$(this).attr("id");$(n).val(getLoggedInUserLang),$(n).trigger("change")}))})),listenClick("#languageChangeBtn",(function(){$.ajax({url:route("change-language"),type:"POST",data:$("#changeLanguageForm").serialize(),success:function(e){e.success&&($("#changeLanguageModal").modal("hide"),displaySuccessMessage(Lang.get("js.language_updated_successfully")),setTimeout((function(){location.reload(!0),Turbo.visit(window.location.href)}),2e3))},error:function(e){displayErrorMessage(e.responseJSON.message)}})})),listenClick("#changeLanguage",(function(){$("#changeLanguageModal").modal("show")})),window.printErrorMessage=function(e,t){$(e).show().html(""),$(e).text(t.responseJSON.message)},listenHiddenBsModal("#changePasswordModal",(function(){resetModalForm("#changePasswordForm","#validationErrorsBox")})),document.addEventListener("DOMContentLoaded",(function(){if(!$("#paymentHistory-tab").length)return!1;setTimeout((function(){var e=location.href,t=e.substring(e.indexOf("?active")+8);$('.nav-item button[data-bs-target="#'+t+'"]').click()}),100)})),listenChange("#clientInvoiceStatus",(function(){Livewire.dispatch("changeInvoiceStatusFilter",{status:$(this).val()})})),document.addEventListener("turbo:load",(function(){(function(){if(!select2NotExists("#status_filter"))return!1;removeSelect2Container(["#status_filter","#client_payment_type","#client_payment_mode"]),$("#status_filter").select2({placeholder:"All"}),""==$("#status").val()&&$("#status_filter").val(5).trigger("change")})(),$("#client_payment_type").select2({placeholder:"Select Payment Type"}),$("#client_payment_mode").select2({placeholder:"Select Payment Method"}),$(".amount").hide();var e=window.location.toString();if(e.indexOf("?")>0){var t=e.substring(0,e.indexOf("?"));window.history.replaceState({},document.title,t)}})),listenChange("#client_payment_mode",(function(){1==$(this).val()?$(".payment-attachment").removeClass("d-none"):$(".payment-attachment").addClass("d-none")})),listenClick("#resetFilter",(function(){$("#status_filter").val(5).trigger("change"),$("#status_filter").select2({placeholder:"All"})})),listenChange("#client_payment_mode",(function(){1==$(this).val()?$("#transaction").show():$("#transaction").hide()})),listenChange("#client_payment_type",(function(){var e=$(this).val(),t=$("#payable_amount").val();"2"==e?($(".amount").hide(),$("#amount").val(t),$("#amount").prop("readonly",!0)):"3"==e?($(".amount").show(),$("#amount").val(""),$("#amount").prop("readonly",!1)):($(".amount").hide(),$("#amount").prop("readonly",!1))})),listenKeyup("#amount",(function(){var e=parseFloat($("#payable_amount").val()),t=parseFloat($("#amount").val()),n=parseInt($("#client_payment_type").val());3===n&&e<t||2===n&&e<t?($("#error-msg").text(Lang.get("js.amount_should_be_less_than_payable_amount")),$("#btnPay").addClass("disabled")):($("#error-msg").text(""),$("#btnPay").removeClass("disabled"))})),listenChange("#client_payment_mode",(function(){paymentMode=$(this).val(),parseInt(paymentMode)})),listenSubmit("#clientPaymentForm",(function(e){var t=this;if(e.preventDefault(),0==$("#amount").val())return displayErrorMessage("Amount should not be equal to zero"),!1;if(0==$("#payment_note").val().trim().length)return displayErrorMessage("Note field is Required"),!1;var n=$(this).find("#btnPay");setAdminBtnLoader(n);var r={amount:parseFloat($("#amount").val()),invoiceId:parseInt($("#client_invoice_id").val()),transactionNotes:$("#payment_note").val()};1==paymentMode?$.ajax({url:route("clients.payments.store"),type:"POST",data:new FormData(this),processData:!1,contentType:!1,success:function(e){e.success&&(Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable"),window.location.href=e.data.redirectUrl)},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){setAdminBtnLoader(n)}}):2==paymentMode?$.post(invoiceStripePaymentUrl,r).done((function(e){var t=e.data.sessionId;stripe.redirectToCheckout({sessionId:t}).then((function(e){$(this).html("Make Payment").removeClass("disabled"),manageAjaxErrors(e)}))})).catch((function(e){$(t).html("Make Payment").removeClass("disabled"),manageAjaxErrors(e)})):3==paymentMode?$.ajax({type:"GET",url:route("paypal.init"),data:{amount:r.amount,invoiceId:r.invoiceId,transactionNotes:r.transactionNotes},success:function(e){if("CREATED"==e.status){var t="";$.each(e.links,(function(e,n){"approve"==n.rel&&(t=n.href)})),location.href=t}else location.href=e.url},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){setAdminBtnLoader(n)}}):5==paymentMode?$.ajax({type:"GET",url:route("razorpay.init"),data:$(this).serialize(),success:function(e){if(e.success){$("#clientPaymentModal").modal("hide");var t=e.data,n=t.id,r=t.amount,a=t.name,i=t.email,o=t.invoiceId,s=(t.invoice_id,t.description);options.description=s,options.order_id=n,options.amount=r,options.prefill.name=a,options.prefill.email=i,options.prefill.invoiceId=o;var l=new Razorpay(options);l.open(),l.on("payment.failed")}},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){setAdminBtnLoader(n)}}):6==paymentMode&&window.location.replace(route("client.paystack.init",{invoiceId:r.invoiceId,amount:r.amount,note:r.transactionNotes}))})),(()=>{function e(t){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(t)}function t(t,n,r){return(n=function(t){var n=function(t,n){if("object"!=e(t)||!t)return t;var r=t[Symbol.toPrimitive];if(void 0!==r){var a=r.call(t,n||"default");if("object"!=e(a))return a;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===n?String:Number)(t)}(t,"string");return"symbol"==e(n)?n:n+""}(n))in t?Object.defineProperty(t,n,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[n]=r,t}document.addEventListener("turbo:load",(function(){(function(){if(!select2NotExists("#paymentModeFilter"))return!1;removeSelect2Container(["#paymentModeFilter"]),$("#paymentModeFilter").select2({placeholder:"Select Payment Method",allowClear:!1})})(),r("#transactionDateRangePicker")}));var n=null;function r(e){if(!$(e).length)return!1;n=$(e),startDate=moment().subtract(100,"years"),endDate=moment(),a(startDate,endDate);var r=moment().startOf("month").subtract(1,"days");function a(e,t){n.val(e.format("DD/MM/YYYY")+" - "+t.format("DD/MM/YYYY"))}n.daterangepicker({startDate,endDate,opens:"left",showDropdowns:!0,autoUpdateInput:!1,locale:{customRangeLabel:Lang.get("js.custom"),applyLabel:Lang.get("js.apply"),cancelLabel:Lang.get("js.cancel"),fromLabel:Lang.get("js.from"),toLabel:Lang.get("js.to"),monthNames:[Lang.get("js.jan"),Lang.get("js.feb"),Lang.get("js.mar"),Lang.get("js.apr"),Lang.get("js.may"),Lang.get("js.jun"),Lang.get("js.jul"),Lang.get("js.aug"),Lang.get("js.sep"),Lang.get("js.oct"),Lang.get("js.nov"),Lang.get("js.dec")],daysOfWeek:[Lang.get("js.sun"),Lang.get("js.mon"),Lang.get("js.tue"),Lang.get("js.wed"),Lang.get("js.thu"),Lang.get("js.fri"),Lang.get("js.sat")]},ranges:t(t(t(t(t(t(t({},Lang.get("js.all"),[moment().subtract(100,"years"),moment()]),Lang.get("js.today"),[moment(),moment()]),Lang.get("js.this_week"),[moment().startOf("week"),moment().endOf("week")]),Lang.get("js.last_week"),[moment().startOf("week").subtract(7,"days"),moment().startOf("week").subtract(1,"days")]),Lang.get("js.last_30_days"),[moment().subtract(29,"days"),moment()]),Lang.get("js.this_month"),[moment().startOf("month"),moment().endOf("month")]),Lang.get("js.last_month"),[r.clone().startOf("month"),r.clone().endOf("month")])},a),n.on("apply.daterangepicker",(function(e,t){startDate=t.startDate.format("YYYY-MM-D"),endDate=t.endDate.format("YYYY-MM-D"),Livewire.dispatch("changeDateRangeFilter",[startDate,endDate])}))}listenClick("#resetFilter",(function(){$("#paymentModeFilter").select2({placeholder:"Select Payment Method",allowClear:!1}),$("#paymentModeFilter").val(0).trigger("change");var e=moment().subtract(100,"years"),t=moment();Livewire.dispatch("changeDateRangeFilter",[e,t]),r("#transactionDateRangePicker")})),listenClick(".show-payment-notes",(function(){!function(e){$.ajax({url:route("payment-notes.show",e),type:"GET",success:function(e){if(e.success){var t=isEmpty(e.data)?"N/A":e.data;$("#showClientNotesId").text(t),$("#paymentNotesModal").appendTo("body").modal("show")}},error:function(e){displayErrorMessage(e.responseJSON.message)}})}($(this).attr("data-id"))})),window.hideDropdownManually=function(e,t){e.removeClass("show"),t.removeClass("show")},listenChange(".payment-mode-filter",(function(){Livewire.dispatch("changePaymentModeFilter",{paymentMode:$(this).val()}),Livewire.dispatch("changePaymentStatusFilter",{status:$(".payment-status-filter").val()})})),listenChange(".payment-status-filter",(function(){Livewire.dispatch("changePaymentStatusFilter",{status:$(this).val()}),Livewire.dispatch("changePaymentModeFilter",{paymentMode:$(".payment-mode-filter").val()})})),listen("click","#transactionResetFilter",(function(){$(".payment-mode-filter").val(0).trigger("change"),$(".payment-status-filter").val(3).trigger("change"),hideDropdownManually($("#transactionFilterBtn"),$(".dropdown-menu"))}))})(),document.addEventListener("turbo:load",(function(){!function(){if(!select2NotExists("#paymentModeFilter"))return!1;removeSelect2Container(["#paymentModeFilter"])}()})),listenClick("#resetFilter",(function(){$("#paymentModeFilter").select2({placeholder:"Select Payment Method",allowClear:!1}),$("#paymentModeFilter").val(0).trigger("change")})),(()=>{document.addEventListener("turbo:load",(function(){if(function(){if(!$("#invoiceTemplateId").length)return;$("#invoiceTemplateId").select2({width:"100%"})}(),function(){if(!$(".color-wrapper").length)return;(e=Pickr.create({el:".color-wrapper",theme:"nano",closeWithKey:"Enter",autoReposition:!0,defaultRepresentation:"HEX",swatches:["rgba(244, 67, 54, 1)","rgba(233, 30, 99, 1)","rgba(156, 39, 176, 1)","rgba(103, 58, 183, 1)","rgba(63, 81, 181, 1)","rgba(33, 150, 243, 1)","rgba(3, 169, 244, 1)","rgba(0, 188, 212, 1)","rgba(0, 150, 136, 1)","rgba(76, 175, 80, 1)","rgba(139, 195, 74, 1)","rgba(205, 220, 57, 1)","rgba(255, 235, 59, 1)","rgba(255, 193, 7, 1)"],components:{preview:!0,hue:!0,interaction:{input:!0,clear:!1,save:!1}}})).on("change",(function(){var t=e.getColor().toHEXA().toString();if(wc_hex_is_light(t))return $("#validationErrorsBox").text(""),$("#validationErrorsBox").show().html(""),$("#validationErrorsBox").text("Pick a different color"),setTimeout((function(){$("#validationErrorsBox").slideUp()}),5e3),void $(':input[id="btnSave"]').prop("disabled",!0);$(':input[id="btnSave"]').prop("disabled",!1),e.setColor(t),$("#invoiceColor").val(t);var n=$("#invoiceTemplateId").val(),r=[{invColor:t,companyName:$("#companyName").val(),companyAddress:$("#companyAddress").val(),companyPhone:$("#companyPhoneNumber").val()}],a=prepareTemplateRender("#"+n,r);$("#editorContent").html(a)}))}(),null!==e){var n=$("#invoiceColor").val();if(null!=n){e.setColor(n);var r=$("#invoiceTemplateId").val(),a=[{invColor:n,companyName:$("#companyName").val(),companyAddress:$("#companyAddress").val(),companyPhone:$("#companyPhoneNumber").val()}],i=prepareTemplateRender("#"+r,a);$("#editorContent").html(i)}}if($("#invoiceTemplateId").length){t($("#invoiceTemplateId").val(),$("#invoiceTemplateId").select2().find(":selected").data("color"))}}));var e=null;function t(t,n){var r=[{invColor:n,companyName:$("#companyName").val(),companyAddress:$("#companyAddress").val(),companyPhone:$("#companyPhoneNumber").val()}],a=prepareTemplateRender("#"+t,r);$("#invoiceColor").val(n),$("#editorContent").html(a),setTimeout((function(){e.setColor(n)}),200)}listenChange("#invoiceTemplateId",(function(){t($(this).val(),$(this).select2().find(":selected").data("color"))}))})(),(()=>{function e(t){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(t)}function t(t,n,r){return(n=function(t){var n=function(t,n){if("object"!=e(t)||!t)return t;var r=t[Symbol.toPrimitive];if(void 0!==r){var a=r.call(t,n||"default");if("object"!=e(a))return a;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===n?String:Number)(t)}(t,"string");return"symbol"==e(n)?n:n+""}(n))in t?Object.defineProperty(t,n,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[n]=r,t}document.addEventListener("turbo:load",(function(){if(r("#dateRangePickerForClient"),!$("#invoices-tab").length)return!1;var e=$("#clientActiveTab").val();$('.nav-item button[data-bs-target="#'+e+'"]').click()}));var n=null;function r(e){if(!$(e).length)return!1;n=$(e),startDate=moment().subtract(100,"years"),endDate=moment(),a(startDate,endDate);var r=moment().startOf("month").subtract(1,"days");function a(e,t){n.val(e.format("DD/MM/YYYY")+" - "+t.format("DD/MM/YYYY"))}n.daterangepicker({startDate,endDate,opens:"left",showDropdowns:!0,autoUpdateInput:!1,locale:{customRangeLabel:Lang.get("js.custom"),applyLabel:Lang.get("js.apply"),cancelLabel:Lang.get("js.cancel"),fromLabel:Lang.get("js.from"),toLabel:Lang.get("js.to"),monthNames:[Lang.get("js.jan"),Lang.get("js.feb"),Lang.get("js.mar"),Lang.get("js.apr"),Lang.get("js.may"),Lang.get("js.jun"),Lang.get("js.jul"),Lang.get("js.aug"),Lang.get("js.sep"),Lang.get("js.oct"),Lang.get("js.nov"),Lang.get("js.dec")],daysOfWeek:[Lang.get("js.sun"),Lang.get("js.mon"),Lang.get("js.tue"),Lang.get("js.wed"),Lang.get("js.thu"),Lang.get("js.fri"),Lang.get("js.sat")]},ranges:t(t(t(t(t(t(t({},Lang.get("js.all"),[moment().subtract(100,"years"),moment()]),Lang.get("js.today"),[moment(),moment()]),Lang.get("js.this_week"),[moment().startOf("week"),moment().endOf("week")]),Lang.get("js.last_week"),[moment().startOf("week").subtract(7,"days"),moment().startOf("week").subtract(1,"days")]),Lang.get("js.last_30_days"),[moment().subtract(29,"days"),moment()]),Lang.get("js.this_month"),[moment().startOf("month"),moment().endOf("month")]),Lang.get("js.last_month"),[r.clone().startOf("month"),r.clone().endOf("month")])},a),n.on("apply.daterangepicker",(function(e,t){startDate=t.startDate.format("YYYY-MM-D"),endDate=t.endDate.format("YYYY-MM-D"),Livewire.dispatch("changeDateRangeFilter",[startDate,endDate])}))}listenClick("#resetClientInvoiceFilter",(function(){$("#clientInvoiceStatus").val(7).trigger("change"),hideDropdownManually($("#clientInvoiceFilterBtn"),$(".dropdown-menu")),r("#dateRangePickerForClient");var e=moment().subtract(100,"years"),t=moment();Livewire.dispatch("changeDateRangeFilter",[e,t])}))})(),listenClick(".send-btn",(function(e){e.preventDefault();var t=$(e.currentTarget).data("id");swal({title:Lang.get("js.send_invoice")+" !",text:Lang.get("js.are_you_sure_send"),icon:"warning",buttons:[Lang.get("js.no_cancel"),Lang.get("js.yes_send")]}).then((function(e){e&&function(e,t){$.ajax({url:route("send-invoice",{invoice:e,status:t}),type:"post",dataType:"json",success:function(e){e.success&&window.location.reload(),swal.fire({icon:"success",title:"Send!",confirmButtonColor:"#009ef7",text:header+" has been sent.",timer:2e3})},error:function(e){swal.fire({title:"",text:e.responseJSON.message,confirmButtonColor:"#009ef7",icon:"error",timer:5e3})}})}(t,1)}))})),(()=>{function e(t){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(t)}function t(t,n,r){return(n=function(t){var n=function(t,n){if("object"!=e(t)||!t)return t;var r=t[Symbol.toPrimitive];if(void 0!==r){var a=r.call(t,n||"default");if("object"!=e(a))return a;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===n?String:Number)(t)}(t,"string");return"symbol"==e(n)?n:n+""}(n))in t?Object.defineProperty(t,n,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[n]=r,t}document.addEventListener("turbo:load",(function(){(function(){if(!select2NotExists("#invoice_id"))return!1;$("#invoice_id").hasClass("select2-hidden-accessible")&&$("#invoice_id .select2-container").remove();$("#invoice_id").select2({dropdownParent:$("#paymentModal")})})(),paymentDateFilter(),"#tblPayments"})),listenClick(".payment-delete-btn",(function(e){var t=$(e.currentTarget).attr("data-id");deleteItem(route("payments.destroy",t),Lang.get("js.payment"))})),listenClick(".addPayment",(function(){currentDateFormat;$.ajax({url:route("get-current-date-format"),type:"get",success:function(e){$("#payment_date").flatpickr({defaultDate:new Date,dateFormat:e,maxDate:new Date,locale:getUserLanguages}),$("#paymentModal").appendTo("body").modal("show")},error:function(e){displayErrorMessage(e.responseJSON.message)}}),setTimeout((function(){$("#invoice_id").select2({dropdownParent:$("#paymentModal")})}),200)})),listenHiddenBsModal("#paymentModal",(function(){$("#adminPaymentInvoiceId").val(null).trigger("change"),resetModalForm("#paymentForm")})),listenSubmit("#paymentForm",(function(e){if(e.preventDefault(),0==$("#payment_note").val().trim().length)return displayErrorMessage("Note field is Required"),!1;var t=$(this).find("#btnPay");setAdminBtnLoader(t),$.ajax({url:route("payments.store"),type:"POST",data:$(this).serialize(),success:function(e){e.success&&($("#paymentModal").modal("hide"),displaySuccessMessage(e.message),Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){setAdminBtnLoader(t)}})})),listenChange(".invoice",(function(){var e=$(this).val();if(isEmpty(e))return $("#due_amount").val(0),$("#paid_amount").val(0),!1;$.ajax({url:route("payments.get-invoiceAmount",e),type:"get",dataType:"json",success:function(e){e.success&&($(".invoice-currency-code").text(e.data.currencyCode),$("#due_amount").val(number_format(e.data.totalDueAmount)),$("#paid_amount").val(number_format(e.data.totalPaidAmount)))},error:function(e){displayErrorMessage(e.responseJSON.message)}})})),listenClick(".payment-edit-btn",(function(e){!function(e){$.ajax({url:route("payments.edit",e),type:"GET",beforeSend:function(){startLoader()},success:function(e){e.success&&($("#edit_invoice_id").val(e.data.invoice.invoice_id),$("#edit_amount").val(e.data.amount),$("#edit_payment_date").flatpickr({defaultDate:e.data.payment_date,dateFormat:currentDateFormat,maxDate:new Date,locale:getUserLanguages}),$(".edit-invoice-currency-code").text(e.data.currencyCode),$("#edit_payment_note").val(e.data.notes),$("#paymentId").val(e.data.id),$("#transactionId").val(e.data.payment_id),$("#invoice").val(e.data.invoice_id),$("#totalDue_amount").val(number_format(e.data.DueAmount.original.data.totalDueAmount)),$("#totalPaid_amount").val(number_format(e.data.DueAmount.original.data.totalPaidAmount)),$("#editPaymentModal").appendTo("body").modal("show"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader()}})}($(e.currentTarget).attr("data-id"))})),listenSubmit("#editPaymentForm",(function(e){if(e.preventDefault(),0==$("#edit_payment_note").val().trim().length)return displayErrorMessage("Note field is Required"),!1;var t=$("#paymentId").val();$.ajax({url:route("payments.update",{payment:t}),type:"put",data:$(this).serialize(),beforeSend:function(){startLoader()},success:function(e){e.success&&(displaySuccessMessage(e.message),Livewire.dispatch("refreshDatatable"),Livewire.dispatch("resetPageTable"),$("#editPaymentModal").modal("hide"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader()}})})),listenChange(".transaction-approve",(function(){var e=$(this).attr("data-id"),t=$(this).val();$.ajax({url:route("change-transaction-status",e),type:"GET",data:{id:e,status:t},success:function(e){displaySuccessMessage(e.message),setTimeout((function(){Turbo.visit(route("transactions.index"))}),1500)},error:function(e){displayErrorMessage(e.responseJSON.message)}})})),window.paymentDateFilter=function(){var e=moment().startOf("month"),n=moment().endOf("month");if($("#paymentDateFilter").length){var r=$("#paymentDateFilter");r.daterangepicker({startDate:e,endDate:n,showDropdowns:!0,locale:{customRangeLabel:Lang.get("js.custom"),applyLabel:Lang.get("js.apply"),cancelLabel:Lang.get("js.cancel"),fromLabel:Lang.get("js.from"),toLabel:Lang.get("js.to"),monthNames:[Lang.get("js.jan"),Lang.get("js.feb"),Lang.get("js.mar"),Lang.get("js.apr"),Lang.get("js.may"),Lang.get("js.jun"),Lang.get("js.jul"),Lang.get("js.aug"),Lang.get("js.sep"),Lang.get("js.oct"),Lang.get("js.nov"),Lang.get("js.dec")],daysOfWeek:[Lang.get("js.sun"),Lang.get("js.mon"),Lang.get("js.tue"),Lang.get("js.wed"),Lang.get("js.thu"),Lang.get("js.fri"),Lang.get("js.sat")]},ranges:t(t(t(t(t(t({},Lang.get("js.today"),[moment(),moment()]),Lang.get("js.yesterday"),[moment().subtract(1,"days"),moment().subtract(1,"days")]),Lang.get("js.last_7_days"),[moment().subtract(6,"days"),moment()]),Lang.get("js.last_30_days"),[moment().subtract(29,"days"),moment()]),Lang.get("js.this_month"),[moment().startOf("month"),moment().endOf("month")]),Lang.get("js.last_month"),[moment().subtract(1,"month").startOf("month"),moment().subtract(1,"month").endOf("month")])},a),a(e,n),r.on("apply.daterangepicker",(function(e,t){isPickerApply=!0,startDate=t.startDate.format("YYYY-MM-DD"),endDate=t.endDate.format("YYYY-MM-DD"),Livewire.dispatch("dateFilter",[startDate,endDate])}))}function a(e,t){Livewire.dispatch("dateFilter",[e.format("MM/DD/YYYY"),t.format("MM/DD/YYYY")]),$("#paymentDateFilter").val(e.format("MM/DD/YYYY")+" - "+t.format("MM/DD/YYYY"))}},listenClick("#adminPaymentExcelExport",(function(e){e.preventDefault(),$.ajax({url:route("admin.paymentsExcel"),type:"GET",data:{date:$("#paymentDateFilter").val()},xhrFields:{responseType:"blob"},success:function(e){var t=new Blob([e]),n=document.createElement("a");n.href=window.URL.createObjectURL(t),n.download="Payment-Excel.xlsx",n.click()},error:function(e){console.log(e)}})})),listenClick("#adminPaymentPdfExport",(function(e){e.preventDefault(),$.ajax({url:route("admin.payments.pdf"),type:"GET",data:{date:$("#paymentDateFilter").val()},xhrFields:{responseType:"blob"},success:function(e){var t=new Blob([e]),n=document.createElement("a");n.href=window.URL.createObjectURL(t),n.download="payments.pdf",n.click()},error:function(e){console.log(e)}})}))})(),document.addEventListener("turbo:load",(function(){var e=document.getElementById("gotoFullScreen");e&&e.addEventListener("click",(function(){window.innerHeight==screen.height&&document.exitFullscreen(),document.body.requestFullscreen(),$("body").attr({style:"height: 100%; overflow: auto;"})}),!1)})),document.addEventListener("turbo:load",(function(){!function(){if(!select2NotExists("#status_filter"))return!1;removeSelect2Container(["#status_filter"]),$("#status_filter").select2({placeholder:"All"}),""==$("#status").val()&&$("#status_filter").val(5).trigger("change")}()})),listenClick("#resetFilter",(function(){$("#status_filter").val(5).trigger("change"),$("#status_filter").select2({placeholder:"All"})})),listenClick(".client-quote-delete-btn",(function(e){e.preventDefault();var t=$(this).attr("data-id");deleteItem(route("client.quotes.destroy",t),Lang.get("js.quote"))})),(()=>{var e=null,t="";document.addEventListener("turbo:load",(function(){$('input:text:not([readonly="readonly"])').first().blur(),function(){if(!select2NotExists(".client-product-quote"))return!1;removeSelect2Container([".client-product-quote"]),$(".client-product-quote").select2({tags:!0}),$(".tax").select2({placeholder:"Select TAX"}),$("#client_id").focus();var e=moment(new Date).add(1,"days").format(convertToMomentFormat(currentDateFormat)),n=$("#clientQuoteDueDate").flatpickr({defaultDate:e,dateFormat:currentDateFormat,locale:getUserLanguages}),r=$("#clientEditQuoteDueDate").flatpickr({dateFormat:currentDateFormat,defaultDate:moment($("#clientEditQuoteDueDate").val()).format(convertToMomentFormat(currentDateFormat)),locale:getUserLanguages});$("#client_quote_date").flatpickr({defaultDate:moment(new Date).format(convertToMomentFormat(currentDateFormat)),dateFormat:currentDateFormat,locale:getUserLanguages,onChange:function(){var e;e="d.m.Y"==currentDateFormat||"d/m/Y"==currentDateFormat||"d-m-Y"==currentDateFormat?moment($("#client_quote_date").val(),t).add(1,"days").format(t):moment($("#client_quote_date").val()).add(1,"days").format(convertToMomentFormat(currentDateFormat)),void 0!==n&&n.set("minDate",e)},onReady:function(){void 0!==n&&n.set("minDate",e)}}),$("#clientEditQuoteDate").flatpickr({dateFormat:currentDateFormat,defaultDate:moment($("#clientEditQuoteDate").val()).format(convertToMomentFormat(currentDateFormat)),locale:getUserLanguages,onChange:function(){var e;e="d.m.Y"==currentDateFormat||"d/m/Y"==currentDateFormat||"d-m-Y"==currentDateFormat?moment($("#clientEditQuoteDate").val(),t).add(1,"days").format(t):moment($("#clientEditQuoteDate").val()).add(1,"days").format(convertToMomentFormat(currentDateFormat)),void 0!==r&&r.set("minDate",e)},onReady:function(){var e;e="d.m.Y"==currentDateFormat||"d/m/Y"==currentDateFormat||"d-m-Y"==currentDateFormat?moment($("#clientEditQuoteDate").val(),convertToMomentFormat(currentDateFormat)).add(1,"days").format(convertToMomentFormat(currentDateFormat)):moment($("#clientEditQuoteDate").val()).add(1,"days").format(convertToMomentFormat(currentDateFormat)),void 0!==r&&r.set("minDate",e)}})}(),function(){if(!$("#discountType").length)return;$("#discountType,#status,#templateId").select2()}(),t=convertToMomentFormat(currentDateFormat),1==$("#quoteNoteData").val()||1==$("#quoteTermData").val()?($("#quoteAddNote").hide(),$("#quoteRemoveNote").show(),$("#quoteNoteAdd").show(),$("#quoteTermRemove").show()):($("#quoteRemoveNote").hide(),$("#quoteNoteAdd").hide(),$("#quoteTermRemove").hide());1==$("#quoteRecurring").val()?$(".recurring").show():$(".recurring").hide();$("#formData_recurring-1").prop("checked")&&$(".recurring").hide();0!=$("#discountType").val()?$("#discount").removeAttr("disabled"):$("#discount").attr("disabled","disabled");a()})),listenKeyup("#quoteId",(function(){return $("#quoteId").val(this.value.toUpperCase())})),listenClick("#quoteAddNote",(function(){$("#quoteAddNote").hide(),$("#quoteRemoveNote").show(),$("#quoteNoteAdd").show(),$("#quoteTermRemove").show()})),listenClick("#quoteRemoveNote",(function(){$("#quoteAddNote").show(),$("#quoteRemoveNote").hide(),$("#quoteNoteAdd").hide(),$("#quoteTermRemove").hide(),$("#quoteNote").val(""),$("#quoteTerm").val(""),$("#quoteAddNote").show()})),listenClick("#formData_recurring-0",(function(){$("#formData_recurring-0").prop("checked")?$(".recurring").show():$(".recurring").hide()})),listenClick("#formData_recurring-1",(function(){$("#formData_recurring-1").prop("checked")&&$(".recurring").hide()})),listenChange("#discountType",(function(){if(e=$(this).val(),$("#discount").val(0),1==e||2==e){if($("#discount").removeAttr("disabled"),2==e){var t=$("#discount").val();$("#discount").val(t.substring(0,2))}}else $("#discount").attr("disabled","disabled"),$("#discount").val(0),$("#quoteDiscountAmount").text("0");i()})),window.isNumberKey=function(e,t){var n=e.which?e.which:event.keyCode;return!((46!==n||-1!==$(t).val().indexOf("."))&&(n<48||n>57))},listenClick("#addClientQuoteItem",(function(){var e={products:JSON.parse($("#products").val())},t=prepareTemplateRender("#quotesItemTemplate",e);$(".quote-item-container").append(t),$(".productId").select2({placeholder:Lang.get("js.select_product_or_enter_free_text"),tags:!0}),n()}));var n=function(){var e=1;if($(".quote-item-container>tr").each((function(){$(this).find(".item-number").text(e),e++})),e-1==0){var t={products:JSON.parse($("#products").val())},n=prepareTemplateRender("#quotesItemTemplate",t);$(".quote-item-container").append(n),$(".productId").select2()}};listenClick(".delete-quote-item",(function(){$(this).parents("tr").remove(),n(),a()})),listenChange(".client-product-quote",(function(){var e=$(this).val();isEmpty(e)&&(e=0);var t=$(this);$.ajax({url:route("quotes.get-product",e),type:"get",dataType:"json",success:function(n){if(n.success){var r="";$.each(n.data,(function(t,n){t===e&&(r=n)})),t.parent().parent().find("td .price-quote").val(r),t.parent().parent().find("td .qty-quote").val(1),$(".price-quote").trigger("keyup")}},error:function(e){displayErrorMessage(e.responseJSON.message)}})})),listenKeyup(".qty-quote",(function(){var e=parseInt($(this).val()),t=$(this).parent().siblings().find(".price-quote").val();t=parseFloat(removeCommas(t));var n=r(e,t);$(this).parent().siblings(".quote-item-total").text(addCommas(n.toFixed(2).toString())),a()})),listenKeyup(".price-quote",(function(){var e=$(this).val();e=parseFloat(removeCommas(e));var t=parseInt($(this).parent().siblings().find(".qty-quote").val()),n=r(t,e);$(this).parent().siblings(".quote-item-total").text(addCommas(n.toFixed(2).toString())),a()}));var r=function(e,t){return e>0&&t>0?e*t:0},a=function(){var e=0;$(".quote-item-container>tr").each((function(){var t=$(this).find(".quote-item-total").text();t=removeCommas(t),t=isEmpty($.trim(t))?0:parseFloat(t),e+=t})),e=parseFloat(e),isNaN(e)&&(e=0),$("#quoteTotal").text(addCommas(e.toFixed(2))),$("#quoteTotalAmount").val(e),i()},i=function(){var t=$("#discount").val();e=$("#discountType").val();var n=[],r=0;$(".quote-item-total").each((function(){n[r++]=$.trim(removeCommas($(this).text()))})),$.sum=function(e){var t=0;return $.each(e,(function(e,n){t+=+n})),t};var a=$.sum(n);$("#quoteTotal").text(number_format(a)),(isEmpty(t)||isEmpty(a))&&(t=0);var i=0,o=a-i;1==e?o=a-(i=t):2==e&&(o=a-(i=a*t/100)),$("#quoteFinalAmount").text(number_format(o)),$("#quoteTotalAmount").val(o.toFixed(2)),$("#quoteDiscountAmount").text(number_format(i))};listen("keyup","#discount",(function(){var t=$(this).val();if(2==e&&t>100)return displayErrorMessage("On Percentage you can only give maximum 100% discount"),$(this).val(t.slice(0,-1)),!1;i()})),listenClick("#saveAsDraftClientQuote",(function(e){e.preventDefault();var t=$(this).data("status"),n=document.getElementById("clientQuoteForm"),r=new FormData(n);r.append("status",t),screenLock(),$.ajax({url:route("client.quotes.store"),type:"POST",dataType:"json",data:r,processData:!1,contentType:!1,beforeSend:function(){startLoader()},success:function(e){displaySuccessMessage(e.message),Turbo.visit(route("client.quotes.index"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader(),screenUnLock()}})})),listenClick("#editSaveClientQuote",(function(e){e.preventDefault();var t=$(this).data("status"),n=$("#clientQuoteEditForm").serialize()+"&quoteStatus="+t;screenLock(),$.ajax({url:$("#clientQuoteUpdateUrl").val(),type:"PUT",dataType:"json",data:n,beforeSend:function(){startLoader()},success:function(e){displaySuccessMessage(e.message),Turbo.visit(route("client.quotes.index"))},error:function(e){displayErrorMessage(e.responseJSON.message)},complete:function(){stopLoader(),screenUnLock()}})}))})()})();
+      `, element.outerHTML);
+        }
+    }
+})();
+
+window.Turbo = Turbo;
+start();
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/flatpickr/dist/l10n/index.js":
+/*!***************************************************!*\
+  !*** ./node_modules/flatpickr/dist/l10n/index.js ***!
+  \***************************************************/
+/***/ (function(__unused_webpack_module, exports) {
+
+(function (global, factory) {
+     true ? factory(exports) :
+    0;
+}(this, (function (exports) { 'use strict';
+
+    /*! *****************************************************************************
+    Copyright (c) Microsoft Corporation.
+
+    Permission to use, copy, modify, and/or distribute this software for any
+    purpose with or without fee is hereby granted.
+
+    THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+    REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+    AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+    INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+    LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+    OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+    PERFORMANCE OF THIS SOFTWARE.
+    ***************************************************************************** */
+
+    var __assign = function() {
+        __assign = Object.assign || function __assign(t) {
+            for (var s, i = 1, n = arguments.length; i < n; i++) {
+                s = arguments[i];
+                for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+            }
+            return t;
+        };
+        return __assign.apply(this, arguments);
+    };
+
+    var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Arabic = {
+        weekdays: {
+            shorthand: ["أحد", "اثنين", "ثلاثاء", "أربعاء", "خميس", "جمعة", "سبت"],
+            longhand: [
+                "الأحد",
+                "الاثنين",
+                "الثلاثاء",
+                "الأربعاء",
+                "الخميس",
+                "الجمعة",
+                "السبت",
+            ],
+        },
+        months: {
+            shorthand: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+            longhand: [
+                "يناير",
+                "فبراير",
+                "مارس",
+                "أبريل",
+                "مايو",
+                "يونيو",
+                "يوليو",
+                "أغسطس",
+                "سبتمبر",
+                "أكتوبر",
+                "نوفمبر",
+                "ديسمبر",
+            ],
+        },
+        firstDayOfWeek: 6,
+        rangeSeparator: " إلى ",
+        weekAbbreviation: "Wk",
+        scrollTitle: "قم بالتمرير للزيادة",
+        toggleTitle: "اضغط للتبديل",
+        amPM: ["ص", "م"],
+        yearAriaLabel: "سنة",
+        monthAriaLabel: "شهر",
+        hourAriaLabel: "ساعة",
+        minuteAriaLabel: "دقيقة",
+        time_24hr: false,
+    };
+    fp.l10ns.ar = Arabic;
+    fp.l10ns;
+
+    var fp$1 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Austria = {
+        weekdays: {
+            shorthand: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+            longhand: [
+                "Sonntag",
+                "Montag",
+                "Dienstag",
+                "Mittwoch",
+                "Donnerstag",
+                "Freitag",
+                "Samstag",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jän",
+                "Feb",
+                "Mär",
+                "Apr",
+                "Mai",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dez",
+            ],
+            longhand: [
+                "Jänner",
+                "Februar",
+                "März",
+                "April",
+                "Mai",
+                "Juni",
+                "Juli",
+                "August",
+                "September",
+                "Oktober",
+                "November",
+                "Dezember",
+            ],
+        },
+        firstDayOfWeek: 1,
+        weekAbbreviation: "KW",
+        rangeSeparator: " bis ",
+        scrollTitle: "Zum Ändern scrollen",
+        toggleTitle: "Zum Umschalten klicken",
+        time_24hr: true,
+    };
+    fp$1.l10ns.at = Austria;
+    fp$1.l10ns;
+
+    var fp$2 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Azerbaijan = {
+        weekdays: {
+            shorthand: ["B.", "B.e.", "Ç.a.", "Ç.", "C.a.", "C.", "Ş."],
+            longhand: [
+                "Bazar",
+                "Bazar ertəsi",
+                "Çərşənbə axşamı",
+                "Çərşənbə",
+                "Cümə axşamı",
+                "Cümə",
+                "Şənbə",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Yan",
+                "Fev",
+                "Mar",
+                "Apr",
+                "May",
+                "İyn",
+                "İyl",
+                "Avq",
+                "Sen",
+                "Okt",
+                "Noy",
+                "Dek",
+            ],
+            longhand: [
+                "Yanvar",
+                "Fevral",
+                "Mart",
+                "Aprel",
+                "May",
+                "İyun",
+                "İyul",
+                "Avqust",
+                "Sentyabr",
+                "Oktyabr",
+                "Noyabr",
+                "Dekabr",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return ".";
+        },
+        rangeSeparator: " - ",
+        weekAbbreviation: "Hf",
+        scrollTitle: "Artırmaq üçün sürüşdürün",
+        toggleTitle: "Aç / Bağla",
+        amPM: ["GƏ", "GS"],
+        time_24hr: true,
+    };
+    fp$2.l10ns.az = Azerbaijan;
+    fp$2.l10ns;
+
+    var fp$3 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Belarusian = {
+        weekdays: {
+            shorthand: ["Нд", "Пн", "Аў", "Ср", "Чц", "Пт", "Сб"],
+            longhand: [
+                "Нядзеля",
+                "Панядзелак",
+                "Аўторак",
+                "Серада",
+                "Чацвер",
+                "Пятніца",
+                "Субота",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Сту",
+                "Лют",
+                "Сак",
+                "Кра",
+                "Тра",
+                "Чэр",
+                "Ліп",
+                "Жні",
+                "Вер",
+                "Кас",
+                "Ліс",
+                "Сне",
+            ],
+            longhand: [
+                "Студзень",
+                "Люты",
+                "Сакавік",
+                "Красавік",
+                "Травень",
+                "Чэрвень",
+                "Ліпень",
+                "Жнівень",
+                "Верасень",
+                "Кастрычнік",
+                "Лістапад",
+                "Снежань",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        rangeSeparator: " — ",
+        weekAbbreviation: "Тыд.",
+        scrollTitle: "Пракруціце для павелічэння",
+        toggleTitle: "Націсніце для пераключэння",
+        amPM: ["ДП", "ПП"],
+        yearAriaLabel: "Год",
+        time_24hr: true,
+    };
+    fp$3.l10ns.be = Belarusian;
+    fp$3.l10ns;
+
+    var fp$4 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Bosnian = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["Ned", "Pon", "Uto", "Sri", "Čet", "Pet", "Sub"],
+            longhand: [
+                "Nedjelja",
+                "Ponedjeljak",
+                "Utorak",
+                "Srijeda",
+                "Četvrtak",
+                "Petak",
+                "Subota",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Maj",
+                "Jun",
+                "Jul",
+                "Avg",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "Januar",
+                "Februar",
+                "Mart",
+                "April",
+                "Maj",
+                "Juni",
+                "Juli",
+                "Avgust",
+                "Septembar",
+                "Oktobar",
+                "Novembar",
+                "Decembar",
+            ],
+        },
+        time_24hr: true,
+    };
+    fp$4.l10ns.bs = Bosnian;
+    fp$4.l10ns;
+
+    var fp$5 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Bulgarian = {
+        weekdays: {
+            shorthand: ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+            longhand: [
+                "Неделя",
+                "Понеделник",
+                "Вторник",
+                "Сряда",
+                "Четвъртък",
+                "Петък",
+                "Събота",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Яну",
+                "Фев",
+                "Март",
+                "Апр",
+                "Май",
+                "Юни",
+                "Юли",
+                "Авг",
+                "Сеп",
+                "Окт",
+                "Ное",
+                "Дек",
+            ],
+            longhand: [
+                "Януари",
+                "Февруари",
+                "Март",
+                "Април",
+                "Май",
+                "Юни",
+                "Юли",
+                "Август",
+                "Септември",
+                "Октомври",
+                "Ноември",
+                "Декември",
+            ],
+        },
+        time_24hr: true,
+        firstDayOfWeek: 1,
+    };
+    fp$5.l10ns.bg = Bulgarian;
+    fp$5.l10ns;
+
+    var fp$6 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Bangla = {
+        weekdays: {
+            shorthand: ["রবি", "সোম", "মঙ্গল", "বুধ", "বৃহস্পতি", "শুক্র", "শনি"],
+            longhand: [
+                "রবিবার",
+                "সোমবার",
+                "মঙ্গলবার",
+                "বুধবার",
+                "বৃহস্পতিবার",
+                "শুক্রবার",
+                "শনিবার",
+            ],
+        },
+        months: {
+            shorthand: [
+                "জানু",
+                "ফেব্রু",
+                "মার্চ",
+                "এপ্রিল",
+                "মে",
+                "জুন",
+                "জুলাই",
+                "আগ",
+                "সেপ্টে",
+                "অক্টো",
+                "নভে",
+                "ডিসে",
+            ],
+            longhand: [
+                "জানুয়ারী",
+                "ফেব্রুয়ারী",
+                "মার্চ",
+                "এপ্রিল",
+                "মে",
+                "জুন",
+                "জুলাই",
+                "আগস্ট",
+                "সেপ্টেম্বর",
+                "অক্টোবর",
+                "নভেম্বর",
+                "ডিসেম্বর",
+            ],
+        },
+    };
+    fp$6.l10ns.bn = Bangla;
+    fp$6.l10ns;
+
+    var fp$7 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Catalan = {
+        weekdays: {
+            shorthand: ["Dg", "Dl", "Dt", "Dc", "Dj", "Dv", "Ds"],
+            longhand: [
+                "Diumenge",
+                "Dilluns",
+                "Dimarts",
+                "Dimecres",
+                "Dijous",
+                "Divendres",
+                "Dissabte",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Gen",
+                "Febr",
+                "Març",
+                "Abr",
+                "Maig",
+                "Juny",
+                "Jul",
+                "Ag",
+                "Set",
+                "Oct",
+                "Nov",
+                "Des",
+            ],
+            longhand: [
+                "Gener",
+                "Febrer",
+                "Març",
+                "Abril",
+                "Maig",
+                "Juny",
+                "Juliol",
+                "Agost",
+                "Setembre",
+                "Octubre",
+                "Novembre",
+                "Desembre",
+            ],
+        },
+        ordinal: function (nth) {
+            var s = nth % 100;
+            if (s > 3 && s < 21)
+                return "è";
+            switch (s % 10) {
+                case 1:
+                    return "r";
+                case 2:
+                    return "n";
+                case 3:
+                    return "r";
+                case 4:
+                    return "t";
+                default:
+                    return "è";
+            }
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " a ",
+        time_24hr: true,
+    };
+    fp$7.l10ns.cat = fp$7.l10ns.ca = Catalan;
+    fp$7.l10ns;
+
+    var fp$8 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Kurdish = {
+        weekdays: {
+            shorthand: [
+                "یەکشەممە",
+                "دووشەممە",
+                "سێشەممە",
+                "چوارشەممە",
+                "پێنجشەممە",
+                "هەینی",
+                "شەممە",
+            ],
+            longhand: [
+                "یەکشەممە",
+                "دووشەممە",
+                "سێشەممە",
+                "چوارشەممە",
+                "پێنجشەممە",
+                "هەینی",
+                "شەممە",
+            ],
+        },
+        months: {
+            shorthand: [
+                "ڕێبەندان",
+                "ڕەشەمە",
+                "نەورۆز",
+                "گوڵان",
+                "جۆزەردان",
+                "پووشپەڕ",
+                "گەلاوێژ",
+                "خەرمانان",
+                "ڕەزبەر",
+                "گەڵاڕێزان",
+                "سەرماوەز",
+                "بەفرانبار",
+            ],
+            longhand: [
+                "ڕێبەندان",
+                "ڕەشەمە",
+                "نەورۆز",
+                "گوڵان",
+                "جۆزەردان",
+                "پووشپەڕ",
+                "گەلاوێژ",
+                "خەرمانان",
+                "ڕەزبەر",
+                "گەڵاڕێزان",
+                "سەرماوەز",
+                "بەفرانبار",
+            ],
+        },
+        firstDayOfWeek: 6,
+        ordinal: function () {
+            return "";
+        },
+    };
+    fp$8.l10ns.ckb = Kurdish;
+    fp$8.l10ns;
+
+    var fp$9 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Czech = {
+        weekdays: {
+            shorthand: ["Ne", "Po", "Út", "St", "Čt", "Pá", "So"],
+            longhand: [
+                "Neděle",
+                "Pondělí",
+                "Úterý",
+                "Středa",
+                "Čtvrtek",
+                "Pátek",
+                "Sobota",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Led",
+                "Ún",
+                "Bře",
+                "Dub",
+                "Kvě",
+                "Čer",
+                "Čvc",
+                "Srp",
+                "Zář",
+                "Říj",
+                "Lis",
+                "Pro",
+            ],
+            longhand: [
+                "Leden",
+                "Únor",
+                "Březen",
+                "Duben",
+                "Květen",
+                "Červen",
+                "Červenec",
+                "Srpen",
+                "Září",
+                "Říjen",
+                "Listopad",
+                "Prosinec",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return ".";
+        },
+        rangeSeparator: " do ",
+        weekAbbreviation: "Týd.",
+        scrollTitle: "Rolujte pro změnu",
+        toggleTitle: "Přepnout dopoledne/odpoledne",
+        amPM: ["dop.", "odp."],
+        yearAriaLabel: "Rok",
+        time_24hr: true,
+    };
+    fp$9.l10ns.cs = Czech;
+    fp$9.l10ns;
+
+    var fp$a = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Welsh = {
+        weekdays: {
+            shorthand: ["Sul", "Llun", "Maw", "Mer", "Iau", "Gwe", "Sad"],
+            longhand: [
+                "Dydd Sul",
+                "Dydd Llun",
+                "Dydd Mawrth",
+                "Dydd Mercher",
+                "Dydd Iau",
+                "Dydd Gwener",
+                "Dydd Sadwrn",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Ion",
+                "Chwef",
+                "Maw",
+                "Ebr",
+                "Mai",
+                "Meh",
+                "Gorff",
+                "Awst",
+                "Medi",
+                "Hyd",
+                "Tach",
+                "Rhag",
+            ],
+            longhand: [
+                "Ionawr",
+                "Chwefror",
+                "Mawrth",
+                "Ebrill",
+                "Mai",
+                "Mehefin",
+                "Gorffennaf",
+                "Awst",
+                "Medi",
+                "Hydref",
+                "Tachwedd",
+                "Rhagfyr",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function (nth) {
+            if (nth === 1)
+                return "af";
+            if (nth === 2)
+                return "ail";
+            if (nth === 3 || nth === 4)
+                return "ydd";
+            if (nth === 5 || nth === 6)
+                return "ed";
+            if ((nth >= 7 && nth <= 10) ||
+                nth == 12 ||
+                nth == 15 ||
+                nth == 18 ||
+                nth == 20)
+                return "fed";
+            if (nth == 11 ||
+                nth == 13 ||
+                nth == 14 ||
+                nth == 16 ||
+                nth == 17 ||
+                nth == 19)
+                return "eg";
+            if (nth >= 21 && nth <= 39)
+                return "ain";
+            // Inconclusive.
+            return "";
+        },
+        time_24hr: true,
+    };
+    fp$a.l10ns.cy = Welsh;
+    fp$a.l10ns;
+
+    var fp$b = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Danish = {
+        weekdays: {
+            shorthand: ["søn", "man", "tir", "ons", "tors", "fre", "lør"],
+            longhand: [
+                "søndag",
+                "mandag",
+                "tirsdag",
+                "onsdag",
+                "torsdag",
+                "fredag",
+                "lørdag",
+            ],
+        },
+        months: {
+            shorthand: [
+                "jan",
+                "feb",
+                "mar",
+                "apr",
+                "maj",
+                "jun",
+                "jul",
+                "aug",
+                "sep",
+                "okt",
+                "nov",
+                "dec",
+            ],
+            longhand: [
+                "januar",
+                "februar",
+                "marts",
+                "april",
+                "maj",
+                "juni",
+                "juli",
+                "august",
+                "september",
+                "oktober",
+                "november",
+                "december",
+            ],
+        },
+        ordinal: function () {
+            return ".";
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " til ",
+        weekAbbreviation: "uge",
+        time_24hr: true,
+    };
+    fp$b.l10ns.da = Danish;
+    fp$b.l10ns;
+
+    var fp$c = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var German = {
+        weekdays: {
+            shorthand: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+            longhand: [
+                "Sonntag",
+                "Montag",
+                "Dienstag",
+                "Mittwoch",
+                "Donnerstag",
+                "Freitag",
+                "Samstag",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mär",
+                "Apr",
+                "Mai",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dez",
+            ],
+            longhand: [
+                "Januar",
+                "Februar",
+                "März",
+                "April",
+                "Mai",
+                "Juni",
+                "Juli",
+                "August",
+                "September",
+                "Oktober",
+                "November",
+                "Dezember",
+            ],
+        },
+        firstDayOfWeek: 1,
+        weekAbbreviation: "KW",
+        rangeSeparator: " bis ",
+        scrollTitle: "Zum Ändern scrollen",
+        toggleTitle: "Zum Umschalten klicken",
+        time_24hr: true,
+    };
+    fp$c.l10ns.de = German;
+    fp$c.l10ns;
+
+    var english = {
+        weekdays: {
+            shorthand: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+            longhand: [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December",
+            ],
+        },
+        daysInMonth: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+        firstDayOfWeek: 0,
+        ordinal: function (nth) {
+            var s = nth % 100;
+            if (s > 3 && s < 21)
+                return "th";
+            switch (s % 10) {
+                case 1:
+                    return "st";
+                case 2:
+                    return "nd";
+                case 3:
+                    return "rd";
+                default:
+                    return "th";
+            }
+        },
+        rangeSeparator: " to ",
+        weekAbbreviation: "Wk",
+        scrollTitle: "Scroll to increment",
+        toggleTitle: "Click to toggle",
+        amPM: ["AM", "PM"],
+        yearAriaLabel: "Year",
+        monthAriaLabel: "Month",
+        hourAriaLabel: "Hour",
+        minuteAriaLabel: "Minute",
+        time_24hr: false,
+    };
+
+    var fp$d = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Esperanto = {
+        firstDayOfWeek: 1,
+        rangeSeparator: " ĝis ",
+        weekAbbreviation: "Sem",
+        scrollTitle: "Rulumu por pligrandigi la valoron",
+        toggleTitle: "Klaku por ŝalti",
+        weekdays: {
+            shorthand: ["Dim", "Lun", "Mar", "Mer", "Ĵaŭ", "Ven", "Sab"],
+            longhand: [
+                "dimanĉo",
+                "lundo",
+                "mardo",
+                "merkredo",
+                "ĵaŭdo",
+                "vendredo",
+                "sabato",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Maj",
+                "Jun",
+                "Jul",
+                "Aŭg",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "januaro",
+                "februaro",
+                "marto",
+                "aprilo",
+                "majo",
+                "junio",
+                "julio",
+                "aŭgusto",
+                "septembro",
+                "oktobro",
+                "novembro",
+                "decembro",
+            ],
+        },
+        ordinal: function () {
+            return "-a";
+        },
+        time_24hr: true,
+    };
+    fp$d.l10ns.eo = Esperanto;
+    fp$d.l10ns;
+
+    var fp$e = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Spanish = {
+        weekdays: {
+            shorthand: ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"],
+            longhand: [
+                "Domingo",
+                "Lunes",
+                "Martes",
+                "Miércoles",
+                "Jueves",
+                "Viernes",
+                "Sábado",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Ene",
+                "Feb",
+                "Mar",
+                "Abr",
+                "May",
+                "Jun",
+                "Jul",
+                "Ago",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dic",
+            ],
+            longhand: [
+                "Enero",
+                "Febrero",
+                "Marzo",
+                "Abril",
+                "Mayo",
+                "Junio",
+                "Julio",
+                "Agosto",
+                "Septiembre",
+                "Octubre",
+                "Noviembre",
+                "Diciembre",
+            ],
+        },
+        ordinal: function () {
+            return "º";
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " a ",
+        time_24hr: true,
+    };
+    fp$e.l10ns.es = Spanish;
+    fp$e.l10ns;
+
+    var fp$f = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Estonian = {
+        weekdays: {
+            shorthand: ["P", "E", "T", "K", "N", "R", "L"],
+            longhand: [
+                "Pühapäev",
+                "Esmaspäev",
+                "Teisipäev",
+                "Kolmapäev",
+                "Neljapäev",
+                "Reede",
+                "Laupäev",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jaan",
+                "Veebr",
+                "Märts",
+                "Apr",
+                "Mai",
+                "Juuni",
+                "Juuli",
+                "Aug",
+                "Sept",
+                "Okt",
+                "Nov",
+                "Dets",
+            ],
+            longhand: [
+                "Jaanuar",
+                "Veebruar",
+                "Märts",
+                "Aprill",
+                "Mai",
+                "Juuni",
+                "Juuli",
+                "August",
+                "September",
+                "Oktoober",
+                "November",
+                "Detsember",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return ".";
+        },
+        weekAbbreviation: "Näd",
+        rangeSeparator: " kuni ",
+        scrollTitle: "Keri, et suurendada",
+        toggleTitle: "Klõpsa, et vahetada",
+        time_24hr: true,
+    };
+    fp$f.l10ns.et = Estonian;
+    fp$f.l10ns;
+
+    var fp$g = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Persian = {
+        weekdays: {
+            shorthand: ["یک", "دو", "سه", "چهار", "پنج", "جمعه", "شنبه"],
+            longhand: [
+                "یک‌شنبه",
+                "دوشنبه",
+                "سه‌شنبه",
+                "چهارشنبه",
+                "پنچ‌شنبه",
+                "جمعه",
+                "شنبه",
+            ],
+        },
+        months: {
+            shorthand: [
+                "ژانویه",
+                "فوریه",
+                "مارس",
+                "آوریل",
+                "مه",
+                "ژوئن",
+                "ژوئیه",
+                "اوت",
+                "سپتامبر",
+                "اکتبر",
+                "نوامبر",
+                "دسامبر",
+            ],
+            longhand: [
+                "ژانویه",
+                "فوریه",
+                "مارس",
+                "آوریل",
+                "مه",
+                "ژوئن",
+                "ژوئیه",
+                "اوت",
+                "سپتامبر",
+                "اکتبر",
+                "نوامبر",
+                "دسامبر",
+            ],
+        },
+        firstDayOfWeek: 6,
+        ordinal: function () {
+            return "";
+        },
+    };
+    fp$g.l10ns.fa = Persian;
+    fp$g.l10ns;
+
+    var fp$h = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Finnish = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["su", "ma", "ti", "ke", "to", "pe", "la"],
+            longhand: [
+                "sunnuntai",
+                "maanantai",
+                "tiistai",
+                "keskiviikko",
+                "torstai",
+                "perjantai",
+                "lauantai",
+            ],
+        },
+        months: {
+            shorthand: [
+                "tammi",
+                "helmi",
+                "maalis",
+                "huhti",
+                "touko",
+                "kesä",
+                "heinä",
+                "elo",
+                "syys",
+                "loka",
+                "marras",
+                "joulu",
+            ],
+            longhand: [
+                "tammikuu",
+                "helmikuu",
+                "maaliskuu",
+                "huhtikuu",
+                "toukokuu",
+                "kesäkuu",
+                "heinäkuu",
+                "elokuu",
+                "syyskuu",
+                "lokakuu",
+                "marraskuu",
+                "joulukuu",
+            ],
+        },
+        ordinal: function () {
+            return ".";
+        },
+        time_24hr: true,
+    };
+    fp$h.l10ns.fi = Finnish;
+    fp$h.l10ns;
+
+    var fp$i = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Faroese = {
+        weekdays: {
+            shorthand: ["Sun", "Mán", "Týs", "Mik", "Hós", "Frí", "Ley"],
+            longhand: [
+                "Sunnudagur",
+                "Mánadagur",
+                "Týsdagur",
+                "Mikudagur",
+                "Hósdagur",
+                "Fríggjadagur",
+                "Leygardagur",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Mai",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Des",
+            ],
+            longhand: [
+                "Januar",
+                "Februar",
+                "Mars",
+                "Apríl",
+                "Mai",
+                "Juni",
+                "Juli",
+                "August",
+                "Septembur",
+                "Oktobur",
+                "Novembur",
+                "Desembur",
+            ],
+        },
+        ordinal: function () {
+            return ".";
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " til ",
+        weekAbbreviation: "vika",
+        scrollTitle: "Rulla fyri at broyta",
+        toggleTitle: "Trýst fyri at skifta",
+        yearAriaLabel: "Ár",
+        time_24hr: true,
+    };
+    fp$i.l10ns.fo = Faroese;
+    fp$i.l10ns;
+
+    var fp$j = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var French = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["dim", "lun", "mar", "mer", "jeu", "ven", "sam"],
+            longhand: [
+                "dimanche",
+                "lundi",
+                "mardi",
+                "mercredi",
+                "jeudi",
+                "vendredi",
+                "samedi",
+            ],
+        },
+        months: {
+            shorthand: [
+                "janv",
+                "févr",
+                "mars",
+                "avr",
+                "mai",
+                "juin",
+                "juil",
+                "août",
+                "sept",
+                "oct",
+                "nov",
+                "déc",
+            ],
+            longhand: [
+                "janvier",
+                "février",
+                "mars",
+                "avril",
+                "mai",
+                "juin",
+                "juillet",
+                "août",
+                "septembre",
+                "octobre",
+                "novembre",
+                "décembre",
+            ],
+        },
+        ordinal: function (nth) {
+            if (nth > 1)
+                return "";
+            return "er";
+        },
+        rangeSeparator: " au ",
+        weekAbbreviation: "Sem",
+        scrollTitle: "Défiler pour augmenter la valeur",
+        toggleTitle: "Cliquer pour basculer",
+        time_24hr: true,
+    };
+    fp$j.l10ns.fr = French;
+    fp$j.l10ns;
+
+    var fp$k = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Greek = {
+        weekdays: {
+            shorthand: ["Κυ", "Δε", "Τρ", "Τε", "Πέ", "Πα", "Σά"],
+            longhand: [
+                "Κυριακή",
+                "Δευτέρα",
+                "Τρίτη",
+                "Τετάρτη",
+                "Πέμπτη",
+                "Παρασκευή",
+                "Σάββατο",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Ιαν",
+                "Φεβ",
+                "Μάρ",
+                "Απρ",
+                "Μάι",
+                "Ιούν",
+                "Ιούλ",
+                "Αύγ",
+                "Σεπ",
+                "Οκτ",
+                "Νοέ",
+                "Δεκ",
+            ],
+            longhand: [
+                "Ιανουάριος",
+                "Φεβρουάριος",
+                "Μάρτιος",
+                "Απρίλιος",
+                "Μάιος",
+                "Ιούνιος",
+                "Ιούλιος",
+                "Αύγουστος",
+                "Σεπτέμβριος",
+                "Οκτώβριος",
+                "Νοέμβριος",
+                "Δεκέμβριος",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        weekAbbreviation: "Εβδ",
+        rangeSeparator: " έως ",
+        scrollTitle: "Μετακυλήστε για προσαύξηση",
+        toggleTitle: "Κάντε κλικ για αλλαγή",
+        amPM: ["ΠΜ", "ΜΜ"],
+        yearAriaLabel: "χρόνος",
+        monthAriaLabel: "μήνας",
+        hourAriaLabel: "ώρα",
+        minuteAriaLabel: "λεπτό",
+    };
+    fp$k.l10ns.gr = Greek;
+    fp$k.l10ns;
+
+    var fp$l = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Hebrew = {
+        weekdays: {
+            shorthand: ["א", "ב", "ג", "ד", "ה", "ו", "ש"],
+            longhand: ["ראשון", "שני", "שלישי", "רביעי", "חמישי", "שישי", "שבת"],
+        },
+        months: {
+            shorthand: [
+                "ינו׳",
+                "פבר׳",
+                "מרץ",
+                "אפר׳",
+                "מאי",
+                "יוני",
+                "יולי",
+                "אוג׳",
+                "ספט׳",
+                "אוק׳",
+                "נוב׳",
+                "דצמ׳",
+            ],
+            longhand: [
+                "ינואר",
+                "פברואר",
+                "מרץ",
+                "אפריל",
+                "מאי",
+                "יוני",
+                "יולי",
+                "אוגוסט",
+                "ספטמבר",
+                "אוקטובר",
+                "נובמבר",
+                "דצמבר",
+            ],
+        },
+        rangeSeparator: " אל ",
+        time_24hr: true,
+    };
+    fp$l.l10ns.he = Hebrew;
+    fp$l.l10ns;
+
+    var fp$m = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Hindi = {
+        weekdays: {
+            shorthand: ["रवि", "सोम", "मंगल", "बुध", "गुरु", "शुक्र", "शनि"],
+            longhand: [
+                "रविवार",
+                "सोमवार",
+                "मंगलवार",
+                "बुधवार",
+                "गुरुवार",
+                "शुक्रवार",
+                "शनिवार",
+            ],
+        },
+        months: {
+            shorthand: [
+                "जन",
+                "फर",
+                "मार्च",
+                "अप्रेल",
+                "मई",
+                "जून",
+                "जूलाई",
+                "अग",
+                "सित",
+                "अक्ट",
+                "नव",
+                "दि",
+            ],
+            longhand: [
+                "जनवरी ",
+                "फरवरी",
+                "मार्च",
+                "अप्रेल",
+                "मई",
+                "जून",
+                "जूलाई",
+                "अगस्त ",
+                "सितम्बर",
+                "अक्टूबर",
+                "नवम्बर",
+                "दिसम्बर",
+            ],
+        },
+    };
+    fp$m.l10ns.hi = Hindi;
+    fp$m.l10ns;
+
+    var fp$n = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Croatian = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["Ned", "Pon", "Uto", "Sri", "Čet", "Pet", "Sub"],
+            longhand: [
+                "Nedjelja",
+                "Ponedjeljak",
+                "Utorak",
+                "Srijeda",
+                "Četvrtak",
+                "Petak",
+                "Subota",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Sij",
+                "Velj",
+                "Ožu",
+                "Tra",
+                "Svi",
+                "Lip",
+                "Srp",
+                "Kol",
+                "Ruj",
+                "Lis",
+                "Stu",
+                "Pro",
+            ],
+            longhand: [
+                "Siječanj",
+                "Veljača",
+                "Ožujak",
+                "Travanj",
+                "Svibanj",
+                "Lipanj",
+                "Srpanj",
+                "Kolovoz",
+                "Rujan",
+                "Listopad",
+                "Studeni",
+                "Prosinac",
+            ],
+        },
+        time_24hr: true,
+    };
+    fp$n.l10ns.hr = Croatian;
+    fp$n.l10ns;
+
+    var fp$o = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Hungarian = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["V", "H", "K", "Sz", "Cs", "P", "Szo"],
+            longhand: [
+                "Vasárnap",
+                "Hétfő",
+                "Kedd",
+                "Szerda",
+                "Csütörtök",
+                "Péntek",
+                "Szombat",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Már",
+                "Ápr",
+                "Máj",
+                "Jún",
+                "Júl",
+                "Aug",
+                "Szep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "Január",
+                "Február",
+                "Március",
+                "Április",
+                "Május",
+                "Június",
+                "Július",
+                "Augusztus",
+                "Szeptember",
+                "Október",
+                "November",
+                "December",
+            ],
+        },
+        ordinal: function () {
+            return ".";
+        },
+        weekAbbreviation: "Hét",
+        scrollTitle: "Görgessen",
+        toggleTitle: "Kattintson a váltáshoz",
+        rangeSeparator: " - ",
+        time_24hr: true,
+    };
+    fp$o.l10ns.hu = Hungarian;
+    fp$o.l10ns;
+
+    var fp$p = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Armenian = {
+        weekdays: {
+            shorthand: ["Կիր", "Երկ", "Երք", "Չրք", "Հնգ", "Ուրբ", "Շբթ"],
+            longhand: [
+                "Կիրակի",
+                "Եկուշաբթի",
+                "Երեքշաբթի",
+                "Չորեքշաբթի",
+                "Հինգշաբթի",
+                "Ուրբաթ",
+                "Շաբաթ",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Հնվ",
+                "Փտր",
+                "Մար",
+                "Ապր",
+                "Մայ",
+                "Հնս",
+                "Հլս",
+                "Օգս",
+                "Սեպ",
+                "Հոկ",
+                "Նմբ",
+                "Դեկ",
+            ],
+            longhand: [
+                "Հունվար",
+                "Փետրվար",
+                "Մարտ",
+                "Ապրիլ",
+                "Մայիս",
+                "Հունիս",
+                "Հուլիս",
+                "Օգոստոս",
+                "Սեպտեմբեր",
+                "Հոկտեմբեր",
+                "Նոյեմբեր",
+                "Դեկտեմբեր",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        rangeSeparator: " — ",
+        weekAbbreviation: "ՇԲՏ",
+        scrollTitle: "Ոլորեք՝ մեծացնելու համար",
+        toggleTitle: "Սեղմեք՝ փոխելու համար",
+        amPM: ["ՄԿ", "ԿՀ"],
+        yearAriaLabel: "Տարի",
+        monthAriaLabel: "Ամիս",
+        hourAriaLabel: "Ժամ",
+        minuteAriaLabel: "Րոպե",
+        time_24hr: true,
+    };
+    fp$p.l10ns.hy = Armenian;
+    fp$p.l10ns;
+
+    var fp$q = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Indonesian = {
+        weekdays: {
+            shorthand: ["Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"],
+            longhand: ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Mei",
+                "Jun",
+                "Jul",
+                "Agu",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Des",
+            ],
+            longhand: [
+                "Januari",
+                "Februari",
+                "Maret",
+                "April",
+                "Mei",
+                "Juni",
+                "Juli",
+                "Agustus",
+                "September",
+                "Oktober",
+                "November",
+                "Desember",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        time_24hr: true,
+        rangeSeparator: " - ",
+    };
+    fp$q.l10ns.id = Indonesian;
+    fp$q.l10ns;
+
+    var fp$r = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Icelandic = {
+        weekdays: {
+            shorthand: ["Sun", "Mán", "Þri", "Mið", "Fim", "Fös", "Lau"],
+            longhand: [
+                "Sunnudagur",
+                "Mánudagur",
+                "Þriðjudagur",
+                "Miðvikudagur",
+                "Fimmtudagur",
+                "Föstudagur",
+                "Laugardagur",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Maí",
+                "Jún",
+                "Júl",
+                "Ágú",
+                "Sep",
+                "Okt",
+                "Nóv",
+                "Des",
+            ],
+            longhand: [
+                "Janúar",
+                "Febrúar",
+                "Mars",
+                "Apríl",
+                "Maí",
+                "Júní",
+                "Júlí",
+                "Ágúst",
+                "September",
+                "Október",
+                "Nóvember",
+                "Desember",
+            ],
+        },
+        ordinal: function () {
+            return ".";
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " til ",
+        weekAbbreviation: "vika",
+        yearAriaLabel: "Ár",
+        time_24hr: true,
+    };
+    fp$r.l10ns.is = Icelandic;
+    fp$r.l10ns;
+
+    var fp$s = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Italian = {
+        weekdays: {
+            shorthand: ["Dom", "Lun", "Mar", "Mer", "Gio", "Ven", "Sab"],
+            longhand: [
+                "Domenica",
+                "Lunedì",
+                "Martedì",
+                "Mercoledì",
+                "Giovedì",
+                "Venerdì",
+                "Sabato",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Gen",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Mag",
+                "Giu",
+                "Lug",
+                "Ago",
+                "Set",
+                "Ott",
+                "Nov",
+                "Dic",
+            ],
+            longhand: [
+                "Gennaio",
+                "Febbraio",
+                "Marzo",
+                "Aprile",
+                "Maggio",
+                "Giugno",
+                "Luglio",
+                "Agosto",
+                "Settembre",
+                "Ottobre",
+                "Novembre",
+                "Dicembre",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () { return "°"; },
+        rangeSeparator: " al ",
+        weekAbbreviation: "Se",
+        scrollTitle: "Scrolla per aumentare",
+        toggleTitle: "Clicca per cambiare",
+        time_24hr: true,
+    };
+    fp$s.l10ns.it = Italian;
+    fp$s.l10ns;
+
+    var fp$t = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Japanese = {
+        weekdays: {
+            shorthand: ["日", "月", "火", "水", "木", "金", "土"],
+            longhand: [
+                "日曜日",
+                "月曜日",
+                "火曜日",
+                "水曜日",
+                "木曜日",
+                "金曜日",
+                "土曜日",
+            ],
+        },
+        months: {
+            shorthand: [
+                "1月",
+                "2月",
+                "3月",
+                "4月",
+                "5月",
+                "6月",
+                "7月",
+                "8月",
+                "9月",
+                "10月",
+                "11月",
+                "12月",
+            ],
+            longhand: [
+                "1月",
+                "2月",
+                "3月",
+                "4月",
+                "5月",
+                "6月",
+                "7月",
+                "8月",
+                "9月",
+                "10月",
+                "11月",
+                "12月",
+            ],
+        },
+        time_24hr: true,
+        rangeSeparator: " から ",
+        monthAriaLabel: "月",
+        amPM: ["午前", "午後"],
+        yearAriaLabel: "年",
+        hourAriaLabel: "時間",
+        minuteAriaLabel: "分",
+    };
+    fp$t.l10ns.ja = Japanese;
+    fp$t.l10ns;
+
+    var fp$u = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Georgian = {
+        weekdays: {
+            shorthand: ["კვ", "ორ", "სა", "ოთ", "ხუ", "პა", "შა"],
+            longhand: [
+                "კვირა",
+                "ორშაბათი",
+                "სამშაბათი",
+                "ოთხშაბათი",
+                "ხუთშაბათი",
+                "პარასკევი",
+                "შაბათი",
+            ],
+        },
+        months: {
+            shorthand: [
+                "იან",
+                "თებ",
+                "მარ",
+                "აპრ",
+                "მაი",
+                "ივნ",
+                "ივლ",
+                "აგვ",
+                "სექ",
+                "ოქტ",
+                "ნოე",
+                "დეკ",
+            ],
+            longhand: [
+                "იანვარი",
+                "თებერვალი",
+                "მარტი",
+                "აპრილი",
+                "მაისი",
+                "ივნისი",
+                "ივლისი",
+                "აგვისტო",
+                "სექტემბერი",
+                "ოქტომბერი",
+                "ნოემბერი",
+                "დეკემბერი",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        rangeSeparator: " — ",
+        weekAbbreviation: "კვ.",
+        scrollTitle: "დასქროლეთ გასადიდებლად",
+        toggleTitle: "დააკლიკეთ გადართვისთვის",
+        amPM: ["AM", "PM"],
+        yearAriaLabel: "წელი",
+        time_24hr: true,
+    };
+    fp$u.l10ns.ka = Georgian;
+    fp$u.l10ns;
+
+    var fp$v = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Korean = {
+        weekdays: {
+            shorthand: ["일", "월", "화", "수", "목", "금", "토"],
+            longhand: [
+                "일요일",
+                "월요일",
+                "화요일",
+                "수요일",
+                "목요일",
+                "금요일",
+                "토요일",
+            ],
+        },
+        months: {
+            shorthand: [
+                "1월",
+                "2월",
+                "3월",
+                "4월",
+                "5월",
+                "6월",
+                "7월",
+                "8월",
+                "9월",
+                "10월",
+                "11월",
+                "12월",
+            ],
+            longhand: [
+                "1월",
+                "2월",
+                "3월",
+                "4월",
+                "5월",
+                "6월",
+                "7월",
+                "8월",
+                "9월",
+                "10월",
+                "11월",
+                "12월",
+            ],
+        },
+        ordinal: function () {
+            return "일";
+        },
+        rangeSeparator: " ~ ",
+        amPM: ["오전", "오후"],
+    };
+    fp$v.l10ns.ko = Korean;
+    fp$v.l10ns;
+
+    var fp$w = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Khmer = {
+        weekdays: {
+            shorthand: ["អាទិត្យ", "ចន្ទ", "អង្គារ", "ពុធ", "ព្រហស.", "សុក្រ", "សៅរ៍"],
+            longhand: [
+                "អាទិត្យ",
+                "ចន្ទ",
+                "អង្គារ",
+                "ពុធ",
+                "ព្រហស្បតិ៍",
+                "សុក្រ",
+                "សៅរ៍",
+            ],
+        },
+        months: {
+            shorthand: [
+                "មករា",
+                "កុម្ភះ",
+                "មីនា",
+                "មេសា",
+                "ឧសភា",
+                "មិថុនា",
+                "កក្កដា",
+                "សីហា",
+                "កញ្ញា",
+                "តុលា",
+                "វិច្ឆិកា",
+                "ធ្នូ",
+            ],
+            longhand: [
+                "មករា",
+                "កុម្ភះ",
+                "មីនា",
+                "មេសា",
+                "ឧសភា",
+                "មិថុនា",
+                "កក្កដា",
+                "សីហា",
+                "កញ្ញា",
+                "តុលា",
+                "វិច្ឆិកា",
+                "ធ្នូ",
+            ],
+        },
+        ordinal: function () {
+            return "";
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " ដល់ ",
+        weekAbbreviation: "សប្តាហ៍",
+        scrollTitle: "រំកិលដើម្បីបង្កើន",
+        toggleTitle: "ចុចដើម្បីផ្លាស់ប្ដូរ",
+        yearAriaLabel: "ឆ្នាំ",
+        time_24hr: true,
+    };
+    fp$w.l10ns.km = Khmer;
+    fp$w.l10ns;
+
+    var fp$x = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Kazakh = {
+        weekdays: {
+            shorthand: ["Жс", "Дс", "Сc", "Ср", "Бс", "Жм", "Сб"],
+            longhand: [
+                "Жексенбi",
+                "Дүйсенбi",
+                "Сейсенбi",
+                "Сәрсенбi",
+                "Бейсенбi",
+                "Жұма",
+                "Сенбi",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Қаң",
+                "Ақп",
+                "Нау",
+                "Сәу",
+                "Мам",
+                "Мау",
+                "Шiл",
+                "Там",
+                "Қыр",
+                "Қаз",
+                "Қар",
+                "Жел",
+            ],
+            longhand: [
+                "Қаңтар",
+                "Ақпан",
+                "Наурыз",
+                "Сәуiр",
+                "Мамыр",
+                "Маусым",
+                "Шiлде",
+                "Тамыз",
+                "Қыркүйек",
+                "Қазан",
+                "Қараша",
+                "Желтоқсан",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        rangeSeparator: " — ",
+        weekAbbreviation: "Апта",
+        scrollTitle: "Үлкейту үшін айналдырыңыз",
+        toggleTitle: "Ауыстыру үшін басыңыз",
+        amPM: ["ТД", "ТК"],
+        yearAriaLabel: "Жыл",
+    };
+    fp$x.l10ns.kz = Kazakh;
+    fp$x.l10ns;
+
+    var fp$y = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Lithuanian = {
+        weekdays: {
+            shorthand: ["S", "Pr", "A", "T", "K", "Pn", "Š"],
+            longhand: [
+                "Sekmadienis",
+                "Pirmadienis",
+                "Antradienis",
+                "Trečiadienis",
+                "Ketvirtadienis",
+                "Penktadienis",
+                "Šeštadienis",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Sau",
+                "Vas",
+                "Kov",
+                "Bal",
+                "Geg",
+                "Bir",
+                "Lie",
+                "Rgp",
+                "Rgs",
+                "Spl",
+                "Lap",
+                "Grd",
+            ],
+            longhand: [
+                "Sausis",
+                "Vasaris",
+                "Kovas",
+                "Balandis",
+                "Gegužė",
+                "Birželis",
+                "Liepa",
+                "Rugpjūtis",
+                "Rugsėjis",
+                "Spalis",
+                "Lapkritis",
+                "Gruodis",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "-a";
+        },
+        rangeSeparator: " iki ",
+        weekAbbreviation: "Sav",
+        scrollTitle: "Keisti laiką pelės rateliu",
+        toggleTitle: "Perjungti laiko formatą",
+        time_24hr: true,
+    };
+    fp$y.l10ns.lt = Lithuanian;
+    fp$y.l10ns;
+
+    var fp$z = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Latvian = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["Sv", "Pr", "Ot", "Tr", "Ce", "Pk", "Se"],
+            longhand: [
+                "Svētdiena",
+                "Pirmdiena",
+                "Otrdiena",
+                "Trešdiena",
+                "Ceturtdiena",
+                "Piektdiena",
+                "Sestdiena",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Mai",
+                "Jūn",
+                "Jūl",
+                "Aug",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "Janvāris",
+                "Februāris",
+                "Marts",
+                "Aprīlis",
+                "Maijs",
+                "Jūnijs",
+                "Jūlijs",
+                "Augusts",
+                "Septembris",
+                "Oktobris",
+                "Novembris",
+                "Decembris",
+            ],
+        },
+        rangeSeparator: " līdz ",
+        time_24hr: true,
+    };
+    fp$z.l10ns.lv = Latvian;
+    fp$z.l10ns;
+
+    var fp$A = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Macedonian = {
+        weekdays: {
+            shorthand: ["Не", "По", "Вт", "Ср", "Че", "Пе", "Са"],
+            longhand: [
+                "Недела",
+                "Понеделник",
+                "Вторник",
+                "Среда",
+                "Четврток",
+                "Петок",
+                "Сабота",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Јан",
+                "Фев",
+                "Мар",
+                "Апр",
+                "Мај",
+                "Јун",
+                "Јул",
+                "Авг",
+                "Сеп",
+                "Окт",
+                "Ное",
+                "Дек",
+            ],
+            longhand: [
+                "Јануари",
+                "Февруари",
+                "Март",
+                "Април",
+                "Мај",
+                "Јуни",
+                "Јули",
+                "Август",
+                "Септември",
+                "Октомври",
+                "Ноември",
+                "Декември",
+            ],
+        },
+        firstDayOfWeek: 1,
+        weekAbbreviation: "Нед.",
+        rangeSeparator: " до ",
+        time_24hr: true,
+    };
+    fp$A.l10ns.mk = Macedonian;
+    fp$A.l10ns;
+
+    var fp$B = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Mongolian = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["Да", "Мя", "Лх", "Пү", "Ба", "Бя", "Ня"],
+            longhand: ["Даваа", "Мягмар", "Лхагва", "Пүрэв", "Баасан", "Бямба", "Ням"],
+        },
+        months: {
+            shorthand: [
+                "1-р сар",
+                "2-р сар",
+                "3-р сар",
+                "4-р сар",
+                "5-р сар",
+                "6-р сар",
+                "7-р сар",
+                "8-р сар",
+                "9-р сар",
+                "10-р сар",
+                "11-р сар",
+                "12-р сар",
+            ],
+            longhand: [
+                "Нэгдүгээр сар",
+                "Хоёрдугаар сар",
+                "Гуравдугаар сар",
+                "Дөрөвдүгээр сар",
+                "Тавдугаар сар",
+                "Зургаадугаар сар",
+                "Долдугаар сар",
+                "Наймдугаар сар",
+                "Есдүгээр сар",
+                "Аравдугаар сар",
+                "Арваннэгдүгээр сар",
+                "Арванхоёрдугаар сар",
+            ],
+        },
+        rangeSeparator: "-с ",
+        time_24hr: true,
+    };
+    fp$B.l10ns.mn = Mongolian;
+    fp$B.l10ns;
+
+    var fp$C = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Malaysian = {
+        weekdays: {
+            shorthand: ["Aha", "Isn", "Sel", "Rab", "Kha", "Jum", "Sab"],
+            longhand: ["Ahad", "Isnin", "Selasa", "Rabu", "Khamis", "Jumaat", "Sabtu"],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mac",
+                "Apr",
+                "Mei",
+                "Jun",
+                "Jul",
+                "Ogo",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dis",
+            ],
+            longhand: [
+                "Januari",
+                "Februari",
+                "Mac",
+                "April",
+                "Mei",
+                "Jun",
+                "Julai",
+                "Ogos",
+                "September",
+                "Oktober",
+                "November",
+                "Disember",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+    };
+    fp$C.l10ns;
+
+    var fp$D = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Burmese = {
+        weekdays: {
+            shorthand: ["နွေ", "လာ", "ဂါ", "ဟူး", "ကြာ", "သော", "နေ"],
+            longhand: [
+                "တနင်္ဂနွေ",
+                "တနင်္လာ",
+                "အင်္ဂါ",
+                "ဗုဒ္ဓဟူး",
+                "ကြာသပတေး",
+                "သောကြာ",
+                "စနေ",
+            ],
+        },
+        months: {
+            shorthand: [
+                "ဇန်",
+                "ဖေ",
+                "မတ်",
+                "ပြီ",
+                "မေ",
+                "ဇွန်",
+                "လိုင်",
+                "သြ",
+                "စက်",
+                "အောက်",
+                "နို",
+                "ဒီ",
+            ],
+            longhand: [
+                "ဇန်နဝါရီ",
+                "ဖေဖော်ဝါရီ",
+                "မတ်",
+                "ဧပြီ",
+                "မေ",
+                "ဇွန်",
+                "ဇူလိုင်",
+                "သြဂုတ်",
+                "စက်တင်ဘာ",
+                "အောက်တိုဘာ",
+                "နိုဝင်ဘာ",
+                "ဒီဇင်ဘာ",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        time_24hr: true,
+    };
+    fp$D.l10ns.my = Burmese;
+    fp$D.l10ns;
+
+    var fp$E = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Dutch = {
+        weekdays: {
+            shorthand: ["zo", "ma", "di", "wo", "do", "vr", "za"],
+            longhand: [
+                "zondag",
+                "maandag",
+                "dinsdag",
+                "woensdag",
+                "donderdag",
+                "vrijdag",
+                "zaterdag",
+            ],
+        },
+        months: {
+            shorthand: [
+                "jan",
+                "feb",
+                "mrt",
+                "apr",
+                "mei",
+                "jun",
+                "jul",
+                "aug",
+                "sept",
+                "okt",
+                "nov",
+                "dec",
+            ],
+            longhand: [
+                "januari",
+                "februari",
+                "maart",
+                "april",
+                "mei",
+                "juni",
+                "juli",
+                "augustus",
+                "september",
+                "oktober",
+                "november",
+                "december",
+            ],
+        },
+        firstDayOfWeek: 1,
+        weekAbbreviation: "wk",
+        rangeSeparator: " t/m ",
+        scrollTitle: "Scroll voor volgende / vorige",
+        toggleTitle: "Klik om te wisselen",
+        time_24hr: true,
+        ordinal: function (nth) {
+            if (nth === 1 || nth === 8 || nth >= 20)
+                return "ste";
+            return "de";
+        },
+    };
+    fp$E.l10ns.nl = Dutch;
+    fp$E.l10ns;
+
+    var fp$F = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var NorwegianNynorsk = {
+        weekdays: {
+            shorthand: ["Sø.", "Må.", "Ty.", "On.", "To.", "Fr.", "La."],
+            longhand: [
+                "Søndag",
+                "Måndag",
+                "Tysdag",
+                "Onsdag",
+                "Torsdag",
+                "Fredag",
+                "Laurdag",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mars",
+                "Apr",
+                "Mai",
+                "Juni",
+                "Juli",
+                "Aug",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Des",
+            ],
+            longhand: [
+                "Januar",
+                "Februar",
+                "Mars",
+                "April",
+                "Mai",
+                "Juni",
+                "Juli",
+                "August",
+                "September",
+                "Oktober",
+                "November",
+                "Desember",
+            ],
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " til ",
+        weekAbbreviation: "Veke",
+        scrollTitle: "Scroll for å endre",
+        toggleTitle: "Klikk for å veksle",
+        time_24hr: true,
+        ordinal: function () {
+            return ".";
+        },
+    };
+    fp$F.l10ns.nn = NorwegianNynorsk;
+    fp$F.l10ns;
+
+    var fp$G = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Norwegian = {
+        weekdays: {
+            shorthand: ["Søn", "Man", "Tir", "Ons", "Tor", "Fre", "Lør"],
+            longhand: [
+                "Søndag",
+                "Mandag",
+                "Tirsdag",
+                "Onsdag",
+                "Torsdag",
+                "Fredag",
+                "Lørdag",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Mai",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Des",
+            ],
+            longhand: [
+                "Januar",
+                "Februar",
+                "Mars",
+                "April",
+                "Mai",
+                "Juni",
+                "Juli",
+                "August",
+                "September",
+                "Oktober",
+                "November",
+                "Desember",
+            ],
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " til ",
+        weekAbbreviation: "Uke",
+        scrollTitle: "Scroll for å endre",
+        toggleTitle: "Klikk for å veksle",
+        time_24hr: true,
+        ordinal: function () {
+            return ".";
+        },
+    };
+    fp$G.l10ns.no = Norwegian;
+    fp$G.l10ns;
+
+    var fp$H = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Punjabi = {
+        weekdays: {
+            shorthand: ["ਐਤ", "ਸੋਮ", "ਮੰਗਲ", "ਬੁੱਧ", "ਵੀਰ", "ਸ਼ੁੱਕਰ", "ਸ਼ਨਿੱਚਰ"],
+            longhand: [
+                "ਐਤਵਾਰ",
+                "ਸੋਮਵਾਰ",
+                "ਮੰਗਲਵਾਰ",
+                "ਬੁੱਧਵਾਰ",
+                "ਵੀਰਵਾਰ",
+                "ਸ਼ੁੱਕਰਵਾਰ",
+                "ਸ਼ਨਿੱਚਰਵਾਰ",
+            ],
+        },
+        months: {
+            shorthand: [
+                "ਜਨ",
+                "ਫ਼ਰ",
+                "ਮਾਰ",
+                "ਅਪ੍ਰੈ",
+                "ਮਈ",
+                "ਜੂਨ",
+                "ਜੁਲਾ",
+                "ਅਗ",
+                "ਸਤੰ",
+                "ਅਕ",
+                "ਨਵੰ",
+                "ਦਸੰ",
+            ],
+            longhand: [
+                "ਜਨਵਰੀ",
+                "ਫ਼ਰਵਰੀ",
+                "ਮਾਰਚ",
+                "ਅਪ੍ਰੈਲ",
+                "ਮਈ",
+                "ਜੂਨ",
+                "ਜੁਲਾਈ",
+                "ਅਗਸਤ",
+                "ਸਤੰਬਰ",
+                "ਅਕਤੂਬਰ",
+                "ਨਵੰਬਰ",
+                "ਦਸੰਬਰ",
+            ],
+        },
+        time_24hr: true,
+    };
+    fp$H.l10ns.pa = Punjabi;
+    fp$H.l10ns;
+
+    var fp$I = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Polish = {
+        weekdays: {
+            shorthand: ["Nd", "Pn", "Wt", "Śr", "Cz", "Pt", "So"],
+            longhand: [
+                "Niedziela",
+                "Poniedziałek",
+                "Wtorek",
+                "Środa",
+                "Czwartek",
+                "Piątek",
+                "Sobota",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Sty",
+                "Lut",
+                "Mar",
+                "Kwi",
+                "Maj",
+                "Cze",
+                "Lip",
+                "Sie",
+                "Wrz",
+                "Paź",
+                "Lis",
+                "Gru",
+            ],
+            longhand: [
+                "Styczeń",
+                "Luty",
+                "Marzec",
+                "Kwiecień",
+                "Maj",
+                "Czerwiec",
+                "Lipiec",
+                "Sierpień",
+                "Wrzesień",
+                "Październik",
+                "Listopad",
+                "Grudzień",
+            ],
+        },
+        rangeSeparator: " do ",
+        weekAbbreviation: "tydz.",
+        scrollTitle: "Przewiń, aby zwiększyć",
+        toggleTitle: "Kliknij, aby przełączyć",
+        firstDayOfWeek: 1,
+        time_24hr: true,
+        ordinal: function () {
+            return ".";
+        },
+    };
+    fp$I.l10ns.pl = Polish;
+    fp$I.l10ns;
+
+    var fp$J = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Portuguese = {
+        weekdays: {
+            shorthand: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
+            longhand: [
+                "Domingo",
+                "Segunda-feira",
+                "Terça-feira",
+                "Quarta-feira",
+                "Quinta-feira",
+                "Sexta-feira",
+                "Sábado",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Fev",
+                "Mar",
+                "Abr",
+                "Mai",
+                "Jun",
+                "Jul",
+                "Ago",
+                "Set",
+                "Out",
+                "Nov",
+                "Dez",
+            ],
+            longhand: [
+                "Janeiro",
+                "Fevereiro",
+                "Março",
+                "Abril",
+                "Maio",
+                "Junho",
+                "Julho",
+                "Agosto",
+                "Setembro",
+                "Outubro",
+                "Novembro",
+                "Dezembro",
+            ],
+        },
+        rangeSeparator: " até ",
+        time_24hr: true,
+    };
+    fp$J.l10ns.pt = Portuguese;
+    fp$J.l10ns;
+
+    var fp$K = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Romanian = {
+        weekdays: {
+            shorthand: ["Dum", "Lun", "Mar", "Mie", "Joi", "Vin", "Sâm"],
+            longhand: [
+                "Duminică",
+                "Luni",
+                "Marți",
+                "Miercuri",
+                "Joi",
+                "Vineri",
+                "Sâmbătă",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Ian",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Mai",
+                "Iun",
+                "Iul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Noi",
+                "Dec",
+            ],
+            longhand: [
+                "Ianuarie",
+                "Februarie",
+                "Martie",
+                "Aprilie",
+                "Mai",
+                "Iunie",
+                "Iulie",
+                "August",
+                "Septembrie",
+                "Octombrie",
+                "Noiembrie",
+                "Decembrie",
+            ],
+        },
+        firstDayOfWeek: 1,
+        time_24hr: true,
+        ordinal: function () {
+            return "";
+        },
+    };
+    fp$K.l10ns.ro = Romanian;
+    fp$K.l10ns;
+
+    var fp$L = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Russian = {
+        weekdays: {
+            shorthand: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+            longhand: [
+                "Воскресенье",
+                "Понедельник",
+                "Вторник",
+                "Среда",
+                "Четверг",
+                "Пятница",
+                "Суббота",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Янв",
+                "Фев",
+                "Март",
+                "Апр",
+                "Май",
+                "Июнь",
+                "Июль",
+                "Авг",
+                "Сен",
+                "Окт",
+                "Ноя",
+                "Дек",
+            ],
+            longhand: [
+                "Январь",
+                "Февраль",
+                "Март",
+                "Апрель",
+                "Май",
+                "Июнь",
+                "Июль",
+                "Август",
+                "Сентябрь",
+                "Октябрь",
+                "Ноябрь",
+                "Декабрь",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        rangeSeparator: " — ",
+        weekAbbreviation: "Нед.",
+        scrollTitle: "Прокрутите для увеличения",
+        toggleTitle: "Нажмите для переключения",
+        amPM: ["ДП", "ПП"],
+        yearAriaLabel: "Год",
+        time_24hr: true,
+    };
+    fp$L.l10ns.ru = Russian;
+    fp$L.l10ns;
+
+    var fp$M = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Sinhala = {
+        weekdays: {
+            shorthand: ["ඉ", "ස", "අ", "බ", "බ්‍ර", "සි", "සෙ"],
+            longhand: [
+                "ඉරිදා",
+                "සඳුදා",
+                "අඟහරුවාදා",
+                "බදාදා",
+                "බ්‍රහස්පතින්දා",
+                "සිකුරාදා",
+                "සෙනසුරාදා",
+            ],
+        },
+        months: {
+            shorthand: [
+                "ජන",
+                "පෙබ",
+                "මාර්",
+                "අප්‍රේ",
+                "මැයි",
+                "ජුනි",
+                "ජූලි",
+                "අගෝ",
+                "සැප්",
+                "ඔක්",
+                "නොවැ",
+                "දෙසැ",
+            ],
+            longhand: [
+                "ජනවාරි",
+                "පෙබරවාරි",
+                "මාර්තු",
+                "අප්‍රේල්",
+                "මැයි",
+                "ජුනි",
+                "ජූලි",
+                "අගෝස්තු",
+                "සැප්තැම්බර්",
+                "ඔක්තෝබර්",
+                "නොවැම්බර්",
+                "දෙසැම්බර්",
+            ],
+        },
+        time_24hr: true,
+    };
+    fp$M.l10ns.si = Sinhala;
+    fp$M.l10ns;
+
+    var fp$N = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Slovak = {
+        weekdays: {
+            shorthand: ["Ned", "Pon", "Ut", "Str", "Štv", "Pia", "Sob"],
+            longhand: [
+                "Nedeľa",
+                "Pondelok",
+                "Utorok",
+                "Streda",
+                "Štvrtok",
+                "Piatok",
+                "Sobota",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Máj",
+                "Jún",
+                "Júl",
+                "Aug",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "Január",
+                "Február",
+                "Marec",
+                "Apríl",
+                "Máj",
+                "Jún",
+                "Júl",
+                "August",
+                "September",
+                "Október",
+                "November",
+                "December",
+            ],
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " do ",
+        time_24hr: true,
+        ordinal: function () {
+            return ".";
+        },
+    };
+    fp$N.l10ns.sk = Slovak;
+    fp$N.l10ns;
+
+    var fp$O = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Slovenian = {
+        weekdays: {
+            shorthand: ["Ned", "Pon", "Tor", "Sre", "Čet", "Pet", "Sob"],
+            longhand: [
+                "Nedelja",
+                "Ponedeljek",
+                "Torek",
+                "Sreda",
+                "Četrtek",
+                "Petek",
+                "Sobota",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Maj",
+                "Jun",
+                "Jul",
+                "Avg",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "Januar",
+                "Februar",
+                "Marec",
+                "April",
+                "Maj",
+                "Junij",
+                "Julij",
+                "Avgust",
+                "September",
+                "Oktober",
+                "November",
+                "December",
+            ],
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " do ",
+        time_24hr: true,
+        ordinal: function () {
+            return ".";
+        },
+    };
+    fp$O.l10ns.sl = Slovenian;
+    fp$O.l10ns;
+
+    var fp$P = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Albanian = {
+        weekdays: {
+            shorthand: ["Di", "Hë", "Ma", "Më", "En", "Pr", "Sh"],
+            longhand: [
+                "E Diel",
+                "E Hënë",
+                "E Martë",
+                "E Mërkurë",
+                "E Enjte",
+                "E Premte",
+                "E Shtunë",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Shk",
+                "Mar",
+                "Pri",
+                "Maj",
+                "Qer",
+                "Kor",
+                "Gus",
+                "Sht",
+                "Tet",
+                "Nën",
+                "Dhj",
+            ],
+            longhand: [
+                "Janar",
+                "Shkurt",
+                "Mars",
+                "Prill",
+                "Maj",
+                "Qershor",
+                "Korrik",
+                "Gusht",
+                "Shtator",
+                "Tetor",
+                "Nëntor",
+                "Dhjetor",
+            ],
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " deri ",
+        weekAbbreviation: "Java",
+        yearAriaLabel: "Viti",
+        monthAriaLabel: "Muaji",
+        hourAriaLabel: "Ora",
+        minuteAriaLabel: "Minuta",
+        time_24hr: true,
+    };
+    fp$P.l10ns.sq = Albanian;
+    fp$P.l10ns;
+
+    var fp$Q = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Serbian = {
+        weekdays: {
+            shorthand: ["Ned", "Pon", "Uto", "Sre", "Čet", "Pet", "Sub"],
+            longhand: [
+                "Nedelja",
+                "Ponedeljak",
+                "Utorak",
+                "Sreda",
+                "Četvrtak",
+                "Petak",
+                "Subota",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Maj",
+                "Jun",
+                "Jul",
+                "Avg",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "Januar",
+                "Februar",
+                "Mart",
+                "April",
+                "Maj",
+                "Jun",
+                "Jul",
+                "Avgust",
+                "Septembar",
+                "Oktobar",
+                "Novembar",
+                "Decembar",
+            ],
+        },
+        firstDayOfWeek: 1,
+        weekAbbreviation: "Ned.",
+        rangeSeparator: " do ",
+        time_24hr: true,
+    };
+    fp$Q.l10ns.sr = Serbian;
+    fp$Q.l10ns;
+
+    var fp$R = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Swedish = {
+        firstDayOfWeek: 1,
+        weekAbbreviation: "v",
+        weekdays: {
+            shorthand: ["sön", "mån", "tis", "ons", "tor", "fre", "lör"],
+            longhand: [
+                "söndag",
+                "måndag",
+                "tisdag",
+                "onsdag",
+                "torsdag",
+                "fredag",
+                "lördag",
+            ],
+        },
+        months: {
+            shorthand: [
+                "jan",
+                "feb",
+                "mar",
+                "apr",
+                "maj",
+                "jun",
+                "jul",
+                "aug",
+                "sep",
+                "okt",
+                "nov",
+                "dec",
+            ],
+            longhand: [
+                "januari",
+                "februari",
+                "mars",
+                "april",
+                "maj",
+                "juni",
+                "juli",
+                "augusti",
+                "september",
+                "oktober",
+                "november",
+                "december",
+            ],
+        },
+        rangeSeparator: " till ",
+        time_24hr: true,
+        ordinal: function () {
+            return ".";
+        },
+    };
+    fp$R.l10ns.sv = Swedish;
+    fp$R.l10ns;
+
+    var fp$S = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Thai = {
+        weekdays: {
+            shorthand: ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"],
+            longhand: [
+                "อาทิตย์",
+                "จันทร์",
+                "อังคาร",
+                "พุธ",
+                "พฤหัสบดี",
+                "ศุกร์",
+                "เสาร์",
+            ],
+        },
+        months: {
+            shorthand: [
+                "ม.ค.",
+                "ก.พ.",
+                "มี.ค.",
+                "เม.ย.",
+                "พ.ค.",
+                "มิ.ย.",
+                "ก.ค.",
+                "ส.ค.",
+                "ก.ย.",
+                "ต.ค.",
+                "พ.ย.",
+                "ธ.ค.",
+            ],
+            longhand: [
+                "มกราคม",
+                "กุมภาพันธ์",
+                "มีนาคม",
+                "เมษายน",
+                "พฤษภาคม",
+                "มิถุนายน",
+                "กรกฎาคม",
+                "สิงหาคม",
+                "กันยายน",
+                "ตุลาคม",
+                "พฤศจิกายน",
+                "ธันวาคม",
+            ],
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " ถึง ",
+        scrollTitle: "เลื่อนเพื่อเพิ่มหรือลด",
+        toggleTitle: "คลิกเพื่อเปลี่ยน",
+        time_24hr: true,
+        ordinal: function () {
+            return "";
+        },
+    };
+    fp$S.l10ns.th = Thai;
+    fp$S.l10ns;
+
+    var fp$T = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Turkish = {
+        weekdays: {
+            shorthand: ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"],
+            longhand: [
+                "Pazar",
+                "Pazartesi",
+                "Salı",
+                "Çarşamba",
+                "Perşembe",
+                "Cuma",
+                "Cumartesi",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Oca",
+                "Şub",
+                "Mar",
+                "Nis",
+                "May",
+                "Haz",
+                "Tem",
+                "Ağu",
+                "Eyl",
+                "Eki",
+                "Kas",
+                "Ara",
+            ],
+            longhand: [
+                "Ocak",
+                "Şubat",
+                "Mart",
+                "Nisan",
+                "Mayıs",
+                "Haziran",
+                "Temmuz",
+                "Ağustos",
+                "Eylül",
+                "Ekim",
+                "Kasım",
+                "Aralık",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return ".";
+        },
+        rangeSeparator: " - ",
+        weekAbbreviation: "Hf",
+        scrollTitle: "Artırmak için kaydırın",
+        toggleTitle: "Aç/Kapa",
+        amPM: ["ÖÖ", "ÖS"],
+        time_24hr: true,
+    };
+    fp$T.l10ns.tr = Turkish;
+    fp$T.l10ns;
+
+    var fp$U = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Ukrainian = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+            longhand: [
+                "Неділя",
+                "Понеділок",
+                "Вівторок",
+                "Середа",
+                "Четвер",
+                "П'ятниця",
+                "Субота",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Січ",
+                "Лют",
+                "Бер",
+                "Кві",
+                "Тра",
+                "Чер",
+                "Лип",
+                "Сер",
+                "Вер",
+                "Жов",
+                "Лис",
+                "Гру",
+            ],
+            longhand: [
+                "Січень",
+                "Лютий",
+                "Березень",
+                "Квітень",
+                "Травень",
+                "Червень",
+                "Липень",
+                "Серпень",
+                "Вересень",
+                "Жовтень",
+                "Листопад",
+                "Грудень",
+            ],
+        },
+        time_24hr: true,
+    };
+    fp$U.l10ns.uk = Ukrainian;
+    fp$U.l10ns;
+
+    var fp$V = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Uzbek = {
+        weekdays: {
+            shorthand: ["Якш", "Душ", "Сеш", "Чор", "Пай", "Жум", "Шан"],
+            longhand: [
+                "Якшанба",
+                "Душанба",
+                "Сешанба",
+                "Чоршанба",
+                "Пайшанба",
+                "Жума",
+                "Шанба",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Янв",
+                "Фев",
+                "Мар",
+                "Апр",
+                "Май",
+                "Июн",
+                "Июл",
+                "Авг",
+                "Сен",
+                "Окт",
+                "Ноя",
+                "Дек",
+            ],
+            longhand: [
+                "Январ",
+                "Феврал",
+                "Март",
+                "Апрел",
+                "Май",
+                "Июн",
+                "Июл",
+                "Август",
+                "Сентябр",
+                "Октябр",
+                "Ноябр",
+                "Декабр",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        rangeSeparator: " — ",
+        weekAbbreviation: "Ҳафта",
+        scrollTitle: "Катталаштириш учун айлантиринг",
+        toggleTitle: "Ўтиш учун босинг",
+        amPM: ["AM", "PM"],
+        yearAriaLabel: "Йил",
+        time_24hr: true,
+    };
+    fp$V.l10ns.uz = Uzbek;
+    fp$V.l10ns;
+
+    var fp$W = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var UzbekLatin = {
+        weekdays: {
+            shorthand: ["Ya", "Du", "Se", "Cho", "Pa", "Ju", "Sha"],
+            longhand: [
+                "Yakshanba",
+                "Dushanba",
+                "Seshanba",
+                "Chorshanba",
+                "Payshanba",
+                "Juma",
+                "Shanba",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Yan",
+                "Fev",
+                "Mar",
+                "Apr",
+                "May",
+                "Iyun",
+                "Iyul",
+                "Avg",
+                "Sen",
+                "Okt",
+                "Noy",
+                "Dek",
+            ],
+            longhand: [
+                "Yanvar",
+                "Fevral",
+                "Mart",
+                "Aprel",
+                "May",
+                "Iyun",
+                "Iyul",
+                "Avgust",
+                "Sentabr",
+                "Oktabr",
+                "Noyabr",
+                "Dekabr",
+            ],
+        },
+        firstDayOfWeek: 1,
+        ordinal: function () {
+            return "";
+        },
+        rangeSeparator: " — ",
+        weekAbbreviation: "Hafta",
+        scrollTitle: "Kattalashtirish uchun aylantiring",
+        toggleTitle: "O‘tish uchun bosing",
+        amPM: ["AM", "PM"],
+        yearAriaLabel: "Yil",
+        time_24hr: true,
+    };
+    fp$W.l10ns["uz_latn"] = UzbekLatin;
+    fp$W.l10ns;
+
+    var fp$X = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Vietnamese = {
+        weekdays: {
+            shorthand: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
+            longhand: [
+                "Chủ nhật",
+                "Thứ hai",
+                "Thứ ba",
+                "Thứ tư",
+                "Thứ năm",
+                "Thứ sáu",
+                "Thứ bảy",
+            ],
+        },
+        months: {
+            shorthand: [
+                "Th1",
+                "Th2",
+                "Th3",
+                "Th4",
+                "Th5",
+                "Th6",
+                "Th7",
+                "Th8",
+                "Th9",
+                "Th10",
+                "Th11",
+                "Th12",
+            ],
+            longhand: [
+                "Tháng một",
+                "Tháng hai",
+                "Tháng ba",
+                "Tháng tư",
+                "Tháng năm",
+                "Tháng sáu",
+                "Tháng bảy",
+                "Tháng tám",
+                "Tháng chín",
+                "Tháng mười",
+                "Tháng mười một",
+                "Tháng mười hai",
+            ],
+        },
+        firstDayOfWeek: 1,
+        rangeSeparator: " đến ",
+    };
+    fp$X.l10ns.vn = Vietnamese;
+    fp$X.l10ns;
+
+    var fp$Y = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var Mandarin = {
+        weekdays: {
+            shorthand: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+            longhand: [
+                "星期日",
+                "星期一",
+                "星期二",
+                "星期三",
+                "星期四",
+                "星期五",
+                "星期六",
+            ],
+        },
+        months: {
+            shorthand: [
+                "一月",
+                "二月",
+                "三月",
+                "四月",
+                "五月",
+                "六月",
+                "七月",
+                "八月",
+                "九月",
+                "十月",
+                "十一月",
+                "十二月",
+            ],
+            longhand: [
+                "一月",
+                "二月",
+                "三月",
+                "四月",
+                "五月",
+                "六月",
+                "七月",
+                "八月",
+                "九月",
+                "十月",
+                "十一月",
+                "十二月",
+            ],
+        },
+        rangeSeparator: " 至 ",
+        weekAbbreviation: "周",
+        scrollTitle: "滚动切换",
+        toggleTitle: "点击切换 12/24 小时时制",
+    };
+    fp$Y.l10ns.zh = Mandarin;
+    fp$Y.l10ns;
+
+    var fp$Z = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {},
+        };
+    var MandarinTraditional = {
+        weekdays: {
+            shorthand: ["週日", "週一", "週二", "週三", "週四", "週五", "週六"],
+            longhand: [
+                "星期日",
+                "星期一",
+                "星期二",
+                "星期三",
+                "星期四",
+                "星期五",
+                "星期六",
+            ],
+        },
+        months: {
+            shorthand: [
+                "一月",
+                "二月",
+                "三月",
+                "四月",
+                "五月",
+                "六月",
+                "七月",
+                "八月",
+                "九月",
+                "十月",
+                "十一月",
+                "十二月",
+            ],
+            longhand: [
+                "一月",
+                "二月",
+                "三月",
+                "四月",
+                "五月",
+                "六月",
+                "七月",
+                "八月",
+                "九月",
+                "十月",
+                "十一月",
+                "十二月",
+            ],
+        },
+        rangeSeparator: " 至 ",
+        weekAbbreviation: "週",
+        scrollTitle: "滾動切換",
+        toggleTitle: "點擊切換 12/24 小時時制",
+    };
+    fp$Z.l10ns.zh_tw = MandarinTraditional;
+    fp$Z.l10ns;
+
+    var l10n = {
+        ar: Arabic,
+        at: Austria,
+        az: Azerbaijan,
+        be: Belarusian,
+        bg: Bulgarian,
+        bn: Bangla,
+        bs: Bosnian,
+        ca: Catalan,
+        ckb: Kurdish,
+        cat: Catalan,
+        cs: Czech,
+        cy: Welsh,
+        da: Danish,
+        de: German,
+        default: __assign({}, english),
+        en: english,
+        eo: Esperanto,
+        es: Spanish,
+        et: Estonian,
+        fa: Persian,
+        fi: Finnish,
+        fo: Faroese,
+        fr: French,
+        gr: Greek,
+        he: Hebrew,
+        hi: Hindi,
+        hr: Croatian,
+        hu: Hungarian,
+        hy: Armenian,
+        id: Indonesian,
+        is: Icelandic,
+        it: Italian,
+        ja: Japanese,
+        ka: Georgian,
+        ko: Korean,
+        km: Khmer,
+        kz: Kazakh,
+        lt: Lithuanian,
+        lv: Latvian,
+        mk: Macedonian,
+        mn: Mongolian,
+        ms: Malaysian,
+        my: Burmese,
+        nl: Dutch,
+        nn: NorwegianNynorsk,
+        no: Norwegian,
+        pa: Punjabi,
+        pl: Polish,
+        pt: Portuguese,
+        ro: Romanian,
+        ru: Russian,
+        si: Sinhala,
+        sk: Slovak,
+        sl: Slovenian,
+        sq: Albanian,
+        sr: Serbian,
+        sv: Swedish,
+        th: Thai,
+        tr: Turkish,
+        uk: Ukrainian,
+        vn: Vietnamese,
+        zh: Mandarin,
+        zh_tw: MandarinTraditional,
+        uz: Uzbek,
+        uz_latn: UzbekLatin,
+    };
+
+    exports.default = l10n;
+
+    Object.defineProperty(exports, '__esModule', { value: true });
+
+})));
+
+
+/***/ }),
+
+/***/ "./node_modules/jsrender/jsrender.js":
+/*!*******************************************!*\
+  !*** ./node_modules/jsrender/jsrender.js ***!
+  \*******************************************/
+/***/ ((module) => {
+
+/*! JsRender v1.0.11: http://jsviews.com/#jsrender */
+/*! **VERSION FOR WEB** (For NODE.JS see http://jsviews.com/download/jsrender-node.js) */
+/*
+ * Best-of-breed templating in browser or on Node.js.
+ * Does not require jQuery, or HTML DOM
+ * Integrates with JsViews (http://jsviews.com/#jsviews)
+ *
+ * Copyright 2021, Boris Moore
+ * Released under the MIT License.
+ */
+
+//jshint -W018, -W041, -W120
+
+(function(factory, global) {
+	// global var is the this object, which is window when running in the usual browser environment
+	var $ = global.jQuery;
+
+	if (true) { // CommonJS e.g. Browserify
+		module.exports = $
+			? factory(global, $)
+			: function($) { // If no global jQuery, take optional jQuery passed as parameter: require('jsrender')(jQuery)
+				if ($ && !$.fn) {
+					throw "Provide jQuery or null";
+				}
+				return factory(global, $);
+			};
+	} else {}
+} (
+
+// factory (for jsrender.js)
+function(global, $) {
+"use strict";
+
+//========================== Top-level vars ==========================
+
+// global var is the this object, which is window when running in the usual browser environment
+var setGlobals = $ === false; // Only set globals if script block in browser (not AMD and not CommonJS)
+
+$ = $ && $.fn ? $ : global.jQuery; // $ is jQuery passed in by CommonJS loader (Browserify), or global jQuery.
+
+var versionNumber = "v1.0.11",
+	jsvStoreName, rTag, rTmplString, topView, $views, $expando,
+	_ocp = "_ocp",      // Observable contextual parameter
+
+	$isFunction, $isArray, $templates, $converters, $helpers, $tags, $sub, $subSettings, $subSettingsAdvanced, $viewsSettings,
+	delimOpenChar0, delimOpenChar1, delimCloseChar0, delimCloseChar1, linkChar, setting, baseOnError,
+
+	isRenderCall,
+	rNewLine = /[ \t]*(\r\n|\n|\r)/g,
+	rUnescapeQuotes = /\\(['"\\])/g, // Unescape quotes and trim
+	rEscapeQuotes = /['"\\]/g, // Escape quotes and \ character
+	rBuildHash = /(?:\x08|^)(onerror:)?(?:(~?)(([\w$.]+):)?([^\x08]+))\x08(,)?([^\x08]+)/gi,
+	rTestElseIf = /^if\s/,
+	rFirstElem = /<(\w+)[>\s]/,
+	rAttrEncode = /[\x00`><"'&=]/g, // Includes > encoding since rConvertMarkers in JsViews does not skip > characters in attribute strings
+	rIsHtml = /[\x00`><\"'&=]/,
+	rHasHandlers = /^on[A-Z]|^convert(Back)?$/,
+	rWrappedInViewMarker = /^\#\d+_`[\s\S]*\/\d+_`$/,
+	rHtmlEncode = rAttrEncode,
+	rDataEncode = /[&<>]/g,
+	rDataUnencode = /&(amp|gt|lt);/g,
+	rBracketQuote = /\[['"]?|['"]?\]/g,
+	viewId = 0,
+	charEntities = {
+		"&": "&amp;",
+		"<": "&lt;",
+		">": "&gt;",
+		"\x00": "&#0;",
+		"'": "&#39;",
+		'"': "&#34;",
+		"`": "&#96;",
+		"=": "&#61;"
+	},
+	charsFromEntities = {
+		amp: "&",
+		gt: ">",
+		lt: "<"
+	},
+	HTML = "html",
+	OBJECT = "object",
+	tmplAttr = "data-jsv-tmpl",
+	jsvTmpl = "jsvTmpl",
+	indexStr = "For #index in nested block use #getIndex().",
+	cpFnStore = {},     // Compiled furnctions for computed values in template expressions (properties, methods, helpers)
+	$render = {},
+
+	jsr = global.jsrender,
+	jsrToJq = jsr && $ && !$.render, // JsRender already loaded, without jQuery. but we will re-load it now to attach to jQuery
+
+	jsvStores = {
+		template: {
+			compile: compileTmpl
+		},
+		tag: {
+			compile: compileTag
+		},
+		viewModel: {
+			compile: compileViewModel
+		},
+		helper: {},
+		converter: {}
+	};
+
+	// views object ($.views if jQuery is loaded, jsrender.views if no jQuery, e.g. in Node.js)
+	$views = {
+		jsviews: versionNumber,
+		sub: {
+			// subscription, e.g. JsViews integration
+			rPath: /^(!*?)(?:null|true|false|\d[\d.]*|([\w$]+|\.|~([\w$]+)|#(view|([\w$]+))?)([\w$.^]*?)(?:[.[^]([\w$]+)\]?)?)$/g,
+			//        not                               object     helper    view  viewProperty pathTokens      leafToken
+
+			rPrm: /(\()(?=\s*\()|(?:([([])\s*)?(?:(\^?)(~?[\w$.^]+)?\s*((\+\+|--)|\+|-|~(?![\w$])|&&|\|\||===|!==|==|!=|<=|>=|[<>%*:?\/]|(=))\s*|(!*?(@)?[#~]?[\w$.^]+)([([])?)|(,\s*)|(?:(\()\s*)?\\?(?:(')|("))|(?:\s*(([)\]])(?=[.^]|\s*$|[^([])|[)\]])([([]?))|(\s+)/g,
+			//   lftPrn0           lftPrn         bound     path               operator     err                                          eq      path2 late            prn      comma  lftPrn2          apos quot        rtPrn  rtPrnDot                  prn2     space
+
+			View: View,
+			Err: JsViewsError,
+			tmplFn: tmplFn,
+			parse: parseParams,
+			extend: $extend,
+			extendCtx: extendCtx,
+			syntaxErr: syntaxError,
+			onStore: {
+				template: function(name, item) {
+					if (item === null) {
+						delete $render[name];
+					} else if (name) {
+						$render[name] = item;
+					}
+				}
+			},
+			addSetting: addSetting,
+			settings: {
+				allowCode: false
+			},
+			advSet: noop, // Update advanced settings
+			_thp: tagHandlersFromProps,
+			_gm: getMethod,
+			_tg: function() {}, // Constructor for tagDef
+			_cnvt: convertVal,
+			_tag: renderTag,
+			_er: error,
+			_err: onRenderError,
+			_cp: retVal, // Get observable contextual parameters (or properties) ~foo=expr. In JsRender, simply returns val.
+			_sq: function(token) {
+				if (token === "constructor") {
+					syntaxError("");
+				}
+				return token;
+			}
+		},
+		settings: {
+			delimiters: $viewsDelimiters,
+			advanced: function(value) {
+				return value
+					? (
+							$extend($subSettingsAdvanced, value),
+							$sub.advSet(),
+							$viewsSettings
+						)
+						: $subSettingsAdvanced;
+				}
+		},
+		map: dataMap // If jsObservable loaded first, use that definition of dataMap
+	};
+
+function getDerivedMethod(baseMethod, method) {
+	return function() {
+		var ret,
+			tag = this,
+			prevBase = tag.base;
+
+		tag.base = baseMethod; // Within method call, calling this.base will call the base method
+		ret = method.apply(tag, arguments); // Call the method
+		tag.base = prevBase; // Replace this.base to be the base method of the previous call, for chained calls
+		return ret;
+	};
+}
+
+function getMethod(baseMethod, method) {
+	// For derived methods (or handlers declared declaratively as in {{:foo onChange=~fooChanged}} replace by a derived method, to allow using this.base(...)
+	// or this.baseApply(arguments) to call the base implementation. (Equivalent to this._super(...) and this._superApply(arguments) in jQuery UI)
+	if ($isFunction(method)) {
+		method = getDerivedMethod(
+				!baseMethod
+					? noop // no base method implementation, so use noop as base method
+					: baseMethod._d
+						? baseMethod // baseMethod is a derived method, so use it
+						: getDerivedMethod(noop, baseMethod), // baseMethod is not derived so make its base method be the noop method
+				method
+			);
+		method._d = (baseMethod && baseMethod._d || 0) + 1; // Add flag for derived method (incremented for derived of derived...)
+	}
+	return method;
+}
+
+function tagHandlersFromProps(tag, tagCtx) {
+	var prop,
+		props = tagCtx.props;
+	for (prop in props) {
+		if (rHasHandlers.test(prop) && !(tag[prop] && tag[prop].fix)) { // Don't override handlers with fix expando (used in datepicker and spinner)
+			tag[prop] = prop !== "convert" ? getMethod(tag.constructor.prototype[prop], props[prop]) : props[prop];
+			// Copy over the onFoo props, convert and convertBack from tagCtx.props to tag (overrides values in tagDef).
+			// Note: unsupported scenario: if handlers are dynamically added ^onFoo=expression this will work, but dynamically removing will not work.
+		}
+	}
+}
+
+function retVal(val) {
+	return val;
+}
+
+function noop() {
+	return "";
+}
+
+function dbgBreak(val) {
+	// Usage examples: {{dbg:...}}, {{:~dbg(...)}}, {{dbg .../}}, {^{for ... onAfterLink=~dbg}} etc.
+	try {
+		console.log("JsRender dbg breakpoint: " + val);
+		throw "dbg breakpoint"; // To break here, stop on caught exceptions.
+	}
+	catch (e) {}
+	return this.base ? this.baseApply(arguments) : val;
+}
+
+function JsViewsError(message) {
+	// Error exception type for JsViews/JsRender
+	// Override of $.views.sub.Error is possible
+	this.name = ($.link ? "JsViews" : "JsRender") + " Error";
+	this.message = message || this.name;
+}
+
+function $extend(target, source) {
+	if (target) {
+		for (var name in source) {
+			target[name] = source[name];
+		}
+		return target;
+	}
+}
+
+(JsViewsError.prototype = new Error()).constructor = JsViewsError;
+
+//========================== Top-level functions ==========================
+
+//===================
+// views.delimiters
+//===================
+
+	/**
+	* Set the tag opening and closing delimiters and 'link' character. Default is "{{", "}}" and "^"
+	* openChars, closeChars: opening and closing strings, each with two characters
+	* $.views.settings.delimiters(...)
+	*
+	* @param {string}   openChars
+	* @param {string}   [closeChars]
+	* @param {string}   [link]
+	* @returns {Settings}
+	*
+	* Get delimiters
+	* delimsArray = $.views.settings.delimiters()
+	*
+	* @returns {string[]}
+	*/
+function $viewsDelimiters(openChars, closeChars, link) {
+	if (!openChars) {
+		return $subSettings.delimiters;
+	}
+	if ($isArray(openChars)) {
+		return $viewsDelimiters.apply($views, openChars);
+	}
+	linkChar = link ? link[0] : linkChar;
+	if (!/^(\W|_){5}$/.test(openChars + closeChars + linkChar)) {
+		error("Invalid delimiters"); // Must be non-word characters, and openChars and closeChars must each be length 2
+	}
+	delimOpenChar0 = openChars[0];
+	delimOpenChar1 = openChars[1];
+	delimCloseChar0 = closeChars[0];
+	delimCloseChar1 = closeChars[1];
+
+	$subSettings.delimiters = [delimOpenChar0 + delimOpenChar1, delimCloseChar0 + delimCloseChar1, linkChar];
+
+	// Escape the characters - since they could be regex special characters
+	openChars = "\\" + delimOpenChar0 + "(\\" + linkChar + ")?\\" + delimOpenChar1; // Default is "{^{"
+	closeChars = "\\" + delimCloseChar0 + "\\" + delimCloseChar1;                   // Default is "}}"
+	// Build regex with new delimiters
+	//          [tag    (followed by / space or })  or cvtr+colon or html or code] followed by space+params then convertBack?
+	rTag = "(?:(\\w+(?=[\\/\\s\\" + delimCloseChar0 + "]))|(\\w+)?(:)|(>)|(\\*))\\s*((?:[^\\"
+		+ delimCloseChar0 + "]|\\" + delimCloseChar0 + "(?!\\" + delimCloseChar1 + "))*?)";
+
+	// Make rTag available to JsViews (or other components) for parsing binding expressions
+	$sub.rTag = "(?:" + rTag + ")";
+	//                        { ^? {   tag+params slash?  or closingTag                                                   or comment
+	rTag = new RegExp("(?:" + openChars + rTag + "(\\/)?|\\" + delimOpenChar0 + "(\\" + linkChar + ")?\\" + delimOpenChar1 + "(?:(?:\\/(\\w+))\\s*|!--[\\s\\S]*?--))" + closeChars, "g");
+
+	// Default:  bind     tagName         cvt   cln html code    params            slash   bind2         closeBlk  comment
+	//      /(?:{(\^)?{(?:(\w+(?=[\/\s}]))|(\w+)?(:)|(>)|(\*))\s*((?:[^}]|}(?!}))*?)(\/)?|{(\^)?{(?:(?:\/(\w+))\s*|!--[\s\S]*?--))}}
+
+	$sub.rTmpl = new RegExp("^\\s|\\s$|<.*>|([^\\\\]|^)[{}]|" + openChars + ".*" + closeChars);
+	// $sub.rTmpl looks for initial or final white space, html tags or { or } char not preceded by \\, or JsRender tags {{xxx}}.
+	// Each of these strings are considered NOT to be jQuery selectors
+	return $viewsSettings;
+}
+
+//=========
+// View.get
+//=========
+
+function getView(inner, type) { //view.get(inner, type)
+	if (!type && inner !== true) {
+		// view.get(type)
+		type = inner;
+		inner = undefined;
+	}
+
+	var views, i, l, found,
+		view = this,
+		root = type === "root";
+		// view.get("root") returns view.root, view.get() returns view.parent, view.get(true) returns view.views[0].
+
+	if (inner) {
+		// Go through views - this one, and all nested ones, depth-first - and return first one with given type.
+		// If type is undefined, i.e. view.get(true), return first child view.
+		found = type && view.type === type && view;
+		if (!found) {
+			views = view.views;
+			if (view._.useKey) {
+				for (i in views) {
+					if (found = type ? views[i].get(inner, type) : views[i]) {
+						break;
+					}
+				}
+			} else {
+				for (i = 0, l = views.length; !found && i < l; i++) {
+					found = type ? views[i].get(inner, type) : views[i];
+				}
+			}
+		}
+	} else if (root) {
+		// Find root view. (view whose parent is top view)
+		found = view.root;
+	} else if (type) {
+		while (view && !found) {
+			// Go through views - this one, and all parent ones - and return first one with given type.
+			found = view.type === type ? view : undefined;
+			view = view.parent;
+		}
+	} else {
+		found = view.parent;
+	}
+	return found || undefined;
+}
+
+function getNestedIndex() {
+	var view = this.get("item");
+	return view ? view.index : undefined;
+}
+
+getNestedIndex.depends = function() {
+	return [this.get("item"), "index"];
+};
+
+function getIndex() {
+	return this.index;
+}
+
+getIndex.depends = "index";
+
+//==================
+// View.ctxPrm, etc.
+//==================
+
+/* Internal private: view._getOb() */
+function getPathObject(ob, path, ltOb, fn) {
+	// Iterate through path to late paths: @a.b.c paths
+	// Return "" (or noop if leaf is a function @a.b.c(...) ) if intermediate object not yet available
+	var prevOb, tokens, l,
+		i = 0;
+	if (ltOb === 1) {
+		fn = 1;
+		ltOb = undefined;
+	}
+	// Paths like ^a^b^c or ~^a^b^c will not throw if an object in path is undefined.
+	if (path) {
+		tokens = path.split(".");
+		l = tokens.length;
+
+		for (; ob && i < l; i++) {
+			prevOb = ob;
+			ob = tokens[i] ? ob[tokens[i]] : ob;
+		}
+	}
+	if (ltOb) {
+		ltOb.lt = ltOb.lt || i<l; // If i < l there was an object in the path not yet available
+	}
+	return ob === undefined
+		? fn ? noop : ""
+		: fn ? function() {
+			return ob.apply(prevOb, arguments);
+		} : ob;
+}
+
+function contextParameter(key, value, get) {
+	// Helper method called as view.ctxPrm(key) for helpers or template parameters ~foo - from compiled template or from context callback
+	var wrapped, deps, res, obsCtxPrm, tagElse, callView, newRes,
+		storeView = this,
+		isUpdate = !isRenderCall && arguments.length > 1,
+		store = storeView.ctx;
+	if (key) {
+		if (!storeView._) { // tagCtx.ctxPrm() call
+			tagElse = storeView.index;
+			storeView = storeView.tag;
+		}
+		callView = storeView;
+		if (store && store.hasOwnProperty(key) || (store = $helpers).hasOwnProperty(key)) {
+			res = store[key];
+			if (key === "tag" || key === "tagCtx" || key === "root" || key === "parentTags") {
+				return res;
+			}
+		} else {
+			store = undefined;
+		}
+		if (!isRenderCall && storeView.tagCtx || storeView.linked) { // Data-linked view, or tag instance
+			if (!res || !res._cxp) {
+				// Not a contextual parameter
+				// Set storeView to tag (if this is a tag.ctxPrm() call) or to root view ("data" view of linked template)
+				storeView = storeView.tagCtx || $isFunction(res)
+					? storeView // Is a tag, not a view, or is a computed contextual parameter, so scope to the callView, no the 'scope view'
+					: (storeView = storeView.scope || storeView,
+						!storeView.isTop && storeView.ctx.tag // If this view is in a tag, set storeView to the tag
+							|| storeView);
+				if (res !== undefined && storeView.tagCtx) {
+					// If storeView is a tag, but the contextual parameter has been set at at higher level (e.g. helpers)...
+					storeView = storeView.tagCtx.view.scope; // then move storeView to the outer level (scope of tag container view)
+				}
+				store = storeView._ocps;
+				res = store && store.hasOwnProperty(key) && store[key] || res;
+				if (!(res && res._cxp) && (get || isUpdate)) {
+					// Create observable contextual parameter
+					(store || (storeView._ocps = storeView._ocps || {}))[key]
+						= res
+						= [{
+							_ocp: res, // The observable contextual parameter value
+							_vw: callView,
+							_key: key
+						}];
+					res._cxp = {
+						path: _ocp,
+						ind: 0,
+						updateValue: function(val, path) {
+							$.observable(res[0]).setProperty(_ocp, val); // Set the value (res[0]._ocp)
+							return this;
+						}
+					};
+				}
+			}
+			if (obsCtxPrm = res && res._cxp) {
+				// If this helper resource is an observable contextual parameter
+				if (arguments.length > 2) {
+					deps = res[1] ? $sub._ceo(res[1].deps) : [_ocp]; // fn deps (with any exprObs cloned using $sub._ceo)
+					deps.unshift(res[0]); // view
+					deps._cxp = obsCtxPrm;
+					// In a context callback for a contextual param, we set get = true, to get ctxPrm [view, dependencies...] array - needed for observe call
+					return deps;
+				}
+				tagElse = obsCtxPrm.tagElse;
+				newRes = res[1] // linkFn for compiled expression
+					? obsCtxPrm.tag && obsCtxPrm.tag.cvtArgs
+						? obsCtxPrm.tag.cvtArgs(tagElse, 1)[obsCtxPrm.ind] // = tag.bndArgs() - for tag contextual parameter
+						: res[1](res[0].data, res[0], $sub) // = fn(data, view, $sub) for compiled binding expression
+					: res[0]._ocp; // Observable contextual parameter (uninitialized, or initialized as static expression, so no path dependencies)
+				if (isUpdate) {
+					$sub._ucp(key, value, storeView, obsCtxPrm); // Update observable contextual parameter
+					return storeView;
+				}
+				res = newRes;
+			}
+		}
+		if (res && $isFunction(res)) {
+			// If a helper is of type function we will wrap it, so if called with no this pointer it will be called with the
+			// view as 'this' context. If the helper ~foo() was in a data-link expression, the view will have a 'temporary' linkCtx property too.
+			// Note that helper functions on deeper paths will have specific this pointers, from the preceding path.
+			// For example, ~util.foo() will have the ~util object as 'this' pointer
+			wrapped = function() {
+				return res.apply((!this || this === global) ? callView : this, arguments);
+			};
+			$extend(wrapped, res); // Attach same expandos (if any) to the wrapped function
+		}
+		return wrapped || res;
+	}
+}
+
+/* Internal private: view._getTmpl() */
+function getTemplate(tmpl) {
+	return tmpl && (tmpl.fn
+		? tmpl
+		: this.getRsc("templates", tmpl) || $templates(tmpl)); // not yet compiled
+}
+
+//==============
+// views._cnvt
+//==============
+
+function convertVal(converter, view, tagCtx, onError) {
+	// Called from compiled template code for {{:}}
+	// self is template object or linkCtx object
+	var tag, linkCtx, value, argsLen, bindTo,
+		// If tagCtx is an integer, then it is the key for the compiled function to return the boundTag tagCtx
+		boundTag = typeof tagCtx === "number" && view.tmpl.bnds[tagCtx-1];
+
+	if (onError === undefined && boundTag && boundTag._lr) { // lateRender
+		onError = "";
+	}
+	if (onError !== undefined) {
+		tagCtx = onError = {props: {}, args: [onError]};
+	} else if (boundTag) {
+		tagCtx = boundTag(view.data, view, $sub);
+	}
+	boundTag = boundTag._bd && boundTag;
+	if (converter || boundTag) {
+		linkCtx = view._lc; // For data-link="{cvt:...}"... See onDataLinkedTagChange
+		tag = linkCtx && linkCtx.tag;
+		tagCtx.view = view;
+		if (!tag) {
+			tag = $extend(new $sub._tg(), {
+				_: {
+					bnd: boundTag,
+					unlinked: true,
+					lt: tagCtx.lt // If a late path @some.path has not returned @some object, mark tag as late
+				},
+				inline: !linkCtx,
+				tagName: ":",
+				convert: converter,
+				onArrayChange: true,
+				flow: true,
+				tagCtx: tagCtx,
+				tagCtxs: [tagCtx],
+				_is: "tag"
+			});
+			argsLen = tagCtx.args.length;
+			if (argsLen>1) {
+				bindTo = tag.bindTo = [];
+				while (argsLen--) {
+					bindTo.unshift(argsLen); // Bind to all the arguments - generate bindTo array: [0,1,2...]
+				}
+			}
+			if (linkCtx) {
+				linkCtx.tag = tag;
+				tag.linkCtx = linkCtx;
+			}
+			tagCtx.ctx = extendCtx(tagCtx.ctx, (linkCtx ? linkCtx.view : view).ctx);
+			tagHandlersFromProps(tag, tagCtx);
+		}
+		tag._er = onError && value;
+		tag.ctx = tagCtx.ctx || tag.ctx || {};
+		tagCtx.ctx = undefined;
+		value = tag.cvtArgs()[0]; // If there is a convertBack but no convert, converter will be "true"
+		tag._er = onError && value;
+	} else {
+		value = tagCtx.args[0];
+	}
+
+	// Call onRender (used by JsViews if present, to add binding annotations around rendered content)
+	value = boundTag && view._.onRender
+		? view._.onRender(value, view, tag)
+		: value;
+	return value != undefined ? value : "";
+}
+
+function convertArgs(tagElse, bound) { // tag.cvtArgs() or tag.cvtArgs(tagElse?, true?)
+	var l, key, boundArgs, args, bindFrom, tag, converter,
+		tagCtx = this;
+
+	if (tagCtx.tagName) {
+		tag = tagCtx;
+		tagCtx = (tag.tagCtxs || [tagCtx])[tagElse||0];
+		if (!tagCtx) {
+			return;
+		}
+	} else {
+		tag = tagCtx.tag;
+	}
+
+	bindFrom = tag.bindFrom;
+	args = tagCtx.args;
+
+	if ((converter = tag.convert) && "" + converter === converter) {
+		converter = converter === "true"
+			? undefined
+			: (tagCtx.view.getRsc("converters", converter) || error("Unknown converter: '" + converter + "'"));
+	}
+
+	if (converter && !bound) { // If there is a converter, use a copy of the tagCtx.args array for rendering, and replace the args[0] in
+		args = args.slice(); // the copied array with the converted value. But we do not modify the value of tag.tagCtx.args[0] (the original args array)
+	}
+	if (bindFrom) { // Get the values of the boundArgs
+		boundArgs = [];
+		l = bindFrom.length;
+		while (l--) {
+			key = bindFrom[l];
+			boundArgs.unshift(argOrProp(tagCtx, key));
+		}
+		if (bound) {
+			args = boundArgs; // Call to bndArgs() - returns the boundArgs
+		}
+	}
+	if (converter) {
+		converter = converter.apply(tag, boundArgs || args);
+		if (converter === undefined) {
+			return args; // Returning undefined from a converter is equivalent to not having a converter.
+		}
+		bindFrom = bindFrom || [0];
+		l = bindFrom.length;
+		if (!$isArray(converter) || (converter.arg0 !== false && (l === 1 || converter.length !== l || converter.arg0))) {
+			converter = [converter]; // Returning converter as first arg, even if converter value is an array
+			bindFrom = [0];
+			l = 1;
+		}
+		if (bound) {        // Call to bndArgs() - so apply converter to all boundArgs
+			args = converter; // The array of values returned from the converter
+		} else {            // Call to cvtArgs()
+			while (l--) {
+				key = bindFrom[l];
+				if (+key === key) {
+					args[key] = converter[l];
+				}
+			}
+		}
+	}
+	return args;
+}
+
+function argOrProp(context, key) {
+	context = context[+key === key ? "args" : "props"];
+	return context && context[key];
+}
+
+function convertBoundArgs(tagElse) { // tag.bndArgs()
+	return this.cvtArgs(tagElse, 1);
+}
+
+//=============
+// views.tag
+//=============
+
+/* view.getRsc() */
+function getResource(resourceType, itemName) {
+	var res, store,
+		view = this;
+	if ("" + itemName === itemName) {
+		while ((res === undefined) && view) {
+			store = view.tmpl && view.tmpl[resourceType];
+			res = store && store[itemName];
+			view = view.parent;
+		}
+		return res || $views[resourceType][itemName];
+	}
+}
+
+function renderTag(tagName, parentView, tmpl, tagCtxs, isUpdate, onError) {
+	function bindToOrBindFrom(type) {
+		var bindArray = tag[type];
+
+		if (bindArray !== undefined) {
+			bindArray = $isArray(bindArray) ? bindArray : [bindArray];
+			m = bindArray.length;
+			while (m--) {
+				key = bindArray[m];
+				if (!isNaN(parseInt(key))) {
+					bindArray[m] = parseInt(key); // Convert "0" to 0, etc.
+				}
+			}
+		}
+
+		return bindArray || [0];
+	}
+
+	parentView = parentView || topView;
+	var tag, tagDef, template, tags, attr, parentTag, l, m, n, itemRet, tagCtx, tagCtxCtx, ctxPrm, bindTo, bindFrom, initVal,
+		content, callInit, mapDef, thisMap, args, bdArgs, props, tagDataMap, contentCtx, key, bindFromLength, bindToLength, linkedElement, defaultCtx,
+		i = 0,
+		ret = "",
+		linkCtx = parentView._lc || false, // For data-link="{myTag...}"... See onDataLinkedTagChange
+		ctx = parentView.ctx,
+		parentTmpl = tmpl || parentView.tmpl,
+		// If tagCtxs is an integer, then it is the key for the compiled function to return the boundTag tagCtxs
+		boundTag = typeof tagCtxs === "number" && parentView.tmpl.bnds[tagCtxs-1];
+
+	if (tagName._is === "tag") {
+		tag = tagName;
+		tagName = tag.tagName;
+		tagCtxs = tag.tagCtxs;
+		template = tag.template;
+	} else {
+		tagDef = parentView.getRsc("tags", tagName) || error("Unknown tag: {{" + tagName + "}} ");
+		template = tagDef.template;
+	}
+	if (onError === undefined && boundTag && (boundTag._lr = (tagDef.lateRender && boundTag._lr!== false || boundTag._lr))) {
+		onError = ""; // If lateRender, set temporary onError, to skip initial rendering (and render just "")
+	}
+	if (onError !== undefined) {
+		ret += onError;
+		tagCtxs = onError = [{props: {}, args: [], params: {props:{}}}];
+	} else if (boundTag) {
+		tagCtxs = boundTag(parentView.data, parentView, $sub);
+	}
+
+	l = tagCtxs.length;
+	for (; i < l; i++) {
+		tagCtx = tagCtxs[i];
+		content = tagCtx.tmpl;
+		if (!linkCtx || !linkCtx.tag || i && !linkCtx.tag.inline || tag._er || content && +content===content) {
+			// Initialize tagCtx
+			// For block tags, tagCtx.tmpl is an integer > 0
+			if (content && parentTmpl.tmpls) {
+				tagCtx.tmpl = tagCtx.content = parentTmpl.tmpls[content - 1]; // Set the tmpl property to the content of the block tag
+			}
+			tagCtx.index = i;
+			tagCtx.ctxPrm = contextParameter;
+			tagCtx.render = renderContent;
+			tagCtx.cvtArgs = convertArgs;
+			tagCtx.bndArgs = convertBoundArgs;
+			tagCtx.view = parentView;
+			tagCtx.ctx = extendCtx(extendCtx(tagCtx.ctx, tagDef && tagDef.ctx), ctx); // Clone and extend parentView.ctx
+		}
+		if (tmpl = tagCtx.props.tmpl) {
+			// If the tmpl property is overridden, set the value (when initializing, or, in case of binding: ^tmpl=..., when updating)
+			tagCtx.tmpl = parentView._getTmpl(tmpl);
+			tagCtx.content = tagCtx.content || tagCtx.tmpl;
+		}
+
+		if (!tag) {
+			// This will only be hit for initial tagCtx (not for {{else}}) - if the tag instance does not exist yet
+			// If the tag has not already been instantiated, we will create a new instance.
+			// ~tag will access the tag, even within the rendering of the template content of this tag.
+			// From child/descendant tags, can access using ~tag.parent, or ~parentTags.tagName
+			tag = new tagDef._ctr();
+			callInit = !!tag.init;
+
+			tag.parent = parentTag = ctx && ctx.tag;
+			tag.tagCtxs = tagCtxs;
+
+			if (linkCtx) {
+				tag.inline = false;
+				linkCtx.tag = tag;
+			}
+			tag.linkCtx = linkCtx;
+			if (tag._.bnd = boundTag || linkCtx.fn) {
+				// Bound if {^{tag...}} or data-link="{tag...}"
+				tag._.ths = tagCtx.params.props["this"]; // Tag has a this=expr binding, to get javascript reference to tag instance
+				tag._.lt = tagCtxs.lt; // If a late path @some.path has not returned @some object, mark tag as late
+				tag._.arrVws = {};
+			} else if (tag.dataBoundOnly) {
+				error(tagName + " must be data-bound:\n{^{" + tagName + "}}");
+			}
+			//TODO better perf for childTags() - keep child tag.tags array, (and remove child, when disposed)
+			// tag.tags = [];
+		} else if (linkCtx && linkCtx.fn._lr) {
+			callInit = !!tag.init;
+		}
+		tagDataMap = tag.dataMap;
+
+		tagCtx.tag = tag;
+		if (tagDataMap && tagCtxs) {
+			tagCtx.map = tagCtxs[i].map; // Copy over the compiled map instance from the previous tagCtxs to the refreshed ones
+		}
+		if (!tag.flow) {
+			tagCtxCtx = tagCtx.ctx = tagCtx.ctx || {};
+
+			// tags hash: tag.ctx.tags, merged with parentView.ctx.tags,
+			tags = tag.parents = tagCtxCtx.parentTags = ctx && extendCtx(tagCtxCtx.parentTags, ctx.parentTags) || {};
+			if (parentTag) {
+				tags[parentTag.tagName] = parentTag;
+				//TODO better perf for childTags: parentTag.tags.push(tag);
+			}
+			tags[tag.tagName] = tagCtxCtx.tag = tag;
+			tagCtxCtx.tagCtx = tagCtx;
+		}
+	}
+	if (!(tag._er = onError)) {
+		tagHandlersFromProps(tag, tagCtxs[0]);
+		tag.rendering = {rndr: tag.rendering}; // Provide object for state during render calls to tag and elses. (Used by {{if}} and {{for}}...)
+		for (i = 0; i < l; i++) { // Iterate tagCtx for each {{else}} block
+			tagCtx = tag.tagCtx = tagCtxs[i];
+			props = tagCtx.props;
+			tag.ctx = tagCtx.ctx;
+
+			if (!i) {
+				if (callInit) {
+					tag.init(tagCtx, linkCtx, tag.ctx);
+					callInit = undefined;
+				}
+				if (!tagCtx.args.length && tagCtx.argDefault !== false && tag.argDefault !== false) {
+					tagCtx.args = args = [tagCtx.view.data]; // Missing first arg defaults to the current data context
+					tagCtx.params.args = ["#data"];
+				}
+
+				bindTo = bindToOrBindFrom("bindTo");
+
+				if (tag.bindTo !== undefined) {
+					tag.bindTo = bindTo;
+				}
+
+				if (tag.bindFrom !== undefined) {
+					tag.bindFrom = bindToOrBindFrom("bindFrom");
+				} else if (tag.bindTo) {
+					tag.bindFrom = tag.bindTo = bindTo;
+				}
+				bindFrom = tag.bindFrom || bindTo;
+
+				bindToLength = bindTo.length;
+				bindFromLength = bindFrom.length;
+
+				if (tag._.bnd && (linkedElement = tag.linkedElement)) {
+					tag.linkedElement = linkedElement = $isArray(linkedElement) ? linkedElement: [linkedElement];
+
+					if (bindToLength !== linkedElement.length) {
+						error("linkedElement not same length as bindTo");
+					}
+				}
+				if (linkedElement = tag.linkedCtxParam) {
+					tag.linkedCtxParam = linkedElement = $isArray(linkedElement) ? linkedElement: [linkedElement];
+
+					if (bindFromLength !== linkedElement.length) {
+						error("linkedCtxParam not same length as bindFrom/bindTo");
+					}
+				}
+
+				if (bindFrom) {
+					tag._.fromIndex = {}; // Hash of bindFrom index which has same path value as bindTo index. fromIndex = tag._.fromIndex[toIndex]
+					tag._.toIndex = {}; // Hash of bindFrom index which has same path value as bindTo index. fromIndex = tag._.fromIndex[toIndex]
+					n = bindFromLength;
+					while (n--) {
+						key = bindFrom[n];
+						m = bindToLength;
+						while (m--) {
+							if (key === bindTo[m]) {
+								tag._.fromIndex[m] = n;
+								tag._.toIndex[n] = m;
+							}
+						}
+					}
+				}
+
+				if (linkCtx) {
+					// Set attr on linkCtx to ensure outputting to the correct target attribute.
+					// Setting either linkCtx.attr or this.attr in the init() allows per-instance choice of target attrib.
+					linkCtx.attr = tag.attr = linkCtx.attr || tag.attr || linkCtx._dfAt;
+				}
+				attr = tag.attr;
+				tag._.noVws = attr && attr !== HTML;
+			}
+			args = tag.cvtArgs(i);
+			if (tag.linkedCtxParam) {
+				bdArgs = tag.cvtArgs(i, 1);
+				m = bindFromLength;
+				defaultCtx = tag.constructor.prototype.ctx;
+				while (m--) {
+					if (ctxPrm = tag.linkedCtxParam[m]) {
+						key = bindFrom[m];
+						initVal = bdArgs[m];
+						// Create tag contextual parameter
+						tagCtx.ctx[ctxPrm] = $sub._cp(
+							defaultCtx && initVal === undefined ? defaultCtx[ctxPrm]: initVal,
+							initVal !== undefined && argOrProp(tagCtx.params, key),
+							tagCtx.view,
+							tag._.bnd && {tag: tag, cvt: tag.convert, ind: m, tagElse: i}
+						);
+					}
+				}
+			}
+			if ((mapDef = props.dataMap || tagDataMap) && (args.length || props.dataMap)) {
+				thisMap = tagCtx.map;
+				if (!thisMap || thisMap.src !== args[0] || isUpdate) {
+					if (thisMap && thisMap.src) {
+						thisMap.unmap(); // only called if observable map - not when only used in JsRender, e.g. by {{props}}
+					}
+					mapDef.map(args[0], tagCtx, thisMap, !tag._.bnd);
+					thisMap = tagCtx.map;
+				}
+				args = [thisMap.tgt];
+			}
+
+			itemRet = undefined;
+			if (tag.render) {
+				itemRet = tag.render.apply(tag, args);
+				if (parentView.linked && itemRet && !rWrappedInViewMarker.test(itemRet)) {
+					// When a tag renders content from the render method, with data linking then we need to wrap with view markers, if absent,
+					// to provide a contentView for the tag, which will correctly dispose bindings if deleted. The 'tmpl' for this view will
+					// be a dumbed-down template which will always return the itemRet string (no matter what the data is). The itemRet string
+					// is not compiled as template markup, so can include "{{" or "}}" without triggering syntax errors
+					tmpl = { // 'Dumbed-down' template which always renders 'static' itemRet string
+						links: []
+					};
+					tmpl.render = tmpl.fn = function() {
+						return itemRet;
+					};
+					itemRet = renderWithViews(tmpl, parentView.data, undefined, true, parentView, undefined, undefined, tag);
+				}
+			}
+			if (!args.length) {
+				args = [parentView]; // no arguments - (e.g. {{else}}) get data context from view.
+			}
+			if (itemRet === undefined) {
+				contentCtx = args[0]; // Default data context for wrapped block content is the first argument
+				if (tag.contentCtx) { // Set tag.contentCtx to true, to inherit parent context, or to a function to provide alternate context.
+					contentCtx = tag.contentCtx === true ? parentView : tag.contentCtx(contentCtx);
+				}
+				itemRet = tagCtx.render(contentCtx, true) || (isUpdate ? undefined : "");
+			}
+			ret = ret
+				? ret + (itemRet || "")
+				: itemRet !== undefined
+					? "" + itemRet
+					: undefined; // If no return value from render, and no template/content tagCtx.render(...), return undefined
+		}
+		tag.rendering = tag.rendering.rndr; // Remove tag.rendering object (if this is outermost render call. (In case of nested calls)
+	}
+	tag.tagCtx = tagCtxs[0];
+	tag.ctx = tag.tagCtx.ctx;
+
+	if (tag._.noVws && tag.inline) {
+		// inline tag with attr set to "text" will insert HTML-encoded content - as if it was element-based innerText
+		ret = attr === "text"
+			? $converters.html(ret)
+			: "";
+	}
+	return boundTag && parentView._.onRender
+		// Call onRender (used by JsViews if present, to add binding annotations around rendered content)
+		? parentView._.onRender(ret, parentView, tag)
+		: ret;
+}
+
+//=================
+// View constructor
+//=================
+
+function View(context, type, parentView, data, template, key, onRender, contentTmpl) {
+	// Constructor for view object in view hierarchy. (Augmented by JsViews if JsViews is loaded)
+	var views, parentView_, tag, self_,
+		self = this,
+		isArray = type === "array";
+		// If the data is an array, this is an 'array view' with a views array for each child 'item view'
+		// If the data is not an array, this is an 'item view' with a views 'hash' object for any child nested views
+
+	self.content = contentTmpl;
+	self.views = isArray ? [] : {};
+	self.data = data;
+	self.tmpl = template;
+	self_ = self._ = {
+		key: 0,
+		// ._.useKey is non zero if is not an 'array view' (owning a data array). Use this as next key for adding to child views hash
+		useKey: isArray ? 0 : 1,
+		id: "" + viewId++,
+		onRender: onRender,
+		bnds: {}
+	};
+	self.linked = !!onRender;
+	self.type = type || "top";
+	if (type) {
+		self.cache = {_ct: $subSettings._cchCt}; // Used for caching results of computed properties and helpers (view.getCache)
+	}
+
+	if (!parentView || parentView.type === "top") {
+		(self.ctx = context || {}).root = self.data;
+	}
+
+	if (self.parent = parentView) {
+		self.root = parentView.root || self; // view whose parent is top view
+		views = parentView.views;
+		parentView_ = parentView._;
+		self.isTop = parentView_.scp; // Is top content view of a link("#container", ...) call
+		self.scope = (!context.tag || context.tag === parentView.ctx.tag) && !self.isTop && parentView.scope || self;
+		// Scope for contextParams - closest non flow tag ancestor or root view
+		if (parentView_.useKey) {
+			// Parent is not an 'array view'. Add this view to its views object
+			// self._key = is the key in the parent view hash
+			views[self_.key = "_" + parentView_.useKey++] = self;
+			self.index = indexStr;
+			self.getIndex = getNestedIndex;
+		} else if (views.length === (self_.key = self.index = key)) { // Parent is an 'array view'. Add this view to its views array
+			views.push(self); // Adding to end of views array. (Using push when possible - better perf than splice)
+		} else {
+			views.splice(key, 0, self); // Inserting in views array
+		}
+		// If no context was passed in, use parent context
+		// If context was passed in, it should have been merged already with parent context
+		self.ctx = context || parentView.ctx;
+	} else if (type) {
+		self.root = self; // view whose parent is top view
+	}
+}
+
+View.prototype = {
+	get: getView,
+	getIndex: getIndex,
+	ctxPrm: contextParameter,
+	getRsc: getResource,
+	_getTmpl: getTemplate,
+	_getOb: getPathObject,
+	getCache: function(key) { // Get cached value of computed value
+		if ($subSettings._cchCt > this.cache._ct) {
+			this.cache = {_ct: $subSettings._cchCt};
+		}
+		return this.cache[key] !== undefined ? this.cache[key] : (this.cache[key] = cpFnStore[key](this.data, this, $sub));
+	},
+	_is: "view"
+};
+
+//====================================================
+// Registration
+//====================================================
+
+function compileChildResources(parentTmpl) {
+	var storeName, storeNames, resources;
+	for (storeName in jsvStores) {
+		storeNames = storeName + "s";
+		if (parentTmpl[storeNames]) {
+			resources = parentTmpl[storeNames];        // Resources not yet compiled
+			parentTmpl[storeNames] = {};               // Remove uncompiled resources
+			$views[storeNames](resources, parentTmpl); // Add back in the compiled resources
+		}
+	}
+}
+
+//===============
+// compileTag
+//===============
+
+function compileTag(name, tagDef, parentTmpl) {
+	var tmpl, baseTag, prop,
+		compiledDef = new $sub._tg();
+
+	function Tag() {
+		var tag = this;
+		tag._ = {
+			unlinked: true
+		};
+		tag.inline = true;
+		tag.tagName = name;
+	}
+
+	if ($isFunction(tagDef)) {
+		// Simple tag declared as function. No presenter instantation.
+		tagDef = {
+			depends: tagDef.depends,
+			render: tagDef
+		};
+	} else if ("" + tagDef === tagDef) {
+		tagDef = {template: tagDef};
+	}
+
+	if (baseTag = tagDef.baseTag) {
+		tagDef.flow = !!tagDef.flow; // Set flow property, so defaults to false even if baseTag has flow=true
+		baseTag = "" + baseTag === baseTag
+			? (parentTmpl && parentTmpl.tags[baseTag] || $tags[baseTag])
+			: baseTag;
+		if (!baseTag) {
+			error('baseTag: "' + tagDef.baseTag + '" not found');
+		}
+		compiledDef = $extend(compiledDef, baseTag);
+
+		for (prop in tagDef) {
+			compiledDef[prop] = getMethod(baseTag[prop], tagDef[prop]);
+		}
+	} else {
+		compiledDef = $extend(compiledDef, tagDef);
+	}
+
+	// Tag declared as object, used as the prototype for tag instantiation (control/presenter)
+	if ((tmpl = compiledDef.template) !== undefined) {
+		compiledDef.template = "" + tmpl === tmpl ? ($templates[tmpl] || $templates(tmpl)) : tmpl;
+	}
+	(Tag.prototype = compiledDef).constructor = compiledDef._ctr = Tag;
+
+	if (parentTmpl) {
+		compiledDef._parentTmpl = parentTmpl;
+	}
+	return compiledDef;
+}
+
+function baseApply(args) {
+	// In derived method (or handler declared declaratively as in {{:foo onChange=~fooChanged}} can call base method,
+	// using this.baseApply(arguments) (Equivalent to this._superApply(arguments) in jQuery UI)
+	return this.base.apply(this, args);
+}
+
+//===============
+// compileTmpl
+//===============
+
+function compileTmpl(name, tmpl, parentTmpl, options) {
+	// tmpl is either a template object, a selector for a template script block, or the name of a compiled template
+
+	//==== nested functions ====
+	function lookupTemplate(value) {
+		// If value is of type string - treat as selector, or name of compiled template
+		// Return the template object, if already compiled, or the markup string
+		var currentName, tmpl;
+		if (("" + value === value) || value.nodeType > 0 && (elem = value)) {
+			if (!elem) {
+				if (/^\.?\/[^\\:*?"<>]*$/.test(value)) {
+					// value="./some/file.html" (or "/some/file.html")
+					// If the template is not named, use "./some/file.html" as name.
+					if (tmpl = $templates[name = name || value]) {
+						value = tmpl;
+					} else {
+						// BROWSER-SPECIFIC CODE (not on Node.js):
+						// Look for server-generated script block with id "./some/file.html"
+						elem = document.getElementById(value);
+					}
+				} else if (value.charAt(0) === "#") {
+					elem = document.getElementById(value.slice(1));
+				} else if ($.fn && !$sub.rTmpl.test(value)) {
+					try {
+						elem = $(value, document)[0]; // if jQuery is loaded, test for selector returning elements, and get first element
+					} catch (e) {}
+				}// END BROWSER-SPECIFIC CODE
+			} //BROWSER-SPECIFIC CODE
+			if (elem) {
+				if (elem.tagName !== "SCRIPT") {
+					error(value + ": Use script block, not " + elem.tagName);
+				}
+				if (options) {
+					// We will compile a new template using the markup in the script element
+					value = elem.innerHTML;
+				} else {
+					// We will cache a single copy of the compiled template, and associate it with the name
+					// (renaming from a previous name if there was one).
+					currentName = elem.getAttribute(tmplAttr);
+					if (currentName) {
+						if (currentName !== jsvTmpl) {
+							value = $templates[currentName];
+							delete $templates[currentName];
+						} else if ($.fn) {
+							value = $.data(elem)[jsvTmpl]; // Get cached compiled template
+						}
+					}
+					if (!currentName || !value) { // Not yet compiled, or cached version lost
+						name = name || ($.fn ? jsvTmpl : value);
+						value = compileTmpl(name, elem.innerHTML, parentTmpl, options);
+					}
+					value.tmplName = name = name || currentName;
+					if (name !== jsvTmpl) {
+						$templates[name] = value;
+					}
+					elem.setAttribute(tmplAttr, name);
+					if ($.fn) {
+						$.data(elem, jsvTmpl, value);
+					}
+				}
+			} // END BROWSER-SPECIFIC CODE
+			elem = undefined;
+		} else if (!value.fn) {
+			value = undefined;
+			// If value is not a string. HTML element, or compiled template, return undefined
+		}
+		return value;
+	}
+
+	var elem, compiledTmpl,
+		tmplOrMarkup = tmpl = tmpl || "";
+	$sub._html = $converters.html;
+
+	//==== Compile the template ====
+	if (options === 0) {
+		options = undefined;
+		tmplOrMarkup = lookupTemplate(tmplOrMarkup); // Top-level compile so do a template lookup
+	}
+
+	// If options, then this was already compiled from a (script) element template declaration.
+	// If not, then if tmpl is a template object, use it for options
+	options = options || (tmpl.markup
+		? tmpl.bnds
+			? $extend({}, tmpl)
+			: tmpl
+		: {}
+	);
+
+	options.tmplName = options.tmplName || name || "unnamed";
+	if (parentTmpl) {
+		options._parentTmpl = parentTmpl;
+	}
+	// If tmpl is not a markup string or a selector string, then it must be a template object
+	// In that case, get it from the markup property of the object
+	if (!tmplOrMarkup && tmpl.markup && (tmplOrMarkup = lookupTemplate(tmpl.markup)) && tmplOrMarkup.fn) {
+		// If the string references a compiled template object, need to recompile to merge any modified options
+		tmplOrMarkup = tmplOrMarkup.markup;
+	}
+	if (tmplOrMarkup !== undefined) {
+		if (tmplOrMarkup.render || tmpl.render) {
+			// tmpl is already compiled, so use it
+			if (tmplOrMarkup.tmpls) {
+				compiledTmpl = tmplOrMarkup;
+			}
+		} else {
+			// tmplOrMarkup is a markup string, not a compiled template
+			// Create template object
+			tmpl = tmplObject(tmplOrMarkup, options);
+			// Compile to AST and then to compiled function
+			tmplFn(tmplOrMarkup.replace(rEscapeQuotes, "\\$&"), tmpl);
+		}
+		if (!compiledTmpl) {
+			compiledTmpl = $extend(function() {
+				return compiledTmpl.render.apply(compiledTmpl, arguments);
+			}, tmpl);
+
+			compileChildResources(compiledTmpl);
+		}
+		return compiledTmpl;
+	}
+}
+
+//==== /end of function compileTmpl ====
+
+//=================
+// compileViewModel
+//=================
+
+function getDefaultVal(defaultVal, data) {
+	return $isFunction(defaultVal)
+		? defaultVal.call(data)
+		: defaultVal;
+}
+
+function addParentRef(ob, ref, parent) {
+	Object.defineProperty(ob, ref, {
+		value: parent,
+		configurable: true
+	});
+}
+
+function compileViewModel(name, type) {
+	var i, constructor, parent,
+		viewModels = this,
+		getters = type.getters,
+		extend = type.extend,
+		id = type.id,
+		proto = $.extend({
+			_is: name || "unnamed",
+			unmap: unmap,
+			merge: merge
+		}, extend),
+		args = "",
+		cnstr = "",
+		getterCount = getters ? getters.length : 0,
+		$observable = $.observable,
+		getterNames = {};
+
+	function JsvVm(args) {
+		constructor.apply(this, args);
+	}
+
+	function vm() {
+		return new JsvVm(arguments);
+	}
+
+	function iterate(data, action) {
+		var getterType, defaultVal, prop, ob, parentRef,
+			j = 0;
+		for (; j < getterCount; j++) {
+			prop = getters[j];
+			getterType = undefined;
+			if (prop + "" !== prop) {
+				getterType = prop;
+				prop = getterType.getter;
+				parentRef = getterType.parentRef;
+			}
+			if ((ob = data[prop]) === undefined && getterType && (defaultVal = getterType.defaultVal) !== undefined) {
+				ob = getDefaultVal(defaultVal, data);
+			}
+			action(ob, getterType && viewModels[getterType.type], prop, parentRef);
+		}
+	}
+
+	function map(data) {
+		data = data + "" === data
+			? JSON.parse(data) // Accept JSON string
+			: data;            // or object/array
+		var l, prop, childOb, parentRef,
+			j = 0,
+			ob = data,
+			arr = [];
+
+		if ($isArray(data)) {
+			data = data || [];
+			l = data.length;
+			for (; j<l; j++) {
+				arr.push(this.map(data[j]));
+			}
+			arr._is = name;
+			arr.unmap = unmap;
+			arr.merge = merge;
+			return arr;
+		}
+
+		if (data) {
+			iterate(data, function(ob, viewModel) {
+				if (viewModel) { // Iterate to build getters arg array (value, or mapped value)
+					ob = viewModel.map(ob);
+				}
+				arr.push(ob);
+			});
+			ob = this.apply(this, arr); // Instantiate this View Model, passing getters args array to constructor
+			j = getterCount;
+			while (j--) {
+				childOb = arr[j];
+				parentRef = getters[j].parentRef;
+				if (parentRef && childOb && childOb.unmap) {
+					if ($isArray(childOb)) {
+						l = childOb.length;
+						while (l--) {
+							addParentRef(childOb[l], parentRef, ob);
+						}
+					} else {
+						addParentRef(childOb, parentRef, ob);
+					}
+				}
+			}
+			for (prop in data) { // Copy over any other properties. that are not get/set properties
+				if (prop !== $expando && !getterNames[prop]) {
+					ob[prop] = data[prop];
+				}
+			}
+		}
+		return ob;
+	}
+
+	function merge(data, parent, parentRef) {
+		data = data + "" === data
+			? JSON.parse(data) // Accept JSON string
+			: data;            // or object/array
+
+		var j, l, m, prop, mod, found, assigned, ob, newModArr, childOb,
+			k = 0,
+			model = this;
+
+		if ($isArray(model)) {
+			assigned = {};
+			newModArr = [];
+			l = data.length;
+			m = model.length;
+			for (; k<l; k++) {
+				ob = data[k];
+				found = false;
+				for (j=0; j<m && !found; j++) {
+					if (assigned[j]) {
+						continue;
+					}
+					mod = model[j];
+
+					if (id) {
+						assigned[j] = found = id + "" === id
+						? (ob[id] && (getterNames[id] ? mod[id]() : mod[id]) === ob[id])
+						: id(mod, ob);
+					}
+				}
+				if (found) {
+					mod.merge(ob);
+					newModArr.push(mod);
+				} else {
+					newModArr.push(childOb = vm.map(ob));
+					if (parentRef) {
+						addParentRef(childOb, parentRef, parent);
+					}
+				}
+			}
+			if ($observable) {
+				$observable(model).refresh(newModArr, true);
+			} else {
+				model.splice.apply(model, [0, model.length].concat(newModArr));
+			}
+			return;
+		}
+		iterate(data, function(ob, viewModel, getter, parentRef) {
+			if (viewModel) {
+				model[getter]().merge(ob, model, parentRef); // Update typed property
+			} else if (model[getter]() !== ob) {
+				model[getter](ob); // Update non-typed property
+			}
+		});
+		for (prop in data) {
+			if (prop !== $expando && !getterNames[prop]) {
+				model[prop] = data[prop];
+			}
+		}
+	}
+
+	function unmap() {
+		var ob, prop, getterType, arr, value,
+			k = 0,
+			model = this;
+
+		function unmapArray(modelArr) {
+			var arr = [],
+				i = 0,
+				l = modelArr.length;
+			for (; i<l; i++) {
+				arr.push(modelArr[i].unmap());
+			}
+			return arr;
+		}
+
+		if ($isArray(model)) {
+			return unmapArray(model);
+		}
+		ob = {};
+		for (; k < getterCount; k++) {
+			prop = getters[k];
+			getterType = undefined;
+			if (prop + "" !== prop) {
+				getterType = prop;
+				prop = getterType.getter;
+			}
+			value = model[prop]();
+			ob[prop] = getterType && value && viewModels[getterType.type]
+				? $isArray(value)
+					? unmapArray(value)
+					: value.unmap()
+				: value;
+		}
+		for (prop in model) {
+			if (model.hasOwnProperty(prop) && (prop.charAt(0) !== "_" || !getterNames[prop.slice(1)]) && prop !== $expando && !$isFunction(model[prop])) {
+				ob[prop] = model[prop];
+			}
+		}
+		return ob;
+	}
+
+	JsvVm.prototype = proto;
+
+	for (i=0; i < getterCount; i++) {
+		(function(getter) {
+			getter = getter.getter || getter;
+			getterNames[getter] = i+1;
+			var privField = "_" + getter;
+
+			args += (args ? "," : "") + getter;
+			cnstr += "this." + privField + " = " + getter + ";\n";
+			proto[getter] = proto[getter] || function(val) {
+				if (!arguments.length) {
+					return this[privField]; // If there is no argument, use as a getter
+				}
+				if ($observable) {
+					$observable(this).setProperty(getter, val);
+				} else {
+					this[privField] = val;
+				}
+			};
+
+			if ($observable) {
+				proto[getter].set = proto[getter].set || function(val) {
+					this[privField] = val; // Setter called by observable property change
+				};
+			}
+		})(getters[i]);
+	}
+
+	// Constructor for new viewModel instance.
+	cnstr = new Function(args, cnstr);
+
+	constructor = function() {
+		cnstr.apply(this, arguments);
+		// Pass additional parentRef str and parent obj to have a parentRef pointer on instance
+		if (parent = arguments[getterCount + 1]) {
+			addParentRef(this, arguments[getterCount], parent);
+		}
+	};
+
+	constructor.prototype = proto;
+	proto.constructor = constructor;
+
+	vm.map = map;
+	vm.getters = getters;
+	vm.extend = extend;
+	vm.id = id;
+	return vm;
+}
+
+function tmplObject(markup, options) {
+	// Template object constructor
+	var htmlTag,
+		wrapMap = $subSettingsAdvanced._wm || {}, // Only used in JsViews. Otherwise empty: {}
+		tmpl = {
+			tmpls: [],
+			links: {}, // Compiled functions for link expressions
+			bnds: [],
+			_is: "template",
+			render: renderContent
+		};
+
+	if (options) {
+		tmpl = $extend(tmpl, options);
+	}
+
+	tmpl.markup = markup;
+	if (!tmpl.htmlTag) {
+		// Set tmpl.tag to the top-level HTML tag used in the template, if any...
+		htmlTag = rFirstElem.exec(markup);
+		tmpl.htmlTag = htmlTag ? htmlTag[1].toLowerCase() : "";
+	}
+	htmlTag = wrapMap[tmpl.htmlTag];
+	if (htmlTag && htmlTag !== wrapMap.div) {
+		// When using JsViews, we trim templates which are inserted into HTML contexts where text nodes are not rendered (i.e. not 'Phrasing Content').
+		// Currently not trimmed for <li> tag. (Not worth adding perf cost)
+		tmpl.markup = $.trim(tmpl.markup);
+	}
+
+	return tmpl;
+}
+
+//==============
+// registerStore
+//==============
+
+/**
+* Internal. Register a store type (used for template, tags, helpers, converters)
+*/
+function registerStore(storeName, storeSettings) {
+
+/**
+* Generic store() function to register item, named item, or hash of items
+* Also used as hash to store the registered items
+* Used as implementation of $.templates(), $.views.templates(), $.views.tags(), $.views.helpers() and $.views.converters()
+*
+* @param {string|hash} name         name - or selector, in case of $.templates(). Or hash of items
+* @param {any}         [item]       (e.g. markup for named template)
+* @param {template}    [parentTmpl] For item being registered as private resource of template
+* @returns {any|$.views} item, e.g. compiled template - or $.views in case of registering hash of items
+*/
+	function theStore(name, item, parentTmpl) {
+		// The store is also the function used to add items to the store. e.g. $.templates, or $.views.tags
+
+		// For store of name 'thing', Call as:
+		//    $.views.things(items[, parentTmpl]),
+		// or $.views.things(name[, item, parentTmpl])
+
+		var compile, itemName, thisStore, cnt,
+			onStore = $sub.onStore[storeName];
+
+		if (name && typeof name === OBJECT && !name.nodeType && !name.markup && !name.getTgt && !(storeName === "viewModel" && name.getters || name.extend)) {
+			// Call to $.views.things(items[, parentTmpl]),
+
+			// Adding items to the store
+			// If name is a hash, then item is parentTmpl. Iterate over hash and call store for key.
+			for (itemName in name) {
+				theStore(itemName, name[itemName], item);
+			}
+			return item || $views;
+		}
+		// Adding a single unnamed item to the store
+		if (name && "" + name !== name) { // name must be a string
+			parentTmpl = item;
+			item = name;
+			name = undefined;
+		}
+		thisStore = parentTmpl
+			? storeName === "viewModel"
+				? parentTmpl
+				: (parentTmpl[storeNames] = parentTmpl[storeNames] || {})
+			: theStore;
+		compile = storeSettings.compile;
+
+		if (item === undefined) {
+			item = compile ? name : thisStore[name];
+			name = undefined;
+		}
+		if (item === null) {
+			// If item is null, delete this entry
+			if (name) {
+				delete thisStore[name];
+			}
+		} else {
+			if (compile) {
+				item = compile.call(thisStore, name, item, parentTmpl, 0) || {};
+				item._is = storeName; // Only do this for compiled objects (tags, templates...)
+			}
+			if (name) {
+				thisStore[name] = item;
+			}
+		}
+		if (onStore) {
+			// e.g. JsViews integration
+			onStore(name, item, parentTmpl, compile);
+		}
+		return item;
+	}
+
+	var storeNames = storeName + "s";
+	$views[storeNames] = theStore;
+}
+
+/**
+* Add settings such as:
+* $.views.settings.allowCode(true)
+* @param {boolean} value
+* @returns {Settings}
+*
+* allowCode = $.views.settings.allowCode()
+* @returns {boolean}
+*/
+function addSetting(st) {
+	$viewsSettings[st] = $viewsSettings[st] || function(value) {
+		return arguments.length
+			? ($subSettings[st] = value, $viewsSettings)
+			: $subSettings[st];
+	};
+}
+
+//========================
+// dataMap for render only
+//========================
+
+function dataMap(mapDef) {
+	function Map(source, options) {
+		this.tgt = mapDef.getTgt(source, options);
+		options.map = this;
+	}
+
+	if ($isFunction(mapDef)) {
+		// Simple map declared as function
+		mapDef = {
+			getTgt: mapDef
+		};
+	}
+
+	if (mapDef.baseMap) {
+		mapDef = $extend($extend({}, mapDef.baseMap), mapDef);
+	}
+
+	mapDef.map = function(source, options) {
+		return new Map(source, options);
+	};
+	return mapDef;
+}
+
+//==============
+// renderContent
+//==============
+
+/** Render the template as a string, using the specified data and helpers/context
+* $("#tmpl").render(), tmpl.render(), tagCtx.render(), $.render.namedTmpl()
+*
+* @param {any}        data
+* @param {hash}       [context]           helpers or context
+* @param {boolean}    [noIteration]
+* @param {View}       [parentView]        internal
+* @param {string}     [key]               internal
+* @param {function}   [onRender]          internal
+* @returns {string}   rendered template   internal
+*/
+function renderContent(data, context, noIteration, parentView, key, onRender) {
+	var i, l, tag, tmpl, tagCtx, isTopRenderCall, prevData, prevIndex,
+		view = parentView,
+		result = "";
+
+	if (context === true) {
+		noIteration = context; // passing boolean as second param - noIteration
+		context = undefined;
+	} else if (typeof context !== OBJECT) {
+		context = undefined; // context must be a boolean (noIteration) or a plain object
+	}
+
+	if (tag = this.tag) {
+		// This is a call from renderTag or tagCtx.render(...)
+		tagCtx = this;
+		view = view || tagCtx.view;
+		tmpl = view._getTmpl(tag.template || tagCtx.tmpl);
+		if (!arguments.length) {
+			data = tag.contentCtx && $isFunction(tag.contentCtx)
+				? data = tag.contentCtx(data)
+				: view; // Default data context for wrapped block content is the first argument
+		}
+	} else {
+		// This is a template.render(...) call
+		tmpl = this;
+	}
+
+	if (tmpl) {
+		if (!parentView && data && data._is === "view") {
+			view = data; // When passing in a view to render or link (and not passing in a parent view) use the passed-in view as parentView
+		}
+
+		if (view && data === view) {
+			// Inherit the data from the parent view.
+			data = view.data;
+		}
+
+		isTopRenderCall = !view;
+		isRenderCall = isRenderCall || isTopRenderCall;
+		if (isTopRenderCall) {
+			(context = context || {}).root = data; // Provide ~root as shortcut to top-level data.
+		}
+		if (!isRenderCall || $subSettingsAdvanced.useViews || tmpl.useViews || view && view !== topView) {
+			result = renderWithViews(tmpl, data, context, noIteration, view, key, onRender, tag);
+		} else {
+			if (view) { // In a block
+				prevData = view.data;
+				prevIndex = view.index;
+				view.index = indexStr;
+			} else {
+				view = topView;
+				prevData = view.data;
+				view.data = data;
+				view.ctx = context;
+			}
+			if ($isArray(data) && !noIteration) {
+				// Create a view for the array, whose child views correspond to each data item. (Note: if key and parentView are passed in
+				// along with parent view, treat as insert -e.g. from view.addViews - so parentView is already the view item for array)
+				for (i = 0, l = data.length; i < l; i++) {
+					view.index = i;
+					view.data = data[i];
+					result += tmpl.fn(data[i], view, $sub);
+				}
+			} else {
+				view.data = data;
+				result += tmpl.fn(data, view, $sub);
+			}
+			view.data = prevData;
+			view.index = prevIndex;
+		}
+		if (isTopRenderCall) {
+			isRenderCall = undefined;
+		}
+	}
+	return result;
+}
+
+function renderWithViews(tmpl, data, context, noIteration, view, key, onRender, tag) {
+	// Render template against data as a tree of subviews (nested rendered template instances), or as a string (top-level template).
+	// If the data is the parent view, treat as noIteration, re-render with the same data context.
+	// tmpl can be a string (e.g. rendered by a tag.render() method), or a compiled template.
+	var i, l, newView, childView, itemResult, swapContent, contentTmpl, outerOnRender, tmplName, itemVar, newCtx, tagCtx, noLinking,
+		result = "";
+
+	if (tag) {
+		// This is a call from renderTag or tagCtx.render(...)
+		tmplName = tag.tagName;
+		tagCtx = tag.tagCtx;
+		context = context ? extendCtx(context, tag.ctx) : tag.ctx;
+
+		if (tmpl === view.content) { // {{xxx tmpl=#content}}
+			contentTmpl = tmpl !== view.ctx._wrp // We are rendering the #content
+				? view.ctx._wrp // #content was the tagCtx.props.tmpl wrapper of the block content - so within this view, #content will now be the view.ctx._wrp block content
+				: undefined; // #content was the view.ctx._wrp block content - so within this view, there is no longer any #content to wrap.
+		} else if (tmpl !== tagCtx.content) {
+			if (tmpl === tag.template) { // Rendering {{tag}} tag.template, replacing block content.
+				contentTmpl = tagCtx.tmpl; // Set #content to block content (or wrapped block content if tagCtx.props.tmpl is set)
+				context._wrp = tagCtx.content; // Pass wrapped block content to nested views
+			} else { // Rendering tagCtx.props.tmpl wrapper
+				contentTmpl = tagCtx.content || view.content; // Set #content to wrapped block content
+			}
+		} else {
+			contentTmpl = view.content; // Nested views inherit same wrapped #content property
+		}
+
+		if (tagCtx.props.link === false) {
+			// link=false setting on block tag
+			// We will override inherited value of link by the explicit setting link=false taken from props
+			// The child views of an unlinked view are also unlinked. So setting child back to true will not have any effect.
+			context = context || {};
+			context.link = false;
+		}
+	}
+
+	if (view) {
+		onRender = onRender || view._.onRender;
+		noLinking = context && context.link === false;
+
+		if (noLinking && view._.nl) {
+			onRender = undefined;
+		}
+
+		context = extendCtx(context, view.ctx);
+		tagCtx = !tag && view.tag
+			? view.tag.tagCtxs[view.tagElse]
+			: tagCtx;
+	}
+
+	if (itemVar = tagCtx && tagCtx.props.itemVar) {
+		if (itemVar[0] !== "~") {
+			syntaxError("Use itemVar='~myItem'");
+		}
+		itemVar = itemVar.slice(1);
+	}
+
+	if (key === true) {
+		swapContent = true;
+		key = 0;
+	}
+
+	// If link===false, do not call onRender, so no data-linking marker nodes
+	if (onRender && tag && tag._.noVws) {
+		onRender = undefined;
+	}
+	outerOnRender = onRender;
+	if (onRender === true) {
+		// Used by view.refresh(). Don't create a new wrapper view.
+		outerOnRender = undefined;
+		onRender = view._.onRender;
+	}
+	// Set additional context on views created here, (as modified context inherited from the parent, and to be inherited by child views)
+	context = tmpl.helpers
+		? extendCtx(tmpl.helpers, context)
+		: context;
+
+	newCtx = context;
+	if ($isArray(data) && !noIteration) {
+		// Create a view for the array, whose child views correspond to each data item. (Note: if key and view are passed in
+		// along with parent view, treat as insert -e.g. from view.addViews - so view is already the view item for array)
+		newView = swapContent
+			? view
+			: (key !== undefined && view)
+				|| new View(context, "array", view, data, tmpl, key, onRender, contentTmpl);
+		newView._.nl= noLinking;
+		if (view && view._.useKey) {
+			// Parent is not an 'array view'
+			newView._.bnd = !tag || tag._.bnd && tag; // For array views that are data bound for collection change events, set the
+			// view._.bnd property to true for top-level link() or data-link="{for}", or to the tag instance for a data-bound tag, e.g. {^{for ...}}
+			newView.tag = tag;
+		}
+		for (i = 0, l = data.length; i < l; i++) {
+			// Create a view for each data item.
+			childView = new View(newCtx, "item", newView, data[i], tmpl, (key || 0) + i, onRender, newView.content);
+			if (itemVar) {
+				(childView.ctx = $extend({}, newCtx))[itemVar] = $sub._cp(data[i], "#data", childView);
+			}
+			itemResult = tmpl.fn(data[i], childView, $sub);
+			result += newView._.onRender ? newView._.onRender(itemResult, childView) : itemResult;
+		}
+	} else {
+		// Create a view for singleton data object. The type of the view will be the tag name, e.g. "if" or "mytag" except for
+		// "item", "array" and "data" views. A "data" view is from programmatic render(object) against a 'singleton'.
+		newView = swapContent ? view : new View(newCtx, tmplName || "data", view, data, tmpl, key, onRender, contentTmpl);
+
+		if (itemVar) {
+			(newView.ctx = $extend({}, newCtx))[itemVar] = $sub._cp(data, "#data", newView);
+		}
+
+		newView.tag = tag;
+		newView._.nl = noLinking;
+		result += tmpl.fn(data, newView, $sub);
+	}
+	if (tag) {
+		newView.tagElse = tagCtx.index;
+		tagCtx.contentView = newView;
+	}
+	return outerOnRender ? outerOnRender(result, newView) : result;
+}
+
+//===========================
+// Build and compile template
+//===========================
+
+// Generate a reusable function that will serve to render a template against data
+// (Compile AST then build template function)
+
+function onRenderError(e, view, fallback) {
+	var message = fallback !== undefined
+		? $isFunction(fallback)
+			? fallback.call(view.data, e, view)
+			: fallback || ""
+		: "{Error: " + (e.message||e) + "}";
+
+	if ($subSettings.onError && (fallback = $subSettings.onError.call(view.data, e, fallback && message, view)) !== undefined) {
+		message = fallback; // There is a settings.debugMode(handler) onError override. Call it, and use return value (if any) to replace message
+	}
+	return view && !view._lc ? $converters.html(message) : message; // For data-link=\"{... onError=...}"... See onDataLinkedTagChange
+}
+
+function error(message) {
+	throw new $sub.Err(message);
+}
+
+function syntaxError(message) {
+	error("Syntax error\n" + message);
+}
+
+function tmplFn(markup, tmpl, isLinkExpr, convertBack, hasElse) {
+	// Compile markup to AST (abtract syntax tree) then build the template function code from the AST nodes
+	// Used for compiling templates, and also by JsViews to build functions for data link expressions
+
+	//==== nested functions ====
+	function pushprecedingContent(shift) {
+		shift -= loc;
+		if (shift) {
+			content.push(markup.substr(loc, shift).replace(rNewLine, "\\n"));
+		}
+	}
+
+	function blockTagCheck(tagName, block) {
+		if (tagName) {
+			tagName += '}}';
+			//			'{{include}} block has {{/for}} with no open {{for}}'
+			syntaxError((
+				block
+					? '{{' + block + '}} block has {{/' + tagName + ' without {{' + tagName
+					: 'Unmatched or missing {{/' + tagName) + ', in template:\n' + markup);
+		}
+	}
+
+	function parseTag(all, bind, tagName, converter, colon, html, codeTag, params, slash, bind2, closeBlock, index) {
+/*
+
+     bind     tagName         cvt   cln html code    params            slash   bind2         closeBlk  comment
+/(?:{(\^)?{(?:(\w+(?=[\/\s}]))|(\w+)?(:)|(>)|(\*))\s*((?:[^}]|}(?!}))*?)(\/)?|{(\^)?{(?:(?:\/(\w+))\s*|!--[\s\S]*?--))}}/g
+
+(?:
+  {(\^)?{            bind
+  (?:
+    (\w+             tagName
+      (?=[\/\s}])
+    )
+    |
+    (\w+)?(:)        converter colon
+    |
+    (>)              html
+    |
+    (\*)             codeTag
+  )
+  \s*
+  (                  params
+    (?:[^}]|}(?!}))*?
+  )
+  (\/)?              slash
+  |
+  {(\^)?{            bind2
+  (?:
+    (?:\/(\w+))\s*   closeBlock
+    |
+    !--[\s\S]*?--    comment
+  )
+)
+}}/g
+
+*/
+		if (codeTag && bind || slash && !tagName || params && params.slice(-1) === ":" || bind2) {
+			syntaxError(all);
+		}
+
+		// Build abstract syntax tree (AST): [tagName, converter, params, content, hash, bindings, contentMarkup]
+		if (html) {
+			colon = ":";
+			converter = HTML;
+		}
+		slash = slash || isLinkExpr && !hasElse;
+
+		var late, openTagName, isLateOb,
+			pathBindings = (bind || isLinkExpr) && [[]], // pathBindings is an array of arrays for arg bindings and a hash of arrays for prop bindings
+			props = "",
+			args = "",
+			ctxProps = "",
+			paramsArgs = "",
+			paramsProps = "",
+			paramsCtxProps = "",
+			onError = "",
+			useTrigger = "",
+			// Block tag if not self-closing and not {{:}} or {{>}} (special case) and not a data-link expression
+			block = !slash && !colon;
+
+		//==== nested helper function ====
+		tagName = tagName || (params = params || "#data", colon); // {{:}} is equivalent to {{:#data}}
+		pushprecedingContent(index);
+		loc = index + all.length; // location marker - parsed up to here
+		if (codeTag) {
+			if (allowCode) {
+				content.push(["*", "\n" + params.replace(/^:/, "ret+= ").replace(rUnescapeQuotes, "$1") + ";\n"]);
+			}
+		} else if (tagName) {
+			if (tagName === "else") {
+				if (rTestElseIf.test(params)) {
+					syntaxError('For "{{else if expr}}" use "{{else expr}}"');
+				}
+				pathBindings = current[9] && [[]];
+				current[10] = markup.substring(current[10], index); // contentMarkup for block tag
+				openTagName = current[11] || current[0] || syntaxError("Mismatched: " + all);
+				// current[0] is tagName, but for {{else}} nodes, current[11] is tagName of preceding open tag
+				current = stack.pop();
+				content = current[2];
+				block = true;
+			}
+			if (params) {
+				// remove newlines from the params string, to avoid compiled code errors for unterminated strings
+				parseParams(params.replace(rNewLine, " "), pathBindings, tmpl, isLinkExpr)
+					.replace(rBuildHash, function(all, onerror, isCtxPrm, key, keyToken, keyValue, arg, param) {
+						if (key === "this:") {
+							keyValue = "undefined"; // this=some.path is always a to parameter (one-way), so don't need to compile/evaluate some.path initialization
+						}
+						if (param) {
+							isLateOb = isLateOb || param[0] === "@";
+						}
+						key = "'" + keyToken + "':";
+						if (arg) {
+							args += isCtxPrm + keyValue + ",";
+							paramsArgs += "'" + param + "',";
+						} else if (isCtxPrm) { // Contextual parameter, ~foo=expr
+							ctxProps += key + 'j._cp(' + keyValue + ',"' + param + '",view),';
+							// Compiled code for evaluating tagCtx on a tag will have: ctx:{'foo':j._cp(compiledExpr, "expr", view)}
+							paramsCtxProps += key + "'" + param + "',";
+						} else if (onerror) {
+							onError += keyValue;
+						} else {
+							if (keyToken === "trigger") {
+								useTrigger += keyValue;
+							}
+							if (keyToken === "lateRender") {
+								late = param !== "false"; // Render after first pass
+							}
+							props += key + keyValue + ",";
+							paramsProps += key + "'" + param + "',";
+							hasHandlers = hasHandlers || rHasHandlers.test(keyToken);
+						}
+						return "";
+					}).slice(0, -1);
+			}
+
+			if (pathBindings && pathBindings[0]) {
+				pathBindings.pop(); // Remove the binding that was prepared for next arg. (There is always an extra one ready).
+			}
+
+			newNode = [
+					tagName,
+					converter || !!convertBack || hasHandlers || "",
+					block && [],
+					parsedParam(paramsArgs || (tagName === ":" ? "'#data'," : ""), paramsProps, paramsCtxProps), // {{:}} equivalent to {{:#data}}
+					parsedParam(args || (tagName === ":" ? "data," : ""), props, ctxProps),
+					onError,
+					useTrigger,
+					late,
+					isLateOb,
+					pathBindings || 0
+				];
+			content.push(newNode);
+			if (block) {
+				stack.push(current);
+				current = newNode;
+				current[10] = loc; // Store current location of open tag, to be able to add contentMarkup when we reach closing tag
+				current[11] = openTagName; // Used for checking syntax (matching close tag)
+			}
+		} else if (closeBlock) {
+			blockTagCheck(closeBlock !== current[0] && closeBlock !== current[11] && closeBlock, current[0]); // Check matching close tag name
+			current[10] = markup.substring(current[10], index); // contentMarkup for block tag
+			current = stack.pop();
+		}
+		blockTagCheck(!current && closeBlock);
+		content = current[2];
+	}
+	//==== /end of nested functions ====
+
+	var i, result, newNode, hasHandlers, bindings,
+		allowCode = $subSettings.allowCode || tmpl && tmpl.allowCode
+			|| $viewsSettings.allowCode === true, // include direct setting of settings.allowCode true for backward compat only
+		astTop = [],
+		loc = 0,
+		stack = [],
+		content = astTop,
+		current = [,,astTop];
+
+	if (allowCode && tmpl._is) {
+		tmpl.allowCode = allowCode;
+	}
+
+//TODO	result = tmplFnsCache[markup]; // Only cache if template is not named and markup length < ...,
+//and there are no bindings or subtemplates?? Consider standard optimization for data-link="a.b.c"
+//		if (result) {
+//			tmpl.fn = result;
+//		} else {
+
+//		result = markup;
+	if (isLinkExpr) {
+		if (convertBack !== undefined) {
+			markup = markup.slice(0, -convertBack.length - 2) + delimCloseChar0;
+		}
+		markup = delimOpenChar0 + markup + delimCloseChar1;
+	}
+
+	blockTagCheck(stack[0] && stack[0][2].pop()[0]);
+	// Build the AST (abstract syntax tree) under astTop
+	markup.replace(rTag, parseTag);
+
+	pushprecedingContent(markup.length);
+
+	if (loc = astTop[astTop.length - 1]) {
+		blockTagCheck("" + loc !== loc && (+loc[10] === loc[10]) && loc[0]);
+	}
+//			result = tmplFnsCache[markup] = buildCode(astTop, tmpl);
+//		}
+
+	if (isLinkExpr) {
+		result = buildCode(astTop, markup, isLinkExpr);
+		bindings = [];
+		i = astTop.length;
+		while (i--) {
+			bindings.unshift(astTop[i][9]); // With data-link expressions, pathBindings array for tagCtx[i] is astTop[i][9]
+		}
+		setPaths(result, bindings);
+	} else {
+		result = buildCode(astTop, tmpl);
+	}
+	return result;
+}
+
+function setPaths(fn, pathsArr) {
+	var key, paths,
+		i = 0,
+		l = pathsArr.length;
+	fn.deps = [];
+	fn.paths = []; // The array of path binding (array/dictionary)s for each tag/else block's args and props
+	for (; i < l; i++) {
+		fn.paths.push(paths = pathsArr[i]);
+		for (key in paths) {
+			if (key !== "_jsvto" && paths.hasOwnProperty(key) && paths[key].length && !paths[key].skp) {
+				fn.deps = fn.deps.concat(paths[key]); // deps is the concatenation of the paths arrays for the different bindings
+			}
+		}
+	}
+}
+
+function parsedParam(args, props, ctx) {
+	return [args.slice(0, -1), props.slice(0, -1), ctx.slice(0, -1)];
+}
+
+function paramStructure(paramCode, paramVals) {
+	return '\n\tparams:{args:[' + paramCode[0] + '],\n\tprops:{' + paramCode[1] + '}'
+		+ (paramCode[2] ? ',\n\tctx:{' + paramCode[2] + '}' : "")
+		+ '},\n\targs:[' + paramVals[0] + '],\n\tprops:{' + paramVals[1] + '}'
+		+ (paramVals[2] ? ',\n\tctx:{' + paramVals[2] + '}' : "");
+}
+
+function parseParams(params, pathBindings, tmpl, isLinkExpr) {
+
+	function parseTokens(all, lftPrn0, lftPrn, bound, path, operator, err, eq, path2, late, prn,
+												comma, lftPrn2, apos, quot, rtPrn, rtPrnDot, prn2, space, index, full) {
+	// /(\()(?=\s*\()|(?:([([])\s*)?(?:(\^?)(~?[\w$.^]+)?\s*((\+\+|--)|\+|-|~(?![\w$])|&&|\|\||===|!==|==|!=|<=|>=|[<>%*:?\/]|(=))\s*|(!*?(@)?[#~]?[\w$.^]+)([([])?)|(,\s*)|(?:(\()\s*)?\\?(?:(')|("))|(?:\s*(([)\]])(?=[.^]|\s*$|[^([])|[)\]])([([]?))|(\s+)/g,
+	//lftPrn0           lftPrn         bound     path               operator     err                                          eq      path2 late            prn      comma  lftPrn2          apos quot        rtPrn  rtPrnDot                  prn2     space
+	// (left paren? followed by (path? followed by operator) or (path followed by paren?)) or comma or apos or quot or right paren or space
+
+		function parsePath(allPath, not, object, helper, view, viewProperty, pathTokens, leafToken) {
+			// /^(!*?)(?:null|true|false|\d[\d.]*|([\w$]+|\.|~([\w$]+)|#(view|([\w$]+))?)([\w$.^]*?)(?:[.[^]([\w$]+)\]?)?)$/g,
+			//    not                               object     helper    view  viewProperty pathTokens      leafToken
+			subPath = object === ".";
+			if (object) {
+				path = path.slice(not.length);
+				if (/^\.?constructor$/.test(leafToken||path)) {
+					syntaxError(allPath);
+				}
+				if (!subPath) {
+					allPath = (late // late path @a.b.c: not throw on 'property of undefined' if a undefined, and will use _getOb() after linking to resolve late.
+							? (isLinkExpr ? '' : '(ltOb.lt=ltOb.lt||') + '(ob='
+							: ""
+						)
+						+ (helper
+							? 'view.ctxPrm("' + helper + '")'
+							: view
+								? "view"
+								: "data")
+						+ (late
+							? ')===undefined' + (isLinkExpr ? '' : ')') + '?"":view._getOb(ob,"'
+							: ""
+						)
+						+ (leafToken
+							? (viewProperty
+								? "." + viewProperty
+								: helper
+									? ""
+									: (view ? "" : "." + object)
+								) + (pathTokens || "")
+							: (leafToken = helper ? "" : view ? viewProperty || "" : object, ""));
+					allPath = allPath + (leafToken ? "." + leafToken : "");
+
+					allPath = not + (allPath.slice(0, 9) === "view.data"
+						? allPath.slice(5) // convert #view.data... to data...
+						: allPath)
+					+ (late
+							? (isLinkExpr ? '"': '",ltOb') + (prn ? ',1)':')')
+							: ""
+						);
+				}
+				if (bindings) {
+					binds = named === "_linkTo" ? (bindto = pathBindings._jsvto = pathBindings._jsvto || []) : bndCtx.bd;
+					if (theOb = subPath && binds[binds.length-1]) {
+						if (theOb._cpfn) { // Computed property exprOb
+							while (theOb.sb) {
+								theOb = theOb.sb;
+							}
+							if (theOb.prm) {
+								if (theOb.bnd) {
+									path = "^" + path.slice(1);
+								}
+								theOb.sb = path;
+								theOb.bnd = theOb.bnd || path[0] === "^";
+							}
+						}
+					} else {
+						binds.push(path);
+					}
+					if (prn && !subPath) {
+						pathStart[fnDp] = ind;
+						compiledPathStart[fnDp] = compiledPath[fnDp].length;
+					}
+				}
+			}
+			return allPath;
+		}
+
+		//bound = bindings && bound;
+		if (bound && !eq) {
+			path = bound + path; // e.g. some.fn(...)^some.path - so here path is "^some.path"
+		}
+		operator = operator || "";
+		lftPrn2 = lftPrn2 || "";
+		lftPrn = lftPrn || lftPrn0 || lftPrn2;
+		path = path || path2;
+
+		if (late && (late = !/\)|]/.test(full[index-1]))) {
+			path = path.slice(1).split(".").join("^"); // Late path @z.b.c. Use "^" rather than "." to ensure that deep binding will be used
+		}
+		// Could do this - but not worth perf cost?? :-
+		// if (!path.lastIndexOf("#data.", 0)) { path = path.slice(6); } // If path starts with "#data.", remove that.
+		prn = prn || prn2 || "";
+		var expr, binds, theOb, newOb, subPath, lftPrnFCall, ret,
+			ind = index;
+
+		if (!aposed && !quoted) {
+			if (err) {
+				syntaxError(params);
+			}
+			if (rtPrnDot && bindings) {
+				// This is a binding to a path in which an object is returned by a helper/data function/expression, e.g. foo()^x.y or (a?b:c)^x.y
+				// We create a compiled function to get the object instance (which will be called when the dependent data of the subexpression changes,
+				// to return the new object, and trigger re-binding of the subsequent path)
+				expr = pathStart[fnDp-1];
+				if (full.length - 1 > ind - (expr || 0)) { // We need to compile a subexpression
+					expr = $.trim(full.slice(expr, ind + all.length));
+					binds = bindto || bndStack[fnDp-1].bd;
+					// Insert exprOb object, to be used during binding to return the computed object
+					theOb = binds[binds.length-1];
+					if (theOb && theOb.prm) {
+						while (theOb.sb && theOb.sb.prm) {
+							theOb = theOb.sb;
+						}
+						newOb = theOb.sb = {path: theOb.sb, bnd: theOb.bnd};
+					} else {
+						binds.push(newOb = {path: binds.pop()}); // Insert exprOb object, to be used during binding to return the computed object
+					}
+					if (theOb && theOb.sb === newOb) {
+						compiledPath[fnDp] = compiledPath[fnDp-1].slice(theOb._cpPthSt) + compiledPath[fnDp];
+						compiledPath[fnDp-1] = compiledPath[fnDp-1].slice(0, theOb._cpPthSt);
+					}
+					newOb._cpPthSt = compiledPathStart[fnDp-1];
+					newOb._cpKey = expr;
+
+					compiledPath[fnDp] += full.slice(prevIndex, index);
+					prevIndex = index;
+
+					newOb._cpfn = cpFnStore[expr] = cpFnStore[expr] || // Compiled function for computed value: get from store, or compile and store
+						new Function("data,view,j", // Compiled function for computed value in template
+					"//" + expr + "\nvar v;\nreturn ((v=" + compiledPath[fnDp] + (rtPrn === "]" ? ")]" : rtPrn) + ")!=null?v:null);");
+
+					compiledPath[fnDp-1] += (fnCall[prnDp] && $subSettingsAdvanced.cache ? "view.getCache(\"" + expr.replace(rEscapeQuotes, "\\$&") + "\"" : compiledPath[fnDp]);
+
+					newOb.prm = bndCtx.bd;
+					newOb.bnd = newOb.bnd || newOb.path && newOb.path.indexOf("^") >= 0;
+				}
+				compiledPath[fnDp] = "";
+			}
+			if (prn === "[") {
+				prn = "[j._sq(";
+			}
+			if (lftPrn === "[") {
+				lftPrn = "[j._sq(";
+			}
+		}
+		ret = (aposed
+			// within single-quoted string
+			? (aposed = !apos, (aposed ? all : lftPrn2 + '"'))
+			: quoted
+			// within double-quoted string
+				? (quoted = !quot, (quoted ? all : lftPrn2 + '"'))
+				:
+			(
+				(lftPrn
+					? (
+						prnStack[++prnDp] = true,
+						prnInd[prnDp] = 0,
+						bindings && (
+							pathStart[fnDp++] = ind++,
+							bndCtx = bndStack[fnDp] = {bd: []},
+							compiledPath[fnDp] = "",
+							compiledPathStart[fnDp] = 1
+						),
+						lftPrn) // Left paren, (not a function call paren)
+					: "")
+				+ (space
+					? (prnDp
+						? "" // A space within parens or within function call parens, so not a separator for tag args
+			// New arg or prop - so insert backspace \b (\x08) as separator for named params, used subsequently by rBuildHash, and prepare new bindings array
+						: (paramIndex = full.slice(paramIndex, ind), named
+							? (named = boundName = bindto = false, "\b")
+							: "\b,") + paramIndex + (paramIndex = ind + all.length, bindings && pathBindings.push(bndCtx.bd = []), "\b")
+					)
+					: eq
+			// named param. Remove bindings for arg and create instead bindings array for prop
+						? (fnDp && syntaxError(params), bindings && pathBindings.pop(), named = "_" + path, boundName = bound, paramIndex = ind + all.length,
+								bindings && ((bindings = bndCtx.bd = pathBindings[named] = []), bindings.skp = !bound), path + ':')
+						: path
+			// path
+							? (path.split("^").join(".").replace($sub.rPath, parsePath)
+								+ (prn || operator)
+							)
+							: operator
+			// operator
+								? operator
+								: rtPrn
+			// function
+									? rtPrn === "]" ? ")]" : ")"
+									: comma
+										? (fnCall[prnDp] || syntaxError(params), ",") // We don't allow top-level literal arrays or objects
+										: lftPrn0
+											? ""
+											: (aposed = apos, quoted = quot, '"')
+			))
+		);
+
+		if (!aposed && !quoted) {
+			if (rtPrn) {
+				fnCall[prnDp] = false;
+				prnDp--;
+			}
+		}
+
+		if (bindings) {
+			if (!aposed && !quoted) {
+				if (rtPrn) {
+					if (prnStack[prnDp+1]) {
+						bndCtx = bndStack[--fnDp];
+						prnStack[prnDp+1] = false;
+					}
+					prnStart = prnInd[prnDp+1];
+				}
+				if (prn) {
+					prnInd[prnDp+1] = compiledPath[fnDp].length + (lftPrn ? 1 : 0);
+					if (path || rtPrn) {
+						bndCtx = bndStack[++fnDp] = {bd: []};
+						prnStack[prnDp+1] = true;
+					}
+				}
+			}
+
+			compiledPath[fnDp] = (compiledPath[fnDp]||"") + full.slice(prevIndex, index);
+			prevIndex = index+all.length;
+
+			if (!aposed && !quoted) {
+				if (lftPrnFCall = lftPrn && prnStack[prnDp+1]) {
+					compiledPath[fnDp-1] += lftPrn;
+					compiledPathStart[fnDp-1]++;
+				}
+				if (prn === "(" && subPath && !newOb) {
+					compiledPath[fnDp] = compiledPath[fnDp-1].slice(prnStart) + compiledPath[fnDp];
+					compiledPath[fnDp-1] = compiledPath[fnDp-1].slice(0, prnStart);
+				}
+			}
+			compiledPath[fnDp] += lftPrnFCall ? ret.slice(1) : ret;
+		}
+
+		if (!aposed && !quoted && prn) {
+			prnDp++;
+			if (path && prn === "(") {
+				fnCall[prnDp] = true;
+			}
+		}
+
+		if (!aposed && !quoted && prn2) {
+			if (bindings) {
+				compiledPath[fnDp] += prn;
+			}
+			ret += prn;
+		}
+		return ret;
+	}
+
+	var named, bindto, boundName, result,
+		quoted, // boolean for string content in double quotes
+		aposed, // or in single quotes
+		bindings = pathBindings && pathBindings[0], // bindings array for the first arg
+		bndCtx = {bd: bindings},
+		bndStack = {0: bndCtx},
+		paramIndex = 0, // list,
+		// The following are used for tracking path parsing including nested paths, such as "a.b(c^d + (e))^f", and chained computed paths such as
+		// "a.b().c^d().e.f().g" - which has four chained paths, "a.b()", "^c.d()", ".e.f()" and ".g"
+		prnDp = 0,     // For tracking paren depth (not function call parens)
+		fnDp = 0,      // For tracking depth of function call parens
+		prnInd = {},   // We are in a function call
+		prnStart = 0,  // tracks the start of the current path such as c^d() in the above example
+		prnStack = {}, // tracks parens which are not function calls, and so are associated with new bndStack contexts
+		fnCall = {},   // We are in a function call
+		pathStart = {},// tracks the start of the current path such as c^d() in the above example
+		compiledPathStart = {0: 0},
+		compiledPath = {0:""},
+		prevIndex = 0;
+
+	if (params[0] === "@") {
+		params = params.replace(rBracketQuote, ".");
+	}
+	result = (params + (tmpl ? " " : "")).replace($sub.rPrm, parseTokens);
+
+	if (bindings) {
+		result = compiledPath[0];
+	}
+
+	return !prnDp && result || syntaxError(params); // Syntax error if unbalanced parens in params expression
+}
+
+function buildCode(ast, tmpl, isLinkExpr) {
+	// Build the template function code from the AST nodes, and set as property on the passed-in template object
+	// Used for compiling templates, and also by JsViews to build functions for data link expressions
+	var i, node, tagName, converter, tagCtx, hasTag, hasEncoder, getsVal, hasCnvt, useCnvt, tmplBindings, pathBindings, params, boundOnErrStart,
+		boundOnErrEnd, tagRender, nestedTmpls, tmplName, nestedTmpl, tagAndElses, content, markup, nextIsElse, oldCode, isElse, isGetVal, tagCtxFn,
+		onError, tagStart, trigger, lateRender, retStrOpen, retStrClose,
+		tmplBindingKey = 0,
+		useViews = $subSettingsAdvanced.useViews || tmpl.useViews || tmpl.tags || tmpl.templates || tmpl.helpers || tmpl.converters,
+		code = "",
+		tmplOptions = {},
+		l = ast.length;
+
+	if ("" + tmpl === tmpl) {
+		tmplName = isLinkExpr ? 'data-link="' + tmpl.replace(rNewLine, " ").slice(1, -1) + '"' : tmpl;
+		tmpl = 0;
+	} else {
+		tmplName = tmpl.tmplName || "unnamed";
+		if (tmpl.allowCode) {
+			tmplOptions.allowCode = true;
+		}
+		if (tmpl.debug) {
+			tmplOptions.debug = true;
+		}
+		tmplBindings = tmpl.bnds;
+		nestedTmpls = tmpl.tmpls;
+	}
+	for (i = 0; i < l; i++) {
+		// AST nodes: [0: tagName, 1: converter, 2: content, 3: params, 4: code, 5: onError, 6: trigger, 7:pathBindings, 8: contentMarkup]
+		node = ast[i];
+
+		// Add newline for each callout to t() c() etc. and each markup string
+		if ("" + node === node) {
+			// a markup string to be inserted
+			code += '+"' + node + '"';
+		} else {
+			// a compiled tag expression to be inserted
+			tagName = node[0];
+			if (tagName === "*") {
+				// Code tag: {{* }}
+				code += ";\n" + node[1] + "\nret=ret";
+			} else {
+				converter = node[1];
+				content = !isLinkExpr && node[2];
+				tagCtx = paramStructure(node[3], params = node[4]);
+				trigger = node[6];
+				lateRender = node[7];
+				if (node[8]) { // latePath @a.b.c or @~a.b.c
+					retStrOpen = "\nvar ob,ltOb={},ctxs=";
+					retStrClose = ";\nctxs.lt=ltOb.lt;\nreturn ctxs;";
+				} else {
+					retStrOpen = "\nreturn ";
+					retStrClose = "";
+				}
+				markup = node[10] && node[10].replace(rUnescapeQuotes, "$1");
+				if (isElse = tagName === "else") {
+					if (pathBindings) {
+						pathBindings.push(node[9]);
+					}
+				} else {
+					onError = node[5] || $subSettings.debugMode !== false && "undefined"; // If debugMode not false, set default onError handler on tag to "undefined" (see onRenderError)
+					if (tmplBindings && (pathBindings = node[9])) { // Array of paths, or false if not data-bound
+						pathBindings = [pathBindings];
+						tmplBindingKey = tmplBindings.push(1); // Add placeholder in tmplBindings for compiled function
+					}
+				}
+				useViews = useViews || params[1] || params[2] || pathBindings || /view.(?!index)/.test(params[0]);
+				// useViews is for perf optimization. For render() we only use views if necessary - for the more advanced scenarios.
+				// We use views if there are props, contextual properties or args with #... (other than #index) - but you can force
+				// using the full view infrastructure, (and pay a perf price) by opting in: Set useViews: true on the template, manually...
+				if (isGetVal = tagName === ":") {
+					if (converter) {
+						tagName = converter === HTML ? ">" : converter + tagName;
+					}
+				} else {
+					if (content) { // TODO optimize - if content.length === 0 or if there is a tmpl="..." specified - set content to null / don't run this compilation code - since content won't get used!!
+						// Create template object for nested template
+						nestedTmpl = tmplObject(markup, tmplOptions);
+						nestedTmpl.tmplName = tmplName + "/" + tagName;
+						// Compile to AST and then to compiled function
+						nestedTmpl.useViews = nestedTmpl.useViews || useViews;
+						buildCode(content, nestedTmpl);
+						useViews = nestedTmpl.useViews;
+						nestedTmpls.push(nestedTmpl);
+					}
+
+					if (!isElse) {
+						// This is not an else tag.
+						tagAndElses = tagName;
+						useViews = useViews || tagName && (!$tags[tagName] || !$tags[tagName].flow);
+						// Switch to a new code string for this bound tag (and its elses, if it has any) - for returning the tagCtxs array
+						oldCode = code;
+						code = "";
+					}
+					nextIsElse = ast[i + 1];
+					nextIsElse = nextIsElse && nextIsElse[0] === "else";
+				}
+				tagStart = onError ? ";\ntry{\nret+=" : "\n+";
+				boundOnErrStart = "";
+				boundOnErrEnd = "";
+
+				if (isGetVal && (pathBindings || trigger || converter && converter !== HTML || lateRender)) {
+					// For convertVal we need a compiled function to return the new tagCtx(s)
+					tagCtxFn = new Function("data,view,j", "// " + tmplName + " " + (++tmplBindingKey) + " " + tagName
+						+ retStrOpen + "{" + tagCtx + "};" + retStrClose);
+					tagCtxFn._er = onError;
+					tagCtxFn._tag = tagName;
+					tagCtxFn._bd = !!pathBindings; // data-linked tag {^{.../}}
+					tagCtxFn._lr = lateRender;
+
+					if (isLinkExpr) {
+						return tagCtxFn;
+					}
+
+					setPaths(tagCtxFn, pathBindings);
+					tagRender = 'c("' + converter + '",view,';
+					useCnvt = true;
+					boundOnErrStart = tagRender + tmplBindingKey + ",";
+					boundOnErrEnd = ")";
+				}
+				code += (isGetVal
+					? (isLinkExpr ? (onError ? "try{\n" : "") + "return " : tagStart) + (useCnvt // Call _cnvt if there is a converter: {{cnvt: ... }} or {^{cnvt: ... }}
+						? (useCnvt = undefined, useViews = hasCnvt = true, tagRender + (tagCtxFn
+							? ((tmplBindings[tmplBindingKey - 1] = tagCtxFn), tmplBindingKey) // Store the compiled tagCtxFn in tmpl.bnds, and pass the key to convertVal()
+							: "{" + tagCtx + "}") + ")")
+						: tagName === ">"
+							? (hasEncoder = true, "h(" + params[0] + ")")
+							: (getsVal = true, "((v=" + params[0] + ')!=null?v:' + (isLinkExpr ? 'null)' : '"")'))
+							// Non strict equality so data-link="title{:expr}" with expr=null/undefined removes title attribute
+					)
+					: (hasTag = true, "\n{view:view,content:false,tmpl:" // Add this tagCtx to the compiled code for the tagCtxs to be passed to renderTag()
+						+ (content ? nestedTmpls.length : "false") + "," // For block tags, pass in the key (nestedTmpls.length) to the nested content template
+						+ tagCtx + "},"));
+
+				if (tagAndElses && !nextIsElse) {
+					// This is a data-link expression or an inline tag without any elses, or the last {{else}} of an inline tag
+					// We complete the code for returning the tagCtxs array
+					code = "[" + code.slice(0, -1) + "]";
+					tagRender = 't("' + tagAndElses + '",view,this,';
+					if (isLinkExpr || pathBindings) {
+						// This is a bound tag (data-link expression or inline bound tag {^{tag ...}}) so we store a compiled tagCtxs function in tmp.bnds
+						code = new Function("data,view,j", " // " + tmplName + " " + tmplBindingKey + " " + tagAndElses + retStrOpen + code
+							+ retStrClose);
+						code._er = onError;
+						code._tag = tagAndElses;
+						if (pathBindings) {
+							setPaths(tmplBindings[tmplBindingKey - 1] = code, pathBindings);
+						}
+						code._lr = lateRender;
+						if (isLinkExpr) {
+							return code; // For a data-link expression we return the compiled tagCtxs function
+						}
+						boundOnErrStart = tagRender + tmplBindingKey + ",undefined,";
+						boundOnErrEnd = ")";
+					}
+
+					// This is the last {{else}} for an inline tag.
+					// For a bound tag, pass the tagCtxs fn lookup key to renderTag.
+					// For an unbound tag, include the code directly for evaluating tagCtxs array
+					code = oldCode + tagStart + tagRender + (pathBindings && tmplBindingKey || code) + ")";
+					pathBindings = 0;
+					tagAndElses = 0;
+				}
+				if (onError && !nextIsElse) {
+					useViews = true;
+					code += ';\n}catch(e){ret' + (isLinkExpr ? "urn " : "+=") + boundOnErrStart + 'j._err(e,view,' + onError + ')' + boundOnErrEnd + ';}' + (isLinkExpr ? "" : '\nret=ret');
+				}
+			}
+		}
+	}
+	// Include only the var references that are needed in the code
+	code = "// " + tmplName
+		+ (tmplOptions.debug ? "\ndebugger;" : "")
+		+ "\nvar v"
+		+ (hasTag ? ",t=j._tag" : "")                // has tag
+		+ (hasCnvt ? ",c=j._cnvt" : "")              // converter
+		+ (hasEncoder ? ",h=j._html" : "")           // html converter
+		+ (isLinkExpr
+				? (node[8] // late @... path?
+						? ", ob"
+						: ""
+					) + ";\n"
+				: ',ret=""')
+		+ code
+		+ (isLinkExpr ? "\n" : ";\nreturn ret;");
+
+	try {
+		code = new Function("data,view,j", code);
+	} catch (e) {
+		syntaxError("Compiled template code:\n\n" + code + '\n: "' + (e.message||e) + '"');
+	}
+	if (tmpl) {
+		tmpl.fn = code;
+		tmpl.useViews = !!useViews;
+	}
+	return code;
+}
+
+//==========
+// Utilities
+//==========
+
+// Merge objects, in particular contexts which inherit from parent contexts
+function extendCtx(context, parentContext) {
+	// Return copy of parentContext, unless context is defined and is different, in which case return a new merged context
+	// If neither context nor parentContext are defined, return undefined
+	return context && context !== parentContext
+		? (parentContext
+			? $extend($extend({}, parentContext), context)
+			: context)
+		: parentContext && $extend({}, parentContext);
+}
+
+function getTargetProps(source, tagCtx) {
+	// this pointer is theMap - which has tagCtx.props too
+	// arguments: tagCtx.args.
+	var key, prop,
+		map = tagCtx.map,
+		propsArr = map && map.propsArr;
+
+	if (!propsArr) { // map.propsArr is the full array of {key:..., prop:...} objects
+		propsArr = [];
+		if (typeof source === OBJECT || $isFunction(source)) {
+			for (key in source) {
+				prop = source[key];
+				if (key !== $expando && source.hasOwnProperty(key) && (!tagCtx.props.noFunctions || !$.isFunction(prop))) {
+					propsArr.push({key: key, prop: prop});
+				}
+			}
+		}
+		if (map) {
+			map.propsArr = map.options && propsArr; // If bound {^{props}} and not isRenderCall, store propsArr on map (map.options is defined only for bound, && !isRenderCall)
+		}
+	}
+	return getTargetSorted(propsArr, tagCtx); // Obtains map.tgt, by filtering, sorting and splicing the full propsArr
+}
+
+function getTargetSorted(value, tagCtx) {
+	// getTgt
+	var mapped, start, end,
+		tag = tagCtx.tag,
+		props = tagCtx.props,
+		propParams = tagCtx.params.props,
+		filter = props.filter,
+		sort = props.sort,
+		directSort = sort === true,
+		step = parseInt(props.step),
+		reverse = props.reverse ? -1 : 1;
+
+	if (!$isArray(value)) {
+		return value;
+	}
+	if (directSort || sort && "" + sort === sort) {
+		// Temporary mapped array holds objects with index and sort-value
+		mapped = value.map(function(item, i) {
+			item = directSort ? item : getPathObject(item, sort);
+			return {i: i, v: "" + item === item ? item.toLowerCase() : item};
+		});
+		// Sort mapped array
+		mapped.sort(function(a, b) {
+			return a.v > b.v ? reverse : a.v < b.v ? -reverse : 0;
+		});
+		// Map to new array with resulting order
+		value = mapped.map(function(item){
+			return value[item.i];
+		});
+	} else if ((sort || reverse < 0) && !tag.dataMap) {
+		value = value.slice(); // Clone array first if not already a new array
+	}
+	if ($isFunction(sort)) {
+		value = value.sort(function() { // Wrap the sort function to provide tagCtx as 'this' pointer
+			return sort.apply(tagCtx, arguments);
+		});
+	}
+	if (reverse < 0 && (!sort || $isFunction(sort))) { // Reverse result if not already reversed in sort
+		value = value.reverse();
+	}
+
+	if (value.filter && filter) { // IE8 does not support filter
+		value = value.filter(filter, tagCtx);
+		if (tagCtx.tag.onFilter) {
+			tagCtx.tag.onFilter(tagCtx);
+		}
+	}
+
+	if (propParams.sorted) {
+		mapped = (sort || reverse < 0) ? value : value.slice();
+		if (tag.sorted) {
+			$.observable(tag.sorted).refresh(mapped); // Note that this might cause the start and end props to be modified - e.g. by pager tag control
+		} else {
+			tagCtx.map.sorted = mapped;
+		}
+	}
+
+	start = props.start; // Get current value - after possible changes triggered by tag.sorted refresh() above
+	end = props.end;
+	if (propParams.start && start === undefined || propParams.end && end === undefined) {
+		start = end = 0;
+	}
+	if (!isNaN(start) || !isNaN(end)) { // start or end specified, but not the auto-create Number array scenario of {{for start=xxx end=yyy}}
+		start = +start || 0;
+		end = end === undefined || end > value.length ? value.length : +end;
+		value = value.slice(start, end);
+	}
+	if (step > 1) {
+		start = 0;
+		end = value.length;
+		mapped = [];
+		for (; start<end; start+=step) {
+			mapped.push(value[start]);
+		}
+		value = mapped;
+	}
+	if (propParams.paged && tag.paged) {
+		$observable(tag.paged).refresh(value);
+	}
+
+	return value;
+}
+
+/** Render the template as a string, using the specified data and helpers/context
+* $("#tmpl").render()
+*
+* @param {any}        data
+* @param {hash}       [helpersOrContext]
+* @param {boolean}    [noIteration]
+* @returns {string}   rendered template
+*/
+function $fnRender(data, context, noIteration) {
+	var tmplElem = this.jquery && (this[0] || error('Unknown template')), // Targeted element not found for jQuery template selector such as "#myTmpl"
+		tmpl = tmplElem.getAttribute(tmplAttr);
+
+	return renderContent.call(tmpl && $.data(tmplElem)[jsvTmpl] || $templates(tmplElem),
+		data, context, noIteration);
+}
+
+//========================== Register converters ==========================
+
+function getCharEntity(ch) {
+	// Get character entity for HTML, Attribute and optional data encoding
+	return charEntities[ch] || (charEntities[ch] = "&#" + ch.charCodeAt(0) + ";");
+}
+
+function getCharFromEntity(match, token) {
+	// Get character from HTML entity, for optional data unencoding
+	return charsFromEntities[token] || "";
+}
+
+function htmlEncode(text) {
+	// HTML encode: Replace < > & ' " ` etc. by corresponding entities.
+	return text != undefined ? rIsHtml.test(text) && ("" + text).replace(rHtmlEncode, getCharEntity) || text : "";
+}
+
+function dataEncode(text) {
+	// Encode just < > and & - intended for 'safe data' along with {{:}} rather than {{>}}
+  return "" + text === text ? text.replace(rDataEncode, getCharEntity) : text;
+}
+
+function dataUnencode(text) {
+  // Unencode just < > and & - intended for 'safe data' along with {{:}} rather than {{>}}
+  return "" + text === text ? text.replace(rDataUnencode, getCharFromEntity) : text;
+}
+
+//========================== Initialize ==========================
+
+$sub = $views.sub;
+$viewsSettings = $views.settings;
+
+if (!(jsr || $ && $.render)) {
+	// JsRender/JsViews not already loaded (or loaded without jQuery, and we are now moving from jsrender namespace to jQuery namepace)
+	for (jsvStoreName in jsvStores) {
+		registerStore(jsvStoreName, jsvStores[jsvStoreName]);
+	}
+
+	$converters = $views.converters;
+	$helpers = $views.helpers;
+	$tags = $views.tags;
+
+	$sub._tg.prototype = {
+		baseApply: baseApply,
+		cvtArgs: convertArgs,
+		bndArgs: convertBoundArgs,
+		ctxPrm: contextParameter
+	};
+
+	topView = $sub.topView = new View();
+
+	//BROWSER-SPECIFIC CODE
+	if ($) {
+
+		////////////////////////////////////////////////////////////////////////////////////////////////
+		// jQuery (= $) is loaded
+
+		$.fn.render = $fnRender;
+		$expando = $.expando;
+		if ($.observable) {
+			if (versionNumber !== (versionNumber = $.views.jsviews)) {
+				// Different version of jsRender was loaded
+				throw "jquery.observable.js requires jsrender.js " + versionNumber;
+			}
+			$extend($sub, $.views.sub); // jquery.observable.js was loaded before jsrender.js
+			$views.map = $.views.map;
+		}
+
+	} else {
+		////////////////////////////////////////////////////////////////////////////////////////////////
+		// jQuery is not loaded.
+
+		$ = {};
+
+		if (setGlobals) {
+			global.jsrender = $; // We are loading jsrender.js from a script element, not AMD or CommonJS, so set global
+		}
+
+		// Error warning if jsrender.js is used as template engine on Node.js (e.g. Express or Hapi...)
+		// Use jsrender-node.js instead...
+		$.renderFile = $.__express = $.compile = function() { throw "Node.js: use npm jsrender, or jsrender-node.js"; };
+
+		//END BROWSER-SPECIFIC CODE
+		$.isFunction = function(ob) {
+			return typeof ob === "function";
+		};
+
+		$.isArray = Array.isArray || function(obj) {
+			return ({}.toString).call(obj) === "[object Array]";
+		};
+
+		$sub._jq = function(jq) { // private method to move from JsRender APIs from jsrender namespace to jQuery namespace
+			if (jq !== $) {
+				$extend(jq, $); // map over from jsrender namespace to jQuery namespace
+				$ = jq;
+				$.fn.render = $fnRender;
+				delete $.jsrender;
+				$expando = $.expando;
+			}
+		};
+
+		$.jsrender = versionNumber;
+	}
+	$subSettings = $sub.settings;
+	$subSettings.allowCode = false;
+	$isFunction = $.isFunction;
+	$.render = $render;
+	$.views = $views;
+	$.templates = $templates = $views.templates;
+
+	for (setting in $subSettings) {
+		addSetting(setting);
+	}
+
+	/**
+	* $.views.settings.debugMode(true)
+	* @param {boolean} debugMode
+	* @returns {Settings}
+	*
+	* debugMode = $.views.settings.debugMode()
+	* @returns {boolean}
+	*/
+	($viewsSettings.debugMode = function(debugMode) {
+		return debugMode === undefined
+			? $subSettings.debugMode
+			: (
+				$subSettings._clFns && $subSettings._clFns(), // Clear linkExprStore (cached compiled expressions), since debugMode setting affects compilation for expressions
+				$subSettings.debugMode = debugMode,
+				$subSettings.onError = debugMode + "" === debugMode
+					? function() { return debugMode; }
+					: $isFunction(debugMode)
+						? debugMode
+						: undefined,
+				$viewsSettings);
+	})(false); // jshint ignore:line
+
+	$subSettingsAdvanced = $subSettings.advanced = {
+		cache: true, // By default use cached values of computed values (Otherwise, set advanced cache setting to false)
+		useViews: false,
+		_jsv: false // For global access to JsViews store
+	};
+
+	//========================== Register tags ==========================
+
+	$tags({
+		"if": {
+			render: function(val) {
+				// This function is called once for {{if}} and once for each {{else}}.
+				// We will use the tag.rendering object for carrying rendering state across the calls.
+				// If not done (a previous block has not been rendered), look at expression for this block and render the block if expression is truthy
+				// Otherwise return ""
+				var self = this,
+					tagCtx = self.tagCtx,
+					ret = (self.rendering.done || !val && (tagCtx.args.length || !tagCtx.index))
+						? ""
+						: (self.rendering.done = true,
+							self.selected = tagCtx.index,
+							undefined); // Test is satisfied, so render content on current context
+				return ret;
+			},
+			contentCtx: true, // Inherit parent view data context
+			flow: true
+		},
+		"for": {
+			sortDataMap: dataMap(getTargetSorted),
+			init: function(val, cloned) {
+				this.setDataMap(this.tagCtxs);
+			},
+			render: function(val) {
+				// This function is called once for {{for}} and once for each {{else}}.
+				// We will use the tag.rendering object for carrying rendering state across the calls.
+				var value, filter, srtField, isArray, i, sorted, end, step,
+					self = this,
+					tagCtx = self.tagCtx,
+					range = tagCtx.argDefault === false,
+					props = tagCtx.props,
+					iterate = range || tagCtx.args.length, // Not final else and not auto-create range
+					result = "",
+					done = 0;
+
+				if (!self.rendering.done) {
+					value = iterate ? val : tagCtx.view.data; // For the final else, defaults to current data without iteration.
+
+					if (range) {
+						range = props.reverse ? "unshift" : "push";
+						end = +props.end;
+						step = +props.step || 1;
+						value = []; // auto-create integer array scenario of {{for start=xxx end=yyy}}
+						for (i = +props.start || 0; (end - i) * step > 0; i += step) {
+							value[range](i);
+						}
+					}
+					if (value !== undefined) {
+						isArray = $isArray(value);
+						result += tagCtx.render(value, !iterate || props.noIteration);
+						// Iterates if data is an array, except on final else - or if noIteration property
+						// set to true. (Use {{include}} to compose templates without array iteration)
+						done += isArray ? value.length : 1;
+					}
+					if (self.rendering.done = done) {
+						self.selected = tagCtx.index;
+					}
+					// If nothing was rendered we will look at the next {{else}}. Otherwise, we are done.
+				}
+				return result;
+			},
+			setDataMap: function(tagCtxs) {
+				var tagCtx, props, paramsProps,
+					self = this,
+					l = tagCtxs.length;
+				while (l--) {
+					tagCtx = tagCtxs[l];
+					props = tagCtx.props;
+					paramsProps = tagCtx.params.props;
+					tagCtx.argDefault = props.end === undefined || tagCtx.args.length > 0; // Default to #data except for auto-create range scenario {{for start=xxx end=yyy step=zzz}}
+					props.dataMap = (tagCtx.argDefault !== false && $isArray(tagCtx.args[0]) &&
+						(paramsProps.sort || paramsProps.start || paramsProps.end || paramsProps.step || paramsProps.filter || paramsProps.reverse
+						|| props.sort || props.start || props.end || props.step || props.filter || props.reverse))
+						&& self.sortDataMap;
+				}
+			},
+			flow: true
+		},
+		props: {
+			baseTag: "for",
+			dataMap: dataMap(getTargetProps),
+			init: noop, // Don't execute the base init() of the "for" tag
+			flow: true
+		},
+		include: {
+			flow: true
+		},
+		"*": {
+			// {{* code... }} - Ignored if template.allowCode and $.views.settings.allowCode are false. Otherwise include code in compiled template
+			render: retVal,
+			flow: true
+		},
+		":*": {
+			// {{:* returnedExpression }} - Ignored if template.allowCode and $.views.settings.allowCode are false. Otherwise include code in compiled template
+			render: retVal,
+			flow: true
+		},
+		dbg: $helpers.dbg = $converters.dbg = dbgBreak // Register {{dbg/}}, {{dbg:...}} and ~dbg() to throw and catch, as breakpoints for debugging.
+	});
+
+	$converters({
+		html: htmlEncode,
+		attr: htmlEncode, // Includes > encoding since rConvertMarkers in JsViews does not skip > characters in attribute strings
+		encode: dataEncode,
+		unencode: dataUnencode, // Includes > encoding since rConvertMarkers in JsViews does not skip > characters in attribute strings
+		url: function(text) {
+			// URL encoding helper.
+			return text != undefined ? encodeURI("" + text) : text === null ? text : ""; // null returns null, e.g. to remove attribute. undefined returns ""
+		}
+	});
+}
+//========================== Define default delimiters ==========================
+$subSettings = $sub.settings;
+$isArray = ($||jsr).isArray;
+$viewsSettings.delimiters("{{", "}}", "^");
+
+if (jsrToJq) { // Moving from jsrender namespace to jQuery namepace - copy over the stored items (templates, converters, helpers...)
+	jsr.views.sub._jq($);
+}
+return $ || jsr;
+}, window));
+
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+var __webpack_exports__ = {};
+/*!*******************************************************!*\
+  !*** ./resources/assets/js/flatpickr_localization.js ***!
+  \*******************************************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var flatpickr_dist_l10n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flatpickr/dist/l10n */ "./node_modules/flatpickr/dist/l10n/index.js");
+/* harmony import */ var flatpickr_dist_l10n__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(flatpickr_dist_l10n__WEBPACK_IMPORTED_MODULE_0__);
+
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+var __webpack_exports__ = {};
+/*!**************************************!*\
+  !*** ./resources/assets/js/turbo.js ***!
+  \**************************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _hotwired_turbo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @hotwired/turbo */ "./node_modules/@hotwired/turbo/dist/turbo.es2017-esm.js");
+
+window.Turbo = _hotwired_turbo__WEBPACK_IMPORTED_MODULE_0__;
+_hotwired_turbo__WEBPACK_IMPORTED_MODULE_0__.start();
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_hotwired_turbo__WEBPACK_IMPORTED_MODULE_0__);
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!***********************************************!*\
+  !*** ./resources/assets/js/custom/helpers.js ***!
+  \***********************************************/
+window.listenWithoutTarget = function (event, callback) {
+  $(document).on(event, callback);
+};
+window.listen = function (event, selector, callback) {
+  $(document).on(event, selector, callback);
+};
+window.listenClick = function (selector, callback) {
+  $(document).on('click', selector, callback);
+};
+window.listenSubmit = function (selector, callback) {
+  $(document).on('submit', selector, callback);
+};
+window.listenHiddenBsModal = function (selector, callback) {
+  $(document).on('hidden.bs.modal', selector, callback);
+};
+window.listenShowBsModal = function (selector, callback) {
+  $(document).on('show.bs.modal', selector, callback);
+};
+window.listenChange = function (selector, callback) {
+  $(document).on('change', selector, callback);
+};
+window.listenKeyup = function (selector, callback) {
+  $(document).on('keyup', selector, callback);
+};
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!**********************************************!*\
+  !*** ./resources/assets/js/custom/custom.js ***!
+  \**********************************************/
+var source = null;
+var jsrender = __webpack_require__(/*! jsrender */ "./node_modules/jsrender/jsrender.js");
+document.addEventListener("turbo:load", initAllComponents);
+function initAllComponents() {
+  refreshCsrfToken();
+  select2initialize();
+  modalInputFocus();
+  alertInitialize();
+  IOInitImageComponent();
+  IOInitSidebar();
+  togglePassword();
+  tooltip();
+  initToastr();
+  resizeWindow();
+}
+function togglePassword() {
+  $('[data-toggle="password"]').each(function () {
+    var input = $(this);
+    var eye_btn = $(this).parent().find(".input-icon");
+    eye_btn.css("cursor", "pointer").addClass("input-password-hide");
+    eye_btn.on("click", function () {
+      if (eye_btn.hasClass("input-password-hide")) {
+        eye_btn.removeClass("input-password-hide").addClass("input-password-show");
+        eye_btn.find(".bi").removeClass("bi-eye-slash-fill").addClass("bi-eye-fill");
+        input.attr("type", "text");
+      } else {
+        eye_btn.removeClass("input-password-show").addClass("input-password-hide");
+        eye_btn.find(".bi").removeClass("bi-eye-fill").addClass("bi-eye-slash-fill");
+        input.attr("type", "password");
+      }
+    });
+  });
+}
+function alertInitialize() {
+  $(".alert").delay(5000).slideUp(300);
+}
+function select2initialize() {
+  $('[data-control="select2"]').each(function () {
+    $(this).select2();
+  });
+}
+function refreshCsrfToken() {
+  $.ajaxSetup({
+    headers: {
+      "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content")
+    }
+  });
+}
+window.addEventListener("turbo:load", function (event) {
+  $('input:text:not([readonly="readonly"]):not([name="search"]):not(.front-input):not([id="time_range"]):not(.removeFocus)').first().focus();
+});
+var modalInputFocus = function modalInputFocus() {
+  $(function () {
+    $(".modal").on("shown.bs.modal", function () {
+      if ($(this).find("input:text")[0]) {
+        $(this).find("input:text")[0].focus();
+      }
+    });
+  });
+};
+window.ajaxCallInProgress = function () {
+  ajaxCallIsRunning = true;
+};
+window.ajaxCallCompleted = function () {
+  ajaxCallIsRunning = false;
+};
+toastr.options = {
+  closeButton: true,
+  debug: false,
+  newestOnTop: false,
+  progressBar: true,
+  positionClass: "toast-top-right",
+  preventDuplicates: false,
+  onclick: null,
+  showDuration: "300",
+  hideDuration: "1000",
+  timeOut: "5000",
+  extendedTimeOut: "1000",
+  showEasing: "swing",
+  hideEasing: "linear",
+  showMethod: "fadeIn",
+  hideMethod: "fadeOut"
+};
+window.resetModalForm = function (formId, validationBox) {
+  if ($(formId)[0] == null) {
+    return false;
+  }
+  $(formId)[0].reset();
+  $("select.select2Selector").each(function (index, element) {
+    var drpSelector = "#" + $(this).attr("id");
+    $(drpSelector).val("");
+    $(drpSelector).trigger("change");
+  });
+  $(validationBox).hide();
+};
+window.printErrorMessage = function (selector, errorResult) {
+  $(selector).show().html("");
+  $(selector).text(errorResult.responseJSON.message);
+};
+window.manageAjaxErrors = function (data) {
+  var errorDivId = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "editValidationErrorsBox";
+  if (data.status == 404) {
+    toastr.error(data.responseJSON.message);
+  } else {
+    printErrorMessage("#" + errorDivId, data);
+  }
+};
+window.displaySuccessMessage = function (message) {
+  toastr.success(message);
+};
+window.displayErrorMessage = function (message) {
+  toastr.error(message);
+};
+window.deleteItem = function (url, header) {
+  var _arguments = arguments;
+  var callFunction = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+  return function (callFunction) {
+    var callFunction = _arguments.length > 3 && _arguments[3] !== undefined ? _arguments[3] : null;
+    swal({
+      title: Lang.get("js.delete") + " !",
+      text: Lang.get("js.are_you_sure_delete") + ' "' + header + '" ?',
+      buttons: [Lang.get("js.no_cancel"), Lang.get("js.yes_delete")],
+      icon: sweetAlertIcon
+    }).then(function (willDelete) {
+      if (willDelete) {
+        deleteItemAjax(url, header, callFunction);
+      }
+    });
+  }(callFunction);
+};
+function deleteItemAjax(url, header) {
+  var callFunction = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+  $.ajax({
+    url: url,
+    type: "DELETE",
+    dataType: "json",
+    success: function success(obj) {
+      if (obj.success) {
+        Livewire.dispatch("refreshDatatable");
+        Livewire.dispatch("resetPageTable");
+      }
+      swal({
+        icon: "success",
+        title: Lang.get("js.deleted"),
+        text: header + " " + Lang.get("js.has_been_deleted"),
+        timer: 2000,
+        button: Lang.get("js.ok")
+      });
+      if (callFunction) {
+        eval(callFunction);
+      }
+    },
+    error: function error(data) {
+      swal({
+        title: Lang.get("js.error"),
+        icon: "error",
+        text: data.responseJSON.message,
+        type: "error",
+        timer: 4000,
+        button: Lang.get("js.ok")
+      });
+    }
+  });
+}
+window.format = function (dateTime) {
+  var format = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "DD-MMM-YYYY";
+  return moment(dateTime).format(format);
+};
+window.prepareTemplateRender = function (templateSelector, data) {
+  var template = jsrender.templates(templateSelector);
+  return template.render(data);
+};
+window.isValidFile = function (inputSelector, validationMessageSelector) {
+  var ext = $(inputSelector).val().split(".").pop().toLowerCase();
+  if ($.inArray(ext, ["gif", "png", "jpg", "jpeg"]) == -1) {
+    $(inputSelector).val("");
+    $(validationMessageSelector).removeClass("d-none");
+    $(validationMessageSelector).html("The image must be a file of type: jpeg, jpg, png.").show();
+    $(validationMessageSelector).delay(5000).slideUp(300);
+    return false;
+  }
+  $(validationMessageSelector).hide();
+  return true;
+};
+window.removeCommas = function (str) {
+  if (str === undefined) {
+    return str;
+  }
+  return str.replace(/,/g, "");
+};
+window.DatetimepickerDefaults = function (opts) {
+  return $.extend({}, {
+    sideBySide: true,
+    ignoreReadonly: true,
+    icons: {
+      close: "fa fa-times",
+      time: "fa fa-clock-o",
+      date: "fa fa-calendar",
+      up: "fa fa-arrow-up",
+      down: "fa fa-arrow-down",
+      previous: "fa fa-chevron-left",
+      next: "fa fa-chevron-right",
+      today: "fa fa-clock-o",
+      clear: "fa fa-trash-o"
+    }
+  }, opts);
+};
+window.isEmpty = function (value) {
+  return value === undefined || value === null || value === "";
+};
+window.screenLock = function () {
+  $("#overlay-screen-lock").show();
+  $("body").css({
+    "pointer-events": "none",
+    opacity: "0.6"
+  });
+};
+window.screenUnLock = function () {
+  $("body").css({
+    "pointer-events": "auto",
+    opacity: "1"
+  });
+  $("#overlay-screen-lock").hide();
+};
+window.processingBtn = function (selecter, btnId) {
+  var state = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+  var loadingButton = $(selecter).find(btnId);
+  if (state === "loading") {
+    loadingButton.button("loading");
+  } else {
+    loadingButton.button("reset");
+  }
+};
+window.setAdminBtnLoader = function (btnLoader) {
+  if (btnLoader.attr("data-loading-text")) {
+    btnLoader.html(btnLoader.attr("data-loading-text")).prop("disabled", true);
+    btnLoader.removeAttr("data-loading-text");
+    return;
+  }
+  btnLoader.attr("data-old-text", btnLoader.text());
+  btnLoader.html(btnLoader.attr("data-new-text")).prop("disabled", false);
+};
+window.onload = function () {
+  window.startLoader = function () {
+    $(".infy-loader").show();
+  };
+  window.stopLoader = function () {
+    $(".infy-loader").hide();
+  };
+
+  // infy loader js
+  stopLoader();
+};
+$(document).ready(function () {
+  // script to active parent menu if sub menu has currently active
+  var hasActiveMenu = $(document).find(".nav-item.dropdown ul li").hasClass("active");
+  if (hasActiveMenu) {
+    $(document).find(".nav-item.dropdown ul li.active").parent("ul").css("display", "block");
+    $(document).find(".nav-item.dropdown ul li.active").parent("ul").parent("li").addClass("active");
+  }
+  $(document).on("click", "#kt_aside_toggle", function () {
+    $(".sidebar-search-box").toggleClass("show");
+  });
+});
+window.urlValidation = function (value, regex) {
+  var urlCheck = value == "" ? true : value.match(regex) ? true : false;
+  if (!urlCheck) {
+    return false;
+  }
+  return true;
+};
+listen("click", ".languageSelection", function () {
+  var languageName = $(this).data("prefix-value");
+  $.ajax({
+    type: "POST",
+    url: "/change-language",
+    data: {
+      languageName: languageName
+    },
+    success: function success() {
+      location.reload();
+    }
+  });
+});
+if ($(window).width() > 992) {
+  $(document).on("click", ".no-hover", function () {
+    $(this).toggleClass("open");
+  });
+}
+listen("click", "#register", function (e) {
+  e.preventDefault();
+  $(".open #dropdownLanguage").trigger("click");
+  $(".open #dropdownLogin").trigger("click");
+});
+listen("click", "#language", function (e) {
+  e.preventDefault();
+  $(".open #dropdownRegister").trigger("click");
+  $(".open #dropdownLogin").trigger("click");
+});
+listen("click", "#login", function (e) {
+  e.preventDefault();
+  $(".open #dropdownRegister").trigger("click");
+  $(".open #dropdownLanguage").trigger("click");
+});
+window.checkSummerNoteEmpty = function (selectorElement, errorMessage) {
+  var isRequired = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+  if ($(selectorElement).summernote("isEmpty") && isRequired === 1) {
+    displayErrorMessage(errorMessage);
+    $(document).find(".note-editable").html("<p><br></p>");
+    return false;
+  } else if (!$(selectorElement).summernote("isEmpty")) {
+    $(document).find(".note-editable").contents().each(function () {
+      if (this.nodeType === 3) {
+        // text node
+        this.textContent = this.textContent.replace(/\u00A0/g, "");
+      }
+    });
+    if ($(document).find(".note-editable").text().trim().length == 0) {
+      $(document).find(".note-editable").html("<p><br></p>");
+      $(selectorElement).val(null);
+      if (isRequired === 1) {
+        displayErrorMessage(errorMessage);
+        return false;
+      }
+    }
+  }
+  return true;
+};
+window.preparedTemplate = function () {
+  var source = $("#actionTemplate").html();
+  window.preparedTemplate = Handlebars.compile(source);
+};
+window.avoidSpace = function (event) {
+  var k = event ? event.which : window.event.keyCode;
+  if (k == 32) {
+    return false;
+  }
+};
+
+// Add comma into numbers
+window.addCommas = function (number) {
+  number += "";
+  var x = number.split(".");
+  var x1 = x[0];
+  var x2 = x.length > 1 ? "." + x[1] : "";
+  var rgx = /(\d+)(\d{3})/;
+  while (rgx.test(x1)) {
+    x1 = x1.replace(rgx, "$1" + "," + "$2");
+  }
+  return x1 + x2;
+};
+
+// Notification
+listen("click", ".notification", function (e) {
+  e.stopPropagation();
+  var notificationId = $(this).data("id");
+  var notification = $(this);
+  $('[data-toggle="tooltip"]').tooltip("hide");
+  $.ajax({
+    type: "get",
+    url: "/notification/" + notificationId + "/read",
+    success: function success() {
+      notification.remove();
+      var notificationCounter = document.getElementsByClassName("notification").length;
+      displaySuccessMessage(Lang.get("js.notification_read_successfully"));
+      $("#counter").text(notificationCounter);
+      if (notificationCounter == 0) {
+        $(".empty-state").removeClass("d-none");
+        $("#counter").text(notificationCounter);
+        $(".notification-count").addClass("d-none");
+        $("#readAllNotification").parents("div").first().remove();
+      }
+    },
+    error: function error(result) {
+      manageAjaxErrors(result);
+    }
+  });
+});
+window.displayDocument = function (input, selector, extension) {
+  var displayPreview = true;
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      var image = new Image();
+      if ($.inArray(extension, ["pdf", "doc", "docx"]) == -1) {
+        image.src = e.target.result;
+      } else {
+        if (extension == "pdf") {
+          $("#editPhoto").css("background-image", 'url("' + pdfDocumentImageUrl + '")');
+          image.src = pdfDocumentImageUrl;
+        } else {
+          image.src = docxDocumentImageUrl;
+        }
+      }
+      image.onload = function () {
+        $(selector).attr("src", image.src);
+        $(selector).css("background-image", 'url("' + image.src + '")');
+        displayPreview = true;
+      };
+    };
+    if (displayPreview) {
+      reader.readAsDataURL(input.files[0]);
+      $(selector).show();
+    }
+  }
+};
+listen("click", "#readAllNotification", function (e) {
+  e.stopPropagation();
+  $.ajax({
+    type: "post",
+    url: route("read.all.notification"),
+    success: function success() {
+      $(".notification").remove();
+      var notificationCounter = document.getElementsByClassName("notification").length;
+      $("#counter").text(notificationCounter);
+      $(".empty-state").removeClass("d-none");
+      $(".notification-count").addClass("d-none");
+      $("#readAllNotification").parents("div").first().remove();
+      displaySuccessMessage(Lang.get("js.all_notification_read_successfully"));
+    },
+    error: function error(result) {
+      manageAjaxErrors(result);
+    }
+  });
+});
+window.defaultAvatarImagePreview = function (imagePreviewSelector) {
+  $(imagePreviewSelector).css("background-image", 'url("' + $("#defaultAvatarImageUrl").val() + '")');
+};
+window.defaultImagePreview = function (imagePreviewSelector) {
+  $(imagePreviewSelector).css("background-image", 'url("' + $("#defaultImageUrl").val() + '")');
+};
+window.wc_hex_is_light = function (color) {
+  var hex = color.replace("#", "");
+  var c_r = parseInt(hex.substr(0, 2), 16);
+  var c_g = parseInt(hex.substr(2, 2), 16);
+  var c_b = parseInt(hex.substr(4, 2), 16);
+  var brightness = (c_r * 299 + c_g * 587 + c_b * 114) / 1000;
+  return brightness > 240;
+};
+window.number_format = function (number) {
+  var decimals = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 2;
+  var dec_point = decimalsSeparator;
+  var thousands_sep = thousandsSeparator;
+  // Strip all characters but numerical ones.
+  number = (number + "").replace(/[^0-9+\-Ee.]/g, "");
+  var n = !isFinite(+number) ? 0 : +number,
+    prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
+    sep = typeof thousands_sep === "undefined" ? "," : thousands_sep,
+    dec = typeof dec_point === "undefined" ? "." : dec_point,
+    s = "",
+    toFixedFix = function toFixedFix(n, prec) {
+      var k = Math.pow(10, prec);
+      return "" + Math.round(n * k) / k;
+    };
+  // Fix for IE parseFloat(0.55).toFixed(0) = 0;
+  s = (prec ? toFixedFix(n, prec) : "" + Math.round(n)).split(".");
+  if (s[0].length > 3) {
+    s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
+  }
+  if ((s[1] || "").length < prec) {
+    s[1] = s[1] || "";
+    s[1] += new Array(prec - s[1].length + 1).join("0");
+  }
+  return s.join(dec);
+};
+$(document).on("focus", ".select2-selection.select2-selection--single", function (e) {
+  $(this).closest(".select2-container").siblings("select:enabled").select2("open");
+});
+
+// $(document).on('select2:open', () => {
+//     document.querySelector('.select2-search__field').focus();
+// });
+
+$(document).on("select2:open", function () {
+  var allFound = document.querySelectorAll(".select2-container--open .select2-search__field");
+  allFound[allFound.length - 1].focus();
+});
+window.blockSpecialChar = function (e) {
+  var k;
+  document.all ? k = e.keyCode : k = e.which;
+  return k > 64 && k < 91 || k > 96 && k < 123 || k == 8 || k == 32 || k >= 48 && k <= 57;
+};
+window.isDoubleClicked = function (element) {
+  //if already clicked return TRUE to indicate this click is not allowed
+  if (element.data("isclicked")) return true;
+
+  //mark as clicked for 1 second
+  element.data("isclicked", true);
+  setTimeout(function () {
+    element.removeData("isclicked");
+  }, 1000);
+
+  //return FALSE to indicate this click was allowed
+  return false;
+};
+window.fnc = function (value, min, max) {
+  if (parseInt(value) < 0 || isNaN(value)) return 0;else if (parseInt(value) > 100) return "Number is greater than 100";else return value;
+};
+listen("click", ".languageSelection", function (e) {
+  var languageName = $(this).data("prefix-value");
+  $.ajax({
+    url: "/change-language",
+    type: "post",
+    data: {
+      languageName: languageName
+    },
+    success: function success() {
+      location.reload();
+    }
+  });
+});
+listen("click", ".changeLanguage", function (e) {
+  var languageName = $(this).data("prefix-value");
+  $.ajax({
+    url: route("change-language"),
+    type: "post",
+    data: {
+      languageName: languageName
+    },
+    success: function success(result) {
+      displaySuccessMessage(result.message);
+      setTimeout(function () {
+        location.reload();
+      }, 1000);
+    }
+  });
+});
+window.convertToMomentFormat = function (format) {
+  switch (format) {
+    case "d-m-Y":
+      return "DD-MM-YYYY";
+    case "m-d-Y":
+      return "MM-DD-YYYY";
+    case "Y-m-d":
+      return "YYYY-MM-DD";
+    case "m/d/Y":
+      return "MM/DD/YYYY";
+    case "d/m/Y":
+      return "DD/MM/YYYY";
+    case "Y/m/d":
+      return "YYYY/MM/DD";
+    case "m.d.Y":
+      return "MM.DD.YYYY";
+    case "d.m.Y":
+      return "DD.MM.YYYY";
+    case "Y.m.d":
+      return "YYYY.MM.DD";
+    default:
+    // code block
+  }
+};
+window.copyToClipboard = function (element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val(element).select();
+  document.execCommand("copy");
+  $temp.remove();
+  displaySuccessMessage("copied successfully");
+};
+listen("click", function (event) {
+  var target = $(event.target);
+  if (!target.closest(".dropdown-menu").length) {
+    $(".livewire-search-box .dropdown-menu").removeClass("show");
+    $(".livewire-search-box .fw-bolder").removeAttr("aria-expanded");
+  }
+});
+listenClick(".filter-popup", function (event) {
+  event.preventDefault();
+  $(".livewire-search-box .dropdown-menu").addClass("show");
+});
+window.addEventListener("keydown", function (event) {
+  if (event.keyCode == 27) {
+    $(".livewire-search-box .dropdown-menu").removeClass("show");
+  }
+}, true);
+window.select2NotExists = function (element) {
+  var targetEle = $(element);
+  if (!targetEle.length) {
+    return false;
+  }
+  return true;
+};
+window.removeSelect2Container = function (elements) {
+  elements.forEach(function (value) {
+    if ($(value).hasClass("select2-hidden-accessible")) {
+      $(".select2-container").remove();
+    }
+  });
+};
+listenClick(".apply-dark-mode", function (e) {
+  e.preventDefault();
+  $.ajax({
+    url: route("update-dark-mode"),
+    type: "get",
+    success: function success(result) {
+      if (result.success) {
+        displaySuccessMessage(result.message);
+        setTimeout(function () {
+          location.reload();
+        }, 500);
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    }
+  });
+});
+function tooltip() {
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+}
+function resizeWindow() {
+  $(window).resize(function () {
+    if ($(window).width() < 768) {
+      $(".createInvoiceBtn").html('<i class="far fa-file-alt"></i>');
+      $(".fullScreenBtn").addClass("d-none");
+    } else {
+      $(".createInvoiceBtn").html(Lang.get("js.new_invoice"));
+      $(".fullScreenBtn").removeClass("d-none");
+    }
+  });
+  $(window).trigger("resize");
+}
+window.currencyAmount = function (amount) {
+  if ($("#currency_position").val() == 1) {
+    return " " + number_format(amount) + " " + $("#currency").val();
+  }
+  return " " + $("#currency").val() + " " + number_format(amount);
+};
+listenChange(".image-upload", function (event) {
+  event.preventDefault();
+  var ext = $(this).val().split(".").pop().toLowerCase();
+  if ($.inArray(ext, ["png", "jpg", "jpeg"]) == -1) {
+    displayErrorMessage("The image must be a file of type: jpg, png, jpeg");
+    $(this).val("");
+  }
+});
+
+// open send invoice whatsapp modal JS code
+$(document).on("click", ".open-send-whatapp-invoice", function (e) {
+  var invoiceId = $(this).attr("data-id");
+  $("#sendWhatsAppModal").appendTo("body").modal("show");
+  $("#sendWhatsAppModal").find("#invoiceId").val(invoiceId);
+});
+
+// send invoice on whatsapp JS code
+$(document).on("submit", "#sendInvoiceOnWhatsApp", function (e) {
+  e.preventDefault();
+  $.ajax({
+    type: "POST",
+    url: route("send.invoice.on.whatsapp"),
+    data: $(this).serialize(),
+    success: function success(result) {
+      if (result.success) {
+        var momentFormat = convertToMomentFormat(currentDateFormat);
+        var invoice = result.data.invoice;
+        var appName = result.data.appName;
+        var phoneNo = result.data.phoneNumber;
+        var pdfLink = result.data.invoicePdfLink;
+        var name = invoice.client.user.first_name;
+        var invoiceNo = invoice.invoice_id;
+        var date = moment(invoice.invoice_date).format("DD/MM/YYYY");
+        var dueDate = moment(invoice.due_date).format("DD/MM/YYYY");
+        var paidAmount = 0;
+        var dueAmount = 0;
+        $.each(invoice.payments, function (key, value) {
+          paidAmount += parseFloat(value.amount);
+        });
+        dueAmount = parseFloat(invoice.final_amount) - paidAmount;
+        var totalAmount = invoice.final_amount.toFixed(2);
+        var whatsappLink = "https://api.whatsapp.com/send?phone=".concat(phoneNo, "&text=Hello *").concat(name, "*,%0a%0aThank you for doing business with *").concat(appName, "*.%0aPlease find your invoice details below.%0a%0aInvoice No: ").concat(invoiceNo, "%0aInvoice Date: ").concat(date, "%0aDue Date: ").concat(dueDate, "%0aTotal Amount: ").concat(totalAmount, "%0aPaid Amount: ").concat(paidAmount.toFixed(2), "%0aDue Amount: ").concat(dueAmount.toFixed(2), "%0a%0aYou can view the invoice PDF here: ").concat(pdfLink);
+        window.open(whatsappLink, "_blank");
+        $("#sendWhatsAppModal").modal("hide");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.message);
+    }
+  });
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!****************************************************!*\
+  !*** ./resources/assets/js/dashboard/dashboard.js ***!
+  \****************************************************/
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+var start_date;
+var end_date;
+var isPickerApply = false;
+var timeRange;
+document.addEventListener("turbo:load", loadDashboard);
+function loadDashboard() {
+  initDashboardDatePicker();
+}
+function initDashboardDatePicker() {
+  timeRange = $("#time_range");
+  if (!timeRange.length) {
+    return;
+  }
+  start_date = moment().startOf("month");
+  end_date = moment().endOf("month");
+  setDbDatepickerValue(start_date, end_date);
+  var last_month = moment().startOf("month").subtract(1, "days");
+  timeRange.daterangepicker({
+    startDate: start_date,
+    endDate: end_date,
+    opens: "left",
+    showDropdowns: true,
+    autoUpdateInput: false,
+    locale: {
+      customRangeLabel: Lang.get("js.custom"),
+      applyLabel: Lang.get("js.apply"),
+      cancelLabel: Lang.get("js.cancel"),
+      fromLabel: Lang.get("js.from"),
+      toLabel: Lang.get("js.to"),
+      monthNames: [Lang.get("js.jan"), Lang.get("js.feb"), Lang.get("js.mar"), Lang.get("js.apr"), Lang.get("js.may"), Lang.get("js.jun"), Lang.get("js.jul"), Lang.get("js.aug"), Lang.get("js.sep"), Lang.get("js.oct"), Lang.get("js.nov"), Lang.get("js.dec")],
+      daysOfWeek: [Lang.get("js.sun"), Lang.get("js.mon"), Lang.get("js.tue"), Lang.get("js.wed"), Lang.get("js.thu"), Lang.get("js.fri"), Lang.get("js.sat")]
+    },
+    ranges: _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, Lang.get("js.today"), [moment(), moment()]), Lang.get("js.this_week"), [moment().startOf("week"), moment().endOf("week")]), Lang.get("js.last_week"), [moment().startOf("week").subtract(7, "days"), moment().startOf("week").subtract(1, "days")]), Lang.get("js.this_month"), [start_date, end_date]), Lang.get("js.last_month"), [last_month.clone().startOf("month"), last_month.clone().endOf("month")])
+  }, setDbDatepickerValue);
+  if (currentRouteName == "admin.dashboard") {
+    loadPaymentViewStatus();
+    loadYearlyIncomeChat(start_date.format("YYYY-MM-D"), end_date.format("YYYY-MM-D"));
+    loadInvoiceViewStatus();
+  }
+  timeRange.on("apply.daterangepicker", function (ev, picker) {
+    isPickerApply = true;
+    start_date = picker.startDate.format("YYYY-MM-D");
+    end_date = picker.endDate.format("YYYY-MM-D");
+    loadYearlyIncomeChat(start_date, end_date);
+  });
+}
+function setDbDatepickerValue(start_date, end_date) {
+  timeRange.val(start_date.format("DD/MM/YYYY") + " - " + end_date.format("DD/MM/YYYY"));
+}
+function loadPaymentViewStatus() {
+  $.ajax({
+    type: "GET",
+    url: route("payment-overview"),
+    cache: false
+  }).done(preparePaymentViewStatusChart);
+}
+function loadYearlyIncomeChat(startDate, endDate) {
+  $.ajax({
+    type: "GET",
+    url: route("yearly-income-chart"),
+    dataType: "json",
+    data: {
+      start_date: startDate,
+      end_date: endDate
+    },
+    cache: false
+  }).done(prepareYearlyIncomeViewChart);
+}
+function loadInvoiceViewStatus() {
+  $.ajax({
+    type: "GET",
+    url: route("invoices-overview"),
+    cache: false
+  }).done(prepareInvoiceViewStatusChart);
+}
+function preparePaymentViewStatusChart(result) {
+  $("#payment-overview-container").html("");
+  var data = result.data;
+  if (data.total_records === 0) {
+    $("#payment-overview-container").empty();
+    $("#payment-overview-container").append('<div align="center" class="no-record">' + Lang.get("js.no_record_found") + "</div>");
+    return true;
+  } else {
+    $("#payment-overview-container").html("");
+    $("#payment-overview-container").append('<canvas id="payment_overview"></canvas>');
+  }
+  var ctx = document.getElementById("payment_overview").getContext("2d");
+  var pieChartData = {
+    labels: data.labels,
+    datasets: [{
+      data: data.dataPoints,
+      backgroundColor: ["#47c363", "#fc544b"]
+    }]
+  };
+  window.myBar = new Chart(ctx, {
+    type: "doughnut",
+    data: pieChartData,
+    options: {
+      legend: {
+        display: true,
+        position: "bottom",
+        boxWidth: 9
+      },
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label: function label(context) {
+              return currencyAmount(context.formattedValue);
+            }
+          }
+        }
+      }
+    }
+  });
+}
+function prepareInvoiceViewStatusChart(result) {
+  $("#invoice-overview-container").html("");
+  var data = result.data;
+  if (data.total_paid_invoices === 0 && data.total_unpaid_invoices === 0) {
+    $("#invoice-overview-container").empty();
+    $("#invoice-overview-container").append('<div align="center" class="no-record">' + Lang.get("js.no_record_found") + "</div>");
+    return true;
+  } else {
+    $("#invoice-overview-container").html("");
+    $("#invoice-overview-container").append('<canvas id="invoice_overview"></canvas>');
+  }
+  var ctx = document.getElementById("invoice_overview").getContext("2d");
+  var pieChartData = {
+    labels: data.labels,
+    datasets: [{
+      data: data.dataPoints,
+      backgroundColor: ["#1100ff", "#ff0000"]
+    }]
+  };
+  window.myBar = new Chart(ctx, {
+    type: "doughnut",
+    data: pieChartData,
+    options: {
+      legend: {
+        display: true,
+        position: "bottom",
+        boxWidth: 9
+      },
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label: function label(context) {
+              return " " + context.formattedValue;
+            }
+          }
+        }
+      }
+    }
+  });
+}
+function prepareYearlyIncomeViewChart(result) {
+  $("#yearly_income_overview-container").html("");
+  var data = result.data;
+  if (data.total_records === 0) {
+    $("#yearly_income_overview-container").empty();
+    $("#yearly_income_overview-container").append('<div align="center" class="no-record">' + Lang.get("js.no_record_found") + "</div>");
+    return true;
+  } else {
+    $("#yearly_income_overview-container").html("");
+    $("#yearly_income_overview-container").append('<canvas id="yearly_income_chart_canvas" height="200"></canvas>');
+  }
+  var ctx = document.getElementById("yearly_income_chart_canvas").getContext("2d");
+  ctx.canvas.style.height = "500px";
+  var myChart = new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: data.labels,
+      datasets: [{
+        label: data.month,
+        // Name the series
+        data: data.yearly_income,
+        // Specify the data values array
+        fill: false,
+        borderColor: "#2196f3",
+        // Add custom color border (Line)
+        backgroundColor: "#2196f3",
+        // Add custom color background (Points and Fill)
+        borderWidth: 2 // Specify bar border width
+      }]
+    },
+    options: {
+      elements: {
+        line: {
+          tension: 0.5
+        }
+      },
+      interaction: {
+        mode: "index",
+        intersect: false
+      },
+      plugins: {
+        legend: {
+          display: false,
+          position: "top"
+        },
+        tooltip: {
+          callbacks: {
+            label: function label(context) {
+              return currencyAmount(context.formattedValue);
+            }
+          }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          grid: {
+            display: false
+          },
+          ticks: {
+            min: 0,
+            // stepSize: 500,
+            callback: function callback(label) {
+              return currencyAmount(label);
+            }
+          }
+        },
+        x: {
+          beginAtZero: true,
+          grid: {
+            display: false
+          }
+        }
+      }
+    }
+  });
+}
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!********************************************!*\
+  !*** ./resources/assets/js/users/users.js ***!
+  \********************************************/
+listenClick('.user-delete-btn', function (event) {
+  var recordId = $(event.currentTarget).data('id');
+  deleteItem(route('users.destroy', recordId), Lang.get('js.admin'));
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!**************************************************!*\
+  !*** ./resources/assets/js/category/category.js ***!
+  \**************************************************/
+listenClick(".addCategory", function (event) {
+  event.preventDefault();
+  $("#addCategoryModal").appendTo("body").modal("show");
+});
+listenClick(".category-edit-btn", function (event) {
+  var categoryId = $(event.currentTarget).attr("data-id");
+  renderData(categoryId);
+});
+listenSubmit("#addNewCategoryForm", function (event) {
+  event.preventDefault();
+  $.ajax({
+    url: route("category.store"),
+    type: "POST",
+    data: $(this).serialize(),
+    beforeSend: function beforeSend() {
+      startLoader();
+    },
+    success: function success(result) {
+      if (result.success) {
+        $("#addCategoryModal").modal("hide");
+        displaySuccessMessage(result.message);
+        Livewire.dispatch("refreshDatatable");
+        Livewire.dispatch("resetPageTable");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    },
+    complete: function complete() {
+      stopLoader();
+    }
+  });
+});
+listenHiddenBsModal("#addCategoryModal", function () {
+  resetModalForm("#addNewCategoryForm", "#validationErrorsBox");
+});
+listenSubmit("#editCategoryForm", function (event) {
+  event.preventDefault();
+  var id = $("#editModalCategoryId").val();
+  $.ajax({
+    url: route("category.update", {
+      category: id
+    }),
+    type: "put",
+    data: $(this).serialize(),
+    beforeSend: function beforeSend() {
+      startLoader();
+    },
+    success: function success(result) {
+      if (result.success) {
+        displaySuccessMessage(result.message);
+        $("#editCategoryModal").modal("hide");
+        Livewire.dispatch("refreshDatatable");
+        Livewire.dispatch("resetPageTable");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    },
+    complete: function complete() {
+      stopLoader();
+    }
+  });
+});
+listenClick(".category-delete-btn", function (event) {
+  var categoryId = $(event.currentTarget).attr("data-id");
+  deleteItem(route("category.destroy", categoryId), Lang.get("js.category"));
+});
+function renderData(id) {
+  $.ajax({
+    url: route("category.edit", id),
+    type: "GET",
+    beforeSend: function beforeSend() {
+      startLoader();
+    },
+    success: function success(result) {
+      if (result.success) {
+        $("#editCategoryName").val(result.data.name);
+        $("#editModalCategoryId").val(result.data.id);
+        $("#editCategoryModal").appendTo("body").modal("show");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    },
+    complete: function complete() {
+      stopLoader();
+    }
+  });
+}
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!*****************************************************************!*\
+  !*** ./resources/assets/js/custom/phone-number-country-code.js ***!
+  \*****************************************************************/
+document.addEventListener('turbo:load', loadPhoneNumberCountryCode);
+function loadPhoneNumberCountryCode() {
+  if (!$('#phoneNumber').length) {
+    return;
+  }
+  var input = document.querySelector('#phoneNumber'),
+    errorMsg = document.querySelector('#error-msg'),
+    validMsg = document.querySelector('#valid-msg');
+  var errorMap = [Lang.get("js.invalid_number"), Lang.get("js.invalid_country_number"), Lang.get("js.too_short"), Lang.get("js.too_long"), Lang.get("js.invalid_number")];
+
+  // initialise plugin
+  var intl = window.intlTelInput(input, {
+    // initialCountry: 'IN',
+    separateDialCode: true,
+    geoIpLookup: function geoIpLookup(success, failure) {
+      $.get('https://ipinfo.io', function () {}, 'jsonp').always(function (resp) {
+        var countryCode = resp && resp.country ? resp.country : '';
+        success(countryCode);
+      });
+    },
+    utilsScript: '../../public/assets/js/inttel/js/utils.min.js'
+  });
+  var reset = function reset() {
+    input.classList.remove('error');
+    errorMsg.innerHTML = '';
+    errorMsg.classList.add('hide');
+    validMsg.classList.add('hide');
+  };
+  input.addEventListener('blur', function () {
+    reset();
+    if (input.value.trim()) {
+      if (intl.isValidNumber()) {
+        validMsg.classList.remove('hide');
+      } else {
+        input.classList.add('error');
+        var errorCode = intl.getValidationError();
+        errorMsg.innerHTML = errorMap[errorCode];
+        errorMsg.classList.remove('hide');
+      }
+    }
+  });
+
+  // on keyup / change flag: reset
+  input.addEventListener('change', reset);
+  input.addEventListener('keyup', reset);
+  if (typeof phoneNo != 'undefined' && phoneNo !== '') {
+    setTimeout(function () {
+      $('#phoneNumber').trigger('change');
+    }, 500);
+  }
+  $('#phoneNumber').on('blur keyup change countrychange', function () {
+    if (typeof phoneNo != 'undefined' && phoneNo !== '') {
+      intl.setNumber('+' + phoneNo);
+      phoneNo = '';
+    }
+    var getCode = intl.selectedCountryData['dialCode'];
+    $('#prefix_code').val(getCode);
+  });
+  if ($('#isEdit').val()) {
+    var getCode = intl.selectedCountryData['dialCode'];
+    $('#prefix_code').val(getCode);
+  }
+  var getPhoneNumber = $('#phoneNumber').val();
+  var removeSpacePhoneNumber = getPhoneNumber.replace(/\s/g, '');
+  $('#phoneNumber').val(removeSpacePhoneNumber);
+}
+listen('submit', '#userCreateForm', function (e) {
+  if ($('#error-msg').text() !== '') {
+    $('#phoneNumber').focus();
+    return false;
+  }
+});
+listen('submit', '#userEditForm', function (e) {
+  if ($('#error-msg').text() !== '') {
+    $('#phoneNumber').focus();
+    return false;
+  }
+});
+listen('submit', '#createSetting', function (e) {
+  if ($('#error-msg').text() !== '') {
+    $('#phoneNumber').focus();
+    return false;
+  }
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!**********************************************!*\
+  !*** ./resources/assets/js/client/client.js ***!
+  \**********************************************/
+listenClick(".client-delete-btn", function (event) {
+  var recordId = $(event.currentTarget).attr("data-id");
+  var callFunction = arguments.length > 3 && arguments3 !== undefined ? arguments3 : null;
+  header = Lang.get("js.client");
+  swal({
+    title: Lang.get("js.delete") + " !",
+    text: Lang.get("js.are_you_sure_delete") + ' "' + header + '" ?',
+    buttons: [Lang.get("js.no_cancel"), Lang.get("js.yes_delete")],
+    icon: sweetAlertIcon
+  }).then(function (willDelete) {
+    if (willDelete) {
+      $.ajax({
+        url: route("clients.destroy", recordId),
+        type: "DELETE",
+        dataType: "json",
+        data: {
+          clientWithInvoices: true
+        },
+        success: function success(obj) {
+          if (obj.success) {
+            Livewire.dispatch("refreshDatatable");
+            Livewire.dispatch("resetPageTable");
+          }
+          swal({
+            icon: "success",
+            title: Lang.get("js.deleted"),
+            text: header + " " + Lang.get("js.has_been_deleted"),
+            timer: 2000,
+            button: Lang.get("js.ok")
+          });
+          if (callFunction) {
+            eval(callFunction);
+          }
+        },
+        error: function error(data) {
+          swal({
+            title: Lang.get("js.delete") + " !",
+            text: Lang.get("js.are_sure_want_to_delete_this_client_related_all_invoices"),
+            buttons: [Lang.get("js.no_cancel"), Lang.get("js.yes_delete")],
+            icon: sweetAlertIcon
+          }).then(function (willDelete) {
+            if (willDelete) {
+              $.ajax({
+                url: route("clients.destroy", recordId),
+                type: "DELETE",
+                dataType: "json",
+                success: function success(obj) {
+                  if (obj.success) {
+                    Livewire.dispatch("refreshDatatable");
+                    Livewire.dispatch("resetPageTable");
+                  }
+                  swal({
+                    icon: "success",
+                    title: Lang.get("js.deleted"),
+                    text: header + " " + Lang.get("js.has_been_deleted"),
+                    timer: 2000,
+                    button: Lang.get("js.ok")
+                  });
+                  if (callFunction) {
+                    eval(callFunction);
+                  }
+                },
+                error: function error(data) {}
+              });
+            }
+          });
+        }
+      });
+    }
+  });
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!***************************************************!*\
+  !*** ./resources/assets/js/client/create-edit.js ***!
+  \***************************************************/
+document.addEventListener('turbo:load', createEditClient);
+function createEditClient() {
+  loadSelect2Dropdown();
+  setEditCountryId();
+}
+function loadSelect2Dropdown() {
+  var countyIdDropdownSelector = $('#countryID');
+  if (!countyIdDropdownSelector.length) {
+    return false;
+  }
+  if ($('#countryID').hasClass("select2-hidden-accessible")) {
+    $('.select2-container').remove();
+  }
+  if ($('#stateID').hasClass("select2-hidden-accessible")) {
+    $('.select2-container').remove();
+  }
+  $('#countryID, #stateID').select2({
+    width: '100%'
+  });
+}
+listenChange('#countryId', function (e) {
+  var isEdit = 1;
+  e.preventDefault();
+  $.ajax({
+    url: route('states-list'),
+    type: 'get',
+    dataType: 'json',
+    data: {
+      countryId: $(this).val()
+    },
+    success: function success(data) {
+      $('#stateId').empty();
+      $('#cityId').empty();
+      $('#stateId').empty();
+      if (data.data.length != 0) {
+        $.each(data.data, function (i, v) {
+          $('#stateId').append($('<option></option>').attr('value', i).text(v));
+        });
+      } else {
+        $('#stateId').append($('<option value=""></option>').text('Select State'));
+      }
+      if (isEdit && $('#clientStateId').val()) {
+        $('#stateId').val($('#clientStateId').val()).trigger('change');
+        $('#clientStateId').val('');
+      } else {
+        $('#stateId').trigger('change');
+      }
+    }
+  });
+});
+listenChange('#stateId', function (e) {
+  var isEdit = 1;
+  e.preventDefault();
+  $.ajax({
+    url: route('cities-list'),
+    type: 'get',
+    dataType: 'json',
+    data: {
+      stateId: $(this).val(),
+      country: $('#countryId').val()
+    },
+    success: function success(data) {
+      $('#cityId').empty();
+      if (data.data.length != 0) {
+        $.each(data.data, function (i, v) {
+          $('#cityId').append($('<option></option>').attr('value', i).text(v));
+        });
+      } else {
+        $('#cityId').append($('<option value=""></option>').text('Select City'));
+      }
+      if (isEdit && $('#clientCityId').val()) {
+        $('#cityId').val($('#clientCityId').val()).trigger('change');
+        $('#clientCityId').val('');
+      } else {
+        $('#cityId').trigger('change');
+      }
+    }
+  });
+});
+listenClick('.remove-image', function () {
+  defaultAvatarImagePreview('#previewImage', 1);
+});
+listenSubmit('#clientForm, #editClientForm', function () {
+  if ($('#error-msg').text() !== '') {
+    $('#phoneNumber').focus();
+    return false;
+  }
+});
+function setEditCountryId() {
+  if ($('#countryId').val()) {
+    $('#countryId').val($('#countryId').val()).trigger('change');
+  }
+}
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!************************************************!*\
+  !*** ./resources/assets/js/product/product.js ***!
+  \************************************************/
+listenClick(".product-delete-btn", function (event) {
+  var productId = $(event.currentTarget).data("id");
+  deleteItem(route("products.destroy", productId), Lang.get("js.product"));
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!****************************************************!*\
+  !*** ./resources/assets/js/product/create-edit.js ***!
+  \****************************************************/
+document.addEventListener('turbo:load', createEditProduct);
+function createEditProduct() {
+  loadSelect2Dropdown();
+}
+function loadSelect2Dropdown() {
+  var categorySelect2 = $('#categoryId');
+  if (!categorySelect2.length) {
+    return false;
+  }
+  if ($('#categoryId').hasClass("select2-hidden-accessible")) {
+    $('.select2-container').remove();
+  }
+  $('#categoryId').select2({
+    width: '100%'
+  });
+}
+listenClick('.remove-image', function () {
+  defaultAvatarImagePreview('#previewImage', 1);
+});
+listenKeyup('#code', function () {
+  return $('#code').val(this.value.toUpperCase());
+});
+listenClick('#autoCode', function () {
+  var code = Math.random().toString(36).toUpperCase().substr(2, 6);
+  $('#code').val(code);
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!************************************************!*\
+  !*** ./resources/assets/js/invoice/invoice.js ***!
+  \************************************************/
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+document.addEventListener("turbo:load", loadInvoice);
+var dateRange = null;
+function loadInvoice() {
+  initializeSelect2Invoice();
+  loadDateRangePicker("#invoiceDateRangePicker");
+}
+function initializeSelect2Invoice() {
+  if (!select2NotExists("#status_filter")) {
+    return false;
+  }
+  removeSelect2Container(["#status_filter"]);
+  $("#status_filter").select2({
+    placeholder: "All"
+  });
+  if ($("#status").val() == "") {
+    $("#status_filter").val(5).trigger("change");
+  }
+}
+function loadDateRangePicker(selector) {
+  if (!$(selector).length) {
+    return false;
+  }
+  dateRange = $(selector);
+  startDate = moment().subtract(100, "years");
+  endDate = moment();
+  setDatepickerValue(startDate, endDate);
+  var lastMonth = moment().startOf("month").subtract(1, "days");
+  dateRange.daterangepicker({
+    startDate: startDate,
+    endDate: endDate,
+    opens: "left",
+    showDropdowns: true,
+    autoUpdateInput: false,
+    locale: {
+      customRangeLabel: Lang.get("js.custom"),
+      applyLabel: Lang.get("js.apply"),
+      cancelLabel: Lang.get("js.cancel"),
+      fromLabel: Lang.get("js.from"),
+      toLabel: Lang.get("js.to"),
+      monthNames: [Lang.get("js.jan"), Lang.get("js.feb"), Lang.get("js.mar"), Lang.get("js.apr"), Lang.get("js.may"), Lang.get("js.jun"), Lang.get("js.jul"), Lang.get("js.aug"), Lang.get("js.sep"), Lang.get("js.oct"), Lang.get("js.nov"), Lang.get("js.dec")],
+      daysOfWeek: [Lang.get("js.sun"), Lang.get("js.mon"), Lang.get("js.tue"), Lang.get("js.wed"), Lang.get("js.thu"), Lang.get("js.fri"), Lang.get("js.sat")]
+    },
+    ranges: _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, Lang.get("js.all"), [moment().subtract(100, "years"), moment()]), Lang.get("js.today"), [moment(), moment()]), Lang.get("js.this_week"), [moment().startOf("week"), moment().endOf("week")]), Lang.get("js.last_week"), [moment().startOf("week").subtract(7, "days"), moment().startOf("week").subtract(1, "days")]), Lang.get("js.last_30_days"), [moment().subtract(29, "days"), moment()]), Lang.get("js.this_month"), [moment().startOf("month"), moment().endOf("month")]), Lang.get("js.last_month"), [lastMonth.clone().startOf("month"), lastMonth.clone().endOf("month")])
+  }, setDatepickerValue);
+  function setDatepickerValue(start, end) {
+    dateRange.val(start.format("DD/MM/YYYY") + " - " + end.format("DD/MM/YYYY"));
+  }
+  dateRange.on("apply.daterangepicker", function (ev, picker) {
+    startDate = picker.startDate.format("YYYY-MM-D");
+    endDate = picker.endDate.format("YYYY-MM-D");
+    Livewire.dispatch("changeDateFilter", [startDate, endDate]);
+  });
+}
+listenClick(".invoice-delete-btn", function (event) {
+  event.preventDefault();
+  var id = $(event.currentTarget).attr("data-id");
+  deleteItem(route("invoices.destroy", id), Lang.get("js.invoice"));
+});
+listenClick("#resetInvoiceFilter", function () {
+  $("#invoiceStatus").val(7).trigger("change");
+  $("#recurringStatus").val("").trigger("change");
+  hideDropdownManually($("#invoiceFilterBtn"), $(".dropdown-menu"));
+  var startDate = moment().subtract(100, "years");
+  var endDate = moment();
+  Livewire.dispatch("changeDateFilter", [startDate, endDate]);
+  loadDateRangePicker("#invoiceDateRangePicker");
+});
+listenClick(".reminder-btn", function (e) {
+  e.preventDefault();
+  var invoiceId = $(this).data("id");
+  $.ajax({
+    type: "POST",
+    url: route("invoice.payment-reminder", invoiceId),
+    beforeSend: function beforeSend() {
+      screenLock();
+      startLoader();
+    },
+    success: function success(result) {
+      if (result.success) {
+        displaySuccessMessage(result.message);
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.message);
+    },
+    complete: function complete() {
+      stopLoader();
+      screenUnLock();
+    }
+  });
+});
+listenClick(".update-recurring", function (e) {
+  e.preventDefault();
+  var invoiceId = $(this).data("id");
+  $.ajax({
+    type: "POST",
+    url: route("invoices.update-recurring", invoiceId),
+    beforeSend: function beforeSend() {
+      screenLock();
+      startLoader();
+    },
+    success: function success(result) {
+      if (result.success) {
+        displaySuccessMessage(result.message);
+        Livewire.dispatch("refreshDatatable");
+        Livewire.dispatch("resetPageTable");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.message);
+    },
+    complete: function complete() {
+      stopLoader();
+      screenUnLock();
+    }
+  });
+});
+listenChange("#invoiceStatus", function () {
+  Livewire.dispatch("changeInvoiceStatusFilter", {
+    status: $(this).val()
+  });
+  Livewire.dispatch("changeRecurringStatusFilter", {
+    recurringStatus: $("#recurringStatus").val()
+  });
+});
+listenChange("#recurringStatus", function () {
+  Livewire.dispatch("changeRecurringStatusFilter", {
+    recurringStatus: $(this).val()
+  });
+  Livewire.dispatch("changeInvoiceStatusFilter", {
+    status: $("#invoiceStatus").val()
+  });
+});
+
+// reset send invoice on whatsapp modal JS code
+listenHiddenBsModal("#sendWhatsAppModal", function () {
+  $(".whatsapp-phone-number").val("");
+  $("#valid-msg").addClass("hide");
+  $("#error-msg").addClass("hide");
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!****************************************************!*\
+  !*** ./resources/assets/js/invoice/create-edit.js ***!
+  \****************************************************/
+var discountType = null;
+var momentFormat = "";
+document.addEventListener("turbo:load", loadCreateEditInvoice);
+function loadCreateEditInvoice() {
+  $('input:text:not([readonly="readonly"])').first().blur();
+  initializeSelect2CreateEditInvoice();
+  loadSelect2ClientData();
+  loadRecurringTextBox();
+  currentDateFormat = $('meta[name="current-date-format"]').attr("content");
+  momentFormat = convertToMomentFormat(currentDateFormat);
+  prepareDatePickers();
+  if ($("#invoiceNote").val() == true || $("#invoiceTerm").val() == true) {
+    $("#addNote").hide();
+    $("#removeNote").show();
+    $("#noteAdd").show();
+    $("#termRemove").show();
+  } else {
+    $("#removeNote").hide();
+    $("#noteAdd").hide();
+    $("#termRemove").hide();
+  }
+  if ($("#invoiceRecurring").val() == true) {
+    $(".recurring").show();
+  } else {
+    $(".recurring").hide();
+  }
+  if ($("#formData_recurring-1").prop("checked")) {
+    $(".recurring").hide();
+  }
+  if ($("#discountType").val() != 0) {
+    $("#discount").removeAttr("disabled");
+  } else {
+    $("#discount").attr("disabled", "disabled");
+  }
+  calculateFinalAmount();
+}
+function loadSelect2ClientData() {
+  if (!$("#client_id").length && !$("#discountType").length) {
+    return;
+  }
+  $("#client_id,#status,#templateId").select2();
+  $(".discount-type").select2({
+    width: "200px"
+  });
+}
+function loadRecurringTextBox() {
+  var recurringStatus = $("#recurringStatusToggle").is(":checked");
+  showRecurringCycle(recurringStatus);
+}
+function showRecurringCycle(recurringStatus) {
+  if (recurringStatus) {
+    $(".recurring-cycle-content").show();
+  } else {
+    $(".recurring-cycle-content").hide();
+  }
+}
+listenClick("#recurringStatusToggle", function () {
+  var recurringStatus = $(this).is(":checked");
+  showRecurringCycle(recurringStatus);
+});
+listenChange(".invoice-currency-type", function () {
+  var currencyId = $(this).val();
+  if (currencyId.length > 0) {
+    $.ajax({
+      url: route("invoices.get-currency", currencyId),
+      type: "get",
+      dataType: "json",
+      success: function success(result) {
+        if (result.success) {
+          $(".invoice-selected-currency").text(result.data);
+        }
+      },
+      error: function error(result) {
+        displayErrorMessage(result.responseJSON.message);
+      }
+    });
+  }
+});
+function prepareDatePickers() {
+  var dueDateFlatPicker = $("#due_date").flatpickr({
+    defaultDate: moment().add(1, "days").toDate(),
+    dateFormat: currentDateFormat,
+    locale: getUserLanguages
+  });
+  var editDueDateFlatPicker = $("#editDueDate").flatpickr({
+    dateFormat: currentDateFormat,
+    defaultDate: moment($("#editDueDate").val()).format(momentFormat),
+    locale: getUserLanguages
+  });
+  $("#invoice_date").flatpickr({
+    defaultDate: new Date(),
+    dateFormat: currentDateFormat,
+    locale: getUserLanguages,
+    onChange: function onChange(selectedDates, dateStr, instance) {
+      var minDate = moment($("#invoice_date").val(), momentFormat).add(1, "days").format(momentFormat);
+      if (typeof dueDateFlatPicker != "undefined") {
+        dueDateFlatPicker.set("minDate", minDate);
+      }
+    },
+    onReady: function onReady() {
+      var minDate = moment(new Date()).add(1, "days").format(momentFormat);
+      if (typeof dueDateFlatPicker != "undefined") {
+        dueDateFlatPicker.set("minDate", minDate);
+      }
+    }
+  });
+  $("#editInvoiceDate").flatpickr({
+    dateFormat: currentDateFormat,
+    defaultDate: moment($("#editInvoiceDate").val()).format(momentFormat),
+    locale: getUserLanguages,
+    onChange: function onChange() {
+      var minDate = moment($("#editInvoiceDate").val(), momentFormat).add(1, "days").format(momentFormat);
+      if (typeof editDueDateFlatPicker != "undefined") {
+        editDueDateFlatPicker.set("minDate", minDate);
+      }
+    },
+    onReady: function onReady() {
+      var minDate = moment($("#editInvoiceDate").val(), momentFormat).add(1, "days").format(momentFormat);
+      if (typeof editDueDateFlatPicker != "undefined") {
+        editDueDateFlatPicker.set("minDate", minDate);
+      }
+    }
+  });
+}
+function initializeSelect2CreateEditInvoice() {
+  if (!select2NotExists(".product")) {
+    return false;
+  }
+  removeSelect2Container([".product"]);
+  $(".product").select2({
+    tags: true
+  });
+  $(".tax").select2({
+    placeholder: Lang.get("js.select_tax")
+  });
+  $(".invoice-taxes").select2({
+    placeholder: Lang.get("js.select_tax")
+  });
+  $(".payment-qr-code").select2();
+  $("#client_id").focus();
+}
+listenKeyup("#invoiceId", function () {
+  return $("#invoiceId").val(this.value.toUpperCase());
+});
+listenClick("#addNote", function () {
+  $("#addNote").hide();
+  $("#removeNote").show();
+  $("#noteAdd").show();
+  $("#termRemove").show();
+});
+listenClick("#removeNote", function () {
+  $("#addNote").show();
+  $("#removeNote").hide();
+  $("#noteAdd").hide();
+  $("#termRemove").hide();
+  $("#note").val("");
+  $("#term").val("");
+});
+listenClick("#formData_recurring-0", function () {
+  if ($("#formData_recurring-0").prop("checked")) {
+    $(".recurring").show();
+  } else {
+    $(".recurring").hide();
+  }
+});
+listenClick("#formData_recurring-1", function () {
+  if ($("#formData_recurring-1").prop("checked")) {
+    $(".recurring").hide();
+  }
+});
+listenChange("#discountType", function () {
+  discountType = $(this).val();
+  $("#discount").val(0);
+  if (discountType == 1 || discountType == 2) {
+    $("#discount").removeAttr("disabled");
+    if (discountType == 2) {
+      var value = $("#discount").val();
+      $("#discount").val(value.substring(0, 2));
+    }
+  } else {
+    $("#discount").attr("disabled", "disabled");
+    $("#discount").val(0);
+    $("#discountAmount").text("0");
+  }
+  calculateFinalAmount();
+});
+window.isNumberKey = function (evt, element) {
+  var charCode = evt.which ? evt.which : event.keyCode;
+  return !((charCode !== 46 || $(element).val().indexOf(".") !== -1) && (charCode < 48 || charCode > 57));
+};
+listenClick("#addItem", function () {
+  var data = {
+    products: JSON.parse($("#products").val()),
+    taxes: JSON.parse($("#taxes").val())
+  };
+  var invoiceItemHtml = prepareTemplateRender("#invoiceItemTemplate", data);
+  $(".invoice-item-container").append(invoiceItemHtml);
+  // $(".taxId").select2({
+  //     placeholder: "Select Percenatge",
+  //     multiple: true,
+  // });
+  $('.percentage').val($('.percentage').val());
+  $(".productId").select2({
+    placeholder: Lang.get("js.select_product_or_enter_free_text"),
+    tags: true
+  });
+  resetInvoiceItemIndex();
+});
+var resetInvoiceItemIndex = function resetInvoiceItemIndex() {
+  var index = 1;
+  $(".invoice-item-container>tr").each(function () {
+    $(this).find(".item-number").text(index);
+    index++;
+  });
+  if (index - 1 == 0) {
+    var data = {
+      products: JSON.parse($("#products").val()),
+      taxes: JSON.parse($("#taxes").val())
+    };
+    var invoiceItemHtml = prepareTemplateRender("#invoiceItemTemplate", data);
+    $(".invoice-item-container").append(invoiceItemHtml);
+    $(".productId").select2();
+    $(".taxId").select2({
+      placeholder: "Select TAX",
+      multiple: true
+    });
+  }
+  calculateFinalAmount();
+};
+listenClick(".delete-invoice-item", function () {
+  $(this).parents("tr").remove();
+  resetInvoiceItemIndex();
+  calculateFinalAmount();
+});
+listenChange(".product", function () {
+  var productId = $(this).val();
+  if (isEmpty(productId)) {
+    productId = 0;
+  }
+  var element = $(this);
+  $.ajax({
+    url: route("invoices.get-product", productId),
+    type: "get",
+    dataType: "json",
+    success: function success(result) {
+      if (result.success) {
+        var price = "";
+        $.each(result.data, function (id, productPrice) {
+          if (id === productId) price = productPrice;
+        });
+        element.parent().parent().find("td .price").val(price);
+        element.parent().parent().find("td .qty").val(1);
+        $(".price").trigger("keyup");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    }
+  });
+});
+listenChange(".tax", function () {
+  calculateFinalAmount();
+});
+listenKeyup(".qty", function () {
+  var qty = $(this).val();
+  var rate = $(this).parent().siblings().find(".price").val();
+  rate = parseFloat(removeCommas(rate));
+  var amount = calculateAmountWithoutTax(qty, rate);
+  $(this).parent().siblings(".item-total").text(addCommas(amount.toFixed(2).toString()));
+  calculateFinalAmount();
+});
+listenKeyup(".price", function () {
+  var rate = $(this).val();
+  rate = parseFloat(removeCommas(rate));
+  var qty = $(this).parent().siblings().find(".qty").val();
+  var amount = calculateAmountWithoutTax(qty, rate);
+  $(this).parent().siblings(".item-total").text(addCommas(amount.toFixed(2).toString()));
+  calculateFinalAmount();
+});
+var calculateAmount = function calculateAmount(qty, rate, tax) {
+  if (qty > 0 && rate > 0) {
+    var price = qty * rate;
+    var allTax = price + price * tax / 100;
+    if (isNaN(allTax)) {
+      return price;
+    }
+    return allTax;
+  } else {
+    return 0;
+  }
+};
+var calculateAmountWithoutTax = function calculateAmountWithoutTax(qty, rate) {
+  if (qty > 0 && rate > 0) {
+    var price = qty * rate;
+    if (isNaN(price)) {
+      return 0;
+    }
+    return price;
+  } else {
+    return 0;
+  }
+};
+var calculateFinalAmount = function calculateFinalAmount() {
+  var amount = 0;
+  $(".invoice-item-container>tr").each(function () {
+    var itemTotal = $(this).find(".item-total").text();
+    itemTotal = removeCommas(itemTotal);
+    itemTotal = isEmpty($.trim(itemTotal)) ? 0 : parseFloat(itemTotal);
+    amount += itemTotal;
+  });
+  var totalAmount = amount;
+  $("#finalAmount").text(number_format(totalAmount));
+
+  //set hidden amount input value
+  $("#total_amount").val(totalAmount.toFixed(2));
+
+  // total amount with products taxes
+  var finalTotalAmt = parseFloat(totalAmount);
+  // Get the percentage value from the input with id 'percentage'
+  var percentage = $(".percentage").val();
+
+  // If percentage is not empty, calculate the final amount as a percentage of the total amount
+  if (!isEmpty(percentage)) {
+    finalTotalAmt = totalAmount * parseFloat(percentage) / 100;
+  }
+  // final amount calculation
+  $("#finalAmount").text(number_format(finalTotalAmt));
+  $("#finalTotalAmt").val(finalTotalAmt.toFixed(2));
+};
+listen("keyup", "#discount", function () {
+  var value = $(this).val();
+  if (discountType == 2 && value > 100) {
+    displayErrorMessage("On Percentage you can only give maximum 100% discount");
+    $(this).val(value.slice(0, -1));
+    return false;
+  }
+  calculateFinalAmount();
+});
+listenChange(".invoice-taxes", function () {
+  calculateFinalAmount();
+});
+listenClick("#saveAsDraft,#saveAndSend", function (event) {
+  event.preventDefault();
+  var tax_id = [];
+  var i = 0;
+  var tax = [];
+  var j = 0;
+  $(".tax-tr").each(function () {
+    var data = $(this).find(".tax option:selected").map(function () {
+      return $(this).data("id");
+    }).get();
+    if (data != "") {
+      tax_id[i++] = data;
+    } else {
+      tax_id[i++] = 0;
+    }
+    var val = $(this).find(".tax option:selected").map(function () {
+      return $(this).val();
+    }).get();
+    if (val != "") {
+      tax[j++] = val;
+    } else {
+      tax[j++] = 0;
+    }
+  });
+  var invoiceStates = $(this).data("status");
+  var myForm = document.getElementById("invoiceForm");
+  var formData = new FormData(myForm);
+  formData.append("status", invoiceStates);
+  formData.append("tax_id", JSON.stringify(tax_id));
+  formData.append("tax", JSON.stringify(tax));
+  if (invoiceStates == 1) {
+    swal({
+      title: Lang.get("js.send_invoice") + " !",
+      text: Lang.get("js.are_you_sure_send"),
+      icon: "warning",
+      buttons: {
+        confirm: Lang.get("js.yes_send"),
+        cancel: Lang.get("js.no_cancel")
+      }
+    }).then(function (willSend) {
+      if (willSend) {
+        screenLock();
+        $.ajax({
+          url: route("invoices.store"),
+          type: "POST",
+          dataType: "json",
+          data: formData,
+          processData: false,
+          contentType: false,
+          beforeSend: function beforeSend() {
+            startLoader();
+          },
+          success: function success(result) {
+            displaySuccessMessage(result.message);
+            Turbo.visit(route("invoices.index"));
+          },
+          error: function error(result) {
+            displayErrorMessage(result.responseJSON.message);
+          },
+          complete: function complete() {
+            stopLoader();
+            screenUnLock();
+          }
+        });
+      }
+    });
+  } else {
+    screenLock();
+    $.ajax({
+      url: route("invoices.store"),
+      type: "POST",
+      dataType: "json",
+      data: formData,
+      processData: false,
+      contentType: false,
+      beforeSend: function beforeSend() {
+        startLoader();
+      },
+      success: function success(result) {
+        displaySuccessMessage(result.message);
+        Turbo.visit(route("invoices.index"));
+      },
+      error: function error(result) {
+        displayErrorMessage(result.responseJSON.message);
+      },
+      complete: function complete() {
+        stopLoader();
+        screenUnLock();
+      }
+    });
+  }
+});
+listenClick("#editSaveAndSend,#editSave", function (event) {
+  event.preventDefault();
+  var invoiceStatus = $(this).data("status");
+  var tax_id = [];
+  var i = 0;
+  var tax = [];
+  var j = 0;
+  $(".tax-tr").each(function () {
+    var data = $(this).find(".tax option:selected").map(function () {
+      return $(this).data("id");
+    }).get();
+    if (data != "") {
+      tax_id[i++] = data;
+    } else {
+      tax_id[i++] = 0;
+    }
+    var val = $(this).find(".tax option:selected").map(function () {
+      return $(this).val();
+    }).get();
+    if (val != "") {
+      tax[j++] = val;
+    } else {
+      tax[j++] = 0;
+    }
+  });
+  var formData = $("#invoiceEditForm").serialize() + "&invoiceStatus=" + invoiceStatus + "&tax_id=" + JSON.stringify(tax_id) + "&tax=" + JSON.stringify(tax);
+  if (invoiceStatus == 1) {
+    swal({
+      title: Lang.get("js.send_invoice") + " !",
+      text: Lang.get("js.are_you_sure_send"),
+      icon: "warning",
+      buttons: [Lang.get("js.no_cancel"), Lang.get("js.yes_send")]
+    }).then(function (willSend) {
+      if (willSend) {
+        screenLock();
+        $.ajax({
+          url: $("#invoiceUpdateUrl").val(),
+          type: "PUT",
+          dataType: "json",
+          data: formData,
+          beforeSend: function beforeSend() {
+            startLoader();
+          },
+          success: function success(result) {
+            displaySuccessMessage(result.message);
+            Turbo.visit(route("invoices.index"));
+          },
+          error: function error(result) {
+            displayErrorMessage(result.responseJSON.message);
+          },
+          complete: function complete() {
+            stopLoader();
+            screenUnLock();
+          }
+        });
+      }
+    });
+  } else if (invoiceStatus == 0) {
+    screenLock();
+    $.ajax({
+      url: $("#invoiceUpdateUrl").val(),
+      type: "PUT",
+      dataType: "json",
+      data: formData,
+      beforeSend: function beforeSend() {
+        startLoader();
+      },
+      success: function success(result) {
+        displaySuccessMessage(result.message);
+        Turbo.visit(route("invoices.index"));
+      },
+      error: function error(result) {
+        displayErrorMessage(result.responseJSON.message);
+      },
+      complete: function complete() {
+        stopLoader();
+        screenUnLock();
+      }
+    });
+  }
+});
+listenChange("#client_id", function () {
+  var clientId = $(this).val();
+  if (clientId) {
+    $.ajax({
+      url: "/admin/get-client-percentage/" + clientId,
+      type: 'GET',
+      dataType: 'text',
+      // added data type
+      success: function success(res) {
+        $(".percentage").val(res);
+      }
+    });
+  }
+  calculateFinalAmount();
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!********************************************!*\
+  !*** ./resources/assets/js/quote/quote.js ***!
+  \********************************************/
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+document.addEventListener("turbo:load", loadQuote);
+var dateRange = null;
+function loadQuote() {
+  initializeSelect2Quote();
+  loadDateRangePicker("#quoteDateRangePicker");
+}
+function initializeSelect2Quote() {
+  if (!$("#quoteStatus").length) {
+    return false;
+  }
+  $("#quoteStatus").select2();
+  if (!select2NotExists("#status_filter")) {
+    return false;
+  }
+  removeSelect2Container(["#status_filter"]);
+  $("#status_filter").select2({
+    placeholder: "All"
+  });
+  if ($("#status").val() == "") {
+    $("#status_filter").val(5).trigger("change");
+  }
+}
+function loadDateRangePicker(selector) {
+  if (!$(selector).length) {
+    return false;
+  }
+  dateRange = $(selector);
+  startDate = moment().subtract(100, "years");
+  endDate = moment();
+  setDatepickerValue(startDate, endDate);
+  var lastMonth = moment().startOf("month").subtract(1, "days");
+  dateRange.daterangepicker({
+    startDate: startDate,
+    endDate: endDate,
+    opens: "left",
+    showDropdowns: true,
+    autoUpdateInput: false,
+    locale: {
+      customRangeLabel: Lang.get("js.custom"),
+      applyLabel: Lang.get("js.apply"),
+      cancelLabel: Lang.get("js.cancel"),
+      fromLabel: Lang.get("js.from"),
+      toLabel: Lang.get("js.to"),
+      monthNames: [Lang.get("js.jan"), Lang.get("js.feb"), Lang.get("js.mar"), Lang.get("js.apr"), Lang.get("js.may"), Lang.get("js.jun"), Lang.get("js.jul"), Lang.get("js.aug"), Lang.get("js.sep"), Lang.get("js.oct"), Lang.get("js.nov"), Lang.get("js.dec")],
+      daysOfWeek: [Lang.get("js.sun"), Lang.get("js.mon"), Lang.get("js.tue"), Lang.get("js.wed"), Lang.get("js.thu"), Lang.get("js.fri"), Lang.get("js.sat")]
+    },
+    ranges: _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, Lang.get("js.all"), [moment().subtract(100, "years"), moment()]), Lang.get("js.today"), [moment(), moment()]), Lang.get("js.this_week"), [moment().startOf("week"), moment().endOf("week")]), Lang.get("js.last_week"), [moment().startOf("week").subtract(7, "days"), moment().startOf("week").subtract(1, "days")]), Lang.get("js.last_30_days"), [moment().subtract(29, "days"), moment()]), Lang.get("js.this_month"), [moment().startOf("month"), moment().endOf("month")]), Lang.get("js.last_month"), [lastMonth.clone().startOf("month"), lastMonth.clone().endOf("month")])
+  }, setDatepickerValue);
+  function setDatepickerValue(start, end) {
+    dateRange.val(start.format("DD/MM/YYYY") + " - " + end.format("DD/MM/YYYY"));
+  }
+  dateRange.on("apply.daterangepicker", function (ev, picker) {
+    startDate = picker.startDate.format("YYYY-MM-D");
+    endDate = picker.endDate.format("YYYY-MM-D");
+    Livewire.dispatch("changeDateRangeFilter", [startDate, endDate]);
+  });
+}
+
+// delete quote record
+listenClick(".quote-delete-btn", function (event) {
+  event.preventDefault();
+  var quoteId = $(this).attr("data-id");
+  deleteItem(route("quotes.destroy", quoteId), Lang.get("js.quote"));
+});
+listenClick("#resetQuoteStatusFilter", function () {
+  $("#quoteStatus").val(2).trigger("change");
+  hideDropdownManually($("#quoteFilterBtn"), $(".dropdown-menu"));
+  var startDate = moment().subtract(100, "years");
+  var endDate = moment();
+  Livewire.dispatch("changeDateRangeFilter", [startDate, endDate]);
+  loadDateRangePicker("#quoteDateRangePicker");
+});
+listenClick(".convert-to-invoice", function (e) {
+  e.preventDefault();
+  var quoteId = $(this).data("id");
+  $.ajax({
+    url: route("quotes.convert-to-invoice"),
+    type: "GET",
+    data: {
+      quoteId: quoteId
+    },
+    success: function success(result) {
+      if (result.success) {
+        displaySuccessMessage(result.message);
+        Livewire.dispatch("refreshDatatable");
+        Livewire.dispatch("resetPageTable");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    }
+  });
+});
+listenChange("#quoteStatus", function () {
+  Livewire.dispatch("changeQuoteStatusFilter", {
+    status: $(this).val()
+  });
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!**************************************************!*\
+  !*** ./resources/assets/js/quote/create-edit.js ***!
+  \**************************************************/
+var discountType = null;
+var momentFormat = '';
+document.addEventListener('turbo:load', loadCreateEditQuote);
+function loadCreateEditQuote() {
+  $('input:text:not([readonly="readonly"])').first().blur();
+  initializeSelect2CreateEditQuote();
+  loadSelect2ClientData();
+  momentFormat = convertToMomentFormat(currentDateFormat);
+  if ($('#quoteNoteData').val() == true || $('#quoteTermData').val() == true) {
+    $('#quoteAddNote').hide();
+    $('#quoteRemoveNote').show();
+    $('#quoteNoteAdd').show();
+    $('#quoteTermRemove').show();
+  } else {
+    $('#quoteRemoveNote').hide();
+    $('#quoteNoteAdd').hide();
+    $('#quoteTermRemove').hide();
+  }
+  if ($('#quoteRecurring').val() == true) {
+    $('.recurring').show();
+  } else {
+    $('.recurring').hide();
+  }
+  if ($('#formData_recurring-1').prop('checked')) {
+    $('.recurring').hide();
+  }
+  if ($('#discountType').val() != 0) {
+    $('#discount').removeAttr('disabled');
+  } else {
+    $('#discount').attr('disabled', 'disabled');
+  }
+  calculateAndSetQuoteAmount();
+}
+function loadSelect2ClientData() {
+  if (!$('#client_id').length && !$('#discountType').length) {
+    return;
+  }
+  $('#client_id,#discountType,#status,#templateId').select2();
+}
+function initializeSelect2CreateEditQuote() {
+  if (!select2NotExists('.product-quote')) {
+    return false;
+  }
+  removeSelect2Container(['.product-quote']);
+  $('.product-quote').select2({
+    tags: true
+  });
+  $('.tax').select2({
+    placeholder: 'Select TAX'
+  });
+  $('#client_id').focus();
+  var currentDate = moment(new Date()).add(1, 'days').format(convertToMomentFormat(currentDateFormat));
+  var quoteDueDateFlatPicker = $("#quoteDueDate").flatpickr({
+    defaultDate: currentDate,
+    dateFormat: currentDateFormat,
+    "locale": getUserLanguages
+  });
+  var editQuoteDueDateFlatPicker = $('#editQuoteDueDate').flatpickr({
+    dateFormat: currentDateFormat,
+    defaultDate: moment($('#editQuoteDueDate').val()).format(convertToMomentFormat(currentDateFormat)),
+    "locale": getUserLanguages
+  });
+  $('#quote_date').flatpickr({
+    defaultDate: moment(new Date()).format(convertToMomentFormat(currentDateFormat)),
+    dateFormat: currentDateFormat,
+    "locale": getUserLanguages,
+    onChange: function onChange() {
+      var minDate;
+      if (currentDateFormat == 'd.m.Y' || currentDateFormat == 'd/m/Y' || currentDateFormat == 'd-m-Y') {
+        minDate = moment($('#quote_date').val(), momentFormat).add(1, 'days').format(momentFormat);
+      } else {
+        minDate = moment($('#quote_date').val()).add(1, 'days').format(convertToMomentFormat(currentDateFormat));
+      }
+      if (typeof quoteDueDateFlatPicker != 'undefined') {
+        quoteDueDateFlatPicker.set('minDate', minDate);
+      }
+    },
+    onReady: function onReady() {
+      if (typeof quoteDueDateFlatPicker != 'undefined') {
+        quoteDueDateFlatPicker.set('minDate', currentDate);
+      }
+    }
+  });
+  $('#editQuoteDate').flatpickr({
+    dateFormat: currentDateFormat,
+    defaultDate: moment($('#editQuoteDateAdmin').val()).format(convertToMomentFormat(currentDateFormat)),
+    "locale": getUserLanguages,
+    onChange: function onChange() {
+      var minDate;
+      if (currentDateFormat == 'd.m.Y' || currentDateFormat == 'd/m/Y' || currentDateFormat == 'd-m-Y') {
+        minDate = moment($('#editQuoteDate').val(), momentFormat).add(1, 'days').format(momentFormat);
+      } else {
+        minDate = moment($('#editQuoteDate').val()).add(1, 'days').format(convertToMomentFormat(currentDateFormat));
+      }
+      if (typeof editQuoteDueDateFlatPicker != 'undefined') {
+        editQuoteDueDateFlatPicker.set('minDate', minDate);
+      }
+    },
+    onReady: function onReady() {
+      var minDate2;
+      if (currentDateFormat == 'd.m.Y' || currentDateFormat == 'd/m/Y' || currentDateFormat == 'd-m-Y') {
+        minDate2 = moment($('#editQuoteDateAdmin').val(), momentFormat).add(1, 'days').format(convertToMomentFormat(currentDateFormat));
+      } else {
+        minDate2 = moment($('#editQuoteDateAdmin').val()).add(1, 'days').format(convertToMomentFormat(currentDateFormat));
+      }
+      if (typeof editQuoteDueDateFlatPicker != 'undefined') {
+        editQuoteDueDateFlatPicker.set('minDate', minDate2);
+      }
+    }
+  });
+}
+listenKeyup('#quoteId', function () {
+  return $('#quoteId').val(this.value.toUpperCase());
+});
+listenClick('#quoteAddNote', function () {
+  $('#quoteAddNote').hide();
+  $('#quoteRemoveNote').show();
+  $('#quoteNoteAdd').show();
+  $('#quoteTermRemove').show();
+});
+listenClick('#quoteRemoveNote', function () {
+  $('#quoteAddNote').show();
+  $('#quoteRemoveNote').hide();
+  $('#quoteNoteAdd').hide();
+  $('#quoteTermRemove').hide();
+  $('#quoteNote').val('');
+  $('#quoteTerm').val('');
+  $('#quoteAddNote').show();
+});
+listenClick('#formData_recurring-0', function () {
+  if ($("#formData_recurring-0").prop("checked")) {
+    $('.recurring').show();
+  } else {
+    $('.recurring').hide();
+  }
+});
+listenClick('#formData_recurring-1', function () {
+  if ($("#formData_recurring-1").prop("checked")) {
+    $('.recurring').hide();
+  }
+});
+listenChange('#discountType', function () {
+  discountType = $(this).val();
+  $('#discount').val(0);
+  if (discountType == 1 || discountType == 2) {
+    $('#discount').removeAttr('disabled');
+    if (discountType == 2) {
+      var value = $('#discount').val();
+      $('#discount').val(value.substring(0, 2));
+    }
+  } else {
+    $('#discount').attr('disabled', 'disabled');
+    $('#discount').val(0);
+    $('#quoteDiscountAmount').text('0');
+  }
+  calculateDiscount();
+});
+window.isNumberKey = function (evt, element) {
+  var charCode = evt.which ? evt.which : event.keyCode;
+  return !((charCode !== 46 || $(element).val().indexOf('.') !== -1) && (charCode < 48 || charCode > 57));
+};
+listenClick('#addQuoteItem', function () {
+  var data = {
+    'products': JSON.parse($('#products').val())
+  };
+  var quoteItemHtml = prepareTemplateRender('#quotesItemTemplate', data);
+  $('.quote-item-container').append(quoteItemHtml);
+  $('.productId').select2({
+    placeholder: Lang.get("js.select_product_or_enter_free_text"),
+    tags: true
+  });
+  resetQuoteItemIndex();
+});
+var resetQuoteItemIndex = function resetQuoteItemIndex() {
+  var index = 1;
+  $('.quote-item-container>tr').each(function () {
+    $(this).find('.item-number').text(index);
+    index++;
+  });
+  if (index - 1 == 0) {
+    var data = {
+      'products': JSON.parse($('#products').val())
+    };
+    var quoteItemHtml = prepareTemplateRender('#quotesItemTemplate', data);
+    $('.quote-item-container').append(quoteItemHtml);
+    $('.productId').select2();
+  }
+};
+listenClick('.delete-quote-item', function () {
+  $(this).parents('tr').remove();
+  resetQuoteItemIndex();
+  calculateAndSetQuoteAmount();
+});
+listenChange('.product-quote', function () {
+  var productId = $(this).val();
+  if (isEmpty(productId)) {
+    productId = 0;
+  }
+  var element = $(this);
+  $.ajax({
+    url: route('quotes.get-product', productId),
+    type: 'get',
+    dataType: 'json',
+    success: function success(result) {
+      if (result.success) {
+        var price = '';
+        $.each(result.data, function (id, productPrice) {
+          if (id === productId) price = productPrice;
+        });
+        element.parent().parent().find('td .price-quote').val(price);
+        element.parent().parent().find('td .qty-quote').val(1);
+        $('.price-quote').trigger('keyup');
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    }
+  });
+});
+listenKeyup('.qty-quote', function () {
+  var qty = parseInt($(this).val());
+  var rate = $(this).parent().siblings().find('.price-quote').val();
+  rate = parseFloat(removeCommas(rate));
+  var amount = calculateAmount(qty, rate);
+  $(this).parent().siblings('.quote-item-total').text(addCommas(amount.toFixed(2).toString()));
+  calculateAndSetQuoteAmount();
+});
+listenKeyup('.price-quote', function () {
+  var rate = $(this).val();
+  rate = parseFloat(removeCommas(rate));
+  var qty = parseInt($(this).parent().siblings().find('.qty-quote').val());
+  var amount = calculateAmount(qty, rate);
+  $(this).parent().siblings('.quote-item-total').text(addCommas(amount.toFixed(2).toString()));
+  calculateAndSetQuoteAmount();
+});
+var calculateAmount = function calculateAmount(qty, rate) {
+  if (qty > 0 && rate > 0) {
+    var price = qty * rate;
+    return price;
+  } else {
+    return 0;
+  }
+};
+var calculateAndSetQuoteAmount = function calculateAndSetQuoteAmount() {
+  var quoteTotalAmount = 0;
+  $('.quote-item-container>tr').each(function () {
+    var quoteItemTotal = $(this).find('.quote-item-total').text();
+    quoteItemTotal = removeCommas(quoteItemTotal);
+    quoteItemTotal = isEmpty($.trim(quoteItemTotal)) ? 0 : parseFloat(quoteItemTotal);
+    quoteTotalAmount += quoteItemTotal;
+  });
+  quoteTotalAmount = parseFloat(quoteTotalAmount);
+  if (isNaN(quoteTotalAmount)) {
+    quoteTotalAmount = 0;
+  }
+  $('#quoteTotal').text(addCommas(quoteTotalAmount.toFixed(2)));
+
+  //set hidden input value
+  $('#quoteTotalAmount').val(quoteTotalAmount);
+  calculateDiscount();
+};
+var calculateDiscount = function calculateDiscount() {
+  var discount = $('#discount').val();
+  discountType = $('#discountType').val();
+  var itemAmount = [];
+  var i = 0;
+  $(".quote-item-total").each(function () {
+    itemAmount[i++] = $.trim(removeCommas($(this).text()));
+  });
+  $.sum = function (arr) {
+    var r = 0;
+    $.each(arr, function (i, v) {
+      r += +v;
+    });
+    return r;
+  };
+  var totalAmount = $.sum(itemAmount);
+  $('#quoteTotal').text(number_format(totalAmount));
+  if (isEmpty(discount) || isEmpty(totalAmount)) {
+    discount = 0;
+  }
+  var discountAmount = 0;
+  var finalAmount = totalAmount - discountAmount;
+  if (discountType == 1) {
+    discountAmount = discount;
+    finalAmount = totalAmount - discountAmount;
+  } else if (discountType == 2) {
+    discountAmount = totalAmount * discount / 100;
+    finalAmount = totalAmount - discountAmount;
+  }
+  $('#quoteFinalAmount').text(number_format(finalAmount));
+  $('#quoteTotalAmount').val(finalAmount.toFixed(2));
+  $('#quoteDiscountAmount').text(number_format(discountAmount));
+};
+listen('keyup', '#discount', function () {
+  var value = $(this).val();
+  if (discountType == 2 && value > 100) {
+    displayErrorMessage('On Percentage you can only give maximum 100% discount');
+    $(this).val(value.slice(0, -1));
+    return false;
+  }
+  calculateDiscount();
+});
+listenClick('#saveAsDraftQuote', function (event) {
+  event.preventDefault();
+  var quoteStates = $(this).data('status');
+  var myForm = document.getElementById('quoteForm');
+  var formData = new FormData(myForm);
+  formData.append('status', quoteStates);
+  screenLock();
+  $.ajax({
+    url: route('quotes.store'),
+    type: 'POST',
+    dataType: 'json',
+    data: formData,
+    processData: false,
+    contentType: false,
+    beforeSend: function beforeSend() {
+      startLoader();
+    },
+    success: function success(result) {
+      displaySuccessMessage(result.message);
+      Turbo.visit(route('quotes.index'));
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    },
+    complete: function complete() {
+      stopLoader();
+      screenUnLock();
+    }
+  });
+});
+listenClick('#editSaveQuote', function (event) {
+  event.preventDefault();
+  var quoteStatus = $(this).data('status');
+  var formData = $('#quoteEditForm').serialize() + '&quoteStatus=' + quoteStatus;
+  screenLock();
+  $.ajax({
+    url: $('#quoteUpdateUrl').val(),
+    type: 'PUT',
+    dataType: 'json',
+    data: formData,
+    beforeSend: function beforeSend() {
+      startLoader();
+    },
+    success: function success(result) {
+      displaySuccessMessage(result.message);
+      Turbo.visit(route('quotes.index'));
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    },
+    complete: function complete() {
+      stopLoader();
+      screenUnLock();
+    }
+  });
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!*************************************************!*\
+  !*** ./resources/assets/js/settings/setting.js ***!
+  \*************************************************/
+document.addEventListener("turbo:load", loadSettings);
+function loadSettings() {
+  initializeSelect2Dropdown();
+  initializeDefaultCountryCode();
+}
+function initializeDefaultCountryCode() {
+  var countryCode = $("#countryPhone");
+  if (!countryCode.length) {
+    return false;
+  }
+  var input = document.querySelector("#countryPhone");
+  var errorMsg = document.querySelector("#error-msg");
+  var errorMap = [Lang.get("js.invalid_number"), Lang.get("js.invalid_country_number"), Lang.get("js.too_short"), Lang.get("js.too_long"), Lang.get("js.invalid_number")];
+
+  // initialise plugin
+  var intl = window.intlTelInput(input, {
+    initialCountry: "IN",
+    separateDialCode: true,
+    geoIpLookup: function geoIpLookup(success, failure) {
+      $.get("https://ipinfo.io", function () {}, "jsonp").always(function (resp) {
+        var countryCode = resp && resp.country ? resp.country : "";
+        success(countryCode);
+      });
+    },
+    utilsScript: "../../public/assets/js/inttel/js/utils.min.js"
+  });
+  var reset = function reset() {
+    input.classList.remove("error");
+    errorMsg.innerHTML = "";
+  };
+  input.addEventListener("blur", function () {
+    reset();
+    if (input.value.trim()) {
+      if (intl.isValidNumber()) {
+        validMsg.classList.remove("d-none");
+      } else {
+        input.classList.add("error");
+        var errorCode = intl.getValidationError();
+        errorMsg.innerHTML = errorMap[errorCode];
+        errorMsg.classList.remove("d-none");
+      }
+    }
+  });
+
+  // on keyup / change flag: reset
+  input.addEventListener("change", reset);
+  input.addEventListener("keyup", reset);
+  $(document).on("blur keyup change countrychange", "#countryPhone", function () {
+    var getCode = intl.selectedCountryData["dialCode"];
+    $("#countryCode").val(getCode);
+  });
+  var defaultCountryCode = $("#defaultCountryCode").val();
+  intl.setNumber(defaultCountryCode);
+  $("#countryCode").val(defaultCountryCode).trigger("change");
+}
+function initializeSelect2Dropdown() {
+  var currencyType = $("#currencyType");
+  if (!currencyType.length) {
+    return false;
+  }
+  ["#currencyType", "#timeZone", "#dateFormat"].forEach(function (value) {
+    if ($(value).hasClass("select2-hidden-accessible")) {
+      $(".select2-container").remove();
+    }
+  });
+  $("#currencyType, #timeZone, #dateFormat").select2({
+    width: "100%"
+  });
+}
+listenChange("input[type=radio][name=decimal_separator]", function () {
+  if (this.value === ",") {
+    $('input[type=radio][name=thousand_separator][value="."]').prop("checked", true);
+  } else {
+    $('input[type=radio][name=thousand_separator][value=","]').prop("checked", true);
+  }
+});
+listenChange("input[type=radio][name=thousand_separator]", function () {
+  if (this.value === ",") {
+    $('input[type=radio][name=decimal_separator][value="."]').prop("checked", true);
+  } else {
+    $('input[type=radio][name=decimal_separator][value=","]').prop("checked", true);
+  }
+});
+listenChange("#appLogo", function () {
+  $("#validationErrorsBox").addClass("d-none");
+  if (isValidLogo($(this), "#validationErrorsBox")) {
+    displaySettingImage(this, "#previewImage");
+  }
+});
+listenChange("#companyLogo", function () {
+  $("#validationErrorsBox").addClass("d-none");
+  if (isValidLogo($(this), "#validationErrorsBox")) {
+    displaySettingImage(this, "#previewImage1");
+  }
+});
+function isValidLogo(inputSelector, validationMessageSelector) {
+  var ext = $(inputSelector).val().split(".").pop().toLowerCase();
+  if ($.inArray(ext, ["jpg", "png", "jpeg"]) == -1) {
+    $(inputSelector).val("");
+    $(validationMessageSelector).removeClass("d-none");
+    $(validationMessageSelector).html("The image must be a file of type: jpg, jpeg, png.").show();
+    return false;
+  }
+  $(validationMessageSelector).hide();
+  return true;
+}
+function displaySettingImage(input, selector) {
+  var displayPreview = true;
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      var image = new Image();
+      image.src = e.target.result;
+      image.onload = function () {
+        $(selector).attr("src", e.target.result);
+        displayPreview = true;
+      };
+    };
+    if (displayPreview) {
+      reader.readAsDataURL(input.files[0]);
+      $(selector).show();
+    }
+  }
+}
+listenSubmit("#createSetting", function (e) {
+  var companyAddress = $("#companyAddress").val();
+  var companyName = $("#company_name").val();
+  var appName = $("#app_name").val();
+  if (!$.trim(appName)) {
+    displayErrorMessage("App Name is required");
+    return false;
+  }
+  if (!$.trim(companyName)) {
+    displayErrorMessage("Company Name is required");
+    return false;
+  }
+  if (!$.trim(companyAddress)) {
+    displayErrorMessage("Please enter company address");
+    return false;
+  }
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!****************************************!*\
+  !*** ./resources/assets/js/tax/tax.js ***!
+  \****************************************/
+listenClick(".addTax", function () {
+  $("#addTaxModal").appendTo("body").modal("show");
+});
+listenSubmit("#addTaxForm", function (e) {
+  e.preventDefault();
+  if (isDoubleClicked($(this))) return;
+  $.ajax({
+    url: route("taxes.store"),
+    type: "POST",
+    data: $(this).serialize(),
+    beforeSend: function beforeSend() {
+      startLoader();
+    },
+    success: function success(result) {
+      if (result.success) {
+        $("#addTaxModal").modal("hide");
+        displaySuccessMessage(result.message);
+        Livewire.dispatch("refreshDatatable");
+        Livewire.dispatch("resetPageTable");
+        $("#taxTbl").DataTable().ajax.reload(null, false);
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    },
+    complete: function complete() {
+      stopLoader();
+    }
+  });
+});
+listenHiddenBsModal("#addTaxModal", function () {
+  resetModalForm("#addTaxForm", "#validationErrorsBox");
+});
+listenClick(".tax-edit-btn", function (event) {
+  var taxId = $(event.currentTarget).attr("data-id");
+  taxRenderData(taxId);
+});
+listenSubmit("#editTaxForm", function (event) {
+  event.preventDefault();
+  var taxId = $("#taxId").val();
+  $.ajax({
+    url: route("taxes.update", {
+      tax: taxId
+    }),
+    type: "put",
+    data: $(this).serialize(),
+    beforeSend: function beforeSend() {
+      startLoader();
+    },
+    success: function success(result) {
+      if (result.success) {
+        displaySuccessMessage(result.message);
+        Livewire.dispatch("refreshDatatable");
+        Livewire.dispatch("resetPageTable");
+        $("#editTaxModal").modal("hide");
+        $("#taxTbl").DataTable().ajax.reload(null, false);
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    },
+    complete: function complete() {
+      stopLoader();
+    }
+  });
+});
+listenClick(".tax-delete-btn", function (event) {
+  var taxId = $(event.currentTarget).attr("data-id");
+  deleteItem(route("taxes.destroy", taxId), Lang.get("js.tax"));
+});
+listenChange(".tax-status", function (event) {
+  var taxId = $(event.currentTarget).attr("data-id");
+  updateStatus(taxId, this);
+});
+function taxRenderData(taxId) {
+  $.ajax({
+    url: route("taxes.edit", taxId),
+    type: "GET",
+    beforeSend: function beforeSend() {
+      startLoader();
+    },
+    success: function success(result) {
+      if (result.success) {
+        $("#editTaxName").val(result.data.name);
+        $("#editTaxValue").val(result.data.value);
+        if (result.data.is_default === 1) {
+          $("input:radio[value='1'][name='is_default']").prop("checked", true);
+        } else {
+          $("input:radio[value='0'][name='is_default']").prop("checked", true);
+        }
+        $("#taxId").val(result.data.id);
+        $("#editTaxModal").appendTo("body").modal("show");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    },
+    complete: function complete() {
+      stopLoader();
+    }
+  });
+}
+function updateStatus(taxId, currentCheckbox) {
+  $.ajax({
+    url: route("taxes.default-status", taxId),
+    method: "post",
+    success: function success(result) {
+      if (result.success) {
+        displaySuccessMessage(result.message);
+        Livewire.dispatch("refreshDatatable");
+        Livewire.dispatch("resetPageTable");
+        if ($(currentCheckbox).is(":checked")) {
+          $(".tax-status").prop("checked", false);
+          $(currentCheckbox).prop("checked", true);
+        }
+      }
+    }
+  });
+}
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!****************************************************************!*\
+  !*** ./resources/assets/js/payment_qr_code/payment-qr-code.js ***!
+  \****************************************************************/
+listenClick(".addQrCode", function () {
+  $("#addPaymentQrCodeForm")[0].reset();
+  $("#paymentQrCodeInputImage").css("background-image", 'url("/assets/images/avatar.png")');
+  $("#addPaymentQrCodeModal").appendTo("body").modal("show");
+});
+listenSubmit("#addPaymentQrCodeForm", function (e) {
+  e.preventDefault();
+  if (isDoubleClicked($(this))) return;
+  $.ajax({
+    url: route("payment-qr-codes.store"),
+    type: "POST",
+    data: new FormData(this),
+    contentType: false,
+    processData: false,
+    beforeSend: function beforeSend() {
+      startLoader();
+    },
+    success: function success(result) {
+      if (result.success) {
+        $("#addPaymentQrCodeModal").modal("hide");
+        displaySuccessMessage(result.message);
+        Livewire.dispatch("refreshDatatable");
+        Livewire.dispatch("resetPageTable");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    },
+    complete: function complete() {
+      stopLoader();
+    }
+  });
+});
+listenClick(".qrcode-edit-btn", function (event) {
+  var paymentQrCodeId = $(event.currentTarget).attr("data-id");
+  taxRenderData(paymentQrCodeId);
+});
+function taxRenderData(paymentQrCodeId) {
+  $.ajax({
+    url: route("payment-qr-codes.edit", paymentQrCodeId),
+    type: "GET",
+    beforeSend: function beforeSend() {
+      startLoader();
+    },
+    success: function success(result) {
+      if (result.success) {
+        $("#editQrCodeTitle").val(result.data.title);
+        $(".qr_code_image").css("background-image", "url('" + result.data.qr_image + "')");
+        $("#paymentQrCodeId").val(result.data.id);
+        $("#editPaymentQrCodeModal").appendTo("body").modal("show");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    },
+    complete: function complete() {
+      stopLoader();
+    }
+  });
+}
+listenSubmit("#editPaymentQrCodeForm", function (event) {
+  event.preventDefault();
+  var paymentQrCodeId = $("#paymentQrCodeId").val();
+  $.ajax({
+    url: route("payment-update", paymentQrCodeId),
+    type: "post",
+    data: new FormData(this),
+    contentType: false,
+    processData: false,
+    beforeSend: function beforeSend() {
+      startLoader();
+    },
+    success: function success(result) {
+      if (result.success) {
+        displaySuccessMessage(result.message);
+        $("#editPaymentQrCodeModal").modal("hide");
+        Livewire.dispatch("refreshDatatable");
+        Livewire.dispatch("resetPageTable");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    },
+    complete: function complete() {
+      stopLoader();
+    }
+  });
+});
+listenClick(".qrcode-delete-btn", function (event) {
+  var paymentQrCode = $(event.currentTarget).attr("data-id");
+  deleteItem(route("payment-qr-codes.destroy", paymentQrCode), Lang.get("js.payment_qr_code"));
+});
+listenChange(".qr-status", function (event) {
+  var paymentQrCodeId = $(event.currentTarget).attr("data-id");
+  updateStatus(paymentQrCodeId, this);
+});
+function updateStatus(paymentQrCodeId, currentCheckbox) {
+  $.ajax({
+    url: route("payment-qr-codes.default-status", paymentQrCodeId),
+    method: "post",
+    cache: false,
+    success: function success(result) {
+      if (result.success) {
+        displaySuccessMessage(result.message);
+        Livewire.dispatch("refreshDatatable");
+        Livewire.dispatch("resetPageTable");
+        if ($(currentCheckbox).is(":checked")) {
+          $(".qr-status").prop("checked", false);
+          $(currentCheckbox).prop("checked", true);
+        }
+      }
+    }
+  });
+}
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!**************************************************!*\
+  !*** ./resources/assets/js/currency/currency.js ***!
+  \**************************************************/
+listenClick(".addCurrency", function () {
+  $("#addCurrencyModal").appendTo("body").modal("show");
+});
+listenSubmit("#addCurrencyForm", function (e) {
+  e.preventDefault();
+  $.ajax({
+    url: route("currencies.store"),
+    type: "POST",
+    data: $(this).serialize(),
+    success: function success(result) {
+      if (result.success) {
+        $("#addCurrencyModal").modal("hide");
+        displaySuccessMessage(result.message);
+        Livewire.dispatch("refreshDatatable");
+        Livewire.dispatch("resetPageTable");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    }
+  });
+});
+listenHiddenBsModal("#addCurrencyModal", function () {
+  resetModalForm("#addCurrencyForm", "#validationErrorsBox");
+});
+listenClick(".currency-edit-btn", function (event) {
+  var currencyId = $(event.currentTarget).attr("data-id");
+  currencyRenderData(currencyId);
+});
+function currencyRenderData(currencyId) {
+  $.ajax({
+    url: route("currencies.edit", currencyId),
+    type: "GET",
+    success: function success(result) {
+      if (result.success) {
+        $("#editCurrencyName").val(result.data.name);
+        $("#editCurrencyIcon").val(result.data.icon);
+        $("#editCurrencyCode").val(result.data.code);
+        $("#currencyId").val(result.data.id);
+        $("#editCurrencyModal").appendTo("body").modal("show");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    }
+  });
+}
+listenSubmit("#editCurrencyForm", function (event) {
+  event.preventDefault();
+  var id = $("#currencyId").val();
+  $.ajax({
+    url: route("currencies.update", {
+      currency: id
+    }),
+    type: "put",
+    data: $(this).serialize(),
+    success: function success(result) {
+      if (result.success) {
+        displaySuccessMessage(result.message);
+        Livewire.dispatch("refreshDatatable");
+        Livewire.dispatch("resetPageTable");
+        $("#editCurrencyModal").modal("hide");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    }
+  });
+});
+listenClick(".currency-delete-btn", function (event) {
+  var currencyId = $(event.currentTarget).attr("data-id");
+  deleteItem(route("currencies.destroy", currencyId), Lang.get("js.currency"));
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!***************************************************!*\
+  !*** ./resources/assets/js/users/user-profile.js ***!
+  \***************************************************/
+document.addEventListener("turbo:load", loadLanguageData);
+function loadLanguageData() {
+  if ($("#selectLanguage").length) {
+    $("#selectLanguage").select2({
+      width: "100%",
+      dropdownParent: $("#changeLanguageModal")
+    });
+  }
+}
+listenClick("#changePassword", function () {
+  $(".pass-check-meter div.flex-grow-1").removeClass("active");
+  $("#changePasswordModal").modal("show").appendTo("body");
+});
+listenClick("#passwordChangeBtn", function () {
+  $.ajax({
+    url: changePasswordUrl,
+    type: "PUT",
+    data: $("#changePasswordForm").serialize(),
+    success: function success(result) {
+      $("#changePasswordModal").modal("hide");
+      displaySuccessMessage(result.message);
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    }
+  });
+});
+listenHiddenBsModal(["#changeLanguageModal", "#changePasswordModal"], function (e) {
+  e.preventDefault();
+  if ($("#changeLanguageForm").length) {
+    $("#changeLanguageForm")[0].reset();
+  }
+  if ($("#changePasswordForm").length) {
+    $("#changePasswordForm")[0].reset();
+  }
+  $("select.select2Selector").each(function (index, element) {
+    var drpSelector = "#" + $(this).attr("id");
+    $(drpSelector).val(getLoggedInUserLang);
+    $(drpSelector).trigger("change");
+  });
+});
+listenClick("#languageChangeBtn", function () {
+  $.ajax({
+    url: route("change-language"),
+    type: "POST",
+    data: $("#changeLanguageForm").serialize(),
+    success: function success(result) {
+      if (result.success) {
+        $("#changeLanguageModal").modal("hide");
+        displaySuccessMessage(Lang.get("js.language_updated_successfully"));
+        setTimeout(function () {
+          location.reload(true);
+          Turbo.visit(window.location.href);
+        }, 2000);
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    }
+  });
+});
+listenClick("#changeLanguage", function () {
+  $("#changeLanguageModal").modal("show");
+});
+window.printErrorMessage = function (selector, errorResult) {
+  $(selector).show().html("");
+  $(selector).text(errorResult.responseJSON.message);
+};
+listenHiddenBsModal("#changePasswordModal", function () {
+  resetModalForm("#changePasswordForm", "#validationErrorsBox");
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!****************************************************************!*\
+  !*** ./resources/assets/js/invoice/invoice_payment_history.js ***!
+  \****************************************************************/
+document.addEventListener("DOMContentLoaded", invoicePaymentHistory);
+function invoicePaymentHistory() {
+  // payment mail in click after view payment transitions
+  if (!$("#paymentHistory-tab").length) {
+    return false;
+  }
+  setTimeout(function () {
+    var activeTab = location.href;
+    var tabParameter = activeTab.substring(activeTab.indexOf("?active") + 8);
+    $('.nav-item button[data-bs-target="#' + tabParameter + '"]').click();
+  }, 100);
+}
+listenChange("#clientInvoiceStatus", function () {
+  Livewire.dispatch("changeInvoiceStatusFilter", {
+    status: $(this).val()
+  });
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!*************************************************************!*\
+  !*** ./resources/assets/js/client_panel/invoice/invoice.js ***!
+  \*************************************************************/
+document.addEventListener("turbo:load", loadCPInvoice);
+function loadCPInvoice() {
+  initializeSelect2CPInvoice();
+  initializeSelect2Payment();
+  $(".amount").hide();
+  var paymentMode = 1;
+  var uri = window.location.toString();
+  if (uri.indexOf("?") > 0) {
+    var clean_uri = uri.substring(0, uri.indexOf("?"));
+    window.history.replaceState({}, document.title, clean_uri);
+  }
+}
+listenChange("#client_payment_mode", function () {
+  if ($(this).val() == 1) {
+    $(".payment-attachment").removeClass("d-none");
+  } else {
+    $(".payment-attachment").addClass("d-none");
+  }
+});
+function initializeSelect2CPInvoice() {
+  if (!select2NotExists("#status_filter")) {
+    return false;
+  }
+  removeSelect2Container(["#status_filter", "#client_payment_type", "#client_payment_mode"]);
+  $("#status_filter").select2({
+    placeholder: "All"
+  });
+  if ($("#status").val() == "") {
+    $("#status_filter").val(5).trigger("change");
+  }
+}
+function initializeSelect2Payment() {
+  //Invoice Payments
+  $("#client_payment_type").select2({
+    placeholder: "Select Payment Type"
+    // dropdownParent: $('#clientPaymentModal'),
+  });
+  $("#client_payment_mode").select2({
+    placeholder: "Select Payment Method"
+    // dropdownParent: $('#clientPaymentModal'),
+  });
+}
+listenClick("#resetFilter", function () {
+  $("#status_filter").val(5).trigger("change");
+  $("#status_filter").select2({
+    placeholder: "All"
+  });
+});
+listenChange("#client_payment_mode", function () {
+  var value = $(this).val();
+  if (value == 1) {
+    $("#transaction").show();
+  } else {
+    $("#transaction").hide();
+  }
+});
+listenChange("#client_payment_type", function () {
+  var value = $(this).val();
+  var full_payment = $("#payable_amount").val();
+  if (value == "2") {
+    $(".amount").hide();
+    $("#amount").val(full_payment);
+    $("#amount").prop("readonly", true);
+  } else if (value == "3") {
+    $(".amount").show();
+    $("#amount").val("");
+    $("#amount").prop("readonly", false);
+  } else {
+    $(".amount").hide();
+    $("#amount").prop("readonly", false);
+  }
+});
+listenKeyup("#amount", function () {
+  var payable_amount = parseFloat($("#payable_amount").val());
+  var amount = parseFloat($("#amount").val());
+  var paymentType = parseInt($("#client_payment_type").val());
+  if (paymentType === 3 && payable_amount < amount) {
+    $("#error-msg").text(Lang.get("js.amount_should_be_less_than_payable_amount"));
+    $("#btnPay").addClass("disabled");
+  } else if (paymentType === 2 && payable_amount < amount) {
+    $("#error-msg").text(Lang.get("js.amount_should_be_less_than_payable_amount"));
+    $("#btnPay").addClass("disabled");
+  } else {
+    $("#error-msg").text("");
+    $("#btnPay").removeClass("disabled");
+  }
+});
+listenChange("#client_payment_mode", function () {
+  paymentMode = $(this).val();
+  parseInt(paymentMode);
+});
+listenSubmit("#clientPaymentForm", function (e) {
+  var _this = this;
+  e.preventDefault();
+  // if ($('#error-msg').text() !== '') {
+  //     return false
+  // }
+  if ($("#amount").val() == 0) {
+    displayErrorMessage("Amount should not be equal to zero");
+    return false;
+  }
+  if ($("#payment_note").val().trim().length == 0) {
+    displayErrorMessage("Note field is Required");
+    return false;
+  }
+  var btnSubmitEle = $(this).find("#btnPay");
+  setAdminBtnLoader(btnSubmitEle);
+  var payloadData = {
+    amount: parseFloat($("#amount").val()),
+    invoiceId: parseInt($("#client_invoice_id").val()),
+    transactionNotes: $("#payment_note").val()
+  };
+  if (paymentMode == 1) {
+    $.ajax({
+      url: route("clients.payments.store"),
+      type: "POST",
+      data: new FormData(this),
+      processData: false,
+      contentType: false,
+      success: function success(result) {
+        if (result.success) {
+          // displaySuccessMessage(result.message);
+          Livewire.dispatch("refreshDatatable");
+          Livewire.dispatch("resetPageTable");
+          window.location.href = result.data.redirectUrl;
+        }
+      },
+      error: function error(result) {
+        displayErrorMessage(result.responseJSON.message);
+      },
+      complete: function complete() {
+        setAdminBtnLoader(btnSubmitEle);
+      }
+    });
+  } else if (paymentMode == 2) {
+    $.post(invoiceStripePaymentUrl, payloadData).done(function (result) {
+      var sessionId = result.data.sessionId;
+      stripe.redirectToCheckout({
+        sessionId: sessionId
+      }).then(function (result) {
+        $(this).html("Make Payment").removeClass("disabled");
+        manageAjaxErrors(result);
+      });
+    })["catch"](function (error) {
+      $(_this).html("Make Payment").removeClass("disabled");
+      manageAjaxErrors(error);
+    });
+  } else if (paymentMode == 3) {
+    $.ajax({
+      type: "GET",
+      url: route("paypal.init"),
+      data: {
+        amount: payloadData.amount,
+        invoiceId: payloadData.invoiceId,
+        transactionNotes: payloadData.transactionNotes
+      },
+      success: function success(result) {
+        if (result.status == "CREATED") {
+          var redirectTo = "";
+          $.each(result.links, function (key, val) {
+            if (val.rel == "approve") {
+              redirectTo = val.href;
+            }
+          });
+          location.href = redirectTo;
+        } else {
+          location.href = result.url;
+        }
+      },
+      error: function error(result) {
+        displayErrorMessage(result.responseJSON.message);
+      },
+      complete: function complete() {
+        setAdminBtnLoader(btnSubmitEle);
+      }
+    });
+  } else if (paymentMode == 5) {
+    $.ajax({
+      type: "GET",
+      url: route("razorpay.init"),
+      data: $(this).serialize(),
+      success: function success(result) {
+        if (result.success) {
+          $("#clientPaymentModal").modal("hide");
+          var _result$data = result.data,
+            id = _result$data.id,
+            amount = _result$data.amount,
+            name = _result$data.name,
+            email = _result$data.email,
+            invoiceId = _result$data.invoiceId,
+            invoice_id = _result$data.invoice_id,
+            description = _result$data.description;
+          options.description = description;
+          options.order_id = id;
+          options.amount = amount;
+          options.prefill.name = name;
+          options.prefill.email = email;
+          options.prefill.invoiceId = invoiceId;
+          var razorPay = new Razorpay(options);
+          razorPay.open();
+          razorPay.on("payment.failed");
+        }
+      },
+      error: function error(result) {
+        displayErrorMessage(result.responseJSON.message);
+      },
+      complete: function complete() {
+        setAdminBtnLoader(btnSubmitEle);
+      }
+    });
+  } else if (paymentMode == 6) {
+    window.location.replace(route("client.paystack.init", {
+      invoiceId: payloadData.invoiceId,
+      amount: payloadData.amount,
+      note: payloadData.transactionNotes
+    }));
+  }
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!********************************************************!*\
+  !*** ./resources/assets/js/transaction/transaction.js ***!
+  \********************************************************/
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+document.addEventListener("turbo:load", loadTransaction);
+var dateRange = null;
+function loadTransaction() {
+  initializeSelect2Transaction();
+  loadDateRangePicker("#transactionDateRangePicker");
+}
+function initializeSelect2Transaction() {
+  if (!select2NotExists("#paymentModeFilter")) {
+    return false;
+  }
+  removeSelect2Container(["#paymentModeFilter"]);
+  $("#paymentModeFilter").select2({
+    placeholder: "Select Payment Method",
+    allowClear: false
+  });
+}
+function loadDateRangePicker(selector) {
+  if (!$(selector).length) {
+    return false;
+  }
+  dateRange = $(selector);
+  startDate = moment().subtract(100, "years");
+  endDate = moment();
+  setDatepickerValue(startDate, endDate);
+  var lastMonth = moment().startOf("month").subtract(1, "days");
+  dateRange.daterangepicker({
+    startDate: startDate,
+    endDate: endDate,
+    opens: "left",
+    showDropdowns: true,
+    autoUpdateInput: false,
+    locale: {
+      customRangeLabel: Lang.get("js.custom"),
+      applyLabel: Lang.get("js.apply"),
+      cancelLabel: Lang.get("js.cancel"),
+      fromLabel: Lang.get("js.from"),
+      toLabel: Lang.get("js.to"),
+      monthNames: [Lang.get("js.jan"), Lang.get("js.feb"), Lang.get("js.mar"), Lang.get("js.apr"), Lang.get("js.may"), Lang.get("js.jun"), Lang.get("js.jul"), Lang.get("js.aug"), Lang.get("js.sep"), Lang.get("js.oct"), Lang.get("js.nov"), Lang.get("js.dec")],
+      daysOfWeek: [Lang.get("js.sun"), Lang.get("js.mon"), Lang.get("js.tue"), Lang.get("js.wed"), Lang.get("js.thu"), Lang.get("js.fri"), Lang.get("js.sat")]
+    },
+    ranges: _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, Lang.get("js.all"), [moment().subtract(100, "years"), moment()]), Lang.get("js.today"), [moment(), moment()]), Lang.get("js.this_week"), [moment().startOf("week"), moment().endOf("week")]), Lang.get("js.last_week"), [moment().startOf("week").subtract(7, "days"), moment().startOf("week").subtract(1, "days")]), Lang.get("js.last_30_days"), [moment().subtract(29, "days"), moment()]), Lang.get("js.this_month"), [moment().startOf("month"), moment().endOf("month")]), Lang.get("js.last_month"), [lastMonth.clone().startOf("month"), lastMonth.clone().endOf("month")])
+  }, setDatepickerValue);
+  function setDatepickerValue(start, end) {
+    dateRange.val(start.format("DD/MM/YYYY") + " - " + end.format("DD/MM/YYYY"));
+  }
+  dateRange.on("apply.daterangepicker", function (ev, picker) {
+    startDate = picker.startDate.format("YYYY-MM-D");
+    endDate = picker.endDate.format("YYYY-MM-D");
+    Livewire.dispatch("changeDateRangeFilter", [startDate, endDate]);
+  });
+}
+listenClick("#resetFilter", function () {
+  $("#paymentModeFilter").select2({
+    placeholder: "Select Payment Method",
+    allowClear: false
+  });
+  $("#paymentModeFilter").val(0).trigger("change");
+  var startDate = moment().subtract(100, "years");
+  var endDate = moment();
+  Livewire.dispatch("changeDateRangeFilter", [startDate, endDate]);
+  loadDateRangePicker("#transactionDateRangePicker");
+});
+listenClick(".show-payment-notes", function () {
+  var paymentId = $(this).attr("data-id");
+  paymentData(paymentId);
+});
+function paymentData(paymentId) {
+  $.ajax({
+    url: route("payment-notes.show", paymentId),
+    type: "GET",
+    success: function success(result) {
+      if (result.success) {
+        var notes = isEmpty(result.data) ? "N/A" : result.data;
+        $("#showClientNotesId").text(notes);
+        $("#paymentNotesModal").appendTo("body").modal("show");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    }
+  });
+}
+window.hideDropdownManually = function (dropdownBtnEle, dropdownEle) {
+  dropdownBtnEle.removeClass("show");
+  dropdownEle.removeClass("show");
+};
+listenChange(".payment-mode-filter", function () {
+  Livewire.dispatch("changePaymentModeFilter", {
+    paymentMode: $(this).val()
+  });
+  Livewire.dispatch("changePaymentStatusFilter", {
+    status: $(".payment-status-filter").val()
+  });
+});
+listenChange(".payment-status-filter", function () {
+  Livewire.dispatch("changePaymentStatusFilter", {
+    status: $(this).val()
+  });
+  Livewire.dispatch("changePaymentModeFilter", {
+    paymentMode: $(".payment-mode-filter").val()
+  });
+});
+listen("click", "#transactionResetFilter", function () {
+  $(".payment-mode-filter").val(0).trigger("change");
+  $(".payment-status-filter").val(3).trigger("change");
+  hideDropdownManually($("#transactionFilterBtn"), $(".dropdown-menu"));
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!*********************************************************************!*\
+  !*** ./resources/assets/js/client_panel/transaction/transaction.js ***!
+  \*********************************************************************/
+document.addEventListener('turbo:load', loadCPTransaction);
+function loadCPTransaction() {
+  initializeSelect2CPTransaction();
+}
+function initializeSelect2CPTransaction() {
+  if (!select2NotExists('#paymentModeFilter')) {
+    return false;
+  }
+  removeSelect2Container(["#paymentModeFilter"]);
+}
+listenClick('#resetFilter', function () {
+  $('#paymentModeFilter').select2({
+    placeholder: 'Select Payment Method',
+    allowClear: false
+  });
+  $('#paymentModeFilter').val(0).trigger('change');
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!**********************************************************!*\
+  !*** ./resources/assets/js/settings/invoice-template.js ***!
+  \**********************************************************/
+document.addEventListener('turbo:load', loadInvoiceTemplates);
+var pickr = null;
+function loadInvoiceTemplates() {
+  initializeSelect2();
+  loadPickrData();
+  if (pickr !== null) {
+    var color = $('#invoiceColor').val();
+    if (color != null) {
+      pickr.setColor(color);
+      var template = $('#invoiceTemplateId').val();
+      var invoiceData = [{
+        'invColor': color,
+        'companyName': $('#companyName').val(),
+        'companyAddress': $('#companyAddress').val(),
+        'companyPhone': $('#companyPhoneNumber').val()
+      }];
+      var value = prepareTemplateRender('#' + template, invoiceData);
+      $('#editorContent').html(value);
+    }
+  }
+  if ($('#invoiceTemplateId').length) {
+    var _template = $('#invoiceTemplateId').val();
+    var _color = $('#invoiceTemplateId').select2().find(":selected").data('color');
+    prepareDefaultTemplate(_template, _color);
+  }
+}
+function initializeSelect2() {
+  var invoiceTemplateId = $('#invoiceTemplateId');
+  if (!invoiceTemplateId.length) {
+    return;
+  }
+  $('#invoiceTemplateId').select2({
+    width: '100%'
+  });
+}
+
+// Invoice Template JS For Setting Module
+function loadPickrData() {
+  var colorPickerSelector = $('.color-wrapper');
+  if (!colorPickerSelector.length) {
+    return;
+  }
+  pickr = Pickr.create({
+    el: '.color-wrapper',
+    theme: 'nano',
+    // or 'monolith', or 'nano'
+    closeWithKey: 'Enter',
+    autoReposition: true,
+    defaultRepresentation: 'HEX',
+    swatches: ['rgba(244, 67, 54, 1)', 'rgba(233, 30, 99, 1)', 'rgba(156, 39, 176, 1)', 'rgba(103, 58, 183, 1)', 'rgba(63, 81, 181, 1)', 'rgba(33, 150, 243, 1)', 'rgba(3, 169, 244, 1)', 'rgba(0, 188, 212, 1)', 'rgba(0, 150, 136, 1)', 'rgba(76, 175, 80, 1)', 'rgba(139, 195, 74, 1)', 'rgba(205, 220, 57, 1)', 'rgba(255, 235, 59, 1)', 'rgba(255, 193, 7, 1)'],
+    components: {
+      // Main components
+      preview: true,
+      hue: true,
+      // Input / output Options
+      interaction: {
+        input: true,
+        clear: false,
+        save: false
+      }
+    }
+  });
+  pickr.on('change', function () {
+    var color = pickr.getColor().toHEXA().toString();
+    if (wc_hex_is_light(color)) {
+      $('#validationErrorsBox').text('');
+      $('#validationErrorsBox').show().html('');
+      $('#validationErrorsBox').text('Pick a different color');
+      setTimeout(function () {
+        $('#validationErrorsBox').slideUp();
+      }, 5000);
+      $(':input[id="btnSave"]').prop('disabled', true);
+      return;
+    }
+    $(':input[id="btnSave"]').prop('disabled', false);
+    pickr.setColor(color);
+    $('#invoiceColor').val(color);
+    var template = $('#invoiceTemplateId').val();
+    var invoiceData = [{
+      'invColor': color,
+      'companyName': $('#companyName').val(),
+      'companyAddress': $('#companyAddress').val(),
+      'companyPhone': $('#companyPhoneNumber').val()
+    }];
+    var value = prepareTemplateRender('#' + template, invoiceData);
+    $('#editorContent').html(value);
+  });
+}
+listenChange('#invoiceTemplateId', function () {
+  var template = $(this).val();
+  var color = $(this).select2().find(":selected").data('color');
+  prepareDefaultTemplate(template, color);
+});
+function prepareDefaultTemplate(template, color) {
+  var invoiceData = [{
+    'invColor': color,
+    'companyName': $('#companyName').val(),
+    'companyAddress': $('#companyAddress').val(),
+    'companyPhone': $('#companyPhoneNumber').val()
+  }];
+  var value = prepareTemplateRender('#' + template, invoiceData);
+  $('#invoiceColor').val(color);
+  $('#editorContent').html(value);
+  setTimeout(function () {
+    pickr.setColor(color);
+  }, 200);
+}
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!***********************************************!*\
+  !*** ./resources/assets/js/client/invoice.js ***!
+  \***********************************************/
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+document.addEventListener("turbo:load", loadClientInvoicePage);
+var dateRange = null;
+function loadClientInvoicePage() {
+  loadDateRangePicker("#dateRangePickerForClient");
+  if (!$("#invoices-tab").length) {
+    return false;
+  }
+  var tabParameter = $("#clientActiveTab").val();
+  $('.nav-item button[data-bs-target="#' + tabParameter + '"]').click();
+}
+function loadDateRangePicker(selector) {
+  if (!$(selector).length) {
+    return false;
+  }
+  dateRange = $(selector);
+  startDate = moment().subtract(100, "years");
+  endDate = moment();
+  setDatepickerValue(startDate, endDate);
+  var lastMonth = moment().startOf("month").subtract(1, "days");
+  dateRange.daterangepicker({
+    startDate: startDate,
+    endDate: endDate,
+    opens: "left",
+    showDropdowns: true,
+    autoUpdateInput: false,
+    locale: {
+      customRangeLabel: Lang.get("js.custom"),
+      applyLabel: Lang.get("js.apply"),
+      cancelLabel: Lang.get("js.cancel"),
+      fromLabel: Lang.get("js.from"),
+      toLabel: Lang.get("js.to"),
+      monthNames: [Lang.get("js.jan"), Lang.get("js.feb"), Lang.get("js.mar"), Lang.get("js.apr"), Lang.get("js.may"), Lang.get("js.jun"), Lang.get("js.jul"), Lang.get("js.aug"), Lang.get("js.sep"), Lang.get("js.oct"), Lang.get("js.nov"), Lang.get("js.dec")],
+      daysOfWeek: [Lang.get("js.sun"), Lang.get("js.mon"), Lang.get("js.tue"), Lang.get("js.wed"), Lang.get("js.thu"), Lang.get("js.fri"), Lang.get("js.sat")]
+    },
+    ranges: _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, Lang.get("js.all"), [moment().subtract(100, "years"), moment()]), Lang.get("js.today"), [moment(), moment()]), Lang.get("js.this_week"), [moment().startOf("week"), moment().endOf("week")]), Lang.get("js.last_week"), [moment().startOf("week").subtract(7, "days"), moment().startOf("week").subtract(1, "days")]), Lang.get("js.last_30_days"), [moment().subtract(29, "days"), moment()]), Lang.get("js.this_month"), [moment().startOf("month"), moment().endOf("month")]), Lang.get("js.last_month"), [lastMonth.clone().startOf("month"), lastMonth.clone().endOf("month")])
+  }, setDatepickerValue);
+  function setDatepickerValue(start, end) {
+    dateRange.val(start.format("DD/MM/YYYY") + " - " + end.format("DD/MM/YYYY"));
+  }
+  dateRange.on("apply.daterangepicker", function (ev, picker) {
+    startDate = picker.startDate.format("YYYY-MM-D");
+    endDate = picker.endDate.format("YYYY-MM-D");
+    Livewire.dispatch("changeDateRangeFilter", [startDate, endDate]);
+  });
+}
+listenClick("#resetClientInvoiceFilter", function () {
+  $("#clientInvoiceStatus").val(7).trigger("change");
+  hideDropdownManually($("#clientInvoiceFilterBtn"), $(".dropdown-menu"));
+  loadDateRangePicker("#dateRangePickerForClient");
+  var startDate = moment().subtract(100, "years");
+  var endDate = moment();
+  Livewire.dispatch("changeDateRangeFilter", [startDate, endDate]);
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!*****************************************************!*\
+  !*** ./resources/assets/js/invoice/invoice_send.js ***!
+  \*****************************************************/
+listenClick(".send-btn", function (event) {
+  event.preventDefault();
+  var invoiceId = $(event.currentTarget).data("id");
+  var status = 1;
+  swal({
+    title: Lang.get("js.send_invoice") + " !",
+    text: Lang.get("js.are_you_sure_send"),
+    icon: "warning",
+    buttons: [Lang.get("js.no_cancel"), Lang.get("js.yes_send")]
+  }).then(function (willSend) {
+    if (willSend) {
+      changeInvoiceStatus(invoiceId, status);
+    }
+  });
+});
+function changeInvoiceStatus(invoiceId, status) {
+  $.ajax({
+    url: route("send-invoice", {
+      invoice: invoiceId,
+      status: status
+    }),
+    type: "post",
+    dataType: "json",
+    success: function success(obj) {
+      if (obj.success) {
+        window.location.reload();
+      }
+      swal.fire({
+        icon: "success",
+        title: "Send!",
+        confirmButtonColor: "#009ef7",
+        text: header + " has been sent.",
+        timer: 2000
+      });
+    },
+    error: function error(data) {
+      swal.fire({
+        title: "",
+        text: data.responseJSON.message,
+        confirmButtonColor: "#009ef7",
+        icon: "error",
+        timer: 5000
+      });
+    }
+  });
+}
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!************************************************!*\
+  !*** ./resources/assets/js/payment/payment.js ***!
+  \************************************************/
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+var paymentTableName = "";
+document.addEventListener("turbo:load", loadPayment);
+function loadPayment() {
+  initializeSelect2Payment();
+  paymentDateFilter();
+  paymentTableName = "#tblPayments";
+}
+function initializeSelect2Payment() {
+  if (!select2NotExists("#invoice_id")) {
+    return false;
+  }
+  if ($("#invoice_id").hasClass("select2-hidden-accessible")) {
+    $("#invoice_id .select2-container").remove();
+  }
+  $("#invoice_id").select2({
+    dropdownParent: $("#paymentModal")
+  });
+}
+listenClick(".payment-delete-btn", function (event) {
+  var id = $(event.currentTarget).attr("data-id");
+  deleteItem(route("payments.destroy", id), Lang.get("js.payment"));
+});
+listenClick(".addPayment", function () {
+  var currentDtFormat = currentDateFormat;
+  $.ajax({
+    url: route("get-current-date-format"),
+    type: "get",
+    success: function success(data) {
+      currentDtFormat = data;
+      $("#payment_date").flatpickr({
+        defaultDate: new Date(),
+        dateFormat: data,
+        maxDate: new Date(),
+        locale: getUserLanguages
+      });
+      $("#paymentModal").appendTo("body").modal("show");
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    }
+  });
+  setTimeout(function () {
+    $("#invoice_id").select2({
+      dropdownParent: $("#paymentModal")
+    });
+  }, 200);
+});
+listenHiddenBsModal("#paymentModal", function () {
+  $("#adminPaymentInvoiceId").val(null).trigger("change");
+  resetModalForm("#paymentForm");
+});
+listenSubmit("#paymentForm", function (e) {
+  e.preventDefault();
+  if ($("#payment_note").val().trim().length == 0) {
+    displayErrorMessage("Note field is Required");
+    return false;
+  }
+  var btnSubmitEle = $(this).find("#btnPay");
+  setAdminBtnLoader(btnSubmitEle);
+  $.ajax({
+    url: route("payments.store"),
+    type: "POST",
+    data: $(this).serialize(),
+    success: function success(result) {
+      if (result.success) {
+        $("#paymentModal").modal("hide");
+        displaySuccessMessage(result.message);
+        Livewire.dispatch("refreshDatatable");
+        Livewire.dispatch("resetPageTable");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    },
+    complete: function complete() {
+      setAdminBtnLoader(btnSubmitEle);
+    }
+  });
+});
+listenChange(".invoice", function () {
+  var invoiceId = $(this).val();
+  if (isEmpty(invoiceId)) {
+    $("#due_amount").val(0);
+    $("#paid_amount").val(0);
+    return false;
+  }
+  $.ajax({
+    url: route("payments.get-invoiceAmount", invoiceId),
+    type: "get",
+    dataType: "json",
+    success: function success(result) {
+      if (result.success) {
+        $(".invoice-currency-code").text(result.data.currencyCode);
+        $("#due_amount").val(number_format(result.data.totalDueAmount));
+        $("#paid_amount").val(number_format(result.data.totalPaidAmount));
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    }
+  });
+});
+listenClick(".payment-edit-btn", function (event) {
+  var paymentId = $(event.currentTarget).attr("data-id");
+  paymentRenderData(paymentId);
+});
+function paymentRenderData(paymentId) {
+  $.ajax({
+    url: route("payments.edit", paymentId),
+    type: "GET",
+    beforeSend: function beforeSend() {
+      startLoader();
+    },
+    success: function success(result) {
+      if (result.success) {
+        $("#edit_invoice_id").val(result.data.invoice.invoice_id);
+        $("#edit_amount").val(result.data.amount);
+        $("#edit_payment_date").flatpickr({
+          defaultDate: result.data.payment_date,
+          dateFormat: currentDateFormat,
+          maxDate: new Date(),
+          locale: getUserLanguages
+        });
+        $(".edit-invoice-currency-code").text(result.data.currencyCode);
+        $("#edit_payment_note").val(result.data.notes);
+        $("#paymentId").val(result.data.id);
+        $("#transactionId").val(result.data.payment_id);
+        $("#invoice").val(result.data.invoice_id);
+        $("#totalDue_amount").val(number_format(result.data.DueAmount.original.data.totalDueAmount));
+        $("#totalPaid_amount").val(number_format(result.data.DueAmount.original.data.totalPaidAmount));
+        $("#editPaymentModal").appendTo("body").modal("show");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    },
+    complete: function complete() {
+      stopLoader();
+    }
+  });
+}
+listenSubmit("#editPaymentForm", function (event) {
+  event.preventDefault();
+  if ($("#edit_payment_note").val().trim().length == 0) {
+    displayErrorMessage("Note field is Required");
+    return false;
+  }
+  var paymentId = $("#paymentId").val();
+  $.ajax({
+    url: route("payments.update", {
+      payment: paymentId
+    }),
+    type: "put",
+    data: $(this).serialize(),
+    beforeSend: function beforeSend() {
+      startLoader();
+    },
+    success: function success(result) {
+      if (result.success) {
+        displaySuccessMessage(result.message);
+        Livewire.dispatch("refreshDatatable");
+        Livewire.dispatch("resetPageTable");
+        $("#editPaymentModal").modal("hide");
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    },
+    complete: function complete() {
+      stopLoader();
+    }
+  });
+});
+listenChange(".transaction-approve", function () {
+  var id = $(this).attr("data-id");
+  var status = $(this).val();
+  $.ajax({
+    url: route("change-transaction-status", id),
+    type: "GET",
+    data: {
+      id: id,
+      status: status
+    },
+    success: function success(result) {
+      displaySuccessMessage(result.message);
+      setTimeout(function () {
+        Turbo.visit(route("transactions.index"));
+      }, 1500);
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    }
+  });
+});
+window.paymentDateFilter = function () {
+  var start = moment().startOf("month");
+  var end = moment().endOf("month");
+  if (!$("#paymentDateFilter").length) {
+    return;
+  }
+  var dateRange = $("#paymentDateFilter");
+  function cb(start, end) {
+    Livewire.dispatch("dateFilter", [start.format("MM/DD/YYYY"), end.format("MM/DD/YYYY")]);
+    $("#paymentDateFilter").val(start.format("MM/DD/YYYY") + " - " + end.format("MM/DD/YYYY"));
+  }
+  dateRange.daterangepicker({
+    startDate: start,
+    endDate: end,
+    showDropdowns: true,
+    locale: {
+      customRangeLabel: Lang.get("js.custom"),
+      applyLabel: Lang.get("js.apply"),
+      cancelLabel: Lang.get("js.cancel"),
+      fromLabel: Lang.get("js.from"),
+      toLabel: Lang.get("js.to"),
+      monthNames: [Lang.get("js.jan"), Lang.get("js.feb"), Lang.get("js.mar"), Lang.get("js.apr"), Lang.get("js.may"), Lang.get("js.jun"), Lang.get("js.jul"), Lang.get("js.aug"), Lang.get("js.sep"), Lang.get("js.oct"), Lang.get("js.nov"), Lang.get("js.dec")],
+      daysOfWeek: [Lang.get("js.sun"), Lang.get("js.mon"), Lang.get("js.tue"), Lang.get("js.wed"), Lang.get("js.thu"), Lang.get("js.fri"), Lang.get("js.sat")]
+    },
+    ranges: _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, Lang.get("js.today"), [moment(), moment()]), Lang.get("js.yesterday"), [moment().subtract(1, "days"), moment().subtract(1, "days")]), Lang.get("js.last_7_days"), [moment().subtract(6, "days"), moment()]), Lang.get("js.last_30_days"), [moment().subtract(29, "days"), moment()]), Lang.get("js.this_month"), [moment().startOf("month"), moment().endOf("month")]), Lang.get("js.last_month"), [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")])
+  }, cb);
+  cb(start, end);
+  dateRange.on("apply.daterangepicker", function (ev, picker) {
+    isPickerApply = true;
+    startDate = picker.startDate.format("YYYY-MM-DD");
+    endDate = picker.endDate.format("YYYY-MM-DD");
+    Livewire.dispatch("dateFilter", [startDate, endDate]);
+  });
+};
+listenClick("#adminPaymentExcelExport", function (e) {
+  e.preventDefault();
+  $.ajax({
+    url: route("admin.paymentsExcel"),
+    type: "GET",
+    data: {
+      date: $("#paymentDateFilter").val()
+    },
+    xhrFields: {
+      responseType: "blob"
+    },
+    success: function success(response) {
+      var blob = new Blob([response]);
+      var link = document.createElement("a");
+      link.href = window.URL.createObjectURL(blob);
+      link.download = "Payment-Excel" + ".xlsx";
+      link.click();
+    },
+    error: function error(blob) {
+      console.log(blob);
+    }
+  });
+});
+listenClick("#adminPaymentPdfExport", function (e) {
+  e.preventDefault();
+  $.ajax({
+    url: route("admin.payments.pdf"),
+    type: "GET",
+    data: {
+      date: $("#paymentDateFilter").val()
+    },
+    xhrFields: {
+      responseType: "blob"
+    },
+    success: function success(response) {
+      var blob = new Blob([response]);
+      var link = document.createElement("a");
+      link.href = window.URL.createObjectURL(blob);
+      link.download = "payments" + ".pdf";
+      link.click();
+    },
+    error: function error(blob) {
+      console.log(blob);
+    }
+  });
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!******************************************************!*\
+  !*** ./resources/assets/js/fullscreen/fullscreen.js ***!
+  \******************************************************/
+document.addEventListener('turbo:load', loadFullScreen);
+function loadFullScreen() {
+  var fullScreen = document.getElementById('gotoFullScreen');
+  if (!fullScreen) {
+    return;
+  }
+  fullScreen.addEventListener('click', function () {
+    if (window.innerHeight == screen.height) {
+      document.exitFullscreen();
+    }
+    document.body.requestFullscreen();
+    $('body').attr({
+      'style': 'height: 100%; overflow: auto;'
+    });
+  }, false);
+}
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!**********************************************************!*\
+  !*** ./resources/assets/js/client_panel/quotes/quote.js ***!
+  \**********************************************************/
+document.addEventListener("turbo:load", loadQuote);
+function loadQuote() {
+  initializeSelect2Quote();
+}
+function initializeSelect2Quote() {
+  if (!select2NotExists("#status_filter")) {
+    return false;
+  }
+  removeSelect2Container(["#status_filter"]);
+  $("#status_filter").select2({
+    placeholder: "All"
+  });
+  if ($("#status").val() == "") {
+    $("#status_filter").val(5).trigger("change");
+  }
+}
+listenClick("#resetFilter", function () {
+  $("#status_filter").val(5).trigger("change");
+  $("#status_filter").select2({
+    placeholder: "All"
+  });
+});
+
+// delete client quote record
+listenClick(".client-quote-delete-btn", function (event) {
+  event.preventDefault();
+  var quoteId = $(this).attr("data-id");
+  deleteItem(route("client.quotes.destroy", quoteId), Lang.get("js.quote"));
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!****************************************************************!*\
+  !*** ./resources/assets/js/client_panel/quotes/create-edit.js ***!
+  \****************************************************************/
+var discountType = null;
+var momentFormat = '';
+document.addEventListener('turbo:load', loadCreateEditQuote);
+function loadCreateEditQuote() {
+  $('input:text:not([readonly="readonly"])').first().blur();
+  initializeSelect2CreateEditQuote();
+  loadSelect2ClientData();
+  momentFormat = convertToMomentFormat(currentDateFormat);
+  if ($('#quoteNoteData').val() == true || $('#quoteTermData').val() == true) {
+    $('#quoteAddNote').hide();
+    $('#quoteRemoveNote').show();
+    $('#quoteNoteAdd').show();
+    $('#quoteTermRemove').show();
+  } else {
+    $('#quoteRemoveNote').hide();
+    $('#quoteNoteAdd').hide();
+    $('#quoteTermRemove').hide();
+  }
+  if ($('#quoteRecurring').val() == true) {
+    $('.recurring').show();
+  } else {
+    $('.recurring').hide();
+  }
+  if ($('#formData_recurring-1').prop('checked')) {
+    $('.recurring').hide();
+  }
+  if ($('#discountType').val() != 0) {
+    $('#discount').removeAttr('disabled');
+  } else {
+    $('#discount').attr('disabled', 'disabled');
+  }
+  calculateAndSetQuoteAmount();
+}
+function loadSelect2ClientData() {
+  if (!$('#discountType').length) {
+    return;
+  }
+  $('#discountType,#status,#templateId').select2();
+}
+function initializeSelect2CreateEditQuote() {
+  if (!select2NotExists('.client-product-quote')) {
+    return false;
+  }
+  removeSelect2Container(['.client-product-quote']);
+  $('.client-product-quote').select2({
+    tags: true
+  });
+  $('.tax').select2({
+    placeholder: 'Select TAX'
+  });
+  $('#client_id').focus();
+  var currentDate = moment(new Date()).add(1, 'days').format(convertToMomentFormat(currentDateFormat));
+  var quoteDueDateFlatPicker = $('#clientQuoteDueDate').flatpickr({
+    defaultDate: currentDate,
+    dateFormat: currentDateFormat,
+    'locale': getUserLanguages
+  });
+  var editQuoteDueDateFlatPicker = $('#clientEditQuoteDueDate').flatpickr({
+    dateFormat: currentDateFormat,
+    defaultDate: moment($('#clientEditQuoteDueDate').val()).format(convertToMomentFormat(currentDateFormat)),
+    'locale': getUserLanguages
+  });
+  $('#client_quote_date').flatpickr({
+    defaultDate: moment(new Date()).format(convertToMomentFormat(currentDateFormat)),
+    dateFormat: currentDateFormat,
+    'locale': getUserLanguages,
+    onChange: function onChange() {
+      var minDate;
+      if (currentDateFormat == 'd.m.Y' || currentDateFormat == 'd/m/Y' || currentDateFormat == 'd-m-Y') {
+        minDate = moment($('#client_quote_date').val(), momentFormat).add(1, 'days').format(momentFormat);
+      } else {
+        minDate = moment($('#client_quote_date').val()).add(1, 'days').format(convertToMomentFormat(currentDateFormat));
+      }
+      if (typeof quoteDueDateFlatPicker != 'undefined') {
+        quoteDueDateFlatPicker.set('minDate', minDate);
+      }
+    },
+    onReady: function onReady() {
+      if (typeof quoteDueDateFlatPicker != 'undefined') {
+        quoteDueDateFlatPicker.set('minDate', currentDate);
+      }
+    }
+  });
+  $('#clientEditQuoteDate').flatpickr({
+    dateFormat: currentDateFormat,
+    defaultDate: moment($('#clientEditQuoteDate').val()).format(convertToMomentFormat(currentDateFormat)),
+    'locale': getUserLanguages,
+    onChange: function onChange() {
+      var minDate;
+      if (currentDateFormat == 'd.m.Y' || currentDateFormat == 'd/m/Y' || currentDateFormat == 'd-m-Y') {
+        minDate = moment($('#clientEditQuoteDate').val(), momentFormat).add(1, 'days').format(momentFormat);
+      } else {
+        minDate = moment($('#clientEditQuoteDate').val()).add(1, 'days').format(convertToMomentFormat(currentDateFormat));
+      }
+      if (typeof editQuoteDueDateFlatPicker != 'undefined') {
+        editQuoteDueDateFlatPicker.set('minDate', minDate);
+      }
+    },
+    onReady: function onReady() {
+      var minDate2;
+      if (currentDateFormat == 'd.m.Y' || currentDateFormat == 'd/m/Y' || currentDateFormat == 'd-m-Y') {
+        minDate2 = moment($('#clientEditQuoteDate').val(), convertToMomentFormat(currentDateFormat)).add(1, 'days').format(convertToMomentFormat(currentDateFormat));
+      } else {
+        minDate2 = moment($('#clientEditQuoteDate').val()).add(1, 'days').format(convertToMomentFormat(currentDateFormat));
+      }
+      if (typeof editQuoteDueDateFlatPicker != 'undefined') {
+        editQuoteDueDateFlatPicker.set('minDate', minDate2);
+      }
+    }
+  });
+}
+listenKeyup('#quoteId', function () {
+  return $('#quoteId').val(this.value.toUpperCase());
+});
+listenClick('#quoteAddNote', function () {
+  $('#quoteAddNote').hide();
+  $('#quoteRemoveNote').show();
+  $('#quoteNoteAdd').show();
+  $('#quoteTermRemove').show();
+});
+listenClick('#quoteRemoveNote', function () {
+  $('#quoteAddNote').show();
+  $('#quoteRemoveNote').hide();
+  $('#quoteNoteAdd').hide();
+  $('#quoteTermRemove').hide();
+  $('#quoteNote').val('');
+  $('#quoteTerm').val('');
+  $('#quoteAddNote').show();
+});
+listenClick('#formData_recurring-0', function () {
+  if ($('#formData_recurring-0').prop('checked')) {
+    $('.recurring').show();
+  } else {
+    $('.recurring').hide();
+  }
+});
+listenClick('#formData_recurring-1', function () {
+  if ($('#formData_recurring-1').prop('checked')) {
+    $('.recurring').hide();
+  }
+});
+listenChange('#discountType', function () {
+  discountType = $(this).val();
+  $('#discount').val(0);
+  if (discountType == 1 || discountType == 2) {
+    $('#discount').removeAttr('disabled');
+    if (discountType == 2) {
+      var value = $('#discount').val();
+      $('#discount').val(value.substring(0, 2));
+    }
+  } else {
+    $('#discount').attr('disabled', 'disabled');
+    $('#discount').val(0);
+    $('#quoteDiscountAmount').text('0');
+  }
+  calculateDiscount();
+});
+window.isNumberKey = function (evt, element) {
+  var charCode = evt.which ? evt.which : event.keyCode;
+  return !((charCode !== 46 || $(element).val().indexOf('.') !== -1) && (charCode < 48 || charCode > 57));
+};
+listenClick('#addClientQuoteItem', function () {
+  var data = {
+    'products': JSON.parse($('#products').val())
+  };
+  var quoteItemHtml = prepareTemplateRender('#quotesItemTemplate', data);
+  $('.quote-item-container').append(quoteItemHtml);
+  $('.productId').select2({
+    placeholder: Lang.get("js.select_product_or_enter_free_text"),
+    tags: true
+  });
+  resetQuoteItemIndex();
+});
+var resetQuoteItemIndex = function resetQuoteItemIndex() {
+  var index = 1;
+  $('.quote-item-container>tr').each(function () {
+    $(this).find('.item-number').text(index);
+    index++;
+  });
+  if (index - 1 == 0) {
+    var data = {
+      'products': JSON.parse($('#products').val())
+    };
+    var quoteItemHtml = prepareTemplateRender('#quotesItemTemplate', data);
+    $('.quote-item-container').append(quoteItemHtml);
+    $('.productId').select2();
+  }
+};
+listenClick('.delete-quote-item', function () {
+  $(this).parents('tr').remove();
+  resetQuoteItemIndex();
+  calculateAndSetQuoteAmount();
+});
+listenChange('.client-product-quote', function () {
+  var productId = $(this).val();
+  if (isEmpty(productId)) {
+    productId = 0;
+  }
+  var element = $(this);
+  $.ajax({
+    url: route('quotes.get-product', productId),
+    type: 'get',
+    dataType: 'json',
+    success: function success(result) {
+      if (result.success) {
+        var price = '';
+        $.each(result.data, function (id, productPrice) {
+          if (id === productId) price = productPrice;
+        });
+        element.parent().parent().find('td .price-quote').val(price);
+        element.parent().parent().find('td .qty-quote').val(1);
+        $('.price-quote').trigger('keyup');
+      }
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    }
+  });
+});
+listenKeyup('.qty-quote', function () {
+  var qty = parseInt($(this).val());
+  var rate = $(this).parent().siblings().find('.price-quote').val();
+  rate = parseFloat(removeCommas(rate));
+  var amount = calculateAmount(qty, rate);
+  $(this).parent().siblings('.quote-item-total').text(addCommas(amount.toFixed(2).toString()));
+  calculateAndSetQuoteAmount();
+});
+listenKeyup('.price-quote', function () {
+  var rate = $(this).val();
+  rate = parseFloat(removeCommas(rate));
+  var qty = parseInt($(this).parent().siblings().find('.qty-quote').val());
+  var amount = calculateAmount(qty, rate);
+  $(this).parent().siblings('.quote-item-total').text(addCommas(amount.toFixed(2).toString()));
+  calculateAndSetQuoteAmount();
+});
+var calculateAmount = function calculateAmount(qty, rate) {
+  if (qty > 0 && rate > 0) {
+    var price = qty * rate;
+    return price;
+  } else {
+    return 0;
+  }
+};
+var calculateAndSetQuoteAmount = function calculateAndSetQuoteAmount() {
+  var quoteTotalAmount = 0;
+  $('.quote-item-container>tr').each(function () {
+    var quoteItemTotal = $(this).find('.quote-item-total').text();
+    quoteItemTotal = removeCommas(quoteItemTotal);
+    quoteItemTotal = isEmpty($.trim(quoteItemTotal)) ? 0 : parseFloat(quoteItemTotal);
+    quoteTotalAmount += quoteItemTotal;
+  });
+  quoteTotalAmount = parseFloat(quoteTotalAmount);
+  if (isNaN(quoteTotalAmount)) {
+    quoteTotalAmount = 0;
+  }
+  $('#quoteTotal').text(addCommas(quoteTotalAmount.toFixed(2)));
+
+  //set hidden input value
+  $('#quoteTotalAmount').val(quoteTotalAmount);
+  calculateDiscount();
+};
+var calculateDiscount = function calculateDiscount() {
+  var discount = $('#discount').val();
+  discountType = $('#discountType').val();
+  var itemAmount = [];
+  var i = 0;
+  $('.quote-item-total').each(function () {
+    itemAmount[i++] = $.trim(removeCommas($(this).text()));
+  });
+  $.sum = function (arr) {
+    var r = 0;
+    $.each(arr, function (i, v) {
+      r += +v;
+    });
+    return r;
+  };
+  var totalAmount = $.sum(itemAmount);
+  $('#quoteTotal').text(number_format(totalAmount));
+  if (isEmpty(discount) || isEmpty(totalAmount)) {
+    discount = 0;
+  }
+  var discountAmount = 0;
+  var finalAmount = totalAmount - discountAmount;
+  if (discountType == 1) {
+    discountAmount = discount;
+    finalAmount = totalAmount - discountAmount;
+  } else if (discountType == 2) {
+    discountAmount = totalAmount * discount / 100;
+    finalAmount = totalAmount - discountAmount;
+  }
+  $('#quoteFinalAmount').text(number_format(finalAmount));
+  $('#quoteTotalAmount').val(finalAmount.toFixed(2));
+  $('#quoteDiscountAmount').text(number_format(discountAmount));
+};
+listen('keyup', '#discount', function () {
+  var value = $(this).val();
+  if (discountType == 2 && value > 100) {
+    displayErrorMessage('On Percentage you can only give maximum 100% discount');
+    $(this).val(value.slice(0, -1));
+    return false;
+  }
+  calculateDiscount();
+});
+listenClick('#saveAsDraftClientQuote', function (event) {
+  event.preventDefault();
+  var quoteStates = $(this).data('status');
+  var myForm = document.getElementById('clientQuoteForm');
+  var formData = new FormData(myForm);
+  formData.append('status', quoteStates);
+  screenLock();
+  $.ajax({
+    url: route('client.quotes.store'),
+    type: 'POST',
+    dataType: 'json',
+    data: formData,
+    processData: false,
+    contentType: false,
+    beforeSend: function beforeSend() {
+      startLoader();
+    },
+    success: function success(result) {
+      displaySuccessMessage(result.message);
+      Turbo.visit(route('client.quotes.index'));
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    },
+    complete: function complete() {
+      stopLoader();
+      screenUnLock();
+    }
+  });
+});
+listenClick('#editSaveClientQuote', function (event) {
+  event.preventDefault();
+  var quoteStatus = $(this).data('status');
+  var formData = $('#clientQuoteEditForm').serialize() + '&quoteStatus=' + quoteStatus;
+  screenLock();
+  $.ajax({
+    url: $('#clientQuoteUpdateUrl').val(),
+    type: 'PUT',
+    dataType: 'json',
+    data: formData,
+    beforeSend: function beforeSend() {
+      startLoader();
+    },
+    success: function success(result) {
+      displaySuccessMessage(result.message);
+      Turbo.visit(route('client.quotes.index'));
+    },
+    error: function error(result) {
+      displayErrorMessage(result.responseJSON.message);
+    },
+    complete: function complete() {
+      stopLoader();
+      screenUnLock();
+    }
+  });
+});
+})();
+
+/******/ })()
+;
