@@ -37,11 +37,12 @@
             float: right;
             width: 48%;
             /* Adjust as needed */
+            margin-top:-58px;
         }
 
         .header {
             text-align: center;
-            margin-top:-56px;
+            /* margin-top:-56px; */
         }
 
         .right-side .header {
@@ -147,12 +148,12 @@
                             @if (!empty($client->user->address))
                                 <br/><br/>{{ $client->user->address }}
                             @endif
-                            @if (isset($client->user->contact))
+                            @if (isset($client->user->contact ) && $client->user->contact != null)
                             <br/>
                             <br/>
                             <a href="tel:+{{ $client->user->region_code }}{{ $client->user->contact }}">+{{ $client->user->region_code }} {{ $client->user->contact }}</a>
                             @endif
-                                                    <br/>
+                            <br/>
                             <br/>
                             {{ $client->user->email }}
                           
@@ -222,12 +223,7 @@
                         <tr>
                         <td>{{ isset($invoiceItems->product->name) ? $invoiceItems->product->name : $invoiceItems->product_name ?? __('messages.common.n/a') }}</td>
                         <td class="text-align-right"> {{ isset($invoiceItems->price) ? getInvoiceCurrencyAmount($invoiceItems->price, $invoice->currency_id, true) : __('messages.common.n/a') }}</td>
-                        <td class="text-align-right">   @foreach ($invoiceItems->invoiceItemTax as $keys => $tax)
-                                            {{ $tax->tax ?? '--' }}%
-                                            @if (!$loop->last)
-                                                ,
-                                            @endif
-                                        @endforeach</td>
+                        <td class="text-align-right">  {{$invoice->percentage}}% </td>
                         <td class="text-align-right">{{ isset($invoiceItems->price) ? getInvoiceCurrencyAmount($invoiceItems->price, $invoice->currency_id, true) : __('messages.common.n/a') }} </td>
 
 
@@ -253,7 +249,7 @@
                                 </div>
                             </div>
                         </th>
-                        <th class="text-align-right" style="width: 45%; background-color: #81d7f3;"> {{ isset($invoiceItems->total) ? getInvoiceCurrencyAmount($invoiceItems->total, $invoice->currency_id, true) : __('messages.common.n/a') }}</th>
+                        <th class="text-align-right" style="width: 45%; background-color: #81d7f3;"> {{ isset($invoice->final_amount) ? getInvoiceCurrencyAmount($invoice->final_amount, $invoice->currency_id, true) : __('messages.common.n/a') }}</th>
                     </tr>
                 </thead>
             </table>
