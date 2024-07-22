@@ -298,7 +298,7 @@ return [
         'client' => 'Client',
         'invoice_date' => 'Invoice Date',
         'discount' => 'Discount',
-        'add' => 'Add',
+        'add' => 'Add Product Row',
         'qty' => 'Qty',
         'tax' => 'Tax',
         'price' => 'Price',

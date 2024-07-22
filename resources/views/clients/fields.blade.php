@@ -10,7 +10,7 @@
         <div class="col-lg-6">
             <div class="mb-5">
                 {{ Form::label('last_name', __('UID') . ':', ['class' => 'form-label required mb-3']) }}
-                {{ Form::text('uuid', $uuid, ['class' => 'form-control', 'placeholder' => __('UID'), 'required','readonly']) }}
+                {{ Form::text('uuid', $uuid, ['class' => 'form-control', 'placeholder' => __('UID')]) }}
             </div>
         </div>
         <div class="col-lg-6">

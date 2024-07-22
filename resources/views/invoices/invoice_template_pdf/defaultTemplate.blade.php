@@ -261,7 +261,7 @@
         line-height: 1.7;
         margin-top: 2rem;
     ">
-                <p>If you have any Question  about this invoice please contact <b>  {{ html_entity_decode($setting['app_name']) }}</b>, <a href="tel:{{ $setting['company_phone'] }}">{{ $setting['company_phone'] }}</a> ,<b>billing@voovmedia.com</b></p>
+                <p> If you have any questions about this invoice, please contact <b>  {{ html_entity_decode($setting['app_name']) }}</b>, <a href="tel:+1 (305) 857-5147">+1 (305) 857-5147</a> ,<a href="mailto:billing@voovmedia.com">billing@voovmedia.com</a></p>
             </div>
     </div>
 </body>
