@@ -102,12 +102,13 @@ class InvoiceRepository extends BaseRepository
         ->select(DB::raw("
             CASE
                 WHEN clients.channel_name IS NOT NULL AND clients.channel_name != ''
-                THEN CONCAT(users.first_name, ' - ', clients.channel_name)
-                ELSE users.first_name
+                THEN CONCAT(clients.uuid, ' - ', clients.channel_name)
+                ELSE CONCAT(clients.uuid, ' - ', users.first_name)
             END as full_name_channel, users.id
         "))
         ->pluck('full_name_channel', 'users.id')
-        ->toArray();    
+        ->toArray();
+
         $data['discount_type'] = Invoice::DISCOUNT_TYPE;
         $invoiceStatusArr = Invoice::STATUS_ARR;
         unset($invoiceStatusArr[Invoice::STATUS_ALL]);
