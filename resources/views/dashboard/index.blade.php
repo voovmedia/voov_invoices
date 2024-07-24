@@ -33,10 +33,10 @@
                                     <div
                                         class="bg-success shadow-md rounded-10 p-xxl-10 px-7 py-10 d-flex align-items-center justify-content-center my-3">
                                         <div class="text-white mt-3 text-center">
-                                            <h2 class="fs-1-xxl fw-bolder text-white">
+                                            <h3 class="fs-1-xxl fw-bolder text-white">
                                                 {{ __('messages.admin_dashboard.total_amount') }}
-                                            </h2>
-                                            <span class="text-white">{{ __('messages.common.click_here') }}</span>
+                                            </h3>
+                                            <h2 class="fs-1-xxl fw-bolder text-white">${{formatTotalAmount($total_amount)}}</h4>
                                         </div>
                                     </div>
                                 </a>
@@ -50,7 +50,7 @@
                                             <h2 class="fs-1-xxl fw-bolder text-white">
                                                 {{ __('messages.admin_dashboard.total_paid') }}
                                             </h2>
-                                            <span class="text-white">{{ __('messages.common.click_here') }}</span>
+                                            <h2 class="fs-1-xxl fw-bolder text-white">${{formatTotalAmount($total_paid)}}</h4>
                                         </div>
                                     </div>
                                 </a>
@@ -64,7 +64,7 @@
                                             <h2 class="fs-1-xxl fw-bolder text-white">
                                                 {{ __('messages.admin_dashboard.total_due') }}
                                             </h2>
-                                            <span class="text-white">{{ __('messages.common.click_here') }}</span>
+                                            <h2 class="fs-1-xxl fw-bolder text-white">${{formatTotalAmount($total_due)}}</h4>
                                         </div>
                                     </div>
                                 </a>

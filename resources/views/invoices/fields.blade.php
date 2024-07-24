@@ -118,7 +118,7 @@
                             {{ Form::number('price[]', 0, ['class' => 'form-control price-input price ', 'oninput' => "validity.valid||(value=value.replace(/[e\+\-]/gi,''))", 'min' => '0', 'value' => '0', 'step' => '.01', 'pattern' => "^\d*(\.\d{0,2})?$", 'required', 'onKeyPress' => 'if(this.value.length==8) return false;']) }}
                         </td>
                         <td>
-                        {{ Form::number('percentage', 0, ['class' => 'form-control percentage', 'id' => 'percentage', 'readonly'=>true, 'oninput' => "validity.valid||(value=value.replace(/[e\+\-]/gi,''))", 'min' => '0', 'value' => '0', 'step' => '.01', 'pattern' => "^\d*(\.\d{0,2})?$", 'required', 'onKeyPress' => 'if(this.value.length==8) return false;']) }}
+                        {{ Form::number('percentage', 0, ['class' => 'form-control percentage', 'id' => 'percentage','oninput' => "validity.valid||(value=value.replace(/[e\+\-]/gi,''))", 'min' => '0', 'value' => '0', 'step' => '.01', 'pattern' => "^\d*(\.\d{0,2})?$", 'required', 'onKeyPress' => 'if(this.value.length==8) return false;']) }}
 
                             <!-- <select name="tax[]" class='form-select io-select2 fw-bold tax' data-control='select2' multiple="multiple">
                                 @foreach ($taxes as $tax)
@@ -244,7 +244,6 @@
             mode: "range",
             dateFormat: "m/d/Y",
             defaultDate: ["today"], // Selects today's date by default
-            minDate: "today",
         });
     });
 </script>

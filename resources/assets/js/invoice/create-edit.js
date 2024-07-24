@@ -362,11 +362,15 @@ const calculateAmountWithoutTax = (qty, rate) => {
 const calculateFinalAmount = () => {
 
     let amount = 0;
+
     $(".invoice-item-container>tr").each(function () {
-        let itemTotal = $(this).find(".item-total").text();
+        let itemTotal = $(this).find(".price-input").val();
+        let percentage = $(this).find(".percentage").val();
         itemTotal = removeCommas(itemTotal);
         itemTotal = isEmpty($.trim(itemTotal)) ? 0 : parseFloat(itemTotal);
-        amount += itemTotal;
+        const productAmount = (itemTotal * parseFloat(percentage)) / 100;
+        $(this).find(".item-total").text(productAmount);
+        amount += productAmount;
     });
 
     let totalAmount = amount;
@@ -377,13 +381,7 @@ const calculateFinalAmount = () => {
 
     // total amount with products taxes
     let finalTotalAmt = parseFloat(totalAmount)
-    // Get the percentage value from the input with id 'percentage'
-    let percentage = $(".percentage").val();
 
-    // If percentage is not empty, calculate the final amount as a percentage of the total amount
-    if (!isEmpty(percentage)) {
-        finalTotalAmt = (totalAmount * parseFloat(percentage)) / 100;
-    }
     // final amount calculation
     $("#finalAmount").text(number_format(finalTotalAmt));
     $("#finalTotalAmt").val(finalTotalAmt.toFixed(2));
@@ -625,3 +623,6 @@ listenChange("#client_id", function () {
         });
     }
 });
+listen("keyup",'.percentage',function(){
+    calculateFinalAmount()
+})

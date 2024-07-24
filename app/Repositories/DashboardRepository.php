@@ -36,6 +36,9 @@ class DashboardRepository
         $data['unpaid_invoices'] = $invoice->where('status', Invoice::UNPAID)->count();
         $data['partially_paid'] = $invoice->where('status', Invoice::PARTIALLY)->count();
         $data['overdue_invoices'] = $invoice->where('status', Invoice::OVERDUE)->count();
+        $data['total_amount'] = $invoice->where('status','!=', Invoice::DRAFT)->sum('final_amount');
+        $data['total_paid'] = $invoice->where('status', Invoice::PAID)->sum('final_amount');
+        $data['total_due'] = $invoice->where('status', Invoice::UNPAID)->sum('final_amount');
 
         return $data;
     }
