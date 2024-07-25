@@ -224,7 +224,13 @@
                         <td>{{ isset($invoiceItems->product->name) ? $invoiceItems->product->name : $invoiceItems->product_name ?? __('messages.common.n/a') }}</td>
                         <td class="text-align-right"> {{ isset($invoiceItems->price) ? getInvoiceCurrencyAmount($invoiceItems->price, $invoice->currency_id, true) : __('messages.common.n/a') }}</td>
                         <td class="text-align-right">  {{$invoice->percentage}}% </td>
-                        <td class="text-align-right">{{ isset($invoiceItems->price) ? getInvoiceCurrencyAmount($invoiceItems->price, $invoice->currency_id, true) : __('messages.common.n/a') }} </td>
+                        <td class="text-align-right">
+                        @isset($invoiceItems->price)
+                           {{ getInvoiceCurrencyAmount(calculatePercentage($invoiceItems->price, $invoice->percentage) , $invoice->currency_id, true)}}
+                        @else
+                            {{ __('messages.common.n/a') }}
+                        @endisset</td>
+
 
 
                     </tr>

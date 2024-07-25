@@ -710,3 +710,10 @@ if (! function_exists('getClientPercentage')) {
         return $client->percentage ?? null;
     }
 }
+
+if (!function_exists('calculatePercentage')) {
+    function calculatePercentage($price, $percentage)
+    {
+        return ($price * $percentage) / 100;
+    }
+}
