@@ -24,7 +24,8 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Mail;
+use SendGrid;
+use SendGrid\Mail\Mail;
 use Maatwebsite\Excel\Facades\Excel;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
@@ -188,10 +189,36 @@ class InvoiceController extends AppBaseController
     public function invoicePaymentReminder($invoiceId): mixed
     {
         $invoice = Invoice::with(['client.user', 'payments'])->whereId($invoiceId)->firstOrFail();
-        $paymentReminder = Mail::to($invoice->client->user->email)->send(new InvoicePaymentReminderMail($invoice));
+        // Get the rendered email content
+        $mailable = new InvoicePaymentReminderMail($invoice);
+        $content = $mailable->render();
 
-        return $this->sendResponse($paymentReminder,__('messages.flash.payment_reminder_mail_send_successfully'));
+        // Create SendGrid email instance
+        $to = $invoice->client->user->email;
+        $from = "no-reply@voovmedia.com";
+        $subject = $mailable->subject;
+
+        $email = new Mail();
+        $email->setFrom($from, "voovmedia");
+        $email->setSubject($subject);
+        $email->addTo($to);
+        $email->addContent("text/html", $content);
+
+        // Initialize SendGrid with API key
+        $sendGrid = new SendGrid(env('SENDGRID_API_KEY'));
+
+        try {
+            // Send the email
+            $response = $sendGrid->send($email);
+            if ($response->statusCode() >= 400) {
+                throw new \Exception("Failed to send email: " . $response->body());
+            }
+
+            return $this->sendResponse($response, __('messages.flash.payment_reminder_mail_send_successfully'));
+        } catch (\Exception $e) {
+            return $this->sendError($response, 'Failed to send email');
     }
+ }
 
     public function exportInvoicesExcel(): BinaryFileResponse
     {
