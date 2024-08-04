@@ -63,6 +63,7 @@ class InvoiceItem extends Model
         'quantity',
         'price',
         'total',
+        'percentage'
     ];
 
     protected $casts = [
@@ -72,6 +73,7 @@ class InvoiceItem extends Model
         'quantity' => 'double',
         'price' => 'double',
         'total' => 'double',
+        'percentage' => 'double'
     ];
 
     public function product(): BelongsTo

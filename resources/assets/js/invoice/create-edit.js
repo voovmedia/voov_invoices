@@ -238,7 +238,6 @@ listenClick("#addItem", function () {
     //     placeholder: "Select Percenatge",
     //     multiple: true,
     // });
-    $('.percentage').val($('.percentage').val())
     $(".productId").select2({
         placeholder: Lang.get(
             "js.select_product_or_enter_free_text"

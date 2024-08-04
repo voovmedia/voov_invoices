@@ -187,7 +187,7 @@ class InvoiceRepository extends BaseRepository
             }
 
             $inputInvoiceTaxes = isset($input['taxes']) ? $input['taxes'] : [];
-            $invoiceItemInputArray = Arr::only($input, ['product_id', 'quantity', 'price', 'tax', 'tax_id']);
+            $invoiceItemInputArray = Arr::only($input, ['product_id', 'quantity', 'price', 'tax', 'tax_id','percentage']);
             $invoiceExist = Invoice::where('invoice_id', $input['invoice_id'])->exists();
             $invoiceItemInput = $this->prepareInputForInvoiceItem($invoiceItemInputArray);
             $total = [];
@@ -205,7 +205,7 @@ class InvoiceRepository extends BaseRepository
             /** @var Invoice $invoice */
             $input['client_id'] = Client::whereUserId($input['client_id'])->first()->id;
             $input = Arr::only($input, [
-                'client_id', 'invoice_id', 'invoice_date', 'due_date', 'payout_cycle_start', 'payout_cycle_end', 'discount_type', 'discount', 'amount', 'final_amount','percentage',
+                'client_id', 'invoice_id', 'invoice_date', 'due_date', 'payout_cycle_start', 'payout_cycle_end', 'discount_type', 'discount', 'amount', 'final_amount',
                 'note', 'term', 'template_id', 'payment_qr_code_id', 'status', 'tax_id', 'tax', 'currency_id', 'recurring_status', 'recurring_cycle',
             ]);
             $invoice = Invoice::create($input);
@@ -229,6 +229,7 @@ class InvoiceRepository extends BaseRepository
                     $data['product_name'] = $data['product_id'];
                     $data['product_id'] = null;
                 }
+                
                 $data['amount'] = $data['price'] * $data['quantity'];
 
                 $data['total'] = $data['amount'];
@@ -299,7 +300,7 @@ class InvoiceRepository extends BaseRepository
                 $input['payout_cycle_end'] = $payout_cycle[1];
             }
             $inputInvoiceTaxes = isset($input['taxes']) ? $input['taxes'] : [];
-            $invoiceItemInputArr = Arr::only($input, ['product_id', 'quantity', 'price', 'tax', 'tax_id', 'id']);
+            $invoiceItemInputArr = Arr::only($input, ['product_id', 'quantity', 'price', 'tax', 'tax_id', 'id','percentage']);
             $invoiceItemInput = $this->prepareInputForInvoiceItem($invoiceItemInputArr);
             $total = [];
             foreach ($invoiceItemInput as $key => $value) {
@@ -321,7 +322,7 @@ class InvoiceRepository extends BaseRepository
             $invoice = $this->update(Arr::only(
                 $input,
                 [
-                    'client_id', 'invoice_date', 'due_date', 'payout_cycle_start', 'payout_cycle_end', 'amount', 'final_amount','percentage', 'note',
+                    'client_id', 'invoice_date', 'due_date', 'payout_cycle_start', 'payout_cycle_end', 'amount', 'final_amount', 'note',
                     'term', 'template_id', 'payment_qr_code_id', 'status', 'tax_id', 'tax', 'currency_id', 'recurring_status', 'recurring_cycle',
                 ]
             ), $invoiceId);
@@ -349,7 +350,7 @@ class InvoiceRepository extends BaseRepository
                 }
 
                 $data['amount'] = $data['price'] * $data['quantity'];
-                $data['total'] = $data['amount'];
+                $data['total'] = calculatePercentage($data['amount'],$data['percentage']);
                 $totalAmount += $data['amount'];
 
                 $invoiceItemInput[$key] = $data;
