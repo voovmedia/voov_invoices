@@ -84,21 +84,12 @@ class ClientTable extends LivewireTableComponent
         return $query;
     }
 
-    // public function resetPageTable()
-    // {
-    //     $this->customResetPage('clientsPage');
-    // }
-    public function refreshDatatable()
-    {
-        $this->emitSelf('$refresh');
-    }
-
     public function resetPageTable()
     {
-        $this->resetPage();
-        $this->emitSelf('$refresh');
+        $this->customResetPage('clientsPage');
     }
-
+  
+  
     public function deleteSelected()
     {
         if (empty($this->selectedClients)) {
