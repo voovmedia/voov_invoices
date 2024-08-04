@@ -160,10 +160,15 @@ class InvoiceController extends AppBaseController
         $invoice->load(['client.user', 'invoiceTemplate', 'invoiceItems.product', 'invoiceItems.invoiceItemTax', 'invoiceTaxes', 'paymentQrCode']);
         $invoiceData = $this->invoiceRepository->getPdfData($invoice);
         $invoiceTemplate = $this->invoiceRepository->getDefaultTemplate($invoice);
-
         $pdf = Pdf::loadView("invoices.invoice_template_pdf.$invoiceTemplate", $invoiceData);
+        // Construct the filename
+            // Format the date
+        $invoiceDate = Carbon::parse($invoice->invoice_date)->format('F-Y');
 
-        return $pdf->stream('invoice.pdf');
+        $channelName = $invoice->client->channel_name;
+        $filename = "{$channelName}_{$invoiceDate}.pdf";
+
+        return $pdf->stream($filename);
     }
 
     public function updateInvoiceStatus(Invoice $invoice, $status): mixed
