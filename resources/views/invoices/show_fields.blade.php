@@ -158,7 +158,7 @@
                                                         {{$invoiceItem->percentage}}%
                                                         </td>
                                                         <td class="py-4 text-end min-width-130px">
-                                                            {{ isset($invoiceItem->total) ? getInvoiceCurrencyAmount($invoiceItem->total, $invoice->currency_id, true) : 'N/A' }}
+                                                            {{ isset($invoiceItem->total) ? getInvoiceCurrencyAmount(calculatePercentage($invoiceItem->total,$invoiceItem->percentage), $invoice->currency_id, true) : 'N/A' }}
                                                         </td>
                                                     </tr>
                                                 @endforeach
