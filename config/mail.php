@@ -102,7 +102,17 @@ return [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
-
+    'emails' => [
+        'support' => [
+            'address' => env('MAIL_SUPPORT_ADDRESS', 'support@voovmedia.com'),
+            'name' => 'Support',
+        ],
+        'billing' => [
+            'address' => env('MAIL_BILLING_ADDRESS', 'billing@voovmedia.com'),
+            'name' => 'Billing',
+        ],
+        // Add more as needed
+    ],
     /*
     |--------------------------------------------------------------------------
     | Markdown Mail Settings

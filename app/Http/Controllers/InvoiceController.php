@@ -24,19 +24,21 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
-use SendGrid;
-use SendGrid\Mail\Mail;
 use Maatwebsite\Excel\Facades\Excel;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
+use App\Services\SendGridService;
 
 class InvoiceController extends AppBaseController
 {
     /** @var InvoiceRepository */
     public $invoiceRepository;
+    protected $sendGridService;
 
-    public function __construct(InvoiceRepository $invoiceRepo)
+    public function __construct(InvoiceRepository $invoiceRepo,SendGridService $sendGridService)
     {
         $this->invoiceRepository = $invoiceRepo;
+        $this->sendGridService = $sendGridService;
+
     }
 
     /**
@@ -194,35 +196,23 @@ class InvoiceController extends AppBaseController
     public function invoicePaymentReminder($invoiceId): mixed
     {
         $invoice = Invoice::with(['client.user', 'payments'])->whereId($invoiceId)->firstOrFail();
-        // Get the rendered email content
-        $mailable = new InvoicePaymentReminderMail($invoice);
-        $content = $mailable->render();
-
-        // Create SendGrid email instance
-        $to = $invoice->client->user->email;
-        $from = "support@voovmedia.com";
-        $subject = $mailable->subject;
-
-        $email = new Mail();
-        $email->setFrom($from, getAppName());
-        $email->setSubject($subject);
-        $email->addTo($to);
-        $email->addContent("text/html", $content);
-
-        // Initialize SendGrid with API key
-        $sendGrid = new SendGrid(env('SENDGRID_API_KEY'));
-
-        try {
-            // Send the email
-            $response = $sendGrid->send($email);
-            if ($response->statusCode() >= 400) {
-                throw new \Exception("Failed to send email: " . $response->body());
-            }
-
-            return $this->sendResponse($response, __('messages.flash.payment_reminder_mail_send_successfully'));
-        } catch (\Exception $e) {
-            return $this->sendError($response, 'Failed to send email');
-    }
+         // Get the rendered email content
+         $mailable = new InvoicePaymentReminderMail($invoice);
+         $content = $mailable->render();
+ 
+         // Define email parameters
+         $to = $invoice->client->user->email;
+         $from = config('mail.emails.billing.address');
+         $subject = $mailable->subject;
+ 
+         try {
+             // Send the email using the SendGrid service
+             $response = $this->sendGridService->sendEmail($to, $from, $subject, $content, 'Voov Media '.config('mail.emails.billing.name'));
+ 
+             return $this->sendResponse($response, __('messages.flash.payment_reminder_mail_send_successfully'));
+         } catch (Exception $e) {
+             return $this->sendError('Failed to send email: ' . $e->getMessage());
+         }
  }
 
     public function exportInvoicesExcel(): BinaryFileResponse
