@@ -200,11 +200,11 @@ class InvoiceController extends AppBaseController
 
         // Create SendGrid email instance
         $to = $invoice->client->user->email;
-        $from = "no-reply@voovmedia.com";
+        $from = "support@voovmedia.com";
         $subject = $mailable->subject;
 
         $email = new Mail();
-        $email->setFrom($from, "voovmedia");
+        $email->setFrom($from, getAppName());
         $email->setSubject($subject);
         $email->addTo($to);
         $email->addContent("text/html", $content);
