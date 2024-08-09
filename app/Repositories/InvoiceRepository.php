@@ -24,6 +24,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use Symfony\Component\HttpKernel\Exception\UnprocessableEntityHttpException;
+use App\Services\SendGridService;
 
 /**
  * Class InvoiceRepository
@@ -98,16 +99,16 @@ class InvoiceRepository extends BaseRepository
         }
         $data['associateProducts'] = $this->getAssociateProductList($invoice);
         $data['clients'] = User::whereHas('client')
-        ->join('clients', 'users.id', '=', 'clients.user_id')
-        ->select(DB::raw("
+            ->join('clients', 'users.id', '=', 'clients.user_id')
+            ->select(DB::raw("
             CASE
                 WHEN clients.channel_name IS NOT NULL AND clients.channel_name != ''
                 THEN CONCAT(clients.uuid, ' - ', clients.channel_name)
                 ELSE CONCAT(clients.uuid, ' - ', users.first_name)
             END as full_name_channel, users.id
         "))
-        ->pluck('full_name_channel', 'users.id')
-        ->toArray();
+            ->pluck('full_name_channel', 'users.id')
+            ->toArray();
 
         $data['discount_type'] = Invoice::DISCOUNT_TYPE;
         $invoiceStatusArr = Invoice::STATUS_ARR;
@@ -187,7 +188,7 @@ class InvoiceRepository extends BaseRepository
             }
 
             $inputInvoiceTaxes = isset($input['taxes']) ? $input['taxes'] : [];
-            $invoiceItemInputArray = Arr::only($input, ['product_id', 'quantity', 'price', 'tax', 'tax_id','percentage']);
+            $invoiceItemInputArray = Arr::only($input, ['product_id', 'quantity', 'price', 'tax', 'tax_id', 'percentage']);
             $invoiceExist = Invoice::where('invoice_id', $input['invoice_id'])->exists();
             $invoiceItemInput = $this->prepareInputForInvoiceItem($invoiceItemInputArray);
             $total = [];
@@ -205,8 +206,26 @@ class InvoiceRepository extends BaseRepository
             /** @var Invoice $invoice */
             $input['client_id'] = Client::whereUserId($input['client_id'])->first()->id;
             $input = Arr::only($input, [
-                'client_id', 'invoice_id', 'invoice_date', 'due_date', 'payout_cycle_start', 'payout_cycle_end', 'discount_type', 'discount', 'amount', 'final_amount',
-                'note', 'term', 'template_id', 'payment_qr_code_id', 'status', 'tax_id', 'tax', 'currency_id', 'recurring_status', 'recurring_cycle',
+                'client_id',
+                'invoice_id',
+                'invoice_date',
+                'due_date',
+                'payout_cycle_start',
+                'payout_cycle_end',
+                'discount_type',
+                'discount',
+                'amount',
+                'final_amount',
+                'note',
+                'term',
+                'template_id',
+                'payment_qr_code_id',
+                'status',
+                'tax_id',
+                'tax',
+                'currency_id',
+                'recurring_status',
+                'recurring_cycle',
             ]);
             $invoice = Invoice::create($input);
 
@@ -229,7 +248,7 @@ class InvoiceRepository extends BaseRepository
                     $data['product_name'] = $data['product_id'];
                     $data['product_id'] = null;
                 }
-                
+
                 $data['amount'] = $data['price'] * $data['quantity'];
 
                 $data['total'] = $data['amount'];
@@ -254,13 +273,29 @@ class InvoiceRepository extends BaseRepository
 
             DB::commit();
 
-            // if ($invoice->status != Invoice::DRAFT) {
-            //     $input['invoiceData'] = $invoice;
-            //     $input['clientData'] = $invoice->client->user->toArray();
-            //     if (getSettingValue('mail_notification')) {
-            //         Mail::to($invoice->client->user->email)->send(new InvoiceCreateClientMail($input));
-            //     }
-            // }
+            if ($invoice->status != Invoice::DRAFT) {
+                $input['invoiceData'] = $invoice;
+                $input['clientData'] = $invoice->client->user->toArray();
+                if (getSettingValue('mail_notification')) {
+                    // Mail::to($invoice->client->user->email)->send(new InvoiceCreateClientMail($input));
+                $mailable = new InvoiceCreateClientMail($input);
+
+                // Set the subject and content manually for testing
+                $subject = $mailable->subject;
+                $content = $mailable->render();
+                $subject = "New Invoice #$invoice->invoice_id Created for You";
+
+                // Define email parameters
+                $to = $invoice->client->user->email; // Dummy email for testing
+                $from = config('mail.emails.billing.address');
+
+                // Send the email using the SendGrid service
+                $sendGridService = new SendGridService();
+                $response = $sendGridService->sendEmail($to, $from, $subject, $content, 'Voov Media ' . config('mail.emails.billing.name'));
+
+
+                }
+            }
 
             return $invoice;
         } catch (Exception $exception) {
@@ -300,7 +335,7 @@ class InvoiceRepository extends BaseRepository
                 $input['payout_cycle_end'] = $payout_cycle[1];
             }
             $inputInvoiceTaxes = isset($input['taxes']) ? $input['taxes'] : [];
-            $invoiceItemInputArr = Arr::only($input, ['product_id', 'quantity', 'price', 'tax', 'tax_id', 'id','percentage']);
+            $invoiceItemInputArr = Arr::only($input, ['product_id', 'quantity', 'price', 'tax', 'tax_id', 'id', 'percentage']);
             $invoiceItemInput = $this->prepareInputForInvoiceItem($invoiceItemInputArr);
             $total = [];
             foreach ($invoiceItemInput as $key => $value) {
@@ -322,8 +357,23 @@ class InvoiceRepository extends BaseRepository
             $invoice = $this->update(Arr::only(
                 $input,
                 [
-                    'client_id', 'invoice_date', 'due_date', 'payout_cycle_start', 'payout_cycle_end', 'amount', 'final_amount', 'note',
-                    'term', 'template_id', 'payment_qr_code_id', 'status', 'tax_id', 'tax', 'currency_id', 'recurring_status', 'recurring_cycle',
+                    'client_id',
+                    'invoice_date',
+                    'due_date',
+                    'payout_cycle_start',
+                    'payout_cycle_end',
+                    'amount',
+                    'final_amount',
+                    'note',
+                    'term',
+                    'template_id',
+                    'payment_qr_code_id',
+                    'status',
+                    'tax_id',
+                    'tax',
+                    'currency_id',
+                    'recurring_status',
+                    'recurring_cycle',
                 ]
             ), $invoiceId);
 
@@ -350,7 +400,7 @@ class InvoiceRepository extends BaseRepository
                 }
 
                 $data['amount'] = $data['price'] * $data['quantity'];
-                $data['total'] = calculatePercentage($data['amount'],$data['percentage']);
+                $data['total'] = calculatePercentage($data['amount'], $data['percentage']);
                 $totalAmount += $data['amount'];
 
                 $invoiceItemInput[$key] = $data;
@@ -359,9 +409,30 @@ class InvoiceRepository extends BaseRepository
             /** @var InvoiceItemRepository $invoiceItemRepo */
             $invoiceItemRepo = app(InvoiceItemRepository::class);
             $invoiceItemRepo->updateInvoiceItem($invoiceItemInput, $invoice->id);
-
             DB::commit();
+            if ($invoice->status != Invoice::DRAFT) {
+                $input['invoiceData'] = $invoice;
+                $input['clientData'] = $invoice->client->user->toArray();
+                if (getSettingValue('mail_notification')) {
+                    // Mail::to($invoice->client->user->email)->send(new InvoiceCreateClientMail($input));
+                $mailable = new InvoiceCreateClientMail($input);
 
+                // Set the subject and content manually for testing
+                $subject = $mailable->subject;
+                $content = $mailable->render();
+                $subject = "New Invoice #$invoice->invoice_id Created for You";
+
+                // Define email parameters
+                $to = $invoice->client->user->email; // Dummy email for testing
+                $from = config('mail.emails.billing.address');
+
+                // Send the email using the SendGrid service
+                $sendGridService = new SendGridService();
+                $response = $sendGridService->sendEmail($to, $from, $subject, $content, 'Voov Media ' . config('mail.emails.billing.name'));
+
+
+                }
+            }
             return $invoice;
         } catch (Exception $exception) {
             throw new UnprocessableEntityHttpException($exception->getMessage());
@@ -492,16 +563,31 @@ class InvoiceRepository extends BaseRepository
         $invoice->load('client.user');
         $userId = $invoice->client->user_id;
         $title = 'Status of your invoice #' . $invoice->invoice_id . ' was updated.';
-        // addNotification([
-        //     Notification::NOTIFICATION_TYPE['Invoice Updated'],
-        //     $userId,
-        //     $title,
-        // ]);
+        addNotification([
+            Notification::NOTIFICATION_TYPE['Invoice Updated'],
+            $userId,
+            $title,
+        ]);
         $input['invoiceData'] = $invoice->toArray();
         $input['clientData'] = $invoice->client->user->toArray();
-        // if (getSettingValue('mail_notification')) {
-        //     Mail::to($invoice->client->user->email)->send(new InvoiceCreateClientMail($input));
-        // }
+        if (getSettingValue('mail_notification')) {
+            // Mail::to($invoice->client->user->email)->send(new InvoiceCreateClientMail($input));
+            $mailable = new InvoiceCreateClientMail($input);
+
+            // Set the subject and content manually for testing
+            $subject = $mailable->subject;
+            $content = $mailable->render();
+            $subject = "New Invoice #$invoice->invoice_id Created for You";
+
+            // Define email parameters
+            $to = $invoice->client->user->email; // Dummy email for testing
+            $from = config('mail.emails.billing.address');
+
+            // Send the email using the SendGrid service
+            $sendGridService = new SendGridService();
+            $response = $sendGridService->sendEmail($to, $from, $subject, $content, 'Voov Media ' . config('mail.emails.billing.name'));
+
+        }
 
         return $invoice;
     }
