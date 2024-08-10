@@ -42,14 +42,18 @@ class InvoiceCreateClientMail extends Mailable
         $invoice = Invoice::find($id);
         $invoice->load(['client.user', 'invoiceTemplate', 'invoiceItems.product', 'invoiceItems.invoiceItemTax', 'invoiceTaxes']);
         $invoiceRepo = App::make(InvoiceRepository::class);
-        $invoiceData = $invoiceRepo->getPdfData($invoice);
-        $invoiceTemplate = $invoiceRepo->getDefaultTemplate($invoice);
-        $pdf = Pdf::loadView("invoices.invoice_template_pdf.$invoiceTemplate", $invoiceData);
+        // $invoiceData = $invoiceRepo->getPdfData($invoice);
+        // $invoiceTemplate = $invoiceRepo->getDefaultTemplate($invoice);
+        // $pdf = Pdf::loadView("invoices.invoice_template_pdf.$invoiceTemplate", $invoiceData);
+        $subject = "New Invoice #$invoiceNumber Created for You";
 
-        return $this->view('emails.create_invoice_client_mail',
-            compact('clientName', 'invoiceNumber', 'invoiceDate', 'dueDate', 'invoiceId', 'id'))
+        return $this->view('emails.create_invoice_client_mail', compact('clientName', 'invoiceNumber', 'invoiceDate', 'dueDate', 'invoiceId', 'id'))
             ->markdown('emails.create_invoice_client_mail')
-            ->subject($subject)
-            ->attachData($pdf->output(), 'Invoice.pdf');
+            ->subject($subject);
+        // return $this->view('emails.create_invoice_client_mail',
+        //     compact('clientName', 'invoiceNumber', 'invoiceDate', 'dueDate', 'invoiceId', 'id'))
+        //     ->markdown('emails.create_invoice_client_mail')
+        //     ->subject($subject)
+        //     ->attachData($pdf->output(), 'Invoice.pdf');
     }
 }
