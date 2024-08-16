@@ -124,12 +124,19 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Supplier:</th>
+                            <th>Customer:</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>{{$client->billing_name}}</td>
+                            <td>
+                            {{$client->billing_name}}
+                            <br/>
+                            {{$client->address}}
+                            <br>
+                            {{$client->user->email}}
+                            </td>
+
                         </tr>
                     </tbody>
                 </table>
@@ -138,25 +145,19 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Customer:</th>
+                            <th>Supplier:</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                            {{ $client->user->full_name }}
-                            @if (!empty($client->user->address))
-                                <br/><br/>{{ $client->user->address }}
-                            @endif
-                            @if (isset($client->user->contact ) && $client->user->contact != null)
+                            {{ getSettingValue('company_name') }}
+                              <br/>
+                            {{ getSettingValue('company_address') }}
                             <br/>
-                            <br/>
-                            <a href="tel:+{{ $client->user->region_code }}{{ $client->user->contact }}">+{{ $client->user->region_code }} {{ $client->user->contact }}</a>
-                            @endif
-                            <br/>
-                            <br/>
-                            {{ $client->user->email }}
-                          
+                            {{ getSettingValue('company_billing_phone') }}
+                            <br>
+                            billing@voovmedia.com   
                             </td>
                         </tr>
                         <!-- Add more rows as needed -->
@@ -177,8 +178,9 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>#{{ $invoice->invoice_id }}</td>
+                        <tr >
+                            <td>#{{ $invoice->invoice_id }}
+                            </td>
                             <td class="text-align-right">{{ \Carbon\Carbon::parse($invoice->invoice_date)->translatedFormat(currentDateFormat()) }}</td>
 
                         </tr>
@@ -186,12 +188,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="table-container">
+            <div class="table-container" style="margin-top:83px">
                 <table>
                     <thead>
                         <tr>
-                            <th> Supplier ID </th>
-                            <th class="text-align-right">PAYOUT CYCLEL</th>
+                            <th> Customer ID </th>
+                            <th class="text-align-right">PAYOUT CYCLE</th>
 
                         </tr>
                     </thead>
@@ -262,12 +264,17 @@
         </div>
         <div style="
         margin: 0 auto;
-        width: 50%;
+        width: 55%;
         text-align: center;
         line-height: 1.7;
         margin-top: 2rem;
     ">
-                <p> If you have any questions about this invoice, please contact <b>  {{ html_entity_decode($setting['app_name']) }}</b>, <a href="tel:+1 (305) 857-5147">+1 (305) 857-5147</a> ,<a href="mailto:billing@voovmedia.com">billing@voovmedia.com</a></p>
+            <p>
+    If you have any questions about this invoice, please contact  <b> {{ html_entity_decode($setting['app_name']) }}, 
+   <a href="tel: {{ getSettingValue('company_billing_phone') }}" style="color:#000; text-decoration:none;"> {{ getSettingValue('company_billing_phone') }}</a>, 
+    <a href="mailto:billing@voovmedia.com" style="color:#000; text-decoration:none;">billing@voovmedia.com</a></b>
+</p>
+
             </div>
     </div>
 </body>
