@@ -13,6 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
+  
         // Bind the Laravel JS Localization command into the app IOC.
         $this->app->singleton('localization.js', function ($app) {
             $app = $this->app;

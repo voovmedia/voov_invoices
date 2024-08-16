@@ -31,6 +31,8 @@ use App\Services\SendGridService;
  */
 class InvoiceRepository extends BaseRepository
 {
+
+     
     /**
      * @var string[]
      */
@@ -277,8 +279,9 @@ class InvoiceRepository extends BaseRepository
                 $input['invoiceData'] = $invoice;
                 $input['clientData'] = $invoice->client->user->toArray();
                 if (getSettingValue('mail_notification')) {
-                    // Mail::to($invoice->client->user->email)->send(new InvoiceCreateClientMail($input));
+                // Mail::to($invoice->client->user->email)->send(new InvoiceCreateClientMail($input));
                 $mailable = new InvoiceCreateClientMail($input);
+                $sendGridService = app(SendGridService::class);
 
                 // Set the subject and content manually for testing
                 $subject = $mailable->subject;
@@ -289,9 +292,8 @@ class InvoiceRepository extends BaseRepository
                 $to = $invoice->client->user->email; // Dummy email for testing
                 $from = config('mail.emails.billing.address');
 
-                // Send the email using the SendGrid service
-                $sendGridService = new SendGridService();
-                $response = $sendGridService->sendEmail($to, $from, $subject, $content, 'Voov Media ' . config('mail.emails.billing.name'));
+           
+                $response = $sendGridService->sendEmail($to, $from, $subject, $content, 'Voov Media ' . config('mail.emails.billing.name'),$invoice->invoice_id);
 
 
                 }
@@ -324,6 +326,7 @@ class InvoiceRepository extends BaseRepository
      */
     public function updateInvoice($invoiceId, $input)
     {
+        
         try {
             DB::beginTransaction();
             $input['tax_id'] = json_decode($input['tax_id']);
@@ -341,7 +344,6 @@ class InvoiceRepository extends BaseRepository
             foreach ($invoiceItemInput as $key => $value) {
                 $total[] = $value['price'] * $value['quantity'];
             }
-
             if (!empty($input['recurring_status']) && empty($input['recurring_cycle'])) {
                 throw new UnprocessableEntityHttpException('Please enter the value in Recurring Cycle.');
             }
@@ -352,8 +354,10 @@ class InvoiceRepository extends BaseRepository
                 }
             }
 
+
             /** @var Invoice $invoice */
             $input['client_id'] = Client::whereUserId($input['client_id'])->first()->id;
+
             $invoice = $this->update(Arr::only(
                 $input,
                 [
@@ -376,7 +380,6 @@ class InvoiceRepository extends BaseRepository
                     'recurring_cycle',
                 ]
             ), $invoiceId);
-
             $invoice->invoiceTaxes()->detach();
             if (count($inputInvoiceTaxes) > 0) {
                 $invoice->invoiceTaxes()->attach($inputInvoiceTaxes);
@@ -405,6 +408,7 @@ class InvoiceRepository extends BaseRepository
 
                 $invoiceItemInput[$key] = $data;
             }
+           
 
             /** @var InvoiceItemRepository $invoiceItemRepo */
             $invoiceItemRepo = app(InvoiceItemRepository::class);
@@ -414,7 +418,7 @@ class InvoiceRepository extends BaseRepository
                 $input['invoiceData'] = $invoice;
                 $input['clientData'] = $invoice->client->user->toArray();
                 if (getSettingValue('mail_notification')) {
-                    // Mail::to($invoice->client->user->email)->send(new InvoiceCreateClientMail($input));
+                //     // Mail::to($invoice->client->user->email)->send(new InvoiceCreateClientMail($input));
                 $mailable = new InvoiceCreateClientMail($input);
 
                 // Set the subject and content manually for testing
@@ -425,10 +429,10 @@ class InvoiceRepository extends BaseRepository
                 // Define email parameters
                 $to = $invoice->client->user->email; // Dummy email for testing
                 $from = config('mail.emails.billing.address');
+                $sendGridService = app(SendGridService::class);
 
                 // Send the email using the SendGrid service
-                $sendGridService = new SendGridService();
-                $response = $sendGridService->sendEmail($to, $from, $subject, $content, 'Voov Media ' . config('mail.emails.billing.name'));
+                $response = $sendGridService->sendEmail($to, $from, $subject, $content, 'Voov Media ' . config('mail.emails.billing.name'),$invoiceId);
 
 
                 }
@@ -584,8 +588,8 @@ class InvoiceRepository extends BaseRepository
             $from = config('mail.emails.billing.address');
 
             // Send the email using the SendGrid service
-            $sendGridService = new SendGridService();
-            $response = $sendGridService->sendEmail($to, $from, $subject, $content, 'Voov Media ' . config('mail.emails.billing.name'));
+                $sendGridService = app(SendGridService::class);
+            $response = $sendGridService->sendEmail($to, $from, $subject, $content, 'Voov Media ' . config('mail.emails.billing.name'),$invoice->invoice_id);
 
         }
 
