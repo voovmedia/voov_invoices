@@ -1,8 +1,8 @@
-@component('mail::layout')
+width="200" height="50" style="max-width: 200%; height: auto;"@component('mail::layout')
     {{-- Header --}}
     @slot('header')
         @component('mail::header', ['url' => config('app.url')])
-            <img src="{{ asset(getLogoUrl()) }}" class="logo" alt="{{ getAppName() }}">
+            <img src="{{ asset(getLogoUrl()) }}" class="logo" alt="{{ getAppName() }}" width="200" height="50" style="max-width: 200%; height: auto;">
         @endcomponent
     @endslot
 

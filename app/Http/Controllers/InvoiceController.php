@@ -71,7 +71,7 @@ class InvoiceController extends AppBaseController
             DB::beginTransaction();
             $invoice = $this->invoiceRepository->saveInvoice($request->all());
             if ($request->status != Invoice::DRAFT) {
-                // $this->invoiceRepository->saveNotification($request->all(), $invoice);
+                $this->invoiceRepository->saveNotification($request->all(), $invoice);
                 DB::commit();
 
                 return $this->sendResponse($invoice, __('messages.flash.invoice_saved_and_sent_successfully'));
@@ -116,7 +116,7 @@ class InvoiceController extends AppBaseController
             $changes = $invoice->getChanges();
             if ($input['invoiceStatus'] == '1') {
                 if (count($changes) > 0 && $input['invoiceStatus'] == '1') {
-                    // $this->invoiceRepository->updateNotification($invoice, $input, $changes);
+                    $this->invoiceRepository->updateNotification($invoice, $input, $changes);
                 }
                 if ($input['invoiceStatus'] == '1' && $input['status'] == Invoice::DRAFT) {
                     $this->invoiceRepository->draftStatusUpdate($invoice);

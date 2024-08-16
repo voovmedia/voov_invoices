@@ -51,7 +51,7 @@
     <div class="container">
         {{-- Logo --}}
         <div class="header">
-            <img src="{{ asset(getLogoUrl()) }}" alt="{{ getAppName() }}">
+            <img src="{{ asset(getLogoUrl()) }}" alt="{{ getAppName() }}" width="200" height="50" style="max-width: 200%; height: auto;">
         </div>
 
         {{-- Greeting --}}
