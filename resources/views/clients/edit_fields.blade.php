@@ -63,12 +63,7 @@
             {{ Form::text('channel_name', $client->channel_name ?? null, ['class' => 'form-control form-control-solid', 'placeholder' => __('Facebook/Youtube')]) }}
         </div>
     </div>
-    <div class="col-lg-6">
-        <div class="mb-5">
-            {{ Form::label('postal_code', __('messages.client.postal_code') . ':', ['class' => 'form-label mb-3']) }}
-            {{ Form::text('postal_code', $client->postal_code ?? null, ['class' => 'form-control form-control-solid', 'placeholder' => __('messages.client.postal_code')]) }}
-        </div>
-    </div>
+   
     <div class="col-lg-6">
         <div class="mb-5">
             {{ Form::label('Percentage', __('Add Percentage') . ':', ['class' => 'form-label required  mb-3']) }}
@@ -80,6 +75,8 @@
             {{ Form::label('billing_name', __('Billing Name') . ':', ['class' => 'form-label mb-3']) }}
             {{ Form::text('billing_name', $client->billing_name ?? null, ['class' => 'form-control', 'placeholder' => __('Billing Name')]) }}
         </div>
+ <div class="col-lg-6 mb-7">
+                 </div>
 
     <div class="col-lg-6">
         <div class="mb-5">
