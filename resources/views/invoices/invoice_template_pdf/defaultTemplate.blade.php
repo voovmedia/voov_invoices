@@ -132,7 +132,7 @@
                             <td>
                             {{$client->billing_name}}
                             <br/>
-                            {{$client->address}}
+                            {!! nl2br(e($client->address)) !!}
                             <br>
                             {{$client->user->email}}
                             </td>
@@ -153,11 +153,10 @@
                             <td>
                             {{ getSettingValue('company_name') }}
                               <br/>
-                            {{ getSettingValue('company_address') }}
+                        {!! nl2br(e(getSettingValue('company_address'))) !!}
                             <br/>
-                            {{ getSettingValue('company_billing_phone') }}
-                            <br>
-                            billing@voovmedia.com   
+                            <a href="tel:+13058575147" style="color:#000; text-decoration:none;">+1 (305) 857-5147</a><br>
+                            <a href="mailto:billing@voovmedia.com" style="color:#000; text-decoration:none;">billing@voovmedia.com</a>
                             </td>
                         </tr>
                         <!-- Add more rows as needed -->
@@ -188,7 +187,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="table-container" style="margin-top:83px">
+            <div class="table-container" style="margin-top:84px">
                 <table>
                     <thead>
                         <tr>
@@ -271,7 +270,7 @@
     ">
             <p>
     If you have any questions about this invoice, please contact  <b> {{ html_entity_decode($setting['app_name']) }}, 
-   <a href="tel: {{ getSettingValue('company_billing_phone') }}" style="color:#000; text-decoration:none;"> {{ getSettingValue('company_billing_phone') }}</a>, 
+   <a href="tel:+1 (305) 857-5147" style="color:#000; text-decoration:none;"> +1 (305) 857-5147 </a>, 
     <a href="mailto:billing@voovmedia.com" style="color:#000; text-decoration:none;">billing@voovmedia.com</a></b>
 </p>
 
