@@ -130,6 +130,7 @@ function paymentRenderData(paymentId) {
         success: function (result) {
             if (result.success) {
                 $("#edit_invoice_id").val(result.data.invoice.invoice_id);
+                $("#editPaymentMode").val(result.data.payment_mode);
                 $("#edit_amount").val(result.data.amount);
                 $("#edit_payment_date").flatpickr({
                     defaultDate: result.data.payment_date,

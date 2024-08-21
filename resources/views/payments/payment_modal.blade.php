@@ -56,8 +56,13 @@
                     </div>
                     <div class="form-group col-lg-4 col-sm-12 mb-5">
                         {{ Form::label('payment_mode',__('messages.payment.payment_mode').':', ['class' => 'form-label required mb-3']) }}
-                        {{ Form::text('payment_mode','Cash',['id'=>'adminPaymentMode','readonly','class' => 'form-control  ']) }}
-                    </div>
+                        {{ Form::select('payment_mode', [
+        \App\Models\Payment::CASH => 'Cash',
+        \App\Models\Payment::STRIPE => 'Stripe',
+        \App\Models\Payment::CHEQUE => 'Cheque',
+        \App\Models\Payment::BANK_TRANSFER => 'Bank Transfer'
+    ],null,['id' => 'adminPaymentMode', 'class' => 'form-control']) }}
+                        </div>
                     <div class="form-group col-sm-12 mb-5">
                         {{ Form::label('notes',__('messages.invoice.note').':', ['class' => 'form-label required mb-3']) }}
                         {{ Form::textarea('notes', null, ['id'=>'payment_note','class' => 'form-control ','rows'=>'5','required']) }}
