@@ -29,17 +29,24 @@ class DashboardRepository
     public function getDashboardData(): array
     {
         $invoice = Invoice::all();
+        $invoiceIds = $invoice->pluck('id');
         $data['total_invoices'] = $invoice->count();
         $data['total_clients'] = Client::count();
         $data['total_products'] = Product::count();
-        $data['paid_invoices'] = $invoice->where('status', Invoice::PAID)->count();
-        $data['unpaid_invoices'] = $invoice->where('status', Invoice::UNPAID)->count();
+        $data['paid_invoices'] = $invoice->whereIn('status', [Invoice::PAID, Invoice::PARTIALLY])->count();
+        $data['unpaid_invoices'] = $invoice->whereIn('status', [Invoice::UNPAID,Invoice::OVERDUE])->count();
         $data['partially_paid'] = $invoice->where('status', Invoice::PARTIALLY)->count();
         $data['overdue_invoices'] = $invoice->where('status', Invoice::OVERDUE)->count();
         $data['total_amount'] = $invoice->where('status','!=', Invoice::DRAFT)->sum('final_amount');
-        $data['total_paid'] = $invoice->where('status', Invoice::PAID)->sum('final_amount');
-        $data['total_due'] = $invoice->where('status', Invoice::UNPAID)->sum('final_amount');
+        $data['total_due'] = $invoice->whereIn('status', [Invoice::UNPAID,Invoice::OVERDUE,Invoice::PARTIALLY])->sum('final_amount');
+        $data['paid_amount'] = Payment::where(function ($q) {
+            $q->where('payment_mode', Payment::MANUAL)
+                ->where('is_approved', Payment::APPROVED);
+            $q->orWhere('payment_mode', '!=', Payment::MANUAL);
+        })->whereIn('invoice_id', $invoiceIds)->sum('amount');
 
+        $data['total_paid'] = $data['paid_amount'];
+        $data['total_due'] = $data['total_amount'] - $data['paid_amount'];
         return $data;
     }
 
