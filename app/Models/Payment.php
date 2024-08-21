@@ -126,6 +126,8 @@ class Payment extends Model implements HasMedia
     const PAYSTACK = 6;
 
     const ALL = 0;
+    const BANK_TRANSFER = 7; // Define a constant for the new payment mode
+    const CHEQUE = 8; // Define a constant for the new payment mode
 
     const PAYMENT_MODE = [
         self::ALL => 'All',
@@ -134,7 +136,10 @@ class Payment extends Model implements HasMedia
         self::PAYPAL => 'Paypal',
         self::CASH => 'Cash',
         self::RAZORPAY => 'Razorpay',
-        self::PAYSTACK => 'Paystack'
+        self::PAYSTACK => 'Paystack',
+        self::BANK_TRANSFER => "Bank Transfer",
+        self::CHEQUE => "Cheque"
+
     ];
 
     public static $rules = [

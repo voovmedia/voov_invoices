@@ -32,9 +32,15 @@ class AdminPaymentController extends AppBaseController
     public function index(): View|Factory|Application
     {
         $invoice = Invoice::whereNotIn('status', [Invoice::PAID, Invoice::DRAFT])
-            ->orderBy('created_at', 'desc')
-            ->pluck('invoice_id', 'id')->toArray();
-
+        ->with(['client.user']) // Eager load the client and its related user
+        ->orderBy('created_at', 'desc')
+        ->get(['id', 'invoice_id', 'due_date', 'client_id'])
+        ->mapWithKeys(function($invoice) {
+            $month = \Carbon\Carbon::parse($invoice->due_date)->format('F'); // Extract the month name (e.g., 'January')
+            $clientName = optional($invoice->client->user)->first_name ; // Get the client's user name safely
+            return [$invoice->id => $invoice->invoice_id . ' - ' . $month . ' - ' . $clientName];
+        })
+        ->toArray();
         return view('payments.index', compact('invoice'));
     }
 

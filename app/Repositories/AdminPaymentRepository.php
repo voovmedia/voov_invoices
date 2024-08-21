@@ -42,7 +42,7 @@ class AdminPaymentRepository extends BaseRepository
                 throw new UnprocessableEntityHttpException(__('messages.invoice.amount_should_be_less_than_payable_amount'));
             }
 
-            $input['payment_mode'] = Payment::CASH;
+            // $input['payment_mode'] = Payment::CASH;
             $input['payment_date'] = \Carbon\Carbon::createFromFormat(currentDateFormat(), $input['payment_date'])->format('Y-m-d H:i');
             $input['is_approved'] = Payment::APPROVED;
             $payment = Payment::create($input);
@@ -118,6 +118,7 @@ class AdminPaymentRepository extends BaseRepository
             $adminPayment->update([
                 'amount' => $input['amount'],
                 'payment_date' => $input['payment_date'],
+                'payment_mode' => $input['payment_mode'],
                 'notes' => $input['notes'],
             ]);
 

@@ -6,7 +6,7 @@ use App\Models\AdminPayment;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Rappasoft\LaravelLivewireTables\Views\Column;
-
+use App\Models\Payment;
 class AdminPaymentTable extends LivewireTableComponent
 {
     protected $model = AdminPayment::class;
@@ -87,7 +87,7 @@ class AdminPaymentTable extends LivewireTableComponent
                 ->sortable()
                 ->searchable()
                 ->label(function ($row, Column $column) {
-                    return  ($row->payment_mode == 4) ? '<span class="badge bg-light-info fs-7">Cash</span>' : '';
+                    return  '<span class="badge bg-light-info fs-7">'.Payment::PAYMENT_MODE[$row->payment_mode].'</span>';
                 })
                  ->html(),
             Column::make(__('messages.common.action'), 'id')
