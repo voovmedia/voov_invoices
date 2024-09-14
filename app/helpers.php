@@ -707,6 +707,9 @@ if (! function_exists('getClientPercentage')) {
     function getClientPercentage($clientId)
     {
         $client = Client::where('id',$clientId)->first();
+        if (!$client) {
+            $client = Client::where('user_id', $clientId)->first();
+        }
         return $client->percentage ?? null;
     }
 }
