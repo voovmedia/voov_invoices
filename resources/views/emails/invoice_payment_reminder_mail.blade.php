@@ -10,7 +10,7 @@
     <div>
         <h2>Dear {{ $clientFullName }}, <b></b></h2><br>
         <p>I hope you are well.</p>
-        <p>I just wanted to drop you a quick note to remind you that <b>{{ numberFormat($totalDueAmount) }}</b> in respect of our
+        <p>I just wanted to drop you a quick note to remind you that <b>${{ numberFormat($totalDueAmount) }}</b> in respect of our
             invoice <b>{{ $invoiceNumber }}</b> is due for payment on <b>{{ $dueDate }}</b>.</p>
         <br>
         <div style="display: flex;justify-content: center">
