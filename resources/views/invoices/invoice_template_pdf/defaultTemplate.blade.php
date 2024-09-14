@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <link rel="icon" href="{{ asset('web/media/logos/favicon.ico') }}" type="image/png">
-    <title>{{ __('messages.invoice.invoice_pdf') }}</title>
+    <title>{{ __('Invoice | Voov Media') }}</title>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -112,6 +113,8 @@
             font-size: 1em;
         }
     </style>
+        <!-- Favicon -->
+<link rel="icon" href="https://invoices.voovmedia.com/web/media/logos/favicon.png" type="image/png">
 </head>
 
 <body>
