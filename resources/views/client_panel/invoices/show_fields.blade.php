@@ -91,9 +91,9 @@
                                             <thead>
                                             <tr>
                                                 <th scope="col">{{ __('Description') }}</th>
-                                                <th scope="col" class="text-end">{{ __('Generated Revenue) }}</th>
+                                                <th scope="col" class="text-end">{{ __('Generated Revenue') }}</th>
                                                 <th scope="col"
-                                                    class="text-center">{{ __('Percentage')}}</th>
+                                                    class="text-center">{{ __('Percentage') }}</th>
                                                 <th scope="col"
                                                     class="text-end">{{ __('messages.invoice.amount') }}</th>
                                             </tr>
