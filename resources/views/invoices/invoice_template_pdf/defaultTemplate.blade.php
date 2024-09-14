@@ -187,7 +187,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="table-container" style="margin-top:84px">
+            <div class="table-container" style="margin-top:65px">
                 <table>
                     <thead>
                         <tr>
@@ -227,7 +227,7 @@
                         <td class="text-align-right">  {{$invoiceItems->percentage}}% </td>
                         <td class="text-align-right">
                         @isset($invoiceItems->price)
-                           {{ getInvoiceCurrencyAmount(calculatePercentage($invoiceItems->total,$invoiceItems->percentage) , $invoice->currency_id, true)}}
+                           {{ getInvoiceCurrencyAmount($invoiceItems->total, $invoice->currency_id, true)}}
                         @else
                             {{ __('messages.common.n/a') }}
                         @endisset</td>
