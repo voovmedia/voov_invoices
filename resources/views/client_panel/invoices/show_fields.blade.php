@@ -90,11 +90,10 @@
                                         <table class="table table-striped box-shadow-none mt-4">
                                             <thead>
                                             <tr>
-                                                <th scope="col">{{ __('messages.product.product') }}</th>
-                                                <th scope="col">{{ __('messages.invoice.qty') }}</th>
+                                                <th scope="col">{{ __('Description') }}</th>
                                                 <th scope="col" class="text-end">{{ __('messages.invoice.price') }}</th>
                                                 <th scope="col"
-                                                    class="text-center">{{ __('messages.invoice.tax').' (in %)' }}</th>
+                                                    class="text-center">{{ __('Percentage')}}</th>
                                                 <th scope="col"
                                                     class="text-end">{{ __('messages.invoice.amount') }}</th>
                                             </tr>
@@ -103,15 +102,9 @@
                                             @foreach($invoice->invoiceItems as $index => $invoiceItem)
                                                 <tr>
                                                     <td class="py-4">{{ isset($invoiceItem->product->name)?$invoiceItem->product->name:$invoiceItem->product_name??'N/A' }}</td>
-                                                    <td class="py-4">{{ number_format($invoiceItem->quantity,2) }}</td>
                                                     <td class="py-4 text-end min-width-130px">{{ isset($invoiceItem->price) ? getInvoiceCurrencyAmount($invoiceItem->price,$invoice->currency_id,true) : 'N/A' }}</td>
                                                     <td class="py-4 text-center">
-                                                        @foreach($invoiceItem->invoiceItemTax as $keys => $tax)
-                                                            {{ ($tax->tax != 0) ? $tax->tax : 'N/A' }}
-                                                            @if (!$loop->last)
-                                                                ,
-                                                            @endif
-                                                        @endforeach
+                                                        {{$invoiceItem->percentage}}%
                                                     </td>
                                                     <td class="py-4 text-end min-width-130px">{{ isset($invoiceItem->total) ? getInvoiceCurrencyAmount($invoiceItem->total,$invoice->currency_id,true) : 'N/A' }}</td>
                                                 </tr>
@@ -136,33 +129,7 @@
                                         <div class="border-top">
                                             <table class="table table-borderless box-shadow-none mb-0 mt-5">
                                                 <tbody>
-                                                <tr>
-                                                    <td class="ps-0">{{ __('messages.invoice.sub_total').(':') }}</td>
-                                                    <td class="text-gray-900 text-end pe-0">{{ isset($invoice->amount) ? getInvoiceCurrencyAmount($invoice->amount,$invoice->currency_id,true) : 'N/A' }}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="ps-0">{{ __('messages.invoice.discount').(':') }}</td>
-                                                    @php $percentageDiscount = ($itemTaxesAmount + $invoiceTaxesAmount); @endphp
-                                                    <td class="text-gray-900 text-end pe-0">
-                                                        @if($invoice->discount == 0 || !isset($invoice))
-                                                            <span>N/A</span>
-                                                        @else
-                                                            @if($invoice->discount_type == \App\Models\Invoice::FIXED)
-                                                                {{ getInvoiceCurrencyAmount($invoice->discount,$invoice->currency_id,true) }}
-                                                            @else
-                                                                {{ getInvoiceCurrencyAmount($percentageDiscount * $invoice->discount / 100,$invoice->currency_id,true)}}
-                                                            @endif
-                                                        @endif
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="ps-0">{{ __('messages.invoice.tax').(':') }}</td>
-                                                    @php $totalTaxes = (array_sum($totalTax) + $invoiceTaxesAmount)  @endphp
-                                                    <td class="text-gray-900 text-end pe-0">
-                                                        {!! (numberFormat($totalTaxes) != 0 )
-                                                          ? getInvoiceCurrencyAmount($totalTaxes,$invoice->currency_id,true) :'N/A' !!}
-                                                    </td>
-                                                </tr>
+                                             
                                                 <tr>
                                                     <td class="ps-0">{{ __('messages.invoice.total').(':') }}</td>
                                                     <td class="text-gray-900 text-end pe-0">
