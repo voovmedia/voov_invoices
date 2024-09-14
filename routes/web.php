@@ -22,6 +22,8 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Crypt;
+use App\Models\Invoice;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -253,14 +255,34 @@ Route::prefix('client')->middleware(['auth', 'xss', 'role:client'])->group(funct
         'invoices',
         [Client\InvoiceController::class, 'index']
     )->name('client.invoices.index');
-    Route::get(
-        'invoices/{invoice}',
-        [Client\InvoiceController::class, 'show']
-    )->name('client.invoices.show');
+    Route::get('invoices/{invoice}', function ($encryptedInvoiceId) {
+        try {
+            // Decrypt the invoice ID
+            $invoiceId = Crypt::decrypt($encryptedInvoiceId);
+        } catch (\Illuminate\Contracts\Encryption\DecryptException $e) {
+            abort(404, 'Invoice not found');
+        }
+    
+        // Resolve the Invoice model from the decrypted ID
+        $invoice = Invoice::findOrFail($invoiceId);
+    
+        // Pass the invoice model to the controller
+        return app(Client\InvoiceController::class)->show($invoice);
+    })->name('client.invoices.show');    
     Route::get(
         'invoices/{invoice}/pdf',
-        [Client\InvoiceController::class, 'convertToPdf']
-    )->name('clients.invoices.pdf');
+        function ($encryptedInvoiceId) {
+            try {
+                // Decrypt the invoice ID
+                $invoiceId = Crypt::decrypt($encryptedInvoiceId);
+            } catch (\Illuminate\Contracts\Encryption\DecryptException $e) {
+                abort(404, 'Invoice not found');
+            }
+        
+            // Resolve the Invoice model from the decrypted ID
+            $invoice = Invoice::findOrFail($invoiceId);
+            return app(Client\InvoiceController::class)->convertToPdf($invoice);
+        })->name('clients.invoices.pdf');
 
     //Quote
     Route::name('client.')->group(function () {

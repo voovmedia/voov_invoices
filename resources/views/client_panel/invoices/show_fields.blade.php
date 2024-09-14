@@ -1,5 +1,6 @@
 @php
-    $itemTaxesAmount = $invoice->amount + array_sum($totalTax);
+use Illuminate\Support\Facades\Crypt;
+$itemTaxesAmount = $invoice->amount + array_sum($totalTax);
     $invoiceTaxesAmount = ($itemTaxesAmount * $invoice->invoiceTaxes->sum('value') / 100);
 @endphp
 <div class="d-flex overflow-auto h-55px">
@@ -59,9 +60,11 @@
                                         </div>
                                     </div>
                                     <div class="col-md-2 col-6 mb-3 mb-sm-0">
-                                        <a target="_blank"
-                                           href="{{ route('clients.invoices.pdf',['invoice' => $invoice->id]) }}"
-                                           class="btn btn-sm btn-success text-white">{{ __('messages.invoice.print_invoice') }}</a>
+                                    <a target="_blank"
+                                    href="{{ route('clients.invoices.pdf', ['invoice' => Crypt::encrypt($invoice->id)]) }}"
+                                    class="btn btn-sm btn-success text-white">
+                                        {{ __('messages.invoice.print_invoice') }}
+                                    </a>
                                     </div>
                                     <div class="col-lg-5 col-md-6">
                                         <div class="d-flex flex-column mb-md-10 mb-4">

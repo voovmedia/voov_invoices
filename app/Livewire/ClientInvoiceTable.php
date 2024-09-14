@@ -6,6 +6,7 @@ use App\Models\Invoice;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Auth;
 use Rappasoft\LaravelLivewireTables\Views\Column;
+use Illuminate\Support\Facades\Crypt;
 
 class ClientInvoiceTable extends LivewireTableComponent
 {
@@ -77,7 +78,12 @@ class ClientInvoiceTable extends LivewireTableComponent
             Column::make(__('messages.invoice.invoice_id'), 'invoice_id')
                 ->sortable()
                 ->searchable()
-                ->view('client_panel.invoices.components.invoice-id'),
+                ->format(function ($value, $row, Column $column) {
+                    $row->encrypted_id = Crypt::encrypt($row->id);
+                    return view('client_panel.invoices.components.invoice-id')
+                        ->with('row', $row);
+                }), 
+                // ->view('client_panel.invoices.components.invoice-id'),
             Column::make('invoice_id', 'invoice_id')
                 ->sortable()
                 ->searchable()->hideIf(1),
