@@ -96,8 +96,8 @@
                 <thead>
                     <tr class="border-bottom fs-7 fw-bolder text-gray-700 text-uppercase">
                         <th scope="col">#</th>
-                        <th scope="col" class="required">{{ __('messages.product.product') }}</th>
-                        <th scope="col" class="required">{{ __('messages.product.unit_price') }}</th>
+                        <th scope="col" class="required">{{ __('Description') }}</th>
+                        <th scope="col" class="required">{{ __('Generated Revenue') }}</th>
                         <th scope="col">{{ __('Percentage') }}</th>
                         <th scope="col" class="required">{{ __('messages.invoice.amount') }}</th>
                         <th scope="col" class="text-end">{{ __('messages.common.action') }}</th>
