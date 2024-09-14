@@ -63,10 +63,17 @@
                         </div>
                         <div class="col-sm-6 d-flex flex-column mb-md-10 mb-5">
                             <label for="name"
+                                class="pb-2 fs-4 text-gray-600">{{ __('Channel Name/Page Name') }}:</label>
+                            <span
+                                class="fs-4 text-gray-800">{{ !empty($client->channel_name) ? $client->channel_name : __('messages.common.n/a') }}</span>
+                        </div>
+                        <div class="col-sm-6 d-flex flex-column mb-md-10 mb-5">
+                            <label for="name"
                                 class="pb-2 fs-4 text-gray-600">{{ __('messages.client.country') }}:</label>
                             <span
                                 class="fs-4 text-gray-800">{{ !empty($client->country->name) ? $client->country->name : __('messages.common.n/a') }}</span>
                         </div>
+                        
                         <div class="col-sm-6 d-flex flex-column mb-md-10 mb-5">
                             <label for="name"
                                 class="pb-2 fs-4 text-gray-600">{{ __('messages.client.state') }}:</label>
