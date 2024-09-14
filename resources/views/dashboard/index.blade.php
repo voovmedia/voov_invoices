@@ -31,7 +31,7 @@
                             <div class="col-xxl-3 col-xl-4 col-sm-6 widget">
                                 <a href="{{ route('currency.reports') }}" class="mb-xl-8 text-decoration-none">
                                     <div
-                                        class="bg-success shadow-md rounded-10 p-xxl-10 px-7 py-10 d-flex align-items-center justify-content-center my-3">
+                                        class="bg-info shadow-md rounded-10 p-xxl-10 px-7 py-10 d-flex align-items-center justify-content-center my-3">
                                         <div class="text-white mt-3 text-center">
                                             <h3 class="fs-1-xxl fw-bolder text-white">
                                                 {{ __('messages.admin_dashboard.total_amount') }}
@@ -45,7 +45,7 @@
                             <div class="col-xxl-3 col-xl-4 col-sm-6 widget">
                                 <a href="{{ route('currency.reports') }}" class="mb-xl-8 text-decoration-none">
                                     <div
-                                        class="bg-info shadow-md rounded-10 p-xxl-10 px-7 py-10 d-flex align-items-center justify-content-center my-3">
+                                        class="bg-success shadow-md rounded-10 p-xxl-10 px-7 py-10 d-flex align-items-center justify-content-center my-3">
                                         <div class="text-white mt-3 text-center">
                                             <h2 class="fs-1-xxl fw-bolder text-white">
                                                 {{ __('messages.admin_dashboard.total_paid') }}
@@ -59,7 +59,7 @@
                             <div class="col-xxl-3 col-xl-4 col-sm-6 widget">
                                 <a href="{{ route('currency.reports') }}" class="mb-xl-8 text-decoration-none">
                                     <div
-                                        class="bg-warning shadow-md rounded-10 p-xxl-10 px-7 py-10 d-flex align-items-center justify-content-center my-3">
+                                        class="bg-danger shadow-md rounded-10 p-xxl-10 px-7 py-10 d-flex align-items-center justify-content-center my-3">
                                         <div class="text-white mt-3 text-center">
                                             <h2 class="fs-1-xxl fw-bolder text-white">
                                                 {{ __('messages.admin_dashboard.total_due') }}
@@ -91,9 +91,9 @@
                             <div class="col-xxl-3 col-xl-4 col-sm-6 widget">
                                 <a href="{{ route('invoices.index') }}" class="mb-xl-8 text-decoration-none">
                                     <div
-                                        class="bg-danger shadow-md rounded-10 p-xxl-10 px-7 py-10 d-flex align-items-center justify-content-between my-3">
+                                        class="bg-warning shadow-md rounded-10 p-xxl-10 px-7 py-10 d-flex align-items-center justify-content-between my-3">
                                         <div
-                                            class="bg-red-300 widget-icon rounded-10 d-flex align-items-center justify-content-center">
+                                            class="bg-yellow-300 widget-icon rounded-10 d-flex align-items-center justify-content-center">
                                             <i class="fas fa-file-invoice display-4 card-icon text-white"></i>
                                         </div>
                                         <div class="text-end text-white">
