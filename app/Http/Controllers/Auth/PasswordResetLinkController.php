@@ -64,7 +64,7 @@ class PasswordResetLinkController extends Controller
         $htmlContent = view('emails.custom_client_password-reset', ['resetUrl' => $resetLink,'name' => $user->first_name])->render();
 
         $emailContent = new Mail();
-        $emailContent->setFrom("no-reply@yvoovmedia.com", "Voovmedia");
+        $emailContent->setFrom("no-reply@voovmedia.com", "Voov Media");
         $emailContent->setSubject("Password Reset Link");
         $emailContent->addTo($user->email);
         $emailContent->addContent("text/plain", "Here is your password reset link: " . $resetLink);
