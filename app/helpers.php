@@ -706,7 +706,7 @@ if (! function_exists('getClientPercentage')) {
      */
     function getClientPercentage($clientId)
     {
-        $client = Client::where('user_id',$clientId)->first();
+        $client = Client::where('id',$clientId)->first();
         return $client->percentage ?? null;
     }
 }
@@ -714,6 +714,8 @@ if (! function_exists('getClientPercentage')) {
 if (!function_exists('calculatePercentage')) {
     function calculatePercentage($price, $percentage)
     {
+        $price = floatval($price);
+        $percentage = floatval($percentage);
         return ($price * $percentage) / 100;
     }
 }

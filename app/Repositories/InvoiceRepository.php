@@ -252,10 +252,9 @@ class InvoiceRepository extends BaseRepository
                 }
 
                 $data['amount'] = $data['price'] * $data['quantity'];
-
-                $data['total'] = $data['amount'];
+                
+                $data['total'] = calculatePercentage($data['amount'],getClientPercentage($input['client_id']));
                 $totalAmount += $data['amount'];
-
                 /** @var InvoiceItem Items $invoiceItem */
                 $invoiceItem = new InvoiceItem($data);
 
