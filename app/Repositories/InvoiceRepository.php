@@ -423,7 +423,7 @@ class InvoiceRepository extends BaseRepository
                 // Set the subject and content manually for testing
                 $subject = $mailable->subject;
                 $content = $mailable->render();
-                $subject = "New Invoice #$invoice->invoice_id Created for You";
+                $subject = "Invoice #$invoice->invoice_id has been updated for you.";
 
                 // Define email parameters
                 $to = $invoice->client->user->email; // Dummy email for testing
@@ -431,7 +431,7 @@ class InvoiceRepository extends BaseRepository
                 $sendGridService = app(SendGridService::class);
 
                 // Send the email using the SendGrid service
-                $response = $sendGridService->sendEmail($to, $from, $subject, $content, 'Voov Media ' . config('mail.emails.billing.name'),$invoiceId);
+                $response = $sendGridService->sendEmail($to, $from, $subject, $content, 'Voov Media ' . config('mail.emails.billing.name'),'',$invoiceId);
 
 
                 }
