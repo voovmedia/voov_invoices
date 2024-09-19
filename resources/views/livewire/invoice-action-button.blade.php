@@ -40,12 +40,12 @@
         @endif
         @if ($isDraft)
             <li>
-                <a href="javascript:void(0)" data-url="{{ route('invoice-show-url', $row->invoice_id) }}"
-                    class="dropdown-item text-hover-primary me-1 edit-btn  invoice-url" data-bs-toggle="tooltip"
-                    title="{{ __('messages.invoice.copy_invoice_url') }}"
-                    onclick="copyToClipboard($(this).data('url'))">
+                <a href="{{ route('invoice-show-url', $row->invoice_id) }}" target="_blank"
+                    class="dropdown-item text-hover-primary me-1 edit-btn  invoice-url" >
                     {{ __('messages.invoice.invoice_url') }}
+                    
                 </a>
+                 
             </li>
         @endif
         @if (empty($row->parent_id))

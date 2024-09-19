@@ -166,7 +166,6 @@ class InvoiceController extends AppBaseController
         // Construct the filename
             // Format the date
         $invoiceDate = Carbon::parse($invoice->invoice_date)->format('F-Y');
-
         $channelName = $invoice->client->channel_name;
         $filename = "{$channelName}_{$invoiceDate}.pdf";
 
@@ -242,7 +241,8 @@ class InvoiceController extends AppBaseController
         $invoiceData = $this->invoiceRepository->getPdfData($invoice);
         $invoiceTemplate = $this->invoiceRepository->getDefaultTemplate($invoice);
         $pdf = Pdf::loadView("invoices.invoice_template_pdf.$invoiceTemplate", $invoiceData);
-
+        $dompdf = $pdf->getDomPDF();
+        $dompdf->set_option('isRemoteEnabled', true);
         return $pdf->stream('invoice.pdf');
     }
 

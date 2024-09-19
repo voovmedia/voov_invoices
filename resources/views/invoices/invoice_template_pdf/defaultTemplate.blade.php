@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <link rel="icon" href="{{ asset('web/media/logos/favicon.ico') }}" type="image/png">
     <title>{{ __('Invoice | Voov Media') }}</title>
     
     <!-- Required meta tags -->

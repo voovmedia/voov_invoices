@@ -57,7 +57,7 @@
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6">
                                         <div class="d-flex mb-md-10 mb-5">
-                                            <div class="image image-circle image-lg-small width-100px">
+                                            <div class="image   image-lg-small width-100px">
                                                 <img src="{{ getLogoUrl() }}" alt="user" class="object-contain">
                                             </div>
                                             <h3 class="ps-7">{{ __('messages.invoice.invoice') }}
@@ -116,19 +116,7 @@
                                                 {!! getSettingValue('company_address') !!}</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="d-flex flex-column mb-md-10 mb-5">
-                                            <label for="name"
-                                                class="pb-2 fs-4 text-gray-600">{{ __('messages.payment_qr_codes.payment_qr_code') . ':' }}</label>
-                                            <p class="text-gray-700 fs-4 mb-0">
-                                                @if (!empty($invoice->paymentQrCode))
-                                                    {{ $invoice->paymentQrCode->title }}
-                                                @else
-                                                    {{ 'N/A' }}
-                                                @endif
-                                            </p>
-                                        </div>
-                                    </div>
+                              
                                     <div class="col-12 table-responsive">
                                         <table class="table table-striped box-shadow-none mt-4">
                                             <thead>
