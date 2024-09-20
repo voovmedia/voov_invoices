@@ -12,6 +12,8 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/css/invoice-pdf.css') }}" rel="stylesheet" type="text/css" />
+            <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" >
     <style>
         body {
             padding: 30px 15px !important;
@@ -112,8 +114,7 @@
             font-size: 1em;
         }
     </style>
-        <!-- Favicon -->
-<link rel="icon" href="https://invoices.voovmedia.com/web/media/logos/favicon.png" type="image/png">
+
 </head>
 
 <body>
