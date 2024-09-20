@@ -5,5 +5,5 @@ if($row->status == 0 || $row->status == 2){
 }
 ?>
 <div class="text-center">
-<input type="checkbox" name="invoices[]" class="form-check-input" value="{{$row->invoice_id}}">
+<input type="checkbox" name="invoices_ids[]" class="form-check-input" value="{{$row->id}}">
 </div>

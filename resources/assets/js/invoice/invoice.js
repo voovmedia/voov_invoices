@@ -155,6 +155,49 @@ listenClick(".reminder-btn", function (e) {
         },
     });
 });
+listenClick(".multi-reminder-btn", function (e) {
+    e.preventDefault();
+
+    // Collect all checked invoice IDs
+    let invoiceIds = [];
+    $("input[name='invoices_ids[]']:checked").each(function () {
+        invoiceIds.push($(this).val());
+    });
+
+    if (invoiceIds.length === 0) {
+        displayErrorMessage("Please select at least one invoice.");
+        return;
+    }
+
+    $.ajax({
+        type: "POST",
+        url: route("invoice.multi-payment-reminder"),
+        data: { 
+            invoiceIds: invoiceIds,  // Pass the array of selected invoice IDs
+            _token: $('meta[name="csrf-token"]').attr('content')  // CSRF token for security
+        },
+        beforeSend: function () {
+            screenLock();
+            startLoader();
+        },
+        success: function (result) {
+            if (result.success) {
+                displaySuccessMessage(result.message);
+                $("input[name='invoices_ids[]']:checked").prop('checked', false);
+
+            } else {
+                displayErrorMessage(result.message);
+            }
+        },
+        error: function (result) {
+            displayErrorMessage(result.responseJSON.message);
+        },
+        complete: function () {
+            stopLoader();
+            screenUnLock();
+        },
+    });
+});
 
 listenClick(".update-recurring", function (e) {
     e.preventDefault();

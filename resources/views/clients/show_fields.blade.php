@@ -132,7 +132,7 @@
         </div>
         <input type="hidden" name="active-tab" id="clientActiveTab" value="{{ $activeTab }}">
         <div class="tab-pane fade" id="invoices" role="tabpanel" aria-labelledby="invoices-tab">
-        <button class="btn btn-primary me-4">
+        <button class="btn btn-primary me-4 multi-reminder-btn">
                 {{ __('Send Reminder Email') }}
             </button>
             @include('clients.invoice.index')

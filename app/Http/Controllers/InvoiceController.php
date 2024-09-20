@@ -206,13 +206,55 @@ class InvoiceController extends AppBaseController
  
          try {
              // Send the email using the SendGrid service
-             $response = $this->sendGridService->sendEmail($to, $from, $subject, $content, 'Voov Media '.config('mail.emails.billing.name'));
- 
+             $response = $this->sendGridService->sendEmail($to, $from, $subject, $content, 'Voov Media '.config('mail.emails.billing.name'),$invoice->invoice_id);
+             $invoice->last_rem_sent_at = now();
+             $invoice->save();
+
              return $this->sendResponse($response, __('messages.flash.payment_reminder_mail_send_successfully'));
          } catch (Exception $e) {
              return $this->sendError('Failed to send email: ' . $e->getMessage());
          }
  }
+public function multiInvoicePaymentReminder(Request $request): mixed
+{
+    $results = [];
+    $invoiceIds = $request->invoiceIds; // Get invoice IDs from request
+
+    if (isset($invoiceIds) && is_array($invoiceIds)) {
+        foreach ($invoiceIds as $invoiceId) {
+            try {
+                // Attempt to send a reminder for each invoice
+                $response = $this->invoicePaymentReminder($invoiceId);
+                $results[] = [
+                    'invoice_id' => $invoiceId,
+                    'status' => 'success',
+                    'response' => $response
+                ];
+            } catch (Exception $e) {
+                // Catch any errors and log or store them
+                $results[] = [
+                    'invoice_id' => $invoiceId,
+                    'status' => 'failed',
+                    'error' => $e->getMessage()
+                ];
+            }
+        }
+    } else {
+        return response()->json([
+            'success' => false,
+            'message' => 'No invoices selected or invalid request.'
+        ], 400);
+    }
+
+    // Return the results as JSON
+    return response()->json([
+        'success' => true,
+        'results' => $results,
+        'message' => 'Payment reminder emails send Successfully.'
+    ]);
+    
+}
+
 
     public function exportInvoicesExcel(): BinaryFileResponse
     {

@@ -143,6 +143,10 @@ Route::prefix('admin')->middleware(['auth', 'xss', 'role:admin'])->group(functio
         [InvoiceController::class, 'invoicePaymentReminder']
     )->name('invoice.payment-reminder');
 
+    Route::post(
+        'multi-invoice-payment-reminder',
+        [InvoiceController::class, 'multiInvoicePaymentReminder']
+    )->name('invoice.multi-payment-reminder');
     //Quote
     Route::resource('quotes', QuoteController::class);
     Route::get('quotes/{quote}/pdf', [QuoteController::class, 'convertToPdf'])->name('quotes.pdf');
