@@ -10,7 +10,7 @@
 <a href="{{route('clients.edit', $client->id)}}"
                    class="btn btn-primary me-4">{{__('messages.common.edit')}}</a>
                 <a href="{{route('clients.index')}}"
-                   class="btn btn-outline-primary">{{ __('messages.common.back') }}</a>-->
+                   class="btn btn-outline-primary">{{ __('messages.common.back') }}</a>-
             </div>
         </div>
     </div>

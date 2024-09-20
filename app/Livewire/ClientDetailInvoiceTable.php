@@ -20,7 +20,7 @@ class ClientDetailInvoiceTable extends LivewireTableComponent
     public function configure(): void
     {
         $this->setPrimaryKey('id');
-        $this->setDefaultSort('created_at', 'desc');
+        $this->setDefaultSort('created_at', 'asc');
         $this->setQueryStringStatus(false);
         $this->setThAttributes(function (Column $column) {
             if ($column->isField('final_amount')) {
@@ -57,6 +57,8 @@ class ClientDetailInvoiceTable extends LivewireTableComponent
     public function columns(): array
     {
         return [
+            Column::make(__('Select Invoices'), 'invoice_id')
+            ->view('clients.components.checkbox'),    
             Column::make(__('messages.invoice.invoice_id'), 'id')
                 ->sortable()
                 ->searchable()
@@ -99,6 +101,6 @@ class ClientDetailInvoiceTable extends LivewireTableComponent
 
     public function builder(): Builder
     {
-        return Invoice::where('client_id', $this->clientId)->with('payments')->select('invoices.*');
-    }
+        return Invoice::where('client_id', $this->clientId)->with('payments')->select('invoices.*')->orderByRaw("FIELD(status, 1, 0,2) ASC")->orderBy('created_at', 'asc');
+}
 }
