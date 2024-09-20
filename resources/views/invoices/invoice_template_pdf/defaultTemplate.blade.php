@@ -131,7 +131,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
+                            <td style="height:200px;vertical-align: top;"">
                             {{$client->billing_name}}
                             <br/>
                             {!! nl2br(e($client->address)) !!}
@@ -143,7 +143,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="table-container">
+            <div class="table-container" style="margin-top:-130px;">
                 <table>
                     <thead>
                         <tr>
@@ -166,11 +166,11 @@
                 </table>
             </div>
         </div>
-        <div class="right-side">
+        <div class="right-side" >
             <div class="header">
                 <h1>Billing Invoice</h1>
             </div>
-            <div class="table-container">
+            <div class="table-container" >
                 <table>
                     <thead>
                         <tr>
@@ -180,16 +180,17 @@
                     </thead>
                     <tbody>
                         <tr >
-                            <td>#{{ $invoice->invoice_id }}
-                            </td>
-                            <td class="text-align-right">{{ \Carbon\Carbon::parse($invoice->invoice_date)->translatedFormat(currentDateFormat()) }}</td>
+                           <td style="vertical-align: top;"">#{{ $invoice->invoice_id }}</td>
+                        <td class="text-align-right" style="height:200px; vertical-align: top;">
+                            {{ \Carbon\Carbon::parse($invoice->invoice_date)->translatedFormat(currentDateFormat()) }}
+                        </td>
 
                         </tr>
                         <!-- Add more rows as needed -->
                     </tbody>
                 </table>
             </div>
-            <div class="table-container" style="margin-top:65px">
+            <div class="table-container" style="margin-top:-130px;">
                 <table>
                     <thead>
                         <tr>
