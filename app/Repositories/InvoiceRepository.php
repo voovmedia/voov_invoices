@@ -431,7 +431,7 @@ class InvoiceRepository extends BaseRepository
                 $sendGridService = app(SendGridService::class);
 
                 // Send the email using the SendGrid service
-                $response = $sendGridService->sendEmail($to, $from, $subject, $content, 'Voov Media ' . config('mail.emails.billing.name'),'',$invoiceId);
+                $response = $sendGridService->sendEmail($to, $from, $subject, $content, 'Voov Media ' . config('mail.emails.billing.name'),'',$invoice->invoice_id);
 
 
                 }
