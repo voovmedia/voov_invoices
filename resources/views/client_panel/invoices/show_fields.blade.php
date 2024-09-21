@@ -38,7 +38,7 @@ $itemTaxesAmount = $invoice->amount + array_sum($totalTax);
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6">
                                         <div class="d-flex align-items-center mb-md-10 mb-5">
-                                            <div class="image image-circle image-lg-small width-100px">
+                                            <div class="image image-lg-small width-100px">
                                                 <img src="{{ getLogoUrl() }}" alt="logo" class="object-contain">
                                             </div>
                                             <h3 class="ps-7">{{__('messages.invoice.invoice')}}

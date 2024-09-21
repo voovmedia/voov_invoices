@@ -133,11 +133,20 @@
                     <tbody>
                         <tr>
                             <td style="height:200px;vertical-align: top;"">
-                            {{$client->billing_name}}
-                            <br/>
-                            {!! nl2br(e($client->address)) !!}
-                            <br>
-                            {{$client->user->email}}
+                          @if (!empty($client->billing_name))
+    {{$client->billing_name}}
+    <br/>
+@endif
+
+@if (!empty($client->address))
+    {!! nl2br(e($client->address)) !!}
+    <br/>
+@endif
+
+@if (!empty($client->user->email))
+    {{$client->user->email}}
+@endif
+
                             </td>
 
                         </tr>

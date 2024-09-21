@@ -12,6 +12,10 @@ class ClientDetailInvoiceTable extends LivewireTableComponent
 
     public $clientId = null;
 
+    public $showButtonOnHeader = true;
+
+    public $buttonComponent = 'components.multi-send-reminder-button';
+
     public function mount(int $clientId): void
     {
         $this->clientId = $clientId;

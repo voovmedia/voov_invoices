@@ -155,6 +155,11 @@ listenClick(".reminder-btn", function (e) {
         },
     });
 });
+// Listen for changes on the "Select All" checkbox
+listenChange("#select-all-invoices", function () {
+    // Check or uncheck all invoice checkboxes based on the "Select All" checkbox
+    $("input[name='invoices_ids[]']").prop("checked", this.checked);
+});
 listenClick(".multi-reminder-btn", function (e) {
     e.preventDefault();
 
@@ -184,7 +189,7 @@ listenClick(".multi-reminder-btn", function (e) {
             if (result.success) {
                 displaySuccessMessage(result.message);
                 $("input[name='invoices_ids[]']:checked").prop('checked', false);
-
+                $("input[id='select-all-invoices']:checked").prop('checked', false);
             } else {
                 displayErrorMessage(result.message);
             }
