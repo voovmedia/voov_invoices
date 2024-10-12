@@ -1,9 +1,10 @@
 @use('App\Models\Invoice')
-<?php
-if($row->status == 0 || $row->status == 2){
-    return '';
-}
-?>
+
 <div class="text-center">
-<input type="checkbox" name="invoices_ids[]" class="form-check-input" value="{{$row->id}}">
+@if($row->status == 0 || $row->status == 2)
+    <input type="checkbox" name="invoices_ids[]" disabled class="form-check-input" value="{{$row->id}}">
+@else 
+    <input type="checkbox" name="invoices_ids[]" class="form-check-input" value="{{$row->id}}">
+@endif
+
 </div>

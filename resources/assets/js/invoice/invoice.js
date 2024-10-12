@@ -158,7 +158,7 @@ listenClick(".reminder-btn", function (e) {
 // Listen for changes on the "Select All" checkbox
 listenChange("#select-all-invoices", function () {
     // Check or uncheck all invoice checkboxes based on the "Select All" checkbox
-    $("input[name='invoices_ids[]']").prop("checked", this.checked);
+    $("input[name='invoices_ids[]']:enabled").prop("checked", this.checked);
 });
 listenClick(".multi-reminder-btn", function (e) {
     e.preventDefault();
@@ -190,6 +190,8 @@ listenClick(".multi-reminder-btn", function (e) {
                 displaySuccessMessage(result.message);
                 $("input[name='invoices_ids[]']:checked").prop('checked', false);
                 $("input[id='select-all-invoices']:checked").prop('checked', false);
+                                Livewire.dispatch("refreshDatatable");
+                Livewire.dispatch("resetPageTable");
             } else {
                 displayErrorMessage(result.message);
             }
