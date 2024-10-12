@@ -263,7 +263,8 @@ class InvoiceController extends AppBaseController
              $from,
              $subject,
              $emailContent,
-             $invoiceIds // Pass the array of invoice IDs for generating attachments
+             $invoiceIds,
+             'Voov Media' // Pass the array of invoice IDs for generating attachments
          );
  
          // Update the last reminder sent time for each invoice
