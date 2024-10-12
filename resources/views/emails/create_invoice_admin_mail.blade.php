@@ -10,7 +10,7 @@
     <div>
         <h2>Dear {{ $adminName }}, <b></b></h2><br>
         <p>I hope you are well.</p>
-        <p>Please see attached the invoice #{{ $invoiceNumber }}. The invoice is due by {{ $dueDate }}.</p>
+        <p>Please see attached the invoice #{{ $invoiceNumber }}. The invoice is due by placeholder.</p>
         <p>Please don't hesitate to get in touch if you have any questions or need clarifications.</p><br>
         <div style="display: flex;justify-content: center">
             <a href="{{route('invoices.show',['invoice'=>$invoiceId])}}"
