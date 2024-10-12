@@ -148,14 +148,12 @@ class Invoice extends Model
         'client_id' => 'required',
         'invoice_id' => 'required|unique:invoices,invoice_id',
         'invoice_date' => 'required',
-        'due_date' => 'required',
         'payout_cycle' => 'required'
     ];
 
     public static $messages = [
         'client_id.required' => 'The Client field is required.',
         'invoice_date.required' => 'The invoice date field is required.',
-        'due_date' => 'The invoice Due date field is required.',
         'payout_cycle' => 'The invoice Payout cycle field is required'
 
     ];
@@ -167,7 +165,6 @@ class Invoice extends Model
     public $fillable = [
         'client_id',
         'invoice_date',
-        'due_date',
         'payout_cycle_start',
         'payout_cycle_end',
         'invoice_id',
@@ -192,7 +189,6 @@ class Invoice extends Model
         'client_id' => 'integer',
         'parent_id' => 'integer',
         'invoice_date' => 'date',
-        'due_date' => 'date',
         'invoice_id' => 'string',
         'currency_id' => 'integer',
         'amount' => 'double',
@@ -231,14 +227,20 @@ class Invoice extends Model
 
     public static function generateUniqueInvoiceId(): string
     {
-        $invoiceId = mb_strtoupper(Str::random(6));
-        while (true) {
-            $isExist = self::whereInvoiceId($invoiceId)->exists();
-            if ($isExist) {
-                self::generateUniqueInvoiceId();
-            }
-            break;
+        // Get the latest invoice
+        $latestInvoice = self::latest('invoice_id')->first();
+
+        // Check if an invoice already exists
+        if ($latestInvoice) {
+            // Increment the invoice number by 1
+            $newInvoiceNumber = (int) $latestInvoice->invoice_id + 1;
+        } else {
+            // Start with 1 if there are no existing invoices
+            $newInvoiceNumber = 1;
         }
+
+        // Format the new invoice number as a 4-digit string
+        return str_pad($newInvoiceNumber, 4, '0', STR_PAD_LEFT);
 
         return $invoiceId;
     }

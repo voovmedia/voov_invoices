@@ -92,13 +92,14 @@ class InvoiceTable extends LivewireTableComponent
                             'invoice-date' => $row->invoice_date,
                         ]);
                 }),
-            Column::make(__('messages.invoice.due_date'), 'due_date')
+            Column::make(__('Payout Cycle'), 'payout_cycle_start')
                 ->sortable()
                 ->searchable()
                 ->format(function ($value, $row, Column $column) {
-                    return view('invoices.components.invoice-due-date')
+                    return view('invoices.components.invoice-payout-cycle')
                         ->withValue([
-                            'due-date' => $row->due_date,
+                            'payout_cycle_start' => $row->payout_cycle_start,
+                            'payout_cycle_end' => $row->payout_cycle_end,
                         ]);
                 }),
             Column::make(__('messages.invoice.amount'), 'final_amount')
@@ -111,6 +112,9 @@ class InvoiceTable extends LivewireTableComponent
             Column::make(__('messages.common.status'), 'status')
                 ->searchable()
                 ->view('invoices.components.transaction-status'),
+                Column::make(__('Payment Action'), 'status')
+                ->searchable()
+                ->view('livewire.invoice-payment-action'),
             Column::make(__('messages.common.action'), 'id')
                 ->view('livewire.invoice-action-button'),
         ];

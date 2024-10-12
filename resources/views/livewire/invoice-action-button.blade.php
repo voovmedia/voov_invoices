@@ -1,5 +1,9 @@
+ @php
+        $isEdit = $row->status == 2 || $row->status == 3 ? 1 : 0;
+        $isPaid = $row->status == 2 || $row->status == 0 ? 1 : 0;
+        $isDraft = $row->status == 0 ? 0 : 1;
+    @endphp
 <div class="dropup position-static" wire:key="{{ $row->id }}">
-
     <a class="px-2" href="{{ route('invoices.pdf', $row->id) }}" target="_blank"><i
             class="fa-solid fa-download fs-2"></i></a>
 
