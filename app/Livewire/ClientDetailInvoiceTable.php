@@ -79,6 +79,7 @@ class ClientDetailInvoiceTable extends LivewireTableComponent
                             'invoice-date' => $row->invoice_date,
                         ]);
                 }),
+                
             Column::make(__('messages.invoice.due_date'), 'due_date')
                 ->sortable()
                 ->searchable()
@@ -86,6 +87,16 @@ class ClientDetailInvoiceTable extends LivewireTableComponent
                     return view('invoices.components.invoice-due-date')
                         ->withValue([
                             'due-date' => $row->due_date,
+                        ]);
+                }),
+                Column::make(__('Reminder Send'), 'last_rem_sent_at')
+                ->sortable()
+                ->searchable()
+                ->format(function ($value, $row, Column $column) {
+                    return view('invoices.components.invoice-last-reminder-sent')
+                        ->withValue([
+                            'last_rem_sent_at' => $row->last_rem_sent_at,
+                            'status' => $row->status,
                         ]);
                 }),
             Column::make(__('messages.invoice.amount'), 'final_amount')
