@@ -88,9 +88,9 @@ class SendGridService
                 $invoiceData = $invoiceRepository->getPdfData($invoice);
                 $invoiceTemplate = $invoiceRepository->getDefaultTemplate($invoice);
                 $pdf = Pdf::loadView("invoices.invoice_template_pdf.$invoiceTemplate", $invoiceData);
-
+                $id = $invoice->invoice_id;
                 $fileContent = $pdf->output(); // Get the PDF content
-                $fileName = "Invoice_$invoiceId.pdf";
+                $fileName = "Invoice_$id.pdf";
 
                 $attachment = new Attachment();
                 $attachment->setContent(base64_encode($fileContent)); // Encode file content to base64
