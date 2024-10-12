@@ -80,13 +80,14 @@ class ClientDetailInvoiceTable extends LivewireTableComponent
                         ]);
                 }),
                 
-            Column::make(__('messages.invoice.due_date'), 'due_date')
+           Column::make(__('Payout Cycle'), 'payout_cycle_start')
                 ->sortable()
                 ->searchable()
                 ->format(function ($value, $row, Column $column) {
-                    return view('invoices.components.invoice-due-date')
+                    return view('invoices.components.invoice-payout-cycle')
                         ->withValue([
-                            'due-date' => $row->due_date,
+                            'payout_cycle_start' => $row->payout_cycle_start,
+                            'payout_cycle_end' => $row->payout_cycle_end,
                         ]);
                 }),
                 Column::make(__('Reminder Send'), 'last_rem_sent_at')
