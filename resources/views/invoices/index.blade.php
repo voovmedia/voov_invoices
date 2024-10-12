@@ -11,6 +11,9 @@
     </div>
     @include('invoices.templates.templates')
     @include('invoices.send_whatsapp_modal')
+    @include('payments.payment_modal')
+    @include('payments.edit_payment_modal')
+
     {{ Form::hidden('currency', getCurrencySymbol(), ['id' => 'currency']) }}
     {{ Form::hidden('status', $status, ['id' => 'status']) }}
 @endsection

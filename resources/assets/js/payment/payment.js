@@ -27,6 +27,8 @@ listenClick(".payment-delete-btn", function (event) {
 });
 
 listenClick(".addPayment", function () {
+    $('.invoice').val($(this).data('invoice-id')).change(); // Update the dropdown value and trigger change event
+
     let currentDtFormat = currentDateFormat;
     $.ajax({
         url: route("get-current-date-format"),
@@ -90,7 +92,7 @@ listenSubmit("#paymentForm", function (e) {
 });
 
 listenChange(".invoice", function () {
-    let invoiceId = $(this).val();
+    let invoiceId = $(this).val();    
     if (isEmpty(invoiceId)) {
         $("#due_amount").val(0);
         $("#paid_amount").val(0);

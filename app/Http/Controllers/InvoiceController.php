@@ -49,8 +49,17 @@ class InvoiceController extends AppBaseController
         $this->updateInvoiceOverDueStatus();
         $statusArr = Invoice::STATUS_ARR;
         $status = $request->status;
+        $invoice = Invoice::whereNotIn('status', [Invoice::PAID, Invoice::DRAFT])
+        ->with(['client.user']) // Eager load the client and its related user
+        ->orderBy('created_at', 'desc')
+        ->get(['id', 'invoice_id', 'client_id'])
+        ->mapWithKeys(function($invoice) {
+            $clientName = optional($invoice->client->user)->first_name ; // Get the client's user name safely
+            return [$invoice->id => $invoice->invoice_id . ' - '. $clientName];
+        })
+        ->toArray();
 
-        return view('invoices.index', compact('statusArr', 'status'));
+        return view('invoices.index', compact('statusArr', 'status','invoice'));
     }
 
     /**
