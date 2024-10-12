@@ -81,7 +81,7 @@ class SendGridService
         // Loop through each invoice ID and create attachments
         foreach ($invoiceIds as $invoiceId) {
             try {
-                $invoice = Invoice::whereInvoiceId($invoiceId)->firstOrFail();
+                $invoice = Invoice::whereId($invoiceId)->firstOrFail();
                 $invoice->load('client.user', 'invoiceTemplate', 'invoiceItems.product', 'invoiceItems.invoiceItemTax');
                 $invoiceRepository = app(InvoiceRepository::class);
                 
