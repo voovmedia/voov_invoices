@@ -27,6 +27,7 @@ use Illuminate\Support\Facades\DB;
 use Maatwebsite\Excel\Facades\Excel;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use App\Services\SendGridService;
+use  App\Mail\MultiInvoicePaymentReminderMail;
 
 class InvoiceController extends AppBaseController
 {
@@ -247,14 +248,14 @@ class InvoiceController extends AppBaseController
              'message' => 'No valid invoices found.'
          ], 404);
      }
- 
+     $mailable = new MultiInvoicePaymentReminderMail($invoices[0]);
+     $content = $mailable->render();
+
      // Define email parameters
      $recipientEmail = $invoices->first()->client->user->email; // Get the email of the first invoice's client
      $from = config('mail.emails.billing.address');
      $subject = 'Payment Reminder for Your Invoices'; // Subject for the email
  
-     // Prepare email content
-     $emailContent = "Dear Client,<br><br>Please find attached the invoices for your records.<br><br>Best Regards,<br>Voov Media"; // Customize as needed
  
      try {
          // Send email with multiple invoices as attachments
@@ -262,7 +263,7 @@ class InvoiceController extends AppBaseController
              $recipientEmail, // Single email address
              $from,
              $subject,
-             $emailContent,
+             $content,
              $invoiceIds,
              'Voov Media '.config('mail.emails.billing.name') // Pass the array of invoice IDs for generating attachments
          );
