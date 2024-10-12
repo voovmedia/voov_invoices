@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Crypt;
     {{-- Body --}}
         <h2>Dear {{ $clientName }}, <b></b></h2><br>
         <p>I hope you are well.</p>
-        <p>Please see attached the invoice <b>#{{$invoiceNumber}}.</b> The invoice is due by <b>placeholder</b>.</p>
+        <p>Please see attached the invoice <b>#{{$invoiceNumber}}.</b></p>
         <p>Please don't hesitate to get in touch if you have any questions or need clarifications.</p>
         <p>Also you can see the attachment invoice PDF.</p><br>
 
