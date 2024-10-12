@@ -224,45 +224,60 @@ class InvoiceController extends AppBaseController
              return $this->sendError('Failed to send email: ' . $e->getMessage());
          }
  }
-public function multiInvoicePaymentReminder(Request $request): mixed
-{
-    $results = [];
-    $invoiceIds = $request->invoiceIds; // Get invoice IDs from request
-
-    if (isset($invoiceIds) && is_array($invoiceIds)) {
-        foreach ($invoiceIds as $invoiceId) {
-            try {
-                // Attempt to send a reminder for each invoice
-                $response = $this->invoicePaymentReminder($invoiceId);
-                $results[] = [
-                    'invoice_id' => $invoiceId,
-                    'status' => 'success',
-                    'response' => $response
-                ];
-            } catch (Exception $e) {
-                // Catch any errors and log or store them
-                $results[] = [
-                    'invoice_id' => $invoiceId,
-                    'status' => 'failed',
-                    'error' => $e->getMessage()
-                ];
-            }
-        }
-    } else {
-        return response()->json([
-            'success' => false,
-            'message' => 'No invoices selected or invalid request.'
-        ], 400);
-    }
-
-    // Return the results as JSON
-    return response()->json([
-        'success' => true,
-        'results' => $results,
-        'message' => 'Payment reminder emails send Successfully.'
-    ]);
-    
-}
+ public function multiInvoicePaymentReminder(Request $request): mixed
+ {
+     $results = [];
+     $invoiceIds = $request->invoiceIds; // Get invoice IDs from request
+ 
+     // Check if invoice IDs are provided
+     if (!isset($invoiceIds) || !is_array($invoiceIds) || count($invoiceIds) === 0) {
+         return response()->json([
+             'success' => false,
+             'message' => 'No invoices selected or invalid request.'
+         ], 400);
+     }
+ 
+     // Load invoices and associated client information
+     $invoices = Invoice::with(['client.user', 'payments'])->whereIn('id', $invoiceIds)->get();
+ 
+     // Check if there are any invoices
+     if ($invoices->isEmpty()) {
+         return response()->json([
+             'success' => false,
+             'message' => 'No valid invoices found.'
+         ], 404);
+     }
+ 
+     // Define email parameters
+     $recipientEmail = $invoices->first()->client->user->email; // Get the email of the first invoice's client
+     $from = config('mail.emails.billing.address');
+     $subject = 'Payment Reminder for Your Invoices'; // Subject for the email
+ 
+     // Prepare email content
+     $emailContent = "Dear Client,<br><br>Please find attached the invoices for your records.<br><br>Best Regards,<br>Voov Media"; // Customize as needed
+ 
+     try {
+         // Send email with multiple invoices as attachments
+         $response = $this->sendGridService->sendEmailWithAttachments(
+             $recipientEmail, // Single email address
+             $from,
+             $subject,
+             $emailContent,
+             $invoiceIds // Pass the array of invoice IDs for generating attachments
+         );
+ 
+         // Update the last reminder sent time for each invoice
+         foreach ($invoices as $invoice) {
+             $invoice->last_rem_sent_at = now();
+             $invoice->save();
+         }
+ 
+         return $this->sendResponse($response, __('messages.flash.payment_reminder_mail_send_successfully'));
+     } catch (Exception $e) {
+         return $this->sendError('Failed to send email: ' . $e->getMessage());
+     }
+ }
+ 
 
 
     public function exportInvoicesExcel(): BinaryFileResponse
