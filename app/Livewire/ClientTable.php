@@ -63,10 +63,24 @@ class ClientTable extends LivewireTableComponent
             Column::make('email', 'user.email')
                 ->searchable()
                 ->hideIf(1),
-            Column::make(__('messages.common.invoice'), 'channel_name')
-                ->sortable(fn(Builder $query, string $direction) => $query->orderBy('invoices_count', $direction))
+                Column::make(__('Paid Invoices'), 'channel_name')
+                ->sortable(fn(Builder $query, string $direction) => 
+                    $query->orderBy('paid_invoices_count', $direction)
+                )
+                ->view('clients.components.invoice-paid-count'),
+            
+            Column::make(__('Unpaid Invoices'), 'channel_name')
+                ->sortable(fn(Builder $query, string $direction) => 
+                    $query->orderBy('unpaid_invoices_count', $direction)
+                )
+                ->view('clients.components.invoice-unpaid-count'),
+            
+            Column::make(__('Total Invoices'), 'channel_name')
+                ->sortable(fn(Builder $query, string $direction) => 
+                    $query->orderBy('invoices_count', $direction)
+                )
                 ->view('clients.components.invoice-count'),
-            Column::make(__('messages.common.action'), 'id')
+                  Column::make(__('messages.common.action'), 'id')
                 ->format(function ($value, $row, Column $column) {
                     return view('livewire.action-button')->with([
                         'editRoute' => route('clients.edit', $row->id),
@@ -80,7 +94,17 @@ class ClientTable extends LivewireTableComponent
 
     public function builder(): Builder
     {
-        $query = Client::with(['user.media'])->withCount('invoices');
+        $query = Client::with(['user.media','invoices'])
+        ->withCount([
+            'invoices as paid_invoices_count' => function ($query) {
+                $query->where('status', '2');
+            },
+            'invoices as unpaid_invoices_count' => function ($query) {
+                $query->where('status', '!=', '0');
+            },
+            'invoices'
+        ]);
+
         return $query;
     }
 
