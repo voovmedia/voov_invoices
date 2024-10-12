@@ -26,7 +26,7 @@
         {{ Form::label('invoice_date', __('messages.invoice.invoice_date') . ':', ['class' => 'form-label required mb-3']) }}
         {{ Form::text('invoice_date', null, ['class' => 'form-select', 'id' => 'editInvoiceDate', 'autocomplete' => 'off', 'required']) }}
     </div>
-    <div class="mb-5 col-lg-3 col-sm-12">
+    <div class="mb-5 col-lg-3 col-sm-12 d-none">
         {{ Form::label('due_date', __('Due Date') . ':', ['class' => 'form-label required mb-3']) }}
         {{ Form::text('due_date', $invoice->due_date, ['class' => 'form-select', 'id' => 'editDueDate', 'autocomplete' => 'off', 'required']) }}
     </div>
