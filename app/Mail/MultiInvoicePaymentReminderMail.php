@@ -7,7 +7,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class InvoicePaymentReminderMail extends Mailable
+class MultiInvoicePaymentReminderMail extends Mailable
 {
     use Queueable, SerializesModels;
 
