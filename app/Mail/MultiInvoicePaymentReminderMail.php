@@ -36,7 +36,7 @@ class MultiInvoicePaymentReminderMail extends Mailable
 
         return $this->view('emails.multi_invoice_payment_reminder_mail',
             compact('invoiceNumber', 'invoiceId', 'clientFullName', 'totalDueAmount'))
-            ->markdown('emails.invoice_payment_reminder_mail')
+            ->markdown('emails.multi_invoice_payment_reminder_mail')
             ->subject($subject);
     }
 }
