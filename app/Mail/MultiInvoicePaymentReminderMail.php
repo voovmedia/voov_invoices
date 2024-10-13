@@ -28,15 +28,13 @@ class MultiInvoicePaymentReminderMail extends Mailable
      */
     public function build(): static
     {
-        $invoiceNumber = $this->data->invoice_id;
-        $invoiceId = $this->data->id;
-        $clientFullName = $this->data['client']['user']->full_name;
-        $totalDueAmount = $this->data->final_amount - $this->data['payments']->sum('amount');
-        $subject = "Payment Reminder of #$invoiceNumber Invoice ";
+        $clientFullName = $this->data[0]['client']['user']->full_name;
+        $totalDueAmount = $this->data->sum('final_amount') - $this->data->flatMap(function ($invoice) {
+            return $invoice['payments'];
+        })->sum('amount');
 
         return $this->view('emails.multi_invoice_payment_reminder_mail',
-            compact('invoiceNumber', 'invoiceId', 'clientFullName', 'totalDueAmount'))
-            ->markdown('emails.multi_invoice_payment_reminder_mail')
-            ->subject($subject);
+            compact('clientFullName', 'totalDueAmount'))
+            ->markdown('emails.multi_invoice_payment_reminder_mail');
     }
 }

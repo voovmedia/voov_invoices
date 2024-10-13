@@ -229,7 +229,9 @@ class InvoiceController extends AppBaseController
  {
      $results = [];
      $invoiceIds = $request->invoiceIds; // Get invoice IDs from request
- 
+    if(count($invoiceIds) == 1){
+        return $this->invoicePaymentReminder($invoiceIds[0]);
+    }
      // Check if invoice IDs are provided
      if (!isset($invoiceIds) || !is_array($invoiceIds) || count($invoiceIds) === 0) {
          return response()->json([
@@ -248,7 +250,7 @@ class InvoiceController extends AppBaseController
              'message' => 'No valid invoices found.'
          ], 404);
      }
-     $mailable = new MultiInvoicePaymentReminderMail($invoices[0]);
+     $mailable = new MultiInvoicePaymentReminderMail($invoices);
      $content = $mailable->render();
 
      // Define email parameters

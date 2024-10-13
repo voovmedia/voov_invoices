@@ -10,7 +10,7 @@
     <div>
         <h2>Dear {{ $clientFullName }}, <b></b></h2><br>
         <p>I hope you are well.</p>
-        <p>Please find attached the invoices</p>
+        <p>I hope you're well. This is a reminder about the outstanding payment of <b>${{$totalDueAmount}}</b>. Please find the invoices attached.</p>
         <br>
     </div>
 
