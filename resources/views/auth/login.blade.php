@@ -46,7 +46,7 @@ Invoice  {{ __('messages.login.login') }}
                     </div>
                 </div>
                 <div class="mb-sm-7 mb-4 form-check">
-                    <input type="checkbox" class="form-check-input" id="remember_me">
+                    <input type="checkbox" class="form-check-input" id="remember_me" name="remember">
                     <label class="form-check-label" for="remember_me">{{ __('messages.login.remember_me') }}</label>
                 </div>
                 <div class="d-grid">
